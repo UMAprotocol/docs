@@ -1,107 +1,129 @@
 module.exports = {
-  title: 'UMA Docs',
-  tagline: 'A protocol for building synthetic assets',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  favicon: 'img/favicon.ico',
-  organizationName: 'umaprotocol',
-  projectName: 'docs',
+  title: "UMA Docs",
+  tagline: "A protocol for building synthetic assets",
+  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/",
+  favicon: "img/favicon-32x32.png",
+  organizationName: "umaprotocol",
+  projectName: "docs",
   themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/nightOwl'),
+    },
     navbar: {
-      title: 'Documentation',
+      title: "Explained",
       logo: {
-        alt: 'UMA Logo',
-        src: 'img/UMA_square_red_logo.png',
+        alt: "UMA Logo",
+        src: "img/UMA_square_red_logo.png",
       },
       links: [
+        { to: "docs/", label: "Getting Started", position: "left" },
+        { to: "getting-started", label: "Tutorials", position: "left" },
+        { to: "getting-started", label: "Synthetic Tokens", position: "left" },
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "getting-started",
+          label: "Oracle Solution (DVM)",
+          position: "left",
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: "getting-started", label: "FAQ", position: "right" },
+        { to: "getting-started", label: "Status", position: "right" },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/UMAprotocol/protocol",
+          label: "GitHub",
+          position: "right",
+        },
+        {
+          href: "https://umaproject.org/",
+          label: "Website",
+          position: "right",
         },
       ],
+      hideOnScroll: true,
     },
     footer: {
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
+          // TODO update footer items
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: "Getting Started",
+              to: "docs/",
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: "Tutorials",
+              to: "docs/",
+            },
+            {
+              label: "Synthetic Tokens",
+              to: "docs/",
+            },
+            {
+              label: "Oracle Solution (DVM)",
+              to: "docs/",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "Discord",
+              href: "https://discord.umaproject.org/",
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: "Twitter",
+              href: "https://twitter.com/UMAprotocol/",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: "GitHub",
+              href: "https://github.com/UMAprotocol/protocol",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: "FAQ",
+              href: "https://github.com/UMAprotocol/protocol",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "Status",
+              href: "https://github.com/UMAprotocol/protocol",
+            },
+            {
+              label: "Website",
+              href: "https://umaproject.org/",
+            },
+            {
+              label: "Medium",
+              href: "https://medium.com/uma-project",
             },
           ],
         },
       ],
+      // TODO confirm the appropriate org name here
       copyright: `Copyright © ${new Date().getFullYear()} UMA Protocol`,
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
+          routeBasePath: "/",
+          homePageId: "getting-started/overview",
+          sidebarPath: require.resolve("./sidebars.js"),
+          // TODO Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            "https://github.com/facebook/docusaurus/edit/master/website/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
   ],
-  stylesheets: [
-    'https://use.typekit.net/jll8euv.css',
-  ],
+  stylesheets: ["https://use.typekit.net/jll8euv.css"],
 };

@@ -15,7 +15,7 @@
   --ifm-color-primary-lighter: #ff7b7b;
   --ifm-color-primary-lightest: #ffadad;
   --ifm-font-family-base: 'halyard-text', sans-serif;
-  --ifm-code-font-size: 95%;
+  --ifm-code-font-size: 85%;
 }
 
 /* Custom color tweaks for a gentler dark mode. */
