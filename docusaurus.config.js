@@ -59,6 +59,11 @@ module.exports = {
           className: "header-twitter-link",
           position: "right",
         },
+        {
+          href: "https://discord.umaproject.org/",
+          className: "header-discord-link",
+          position: "right",
+        },
       ],
       hideOnScroll: true,
     },
