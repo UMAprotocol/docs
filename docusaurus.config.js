@@ -8,7 +8,7 @@ module.exports = {
   projectName: "docs",
   themeConfig: {
     prism: {
-      theme: require('prism-react-renderer/themes/nightOwl'),
+      theme: require("prism-react-renderer/themes/nightOwl"),
     },
     navbar: {
       title: "Explained",
@@ -17,14 +17,23 @@ module.exports = {
         src: "img/UMA_square_red_logo.png",
       },
       links: [
-        { to: "docs/", label: "Getting Started", position: "left" },
-        { to: "getting-started", label: "Tutorials", position: "left" },
-        { to: "getting-started", label: "Synthetic Tokens", position: "left" },
         {
-          to: "getting-started",
+          to: "getting-started/overview",
+          label: "Getting Started",
+          position: "left",
+        },
+        { to: "tutorials/setup", label: "Tutorials", position: "left" },
+        {
+          to: "synthetic-tokens/explainer",
+          label: "Synthetic Tokens",
+          position: "left",
+        },
+        {
+          to: "oracle-solution/tech-architecture",
           label: "Oracle Solution (DVM)",
           position: "left",
         },
+        { to: "governance/uma-holders", label: "Governance", position: "left" },
         { to: "getting-started", label: "FAQ", position: "right" },
         { to: "getting-started", label: "Status", position: "right" },
         {
@@ -48,19 +57,23 @@ module.exports = {
           items: [
             {
               label: "Getting Started",
-              to: "docs/",
+              to: "getting-started/overview",
             },
             {
               label: "Tutorials",
-              to: "docs/",
+              to: "tutorials/setup",
             },
             {
               label: "Synthetic Tokens",
-              to: "docs/",
+              to: "synthetic-tokens/explainer",
             },
             {
               label: "Oracle Solution (DVM)",
-              to: "docs/",
+              to: "oracle-solution/tech-architecture",
+            },
+            {
+              label: "Governance",
+              to: "governance/uma-holders",
             },
           ],
         },
@@ -113,7 +126,7 @@ module.exports = {
       {
         docs: {
           routeBasePath: "/",
-          homePageId: "getting-started/overview",
+          homePageId: "welcome",
           sidebarPath: require.resolve("./sidebars.js"),
           // TODO Please change this to your repo.
           editUrl:
