@@ -1,6 +1,6 @@
 ---
-title: Creating Synthetic Tokens from Truffle Console
-sidebar_label: Mint Tokens Locally
+title: Minting Tokens Locally with the Truffle Console
+sidebar_label: With Truffle (locally)
 ---
 
 This tutorial will show you how to create synthetic tokens from the command line using UMA’s synthetic token template. Before beginning this tutorial, please make sure your environment is set up correctly by following the instructions in the [Prerequisites](prerequisites.md). After completing this section, you should:

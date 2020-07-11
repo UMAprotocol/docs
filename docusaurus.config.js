@@ -7,6 +7,7 @@ module.exports = {
   organizationName: "umaprotocol",
   projectName: "docs",
   themeConfig: {
+    sidebarCollapsible: false,
     prism: {
       theme: require("prism-react-renderer/themes/nightOwl"),
     },
@@ -18,10 +19,10 @@ module.exports = {
       },
       links: [
         {
-          to: "getting-started/overview",
+          to: "/",
           label: "Getting Started",
           position: "left",
-          activeBasePath: "getting-started",
+          activeBaseRegex: "(getting-started|/$)",
         },
         {
           to: "tutorials/setup",
@@ -39,13 +40,7 @@ module.exports = {
           to: "oracle-solution/tech-architecture",
           label: "Oracle Solution (DVM)",
           position: "left",
-          activeBasePath: "oracle-solution",
-        },
-        {
-          to: "governance/uma-holders",
-          label: "Governance",
-          position: "left",
-          activeBasePath: "governance",
+          activeBaseRegex: "(oracle-solution|governance)",
         },
         { to: "getting-started", label: "FAQ", position: "right" },
         { to: "getting-started", label: "Status", position: "right" },
@@ -144,7 +139,7 @@ module.exports = {
       {
         docs: {
           routeBasePath: "/",
-          homePageId: "welcome",
+          homePageId: "getting-started/welcome",
           sidebarPath: require.resolve("./sidebars.js"),
           // TODO Please change this to your repo.
           editUrl:

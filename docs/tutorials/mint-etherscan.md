@@ -1,6 +1,6 @@
 ---
-title: Minting Synthetic Tokens via Etherscan
-sidebar_label: Mint Tokens on Etherscan
+title: Minting Tokens via Etherscan
+sidebar_label: With Etherscan
 ---
 
 This article will walk you through minting tokens (like ETHBTC or yCOMP) for the first time on Etherscan’s contract interaction GUI. If you already have a position (i.e. if you’ve already minted tokens, these steps may not apply to you). The screenshots and example numbers used in this tutorial reflect the ETHBTC token, but all steps in this article apply just the same to any other expiring multi-party token (like the yCOMP).

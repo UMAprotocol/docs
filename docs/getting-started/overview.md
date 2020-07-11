@@ -1,6 +1,6 @@
 ---
 title: UMA Architecture Overview
-sidebar_label: Overview
+sidebar_label: Architecture Overview
 ---
 
 UMA builds open-source infrastructure for “priceless” financial contracts on Ethereum. Specifically, this is two things:

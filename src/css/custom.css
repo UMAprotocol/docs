@@ -87,3 +87,6 @@ html[data-theme=dark] .header-discord-link:before {
   opacity: .6;
 }
 
+.react-toggle {
+  margin-left: var(--ifm-navbar-item-padding-horizontal);
+}
