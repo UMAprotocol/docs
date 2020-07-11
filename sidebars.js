@@ -27,6 +27,11 @@ module.exports = {
       "oracle-solution/known-issues",
       "oracle-solution/mainnet-info",
     ],
+    "Governance": [
+      "governance/uma-holder-responsibilities",
+      "governance/umips",
+      "governance/adding-price-id",
+    ],
     Features: ["mdx"],
   },
 };
