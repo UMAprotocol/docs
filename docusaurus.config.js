@@ -54,6 +54,11 @@ module.exports = {
           className: "header-github-link",
           position: "right",
         },
+        {
+          href: "https://twitter.com/UMAprotocol",
+          className: "header-twitter-link",
+          position: "right",
+        },
       ],
       hideOnScroll: true,
     },
