@@ -1,6 +1,6 @@
 ---
-title: Interacting with the DVM
-sidebar_label: Interacting with the DVM
+title: DVM Interface
+sidebar_label: DVM Interface
 ---
 
 This document explains how various participants interact with the DVM. There are three primary _interfaces_ by which

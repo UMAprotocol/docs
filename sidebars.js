@@ -18,7 +18,7 @@ module.exports = {
     "Oracle Solution (DVM)": [
       "oracle-solution/tech-architecture",
       "oracle-solution/econ-architecture",
-      "oracle-solution/dvm-interaction",
+      "oracle-solution/dvm-interface",
       "oracle-solution/known-issues",
       "oracle-solution/mainnet-info",
     ],
