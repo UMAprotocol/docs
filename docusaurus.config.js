@@ -11,7 +11,7 @@ module.exports = {
       theme: require("prism-react-renderer/themes/nightOwl"),
     },
     navbar: {
-      title: "Explained",
+      title: "",
       logo: {
         alt: "UMA Logo",
         src: "img/UMA_square_red_logo.png",
@@ -51,12 +51,7 @@ module.exports = {
         { to: "getting-started", label: "Status", position: "right" },
         {
           href: "https://github.com/UMAprotocol/protocol",
-          label: "GitHub",
-          position: "right",
-        },
-        {
-          href: "https://umaproject.org/",
-          label: "Website",
+          className: "header-github-link",
           position: "right",
         },
       ],
