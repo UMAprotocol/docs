@@ -33,6 +33,6 @@ module.exports = {
       "governance/umips",
       "governance/adding-price-id",
     ],
-    Features: ["mdx"],
+    // Features: ["mdx"],
   },
 };
