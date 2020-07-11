@@ -20,7 +20,7 @@
 
 /* Custom color tweaks for a gentler dark mode. */
 html[data-theme='dark'] {
-  --ifm-color-emphasis-900: var(--ifm-color-gray-200);
+  --ifm-color-emphasis-900: var(--ifm-color-gray-300);
   --ifm-background-color: hsl(204, 4%, 15%);
   --ifm-background-surface-color: hsl(210, 3%, 10%);
   --ifm-blockquote-color: var(--ifm-color-gray-400);

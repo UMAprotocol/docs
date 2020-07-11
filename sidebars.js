@@ -1,5 +1,6 @@
 module.exports = {
   main: {
+    Welcome: ["welcome"],
     "Getting Started": [
       "getting-started/overview",
       "getting-started/synthetic-tokens",
@@ -27,7 +28,7 @@ module.exports = {
       "oracle-solution/known-issues",
       "oracle-solution/mainnet-info",
     ],
-    "Governance": [
+    Governance: [
       "governance/uma-holder-responsibilities",
       "governance/umips",
       "governance/adding-price-id",
