@@ -1,5 +1,5 @@
 module.exports = {
-  someSidebar: {
+  main: {
     "Getting Started": [
       "getting-started/overview",
       "getting-started/synthetic-tokens",
@@ -20,7 +20,13 @@ module.exports = {
       "synthetic-tokens/glossary",
       "synthetic-tokens/known-issues",
     ],
-    "Oracle Solution (DVM)": ["doc3"],
+    "Oracle Solution (DVM)": [
+      "oracle-solution/tech-architecture",
+      "oracle-solution/econ-architecture",
+      "oracle-solution/dvm-interaction",
+      "oracle-solution/known-issues",
+      "oracle-solution/mainnet-info",
+    ],
     Features: ["mdx"],
   },
 };
