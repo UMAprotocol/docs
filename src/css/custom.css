@@ -90,3 +90,11 @@ html[data-theme=dark] .header-discord-link:before {
 .react-toggle {
   margin-left: var(--ifm-navbar-item-padding-horizontal);
 }
+
+.react-toggle-track-check>span::before {
+  content: '\1F319';
+}
+.react-toggle-track-x>span::before {
+  content: '\2600';
+  color: #ffd557;
+}
