@@ -141,6 +141,7 @@ module.exports = {
           routeBasePath: "/",
           homePageId: "getting-started/welcome",
           sidebarPath: require.resolve("./sidebars.js"),
+          showLastUpdateTime: true,
           // TODO Please change this to your repo.
           editUrl:
             "https://github.com/facebook/docusaurus/edit/master/website/",
