@@ -22,7 +22,7 @@ module.exports = {
           to: "/",
           label: "Getting Started",
           position: "left",
-          activeBaseRegex: "(getting-started|/$)",
+          activeBaseRegex: "(getting-started\/|/$)",
         },
         {
           to: "tutorials/setup",
@@ -40,7 +40,7 @@ module.exports = {
           to: "oracle/tech-architecture",
           label: "Oracle (DVM)",
           position: "left",
-          activeBaseRegex: "(oracle|governance)",
+          activeBaseRegex: "(oracle\/|governance\/)",
         },
         {
           to: "dev-ref/addresses",
