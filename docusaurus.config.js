@@ -42,6 +42,12 @@ module.exports = {
           position: "left",
           activeBaseRegex: "(oracle|governance)",
         },
+        {
+          to: "dev-ref/addresses",
+          label: "Developer Reference",
+          position: "left",
+          activeBasePath: "dev-ref",
+        },
         { to: "getting-started", label: "FAQ", position: "right" },
         { to: "getting-started", label: "Status", position: "right" },
         {
@@ -60,7 +66,7 @@ module.exports = {
           position: "right",
         },
       ],
-      hideOnScroll: true,
+      // hideOnScroll: true,
     },
     footer: {
       links: [

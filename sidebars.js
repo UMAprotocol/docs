@@ -28,6 +28,9 @@ module.exports = {
       "governance/adding-price-id",
     ],
   },
+  devRef: {
+    "Developer Reference": ["dev-ref/addresses", "dev-ref/bug-bounty"],
+  },
   tutorials: {
     Tutorials: [
       "tutorials/setup",
