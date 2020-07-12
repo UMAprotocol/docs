@@ -15,7 +15,7 @@ module.exports = {
     ],
   },
   oracle: {
-    "Oracle Solution (DVM)": [
+    "Oracle (DVM)": [
       "oracle/tech-architecture",
       "oracle/econ-architecture",
       "oracle/dvm-interface",

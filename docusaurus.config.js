@@ -38,7 +38,7 @@ module.exports = {
         },
         {
           to: "oracle/tech-architecture",
-          label: "Oracle Solution (DVM)",
+          label: "Oracle (DVM)",
           position: "left",
           activeBaseRegex: "(oracle|governance)",
         },
@@ -48,8 +48,13 @@ module.exports = {
           position: "left",
           activeBasePath: "dev-ref",
         },
+        {
+          href:
+            "https://github.com/UMAprotocol/protocol/tree/master/core/contracts",
+          label: "Contracts",
+          position: "left",
+        },
         { to: "community/press", label: "Community", position: "right" },
-        // { to: "getting-started", label: "Status", position: "right" },
         {
           href: "https://github.com/UMAprotocol/protocol",
           className: "header-github-link",
@@ -87,7 +92,7 @@ module.exports = {
               to: "synthetic-tokens/explainer",
             },
             {
-              label: "Oracle Solution (DVM)",
+              label: "Oracle (DVM)",
               to: "oracle/tech-architecture",
             },
             {
