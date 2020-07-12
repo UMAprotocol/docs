@@ -16,11 +16,11 @@ module.exports = {
   },
   oracle: {
     "Oracle Solution (DVM)": [
-      "oracle-solution/tech-architecture",
-      "oracle-solution/econ-architecture",
-      "oracle-solution/dvm-interface",
-      "oracle-solution/known-issues",
-      "oracle-solution/mainnet-info",
+      "oracle/tech-architecture",
+      "oracle/econ-architecture",
+      "oracle/dvm-interface",
+      "oracle/known-issues",
+      "oracle/mainnet-info",
     ],
     Governance: [
       "governance/uma-holders",

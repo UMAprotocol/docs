@@ -12,7 +12,7 @@ module.exports = {
       theme: require("prism-react-renderer/themes/nightOwl"),
     },
     navbar: {
-      title: "",
+      title: "Docs",
       logo: {
         alt: "UMA Logo",
         src: "img/UMA_square_red_logo.png",
@@ -37,10 +37,10 @@ module.exports = {
           activeBasePath: "synthetic-tokens",
         },
         {
-          to: "oracle-solution/tech-architecture",
+          to: "oracle/tech-architecture",
           label: "Oracle Solution (DVM)",
           position: "left",
-          activeBaseRegex: "(oracle-solution|governance)",
+          activeBaseRegex: "(oracle|governance)",
         },
         { to: "getting-started", label: "FAQ", position: "right" },
         { to: "getting-started", label: "Status", position: "right" },
@@ -82,7 +82,7 @@ module.exports = {
             },
             {
               label: "Oracle Solution (DVM)",
-              to: "oracle-solution/tech-architecture",
+              to: "oracle/tech-architecture",
             },
             {
               label: "Governance",
