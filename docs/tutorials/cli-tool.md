@@ -24,7 +24,7 @@ account and will sign all transactions using its private keys.
 
 ## Prerequisites
 
-Before beginning this tutorial, please make sure your environment is set up correctly by following the instructions in the [Prerequisites](prerequisites.md). After completing this section, you should:
+Before beginning this tutorial, please make sure your environment is set up correctly by following the instructions in the [Setup Guide](tutorials/setup.md). After completing this section, you should:
 
 - Have the protocol repo cloned.
 - Be running an instance of Ganache on port 9545.
@@ -64,7 +64,7 @@ npx truffle migrate --reset --network=test
    the `--test` flag to `true` in order to whitelist the collateral currency, approve the pricefeed identifier, use
    `MockOracle` as our oracle, create an initial sponsor position, and mint our default sponsor account some collateral
    tokens. The CLI tool does not support creating the first position globally for an `ExpiringMultiParty` contract
-   due to the GCR restriction, which you can read more about [here](../synthetic_tokens/explainer.md). In short,
+   due to the GCR restriction, which you can read more about [here](synthetic-tokens/explainer.md). In short,
    every position that is created must be collateralized above the global collateralization ratio (GCR) for the
    contract (aggregate collateral divided by aggregate synthetic tokens outstanding), but the first position
    globally has no GCR to reference. Therefore, the sponsor's flow is different enough that we do not address it in
@@ -137,7 +137,7 @@ Navigate to the list of live synthetic tokens. Select the token contract for whi
 
 ![](withdraw_toplevel.png)
 
-Because you are the only token sponsor, you cannot make a “fast” withdrawal as explained [here](../synthetic_tokens/explainer.md).
+Because you are the only token sponsor, you cannot make a “fast” withdrawal as explained [here](synthetic-tokens/explainer.md#managing-token-sponsor-positions).
 Rather, this will be a “slow” delay. The request will take 60 minutes to process, as the liveness period for withdrawals has been set in this local testnet deployment to 60 minutes.
 During this liveness period, the collateral in the contract is locked (a sponsor cannot add additional collateral or make another withdrawal request).
 Request to withdraw some ETH. After submitting this request, a summary of the relevant transaction will be displayed, as well as an updated summary of your token sponsor position.

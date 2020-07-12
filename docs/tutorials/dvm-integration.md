@@ -25,11 +25,11 @@ Moreover, the DepositBox user would be paying for the privilege of having the DV
 
 The `DepositBox` contract will pay regular fees to the DVM proportional to the amount of collateral deposited into the contract. Additionally, whenever a user makes a withdrawal request, the contract will pay a fixed final fee to the DVM.
 
-Details on these two fees are available [here](../economic_architecture.md).
+Details on these two fees are available [here](oracle/econ-architecture.md#step-3-maintaining-coc--pfc).
 
 ## Toy Integration Tutorial
 
-1. Ensure that you have followed all the prerequisites [here](../../synthetic_tokens/tutorials/prerequisites.md).
+1. Ensure that you have followed all the prerequisite setup steps [here](tutorials/setup.md).
 2. Migrate the contracts by running the following command:
 
 ```bash
