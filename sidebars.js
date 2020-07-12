@@ -29,7 +29,16 @@ module.exports = {
     ],
   },
   devRef: {
-    "Developer Reference": ["dev-ref/addresses", "dev-ref/bug-bounty"],
+    "Developer Reference": [
+      "dev-ref/bug-bounty",
+      "dev-ref/addresses",
+      {
+        type: "link",
+        label: "Contracts (Github)",
+        href:
+          "https://github.com/UMAprotocol/protocol/tree/master/core/contracts",
+      },
+    ],
   },
   community: {
     Community: ["community/press", "community/blog-posts", "community/events"],

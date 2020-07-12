@@ -48,12 +48,6 @@ module.exports = {
           position: "left",
           activeBasePath: "dev-ref",
         },
-        {
-          href:
-            "https://github.com/UMAprotocol/protocol/tree/master/core/contracts",
-          label: "Contracts",
-          position: "left",
-        },
         { to: "community/press", label: "Community", position: "right" },
         {
           href: "https://github.com/UMAprotocol/protocol",
@@ -95,10 +89,6 @@ module.exports = {
               label: "Oracle (DVM)",
               to: "oracle/tech-architecture",
             },
-            {
-              label: "Governance",
-              to: "governance/uma-holders",
-            },
           ],
         },
         {
@@ -121,14 +111,6 @@ module.exports = {
         {
           title: "More",
           items: [
-            {
-              label: "FAQ",
-              href: "https://github.com/UMAprotocol/protocol",
-            },
-            {
-              label: "Status",
-              href: "https://github.com/UMAprotocol/protocol",
-            },
             {
               label: "Website",
               href: "https://umaproject.org/",
