@@ -7,7 +7,7 @@ sidebar_label: Running Bots
 
 The prompt and accurate execution of liquidations and disputes is a core assumption to all priceless financial contracts compatible with the UMA DVM.
 Liquidation and dispute bots, as described below and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/liquidator) and [here](https://github.com/UMAprotocol/protocol/tree/master/disputer), are infrastructure tools that will help maintain the overall health of the UMA ecosystem.
-They are currently compatible with the priceless synthetic token contract template, as described [here](../explainer.md) and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/core/contracts/financial-templates).
+They are currently compatible with the priceless synthetic token contract template, as described [here](synthetic-tokens/explainer.md) and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/core/contracts/financial-templates).
 
 ### Liquidation vs Dispute Bot
 

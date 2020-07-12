@@ -45,15 +45,15 @@ These instructions will compute for the GCR:
 1. Go to the Read Contract Tab on the token minting contract page (for ETHBTC click [here](https://etherscan.io/address/0x3f2d9edd9702909cf1f8c4237b7c4c5931f9c944#readContract), for yCOMP click [here](https://etherscan.io/address/0x67DD35EaD67FcD184C8Ff6D0251DF4241F309ce1#readContract)).
 2. Search for the `cumulativeFeeMultiplier` function and observe the number there. This is in units of Wei so you will again need to convert it back into a human-readable number with the converter above. For example, a value of `1000000000000000000` would equate to **a multiplier with the value of `1`**.
 
-   ![multiplier](./mint_multiplier.png)
+   ![multiplier](/docs/tutorials/mint_multiplier.png)
 
 3. Next search for the `rawTotalPositionCollateral` function and observe the number there. Multiply this number with the multiplier above to get the true total collateral amount. In this example, the resulting **total collateral amount is `75204285203707845817894`, or ~`75,204` when converted from Wei**.
 
-   ![raw total position collateral](mint_raw_collateral.png)
+   ![raw total position collateral](/docs/tutorials/mint_raw_collateral.png)
 
 4. Next, search for the `totalTokensOutstanding` function and observe the number there. In this example the **total number of tokens outstanding is `2004251000000000000000000` or ~`2,004,251` when converted from Wei**.
 
-   ![total tokens outstanding](mint_tokens_outstanding.png)
+   ![total tokens outstanding](/docs/tutorials/mint_tokens_outstanding.png)
 
 5. The GCR is simply a ratio of these two numbers (i.e. total collateral / total tokens outstanding), so in our example: **GCR = 75,204 / 2,004,251 = ~0.038**
 
@@ -64,7 +64,7 @@ There is a setting in the contract that defines the minimum number of tokens you
 1. Go to the Read Contract Tab on the token minting contract page (for ETHBTC click [here](https://etherscan.io/address/0x3f2d9edd9702909cf1f8c4237b7c4c5931f9c944#readContract), for yCOMP click [here](https://etherscan.io/address/0x67DD35EaD67FcD184C8Ff6D0251DF4241F309ce1#readContract)).
 2. Search for the `minSponsorTokens` function and observe the number there. In this example, a value of `1000000000000000000000` or **`1000` tokens when converted from Wei**.
 
-   ![min sponsor tokens](mint_min_sponsor_tokens.png)
+   ![min sponsor tokens](/docs/tutorials/mint_min_sponsor_tokens.png)
 
 This means that by the end of your minting transaction, you would need to make sure that you would have minted a total of 1000 tokens outstanding.
 
@@ -83,11 +83,11 @@ Finally, we are ready to mint the actual synthetic tokens. You might want to add
 3. For the first argument, input the collateral amount in Wei wrapped in double-quotes and square brackets. For example, 40 DAI of collateral would mean inputting `["40000000000000000000"]`.
 4. For the second argument, input the number of tokens (in Wei) that you want to mint, and wrap it in double-quotes with square brackets just like above.
 
-![create](mint_create.png)
+![create](/docs/tutorials/mint_create.png)
 
 5. Hit write, and confirm the transaction through your wallet. Once the transaction completes, you should have minted your tokens. The Etherscan page for that transaction should look something like this:
 
-![etherscan output](mint_etherscan.png)
+![etherscan output](/docs/tutorials/mint_etherscan.png)
 
 ### Checking your position
 
@@ -98,7 +98,7 @@ Now that we have minted our tokens, let’s check the smart contract to make sur
 3. Paste in your address into the textbox and hit Query.
 4. You should see something like the following:
 
-![positions](mint_positions.png)
+![positions](/docs/tutorials/mint_positions.png)
 
 From this, we can conclude that we have successfully minted 1000 tokens with 40 DAI of supplied collateral.
 
