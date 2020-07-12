@@ -5,7 +5,7 @@ sidebar_label: Mainnet Info
 
 ## Current DVM Parameters
 
-The current DVM parameters are as follows. The parameters can be adjusted via the introduction of a new [UMIP](../oracle/governance/UMIPs.md).
+The current DVM parameters are as follows. The parameters can be adjusted via the introduction of a new [UMIP](governance/umips.md).
 
 1. Inflation percentage per vote: 0.05%
 

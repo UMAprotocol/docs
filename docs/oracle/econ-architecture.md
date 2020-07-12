@@ -5,7 +5,7 @@ sidebar_label: Economic Architecture
 
 The economic architecture of the UMA DVM is summarized here, and additional details can be found in the [whitepaper](https://github.com/UMAprotocol/whitepaper/blob/master/UMA-DVM-oracle-whitepaper.pdf).
 
-This section provides an overview of the current implementation of the economic guarantees of the DVM. For a discussion of the guiding principles behind designing the economic guarantees of the DVM, please look at [this section](../getting_started/uma_oracle_design.md).
+This section provides an overview of the current implementation of the economic guarantees of the DVM. For a discussion of the guiding principles behind designing the economic guarantees of the DVM, please look at [this section](getting-started/oracle.md).
 
 ## Economic Guarantees of the UMA DVM
 
@@ -57,7 +57,7 @@ Currently, \$UMA tokenholders must manually observe the PfC and CoC to determine
 The rates should generally go up as the CoC > PfC inequality comes closer to being violated.
 Higher fees slightly reduce the PfC since the collateral is pulled from the contracts to put into the Store, and the Risk Labs Foundation regularly withdraws the fees that have collected in the `Store` and uses them to “buy and burn” UMA tokens to increase the CoC.
 
-Fee rates, as well as other parameters relating to the DVM, are established via on-chain governance by \$UMA token holders via the [UMIP process](./governance/UMIPs.md).
+Fee rates, as well as other parameters relating to the DVM, are established via on-chain governance by \$UMA token holders via the [UMIP process](governance/umips.md).
 
 ## Additional Research
 
