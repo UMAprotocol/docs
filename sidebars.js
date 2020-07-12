@@ -31,6 +31,9 @@ module.exports = {
   devRef: {
     "Developer Reference": ["dev-ref/addresses", "dev-ref/bug-bounty"],
   },
+  community: {
+    Community: ["community/press", "community/blog-posts", "community/events"],
+  },
   tutorials: {
     Tutorials: [
       "tutorials/setup",

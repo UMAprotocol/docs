@@ -48,8 +48,8 @@ module.exports = {
           position: "left",
           activeBasePath: "dev-ref",
         },
-        { to: "getting-started", label: "FAQ", position: "right" },
-        { to: "getting-started", label: "Status", position: "right" },
+        { to: "community/press", label: "Community", position: "right" },
+        // { to: "getting-started", label: "Status", position: "right" },
         {
           href: "https://github.com/UMAprotocol/protocol",
           className: "header-github-link",
