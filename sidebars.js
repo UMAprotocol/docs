@@ -7,6 +7,24 @@ module.exports = {
       "getting-started/oracle",
     ],
   },
+  tutorials: {
+    Tutorials: [
+      "tutorials/setup",
+      {
+        type: "category",
+        label: "Minting Tokens",
+        items: ["tutorials/mint-locally", "tutorials/mint-etherscan"],
+      },
+      "tutorials/cli-tool",
+      "tutorials/bots",
+      {
+        type: "category",
+        label: "Voting",
+        items: ["tutorials/voting-uma", "tutorials/voting-2key"],
+      },
+      "tutorials/dvm-integration",
+    ],
+  },
   syntheticTokens: {
     "Synthetic Tokens": [
       "synthetic-tokens/explainer",
@@ -42,23 +60,5 @@ module.exports = {
   },
   community: {
     Community: ["community/press", "community/blog-posts", "community/events"],
-  },
-  tutorials: {
-    Tutorials: [
-      "tutorials/setup",
-      {
-        type: "category",
-        label: "Minting Tokens",
-        items: ["tutorials/mint-locally", "tutorials/mint-etherscan"],
-      },
-      "tutorials/cli-tool",
-      "tutorials/bots",
-      {
-        type: "category",
-        label: "Voting",
-        items: ["tutorials/voting-uma", "tutorials/voting-2key"],
-      },
-      "tutorials/dvm-integration",
-    ],
   },
 };

@@ -1,7 +1,7 @@
 module.exports = {
   title: "UMA Docs",
   tagline: "A protocol for building synthetic assets",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://docs.umaproject.org/",
   baseUrl: "/",
   favicon: "img/favicon-32x32.png",
   organizationName: "umaprotocol",
@@ -22,7 +22,7 @@ module.exports = {
           to: "/",
           label: "Getting Started",
           position: "left",
-          activeBaseRegex: "(getting-started\/|/$)",
+          activeBaseRegex: "(getting-started/|/$)",
         },
         {
           to: "tutorials/setup",
@@ -40,7 +40,7 @@ module.exports = {
           to: "oracle/tech-architecture",
           label: "Oracle (DVM)",
           position: "left",
-          activeBaseRegex: "(oracle\/|governance\/)",
+          activeBaseRegex: "(oracle/|governance/)",
         },
         {
           to: "dev-ref/addresses",
@@ -65,13 +65,11 @@ module.exports = {
           position: "right",
         },
       ],
-      // hideOnScroll: true,
     },
     footer: {
       links: [
         {
           title: "Docs",
-          // TODO update footer items
           items: [
             {
               label: "Getting Started",
@@ -135,9 +133,10 @@ module.exports = {
           homePageId: "getting-started/welcome",
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateTime: true,
-          // TODO Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+            // "https://github.com/facebook/docusaurus/edit/master/website/",
+            // TODO Change link for where the docs site will actually be hosted on GH
+            "https://github.com/UMAProtocol/protocol",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
