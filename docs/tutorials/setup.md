@@ -1,5 +1,5 @@
 ---
-title: Prerequisites
+title: Setup
 sidebar_label: Setup
 ---
 

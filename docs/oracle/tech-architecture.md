@@ -6,7 +6,7 @@ sidebar_label: Technical Architecture
 This document explains the general architecture of UMA's DVM (Oracle). It is meant to be a high level overview and is
 by no means an exhaustive explanation of the system.
 
-![Diagram](./architecture_diagram.jpeg)
+![Diagram](/docs/oracle/architecture_diagram.jpeg)
 
 ## Purpose
 

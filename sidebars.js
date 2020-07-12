@@ -1,38 +1,64 @@
 module.exports = {
-  main: {
-    Welcome: ["welcome"],
+  gettingStarted: {
     "Getting Started": [
+      "getting-started/welcome",
       "getting-started/overview",
       "getting-started/synthetic-tokens",
       "getting-started/oracle",
     ],
+  },
+  tutorials: {
     Tutorials: [
       "tutorials/setup",
-      "tutorials/mint-locally",
-      "tutorials/mint-etherscan",
+      {
+        type: "category",
+        label: "Minting Tokens",
+        items: ["tutorials/mint-locally", "tutorials/mint-etherscan"],
+      },
       "tutorials/cli-tool",
       "tutorials/bots",
-      "tutorials/voting-uma",
-      "tutorials/voting-2key",
+      {
+        type: "category",
+        label: "Voting",
+        items: ["tutorials/voting-uma", "tutorials/voting-2key"],
+      },
       "tutorials/dvm-integration",
     ],
+  },
+  syntheticTokens: {
     "Synthetic Tokens": [
       "synthetic-tokens/explainer",
       "synthetic-tokens/glossary",
       "synthetic-tokens/known-issues",
     ],
-    "Oracle Solution (DVM)": [
-      "oracle-solution/tech-architecture",
-      "oracle-solution/econ-architecture",
-      "oracle-solution/dvm-interaction",
-      "oracle-solution/known-issues",
-      "oracle-solution/mainnet-info",
+  },
+  oracle: {
+    "Oracle (DVM)": [
+      "oracle/tech-architecture",
+      "oracle/econ-architecture",
+      "oracle/dvm-interface",
+      "oracle/known-issues",
+      "oracle/mainnet-info",
     ],
     Governance: [
       "governance/uma-holders",
       "governance/umips",
       "governance/adding-price-id",
     ],
-    // Features: ["mdx"],
+  },
+  devRef: {
+    "Developer Reference": [
+      "dev-ref/bug-bounty",
+      "dev-ref/addresses",
+      {
+        type: "link",
+        label: "Contracts (Github)",
+        href:
+          "https://github.com/UMAprotocol/protocol/tree/master/core/contracts",
+      },
+    ],
+  },
+  community: {
+    Community: ["community/press", "community/blog-posts", "community/events"],
   },
 };

@@ -1,27 +1,28 @@
 module.exports = {
   title: "UMA Docs",
   tagline: "A protocol for building synthetic assets",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://docs.umaproject.org/",
   baseUrl: "/",
   favicon: "img/favicon-32x32.png",
   organizationName: "umaprotocol",
   projectName: "docs",
   themeConfig: {
+    sidebarCollapsible: false,
     prism: {
       theme: require("prism-react-renderer/themes/nightOwl"),
     },
     navbar: {
-      title: "Explained",
+      title: "Docs",
       logo: {
         alt: "UMA Logo",
         src: "img/UMA_square_red_logo.png",
       },
       links: [
         {
-          to: "getting-started/overview",
+          to: "/",
           label: "Getting Started",
           position: "left",
-          activeBasePath: "getting-started",
+          activeBaseRegex: "(getting-started/|/$)",
         },
         {
           to: "tutorials/setup",
@@ -36,37 +37,39 @@ module.exports = {
           activeBasePath: "synthetic-tokens",
         },
         {
-          to: "oracle-solution/tech-architecture",
-          label: "Oracle Solution (DVM)",
+          to: "oracle/tech-architecture",
+          label: "Oracle (DVM)",
           position: "left",
-          activeBasePath: "oracle-solution",
+          activeBaseRegex: "(oracle/|governance/)",
         },
         {
-          to: "governance/uma-holders",
-          label: "Governance",
+          to: "dev-ref/addresses",
+          label: "Developer Reference",
           position: "left",
-          activeBasePath: "governance",
+          activeBasePath: "dev-ref",
         },
-        { to: "getting-started", label: "FAQ", position: "right" },
-        { to: "getting-started", label: "Status", position: "right" },
+        { to: "community/press", label: "Community", position: "right" },
         {
           href: "https://github.com/UMAprotocol/protocol",
-          label: "GitHub",
+          className: "header-github-link",
           position: "right",
         },
         {
-          href: "https://umaproject.org/",
-          label: "Website",
+          href: "https://twitter.com/UMAprotocol",
+          className: "header-twitter-link",
+          position: "right",
+        },
+        {
+          href: "https://discord.umaproject.org/",
+          className: "header-discord-link",
           position: "right",
         },
       ],
-      hideOnScroll: true,
     },
     footer: {
       links: [
         {
           title: "Docs",
-          // TODO update footer items
           items: [
             {
               label: "Getting Started",
@@ -81,12 +84,8 @@ module.exports = {
               to: "synthetic-tokens/explainer",
             },
             {
-              label: "Oracle Solution (DVM)",
-              to: "oracle-solution/tech-architecture",
-            },
-            {
-              label: "Governance",
-              to: "governance/uma-holders",
+              label: "Oracle (DVM)",
+              to: "oracle/tech-architecture",
             },
           ],
         },
@@ -111,14 +110,6 @@ module.exports = {
           title: "More",
           items: [
             {
-              label: "FAQ",
-              href: "https://github.com/UMAprotocol/protocol",
-            },
-            {
-              label: "Status",
-              href: "https://github.com/UMAprotocol/protocol",
-            },
-            {
               label: "Website",
               href: "https://umaproject.org/",
             },
@@ -139,11 +130,13 @@ module.exports = {
       {
         docs: {
           routeBasePath: "/",
-          homePageId: "welcome",
+          homePageId: "getting-started/welcome",
           sidebarPath: require.resolve("./sidebars.js"),
-          // TODO Please change this to your repo.
+          showLastUpdateTime: true,
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+            // "https://github.com/facebook/docusaurus/edit/master/website/",
+            // TODO Change link for where the docs site will actually be hosted on GH
+            "https://github.com/UMAProtocol/protocol",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

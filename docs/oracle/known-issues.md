@@ -35,14 +35,14 @@ However, this is not reflected in the v1 implementation of the DVM. The v1 imple
 The whitepaper describes a method to calculate, collect, and use fees from contracts registered with the DVM and to “buy and burn” UMA tokens.
 This program should be automated in the future, but is currently executed manually.
 
-As described in [this section](./economic_architecture.md), \$UMA tokenholders currently manually observe the PfC and CoC to determine the regular and final fee rates.
+As described in [this section](oracle/econ-architecture.md), \$UMA tokenholders currently manually observe the PfC and CoC to determine the regular and final fee rates.
 The Risk Labs Foundation manually withdraws the fees that have been collected and uses them to manually “buy and burn” UMA tokens to increase the CoC.
 
 ### Areas of Research
 
 #### Parasitic Usage
 
-Step 2 of the mechanism described [here](./economic_architecture.md) shows that the profit from corruption (PfC) must be known at all times.
+Step 2 of the mechanism described [here](oracle/econ-architecture.md) shows that the profit from corruption (PfC) must be known at all times.
 This is calculated by summing the PfC of each financial contract that is reliant on the UMA DVM.
 This requires all financial contracts that rely on the DVM to be registered with the UMA DVM.
 
@@ -79,7 +79,7 @@ This collateral may be stored in a separate account and the DVM may instead only
 
 #### Bribery Attack
 
-The economic guarantees of the UMA system as described [here](./economic_architecture.md) require that the cost of corruption (CoC) stays above the profit from corruption (PfC).
+The economic guarantees of the UMA system as described [here](oracle/econ-architecture.md) require that the cost of corruption (CoC) stays above the profit from corruption (PfC).
 A “bribery attack” arises if the cost of controlling 50% of the participating UMA tokens is a small bribe relative to the cost of purchasing UMA tokens.
 This would cause the CoC of the UMA DVM to be lower than the PfC, and the economic guarantee of the UMA DVM may not hold.
 
@@ -88,7 +88,7 @@ Our version of this attack (and solution) is formalized in this research [note](
 
 ##### Overview of Attack
 
-The DVM uses a Schelling-Point style voting system with tokenized voting rights that pays a reward to voters who vote with the majority (described [here](./economic_architecture.md)).
+The DVM uses a Schelling-Point style voting system with tokenized voting rights that pays a reward to voters who vote with the majority (described [here](oracle/econ-architecture.md)).
 
 In a bribery attack, assume that there exists a 3rd party individual who would like to corrupt the DVM by bribing any UMA tokenholder who puts in a corrupted vote with a reward of `x`.
 

@@ -70,7 +70,7 @@ Owners of the UMA token have the following rights and responsibilities:
 - Upgrade core DVM protocol
 - Modify DVM parameters
 
-To vote on price requests, voters will be able to use [vote.umaproject.org](https://vote.umaproject.org/) or a [CLI tool](../oracle/tutorials/voting_with_uma_tokens.md).
+To vote on price requests, voters will be able to use [vote.umaproject.org](https://vote.umaproject.org/) or a [CLI tool](tutorials/voting-uma.md).
 
 All responsibilities relating to governance of the UMA ecosystem (any responsibility outside of voting on price requests) will be effected via the UMIP (UMA Improvement Proposal) process.
 To read more about UMIPs, please look at this [repo](https://github.com/UMAprotocol/UMIPs).
@@ -79,8 +79,8 @@ To read more about UMIPs, please look at this [repo](https://github.com/UMAproto
 
 Here are some additional resources regarding the UMA DVM:
 
-- [Technical Architecture](../oracle/technical_architecture.md)
-- [Economic Architecture](../oracle/economic_architecture.md)
+- [Technical Architecture](oracle/tech-architecture.md)
+- [Economic Architecture](oracle/econ-architecture.md)
 - [Blog post](https://medium.com/uma-project/umas-data-verification-mechanism-3c5342759eb8) on UMA’s DVM design
 - [Whitepaper](https://github.com/UMAprotocol/whitepaper/blob/master/UMA-DVM-oracle-whitepaper.pdf) on UMA’s DVM design
 - [Research repo](https://github.com/UMAprotocol/research) for optimal fee policy

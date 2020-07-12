@@ -7,7 +7,7 @@ sidebar_label: Running Bots
 
 The prompt and accurate execution of liquidations and disputes is a core assumption to all priceless financial contracts compatible with the UMA DVM.
 Liquidation and dispute bots, as described below and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/liquidator) and [here](https://github.com/UMAprotocol/protocol/tree/master/disputer), are infrastructure tools that will help maintain the overall health of the UMA ecosystem.
-They are currently compatible with the priceless synthetic token contract template, as described [here](../explainer.md) and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/core/contracts/financial-templates).
+They are currently compatible with the priceless synthetic token contract template, as described [here](synthetic-tokens/explainer.md) and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/core/contracts/financial-templates).
 
 ### Liquidation vs Dispute Bot
 
@@ -20,7 +20,7 @@ In short, a liquidation bot is to liquidate under-collateralized positions while
 
 ## Incentives to Running a Bot
 
-Details about liquidation and dispute rewards can be found [here](../explainer.md#liquidation-and-dispute).
+Details about liquidation and dispute rewards can be found [here](synthetic-tokens/explainer.md#liquidation-and-dispute).
 
 ## Implementation
 
@@ -109,7 +109,7 @@ truffle(kovan_mnemonic)> accounts[0]
 ```
 
 You can now fund this wallet with the associated currency for the type of bot you want to run.
-To learn more about creating synthetic tokens to fund your liquidation bot see [this](./using_the_uma_sponsor_cli_tool.md) tutorial.
+To learn more about creating synthetic tokens to fund your liquidation bot see [this](tutorials/cli-tool.md) tutorial.
 
 ### Creating a price feed API key
 
@@ -388,7 +388,7 @@ The tutorial thus far assumed you are running Kovan liquidation and dispute bots
 
 **1) Funding your liquidator bot's mainnet wallet**
 
-Running on mainnet involves first repeating the [Funding accounts](#Funding-accounts) section on the main Ethereum network to acquire collateral to fund the liquidator and disputer bots.
+Running on mainnet involves first repeating the [funding accounts](#funding-accounts) section on the main Ethereum network to acquire collateral to fund the liquidator and disputer bots.
 
 **2) Updating the EMP address to point to mainnet expiring multi party contract**
 
@@ -434,7 +434,7 @@ There are a few more configuration options available. The section below describe
 - `MNEMONIC`**[required]**: defines the wallet for the bots to use. Generated beforehand or in the steps outlined in key generation.
 - `PRICE_FEED_CONFIG`**[required]**: configuration object used to parameterize the bot's price feed. It's broken down as follows:
   - `type` specifies the configuration of the price feed. The `medianizer` provides the median of the price of the identifier over a set of different exchanges.
-  - `apiKey` is the key generated in API key section of the Prerequisites.
+  - `apiKey` is the key generated in API key section of the Prerequisites section above.
   - `pair` defines the crypto pair whose price is being fetched as defined in CryptoWatch. Ex: `ethbtc`.
   - `lookback` defines a window size, in seconds, over which historical prices will be made available by the price feed. This parameter should be set to be at least as large as the liquidation liveness period of the EMP contract.
   - `minTimeBetweenUpdates` minimum number of seconds between updates. If update is called more frequently, no new price data will be fetched.
@@ -442,7 +442,7 @@ There are a few more configuration options available. The section below describe
     - `type` Each instance of the medianizer is also a type. This could be a `medianizer`, `uniswap` or `cryptowatch` depending on the configuration of the bot. The sample bot is using only `cryptowatch` price feeds to compute the median.
     - `exchange` a string identifier for the exchange to pull prices from. This should be the identifier used to identify the exchange in CW's REST API.
 - `COMMAND`**[required]**: initial entry point the bot uses when it starts running.
-- `LIQUIDATOR_CONFIG` [optional]: enables the override of specific bot settings. See [Specifying liquidation sensitivity parameters](##Specifying-liquidation-sensitivity-parameters).
+- `LIQUIDATOR_CONFIG` [optional]: enables the override of specific bot settings. See [Specifying liquidation sensitivity parameters](#specifying-liquidation-sensitivity-parameters).
 - `ENVIRONMENT`[optional]: when set to `production`, will pipe logs to GCP stackdriver.
 - `SLACK_WEBHOOK`[optional]: can be included to send messages to a slack channel.
 - `PAGERDUTY_API_KEY`[optional]: if you want to configure your bot to send pager duty messages(sms, phone calls, or emails) when they crash or have `error` level logs you'll need an API key here.

@@ -1,11 +1,11 @@
 ---
-title: Minting Synthetic Tokens via Etherscan
-sidebar_label: Mint Tokens on Etherscan
+title: Minting Tokens via Etherscan
+sidebar_label: With Etherscan
 ---
 
 This article will walk you through minting tokens (like ETHBTC or yCOMP) for the first time on Etherscan’s contract interaction GUI. If you already have a position (i.e. if you’ve already minted tokens, these steps may not apply to you). The screenshots and example numbers used in this tutorial reflect the ETHBTC token, but all steps in this article apply just the same to any other expiring multi-party token (like the yCOMP).
 
-You can already mint tokens via the [CLI tool](tutorials/cli-tool), but you may prefer to interact with the contract more directly via Etherscan. All you’ll need to get started is some DAI to use as collateral (50 DAI should be enough) and ETH to pay for transaction gas (0.05 ETH should be enough).
+You can already mint tokens via the [CLI tool](tutorials/cli-tool.md), but you may prefer to interact with the contract more directly via Etherscan. All you’ll need to get started is some DAI to use as collateral (50 DAI should be enough) and ETH to pay for transaction gas (0.05 ETH should be enough).
 
 ## Before we begin: collateral approval
 
@@ -45,15 +45,15 @@ These instructions will compute for the GCR:
 1. Go to the Read Contract Tab on the token minting contract page (for ETHBTC click [here](https://etherscan.io/address/0x3f2d9edd9702909cf1f8c4237b7c4c5931f9c944#readContract), for yCOMP click [here](https://etherscan.io/address/0x67DD35EaD67FcD184C8Ff6D0251DF4241F309ce1#readContract)).
 2. Search for the `cumulativeFeeMultiplier` function and observe the number there. This is in units of Wei so you will again need to convert it back into a human-readable number with the converter above. For example, a value of `1000000000000000000` would equate to **a multiplier with the value of `1`**.
 
-   ![multiplier](./mint_multiplier.png)
+   ![multiplier](/docs/tutorials/mint_multiplier.png)
 
 3. Next search for the `rawTotalPositionCollateral` function and observe the number there. Multiply this number with the multiplier above to get the true total collateral amount. In this example, the resulting **total collateral amount is `75204285203707845817894`, or ~`75,204` when converted from Wei**.
 
-   ![raw total position collateral](mint_raw_collateral.png)
+   ![raw total position collateral](/docs/tutorials/mint_raw_collateral.png)
 
 4. Next, search for the `totalTokensOutstanding` function and observe the number there. In this example the **total number of tokens outstanding is `2004251000000000000000000` or ~`2,004,251` when converted from Wei**.
 
-   ![total tokens outstanding](mint_tokens_outstanding.png)
+   ![total tokens outstanding](/docs/tutorials/mint_tokens_outstanding.png)
 
 5. The GCR is simply a ratio of these two numbers (i.e. total collateral / total tokens outstanding), so in our example: **GCR = 75,204 / 2,004,251 = ~0.038**
 
@@ -64,7 +64,7 @@ There is a setting in the contract that defines the minimum number of tokens you
 1. Go to the Read Contract Tab on the token minting contract page (for ETHBTC click [here](https://etherscan.io/address/0x3f2d9edd9702909cf1f8c4237b7c4c5931f9c944#readContract), for yCOMP click [here](https://etherscan.io/address/0x67DD35EaD67FcD184C8Ff6D0251DF4241F309ce1#readContract)).
 2. Search for the `minSponsorTokens` function and observe the number there. In this example, a value of `1000000000000000000000` or **`1000` tokens when converted from Wei**.
 
-   ![min sponsor tokens](mint_min_sponsor_tokens.png)
+   ![min sponsor tokens](/docs/tutorials/mint_min_sponsor_tokens.png)
 
 This means that by the end of your minting transaction, you would need to make sure that you would have minted a total of 1000 tokens outstanding.
 
@@ -83,11 +83,11 @@ Finally, we are ready to mint the actual synthetic tokens. You might want to add
 3. For the first argument, input the collateral amount in Wei wrapped in double-quotes and square brackets. For example, 40 DAI of collateral would mean inputting `["40000000000000000000"]`.
 4. For the second argument, input the number of tokens (in Wei) that you want to mint, and wrap it in double-quotes with square brackets just like above.
 
-![create](mint_create.png)
+![create](/docs/tutorials/mint_create.png)
 
 5. Hit write, and confirm the transaction through your wallet. Once the transaction completes, you should have minted your tokens. The Etherscan page for that transaction should look something like this:
 
-![etherscan output](mint_etherscan.png)
+![etherscan output](/docs/tutorials/mint_etherscan.png)
 
 ### Checking your position
 
@@ -98,12 +98,12 @@ Now that we have minted our tokens, let’s check the smart contract to make sur
 3. Paste in your address into the textbox and hit Query.
 4. You should see something like the following:
 
-![positions](mint_positions.png)
+![positions](/docs/tutorials/mint_positions.png)
 
 From this, we can conclude that we have successfully minted 1000 tokens with 40 DAI of supplied collateral.
 
 ## What next?
 
-Now that you have minted your tokens, you need to make sure that it stays collateralized as the value of the underlying moves (e.g. the ETH to BTC ratio, or the price of COMP in USD). You can do this with the Sponsor [CLI tool](./using_the_uma_sponsor_cli_tool.md) that helps you manage your position. In the future, we might provide a dapp frontend for your convenience. Let us know on our Discord if you want to see this.
+Now that you have minted your tokens, you need to make sure that it stays collateralized as the value of the underlying moves (e.g. the ETH to BTC ratio, or the price of COMP in USD). You can do this with the Sponsor [CLI tool](tutorials/cli-tool.md) that helps you manage your position. In the future, we might provide a dapp frontend for your convenience. Let us know on our Discord if you want to see this.
 
 In order to get short exposure, don't forget to sell these tokens rather than hold onto them (the idea is that you can buy them cheaper on the market later on to unwind your position). For example, on Uniswap you can trade ETHBTC tokens [here](https://uniswap.exchange/swap?inputCurrency=0x6b175474e89094c44da98b954eedeac495271d0f&outputCurrency=0x6d002a834480367fb1a1dc5f47e82fde39ec2c42) and yCOMP tokens [here](https://uniswap.exchange/swap?inputCurrency=0xc00e94cb662c3520282e6f5717214004a7f26888&outputCurrency=0xc78Ce805599188eD734C943C912800658807fA14). The tokens in the example above will expire on August 1st, 2020 (and become redeemable by anyone), so make sure to keep that in mind as well.
