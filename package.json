@@ -7,7 +7,8 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "lint": "markdownlint docs"
+    "lint": "markdownlint docs",
+    "check:links": "find ./docs -name \\*.md -exec markdown-link-check {} \\;"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.58",
@@ -18,6 +19,7 @@
     "react-dom": "^16.8.4"
   },
   "devDependencies": {
+    "markdown-link-check": "^3.8.1",
     "markdownlint-cli": "^0.23.2"
   },
   "browserslist": {
