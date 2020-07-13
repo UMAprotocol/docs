@@ -98,3 +98,11 @@ html[data-theme=dark] .header-discord-link:before {
   content: '\2600';
   color: #ffd557;
 }
+
+a.menu__link:not([href]) {
+  color: black;
+}
+
+html[data-theme=dark] a.menu__link:not([href]) {
+  color: white;
+}
