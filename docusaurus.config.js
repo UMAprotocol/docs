@@ -133,10 +133,7 @@ module.exports = {
           homePageId: "getting-started/welcome",
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateTime: true,
-          editUrl:
-            // "https://github.com/facebook/docusaurus/edit/master/website/",
-            // TODO Change link for where the docs site will actually be hosted on GH
-            "https://github.com/UMAProtocol/protocol",
+          editUrl: "https://github.com/UMAProtocol/docs/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
