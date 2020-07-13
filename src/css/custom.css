@@ -35,7 +35,7 @@ html[data-theme='dark'] .footer {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'halyard-display';
+  font-family: 'halyard-display', sans-serif;
 }
 
 .docusaurus-highlight-code-line {
@@ -100,9 +100,6 @@ html[data-theme=dark] .header-discord-link:before {
 }
 
 a.menu__link:not([href]) {
-  color: black;
-}
-
-html[data-theme=dark] a.menu__link:not([href]) {
-  color: white;
+  font-family: 'halyard-display', sans-serif;
+  font-weight: 600;
 }
