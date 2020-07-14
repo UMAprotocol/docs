@@ -146,6 +146,7 @@ module.exports = {
     [
       "@docusaurus/plugin-client-redirects",
       {
+        fromExtensions: ["html"],
         redirects: [
           {
             to: "/tutorials/mint-etherscan",
