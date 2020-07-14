@@ -35,7 +35,7 @@ html[data-theme='dark'] .footer {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'halyard-display';
+  font-family: 'halyard-display', sans-serif;
 }
 
 .docusaurus-highlight-code-line {
@@ -93,16 +93,16 @@ html[data-theme=dark] .header-discord-link:before {
 
 .react-toggle-track-check>span::before {
   content: '\1F319';
+  margin-top: 1px;
+  margin-left: 2px;
 }
 .react-toggle-track-x>span::before {
   content: '\2600';
   color: #ffd557;
+  margin-left: 1px;
 }
 
 a.menu__link:not([href]) {
-  color: black;
-}
-
-html[data-theme=dark] a.menu__link:not([href]) {
-  color: white;
+  font-family: 'halyard-display', sans-serif;
+  font-weight: 600;
 }
