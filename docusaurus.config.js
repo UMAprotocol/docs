@@ -121,7 +121,7 @@ module.exports = {
         },
       ],
       // TODO confirm the appropriate org name here
-      copyright: `Copyright © ${new Date().getFullYear()} UMA Protocol`,
+      copyright: `Copyright © ${new Date().getFullYear()} Risk Labs`,
     },
   },
   presets: [
