@@ -93,10 +93,13 @@ html[data-theme=dark] .header-discord-link:before {
 
 .react-toggle-track-check>span::before {
   content: '\1F319';
+  margin-top: 1px;
+  margin-left: 2px;
 }
 .react-toggle-track-x>span::before {
   content: '\2600';
   color: #ffd557;
+  margin-left: 1px;
 }
 
 a.menu__link:not([href]) {
