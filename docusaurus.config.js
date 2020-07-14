@@ -142,4 +142,17 @@ module.exports = {
     ],
   ],
   stylesheets: ["https://use.typekit.net/jll8euv.css"],
+  plugins: [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            to: "/tutorials/mint-etherscan",
+            from: ["/uma/synthetic_tokens/mint_tokens_via_etherscan.html"],
+          },
+        ],
+      },
+    ],
+  ],
 };
