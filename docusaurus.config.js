@@ -199,6 +199,27 @@ module.exports = {
             to: "/tutorials/mint-etherscan",
             from: ["/uma/synthetic_tokens/mint_tokens_via_etherscan.html"],
           },
+          // oracle
+          {
+            to: "/oracle/tech-architecture",
+            from: ["/uma/oracle/technical_architecture.html"],
+          },
+          {
+            to: "/oracle/econ-architecture",
+            from: ["/uma/oracle/economic_architecture.html"],
+          },
+          {
+            to: "/oracle/dvm-interface",
+            from: ["/uma/oracle/dvm_interfaces.html"],
+          },
+          {
+            to: "/oracle/known-issues",
+            from: ["/uma/oracle/known_issues.html"],
+          },
+          {
+            to: "/oracle/mainnet-info",
+            from: ["/uma/oracle/mainnet_deployment_info.html"],
+          },
         ],
       },
     ],
