@@ -199,6 +199,10 @@ module.exports = {
             from: ["/uma/synthetic_tokens/liquidation.html"],
           },
           {
+            to: "/tutorials/bot-param",
+            from: ["/uma/synthetic_tokens/bot_parameterization.html"]
+          },
+          {
             to: "/tutorials/mint-etherscan",
             from: ["/uma/synthetic_tokens/mint_tokens_via_etherscan.html"],
           },
