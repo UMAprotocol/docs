@@ -16,7 +16,11 @@ module.exports = {
         items: ["tutorials/mint-locally", "tutorials/mint-etherscan"],
       },
       "tutorials/cli-tool",
-      "tutorials/bots",
+      {
+        type: "category",
+        label: "Bots",
+        items: ["tutorials/bots", "tutorials/bot-param"],
+      },
       {
         type: "category",
         label: "Voting",
