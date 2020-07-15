@@ -220,6 +220,19 @@ module.exports = {
             to: "/oracle/mainnet-info",
             from: ["/uma/oracle/mainnet_deployment_info.html"],
           },
+          // governance
+          {
+            to: "/oracle/uma-holders",
+            from: ["/uma/oracle/UMA_token_holder_responsibilities.html"],
+          },
+          {
+            to: "/oracle/umips",
+            from: ["/uma/oracle/UMIPs.html"],
+          },
+          {
+            to: "/oracle/adding-price-id",
+            from: ["/uma/oracle/adding_a_price_identifier.html"],
+          },
         ],
       },
     ],
