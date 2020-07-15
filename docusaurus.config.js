@@ -233,6 +233,19 @@ module.exports = {
             to: "/oracle/adding-price-id",
             from: ["/uma/oracle/adding_a_price_identifier.html"],
           },
+          // tutorials (oracle)
+          {
+            to: "/tutorials/voting-uma",
+            from: ["/uma/oracle/voting_with_uma_tokens.html"],
+          },
+          {
+            to: "/tutorials/voting-2key",
+            from: ["/uma/oracle/voting_with_UMA_2-key_contract.html"],
+          },
+          {
+            to: "/tutorials/dvm-integration",
+            from: ["/uma/oracle/integrating_the_dvm.html"],
+          },
         ],
       },
     ],
