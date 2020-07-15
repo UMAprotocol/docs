@@ -1,0 +1,12 @@
+{
+  "replacementPatterns": [
+    {
+      "pattern": "^/docs",
+      "replacement": "file:///Users/adrianli/dev/docs/static/docs"
+    },
+    {
+      "pattern": "^((?!(^file|^http|^/docs)).)*$",
+      "replacement": "file:///Users/adrianli/dev/docs/static/docs"
+    }
+  ]
+}

@@ -8,7 +8,7 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "lint": "markdownlint docs",
-    "check:links": "find ./docs -name \\*.md -exec markdown-link-check {} \\;"
+    "check:links": "find ./docs -name \\*.md -exec markdown-link-check -c linkcheck.json {} \\;"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.58",
