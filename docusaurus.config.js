@@ -31,17 +31,34 @@ module.exports = {
           activeBasePath: "tutorials",
         },
         {
-          to: "synthetic-tokens/explainer",
-          label: "Synthetic Tokens",
+          label: "The Protocol",
           position: "left",
-          activeBasePath: "synthetic-tokens",
+          activeBaseRegex: "(synthetic-tokens|oracle/|governance/)",
+          items: [
+            {
+              to: "synthetic-tokens/explainer",
+              label: "Synthetic Tokens",
+              activeBasePath: "synthetic-tokens",
+            },
+            {
+              to: "oracle/tech-architecture",
+              label: "Oracle (DVM)",
+              activeBaseRegex: "(oracle/|governance/)",
+            },
+          ],
         },
-        {
-          to: "oracle/tech-architecture",
-          label: "Oracle (DVM)",
-          position: "left",
-          activeBaseRegex: "(oracle/|governance/)",
-        },
+        // {
+        //   to: "synthetic-tokens/explainer",
+        //   label: "Synthetic Tokens",
+        //   position: "left",
+        //   activeBasePath: "synthetic-tokens",
+        // },
+        // {
+        //   to: "oracle/tech-architecture",
+        //   label: "Oracle (DVM)",
+        //   position: "left",
+        //   activeBaseRegex: "(oracle/|governance/)",
+        // },
         {
           to: "dev-ref/addresses",
           label: "Developer Reference",
