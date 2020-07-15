@@ -238,15 +238,15 @@ module.exports = {
           },
           // governance
           {
-            to: "/oracle/uma-holders",
+            to: "/governance/uma-holders",
             from: ["/uma/oracle/UMA_token_holder_responsibilities.html"],
           },
           {
-            to: "/oracle/umips",
+            to: "/governance/umips",
             from: ["/uma/oracle/UMIPs.html"],
           },
           {
-            to: "/oracle/adding-price-id",
+            to: "/governance/adding-price-id",
             from: ["/uma/oracle/adding_a_price_identifier.html"],
           },
           // developer reference
