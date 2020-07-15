@@ -46,7 +46,7 @@ Before starting this tutorial you need to clone the repo, install the dependenci
 
 ### Linux users
 
-If you are using Linux, you may need to first install the following packages before `npm install` can complete properly:
+If you are using Linux, you may need to first install the following packages before `yarn` can complete properly:
 
 ```
 make gcc libudev-dev g++ linux-headers-generic libusb-1.0-0
@@ -62,7 +62,7 @@ git clone https://github.com/UMAprotocol/protocol.git
 cd ./protocol
 
 ## Install dependencies
-npm install
+yarn
 
 ## Navigate into the core directory & compile contracts
 cd ./core
