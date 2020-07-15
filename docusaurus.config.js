@@ -152,6 +152,7 @@ module.exports = {
             to: "/",
             from: ["/uma/index.html"],
           },
+          // getting started
           {
             to: "/getting-started/overview",
             from: ["/uma/getting_started/architecture_overview.html"],
@@ -163,6 +164,19 @@ module.exports = {
           {
             to: "/getting-started/oracle",
             from: ["/uma/getting_started/uma_oracle_design.html"],
+          },
+          // synthetic tokens
+          {
+            to: "/synthetic-tokens/explainer",
+            from: ["/uma/synthetic_tokens/explainer.html"],
+          },
+          {
+            to: "/synthetic-tokens/glossary",
+            from: ["/uma/synthetic_tokens/glossary.html"],
+          },
+          {
+            to: "/synthetic-tokens/known-issues",
+            from: ["/uma/synthetic_tokens/known_issues.html"],
           },
           {
             to: "/tutorials/mint-etherscan",
