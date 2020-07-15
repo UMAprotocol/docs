@@ -150,7 +150,10 @@ module.exports = {
         redirects: [
           {
             to: "/",
-            from: ["/uma/index.html"],
+            from: [
+              "/uma/index.html",
+              "/uma/community/connecting_with_UMA.html",
+            ],
           },
           // getting started
           {
@@ -249,24 +252,24 @@ module.exports = {
           // developer reference
           {
             to: "/dev-ref/addresses",
-            from: ["/uma/developer_reference/contract_addresses.html"]
+            from: ["/uma/developer_reference/contract_addresses.html"],
           },
           {
             to: "/dev-ref/bug-bounty",
-            from: ["/uma/developer_reference/bug_bounty.html"]
+            from: ["/uma/developer_reference/bug_bounty.html"],
           },
           // community
           {
             to: "/community/events",
-            from: ["/uma/community/previous_and_upcoming_events.html"]
+            from: ["/uma/community/previous_and_upcoming_events.html"],
           },
           {
             to: "/community/press",
-            from: ["/uma/community/interviews_and_press.html"]
+            from: ["/uma/community/interviews_and_press.html"],
           },
           {
             to: "/community/blog-posts",
-            from: ["/uma/community/blog_posts.html"]
+            from: ["/uma/community/blog_posts.html"],
           },
         ],
       },
