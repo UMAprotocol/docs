@@ -178,6 +178,23 @@ module.exports = {
             to: "/synthetic-tokens/known-issues",
             from: ["/uma/synthetic_tokens/known_issues.html"],
           },
+          // tutorials (synthetic tokens)
+          {
+            to: "/tutorials/setup",
+            from: ["/uma/synthetic_tokens/prerequisites.html"],
+          },
+          {
+            to: "/tutorials/mint-locally",
+            from: ["/uma/synthetic_tokens/creating_from_truffle.html"],
+          },
+          {
+            to: "/tutorials/cli-tool",
+            from: ["/uma/synthetic_tokens/using_the_uma_sponsor_cli_tool.html"],
+          },
+          {
+            to: "/tutorials/bots",
+            from: ["/uma/synthetic_tokens/liquidation.html"],
+          },
           {
             to: "/tutorials/mint-etherscan",
             from: ["/uma/synthetic_tokens/mint_tokens_via_etherscan.html"],
