@@ -87,8 +87,13 @@ html[data-theme=dark] .header-discord-link:before {
   opacity: .6;
 }
 
+.header-github-link, .header-twitter-link, .header-discord-link {
+  padding-left: calc(var(--ifm-navbar-item-padding-horizontal) / 2);
+  padding-right: calc(var(--ifm-navbar-item-padding-horizontal) / 2);
+}
+
 .react-toggle {
-  margin-left: var(--ifm-navbar-item-padding-horizontal);
+  margin-left: calc(var(--ifm-navbar-item-padding-horizontal) / 2);
 }
 
 .react-toggle-track-check>span::before {
