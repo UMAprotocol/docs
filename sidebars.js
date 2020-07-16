@@ -29,14 +29,12 @@ module.exports = {
       "tutorials/dvm-integration",
     ],
   },
-  syntheticTokens: {
+  protocol: {
     "Synthetic Tokens": [
       "synthetic-tokens/explainer",
       "synthetic-tokens/glossary",
       "synthetic-tokens/known-issues",
     ],
-  },
-  oracle: {
     "Oracle (DVM)": [
       "oracle/tech-architecture",
       "oracle/econ-architecture",

@@ -18,16 +18,26 @@ module.exports = {
       activeBasePath: "tutorials",
     },
     {
-      to: "synthetic-tokens/explainer",
-      label: "Synthetic Tokens",
+      label: "The Protocol",
       position: "left",
-      activeBasePath: "synthetic-tokens",
-    },
-    {
-      to: "oracle/tech-architecture",
-      label: "Oracle (DVM)",
-      position: "left",
-      activeBaseRegex: "(oracle/|governance/)",
+      activeBaseRegex: "(synthetic-tokens|oracle/|governance/)",
+      items: [
+        {
+          to: "synthetic-tokens/explainer",
+          label: "Synthetic Tokens",
+          activeBasePath: "synthetic-tokens",
+        },
+        {
+          to: "oracle/tech-architecture",
+          label: "Oracle (DVM)",
+          activeBasePath: "oracle",
+        },
+        {
+          to: "governance/uma-holders",
+          label: "Governance",
+          activeBasePath: "governance",
+        },
+      ],
     },
     {
       to: "dev-ref/addresses",
