@@ -11,12 +11,16 @@ module.exports = {
   organizationName: "umaprotocol",
   projectName: "docs",
   themeConfig: {
+    navbar,
+    footer,
     sidebarCollapsible: false,
     prism: {
       theme: require("prism-react-renderer/themes/nightOwl"),
     },
-    navbar,
-    footer,
+    algolia: {
+      apiKey: 'b3a7b837d4e8ce1e75898ddd39885c19',
+      indexName: 'umaproject',
+    },
   },
   stylesheets: ["https://use.typekit.net/jll8euv.css"],
   presets: [
