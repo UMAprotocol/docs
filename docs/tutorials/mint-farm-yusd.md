@@ -1,12 +1,14 @@
 ---
-title: Mint yUSD tokens
-sidebar_label: Mint yUSD tokens
+title: Mint and Farm yUSD
+sidebar_label: Mint and Farm yUSD
 ---
 
-This tutorial will show you how to mint `yUSD` tokens. It's a simple process and
-should take you no longer than a few minutes (subject to network congestion).
+This tutorial will show you how to mint `yUSD` and farm them on a Balancer pool
+to get `BAL` and also `UMA` tokens via the experimental UMA liquidity mining
+program (insert link to program). It's a simple two-step process and should take
+you no longer than a few minutes (subject to network congestion).
 
-## Using the EMP Tools UI
+## Step 1: Mint yUSD
 
 Minting yUSD tokens is easy with the [EMP Tools](http://tools.umaproject.org/),
 UMA's UI for ExpiringMultiParty contracts (EMP) which is what the yUSD token is
@@ -66,10 +68,31 @@ If these values are appropriate, you can then click the "Create" button which
 will trigger a transaction with MetaMask. Once that is confirmed and the
 transaction is mined, you shall have your `yUSD` tokens!
 
-## What now?
+## Step 2: Farm on Balancer
 
-Once you have some `yUSD`, you can trade them on Balancer
-[here](https://balancer.exchange/#/swap/0x81ab848898b5ffd3354dbbefb333d5d183eedcb5/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48).
+Head to the `yUSD/USDC` [pool](https://pools.balancer.exchange/#/pool/0x58EF3abAB72c6C365D4D0D8a70039752b9f32Bc9) and click on
+the "Add Liquidity" button. You’ll be asked to Setup Proxy if you haven’t
+already
 
-If you have any questions regarding this process, please don't hesitate to reach
-out on [Discord](https://discord.umaproject.org/).
+![add liquidity button on balancer](/docs/tutorials/bal_add-liquidity.png)
+
+Once the proxy is setup, the "Add Liquidity" button will show you a form for
+adding liquidity.
+
+At this point, you might want to get some `USDC` so you can supply both assets
+to the Balancer pool. Alternatively, Balancer also supports supplying only a
+single-asset but that mechanism is out of scope for this tutorial.
+
+Under the "All Pool Assets" tab, you should see something like this:
+
+![deposit assets on balancer](/docs/tutorials/bal_deposit.png)
+
+As with any other ERC20 token, you'll have to "unlock" (i.e. grant approval) for
+the dapp to transfer tokens on your behalf. Once you have done that, you can
+deposit `yUSD` and `USDC` into the Balancer pool in exchange for some Balancer
+Pool Tokens (i.e. `BPT`) specific to this pool.
+
+This enables you to passively gain `BAL` as well as `UMA` in accordance to the
+experimental UMA liquidity mining program. If you have any questions regarding
+this process, please don't hesitate to reach out on
+[Discord](https://discord.umaproject.org/).
