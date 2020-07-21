@@ -4,7 +4,8 @@ sidebar_label: With EMP Tools
 ---
 
 Minting yUSD tokens is easy with the [EMP Tools](http://tools.umaproject.org/),
-the UI for ExpiringMultiParty contracts (EMP).
+the UI for ExpiringMultiParty contracts (EMP). This tutorial will show you how
+to mint some `yUSD` and then farm those tokens on a Balancer pool.
 
 ## Minting
 
