@@ -10,6 +10,7 @@ module.exports = {
   tutorials: {
     Tutorials: [
       "tutorials/setup",
+      "tutorials/mint-farm-yusd",
       {
         type: "category",
         label: "Minting Tokens",
@@ -27,7 +28,6 @@ module.exports = {
         items: ["tutorials/voting-uma", "tutorials/voting-2key"],
       },
       "tutorials/dvm-integration",
-      "tutorials/mint-farm-yusd",
     ],
   },
   protocol: {
