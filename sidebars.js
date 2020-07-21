@@ -13,7 +13,11 @@ module.exports = {
       {
         type: "category",
         label: "Minting Tokens",
-        items: ["tutorials/mint-locally", "tutorials/mint-etherscan"],
+        items: [
+          "tutorials/mint-locally",
+          "tutorials/mint-etherscan",
+          "tutorials/mint-emp-tools",
+        ],
       },
       "tutorials/cli-tool",
       {
