@@ -27,7 +27,7 @@ module.exports = {
         items: ["tutorials/voting-uma", "tutorials/voting-2key"],
       },
       "tutorials/dvm-integration",
-      "tutorials/mint-emp-tools",
+      "tutorials/mint-farm-yusd",
     ],
   },
   protocol: {

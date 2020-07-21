@@ -3,29 +3,33 @@ title: Mint and Farm yUSD
 sidebar_label: Mint and Farm yUSD
 ---
 
-Minting yUSD tokens is easy with the [EMP Tools](http://tools.umaproject.org/),
-the UI for ExpiringMultiParty contracts (EMP). This tutorial will show you how
-to mint some `yUSD` and then farm those tokens on a Balancer pool.
+This tutorial will show you how to mint `yUSD` and farm them on a Balancer pool
+to get `BAL` and also `UMA` tokens via the experimental UMA liquidity mining
+program (insert link to program). It's a simple two-step process and should take
+you no longer than a few minutes (subject to network congestion).
 
-## Minting
+## Step 1: Mint yUSD
+
+Minting yUSD tokens is easy with the [EMP Tools](http://tools.umaproject.org/),
+the UI for ExpiringMultiParty contracts (EMP).
 
 Navigate to http://tools.umaproject.org/ and click the "Connect" button at the
 top right corner to connect your MetaMask wallet to the dapp.
 
-![](/docs/tutorials/emp_connect.png)
+![connect](/docs/tutorials/emp_connect.png)
 
 Then, select the `yUSD` contract from the dropdown immediately underneath the
 header (above the tabs).
 
-![](/docs/tutorials/emp_select.png)
+![select EMP](/docs/tutorials/emp_select.png)
 
 Select the "Manage Position" tab.
 
-![](/docs/tutorials/emp_manage-position.png)
+![manage position tab](/docs/tutorials/emp_manage-position.png)
 
 Scroll down to the "Actions" dropdown and ensure that "Create" is selected.
 
-![](/docs/tutorials/emp_actions.png)
+![position actions dropdown](/docs/tutorials/emp_actions.png)
 
 At this point, make sure you read the text and confirm that:
 
@@ -48,12 +52,12 @@ WETH” tab.
 
 You may skip this step if you already have sufficient WETH.
 
-![](/docs/tutorials/emp_weth.png)
+![weth converter](/docs/tutorials/emp_weth.png)
 
 Once you have enough WETH to use as collateral, return to the "Manage Position"
 tab and scroll down to the form at the bottom of the page:
 
-![](/docs/tutorials/emp_form.png)
+![token minting form](/docs/tutorials/emp_form.png)
 
 In the first field, fill in the amount of collateral you want to supply.
 
@@ -63,29 +67,35 @@ If these values are appropriate, you can then click the "Create" button which
 will trigger a transaction with MetaMask. Once that is confirmed and the
 transaction is mined, you shall have your `yUSD` tokens!
 
-## Farming
+## Step 2: Farm on Balancer
 
-Now that you have some `yUSD` tokens, you can farm them on the `yUSD/USDC`
-Balancer pool for `BAL`.
+By supplying liquidity to the `yUSD/USDC` Balancer pool, you have the
+opportunity to earn both `BAL` and `UMA` tokens. The `UMA` token distribution is
+governed by the experimental UMA liquidity mining program.
 
-In order to this, head to the `yUSD/USDC` pool (link will be here when pool is
-ready) and click on the "Add Liquidity" button. You’ll be asked to Setup Proxy
-if you haven’t already
+Head to the `yUSD/USDC` pool (insert link here when pool is ready) and click on
+the "Add Liquidity" button. You’ll be asked to Setup Proxy if you haven’t
+already
 
-![](/docs/tutorials/bal_add-liquidity.png)
+![add liquidity button on balancer](/docs/tutorials/bal_add-liquidity.png)
 
 Once the proxy is setup, the "Add Liquidity" button will show you a form for
-adding liquidity. If you have `USDC` that you want to deposit as well, you can
-do it under the "All Pool Assets" tab. Otherwise, you might just want to deposit
-`yUSD`, in which case you should choose the "Single Asset" tab:
+adding liquidity.
 
-![](/docs/tutorials/bal_single-asset.png)
+At this point, you might want to get some `USDC` so you can supply both assets
+to the Balancer pool. Alternatively, Balancer also supports supplying only a
+single-asset but that mechanism is out of scope for this tutorial.
+
+Under the "All Pool Assets" tab, you should see something like this:
+
+![deposit assets on balancer](/docs/tutorials/bal_deposit.png)
 
 As with any other ERC20 token, you'll have to "unlock" (i.e. grant approval) for
 the dapp to transfer tokens on your behalf. Once you have done that, you can
-deposit liquidity into the Balancer pool and passively gain `BAL`.
+deposit `yUSD` and `USDC` into the Balancer pool in exchange for some Balancer
+Pool Tokens (i.e. `BPT`) specific to this pool.
 
-## Help
-
-If you have any questions regarding this process, please don't hesitate to reach
-out to us on [Discord](https://discord.umaproject.org/).
+This enables you to passively gain `BAL` as well as `UMA` in accordance to the
+experimental UMA liquidity mining program. If you have any questions regarding
+this process, please don't hesitate to reach out on
+[Discord](https://discord.umaproject.org/).
