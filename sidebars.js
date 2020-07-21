@@ -13,11 +13,7 @@ module.exports = {
       {
         type: "category",
         label: "Minting Tokens",
-        items: [
-          "tutorials/mint-locally",
-          "tutorials/mint-etherscan",
-          "tutorials/mint-emp-tools",
-        ],
+        items: ["tutorials/mint-locally", "tutorials/mint-etherscan"],
       },
       "tutorials/cli-tool",
       {
@@ -31,6 +27,7 @@ module.exports = {
         items: ["tutorials/voting-uma", "tutorials/voting-2key"],
       },
       "tutorials/dvm-integration",
+      "tutorials/mint-emp-tools",
     ],
   },
   protocol: {
