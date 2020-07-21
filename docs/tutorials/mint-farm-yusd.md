@@ -1,6 +1,6 @@
 ---
-title: Mint and Farm yUSD via EMP Tools
-sidebar_label: With EMP Tools
+title: Mint and Farm yUSD
+sidebar_label: Mint and Farm yUSD
 ---
 
 Minting yUSD tokens is easy with the [EMP Tools](http://tools.umaproject.org/),
