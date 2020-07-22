@@ -10,6 +10,7 @@ module.exports = {
   tutorials: {
     Tutorials: [
       "tutorials/setup",
+      "tutorials/mint-farm-yusd",
       {
         type: "category",
         label: "Minting Tokens",
