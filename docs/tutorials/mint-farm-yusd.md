@@ -3,14 +3,14 @@ title: Mint yUSD tokens
 sidebar_label: Mint yUSD tokens
 ---
 
-This tutorial will show you how to mint `yUSD` tokens via the experimental UMA
-liquidity mining program (insert link to program). It's a simple process and
+This tutorial will show you how to mint `yUSD` tokens. It's a simple process and
 should take you no longer than a few minutes (subject to network congestion).
 
 ## Using the EMP Tools UI
 
 Minting yUSD tokens is easy with the [EMP Tools](http://tools.umaproject.org/),
-the UI for ExpiringMultiParty contracts (EMP).
+UMA's UI for ExpiringMultiParty contracts (EMP) which is what the yUSD token is
+minted from.
 
 Navigate to http://tools.umaproject.org/ and click the "Connect" button at the
 top right corner to connect your MetaMask wallet to the dapp.
