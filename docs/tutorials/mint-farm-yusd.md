@@ -66,7 +66,11 @@ If these values are appropriate, you can then click the "Create" button which
 will trigger a transaction with MetaMask. Once that is confirmed and the
 transaction is mined, you shall have your `yUSD` tokens!
 
-## Questions?
+## What now?
+
+Once you have some `yUSD`, you can place them into the `yUSD/USDC` Balancer Pool
+[here](https://pools.balancer.exchange/#/pool/0x58EF3abAB72c6C365D4D0D8a70039752b9f32Bc9)
+for some `BAL` rewards.
 
 If you have any questions regarding this process, please don't hesitate to reach
 out on [Discord](https://discord.umaproject.org/).
