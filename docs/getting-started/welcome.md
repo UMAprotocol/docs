@@ -4,7 +4,7 @@ sidebar_label: Welcome to UMA
 ---
 
 :::note yUSD has launched
-Learn how to mint and farm `yUSD` with this [tutorial](tutorials/mint-farm-yusd).
+Learn how to mint `yUSD` with this [tutorial](tutorials/mint-farm-yusd).
 :::
 
 UMA builds open-source infrastructure for “priceless” financial contracts on Ethereum. Specifically, this is two things:
