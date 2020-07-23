@@ -68,9 +68,8 @@ transaction is mined, you shall have your `yUSD` tokens!
 
 ## What now?
 
-Once you have some `yUSD`, you can place them into the `yUSD/USDC` Balancer Pool
-[here](https://pools.balancer.exchange/#/pool/0x58EF3abAB72c6C365D4D0D8a70039752b9f32Bc9)
-for some `BAL` rewards.
+Once you have some `yUSD`, you can trade them on Balancer
+[here](https://balancer.exchange/#/swap/0x81ab848898b5ffd3354dbbefb333d5d183eedcb5/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48).
 
 If you have any questions regarding this process, please don't hesitate to reach
 out on [Discord](https://discord.umaproject.org/).
