@@ -14,7 +14,6 @@ minutes (subject to network congestion).
 - [CoinGecko listing for `yUSD-SEP20`](https://www.coingecko.com/en/coins/yusd-synthetic-token-expiring-1-september-2020)
 - [Balancer Pool for `yUSD/USDC`](https://pools.balancer.exchange/#/pool/0x58EF3abAB72c6C365D4D0D8a70039752b9f32Bc9)
 
-
 ## Step 1: Mint yUSD
 
 Minting yUSD tokens is easy with the [EMP Tools](http://tools.umaproject.org/),
