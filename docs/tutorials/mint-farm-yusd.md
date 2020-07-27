@@ -76,6 +76,15 @@ transaction is mined, you shall have your `yUSD` tokens!
 
 ## Step 2: Farm on Balancer
 
+:::danger
+
+Supplying _only_ `USDC` to the pool is very dangeorus and is not recommended,
+because you are essentially buying `yUSD` on the open market. You should avoid
+this because `yUSD` will be worth $1 by the time of expiry and you will lose
+money if you are buying `yUSD` above $1.
+
+:::
+
 By supplying liquidity to the `yUSD/USDC` Balancer pool, you have the
 opportunity to earn both `BAL` and `UMA` tokens. The `UMA` token distribution is
 governed by the experimental UMA liquidity mining program.
