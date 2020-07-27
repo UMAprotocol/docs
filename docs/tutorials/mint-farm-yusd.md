@@ -5,8 +5,8 @@ sidebar_label: Mint and Farm yUSD
 
 This tutorial will show you how to mint `yUSD` and farm them on a Balancer pool
 to get `BAL` and also `UMA` tokens via the experimental UMA liquidity mining
-program (insert link to program). It's a simple two-step process and should take
-you no longer than a few minutes (subject to network congestion).
+program. It's a simple two-step process and should take you no longer than a few
+minutes (subject to network congestion).
 
 ## Step 1: Mint yUSD
 
@@ -70,9 +70,14 @@ transaction is mined, you shall have your `yUSD` tokens!
 
 ## Step 2: Farm on Balancer
 
-Head to the `yUSD/USDC` [pool](https://pools.balancer.exchange/#/pool/0x58EF3abAB72c6C365D4D0D8a70039752b9f32Bc9) and click on
-the "Add Liquidity" button. You’ll be asked to Setup Proxy if you haven’t
-already
+By supplying liquidity to the `yUSD/USDC` Balancer pool, you have the
+opportunity to earn both `BAL` and `UMA` tokens. The `UMA` token distribution is
+governed by the experimental UMA liquidity mining program.
+
+Head to the `yUSD/USDC`
+[pool](https://pools.balancer.exchange/#/pool/0x58EF3abAB72c6C365D4D0D8a70039752b9f32Bc9)
+and click on the "Add Liquidity" button. You’ll be asked to Setup Proxy if you
+haven’t already
 
 ![add liquidity button on balancer](/docs/tutorials/bal_add-liquidity.png)
 
