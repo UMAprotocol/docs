@@ -62,6 +62,11 @@ module.exports = {
     ],
   },
   community: {
-    Community: ["community/press", "community/blog-posts", "community/events"],
+    Community: [
+      "community/press",
+      "community/blog-posts",
+      "community/events",
+      "community/liquidation-opportunity-program",
+    ],
   },
 };
