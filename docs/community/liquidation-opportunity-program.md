@@ -69,7 +69,7 @@ run it locally on your machine.
 
 ## Can I liquidate manually?
 
-Yes you can, and here's an explanation of the broad steps to do so.
+Yes you can, and here are the broad steps to do so.
 
 1. Approve `WETH` (the EMP needs to be able to spend the final fee amount of
    collateral, which is 0.1 `WETH`).
@@ -88,9 +88,11 @@ Yes you can, and here's an explanation of the broad steps to do so.
    );
    ```
 
+Some explanation of the above:
+
 - You will liquidate `liquidationPrice * tokensToLiquidate` collateral from a
   position, where
-  `liquidationPrice = (tokensToLiquidate)/(allTokensInPosition)`.
+  `liquidationPrice = tokensToLiquidate / allTokensInPosition`.
 
 - The reason why there is both a `liquidationMinPrice` and `liquidationMaxPrice`
   is to prevent someone from front-running your liquidation transaction.
