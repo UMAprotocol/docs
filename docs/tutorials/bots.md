@@ -415,4 +415,4 @@ These configurations can be added to the config in the same way the `crThreshold
 
 ## Bot configuration parameters
 
-For a more detaild document on bot spesific parameters see [this](tutorials/bot-parm.md) doc.
+For a more detailed document on bot-specific parameters see this [doc](tutorials/bot-param.md).
