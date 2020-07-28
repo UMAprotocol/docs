@@ -57,11 +57,11 @@ Note that `libudev-dev`, `linux-headers-generic`, and `libusb-1.0-0` may have di
 If you are not using Linux (or if you have installed the above), you can run the following to continue:
 
 ```bash
-## Clone the repo and navigate into the protocol directory
+# Clone the repo and navigate into the protocol directory
 git clone https://github.com/UMAprotocol/protocol.git
 cd ./protocol
 
-## Install dependencies
+# Install dependencies
 yarn
 
 ## Navigate into the core directory & compile contracts
@@ -89,7 +89,7 @@ To generate a new mnemonic you can run the following from the `/core` directory:
 
 ```bash
 node -e "console.log(require('bip39').generateMnemonic())"
-## your mnemonic should print here
+# your mnemonic should print here
 ```
 
 You can then load this mnemonic into truffle and view the associated address.
@@ -99,27 +99,17 @@ To do this, set the mnemonic as an environment variable by running:
 ## Add the new mnemonic to your environment variables. Be sure to replace with your mnemonic.
 export MNEMONIC="sail chuckle school attitude symptom tenant fragile patch ring immense main rapid"
 
-## Start the truffle console
+# Start the truffle console
 npx truffle console --network kovan_mnemonic
 
-## Print the address of your newly created account
+# Print the address of your newly created account
 truffle(kovan_mnemonic)> accounts[0]
 
-## should print: `0x45Bc98b00adB0dFe16c85c391B1854B706b7d612`
+# should print: `0x45Bc98b00adB0dFe16c85c391B1854B706b7d612`
 ```
 
 You can now fund this wallet with the associated currency for the type of bot you want to run.
 To learn more about creating synthetic tokens to fund your liquidation bot see [this](tutorials/cli-tool.md) tutorial.
-
-### Creating a price feed API key
-
-All bots require a price feed to inform their liquidation decisions.
-The easiest price feed to integrate with is [CryptoWatch](https://cryptowat.ch/). To create an API Key do the following:
-
-1. Create an account [here](https://cryptowat.ch/account/create).
-2. Generate an API key [here](https://cryptowat.ch/account/api-access).
-
-Keep this key handy. You'll need it when configuring the bots.
 
 ## Running the liquidator and disputer bots locally
 
@@ -134,7 +124,6 @@ To set this up create a `.env` file in the `/core` directory of the repo it:
 POLLING_DELAY=30000
 EMP_ADDRESS=0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1
 MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
-PRICE_FEED_CONFIG={"type":"medianizer","apiKey":"YOUR_API_KEY","pair":"ethbtc","lookback":7200,"minTimeBetweenUpdates":60,"medianizedFeeds":[{"type":"cryptowatch","exchange":"coinbase-pro"},{"type":"cryptowatch","exchange":"binance"},{"type":"cryptowatch","exchange":"bitstamp"}]}
 ```
 
 The parameters above, as well as other optional parameters are explained in the appendix of this tutorial. **Be sure to add in your mnemonic and your crypto watch API key.** The parameter in the example above conform to [UMIP-2](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-2.md#implementation)'s specification.
@@ -248,11 +237,11 @@ These scripts will contain all the settings for a given bot, as well as the star
 Start by copying the `.env` you created to make two new env files. This section assumes you are in the `/core` directory. Run the following commands:
 
 ```bash
-## Copy the contents of the .env and add command to run the liquidator bot.
+# Copy the contents of the .env and add command to run the liquidator bot.
 cp .env liquidator.env
 echo '\nCOMMAND=npx truffle exec ../liquidator/index.js --network kovan_mnemonic' >> liquidator.env
 
-## Do the same for the disputer bots
+# Do the same for the disputer bots
 cp .env disputer.env
 echo '\nCOMMAND=npx truffle exec ../disputer/index.js --network kovan_mnemonic' >> disputer.env
 ```
@@ -265,13 +254,13 @@ These commands are the same as before.
 Next, we will start the Docker containers in detached mode on our local machine. To do this run the following:
 
 ```bash
-## Pull the latest docker container image
+# Pull the latest docker container image
 docker pull umaprotocol/protocol:latest
 
-## Start the liquidator bot Docker container
+# Start the liquidator bot Docker container
 docker run --name liquidator-bot -d --env-file ./liquidator.env umaprotocol/protocol:latest
 
-## Start the disputer bot Docker container
+# Start the disputer bot Docker container
 docker run --name disputer-bot -d --env-file ./disputer.env umaprotocol/protocol:latest
 ```
 
@@ -400,10 +389,10 @@ Update your environment configuration `EMP_ADDRESS` to refer to the mainnet addr
 This is as simple as changing your `COMMAND` to the following for the liquidator and disputer bots respectively.
 
 ```bash
-## liquidator.env update
+# liquidator.env update
 COMMAND=npx truffle exec ../liquidator/index.js --network mainnet_mnemonic
 
-## disputer.env update
+# disputer.env update
 COMMAND=npx truffle exec ../disputer/index.js --network mainnet_mnemonic
 ```
 
@@ -426,26 +415,4 @@ These configurations can be added to the config in the same way the `crThreshold
 
 ## Appendix: Bot configuration parameters
 
-This tutorial touched on the key configuration parameters available when running an UMA liquidation or dispute bot.
-There are a few more configuration options available. The section below describes the parameter input in this tutorial as well as the optional extra parameters that can be included when running a bot.
-
-- `POLLING_DELAY`**[required]**: how long the bot should wait (in milliseconds) before running a polling cycle.
-- `EMP_ADDRESS`**[required]**: address of the deployed expiring multi party contract on the given network you want to connect to. This config defines the synthetic that the bot will be liquidating.
-- `MNEMONIC`**[required]**: defines the wallet for the bots to use. Generated beforehand or in the steps outlined in key generation.
-- `PRICE_FEED_CONFIG`**[required]**: configuration object used to parameterize the bot's price feed. It's broken down as follows:
-  - `type` specifies the configuration of the price feed. The `medianizer` provides the median of the price of the identifier over a set of different exchanges.
-  - `apiKey` is the key generated in API key section of the Prerequisites section above.
-  - `pair` defines the crypto pair whose price is being fetched as defined in CryptoWatch. Ex: `ethbtc`.
-  - `lookback` defines a window size, in seconds, over which historical prices will be made available by the price feed. This parameter should be set to be at least as large as the liquidation liveness period of the EMP contract.
-  - `minTimeBetweenUpdates` minimum number of seconds between updates. If update is called more frequently, no new price data will be fetched.
-  - `medianizedFeeds` is an array of type `priceFeed` that defines the feeds overwhich the medianizer will take the median of. Each of these have their own components which are defined as:
-    - `type` Each instance of the medianizer is also a type. This could be a `medianizer`, `uniswap` or `cryptowatch` depending on the configuration of the bot. The sample bot is using only `cryptowatch` price feeds to compute the median.
-    - `exchange` a string identifier for the exchange to pull prices from. This should be the identifier used to identify the exchange in CW's REST API.
-- `COMMAND`**[required]**: initial entry point the bot uses when it starts running.
-- `LIQUIDATOR_CONFIG` [optional]: enables the override of specific bot settings. See [Specifying liquidation sensitivity parameters](#specifying-liquidation-sensitivity-parameters).
-- `ENVIRONMENT`[optional]: when set to `production`, will pipe logs to GCP stackdriver.
-- `SLACK_WEBHOOK`[optional]: can be included to send messages to a slack channel.
-- `PAGERDUTY_API_KEY`[optional]: if you want to configure your bot to send pager duty messages(sms, phone calls, or emails) when they crash or have `error` level logs you'll need an API key here.
-- `PAGERDUTY_SERVICE_ID`[optional]: each Pagerduty service has an unique id. This goes here.
-- `PAGERDUTY_FROM_EMAIL`[optional] each Pagerduty service also requires a `from email` to uniquely identify the logger.
-- `INFURA_API_KEY`[optional]: override the default Infura key used by the bot.
+For a more detaild document on bot spesific parameters see [this](./bot-parm.md) doc.
