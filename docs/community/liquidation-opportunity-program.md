@@ -79,15 +79,15 @@ Yes you can, and here are the broad steps to do so.
    collateral, which is 0.1 `WETH`).
 2. Approve `yUSD` (the EMP needs to be able to spend your `yUSD` to liquidate
    positions).
-3. Liquidate specified amount of yUSD from a position:
+3. Liquidate specified amount of `yUSD` from a position:
 
    ```js
    // using an Ethers.js contract instance
    const liquidation = empContract.createLiquidation(
      sponsorAddress,
-     { rawValue: liquidationMinPrice },
-     { rawValue: liquidationMaxPrice },
-     { rawValue: tokensToLiquidate },
+     { rawValue: minCollateralPerToken },
+     { rawValue: maxCollateralPerToken },
+     { rawValue: maxTokensToLiquidate },
      deadlineTimestamp
    );
    ```
