@@ -66,3 +66,44 @@ docker run --name liquidator-bot -d --env-file ./example.env umaprotocol/protoco
 When you are familiar with using the Docker image, you can deploy the Docker
 image on any cloud service provider of your choice, or alternatively you could
 run it locally on your machine.
+
+## Can I liquidate manually?
+
+Yes you can, and here's an explanation of the broad steps to do so.
+
+1. Approve `WETH` (the EMP needs to be able to spend the final fee amount of
+   collateral, which is 0.1 `WETH`).
+2. Approve `yUSD` (the EMP needs to be able to spend your `yUSD` to liquidate
+   positions).
+3. Liquidate specified amount of yUSD from a position:
+
+   ```js
+   // using an Ethers.js contract instance
+   const liquidation = empContract.createLiquidation(
+     sponsorAddress,
+     { rawValue: liquidationMinPrice },
+     { rawValue: liquidationMaxPrice },
+     { rawValue: tokensToLiquidate },
+     deadlineTimestamp
+   );
+   ```
+
+- You will liquidate `liquidationPrice * tokensToLiquidate` collateral from a
+  position, where
+  `liquidationPrice = (tokensToLiquidate)/(allTokensInPosition)`.
+
+- The reason why there is both a `liquidationMinPrice` and `liquidationMaxPrice`
+  is to prevent someone from front-running your liquidation transaction.
+
+- The `maxPrice` prevents someone from front-running you with a Deposit
+  transaction and adding more collateral to the position (which would make the
+  position correctly collateralized and cause you to have falsely liquidated a
+  now-correctly collateralized position).
+
+- The `minPrice` prevents someone from front-running you with a Redeem
+  transaction and removing collateral from the contract. They would do this so
+  that when they are liquidated they lose fewer collateral.
+
+- The `liquidationDeadline` is a timestamp after which the liquidation will
+  revert. This is used to make sure that a liquidation doesn’t hang forever and
+  unintentionally allow front-running.
