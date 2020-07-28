@@ -49,18 +49,22 @@ the [tutorial](tutorials/bots.md) for appropriate values.
 ```shell title="example.env"
 EMP_ADDRESS=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5
 PRIVATE_KEY=f7caade2b9eec8fc83aa70e4b43f480d0ca78b7060737ead2669d095f2035323
-COMMAND=npx truffle exec ../liquidator/index.js --network kovan_mnemonic
+COMMAND=npx truffle exec ../liquidator/index.js --network mainnet_privatekey
 ```
 
 Once you have a properly configured `.env` file, use the following commands to
 pull the Docker image and run a container with your specified configuration.
 
 ```shell
-## Pull the latest docker container image
+# Pull the latest docker container image
 docker pull umaprotocol/protocol:latest
 
-## Start the liquidator bot Docker container
+# Start the liquidator bot Docker container
 docker run --name liquidator-bot -d --env-file ./example.env umaprotocol/protocol:latest
+# *your container hash should print here*
+
+# List logs from running bot:
+docker logs *your container hash*
 ```
 
 When you are familiar with using the Docker image, you can deploy the Docker
