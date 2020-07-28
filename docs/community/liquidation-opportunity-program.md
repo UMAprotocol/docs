@@ -47,11 +47,9 @@ bot. Please edit the following example with your own values. You can reference
 the [tutorial](tutorials/bots.md) for appropriate values.
 
 ```shell title="example.env"
-POLLING_DELAY=30000
 EMP_ADDRESS=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5
+PRIVATE_KEY=f7caade2b9eec8fc83aa70e4b43f480d0ca78b7060737ead2669d095f2035323
 COMMAND=npx truffle exec ../liquidator/index.js --network kovan_mnemonic
-MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
-PRICE_FEED_CONFIG={"type":"medianizer","apiKey":"YOUR_API_KEY","pair":"ethbtc","lookback":7200,"minTimeBetweenUpdates":60,"medianizedFeeds":[{"type":"cryptowatch","exchange":"coinbase-pro"},{"type":"cryptowatch","exchange":"binance"},{"type":"cryptowatch","exchange":"bitstamp"}]}
 ```
 
 Once you have a properly configured `.env` file, use the following commands to
@@ -68,3 +66,46 @@ docker run --name liquidator-bot -d --env-file ./example.env umaprotocol/protoco
 When you are familiar with using the Docker image, you can deploy the Docker
 image on any cloud service provider of your choice, or alternatively you could
 run it locally on your machine.
+
+## Can I liquidate manually?
+
+Yes you can, and here are the broad steps to do so.
+
+1. Approve `WETH` (the EMP needs to be able to spend the final fee amount of
+   collateral, which is 0.1 `WETH`).
+2. Approve `yUSD` (the EMP needs to be able to spend your `yUSD` to liquidate
+   positions).
+3. Liquidate specified amount of yUSD from a position:
+
+   ```js
+   // using an Ethers.js contract instance
+   const liquidation = empContract.createLiquidation(
+     sponsorAddress,
+     { rawValue: liquidationMinPrice },
+     { rawValue: liquidationMaxPrice },
+     { rawValue: tokensToLiquidate },
+     deadlineTimestamp
+   );
+   ```
+
+Some explanation of the above:
+
+- You will liquidate `liquidationPrice * tokensToLiquidate` collateral from a
+  position, where
+  `liquidationPrice = tokensToLiquidate / allTokensInPosition`.
+
+- The reason why there is both a `liquidationMinPrice` and `liquidationMaxPrice`
+  is to prevent someone from front-running your liquidation transaction.
+
+- The `maxPrice` prevents someone from front-running you with a Deposit
+  transaction and adding more collateral to the position (which would make the
+  position correctly collateralized and cause you to have falsely liquidated a
+  now-correctly collateralized position).
+
+- The `minPrice` prevents someone from front-running you with a Redeem
+  transaction and removing collateral from the contract. They would do this so
+  that when they are liquidated they lose fewer collateral.
+
+- The `liquidationDeadline` is a timestamp after which the liquidation will
+  revert. This is used to make sure that a liquidation doesn’t hang forever and
+  unintentionally allow front-running.

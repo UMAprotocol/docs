@@ -413,6 +413,6 @@ This configuration object has additional options including:
 
 These configurations can be added to the config in the same way the `crThreshold` was added (i.e. as part of the JSON object in the same line).
 
-## Appendix: Bot configuration parameters
+## Bot configuration parameters
 
-For a more detaild document on bot spesific parameters see [this](./bot-parm.md) doc.
+For a more detailed document on bot-specific parameters see this [doc](tutorials/bot-param.md).
