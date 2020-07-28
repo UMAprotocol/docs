@@ -47,7 +47,6 @@ bot. Please edit the following example with your own values. You can reference
 the [tutorial](tutorials/bots.md) for appropriate values.
 
 ```shell title="example.env"
-POLLING_DELAY=30
 EMP_ADDRESS=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5
 PRIVATE_KEY=f7caade2b9eec8fc83aa70e4b43f480d0ca78b7060737ead2669d095f2035323
 COMMAND=npx truffle exec ../liquidator/index.js --network kovan_mnemonic
