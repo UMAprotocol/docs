@@ -48,7 +48,7 @@ the [tutorial](tutorials/bots.md) for appropriate values.
 
 ```shell title="example.env"
 EMP_ADDRESS=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5
-PRIVATE_KEY=f7caade2b9eec8fc83aa70e4b43f480d0ca78b7060737ead2669d095f2035323
+PRIVATE_KEY=0xf7cbade2b9eec8fc83aa70e4b43f480d0ca78b7060737ead2669d095f2035322
 COMMAND=npx truffle exec ../liquidator/index.js --network mainnet_privatekey
 ```
 
@@ -64,7 +64,7 @@ docker run --name liquidator-bot -d --env-file ./example.env umaprotocol/protoco
 # *your container hash should print here*
 
 # List logs from running bot:
-docker logs *your container hash*
+docker logs <your container hash>
 ```
 
 When you are familiar with using the Docker image, you can deploy the Docker
@@ -79,36 +79,38 @@ Yes you can, and here are the broad steps to do so.
    collateral, which is 0.1 `WETH`).
 2. Approve `yUSD` (the EMP needs to be able to spend your `yUSD` to liquidate
    positions).
-3. Liquidate specified amount of yUSD from a position:
+3. Liquidate specified amount of `yUSD` from a position:
 
    ```js
    // using an Ethers.js contract instance
    const liquidation = empContract.createLiquidation(
      sponsorAddress,
-     { rawValue: liquidationMinPrice },
-     { rawValue: liquidationMaxPrice },
+     { rawValue: minCollateralPerToken },
+     { rawValue: maxCollateralPerToken },
      { rawValue: tokensToLiquidate },
      deadlineTimestamp
    );
    ```
 
-Some explanation of the above:
+Some context and explanation of the above:
 
-- You will liquidate `liquidationPrice * tokensToLiquidate` collateral from a
-  position, where
-  `liquidationPrice = tokensToLiquidate / allTokensInPosition`.
+- The collateral **per token** to be liquidated is calculated by:
 
-- The reason why there is both a `liquidationMinPrice` and `liquidationMaxPrice`
-  is to prevent someone from front-running your liquidation transaction.
+  ```
+  (tokenPercentage * totalPositionCollateral) / totalPositionCollateral
+  ```
 
-- The `maxPrice` prevents someone from front-running you with a Deposit
-  transaction and adding more collateral to the position (which would make the
-  position correctly collateralized and cause you to have falsely liquidated a
-  now-correctly collateralized position).
+  where `tokenPercentage = tokensToLiquidate / totalPositionTokens`.
 
-- The `minPrice` prevents someone from front-running you with a Redeem
-  transaction and removing collateral from the contract. They would do this so
-  that when they are liquidated they lose fewer collateral.
+- `minCollateralPerToken` and `maxCollateralPerToken` exists to take into
+  account the case where the amount of collateral in a position can potentially
+  change between when you submit the transaction and when it actually gets
+  mined.
+
+  - This can happen if someone tries to front-run your transaction either by
+    depositing more collateral (causing you to have falsely liquidated someone)
+    or withdrawing collateral (to decrease the profitability of the
+    liquidation).
 
 - The `liquidationDeadline` is a timestamp after which the liquidation will
   revert. This is used to make sure that a liquidation doesn’t hang forever and
