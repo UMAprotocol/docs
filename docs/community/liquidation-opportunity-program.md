@@ -94,9 +94,13 @@ Yes you can, and here are the broad steps to do so.
 
 Some context and explanation of the above:
 
-- The collateral to be liquidated is calculated by
-  `tokenPercentage * totalPositionCollateral` where
-  `tokenPercentage = tokensToLiquidate / totalPositionTokens`.
+- The collateral **per token** to be liquidated is calculated by:
+
+  ```
+  (tokenPercentage * totalPositionCollateral) / totalPositionCollateral
+  ```
+
+  where `tokenPercentage = tokensToLiquidate / totalPositionTokens`.
 
 - `minCollateralPerToken` and `maxCollateralPerToken` exists to take into
   account the case where the amount of collateral in a position can potentially
