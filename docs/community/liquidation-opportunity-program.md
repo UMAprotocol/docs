@@ -11,7 +11,7 @@ appropriately collateralized.
 ## When is the next opportunity?
 
 On July 31st, Risk Labs will intentionally create an under-collateralized
-position, creating an on-chain profit opportunity of approximately $1,000 for
+position, creating an on-chain profit opportunity of approximately \$1,000 for
 any liquidator bot to take.
 
 ## What do I need to liquidate a position?
@@ -92,26 +92,30 @@ Yes you can, and here are the broad steps to do so.
    );
    ```
 
-Some context and explanation of the above:
+- `tokensToLiquidate` indicates how much of the synthetic token you want to use
+  to liquidate the position with.
 
-- The collateral **per token** to be liquidated is calculated by:
-
-  ```
-  (tokenPercentage * totalPositionCollateral) / totalPositionCollateral
-  ```
-
-  where `tokenPercentage = tokensToLiquidate / totalPositionTokens`.
-
-- `minCollateralPerToken` and `maxCollateralPerToken` exists to take into
-  account the case where the amount of collateral in a position can potentially
-  change between when you submit the transaction and when it actually gets
-  mined.
-
-  - This can happen if someone tries to front-run your transaction either by
-    depositing more collateral (causing you to have falsely liquidated someone)
-    or withdrawing collateral (to decrease the profitability of the
-    liquidation).
-
-- The `liquidationDeadline` is a timestamp after which the liquidation will
-  revert. This is used to make sure that a liquidation doesn’t hang forever and
+- `liquidationDeadline` is a timestamp after which the liquidation will revert.
+  This is used to make sure that a liquidation doesn’t hang forever and
   unintentionally allow front-running.
+
+- `minCollateralPerToken` and `maxCollateralPerToken` requires a bit more
+  explanation.
+
+  The collateralization ratio must remain the same before and after liquidation,
+  therefore:
+
+  ```
+  collateralLiquidated / tokensToLiquidate =  totalPositionCollateral / totalPositionTokens
+  ```
+
+  The left side of this equality can be called `collateralPerToken`, and you can
+  set the acceptable bounds of this value with `minCollateralPerToken` and
+  `maxCollateralPerToken`.
+
+  These values help you take into account the case where the amount of
+  collateral in a position can potentially change between when you submit the
+  transaction and when it actually gets mined. This can happen if someone tries
+  to front-run your transaction either by depositing more collateral (causing
+  you to have falsely liquidated someone) or withdrawing collateral (to decrease
+  the profitability of the liquidation).
