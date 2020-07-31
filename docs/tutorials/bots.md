@@ -64,7 +64,7 @@ cd ./protocol
 # Install dependencies
 yarn
 
-## Navigate into the core directory & compile contracts
+# Navigate into the core directory & compile contracts
 cd ./core
 npx truffle compile
 ```
@@ -96,7 +96,7 @@ You can then load this mnemonic into truffle and view the associated address.
 To do this, set the mnemonic as an environment variable by running:
 
 ```bash
-## Add the new mnemonic to your environment variables. Be sure to replace with your mnemonic.
+# Add the new mnemonic to your environment variables. Be sure to replace with your mnemonic.
 export MNEMONIC="sail chuckle school attitude symptom tenant fragile patch ring immense main rapid"
 
 # Start the truffle console
@@ -121,7 +121,6 @@ Liquidation bots require 4 main configurations settings which are configured usi
 To set this up create a `.env` file in the `/core` directory of the repo it:
 
 ```bash
-POLLING_DELAY=30000
 EMP_ADDRESS=0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1
 MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
 ```
@@ -147,10 +146,9 @@ Using network 'kovan_mnemonic'.
   "at": "Liquidator#index",
   "message": "liquidator started 🕵️‍♂️",
   "empAddress": "0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1",
-  "pollingDelay": "30000",
+  "pollingDelay": "60",
   "priceFeedConfig": {
     "type": "medianizer",
-    "apiKey": "YOUR_API_KEY",
     "pair": "ethbtc",
     "lookback": 7200,
     "minTimeBetweenUpdates": 60,
@@ -186,10 +184,9 @@ You should see the following output:
   "at": "Disputer#index",
   "message": "Disputer started 🔎",
   "empAddress": "0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1",
-  "pollingDelay": "30000",
+  "pollingDelay": "60",
   "priceFeedConfig": {
     "type": "medianizer",
-    "apiKey": "YOUR_API_KEY",
     "pair": "ethbtc",
     "lookback": 7200,
     "minTimeBetweenUpdates": 60,
