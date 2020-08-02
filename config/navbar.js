@@ -4,7 +4,7 @@ module.exports = {
     alt: "UMA Logo",
     src: "img/UMA_square_red_logo.png",
   },
-  links: [
+  items: [
     {
       to: "/",
       label: "Getting Started",
