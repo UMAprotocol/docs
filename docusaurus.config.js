@@ -18,8 +18,20 @@ module.exports = {
       theme: require("prism-react-renderer/themes/nightOwl"),
     },
     algolia: {
-      apiKey: 'b3a7b837d4e8ce1e75898ddd39885c19',
-      indexName: 'umaproject',
+      apiKey: "b3a7b837d4e8ce1e75898ddd39885c19",
+      indexName: "umaproject",
+    },
+    colorMode: {
+      switchConfig: {
+        darkIcon: "🌙",
+        darkIconStyle: {
+          marginLeft: "2px",
+        },
+        lightIcon: "☀️",
+        lightIconStyle: {
+          marginLeft: "1px",
+        },
+      },
     },
   },
   stylesheets: ["https://use.typekit.net/jll8euv.css"],
