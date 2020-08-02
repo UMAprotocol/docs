@@ -25,7 +25,7 @@ Rewards range from $500 to $25,000.
 All rewards will be paid in ETH, and the amount of compensation will vary depending on severity.
 The severity is calculated according to the [OWASP](https://owasp.org/www-project-risk-assessment-framework/) risk rating model based on Impact and Likelihood.
 
-![](severity.png)
+![](./severity.png)
 
 ## Scope
 
