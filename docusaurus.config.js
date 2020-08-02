@@ -26,10 +26,12 @@ module.exports = {
         darkIcon: "🌙",
         darkIconStyle: {
           marginLeft: "2px",
+          marginTop: "1px",
         },
         lightIcon: "☀️",
         lightIconStyle: {
-          marginLeft: "1px",
+          marginLeft: "3px",
+          marginTop: "0.5px",
         },
       },
     },
