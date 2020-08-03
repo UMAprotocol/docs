@@ -147,7 +147,7 @@ await emp.deposit({ rawValue: web3.utils.toWei("10") })
 ```
 
 2. For a token sponsor to withdraw collateral from his position, there are typically 2 ways to do this.
-   Read this [explainer](../explainer.md) for more information.
+   Read this [explainer](synthetic-tokens/explainer.md) for more information.
    In this scenario, because we are the only token sponsor, we will have to withdraw collateral the “slow” way. First, we need to request a withdrawal of 10 collateral tokens.
 
 ```js
