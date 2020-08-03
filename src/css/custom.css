@@ -96,3 +96,11 @@ a.menu__link:not([href]) {
   font-family: 'halyard-display', sans-serif;
   font-weight: 600;
 }
+
+.admonition.admonition-note.alert.alert--secondary code {
+  background-color: #c4c4c4;
+}
+
+html[data-theme='dark'] .admonition.admonition-note.alert.alert--secondary code {
+  background-color: var(--ifm-code-background);
+}
