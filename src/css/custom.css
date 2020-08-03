@@ -92,22 +92,15 @@ html[data-theme=dark] .header-discord-link:before {
   padding-right: calc(var(--ifm-navbar-item-padding-horizontal) / 2);
 }
 
-.react-toggle {
-  margin-left: calc(var(--ifm-navbar-item-padding-horizontal) / 2);
-}
-
-.react-toggle-track-check>span::before {
-  content: '\1F319';
-  margin-top: 1px;
-  margin-left: 2px;
-}
-.react-toggle-track-x>span::before {
-  content: '\2600';
-  color: #ffd557;
-  margin-left: 1px;
-}
-
 a.menu__link:not([href]) {
   font-family: 'halyard-display', sans-serif;
   font-weight: 600;
+}
+
+.admonition.admonition-note.alert.alert--secondary code {
+  background-color: #c4c4c4;
+}
+
+html[data-theme='dark'] .admonition.admonition-note.alert.alert--secondary code {
+  background-color: var(--ifm-code-background);
 }
