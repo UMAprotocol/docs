@@ -10,7 +10,7 @@ appropriately collateralized.
 
 ## When is the next opportunity?
 
-On July 31st, Risk Labs will intentionally create an under-collateralized
+On Friday, August 14th at 11:30am Pacific Time (i.e. San Francisco time), Risk Labs will intentionally create an under-collateralized
 position, creating an on-chain profit opportunity of approximately \$1,000 for
 any liquidator bot to take.
 
