@@ -19,8 +19,9 @@ module.exports = {
     },
     {
       label: "The Protocol",
+      to: "synthetic-tokens/explainer",
       position: "left",
-      activeBaseRegex: "(synthetic-tokens|oracle/|governance/)",
+      activeBaseRegex: "(synthetic-tokens|oracle|governance)",
       items: [
         {
           to: "synthetic-tokens/explainer",
