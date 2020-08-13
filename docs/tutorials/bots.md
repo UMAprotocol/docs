@@ -3,6 +3,40 @@ title: Liquidation and Dispute Bots
 sidebar_label: Running Bots
 ---
 
+## Quick Start: Liquidator Bot
+
+This section is intended for those who are familiar with Docker and just want to
+get up and running. We strongly suggest you read the entirety of this article to
+learn more about the bot ecosystem which also includes a dispute bot as well as
+a monitoring bot.
+
+First, create a file to set the appropriate configuration for your liquidation
+bot. Please edit the following example with your own values.
+
+```shell title="example.env"
+EMP_ADDRESS=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5
+PRIVATE_KEY=0xf7cbade2b9eec8fc83aa70e4b43f480d0ca78b7060737ead2669d095f2035322
+COMMAND=npx truffle exec ../liquidator/index.js --network mainnet_privatekey
+```
+
+Once you have a properly configured `.env` file, use the following commands to
+pull the Docker image and run a container with your specified configuration.
+
+```shell
+# Pull the latest docker container image
+docker pull umaprotocol/protocol:latest
+
+# Start the liquidator bot Docker container
+docker run --name liquidator-bot -d --env-file ./example.env umaprotocol/protocol:latest
+# *your container hash should print here*
+
+# List logs from running bot:
+docker logs <your container hash>
+```
+
+Your liquidation bot should now be running, please read on to find out about how
+it works and how to [configure](tutorials/bot-param.md) it.
+
 ## Motivation
 
 The prompt and accurate execution of liquidations and disputes is a core assumption to all priceless financial contracts compatible with the UMA DVM.
@@ -110,34 +144,6 @@ truffle(kovan_mnemonic)> accounts[0]
 
 You can now fund this wallet with the associated currency for the type of bot you want to run.
 To learn more about creating synthetic tokens to fund your liquidation bot see [this](tutorials/cli-tool.md) tutorial.
-
-## Quick start
-
-First, create a file to set the appropriate configuration for your liquidation
-bot. Please edit the following example with your own values.
-
-```shell title="example.env"
-EMP_ADDRESS=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5
-PRIVATE_KEY=0xf7cbade2b9eec8fc83aa70e4b43f480d0ca78b7060737ead2669d095f2035322
-COMMAND=npx truffle exec ../liquidator/index.js --network mainnet_privatekey
-```
-
-Once you have a properly configured `.env` file, use the following commands to
-pull the Docker image and run a container with your specified configuration.
-
-```shell
-# Pull the latest docker container image
-docker pull umaprotocol/protocol:latest
-
-# Start the liquidator bot Docker container
-docker run --name liquidator-bot -d --env-file ./example.env umaprotocol/protocol:latest
-# *your container hash should print here*
-
-# List logs from running bot:
-docker logs <your container hash>
-```
-
-When you are familiar with this, you can choose to dive in deeper in the following section or just simply deploy the Docker image on any cloud service provider of your choice, or alternatively you could run it locally on your machine.
 
 ## Running the liquidator and disputer bots locally
 
