@@ -141,7 +141,7 @@ When you are familiar with this, you can choose to dive in deeper in the followi
 
 ## Running the liquidator and disputer bots locally
 
-This tutorial start with running the liquidator and disputer bots locally from your machine without docker or any complex execution environment. This is meant to be the simplest way posable to start up a bot.
+This section describes running the liquidator and disputer bots locally from your machine without docker or any complex execution environment. This is meant to be the simplest way possible to start up a bot.
 
 **a) Configuring environment**
 To start a bot the first step is to configure the bot's settings.
