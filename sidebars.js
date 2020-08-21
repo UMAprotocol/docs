@@ -57,7 +57,7 @@ module.exports = {
         type: "link",
         label: "Contracts (Github)",
         href:
-          "https://github.com/UMAprotocol/protocol/tree/master/core/contracts",
+          "https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts",
       },
     ],
   },
