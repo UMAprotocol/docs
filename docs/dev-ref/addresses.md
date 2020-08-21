@@ -17,9 +17,9 @@ These contracts are used by the DVM to keep track of which financial contracts d
 
 ## Contract Addresses
 
-- [Mainnet (network id: 1)](https://github.com/UMAprotocol/protocol/blob/master/core/networks/1.json)
-- [Rinkeby (network id: 4)](https://github.com/UMAprotocol/protocol/blob/master/core/networks/4.json)
-- [Kovan (network id: 42)](https://github.com/UMAprotocol/protocol/blob/master/core/networks/42.json)
+- [Mainnet (network id: 1)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/1.json)
+- [Rinkeby (network id: 4)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/4.json)
+- [Kovan (network id: 42)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/42.json)
 
 # Deployed Synthetic Tokens
 
