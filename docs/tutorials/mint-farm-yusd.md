@@ -10,9 +10,9 @@ minutes (subject to network congestion).
 
 ### Useful Links
 
-- [EMP Tools link for `yUSD-SEP20`](https://tools.umaproject.org/?address=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5)
-- [CoinGecko listing for `yUSD-SEP20`](https://www.coingecko.com/en/coins/yusd-synthetic-token-expiring-1-september-2020)
-- [Balancer Pool for `yUSD/USDC`](https://pools.balancer.exchange/#/pool/0x58EF3abAB72c6C365D4D0D8a70039752b9f32Bc9)
+- [EMP Tools link for `yUSD-OCT20`](https://tools.umaproject.org/?address=0xE1Ee8D4C5dBA1c221840c08f6Cf42154435B9D52)
+- [CoinGecko listing for `yUSD-OCT20`](https://www.coingecko.com/en/coins/yusd-synthetic-token-expiring-1-october-2020)
+- [Balancer Pool for `yUSD/USDC`](https://pools.balancer.exchange/#/pool/0xee3223583c1723bb8694c309ada39bab252231ee)
 
 ## Step 1: Mint yUSD
 
