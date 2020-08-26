@@ -16,7 +16,7 @@ bot. Please edit the following example with your own values.
 ```shell title="example.env"
 EMP_ADDRESS=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5
 PRIVATE_KEY=0xf7cbade2b9eec8fc83aa70e4b43f480d0ca78b7060737ead2669d095f2035322
-COMMAND=npx truffle exec ../liquidator/index.js --network mainnet_privatekey
+COMMAND=npx truffle exec ./packages/liquidator/index.js --network mainnet_privatekey
 ```
 
 Once you have a properly configured `.env` file, use the following commands to
@@ -168,7 +168,7 @@ Note that the `EMP_ADDRESS` above currently refers to the ETHBTC synthetic token
 Now that your env is set up you can run the bot. Run the following command from the `core` directory to start the bots on Kovan:
 
 ```bash
-npx truffle exec ../liquidator/index.js --network kovan_mnemonic
+npx truffle exec ./packages/liquidator/index.js --network kovan_mnemonic
 ```
 
 This will start the liquidator bot process using the network `kovan` and the wallet `mnemonic`. You should see the following output:
@@ -208,7 +208,7 @@ Using network 'kovan_mnemonic'.
 In a separate terminal you can start a disputer bot using the same config by running:
 
 ```bash
-npx truffle exec ../disputer/index.js --network kovan_mnemonic
+npx truffle exec ./packages/disputer/index.js --network kovan_mnemonic
 ```
 
 You should see the following output:
@@ -270,11 +270,11 @@ Start by copying the `.env` you created to make two new env files. This section 
 ```bash
 # Copy the contents of the .env and add command to run the liquidator bot.
 cp .env liquidator.env
-echo '\nCOMMAND=npx truffle exec ../liquidator/index.js --network kovan_mnemonic' >> liquidator.env
+echo '\nCOMMAND=npx truffle exec ./packages/liquidator/index.js --network kovan_mnemonic' >> liquidator.env
 
 # Do the same for the disputer bots
 cp .env disputer.env
-echo '\nCOMMAND=npx truffle exec ../disputer/index.js --network kovan_mnemonic' >> disputer.env
+echo '\nCOMMAND=npx truffle exec ./packages/disputer/index.js --network kovan_mnemonic' >> disputer.env
 ```
 
 You should now have two config files `liquidator.env` and `disputer.env` within the `/core` directory which contain the original configs defined in the previous section along with a `COMMAND` line which defines the execution command of the bot.
@@ -421,10 +421,10 @@ This is as simple as changing your `COMMAND` to the following for the liquidator
 
 ```bash
 # liquidator.env update
-COMMAND=npx truffle exec ../liquidator/index.js --network mainnet_mnemonic
+COMMAND=npx truffle exec ./packages/liquidator/index.js --network mainnet_mnemonic
 
 # disputer.env update
-COMMAND=npx truffle exec ../disputer/index.js --network mainnet_mnemonic
+COMMAND=npx truffle exec ./packages/disputer/index.js --network mainnet_mnemonic
 ```
 
 ## Specifying liquidation sensitivity parameters
