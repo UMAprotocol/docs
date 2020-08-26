@@ -28,7 +28,7 @@ Before beginning this tutorial, please make sure your environment is set up corr
 
 - Have the protocol repo cloned.
 - Be running an instance of Ganache on port 9545.
-- Have run truffle compilation for the contracts in `core/`.
+- Have run truffle compilation for the contracts in `packages/core` or have run `npx lerna run build`.
 
 There is just one more additional step before the tutorial can begin. At the project root, symlink the CLI to your global directory. There are 2 ways to do this. Either run
 
@@ -46,17 +46,17 @@ You may need to prefix these commands (`sudo npm link`) to run them.
 
 ## Launching the CLI tool
 
-1. Navigate to the `/core` folder: `cd core`
+1. Navigate to the `packages/core` folder: `cd packages/core`
 2. If on Kovan testnet, apply network addresses:
 
 ```bash
-npx apply-registry
+yarn load-addresse
 ```
 
 3. Migrate the contracts:
 
 ```bash
-npx truffle migrate --reset --network=test
+yarn truffle migrate --reset --network=test
 ```
 
 4. Deploy a contract to create priceless synthetic tokens named “BTCUSD”.
@@ -71,7 +71,7 @@ npx truffle migrate --reset --network=test
    this iteration of the CLI.
 
 ```bash
-npx truffle exec scripts/local/DeployEMP.js --network=test --test=true
+yarn truffle exec scripts/local/DeployEMP.js --network=test --test=true
 ```
 
 This is the output you should see (the numbers might be slightly different):
@@ -149,7 +149,7 @@ Because time does not advance automatically on your local blockchain with Ganach
 Running this script like so will advance time by 120 minutes.
 
 ```bash
-npx truffle exec scripts/local/AdvanceEMP.js --network=test
+yarn truffle exec scripts/local/AdvanceEMP.js --network=test
 ```
 
 Return to the Sponsor CLI tool with the following command.
@@ -195,7 +195,7 @@ Note that your summary indicates that there is a “Pending transfer request”.
 Because time does not advance automatically on your local blockchain with Ganache, you should exit the Sponsor CLI tool and advance time manually with the following command:
 
 ```bash
-npx truffle exec scripts/local/AdvanceEMP.js --network=test
+yarn truffle exec scripts/local/AdvanceEMP.js --network=test
 ```
 
 Return to the Sponsor CLI tool with the following command:

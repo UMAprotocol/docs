@@ -48,7 +48,7 @@ You can run a liquidator bot by simply providing the EMP address of the contract
 EMP_ADDRESS=0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1
 MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
 # Be sure to replace with your mnemonic.
-COMMAND=npx truffle exec ./packages/liquidator/index.js --network kovan_mnemonic
+COMMAND=yarn truffle exec ./packages/liquidator/index.js --network kovan_mnemonic
 ```
 
 ### Possible liquidator config options
@@ -74,7 +74,7 @@ You can run a disputer bot by simply providing the EMP address of the contract y
 EMP_ADDRESS=0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1
 MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
 # Be sure to replace with your mnemonic.
-COMMAND=npx truffle exec ./packages/disputer/index.js --network kovan_mnemonic
+COMMAND=yarn truffle exec ./packages/disputer/index.js --network kovan_mnemonic
 ```
 
 ### Possible disputer config options
@@ -100,7 +100,7 @@ The config below will start up a monitor bot that will: (1) send messages when n
 ```bash
 EMP_ADDRESS=0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1
 # Be sure to replace with your mnemonic.
-COMMAND=npx truffle exec ./packages/monitors/index.js --network kovan_mnemonic
+COMMAND=yarn truffle exec ./packages/monitors/index.js --network kovan_mnemonic
 ```
 
 ### Possible monitor config options

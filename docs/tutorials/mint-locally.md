@@ -7,7 +7,7 @@ This tutorial will show you how to create synthetic tokens from the command line
 
 - Have the protocol repo cloned.
 - Be running an instance of Ganache on port 9545.
-- Have run truffle compilation for the contracts in `core/`.
+- Have run truffle compilation for the contracts in `packages/core` or have run `npx lerna run build`.
 
 Below, we’ll discuss how to create and manage a token sponsor position via the command line on a local testnet.
 UMA also has a command-line interface (CLI) tool that bundles and renames some of these steps.
@@ -21,7 +21,7 @@ UMA also has a command-line interface (CLI) tool that bundles and renames some o
 1. Open the truffle console and connect it to the test network.
 
 ```bash
-npx truffle console --network test
+yarn truffle console --network test
 ```
 
 2. Migrate the contracts within the truffle console with the migrate command:
