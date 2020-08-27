@@ -42,7 +42,7 @@ Here, we are running Ganache:
 
 This will make sure we have enough ETH and a high enough gas limit to deploy our larger contracts.
 
-If everything was setup correctly, we should be able to run automated tests from `protocol/packages/core`. In a separate terminal, run the following commands from the `protocol/packages/core` directory:
+If everything was setup correctly, we should be able to run automated tests from `protocol/packages/core`. In a separate terminal, run the following commands:
 
 ```bash
 cd packages/core
