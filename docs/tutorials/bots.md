@@ -95,10 +95,10 @@ If you are not using Linux (or if you have installed the above), you can run the
 git clone https://github.com/UMAprotocol/protocol.git
 
 # Install dependencies
-npx lerna bootstrap
+yarn
 
-Compile contracts
-npx lerna bootstrap
+# Compile contracts
+yarn qbuild
 
 ```
 
@@ -118,7 +118,7 @@ All deployment configurations require a wallet mnemonic (or private key) to be i
 You can either bring your own mnemonic from an existing wallet or generate a fresh one using the `bip39` package installed within the UMA repo.
 If you have a wallet mnemonic already you can skip this section.
 
-To generate a new mnemonic you can run the following :
+To generate a new mnemonic you can run the following:
 
 ```bash
 node -e "console.log(require('bip39').generateMnemonic())"
