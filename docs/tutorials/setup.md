@@ -14,14 +14,14 @@ Clone the UMA [repo](https://github.com/UMAprotocol/protocol). Start in the top-
 1. Install the latest stable version of [Node.js](https://nodejs.org/) and [Yarn](https://classic.yarnpkg.com/) is installed along with it.
 2. Run the following in the root of the repo to install all packages from the UMA mono repo:
 ```bash
-npx lerna bootstrap
+yarn
 ```
 
 
 We should be able to compile the smart contracts:
 
 ```bash
-npx lerna run build
+yarn qbuild
 ```
 
 If everything worked, we should see the line "> Compiled successfully using:" in the output.
