@@ -16,6 +16,7 @@ module.exports = {
         label: "Minting Tokens",
         items: ["tutorials/mint-locally", "tutorials/mint-etherscan"],
       },
+      "tutorials/redeem-tokens",
       "tutorials/cli-tool",
       {
         type: "category",
