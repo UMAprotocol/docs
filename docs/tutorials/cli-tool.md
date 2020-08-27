@@ -28,7 +28,7 @@ Before beginning this tutorial, please make sure your environment is set up corr
 
 - Have the protocol repo cloned.
 - Be running an instance of Ganache on port 9545.
-- Have run truffle compilation for the contracts in `packages/core` or have run `npx lerna run build`.
+- Have run truffle compilation for the contracts in `packages/core` or have run `npx lerna run build`. If you've run `yarn qbuild` you've done this already.
 
 There is just one more additional step before the tutorial can begin. At the project root, symlink the CLI to your global directory. There are 2 ways to do this. Either run
 
@@ -46,14 +46,7 @@ You may need to prefix these commands (`sudo npm link`) to run them.
 
 ## Launching the CLI tool
 
-1. Navigate to the `packages/core` folder: `cd packages/core`
-2. If on Kovan testnet, apply network addresses:
-
-```bash
-yarn load-addresse
-```
-
-3. Migrate the contracts:
+1. Migrate the contracts:
 
 ```bash
 yarn truffle migrate --reset --network=test
@@ -71,7 +64,7 @@ yarn truffle migrate --reset --network=test
    this iteration of the CLI.
 
 ```bash
-yarn truffle exec scripts/local/DeployEMP.js --network=test --test=true
+yarn truffle exec packages/core/scripts/local/DeployEMP.js --network=test --test=true
 ```
 
 This is the output you should see (the numbers might be slightly different):
@@ -195,7 +188,7 @@ Note that your summary indicates that there is a “Pending transfer request”.
 Because time does not advance automatically on your local blockchain with Ganache, you should exit the Sponsor CLI tool and advance time manually with the following command:
 
 ```bash
-yarn truffle exec scripts/local/AdvanceEMP.js --network=test
+yarn truffle exec packages/core/scripts/local/AdvanceEMP.js --network=test
 ```
 
 Return to the Sponsor CLI tool with the following command:

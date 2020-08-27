@@ -93,6 +93,7 @@ If you are not using Linux (or if you have installed the above), you can run the
 ```bash
 # Clone the repo and navigate into the protocol directory
 git clone https://github.com/UMAprotocol/protocol.git
+cd ./protocol
 
 # Install dependencies
 npx lerna bootstrap
