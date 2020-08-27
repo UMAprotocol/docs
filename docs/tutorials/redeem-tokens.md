@@ -1,5 +1,5 @@
 ---
-title: Redeeming Expired Tokens with EMP Tools
+title: Redeeming Expired Tokens
 sidebar_label: Redeeming Expired Tokens
 ---
 
