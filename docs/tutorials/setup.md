@@ -12,13 +12,16 @@ The following steps require the `git` CLI to be installed. If you are on Windows
 Clone the UMA [repo](https://github.com/UMAprotocol/protocol). Start in the top-level directory in this repository, `protocol/`.
 
 1. Install the latest stable version of [Node.js](https://nodejs.org/) and [Yarn](https://classic.yarnpkg.com/) is installed along with it.
-2. Run `yarn` in `protocol/`.
+2. Run the following in the root of the repo to install all packages from the UMA mono repo:
+```bash
+yarn
+```
 
-We should be able to compile the smart contracts from `protocol/core`:
+
+We should be able to compile the smart contracts:
 
 ```bash
-cd core
-npx truffle compile
+yarn qbuild
 ```
 
 If everything worked, we should see the line "> Compiled successfully using:" in the output.
@@ -39,11 +42,11 @@ Here, we are running Ganache:
 
 This will make sure we have enough ETH and a high enough gas limit to deploy our larger contracts.
 
-If everything was setup correctly, we should be able to run automated tests from `protocol/core`. In a separate terminal, run the following commands from the `protocol/core` directory:
+If everything was setup correctly, we should be able to run automated tests from `protocol/packages/core`. In a separate terminal, run the following commands:
 
 ```bash
-cd core
-npx truffle test --network test
+cd packages/core
+yarn truffle test --network test
 ```
 
 These tests will take a while to finish, but if set up correctly, all tests should pass (with the possible exception of a few that depend on the Intrinio API).
@@ -60,7 +63,7 @@ Public networks include the Ethereum mainnet and any public testnets, like Rinke
 these networks, you'll generally need to know:
 
 1. Which public network you intend to use.
-   A list of UMA supported networks is available [here](https://github.com/UMAprotocol/protocol/blob/master/common/PublicNetworks.js).
+   A list of UMA supported networks is available [here](https://github.com/UMAprotocol/protocol/blob/master/packages/common/src/PublicNetworks.js).
 
 2. What private key you want to use and how your private keys are stored.
    Below is information regarding the two types of keys that are supported, mnemonics/seed phrases and hardware wallets.
@@ -68,7 +71,7 @@ these networks, you'll generally need to know:
 The `--network` parameter that's passed to all truffle commands depends on both of these factors. Here's an example:
 
 ```bash
-npx truffle console --network rinkeby_mnemonic
+yarn truffle console --network rinkeby_mnemonic
 ```
 
 That command will tell truffle that the user wants to use the Rinkeby testnet and their private key is a mnemonic, or
@@ -94,7 +97,7 @@ Once you've done that you're ready to run a truffle command. When using a mnemon
 like `--network [NETWORK_NAME]_mnemonic`. So, for example, using a mnemonic on Kovan would look like:
 
 ```bash
-npx truffle console --network kovan_mnemonic
+yarn truffle console --network kovan_mnemonic
 ```
 
 ### Hardware wallets (more secure)
@@ -122,7 +125,7 @@ For example, you could connect your ledger wallet to the truffle console and beg
 with the following command:
 
 ```bash
-npx truffle console --network mainnet_ledger
+yarn truffle console --network mainnet_ledger
 ```
 
 Note: outgoing transactions will require manual approval on the ledger device. If you fail to approve, the command will

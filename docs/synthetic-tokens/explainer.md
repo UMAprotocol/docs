@@ -137,4 +137,4 @@ Here are some additional resources to better understand how the priceless synthe
 
 - [Blog post](https://medium.com/uma-project/priceless-synthetic-tokens-f28e6452c18b)
 - [Twitter thread](https://twitter.com/UMAprotocol/status/1242891550872535042?s=20)
-- [Github implementation](https://github.com/UMAprotocol/protocol/tree/master/core/contracts/financial-templates/expiring-multiparty)
+- [Github implementation](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/financial-templates/expiring-multiparty)

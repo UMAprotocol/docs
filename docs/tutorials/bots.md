@@ -16,7 +16,7 @@ bot. Please edit the following example with your own values.
 ```shell title="example.env"
 EMP_ADDRESS=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5
 PRIVATE_KEY=0xf7cbade2b9eec8fc83aa70e4b43f480d0ca78b7060737ead2669d095f2035322
-COMMAND=npx truffle exec ../liquidator/index.js --network mainnet_privatekey
+COMMAND=yarn truffle exec ./packages/liquidator/index.js --network mainnet_privatekey
 ```
 
 Once you have a properly configured `.env` file, use the following commands to
@@ -40,8 +40,8 @@ it works and how to [configure](tutorials/bot-param.md) it.
 ## Motivation
 
 The prompt and accurate execution of liquidations and disputes is a core assumption to all priceless financial contracts compatible with the UMA DVM.
-Liquidation and dispute bots, as described below and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/liquidator) and [here](https://github.com/UMAprotocol/protocol/tree/master/disputer), are infrastructure tools that will help maintain the overall health of the UMA ecosystem.
-They are currently compatible with the priceless synthetic token contract template, as described [here](synthetic-tokens/explainer.md) and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/core/contracts/financial-templates).
+Liquidation and dispute bots, as described below and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/packages/liquidator) and [here](https://github.com/UMAprotocol/protocol/tree/master/packages/disputer), are infrastructure tools that will help maintain the overall health of the UMA ecosystem.
+They are currently compatible with the priceless synthetic token contract template, as described [here](synthetic-tokens/explainer.md) and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/financial-templates).
 
 ### Liquidation vs Dispute Bot
 
@@ -98,12 +98,12 @@ cd ./protocol
 # Install dependencies
 yarn
 
-# Navigate into the core directory & compile contracts
-cd ./core
-npx truffle compile
+# Compile contracts
+yarn qbuild
+
 ```
 
-If you have any issues executing `npx truffle <command>` you can try running `$(npm bin)/truffle <command>`. If you have Truffle globally installed you should be able to run `truffle <command>` without npx or `$(npm bin)` but it may not be the same version specified in the project.
+If you have any issues executing `yarn truffle <command>` you can try running `$(npm bin)/truffle <command>`. If you have Truffle globally installed you should be able to run `truffle <command>` without npx or `$(npm bin)` but it may not be the same version specified in the project. The liquidator and disputer scripts can also be run directly as node processes by replacing the `yarn truffle exec <path>` commands with `node <path>`.
 
 ### Funding accounts
 
@@ -119,7 +119,7 @@ All deployment configurations require a wallet mnemonic (or private key) to be i
 You can either bring your own mnemonic from an existing wallet or generate a fresh one using the `bip39` package installed within the UMA repo.
 If you have a wallet mnemonic already you can skip this section.
 
-To generate a new mnemonic you can run the following from the `/core` directory:
+To generate a new mnemonic you can run the following:
 
 ```bash
 node -e "console.log(require('bip39').generateMnemonic())"
@@ -134,7 +134,7 @@ To do this, set the mnemonic as an environment variable by running:
 export MNEMONIC="sail chuckle school attitude symptom tenant fragile patch ring immense main rapid"
 
 # Start the truffle console
-npx truffle console --network kovan_mnemonic
+yarn truffle console --network kovan_mnemonic
 
 # Print the address of your newly created account
 truffle(kovan_mnemonic)> accounts[0]
@@ -152,7 +152,7 @@ This section describes running the liquidator and disputer bots locally from you
 **a) Configuring environment**
 To start a bot the first step is to configure the bot's settings.
 Liquidation bots require 4 main configurations settings which are configured using environment variables.
-To set this up create a `.env` file in the `/core` directory of the repo it:
+To set this up create a `.env` file in the root directory directory:
 
 ```bash
 EMP_ADDRESS=0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1
@@ -165,10 +165,10 @@ Note that the `EMP_ADDRESS` above currently refers to the ETHBTC synthetic token
 
 **b) Starting the bots**
 
-Now that your env is set up you can run the bot. Run the following command from the `core` directory to start the bots on Kovan:
+Now that your env is set up you can run the bot. Run the following command from the root directory to start the bots on Kovan:
 
 ```bash
-npx truffle exec ../liquidator/index.js --network kovan_mnemonic
+yarn truffle exec ./packages/liquidator/index.js --network kovan_mnemonic
 ```
 
 This will start the liquidator bot process using the network `kovan` and the wallet `mnemonic`. You should see the following output:
@@ -208,7 +208,7 @@ Using network 'kovan_mnemonic'.
 In a separate terminal you can start a disputer bot using the same config by running:
 
 ```bash
-npx truffle exec ../disputer/index.js --network kovan_mnemonic
+yarn truffle exec ./packages/disputer/index.js --network kovan_mnemonic
 ```
 
 You should see the following output:
@@ -265,19 +265,19 @@ In the previous section, both the liquidator and disputer bots used the same `.e
 In this section, we will create separate configuration files for each bot.
 These scripts will contain all the settings for a given bot, as well as the starting command used to boot the bot.
 
-Start by copying the `.env` you created to make two new env files. This section assumes you are in the `/core` directory. Run the following commands:
+Start by copying the `.env` you created to make two new env files. This section assumes you are in the root directory directory. Run the following commands:
 
 ```bash
 # Copy the contents of the .env and add command to run the liquidator bot.
 cp .env liquidator.env
-echo '\nCOMMAND=npx truffle exec ../liquidator/index.js --network kovan_mnemonic' >> liquidator.env
+echo '\nCOMMAND=yarn truffle exec ./packages/liquidator/index.js --network kovan_mnemonic' >> liquidator.env
 
 # Do the same for the disputer bots
 cp .env disputer.env
-echo '\nCOMMAND=npx truffle exec ../disputer/index.js --network kovan_mnemonic' >> disputer.env
+echo '\nCOMMAND=yarn truffle exec ./packages/disputer/index.js --network kovan_mnemonic' >> disputer.env
 ```
 
-You should now have two config files `liquidator.env` and `disputer.env` within the `/core` directory which contain the original configs defined in the previous section along with a `COMMAND` line which defines the execution command of the bot.
+You should now have two config files `liquidator.env` and `disputer.env` within the root directory which contain the original configs defined in the previous section along with a `COMMAND` line which defines the execution command of the bot.
 These commands are the same as before.
 
 **c) Starting the Docker containers**
@@ -346,7 +346,7 @@ gcloud config list account --format "value(core.account)"
 
 To deploy the bots to GCP we use the `compute instances create-with-container` CLI function which will create a new compute instance within your GCP Compute engine.
 This instance will boot up and run a Docker container on execution.
-From the core directory, where `liquidator.env` and `disputer.env` configs are located, you can run the following to deploy bots to GCP:
+From the root directory, where `liquidator.env` and `disputer.env` configs are located, you can run the following to deploy bots to GCP:
 
 ```bash
 gcloud compute instances create-with-container ethbtc-liquidator-kovan \
@@ -421,10 +421,10 @@ This is as simple as changing your `COMMAND` to the following for the liquidator
 
 ```bash
 # liquidator.env update
-COMMAND=npx truffle exec ../liquidator/index.js --network mainnet_mnemonic
+COMMAND=yarn truffle exec ./packages/liquidator/index.js --network mainnet_mnemonic
 
 # disputer.env update
-COMMAND=npx truffle exec ../disputer/index.js --network mainnet_mnemonic
+COMMAND=yarn truffle exec ./packages/disputer/index.js --network mainnet_mnemonic
 ```
 
 ## Specifying liquidation sensitivity parameters
