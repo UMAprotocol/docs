@@ -36,10 +36,10 @@ Details on these two fees are available [here](oracle/econ-architecture.md#step-
 yarn truffle migrate --reset --network test
 ```
 
-3. To deploy the `DepositBox` contract and go through a simple user flow, run the following script from the `packages/core` directory:
+1. To deploy the `DepositBox` contract and go through a simple user flow, run the following script from the root of the repo:
 
 ```bash
-yarn truffle exec ./scripts/demo/DepositBox.js --network test
+yarn truffle exec ./packages/core/scripts/demo/DepositBox.js --network test
 ```
 
 You should see the following output:
