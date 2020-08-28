@@ -28,7 +28,7 @@ Before beginning this tutorial, please make sure your environment is set up corr
 
 - Have the protocol repo cloned.
 - Be running an instance of Ganache on port 9545.
-- Have run truffle compilation for the contracts in `packages/core` or have run `npx lerna run build`. If you've run `yarn qbuild` you've done this already.
+- Have run truffle compilation for the contracts in `packages/core`. If you've run `yarn qbuild` you've done this already.
 
 There is just one more additional step before the tutorial can begin. At the project root, symlink the CLI to your global directory. There are 2 ways to do this. Either run
 
