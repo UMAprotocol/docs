@@ -12,7 +12,7 @@ minutes (subject to network congestion).
 
 - [EMP Tools link for `yUSD-OCT20`](https://tools.umaproject.org/?address=0xE1Ee8D4C5dBA1c221840c08f6Cf42154435B9D52)
 - [CoinGecko listing for `yUSD-OCT20`](https://www.coingecko.com/en/coins/yusd-synthetic-token-expiring-1-october-2020)
-- [Balancer Pool for `yUSD/USDC`](https://pools.balancer.exchange/#/pool/0xee3223583c1723bb8694c309ada39bab252231ee)
+- [Balancer Pool for `yUSD/USDC`](https://pools.balancer.exchange/#/pool/0xd2f574637898526fcddfb3d487cc73c957fa0268/)
 
 ## Step 1: Mint yUSD
 
@@ -90,7 +90,7 @@ opportunity to earn both `BAL` and `UMA` tokens. The `UMA` token distribution is
 governed by the experimental UMA liquidity mining program.
 
 Head to the `yUSD/USDC`
-[pool](https://pools.balancer.exchange/#/pool/0x58EF3abAB72c6C365D4D0D8a70039752b9f32Bc9)
+[pool](https://pools.balancer.exchange/#/pool/0xd2f574637898526fcddfb3d487cc73c957fa0268/)
 and click on the "Add Liquidity" button. You’ll be asked to Setup Proxy if you
 haven’t already
 
