@@ -43,7 +43,6 @@ module.exports = {
       {
         docs: {
           routeBasePath: "/",
-          homePageId: "getting-started/welcome",
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateTime: true,
           editUrl: "https://github.com/UMAProtocol/docs/edit/master/",

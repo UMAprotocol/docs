@@ -5,13 +5,14 @@
   "scripts": {
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "serve": "docusaurus serve",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.61",
-    "@docusaurus/plugin-client-redirects": "^2.0.0-alpha.61",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.61",
+    "@docusaurus/core": "^2.0.0-alpha.62",
+    "@docusaurus/plugin-client-redirects": "^2.0.0-alpha.62",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.62",
     "clsx": "^1.1.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"

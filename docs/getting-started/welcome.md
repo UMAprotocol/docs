@@ -1,6 +1,7 @@
 ---
 title: Welcome to UMA
 sidebar_label: Welcome to UMA
+slug: /
 ---
 
 :::note yUSD has launched
