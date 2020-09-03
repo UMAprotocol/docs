@@ -29,7 +29,7 @@ Navigate to https://bridge.renproject.io/ and click the `Connect` button at the 
 
 ![connect](https://github.com/henrystats/docs/blob/master/static/img/renBTC%20guide%20pic%201.png)
 
-Then enter the amount of bitcoin you would like to wrap into renBTC,
+Enter the amount of bitcoin you would like to wrap into renBTC,
 
 ![amount](https://github.com/henrystats/docs/blob/master/static/img/renBTC%20guide%202.png)
 
