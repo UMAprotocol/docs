@@ -45,7 +45,8 @@ The liquidation bot monitors all open positions within a given expiring multi-pa
 You can run a liquidator bot by simply providing the EMP address of the contract you want to monitor and a mnemonic with an associated private key that the bot should use. Minimal Docker `.env` is as follows:
 
 ```bash
-EMP_ADDRESS=0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1
+# yUSD-SEP20 contract on Kovan
+EMP_ADDRESS=0x834adA34847ff7b9442cF269E0DE3091DC7BB895
 MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
 # Be sure to replace with your mnemonic.
 COMMAND=yarn truffle exec ./packages/liquidator/index.js --network kovan_mnemonic
@@ -71,7 +72,8 @@ A liquidation is invalid if a position was correctly collateralized at the time 
 You can run a disputer bot by simply providing the EMP address of the contract you want to monitor and a mnemonic with an associated private key that the bot should use. Minimal Docker `.env` is as follows:
 
 ```bash
-EMP_ADDRESS=0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1
+# yUSD-SEP20 contract on Kovan
+EMP_ADDRESS=0x834adA34847ff7b9442cF269E0DE3091DC7BB895
 MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
 # Be sure to replace with your mnemonic.
 COMMAND=yarn truffle exec ./packages/disputer/index.js --network kovan_mnemonic
@@ -98,7 +100,8 @@ The monitor bots are used to monitor the UMA ecosystem for key events. They have
 The config below will start up a monitor bot that will: (1) send messages when new liquidations, alerts, or disputes occur and (2) fire if there is large volatility in the synthetic or price of the underlying. It wont report on any wallet or CR monitoring as no params have been defined.
 
 ```bash
-EMP_ADDRESS=0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1
+# yUSD-SEP20 contract on Kovan
+EMP_ADDRESS=0x834adA34847ff7b9442cF269E0DE3091DC7BB895
 # Be sure to replace with your mnemonic.
 COMMAND=yarn truffle exec ./packages/monitors/index.js --network kovan_mnemonic
 ```
