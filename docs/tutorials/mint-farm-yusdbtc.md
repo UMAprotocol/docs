@@ -122,7 +122,7 @@ By supplying liquidity to the `yUSD/USDC` Balancer pool, you have the
 opportunity to earn `BAL`, `REN` and `UMA` tokens. The `UMA` token distribution
 is governed by the experimental UMA liquidity mining program.
 
-[INSERT LINK TO RENBTC LIQUIDITY MINING PROGRAM BLOG POST]
+[INSERT LINK TO RENBTC LIQUIDITY MINING PROGRAM BLOG POST]()
 
 Head to the `yUSD/USDC` [pool]() and click on the "Add Liquidity" button. You’ll
 be asked to Setup Proxy if you haven’t already
