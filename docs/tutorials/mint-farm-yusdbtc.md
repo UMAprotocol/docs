@@ -27,15 +27,15 @@ Wrapping BTC into renBTC is possible using [RenBridge](https://bridge.renproject
 
 Navigate to https://bridge.renproject.io/ and click the `Connect` button at the top right corner to connect your MetaMask wallet to the dapp.
 
-![connect](https://github.com/henrystats/docs/blob/master/static/img/renBTC%20guide%20pic%201.png)
+![connect](static/docs/tutorials/renbtc_connectmetamask.png)
 
 Enter the amount of bitcoin you would like to wrap into renBTC,
 
-![amount](https://github.com/henrystats/docs/blob/master/static/img/renBTC%20guide%202.png)
+![amount](static/docs/tutorials/renBTC_enteramount.png)
 
 then, click `Next` 
 
-![next](https://github.com/henrystats/docs/blob/master/static/img/renBTC%20guide%204.png)
+![next](static/docs/tutorials/renBTC_next.png)
 
 then click `confirm`. Before doing this, make sure you verify all the details in the modal.
 
@@ -47,11 +47,11 @@ Also check the cost (`RenVM fee`, `Bitcoin Network fee`) and the amount of renBT
 
 Once you have done all of this, you can then go ahead and click `confirm`.
 
-![confirm](https://github.com/henrystats/docs/blob/master/static/img/renBTC%20guide%203.png)
+![confirm](static/docs/tutorials/renBTC_confirm.png)
 
 A one-time deposit address is generated for you to send your BTC to. Send the exact amount of BTC you are wrapping to that address, in a single transaction.
 
-![deposit](https://github.com/henrystats/docs/blob/master/static/img/Screenshot%20(142).png)
+![deposit](static/docs/tutorials/renBTC_deposit.png)
 
 * Your transaction requires 6confirmations(can take up to 1hour) before renBTC is sent to your wallet 
 * You will need to accept & sign the transaction that sends renBTC to your wallet.
