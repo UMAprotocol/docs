@@ -8,9 +8,9 @@ This tutorial will show you how to leverage your `BTC` holdings to earn `BAL`,
 
 ### Useful Links
 
-- [EMP Tools link for `yUSDBTC-NOV20`]()
-- [CoinGecko listing for `yUSDBTC-NOV20`]()
-- [Balancer Pool for `yUSDBTC-NOV20/USDC`]()
+- [EMP Tools link for `yUSDBTC-NOV20`](https://tools.umaproject.org/)
+- [CoinGecko listing for `yUSDBTC-NOV20`](https://tools.umaproject.org/)
+- [Balancer Pool for `yUSDBTC-NOV20/USDC`](https://tools.umaproject.org/)
 - [RenBridge Project](https://bridge.renproject.io/)
 
 This is a three-part process:
@@ -122,7 +122,7 @@ By supplying liquidity to the `yUSD/USDC` Balancer pool, you have the
 opportunity to earn `BAL`, `REN` and `UMA` tokens. The `UMA` token distribution
 is governed by the experimental UMA liquidity mining program.
 
-[INSERT LINK TO RENBTC LIQUIDITY MINING PROGRAM BLOG POST]()
+[INSERT LINK TO RENBTC LIQUIDITY MINING PROGRAM BLOG POST](https://tools.umaproject.org/)
 
 Head to the `yUSD/USDC` [pool]() and click on the "Add Liquidity" button. You’ll
 be asked to Setup Proxy if you haven’t already
