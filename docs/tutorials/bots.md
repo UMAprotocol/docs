@@ -14,7 +14,7 @@ First, create a file to set the appropriate configuration for your liquidation
 bot. Please edit the following example with your own values.
 
 ```shell title="example.env"
-EMP_ADDRESS=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5
+EMP_ADDRESS=0xFb70A4CBD537B36e647553C279a93E969b041DF0
 PRIVATE_KEY=0xf7cbade2b9eec8fc83aa70e4b43f480d0ca78b7060737ead2669d095f2035322
 COMMAND=yarn truffle exec ./packages/liquidator/index.js --network mainnet_privatekey
 ```
@@ -179,11 +179,11 @@ Using network 'kovan_mnemonic'.
 2020-05-22 08:39:42 [info]: {
   "at": "Liquidator#index",
   "message": "liquidator started 🕵️‍♂️",
-  "empAddress": "0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1",
+  "empAddress": "0xFb70A4CBD537B36e647553C279a93E969b041DF0",
   "pollingDelay": "60",
   "priceFeedConfig": {
     "type": "medianizer",
-    "pair": "ethbtc",
+    "pair": "usdeth",
     "lookback": 7200,
     "minTimeBetweenUpdates": 60,
     "medianizedFeeds": [
@@ -197,7 +197,7 @@ Using network 'kovan_mnemonic'.
       },
       {
         "type": "cryptowatch",
-        "exchange": "bitstamp"
+        "exchange": "kraken"
       }
     ]
   },
@@ -217,7 +217,7 @@ You should see the following output:
 2020-05-22 08:37:10 [info]: {
   "at": "Disputer#index",
   "message": "Disputer started 🔎",
-  "empAddress": "0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1",
+  "empAddress": "0xFb70A4CBD537B36e647553C279a93E969b041DF0",
   "pollingDelay": "60",
   "priceFeedConfig": {
     "type": "medianizer",
@@ -235,7 +235,7 @@ You should see the following output:
       },
       {
         "type": "cryptowatch",
-        "exchange": "bitstamp"
+        "exchange": "kraken"
       }
     ]
   },
