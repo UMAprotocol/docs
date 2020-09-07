@@ -8,7 +8,7 @@ This tutorial will show you how to leverage your `BTC` holdings to earn `BAL`,
 
 ### Useful Links
 
-- [EMP Tools link for `uUSDrBTC-OCT20`](https://tools.umaproject.org/)
+- [EMP Tools link for `uUSDrBTC-OCT20`](https://tools.umaproject.org/?address=0xc0b19570370478EDE5F2e922c5D31FAf1D5f90EA)
 - [CoinGecko listing for `uUSDrBTC-OCT20`](https://www.coingecko.com/en/coins/uusdrbtc-synthetic-token-expiring-1-october-2020)
 - [Balancer Pool for `uUSDrBTC-OCT20/USDC`](https://pools.balancer.exchange/#/pool/0x7aa7305838d858f7089f86fc136d0816baacb0d8/)
 - [RenBridge Project](https://bridge.renproject.io/)
@@ -72,11 +72,11 @@ top right corner to connect your MetaMask wallet to the dapp.
 Then, select the `uUSDrBTC` contract from the dropdown immediately underneath the
 header (above the tabs).
 
-![select EMP](/docs/tutorials/emp_select.png)
+![select EMP](/docs/tutorials/uUSD_selectemp.png)
 
 Select the "Manage Position" tab.
 
-![manage position tab](/docs/tutorials/emp_manage-position.png)
+![manage position tab](/docs/tutorials/uUSD_manage-positionemp.png)
 
 Scroll down to the "Actions" dropdown and ensure that "Create" is selected.
 
@@ -96,7 +96,7 @@ If you fully understand the above, and have decided on an appropriate amount of
 (1) collateral to supply and (2) tokens to mint, check to make sure you have
 enough collateral for minting.
 
-![token minting form](/docs/tutorials/emp_form.png)
+![token minting form](/docs/tutorials/uUSD_mintingform.png)
 
 In the first field, fill in the amount of collateral you want to supply.
 
@@ -126,7 +126,7 @@ is governed by the experimental [UMA liquidity mining program](https://medium.co
 Head to the `uUSDrBTC/USDC` [pool](https://pools.balancer.exchange/#/pool/0x7aa7305838d858f7089f86fc136d0816baacb0d8/) and click on the "Add Liquidity" button. You’ll
 be asked to Setup Proxy if you haven’t already
 
-![add liquidity button on balancer](/docs/tutorials/bal_add-liquidity.png)
+![add liquidity button on balancer](/docs/tutorials/uUSD_addliquiditybal.png)
 
 Once the proxy is setup, the "Add Liquidity" button will show you a form for
 adding liquidity.
