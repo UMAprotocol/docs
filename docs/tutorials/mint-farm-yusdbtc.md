@@ -27,7 +27,7 @@ Wrapping BTC into renBTC is possible using [RenBridge](https://bridge.renproject
 
 Navigate to https://bridge.renproject.io/ and click the `Connect` button at the top right corner to connect your MetaMask wallet to the dapp.
 
-![connect](static/docs/tutorials/renbtc_connectmetamask.png)
+![connect](static/docs/tutorials/renBTC_connect.png)
 
 Enter the amount of bitcoin you would like to wrap into renBTC,
 
