@@ -18,7 +18,7 @@ This is a three-part process:
 1. First you will wrap your `BTC` into `renBTC` so that it is usable on the
    Ethereum blockchain.
 2. Then you can use `renBTC` to mint `uUSDrBTC` tokens on the UMA protocol.
-3. Depositing `yUSD` into a Balancer pool will give you the ability to earn
+3. Depositing `uUSDrBTC` into a Balancer pool will give you the ability to earn
    `BAL`, `REN`, and `UMA` tokens.
 
 ## Step 1: Wrapping BTC into renBTC
