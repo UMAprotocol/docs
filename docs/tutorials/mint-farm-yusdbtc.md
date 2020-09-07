@@ -120,9 +120,8 @@ money if you are buying `uUSDrBTC` above $1.
 
 By supplying liquidity to the `uUSDrBTC/USDC` Balancer pool, you have the
 opportunity to earn `BAL`, `REN` and `UMA` tokens. The `UMA` token distribution
-is governed by the experimental UMA liquidity mining program.
+is governed by the experimental [UMA liquidity mining program](https://medium.com/uma-project/uma-announcing-the-yield-dollar-on-renbtc-440a1ed0c5d5).
 
-[INSERT LINK TO RENBTC LIQUIDITY MINING PROGRAM BLOG POST](https://tools.umaproject.org/)
 
 Head to the `uUSDrBTC/USDC` [pool](https://pools.balancer.exchange/#/pool/0x7aa7305838d858f7089f86fc136d0816baacb0d8/) and click on the "Add Liquidity" button. You’ll
 be asked to Setup Proxy if you haven’t already
