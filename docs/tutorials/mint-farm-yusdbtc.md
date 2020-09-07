@@ -1,6 +1,6 @@
 ---
-title: Mint and Farm yUSDBTC
-sidebar_label: Mint and Farm yUSDBTC
+title: Mint and Farm uUSDrBTC
+sidebar_label: Mint and Farm uUSDrBTC
 ---
 
 This tutorial will show you how to leverage your `BTC` holdings to earn `BAL`,
@@ -8,16 +8,16 @@ This tutorial will show you how to leverage your `BTC` holdings to earn `BAL`,
 
 ### Useful Links
 
-- [EMP Tools link for `yUSDBTC-NOV20`](https://tools.umaproject.org/)
-- [CoinGecko listing for `yUSDBTC-NOV20`](https://tools.umaproject.org/)
-- [Balancer Pool for `yUSDBTC-NOV20/USDC`](https://tools.umaproject.org/)
+- [EMP Tools link for `uUSDrBTC-OCT20`](https://tools.umaproject.org/)
+- [CoinGecko listing for `uUSDrBTC-OCT20`](https://tools.umaproject.org/)
+- [Balancer Pool for `uUSDrBTC-OCT20/USDC`](https://pools.balancer.exchange/#/pool/0x7aa7305838d858f7089f86fc136d0816baacb0d8/)
 - [RenBridge Project](https://bridge.renproject.io/)
 
 This is a three-part process:
 
 1. First you will wrap your `BTC` into `renBTC` so that it is usable on the
    Ethereum blockchain.
-2. Then you can use `renBTC` to mint `yUSD` tokens on the UMA protocol.
+2. Then you can use `renBTC` to mint `uUSDrBTC` tokens on the UMA protocol.
 3. Depositing `yUSD` into a Balancer pool will give you the ability to earn
    `BAL`, `REN`, and `UMA` tokens.
 
@@ -58,10 +58,10 @@ A one-time deposit address is generated for you to send your BTC to. Send the ex
 
 
 
-## Step 2: Minting yUSD with renBTC
+## Step 2: Minting uUSDrBTC with renBTC
 
-Minting yUSD tokens is easy with the [EMP Tools](http://tools.umaproject.org/),
-UMA's UI for ExpiringMultiParty contracts (EMP) which is what the yUSD token is
+Minting uUSDrBTC tokens is easy with the [EMP Tools](http://tools.umaproject.org/),
+UMA's UI for ExpiringMultiParty contracts (EMP) which is what the uUSDrBTC token is
 minted from.
 
 Navigate to http://tools.umaproject.org/ and click the "Connect" button at the
@@ -69,7 +69,7 @@ top right corner to connect your MetaMask wallet to the dapp.
 
 ![connect](/docs/tutorials/emp_connect.png)
 
-Then, select the `yUSDBTC` contract from the dropdown immediately underneath the
+Then, select the `uUSDrBTC` contract from the dropdown immediately underneath the
 header (above the tabs).
 
 ![select EMP](/docs/tutorials/emp_select.png)
@@ -86,11 +86,11 @@ At this point, make sure you read the text and confirm that:
 
 1. You will be minting at a collateralization ratio above the global
    collateralization ratio (GCR);
-2. You will be minting the minimum required number of tokens (100 for `yUSD`),
+2. You will be minting the minimum required number of tokens (100 for `uUSDrBTC`),
    and;
 3. You will keep your position collateralized above the minimum required
    collateralization ratio (CR) or else risk getting liquidated (the required CR
-   is 125% for `yUSD`).
+   is 125% for `uUSDrBTC`).
 
 If you fully understand the above, and have decided on an appropriate amount of
 (1) collateral to supply and (2) tokens to mint, check to make sure you have
@@ -104,27 +104,27 @@ In the second field, fill in the number of tokens you want to mint.
 
 If these values are appropriate, you can then click the "Create" button which
 will trigger a transaction with MetaMask. Once that is confirmed and the
-transaction is mined, you shall have your `yUSD` tokens!
+transaction is mined, you shall have your `uUSDrBTC` tokens!
 
-## Step 3: Farming yUSD on Balancer
+## Step 3: Farming uUSDrBTC on Balancer
 
 :::danger
 
 Supplying _only_ `USDC` to the pool is very dangeorus and is not recommended,
-because you are essentially buying `yUSD` on the open market. You should avoid
-this because `yUSD` will be worth
+because you are essentially buying `uUSDrBTC` on the open market. You should avoid
+this because `uUSDrBTC` will be worth
 $1 by the time of expiry and you will lose
-money if you are buying `yUSD` above $1.
+money if you are buying `uUSDrBTC` above $1.
 
 :::
 
-By supplying liquidity to the `yUSD/USDC` Balancer pool, you have the
+By supplying liquidity to the `uUSDrBTC/USDC` Balancer pool, you have the
 opportunity to earn `BAL`, `REN` and `UMA` tokens. The `UMA` token distribution
 is governed by the experimental UMA liquidity mining program.
 
 [INSERT LINK TO RENBTC LIQUIDITY MINING PROGRAM BLOG POST](https://tools.umaproject.org/)
 
-Head to the `yUSD/USDC` [pool]() and click on the "Add Liquidity" button. You’ll
+Head to the `uUSDrBTC/USDC` [pool](https://pools.balancer.exchange/#/pool/0x7aa7305838d858f7089f86fc136d0816baacb0d8/) and click on the "Add Liquidity" button. You’ll
 be asked to Setup Proxy if you haven’t already
 
 ![add liquidity button on balancer](/docs/tutorials/bal_add-liquidity.png)
@@ -142,7 +142,7 @@ Under the "All Pool Assets" tab, you should see something like this:
 
 As with any other ERC20 token, you'll have to "unlock" (i.e. grant approval) for
 the dapp to transfer tokens on your behalf. Once you have done that, you can
-deposit `yUSD` and `USDC` into the Balancer pool in exchange for some Balancer
+deposit `uUSDrBTC` and `USDC` into the Balancer pool in exchange for some Balancer
 Pool Tokens (i.e. `BPT`) specific to this pool.
 
 This enables you to passively gain `BAL`, `REN` and `UMA` tokens in accordance
