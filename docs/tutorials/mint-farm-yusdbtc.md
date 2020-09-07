@@ -98,9 +98,9 @@ enough collateral for minting.
 
 ![token minting form](/docs/tutorials/uUSD_mintingform.png)
 
-In the first field, fill in the amount of collateral you want to supply.
+In the first field, fill in the number of tokens you want to mint.
 
-In the second field, fill in the number of tokens you want to mint.
+In the second field, fill in the amount of collateral you want to supply.
 
 If these values are appropriate, you can then click the "Create" button which
 will trigger a transaction with MetaMask. Once that is confirmed and the
