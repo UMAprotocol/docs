@@ -11,7 +11,7 @@ module.exports = {
     Tutorials: [
       "tutorials/setup",
       "tutorials/mint-farm-yusd",
-      "tutorials/mint-farm-yusd-btc",
+      "tutorials/mint-farm-yusdbtc",
       {
         type: "category",
         label: "Minting Tokens",
