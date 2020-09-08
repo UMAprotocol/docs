@@ -43,7 +43,7 @@ Check that you are wrapping Bitcoin, as Renbridge allows you to wrap other coins
 
 The `Destination` should be your Metamask wallet address, this is where your renBTC will be sent to.
 
-Also check the cost (`RenVM fee`, `Bitcoin Network fee`) and the amount of renBTC you will be receiving.
+Also, check the cost (`RenVM fee`, `Bitcoin Network fee`) and the amount of renBTC you will be receiving.
 
 Once you have done all of this, you can then go ahead and click `confirm`.
 
