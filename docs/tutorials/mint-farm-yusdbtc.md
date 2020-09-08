@@ -132,7 +132,7 @@ adding liquidity.
 
 At this point, you might want to get some `USDC` so you can supply both assets
 to the Balancer pool. Alternatively, Balancer also supports supplying only a
-single-asset but that mechanism is out of scope for this tutorial.
+single-asset, which will auto-purchase the complementary asset.
 
 Under the "All Pool Assets" tab, you should see something like this:
 
