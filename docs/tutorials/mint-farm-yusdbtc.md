@@ -62,7 +62,6 @@ A one-time deposit address is generated for you to send your BTC to. Send the ex
 
 Minting uUSDrBTC tokens is easy with the [EMP Tools](http://tools.umaproject.org/),
 UMA's UI for ExpiringMultiParty contracts (EMP) which is what the uUSDrBTC token is
-minted from.
 
 Navigate to http://tools.umaproject.org/ and click the "Connect" button at the
 top right corner to connect your MetaMask wallet to the dapp.
