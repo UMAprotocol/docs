@@ -53,7 +53,7 @@ A one-time deposit address is generated for you to send your BTC to. Send the ex
 
 ![deposit](/docs/tutorials/renBTC_deposit.png)
 
-* Your transaction requires 6confirmations(can take up to 1hour) before renBTC is sent to your wallet 
+* Your transaction requires 6 confirmations, which can take up to 1 hour, before the renBTC is sent to your wallet 
 * You will need to accept & sign the transaction that sends renBTC to your wallet.
 
 
