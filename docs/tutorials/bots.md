@@ -145,6 +145,16 @@ truffle(kovan_mnemonic)> accounts[0]
 You can now fund this wallet with the associated currency for the type of bot you want to run.
 To learn more about creating synthetic tokens to fund your liquidation bot see [this](tutorials/cli-tool.md) tutorial.
 
+### Creating a price feed API key
+
+All bots require a price feed to inform their liquidation decisions. The bots will work fine without a key but free no account tier will run out of credits within a day. We recommend making a free account to ensure you have sufficient credits.
+The easiest price feed to integrate with is [CryptoWatch](https://cryptowat.ch/). To create an API Key do the following:
+
+1. Create an account [here](https://cryptowat.ch/account/create).
+2. Generate an API key [here](https://cryptowat.ch/account/api-access).
+
+Keep this key handy. You'll need it when configuring the bots.
+
 ## Running the liquidator and disputer bots locally
 
 This section describes running the liquidator and disputer bots locally from your machine without docker or any complex execution environment. This is meant to be the simplest way possible to start up a bot.
@@ -157,6 +167,7 @@ To set this up create a `.env` file in the root directory directory:
 ```bash
 EMP_ADDRESS=0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1
 MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
+MEDIANIZER_PRICE_FEED_CONFIG={"apiKey":"YOUR-CRYPTO-WATCH-API-KEY-HERE"}
 ```
 
 The parameters above, as well as other optional parameters are explained in the appendix of this tutorial. **Be sure to add in your mnemonic and your crypto watch API key.** The parameter in the example above conform to [UMIP-2](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-2.md#implementation)'s specification.

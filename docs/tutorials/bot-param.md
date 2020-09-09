@@ -52,6 +52,8 @@ MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense 
 COMMAND=yarn truffle exec ./packages/liquidator/index.js --network kovan_mnemonic
 ```
 
+Note that this minimum config will use the free tier crypto watch price feed. Without an account this will run out of credits very quickly. We recommend creating an account and paramaterzing the price feed to use this feed by adding `MEDIANIZER_PRICE_FEED_CONFIG={"apiKey":"YOUR-CRYPTO-WATCH-API-KEY-HERE"}` to your config file.
+
 ### Possible liquidator config options
 
 - `LIQUIDATOR_CONFIG` [optional]: enables the override of specific bot settings. Contains the following sub-settings:
