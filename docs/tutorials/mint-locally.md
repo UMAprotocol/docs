@@ -64,7 +64,7 @@ await registry.addMember(1, empCreator.address)
 7. We also need to register the collateral token with the `collateralTokenWhitelist`.
 
 ```js
-collateralTokenWhitelist = await AddressWhitelist.deployed()
+const collateralTokenWhitelist = await AddressWhitelist.deployed()
 await collateralTokenWhitelist.addToWhitelist(TestnetERC20.address)
 ```
 
