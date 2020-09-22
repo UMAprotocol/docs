@@ -50,7 +50,7 @@ the [tutorial](tutorials/bots.md) for appropriate values.
 EMP_ADDRESS=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5
 PRIVATE_KEY=0xf7cbade2b9eec8fc83aa70e4b43f480d0ca78b7060737ead2669d095f2035322
 COMMAND=yarn truffle exec ./packages/liquidator/index.js --network mainnet_privatekey
-MEDIANIZER_PRICE_FEED_CONFIG={"apiKey":"CRYPTO-WATCH-API-KEY"}
+PRICE_FEED_CONFIG={"apiKey":"CRYPTO-WATCH-API-KEY"}
 ```
 
 Once you have a properly configured `.env` file, use the following commands to
