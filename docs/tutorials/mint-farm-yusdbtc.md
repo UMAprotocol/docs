@@ -3,14 +3,14 @@ title: Mint and Farm uUSDrBTC
 sidebar_label: Mint and Farm uUSDrBTC
 ---
 
-This tutorial will show you how to leverage your `BTC` holdings to earn `BAL`,
-`UMA`, and `REN` tokens.
+This tutorial will show you how to leverage your `BTC` holdings to earn `BAL` and 
+`UMA` tokens.
 
 ### Useful Links
 
-- [EMP Tools link for `uUSDrBTC-OCT20`](https://tools.umaproject.org/?address=0xc0b19570370478EDE5F2e922c5D31FAf1D5f90EA)
-- [CoinGecko listing for `uUSDrBTC-OCT20`](https://www.coingecko.com/en/coins/uusdrbtc-synthetic-token-expiring-1-october-2020)
-- [Balancer Pool for `uUSDrBTC-OCT20/USDC`](https://pools.balancer.exchange/#/pool/0x7aa7305838d858f7089f86fc136d0816baacb0d8/)
+- [EMP Tools link for `uUSDrBTC-DEC`](https://tools.umaproject.org/?address=0xaBBee9fC7a882499162323EEB7BF6614193312e3)
+- [CoinGecko listing for `uUSDrBTC-DEC`](https://www.coingecko.com/en/coins/uusdrbtc-synthetic-token-expiring-1-october-2020)
+- [Balancer Pool for `uUSDrBTC-DEC/USDC`](https://pools.balancer.exchange/#/pool/0x2dd7255b487a62d738110bd10f8bc4b4ea989778/)
 - [RenBridge Project](https://bridge.renproject.io/)
 
 This is a three-part process:
@@ -19,7 +19,7 @@ This is a three-part process:
    Ethereum blockchain.
 2. Then you can use `renBTC` to mint `uUSDrBTC` tokens on the UMA protocol.
 3. Depositing `uUSDrBTC` into a Balancer pool will give you the ability to earn
-   `BAL`, `REN`, and `UMA` tokens.
+   `BAL` and `UMA` tokens.
 
 ## Step 1: Wrapping BTC into renBTC
 
@@ -115,12 +115,12 @@ Supplying _only_ `USDC` to the pool will result in auto-purchasing `uUSD` at the
 :::
 
 By supplying liquidity to the `uUSDrBTC/USDC` Balancer pool, you have the
-opportunity to earn `BAL`, `REN` and `UMA` tokens. The `UMA` token distribution
+opportunity to earn `BAL` and `UMA` tokens. The `UMA` token distribution
 is governed by the experimental UMA liquidity mining program.
 Read about this liquidity mining program [here](https://medium.com/uma-project/uma-announcing-the-yield-dollar-on-renbtc-440a1ed0c5d5).
 
 
-Head to the `uUSDrBTC/USDC` [pool](https://pools.balancer.exchange/#/pool/0x7aa7305838d858f7089f86fc136d0816baacb0d8/) and click on the "Add Liquidity" button. You’ll
+Head to the `uUSDrBTC/USDC` [pool](https://pools.balancer.exchange/#/pool/0x2dd7255b487a62d738110bd10f8bc4b4ea989778/) and click on the "Add Liquidity" button. You’ll
 be asked to Setup Proxy if you haven’t already
 
 ![add liquidity button on balancer](/docs/tutorials/uUSD_addliquiditybal.png)
@@ -141,7 +141,7 @@ the dapp to transfer tokens on your behalf. Once you have done that, you can
 deposit `uUSDrBTC` and `USDC` into the Balancer pool in exchange for some Balancer
 Pool Tokens (i.e. `BPT`) specific to this pool.
 
-This enables you to passively gain `BAL`, `REN` and `UMA` tokens in accordance
+This enables you to passively gain `BAL` and `UMA` tokens in accordance
 to the experimental UMA liquidity mining program. If you have any questions
 regarding this process, please don't hesitate to reach out on
 [Discord](https://discord.umaproject.org/).
