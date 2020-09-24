@@ -113,3 +113,5 @@ This enables you to passively gain `BAL` as well as `UMA` in accordance to the
 experimental UMA liquidity mining program. If you have any questions regarding
 this process, please don't hesitate to reach out on
 [Discord](https://discord.umaproject.org/).
+
+NB: The screenshots are outdated but the same logic applies. There has been a name change from yUSD to uUSDwETH.
