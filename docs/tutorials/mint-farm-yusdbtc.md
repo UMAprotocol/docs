@@ -9,7 +9,7 @@ This tutorial will show you how to leverage your `BTC` holdings to earn `BAL` an
 ### Useful Links
 
 - [EMP Tools link for `uUSDrBTC-DEC`](https://tools.umaproject.org/?address=0xaBBee9fC7a882499162323EEB7BF6614193312e3)
-- [CoinGecko listing for `uUSDrBTC-DEC`](https://www.coingecko.com/en/coins/uusdrbtc-synthetic-token-expiring-1-october-2020)
+- [CoinGecko listing for `uUSDrBTC-DEC`](https://www.coingecko.com/en/coins/uusdrbtc-synthetic-token-expiring-31-december-2020)
 - [Balancer Pool for `uUSDrBTC-DEC/USDC`](https://pools.balancer.exchange/#/pool/0x2dd7255b487a62d738110bd10f8bc4b4ea989778/)
 - [RenBridge Project](https://bridge.renproject.io/)
 
