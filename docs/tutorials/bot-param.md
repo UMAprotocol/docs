@@ -52,6 +52,8 @@ MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense 
 COMMAND=yarn truffle exec ./packages/liquidator/index.js --network kovan_mnemonic
 ```
 
+Note that this minimum config will use the free tier crypto watch price feed. Without an account this will run out of credits very quickly. We recommend creating an account and paramaterzing the price feed to use this feed by adding `MEDIANIZER_PRICE_FEED_CONFIG={"apiKey":"YOUR-CRYPTO-WATCH-API-KEY-HERE"}` to your config file.
+
 ### Possible liquidator config options
 
 - `LIQUIDATOR_CONFIG` [optional]: enables the override of specific bot settings. Contains the following sub-settings:
@@ -72,8 +74,8 @@ A liquidation is invalid if a position was correctly collateralized at the time 
 You can run a disputer bot by simply providing the EMP address of the contract you want to monitor and a mnemonic with an associated private key that the bot should use. Minimal Docker `.env` is as follows:
 
 ```bash
-# yUSD-SEP20 contract on Kovan
-EMP_ADDRESS=0x834adA34847ff7b9442cF269E0DE3091DC7BB895
+# yUSD-SEP30 contract on Kovan
+EMP_ADDRESS=0xFb70A4CBD537B36e647553C279a93E969b041DF0
 MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
 # Be sure to replace with your mnemonic.
 COMMAND=yarn truffle exec ./packages/disputer/index.js --network kovan_mnemonic
@@ -100,8 +102,8 @@ The monitor bots are used to monitor the UMA ecosystem for key events. They have
 The config below will start up a monitor bot that will: (1) send messages when new liquidations, alerts, or disputes occur and (2) fire if there is large volatility in the synthetic or price of the underlying. It wont report on any wallet or CR monitoring as no params have been defined.
 
 ```bash
-# yUSD-SEP20 contract on Kovan
-EMP_ADDRESS=0x834adA34847ff7b9442cF269E0DE3091DC7BB895
+# yUSD-SEP30 contract on Kovan
+EMP_ADDRESS=0xFb70A4CBD537B36e647553C279a93E969b041DF0
 # Be sure to replace with your mnemonic.
 COMMAND=yarn truffle exec ./packages/monitors/index.js --network kovan_mnemonic
 ```

@@ -14,7 +14,7 @@ First, create a file to set the appropriate configuration for your liquidation
 bot. Please edit the following example with your own values.
 
 ```shell title="example.env"
-EMP_ADDRESS=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5
+EMP_ADDRESS=0xFb70A4CBD537B36e647553C279a93E969b041DF0
 PRIVATE_KEY=0xf7cbade2b9eec8fc83aa70e4b43f480d0ca78b7060737ead2669d095f2035322
 COMMAND=yarn truffle exec ./packages/liquidator/index.js --network mainnet_privatekey
 ```
@@ -145,6 +145,16 @@ truffle(kovan_mnemonic)> accounts[0]
 You can now fund this wallet with the associated currency for the type of bot you want to run.
 To learn more about creating synthetic tokens to fund your liquidation bot see [this](tutorials/cli-tool.md) tutorial.
 
+### Creating a price feed API key
+
+All bots require a price feed to inform their liquidation decisions. The bots will work fine without a key but free no account tier will run out of credits within a day. We recommend making a free account to ensure you have sufficient credits.
+The easiest price feed to integrate with is [CryptoWatch](https://cryptowat.ch/). To create an API Key do the following:
+
+1. Create an account [here](https://cryptowat.ch/account/create).
+2. Generate an API key [here](https://cryptowat.ch/account/api-access).
+
+Keep this key handy. You'll need it when configuring the bots.
+
 ## Running the liquidator and disputer bots locally
 
 This section describes running the liquidator and disputer bots locally from your machine without docker or any complex execution environment. This is meant to be the simplest way possible to start up a bot.
@@ -157,6 +167,7 @@ To set this up create a `.env` file in the root directory directory:
 ```bash
 EMP_ADDRESS=0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1
 MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
+MEDIANIZER_PRICE_FEED_CONFIG={"apiKey":"YOUR-CRYPTO-WATCH-API-KEY-HERE"}
 ```
 
 The parameters above, as well as other optional parameters are explained in the appendix of this tutorial. **Be sure to add in your mnemonic and your crypto watch API key.** The parameter in the example above conform to [UMIP-2](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-2.md#implementation)'s specification.
@@ -179,11 +190,11 @@ Using network 'kovan_mnemonic'.
 2020-05-22 08:39:42 [info]: {
   "at": "Liquidator#index",
   "message": "liquidator started 🕵️‍♂️",
-  "empAddress": "0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1",
+  "empAddress": "0xFb70A4CBD537B36e647553C279a93E969b041DF0",
   "pollingDelay": "60",
   "priceFeedConfig": {
     "type": "medianizer",
-    "pair": "ethbtc",
+    "pair": "usdeth",
     "lookback": 7200,
     "minTimeBetweenUpdates": 60,
     "medianizedFeeds": [
@@ -197,7 +208,7 @@ Using network 'kovan_mnemonic'.
       },
       {
         "type": "cryptowatch",
-        "exchange": "bitstamp"
+        "exchange": "kraken"
       }
     ]
   },
@@ -217,7 +228,7 @@ You should see the following output:
 2020-05-22 08:37:10 [info]: {
   "at": "Disputer#index",
   "message": "Disputer started 🔎",
-  "empAddress": "0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1",
+  "empAddress": "0xFb70A4CBD537B36e647553C279a93E969b041DF0",
   "pollingDelay": "60",
   "priceFeedConfig": {
     "type": "medianizer",
@@ -235,7 +246,7 @@ You should see the following output:
       },
       {
         "type": "cryptowatch",
-        "exchange": "bitstamp"
+        "exchange": "kraken"
       }
     ]
   },
