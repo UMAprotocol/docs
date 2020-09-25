@@ -11,7 +11,7 @@ minutes (subject to network congestion).
 ### Useful Links
 
 - [EMP Tools link for `uUSDwETH-DEC`](https://tools.umaproject.org/?address=0x3605Ec11BA7bD208501cbb24cd890bC58D2dbA56)
-- [CoinGecko listing for `uUSDwETH-DEC`](https://www.coingecko.com/en/coins/yusd-synthetic-token-expiring-1-october-2020)
+- [CoinGecko listing for `uUSDwETH-DEC`](https://www.coingecko.com/en/coins/uusd-synthetic-token-expiring-31-december-2020)
 - [Balancer Pool for `uUSDwETH-DEC/USDC`](https://pools.balancer.exchange/#/pool/0xcce41676a4624f4a1e33a787a59d6bf96e5067bc/)
 
 ## Step 1: Mint uUSDwETH
