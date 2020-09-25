@@ -4,10 +4,10 @@ sidebar_label: Welcome to UMA
 slug: /
 ---
 
-:::note yUSD has launched
-Learn how to mint and farm `yUSD` tokens with this [tutorial](tutorials/mint-farm-yusd.md).
+:::note uUSD has launched
+Learn how to mint and farm `uUSD` tokens with this [tutorial](tutorials/mint-farm-yusd.md).
 
-Learn how to redeem expired `yUSD` tokens with this [tutorial](tutorials/redeem-tokens.md).
+Learn how to redeem expired `uUSD` tokens with this [tutorial](tutorials/redeem-tokens.md).
 :::
 
 UMA builds open-source infrastructure for “priceless” financial contracts on Ethereum. Specifically, this is two things:
