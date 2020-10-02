@@ -33,8 +33,10 @@ the introduction of a new [UMIP](governance/umips.md).
 
 6. Final fee:
 
-   - ETH: 0.1
-   - Dai: 10
+   - Dai: 400
+   - WETH: 1
+   - renBTC: 0.035
+   - PERL: 8600
 
 ## Approved Identifiers:
 
