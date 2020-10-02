@@ -39,8 +39,13 @@ the introduction of a new [UMIP](governance/umips.md).
 ## Approved Identifiers:
 
 - ETH/BTC
-- COMPUSD
 - USDETH
+- ETHUSD
+- BTCUSD
+- USDBTC
+- PERLUSD
+- USDPERL
+- COMPUSD
 
 ## Approved Financial Contract Templates:
 
