@@ -8,7 +8,7 @@ Owners of UMA tokens have 2 major categories of responsibilities/opportunities:
 1. Voting on price requests from financial contracts using the DVM
 1. Governing the UMA ecosystem by voting on parameter changes and approving system upgrades
 
-A tutorial on how to vote on price requests from CLI is [here](tutorials/voting-uma.md). Voters can also use the [Voting dApp](https://vote.umaproject.org/).
+A tutorial on how to vote on price requests from CLI is [here](tutorials/voting/cli.md). Voters can also use the [Voting dApp](https://vote.umaproject.org/).
 
 Voters who participate and vote correctly earn an inflationary reward (currently 0.05% of total network token supply), distributed pro-rata by stake.
 
