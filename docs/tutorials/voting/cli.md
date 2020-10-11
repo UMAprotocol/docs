@@ -1,11 +1,9 @@
 ---
-title: Voting with UMA Tokens
-sidebar_label: With UMA Tokens
+title: Voting commandline interface
+sidebar_label: CLI
 ---
 
-We provide a user-friendly command line interface for voting on price requests and retrieving rewards. UMA token holders can also use a [voter dApp](http://vote.umaproject.org/) to vote with their tokens. Instructions on how to use this voter dApp are [here](https://docs.google.com/document/d/1kaooVekQwyhHGEMCJBRaatVoHYA87tX9XqPKoIbkHuQ/edit).
-
-# Installation
+## Installation
 
 We will walk you through setting up the CLI by first cloning the repo and then symlink-ing the CLI command to your global directory.
 
@@ -29,9 +27,9 @@ npm install -g ./
 uma --network <provider>
 ```
 
-# Providers
+## Providers
 
-We strongly recommend using a non-Metamask provider and prefer the "NETWORK_privatekey" option. For more on the specific issues that using a Metamask provider opens, see [Known Bugs](#known-bugs). Storing a private key in an environment variable is a safe compromise between convenience and security provided your local machine is not compromised. To set an environment variable, run:
+We strongly recommend using a non-Metamask provider and prefer the "NETWORK_privatekey" option. For more on the specific issues that using a Metamask provider opens, see [Known Bugs](##known-bugs). Storing a private key in an environment variable is a safe compromise between convenience and security provided your local machine is not compromised. To set an environment variable, run:
 
 ```sh
 export ENV_VARIABLE_NAME="VALUE"
@@ -81,11 +79,11 @@ uma --network mainnet_privatekey
 uma --network metamask
 ```
 
-# Features
+## Features
 
 After starting the CLI tool, a menu will appear. There will always be options "help" (to print out a list of commands) and "exit/back" (quit the tool or go back to the previous menu).
 
-## Modules
+### Modules
 
 Selecting these lead to further menus with relevant actions:
 
@@ -93,6 +91,6 @@ Selecting these lead to further menus with relevant actions:
 - _Vote_: Commit and reveal votes, retrieve rewards, and view results of previous votes.
 - _Admin_: Vote on system administrator proposals
 
-# Known Bugs:
+## Known Bugs:
 
 - Metamask: retrieving rewards and viewing past vote results does not work well with the Metamask provider, specifically because it does not do a great job of reading past event logs. To read more technical details about the issue, go [here](https://github.com/UMAprotocol/protocol/issues/901).

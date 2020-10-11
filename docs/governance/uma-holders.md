@@ -3,7 +3,7 @@ title: UMA Token Holder Responsibilities
 sidebar_label: UMA Holder Responsibilities
 ---
 
-Owners of UMA tokens have 2 major categories of responsibilities:
+Owners of UMA tokens have 2 major categories of responsibilities/opportunities:
 
 1. Voting on price requests from financial contracts using the DVM
 1. Governing the UMA ecosystem by voting on parameter changes and approving system upgrades
