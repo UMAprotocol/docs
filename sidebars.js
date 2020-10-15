@@ -27,7 +27,7 @@ module.exports = {
       {
         type: "category",
         label: "Voting",
-        items: ["tutorials/voting-uma", "tutorials/voting-2key"],
+        items: ["tutorials/voting-uma", "tutorials/voting-2key", "tutorials/voter-dApp"],
       },
       "tutorials/dvm-integration",
     ],
