@@ -61,6 +61,12 @@ module.exports = {
         href:
           "https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts",
       },
+      {
+        type: "link",
+        label: "Contract Documentation",
+        href:
+          "https://docs-dot-uma-protocol.appspot.com/uma/index.html",
+      },
     ],
   },
   community: {
