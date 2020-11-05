@@ -29,7 +29,7 @@ You can therefore add any price identifier desired using the `IdentifierWhitelis
 
 ## Adding a price identifier to the Kovan testnet
 
-As noted above, the Kovan `IdentifierWhitelist` is controlled by a single private key.
+As noted above, the Kovan testnet `IdentifierWhitelist` is controlled by a single private key.
 
 The list of approved Kovan price identifiers can be seen by running the `Pricefeed Identifiers` query on the [UMA Kovan Subgraph](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers).
 
