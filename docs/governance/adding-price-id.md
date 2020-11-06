@@ -27,7 +27,17 @@ You can therefore add any price identifier desired using the `IdentifierWhitelis
 
 <!-- TODO: Add a section for ## Adding a price identifier to a testnet deployment -->
 
-## Adding a price identifier to the mainnet deployment
+## Adding a price identifier to the Kovan testnet
+
+As noted above, the Kovan testnet `IdentifierWhitelist` is controlled by a single private key.
+
+The list of approved Kovan price identifiers can be seen by running the `Pricefeed Identifiers` query on the [UMA Kovan Subgraph](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers).
+
+To add a new price identifier to Kovan, please submit a pull request that adds your price identifier in the correct format to the list [here](https://github.com/UMAprotocol/protocol/blob/master/packages/core/config/identifiers.json). Please follow the [UMA contribution guidelines](https://github.com/UMAprotocol/protocol/blob/master/CONTRIBUTING.md) and make sure to tag `@UMAprotocol/eng` for review.
+
+## Adding a price identifier to mainnet
+
+To view the list of approved mainnet price identifiers, run the `Supported Identifiers` query on the [UMA Subgraph](https://thegraph.com/explorer/subgraph/protofire/uma?query=Supported%20Identifiers). Refer to the related [UMIP](https://github.com/UMAprotocol/UMIPs/tree/master/UMIPs) for clarity on the price that an identifier returns.
 
 The `IdentifierWhitelist` contract in the mainnet deployment of the UMA DVM is controlled by a decentralized governance process.
 To add a new price identifier, UMA token holders must vote and approve the identifier.
