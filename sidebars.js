@@ -5,6 +5,7 @@ module.exports = {
       "getting-started/overview",
       "getting-started/synthetic-tokens",
       "getting-started/oracle",
+      "getting-started/developer-mining"
     ],
   },
   tutorials: {
