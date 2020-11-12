@@ -37,6 +37,9 @@ the introduction of a new [UMIP](governance/umips.md).
    - WETH: 1
    - renBTC: 0.035
    - PERL: 8600
+   - rDAI: 400
+   - USDC: 400
+   - USDT: 400
 
 ## Approved Identifiers:
 
@@ -48,6 +51,9 @@ the introduction of a new [UMIP](governance/umips.md).
 - PERLUSD
 - USDPERL
 - COMPUSD
+- GASETH-1HR, GASETH-4HR, GASETH-1D, GASETH-1W, GASETH-1M
+- GASETH-1HR-1M, GASETH-4HR-1M, GASETH-1D-1M, GASETH-1W-1M, GASETH-1M-1M
+- ARSUSD
 
 ## Approved Financial Contract Templates:
 
