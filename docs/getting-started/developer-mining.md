@@ -42,7 +42,7 @@ Allocating rewards in such a way would allow a contract deployer to handle the f
 
 - [Medium Explainer](https://medium.com/uma-project/uma-announces-developer-mining-6f6fe15d5604)
 - [Tweet Storm](https://twitter.com/UMAprotocol/status/1323611059328962560)
-- [Tutorial for Launching a Product on UMA](http://localhost:3001/tutorials/mint-locally)
+- [Tutorial for Launching a Product on UMA](https://docs.umaproject.org/tutorials/mint-locally)
 
 <!--
 To do: 
