@@ -12,7 +12,13 @@ This is the high-level EMP deployment process that you will need to follow.
 - Deploy your contract with Etherscan OR
 - Deploy your contract with a deployment script.
 
-## Is your desired Price Identifier and Collateral Currency supported?
+:::danger
+
+Before deploying a mainnet contract, it is highly recommended that you have tested liquidation and dispute bots ready to deploy. Without a network of liquidation and dispute bots, a mainnet contract is vulnerable to attacks.
+
+:::
+
+## Is your desired price identifier and collateral type supported?
 Before deploying a contract, you should verify that your desired price identifier and collateral currency is already approved on the network you are trying to deploy to.
 
 View approved price identifiers and currencies here:
@@ -31,14 +37,14 @@ The mandatory EMP parameters are:
 
 - `expirationTimestamp`: The UNIX timestamp that the EMP will expire at. Example December 31, 2024 expiry: `1735682400`.
 - `collateralAddress`: The token address of the Kovan or mainnet token that will be used as the collateral currency. Example Kovan WETH address: `0xd0A1E359811322d97991E03f863a0C30C2cF029C`.
-- `priceFeedIdentifier`: The plaintext price identifier converted to bytes32 format. Example for USDETH: `0x555344455448`
+- `priceFeedIdentifier`: The plaintext price identifier converted to bytes32 format. Example for USDETH: `0x555344455448`.
 - `syntheticName`: The plaintext synthetic token name. Example: `Synthetic Test USDETH Dec 2024`.
 - `syntheticSymbol`: The plaintext synthetic token symbol. Example: `USDETH-DEC-2024`.
-- `collateralRequirement`: The [collateralization requirement ratio](https://docs.umaproject.org/synthetic-tokens/glossary#collateralization-requirement) converted to Wei. Example for a 1.5 ratio: `{ rawValue: '1500000000000000000' }`
-- `disputeBondPct`: The percentage size of the [dispute bond](https://docs.umaproject.org/synthetic-tokens/explainer#liquidation-and-dispute) converted to 18 decimals. Example for 10%: `{ rawValue: '100000000000000000' }`
-- `sponsorDisputeRewardPct`: The percentage size of the [dispute reward](https://docs.umaproject.org/synthetic-tokens/explainer#liquidation-and-dispute) paid to the position sponsor converted to 18 decimals. Example for 5%: `{ rawValue: '50000000000000000' }`
-- `disputerDisputeRewardPct`: The percentage size of the dispute reward paid to the disputer converted to 18 decimals. Example for 20%: `{ rawValue: '200000000000000000' }`
-- `minSponsorTokens`: The minimum number of tokens required in a sponsor position converted to 18 decimals. Example for 100 tokens: `{ rawValue: '100000000000000000000' }`
+- `collateralRequirement`: The [collateralization requirement ratio](https://docs.umaproject.org/synthetic-tokens/glossary#collateralization-requirement) converted to Wei. Example for a 1.5 ratio: `{ rawValue: '1500000000000000000' }`.
+- `disputeBondPct`: The percentage size of the [dispute bond](https://docs.umaproject.org/synthetic-tokens/explainer#liquidation-and-dispute) converted to 18 decimals. Example for 10%: `{ rawValue: '100000000000000000' }`.
+- `sponsorDisputeRewardPct`: The percentage size of the [dispute reward](https://docs.umaproject.org/synthetic-tokens/explainer#liquidation-and-dispute) paid to the position sponsor converted to 18 decimals. Example for 5%: `{ rawValue: '50000000000000000' }`.
+- `disputerDisputeRewardPct`: The percentage size of the dispute reward paid to the disputer converted to 18 decimals. Example for 20%: `{ rawValue: '200000000000000000' }`.
+- `minSponsorTokens`: The minimum number of tokens required in a sponsor position converted to 18 decimals. Example for 100 tokens: `{ rawValue: '100000000000000000000' }`.
 - `withdrawalLiveness`: The length of the [withdrawal liveness period](https://docs.umaproject.org/synthetic-tokens/glossary#withdrawal-liveness-period) in seconds. Example for 2 hours: `7200`.
 - `liquidationLiveness`: The length of the [liquidation liveness period](https://docs.umaproject.org/synthetic-tokens/glossary#liquidation-liveness-period) in seconds. Example for 2 hours: `7200`.
 - `excessTokenBeneficiary`: The Ethereum address that will receive any sort of excess collateral accrued by interest bearing collateral currencies, such as rDAI.
@@ -78,7 +84,7 @@ Another method to create an EMP is to use a deployment script.
 1. Clone the UMA protocol [repository](https://github.com/UMAprotocol/protocol).
 2. Follow the [setup instructions](https://docs.umaproject.org/tutorials/setup) to meet the prequisites, prepare the repo and connect your wallet to your workspace.
 3. Edit the `constructorParams` object in the `DeployEMP.js` [script](https://github.com/UMAprotocol/protocol/blob/master/packages/core/scripts/local/DeployEMP.js#L99) with your desired parameters. Leave `priceFeedIdentifier` as is. This will be passed in as a command line argument. Note: all unit conversions will be done for you, so no need to convert arguments to 18 decimals or bytes32 format.
-4. Run `$(npm bin)/truffle exec ./packages/core/scripts/local/DeployEMP.js --network kovan_mnemonic --identifier USDETH` from the `protocol` folder to deploy your EMP on Kovan. 
+4. Run `$(npm bin)/truffle exec ./packages/core/scripts/local/DeployEMP.js --network kovan_mnemonic --identifier USDETH` from the `protocol` folder to deploy your EMP on Kovan.
 
 ## Post-Deployment
 
