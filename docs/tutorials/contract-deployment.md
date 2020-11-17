@@ -65,7 +65,7 @@ This is what the parameters object will look like when correctly formatted.
     "minSponsorTokens" : { "rawValue" : "100000000000000000000" }, 
     "withdrawalLiveness" : "7200", 
     "liquidationLiveness" : "7200", 
-    "excessTokenBeneficiary" : "0x0" 
+    "excessTokenBeneficiary" : "YourWalletAddress" 
 }
 ```
 
