@@ -11,15 +11,21 @@ module.exports = {
   tutorials: {
     Tutorials: [
       "tutorials/setup",
-      "tutorials/mint-farm-yusd",
-      "tutorials/mint-farm-yusdbtc",
+      {
+        type: "category",
+        label: "Using Exisiting Contracts",
+        items: ["tutorials/mint-farm-yusd", "tutorials/mint-farm-yusdbtc", "tutorials/redeem-tokens", "tutorials/cli-tool"],
+      },
+      {
+        type: "category",
+        label: "Deploying Contracts",
+        items: ["tutorials/contract-deployment"],
+      },
       {
         type: "category",
         label: "Minting Tokens",
         items: ["tutorials/mint-locally", "tutorials/mint-etherscan"],
       },
-      "tutorials/redeem-tokens",
-      "tutorials/cli-tool",
       {
         type: "category",
         label: "Bots",

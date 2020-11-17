@@ -31,15 +31,15 @@ the introduction of a new [UMIP](governance/umips.md).
 
 5. Tax delay penalty per week: 0%
 
-6. Final fee:
+## Approved Collateral Types and Final Fees:
 
-   - Dai: 400
-   - WETH: 1
-   - renBTC: 0.035
-   - PERL: 8600
-   - rDAI: 400
-   - USDC: 400
-   - USDT: 400
+- Dai: 400
+- WETH: 1
+- renBTC: 0.035
+- PERL: 8600
+- rDAI: 400
+- USDC: 400
+- USDT: 400
 
 ## Approved Identifiers:
 
