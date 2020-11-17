@@ -47,7 +47,7 @@ The mandatory EMP parameters are:
 - `minSponsorTokens`: The minimum number of tokens required in a sponsor position converted to 18 decimals. Example for 100 tokens: `{ rawValue: '100000000000000000000' }`.
 - `withdrawalLiveness`: The length of the [withdrawal liveness period](https://docs.umaproject.org/synthetic-tokens/glossary#withdrawal-liveness-period) in seconds. Example for 2 hours: `7200`.
 - `liquidationLiveness`: The length of the [liquidation liveness period](https://docs.umaproject.org/synthetic-tokens/glossary#liquidation-liveness-period) in seconds. Example for 2 hours: `7200`.
-- `excessTokenBeneficiary`: The Ethereum address that will receive excess collateral accrued by interest bearing collateral currencies, such as rDAI. For collateral types that do not accrue additional collateral, this should be set to: `0x0`.
+- `excessTokenBeneficiary`: The Ethereum address that will receive excess collateral accrued by interest bearing collateral currencies, such as rDAI. For collateral types that do not accrue additional collateral, this should be still be set any wallet address that you own. This will just not accrue any additional collateral.
 
 This is what the parameters object will look like when correctly formatted.
 
@@ -65,7 +65,7 @@ This is what the parameters object will look like when correctly formatted.
     "minSponsorTokens" : { "rawValue" : "100000000000000000000" }, 
     "withdrawalLiveness" : "7200", 
     "liquidationLiveness" : "7200", 
-    "excessTokenBeneficiary" : "0x0" 
+    "excessTokenBeneficiary" : "YourWalletAddress" 
 }
 ```
 
