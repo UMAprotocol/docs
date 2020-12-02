@@ -13,6 +13,7 @@ The rules behind this `GOLD_USD` price identifier would be documented in detail 
 That UMIP would contain more information about how to determine the price identifier.
 
 <!-- TODO: Add a link to the UMIP for adding the ETHBTC price identifier when it is ready. -->
+<!-- TODO: Remove the Kovan price ids from this section and place it in the devs section. -->
 
 ## Who controls the list of approved price identifiers?
 
