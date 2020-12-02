@@ -35,7 +35,7 @@ module.exports = {
         },
         {
           to: "governance/uma-holders",
-          label: "Governance",
+          label: "UMA Tokenholders",
           activeBasePath: "governance",
         },
       ],

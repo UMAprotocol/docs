@@ -53,7 +53,7 @@ module.exports = {
       "oracle/mainnet-info",
     ],
     Governance: [
-      "governance/uma-holders",
+      "UMA Tokenholders/uma-holders",
       "governance/umips",
       "governance/adding-price-id",
     ],

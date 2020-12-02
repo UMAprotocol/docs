@@ -14,51 +14,33 @@ That UMIP would contain more information about how to determine the price identi
 
 <!-- TODO: Add a link to the UMIP for adding the ETHBTC price identifier when it is ready. -->
 
-## Who controls the list of approved price identifiers?
-
-For each deployment of the DVM, the list of approved price identifiers is controlled by the `IdentifierWhitelist` contract.
-In local and testnet deployments of the DVM, `IdentifierWhitelist` is controlled by a single private key.
-In the mainnet deployment of the DVM, `IdentifierWhitelist` is controlled by a decentralized governance process, as described below.
-
-## Adding a price identifier to a local deployment
-
-In a local deployment, your private key controls the `IdentifierWhitelist` contract.
-You can therefore add any price identifier desired using the `IdentifierWhitelist.addSupportedIdentifier`, as described in step 5 of this [tutorial](tutorials/mint-locally.md).
-
-<!-- TODO: Add a section for ## Adding a price identifier to a testnet deployment -->
-
-## Adding a price identifier to the Kovan testnet
-
-As noted above, the Kovan testnet `IdentifierWhitelist` is controlled by a single private key.
-
-The list of approved Kovan price identifiers can be seen by running the `Pricefeed Identifiers` query on the [UMA Kovan Subgraph](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers).
-
-To add a new price identifier to Kovan, please submit a pull request that adds your price identifier in the correct format to the list [here](https://github.com/UMAprotocol/protocol/blob/master/packages/core/config/identifiers.json). Please follow the [UMA contribution guidelines](https://github.com/UMAprotocol/protocol/blob/master/CONTRIBUTING.md) and make sure to tag `@UMAprotocol/eng` for review.
-
-## Adding a price identifier to mainnet
-
-To view the list of approved mainnet price identifiers, run the `Supported Identifiers` query on the [UMA Subgraph](https://thegraph.com/explorer/subgraph/protofire/uma?query=Supported%20Identifiers). Refer to the related [UMIP](https://github.com/UMAprotocol/UMIPs/tree/master/UMIPs) for clarity on the price that an identifier returns.
+## Approved price identifiers
 
 The `IdentifierWhitelist` contract in the mainnet deployment of the UMA DVM is controlled by a decentralized governance process.
 To add a new price identifier, UMA token holders must vote and approve the identifier.
 This is done via the UMIP process, as described [here](governance/umips.md).
 
-- Step 1: Discuss
+To view the list of approved mainnet price identifiers, see below or run the `Supported Identifiers` query on the [UMA Subgraph](https://thegraph.com/explorer/subgraph/protofire/uma?query=Supported%20Identifiers). Refer to the related [UMIP](https://github.com/UMAprotocol/UMIPs/tree/master/UMIPs) for clarity on the price that an identifier returns.
+
+
+## Adding a price identifier to mainnet
+
+<b> Step 1: Discuss </b>
 
 If you are building with a price identifier not currently supported by the UMA DVM, you will need to propose it to the community of UMA token holders for a vote.
 You should create an UMIP in which you describe your project and the new price identifier(s) being requested.
 At this time, you do not need to provide an implementation for the addition of a new price identifier.
 Details on how to write a UMIP are [here](governance/umips.md). This UMIP will be discussed by members of the UMA community.
 
-- Step 2: Get Ready For Vote
+<b> Step 2: Get Ready For Vote </b>
 
 In order for the UMIP to move to the next stage of discussion, you should construct an off-chain transaction to add the proposed price identifier to the mainnet `IdentifierWhitelist`. This transaction should be attached to the UMIP.
 
-- Step 3: Vote
+<b> Step 3: Vote </b>
 
 UMA voters will vote on the proposed transaction. Each UMA token represents one vote. If at least 5% of all tokens are used to vote, of which >50% of votes approve the UMIP, the UMIP is considered approved.
 
-- Step 4: Execute Transaction
+<b> Step 4: Execute Transaction </b>
 
 Once the proposal has been approved, anyone can tell the governor contract to execute the proposed transaction.
 The governor contract will then execute the transaction, approving the identifier in `IdentifierWhitelist`.

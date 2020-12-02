@@ -3,14 +3,11 @@ title: The UMIP Process
 sidebar_label: The UMIP Process
 ---
 
-UMIPs (“UMA Improvement Proposals”) are the design documents used to propose changes to the UMA ecosystem.
-They provide information to the UMA community that describes a new feature for the UMA protocol, or its ecosystem.
-The UMIP should provide a concise technical specification of the feature and a rationale for the feature.
-They are modeled after [EIPs](https://eips.ethereum.org/) and [ZEIPs](https://blog.0xproject.com/0x-protocol-governance-voting-walkthrough-and-faq-3becfd57a370).
-See here for an [EIP template](https://github.com/ethereum/EIPs/blob/master/eip-template.md) and [ZEIP template](https://github.com/0xProject/ZEIPs/blob/master/ISSUE_TEMPLATE.md).
+UMIPs (“UMA Improvement Proposals”) are design documents used to propose changes to the UMA ecosystem. UMIPS are intended to be the primary mechanism for proposing new features, collecting community technical input on an issue, and for documenting the design decisions that have gone into the UMA protocol. 
 
-We intend UMIPs to be the primary mechanism for proposing new features, collecting community technical input on an issue, and for documenting the design decisions that have gone into the UMA protocol.
-UMIPs are a convenient way to track the progress of an implementation.
+UMIPs are a convenient way to track the progress of an implementation. Examples of common UMIPS include adding a new collateral currency or price identifier to be supported by the DVM. UMIPS are to be proposed to UMA token holders where they will be voted or rejected to be included into the UMA ecosystem. 
+
+UMIPs need to provide a concise technical specification of the feature and a rationale for the feature. They are modeled after EIPs and ZEIPs. See here for an EIP template and ZEIP template. 
 
 ## What is the lifecycle of a UMIP?
 
