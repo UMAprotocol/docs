@@ -52,10 +52,10 @@ module.exports = {
       "oracle/known-issues",
       "oracle/mainnet-info",
     ],
-    Governance: [
-      "governance/uma-holders",
-      "governance/umips",
-      "governance/adding-price-id",
+    "UMA Tokenholders": [
+      "uma-tokenholders/uma-holders",
+      "uma-tokenholders/umips",
+      "uma-tokenholders/adding-price-id",
     ],
   },
   devRef: {

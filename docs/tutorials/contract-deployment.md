@@ -7,7 +7,7 @@ This tutorial will show you how to deploy an Expiring Multi Party (EMP) contract
 
 This is the high-level EMP deployment process that you will need to follow.
 
-- Verify that your desired [price identifier](https://docs.umaproject.org/governance/adding-price-id#what-is-a-price-identifier) and collateral type is available on the network you wish to deploy your contract to.
+- Verify that your desired [price identifier](https://docs.umaproject.org/uma-tokenholders/adding-price-id#what-is-a-price-identifier) and collateral type is available on the network you wish to deploy your contract to.
 - Write your contract parameters.
 - Deploy your contract with Etherscan OR
 - Deploy your contract with a deployment script.
@@ -27,9 +27,9 @@ View approved price identifiers and currencies here:
 - [Approved Kovan collateral currencies](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Whitelisted%20Collateral%20Currencies)
 - [Approved Kovan price identifiers](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers)
 
-To add a new price identifier or collateral currency to mainnet, please propose one to UMA voters by following the [UMIP process](https://docs.umaproject.org/governance/umips).
+To add a new price identifier or collateral currency to mainnet, please propose one to UMA voters by following the [UMIP process](https://docs.umaproject.org/uma-tokenholders/umips).
 
-To add a new price identifier or collateral currency to Kovan, please follow these [instructions](https://docs.umaproject.org/governance/adding-price-id#adding-a-price-identifier-to-the-kovan-testnet) or contact the UMA core team in Discord.
+To add a new price identifier or collateral currency to Kovan, please follow these [instructions](https://docs.umaproject.org/uma-tokenholders/adding-price-id#adding-a-price-identifier-to-the-kovan-testnet) or contact the UMA core team in Discord.
 
 ## EMP parameters
 

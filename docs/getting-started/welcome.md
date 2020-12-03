@@ -31,7 +31,7 @@ If you are a market maker interested in market making or acting as a liquidator 
 
 ## For UMA Token Holders
 
-If you are interested in the UMA project token, please read this [section](governance/uma-holders.md) to learn more about the role of the UMA project token in the DVM and the rights and responsibilities of UMA project token holders.
+If you are interested in the UMA project token, please read this [section](uma-tokenholders/uma-holders.md) to learn more about the role of the UMA project token in the DVM and the rights and responsibilities of UMA project token holders.
 
 ## Contracts
 
