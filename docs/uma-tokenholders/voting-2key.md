@@ -1,6 +1,6 @@
 ---
 title: Voting with the UMA 2-Key Contract
-sidebar_label: With 2-Key Contract
+sidebar_label: Voter 2-Key Contract Tutorial
 ---
 
 The UMA DVM two-key contract enables you to actively engage in voting using hot keys (private keys stored on machine and used often), but protect your funds with the stronger, and preferable, use of cold keys (private keys stored offline and used rarely).

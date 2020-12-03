@@ -1,6 +1,6 @@
 ---
-title: Adding a Price Identifier
-sidebar_label: Adding a Price Identifier
+title: Adding Price Identifiers and Collateral Currencies
+sidebar_label: Adding Price Identifiers & Collateral Currencies
 ---
 
 ## What is a price identifier?
@@ -12,26 +12,31 @@ For example, `GOLD_USD` might be a price identifier to return the USD spot price
 The rules behind this `GOLD_USD` price identifier would be documented in detail in an [UMIP](umips.md) that was has been approved by UMA tokenholders.
 That UMIP would contain more information about how to determine the price identifier.
 
-<!-- TODO: Add a link to the UMIP for adding the ETHBTC price identifier when it is ready. -->
+## What is a collateral currency?
 
-## Adding a price identifier to mainnet
+In order to mint synthetic tokens, token sponsors are required to lock up funds in a smart contract to back the value of minted synthetic tokens. The amount of collateral needed is determined by the value of a price identifier. Token holders and token sponsors should monitor the value of this price identifier off-chain to inform their decisions about how much collateral to maintain on-chain. If token sponsors are improperly collateralized, liquidators can liquidate token sponsors’ positions.
 
-<b> Step 1: Discuss </b>
+See below for a list of approved collateral currencies in UMA's priceless contract templates. 
+
+
+## Adding a price identifier or collateral currency to mainnet
+
+### Step 1: Discuss
 
 If you are building with a price identifier not currently supported by the UMA DVM, you will need to propose it to the community of UMA tokenholders for a vote.
 You should create an UMIP in which you describe your project and the new price identifier(s) being requested.
 At this time, you do not need to provide an implementation for the addition of a new price identifier.
 Details on how to write a UMIP are [here](umips.md). This UMIP will be discussed by members of the UMA community.
 
-<b> Step 2: Get Ready For Vote </b>
+### Step 2: Get ready for the vote 
 
 In order for the UMIP to move to the next stage of discussion, an off-chain transaction to add the proposed price identifier to the mainnet `IdentifierWhitelist` will need to be proposed. This transaction should be attached to the UMIP.
 
-<b> Step 3: Vote </b>
+### Step 3: Vote
 
 UMA voters will vote on the proposed transaction. Each UMA token represents one vote. If at least 5% of all tokens are used to vote, of which >50% of votes approve the UMIP, the UMIP is considered approved.
 
-<b> Step 4: Execute Transaction </b>
+### Step 4: Execute transaction
 
 Once the proposal has been approved, anyone can tell the governor contract to execute the proposed transaction.
 The governor contract will then execute the transaction, approving the identifier in `IdentifierWhitelist`.
@@ -63,3 +68,14 @@ To view the list of approved mainnet price identifiers, see below or run the `Su
 |USDETH| The price of USD in ETH.| [UMIP-6](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-6.md)
 |USDPERL| The price of USD in PERL.| [UMIP-13](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-13.md)
 |USDBTC| The price of USD in BTC.| [UMIP-7](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-7.md)
+
+### List of approved collateral currencies
+
+|Collateral Currency| Link to UMIP|
+|:-------| :-----------|
+|WETH|  [UMIP-10](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-10.md)
+|renBTC|  [UMIP-11](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-11.md)
+|PERL|  [UMIP-12](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-12.md)
+|rDAI|  [UMIP-17](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-17.md)
+|USDC; USDT|  [UMIP-18](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-18.md)
+|rDAI|  [UMIP-17](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-17.md)

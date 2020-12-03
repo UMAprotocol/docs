@@ -8,7 +8,7 @@ Owners of UMA tokens have 2 categories of responsibilities:
 1. Voting on price requests from financial contracts using the DVM
 2. Governing the UMA ecosystem by voting on parameter changes and approving system upgrades
 
-UMA tokenholders can use the [Voter dApp](https://vote.umaproject.org/) to vote on price requests. A tutorial on how to vote on price requests from the Voting dApp is [here](tutorials/voter-dApp.md). 
+UMA tokenholders can use the [Voter dApp](https://vote.umaproject.org/) to vote on price requests. A tutorial on how to vote on price requests from the Voting dApp is [here](uma-tokenholders/voter-dApp.md). 
 
 Voters who participate and vote correctly earn an inflationary reward (currently 0.05% of total network token supply), distributed pro-rata by stake.
 
@@ -30,7 +30,7 @@ All governance issues will be addressed via an UMIP process. The UMIP process is
 Because UMA tokenholders will be responsible for voting on price requests from financial contracts depending on the DVM, they need to:
 
 - Approve new price identifiers
-- Approve collateral currencies
+- Approve new collateral currencies
 - Upgrading the core DVM protocol and modifying DVM parameters
 - Register and de-register contract templates
 - Shut down contract instantiations (in rare circumstances)
