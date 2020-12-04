@@ -1,5 +1,5 @@
 ---
-title: How to vote using voter dApp
+title: How to vote via the Voter dApp
 sidebar_label: Voter dApp Tutorial
 ---
 

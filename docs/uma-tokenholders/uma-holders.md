@@ -20,17 +20,17 @@ UMA Tokenholders can discuss their votes in the #voting channel of the UMA Disco
 
 ## Governing the UMA ecosystem
 
-UMA tokenholders govern 2 areas of the UMA ecosystem:
+UMA tokenholders govern two areas of the UMA ecosystem:
 
-1. Financial contracts depending on the DVM
+1. Financial contracts using the DVM
 1. The UMA DVM
 
 All governance issues will be addressed via an UMIP process. The UMIP process is detailed [here](uma-tokenholders/umips.md).
 
-Because UMA tokenholders will be responsible for voting on price requests from financial contracts depending on the DVM, they need to:
+Because UMA tokenholders will be responsible for voting on price requests from financial contracts using the DVM, they need to:
 
 - Approve new price identifiers
 - Approve new collateral currencies
-- Upgrading the core DVM protocol and modifying DVM parameters
+- Upgrade the core DVM protocol and / or modify DVM parameters
 - Register and de-register contract templates
 - Shut down contract instantiations (in rare circumstances)

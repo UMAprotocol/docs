@@ -1,6 +1,6 @@
 ---
-title: Adding Price Identifiers and Collateral Currencies
-sidebar_label: Adding Price Identifiers & Collateral Currencies
+title: Adding price identifiers and collateral currencies
+sidebar_label: Price Identifiers & Collateral Currencies
 ---
 
 ## What is a price identifier?
@@ -23,14 +23,14 @@ See below for a list of approved collateral currencies in UMA's priceless contra
 
 ### Step 1: Discuss
 
-If you are building with a price identifier not currently supported by the UMA DVM, you will need to propose it to the community of UMA tokenholders for a vote.
-You should create an UMIP in which you describe your project and the new price identifier(s) being requested.
-At this time, you do not need to provide an implementation for the addition of a new price identifier.
+If you are building with a price identifier or collateral currency not currently supported by the UMA DVM, you will need to propose it to the community of UMA tokenholders for a vote.
+You should create an UMIP in which you describe your project and the new price identifier(s) or collateral currencies being requested.
+At this time, you do not need to provide an implementation for the addition of a new price identifier or collateral currency.
 Details on how to write a UMIP are [here](umips.md). This UMIP will be discussed by members of the UMA community.
 
 ### Step 2: Get ready for the vote 
 
-In order for the UMIP to move to the next stage of discussion, an off-chain transaction to add the proposed price identifier to the mainnet `IdentifierWhitelist` will need to be proposed. This transaction should be attached to the UMIP.
+In order for the UMIP to move to the next stage of discussion, an off-chain transaction to add the proposed price identifier or collateral currency to the mainnet `IdentifierWhitelist` will need to be proposed. This transaction should be attached to the UMIP.
 
 ### Step 3: Vote
 
@@ -38,13 +38,13 @@ UMA voters will vote on the proposed transaction. Each UMA token represents one 
 
 ### Step 4: Execute transaction
 
-Once the proposal has been approved, anyone can tell the governor contract to execute the proposed transaction.
+Once the proposal has been approved, anyone can initiate the governor contract to execute the proposed transaction.
 The governor contract will then execute the transaction, approving the identifier in `IdentifierWhitelist`.
 
-## Approved price identifiers
+## Approved price identifiers and collateral currencies
 
 The `IdentifierWhitelist` contract in the mainnet deployment of the UMA DVM is controlled by a decentralized governance process.
-To add a new price identifier, UMA tokenholders must vote and approve the identifier.
+To add a new price identifier or collateral currency, UMA tokenholders must vote and approve the identifier or currency.
 This is done via the UMIP process, as described [here](uma-tokenholders/umips.md).
 
 To view the list of approved mainnet price identifiers, see below or run the `Supported Identifiers` query on the [UMA Subgraph](https://thegraph.com/explorer/subgraph/protofire/uma?query=Supported%20Identifiers). Refer to the related [UMIP](https://github.com/UMAprotocol/UMIPs/tree/master/UMIPs) for clarity on the price that an identifier returns.

@@ -50,8 +50,8 @@ module.exports = {
     ],
     "UMA Tokenholders": [
       "uma-tokenholders/uma-holders",
-      "uma-tokenholders/umips",
       "uma-tokenholders/adding-price-id",
+      "uma-tokenholders/umips",
       "uma-tokenholders/voter-dApp",
       "uma-tokenholders/voting-2key", 
     ],

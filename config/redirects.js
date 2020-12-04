@@ -75,12 +75,7 @@ module.exports = [
     to: "/oracle/mainnet-info",
     from: ["/uma/oracle/mainnet_deployment_info.html"],
   },
-  // tutorials (oracle)
-  {
-    to: "/tutorials/voting-uma",
-    from: ["/uma/oracle/voting_with_uma_tokens.html"],
-  },
-  
+  // tutorials (oracle)  
   {
     to: "/tutorials/dvm-integration",
     from: ["/uma/oracle/integrating_the_dvm.html"],
