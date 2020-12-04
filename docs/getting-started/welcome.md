@@ -35,7 +35,7 @@ If you are interested in the UMA project token, please read this [section](gover
 
 ## Contracts
 
-For a more detailed view, API documentation is available for all UMA smart contracts.
+For a more detailed view, [API documentation](https://docs-dot-uma-protocol.appspot.com/uma/index.html) is available for all UMA smart contracts.
 
 ## Contact Us
 

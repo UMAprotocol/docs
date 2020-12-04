@@ -21,9 +21,16 @@ The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-pha
 
 UMA offers substantial rewards for discoveries that can prevent the loss of assets, the freezing of assets, or harm to users.
 
-Rewards range from $500 to $25,000.
-All rewards will be paid in ETH, and the amount of compensation will vary depending on severity.
-The severity is calculated according to the [OWASP](https://owasp.org/www-project-risk-assessment-framework/) risk rating model based on Impact and Likelihood.
+All rewards will be paid in $UMA, and the amount of compensation will vary depending on bug severity. Reward amounts typically correspond to severity in the following manner.
+
+|  Severity                | Reward amount in USD | 
+| ----------------------- | ------------------ | 
+| Low                     | $250                  | 
+| Medium  | $1,000 |
+| High | $3,000 |
+| Critical | $7,500 |
+
+Severity is calculated according to the [OWASP](https://owasp.org/www-project-risk-assessment-framework/) risk rating model based on Impact and Likelihood.
 
 ![](./severity.png)
 
