@@ -20,7 +20,7 @@ A UMIP that is open for consideration and is undergoing rapid iteration and chan
 In order to proceed to “Last Call,” the implementation must be complete.
 Every UMIP author is responsible for facilitating conversations and building community consensus for the proposal.
 
-### Last Call
+### Last call
 
 A UMIP that is done with its initial iteration and ready for review by a wide audience.
 If upon review, there is a material change or substantial unaddressed complaints, the UMIP will revert to "Draft".
@@ -72,7 +72,7 @@ The DVM currently does not support the [Base currency / Quote currency] price in
 - What are the financial positions enabled by creating this synthetic that don’t already exist? 
 - Consider adding market data -- e.g., if we add a “dai alternative,” the author could show the market size of Dai.
 
-### Technical Specification
+### Technical specification
 
 The technical specification should describe the syntax and semantics of the proposed solution for the issue raised. If a suggestion is proposed, provide sufficient details so that an implementation would be possible (Proof of Concepts are acceptable).
 
