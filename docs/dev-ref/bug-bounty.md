@@ -21,7 +21,7 @@ The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-pha
 
 UMA offers substantial rewards for discoveries that can prevent the loss of assets, the freezing of assets, or harm to users.
 
-All rewards will be paid in ETH, and the amount of compensation will vary depending on bug severity. Reward amounts typically correspond to severity in the following manner.
+All rewards will be paid in $UMA, and the amount of compensation will vary depending on bug severity. Reward amounts typically correspond to severity in the following manner.
 
 |  Severity                | Reward amount in USD | 
 | ----------------------- | ------------------ | 
