@@ -23,7 +23,7 @@ UMA Tokenholders can discuss their votes in the #voting channel of the UMA Disco
 UMA tokenholders govern two areas of the UMA ecosystem:
 
 1. Financial contracts using the DVM
-1. The UMA DVM
+2. The UMA DVM
 
 All governance issues will be addressed via an UMIP process. The UMIP process is detailed [here](uma-tokenholders/umips.md).
 
