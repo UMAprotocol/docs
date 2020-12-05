@@ -76,6 +76,6 @@ To view the list of approved mainnet price identifiers, see below or run the `Su
 |WETH|  [UMIP-10](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-10.md)
 |renBTC|  [UMIP-11](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-11.md)
 |PERL|  [UMIP-12](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-12.md)
-|rDAI|  [UMIP-17](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-17.md)
+|DAI| 
 |USDC; USDT|  [UMIP-18](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-18.md)
 |rDAI|  [UMIP-17](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-17.md)
