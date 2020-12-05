@@ -6,7 +6,7 @@ sidebar_label: Responsibilities
 Owners of UMA tokens have 2 categories of responsibilities:
 
 1. Voting on price requests from financial contracts using the DVM
-2. Governing the UMA ecosystem by voting on parameter changes and approving system upgrades
+2. Governing the UMA ecosystem by voting on parameter changes and approving system upgrades. System upgrades can include supporting new price identifiers or collateral types.
 
 UMA tokenholders can use the [Voter dApp](https://vote.umaproject.org/) to vote on price requests. A tutorial on how to vote on price requests from the Voting dApp is [here](uma-tokenholders/voter-dApp.md). 
 
