@@ -126,6 +126,7 @@ All UMIPs must include a discussion of the security implications/considerations 
 * How could this be exploited?
 * Do the instructions for determining the price provide people with enough certainty?
 * What are current or future concern possibilities with the way the price identifier is defined?
+* Are there any concerns around if the price identifier implementation is deterministic? 
 
 #### Example template for adding a new price identifier
 
