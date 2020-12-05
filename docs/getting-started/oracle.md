@@ -70,7 +70,7 @@ Owners of the UMA token have the following rights and responsibilities:
 - Upgrade core DVM protocol
 - Modify DVM parameters
 
-To vote on price requests, voters will be able to use [vote.umaproject.org](https://vote.umaproject.org/) or a [CLI tool](tutorials/voting-uma.md).
+To vote on price requests, voters will be able to use [vote.umaproject.org](https://vote.umaproject.org/) (uma-tokenholders/voter-dApp.md).
 
 All responsibilities relating to governance of the UMA ecosystem (any responsibility outside of voting on price requests) will be effected via the UMIP (UMA Improvement Proposal) process.
 To read more about UMIPs, please look at this [repo](https://github.com/UMAprotocol/UMIPs).

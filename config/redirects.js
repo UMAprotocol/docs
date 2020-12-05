@@ -75,31 +75,29 @@ module.exports = [
     to: "/oracle/mainnet-info",
     from: ["/uma/oracle/mainnet_deployment_info.html"],
   },
-  // tutorials (oracle)
-  {
-    to: "/tutorials/voting-uma",
-    from: ["/uma/oracle/voting_with_uma_tokens.html"],
-  },
-  {
-    to: "/tutorials/voting-2key",
-    from: ["/uma/oracle/voting_with_UMA_2-key_contract.html"],
-  },
+  // tutorials (oracle)  
   {
     to: "/tutorials/dvm-integration",
     from: ["/uma/oracle/integrating_the_dvm.html"],
   },
-  // governance
+  // UMA Tokenholders
   {
-    to: "/governance/uma-holders",
+    to: "/uma-tokenholders/uma-holders",
     from: ["/uma/oracle/UMA_token_holder_responsibilities.html"],
   },
   {
-    to: "/governance/umips",
+    to: "/uma-tokenholders/umips",
     from: ["/uma/oracle/UMIPs.html"],
   },
   {
-    to: "/governance/adding-price-id",
+    to: "/uma-tokenholders/adding-price-id",
     from: ["/uma/oracle/adding_a_price_identifier.html"],
+    
+  },
+
+  {
+    to: "/uma-tokenholders/voting-2key",
+    from: ["/uma/oracle/voting_with_UMA_2-key_contract.html"],
   },
   // developer reference
   {

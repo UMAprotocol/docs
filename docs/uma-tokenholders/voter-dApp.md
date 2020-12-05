@@ -1,6 +1,6 @@
 ---
-title: How to vote using voter dApp
-sidebar_label: Voter dApp guide
+title: How to vote via the Voter dApp
+sidebar_label: Voter dApp Tutorial
 ---
 
 This tutorial describes how to vote using the [UMA voter dApp](https://vote.umaproject.org/). For context, each voting period is 48hrs. Voting takes 3 steps:

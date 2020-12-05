@@ -21,7 +21,7 @@ module.exports = {
       label: "The Protocol",
       to: "synthetic-tokens/explainer",
       position: "left",
-      activeBaseRegex: "(synthetic-tokens|oracle|governance)",
+      activeBaseRegex: "(synthetic-tokens|oracle|uma-tokenholders)",
       items: [
         {
           to: "synthetic-tokens/explainer",
@@ -34,9 +34,9 @@ module.exports = {
           activeBasePath: "oracle",
         },
         {
-          to: "governance/uma-holders",
-          label: "Governance",
-          activeBasePath: "governance",
+          to: "uma-tokenholders/uma-holders",
+          label: "UMA Tokenholders",
+          activeBasePath: "uma-tokenholders",
         },
       ],
     },

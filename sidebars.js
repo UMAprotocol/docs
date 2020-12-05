@@ -31,11 +31,7 @@ module.exports = {
         label: "Bots",
         items: ["tutorials/bots", "tutorials/bot-param"],
       },
-      {
-        type: "category",
-        label: "Voting",
-        items: ["tutorials/voting-uma", "tutorials/voting-2key", "tutorials/voter-dApp"],
-      },
+  
       "tutorials/dvm-integration",
     ],
   },
@@ -52,10 +48,12 @@ module.exports = {
       "oracle/known-issues",
       "oracle/mainnet-info",
     ],
-    Governance: [
-      "governance/uma-holders",
-      "governance/umips",
-      "governance/adding-price-id",
+    "UMA Tokenholders": [
+      "uma-tokenholders/uma-holders",
+      "uma-tokenholders/adding-price-id",
+      "uma-tokenholders/umips",
+      "uma-tokenholders/voter-dApp",
+      "uma-tokenholders/voting-2key", 
     ],
   },
   devRef: {
