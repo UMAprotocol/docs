@@ -31,7 +31,7 @@ the introduction of a new [UMIP](uma-tokenholders/umips.md).
 
 5. Tax delay penalty per week: 0%
 
-## Approved Collateral Types and Final Fees:
+## Approved Collateral Type Final Fees:
 
 - Dai: 400
 - WETH: 1
@@ -40,20 +40,6 @@ the introduction of a new [UMIP](uma-tokenholders/umips.md).
 - rDAI: 400
 - USDC: 400
 - USDT: 400
-
-## Approved Identifiers:
-
-- ETH/BTC
-- USDETH
-- ETHUSD
-- BTCUSD
-- USDBTC
-- PERLUSD
-- USDPERL
-- COMPUSD
-- GASETH-1HR, GASETH-4HR, GASETH-1D, GASETH-1W, GASETH-1M
-- GASETH-1HR-1M, GASETH-4HR-1M, GASETH-1D-1M, GASETH-1W-1M, GASETH-1M-1M
-- ARSUSD
 
 ## Approved Financial Contract Templates:
 

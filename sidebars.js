@@ -17,7 +17,6 @@ module.exports = {
       "oracle/econ-architecture",
       "oracle/dvm-interface",
       "oracle/known-issues",
-      "oracle/mainnet-info",
     ]
   },
   umaTokenholders: {
@@ -54,8 +53,10 @@ module.exports = {
       },
     ],
     "Developer Reference": [
+      "developers/subgraphs",
       "developers/bug-bounty",
       "developers/addresses",
+      "developers/mainnet-info",
       {
         type: "link",
         label: "Contracts (Github)",
