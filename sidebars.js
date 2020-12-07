@@ -58,8 +58,9 @@ module.exports = {
   },
   devRef: {
     "Developer Reference": [
-      "dev-ref/bug-bounty",
       "dev-ref/addresses",
+      "dev-ref/subgraphs",
+      "dev-ref/bug-bounty",
       {
         type: "link",
         label: "Contracts (Github)",

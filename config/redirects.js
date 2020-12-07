@@ -108,6 +108,10 @@ module.exports = [
     to: "/dev-ref/bug-bounty",
     from: ["/uma/developer_reference/bug_bounty.html"],
   },
+  {
+    to: "/dev-ref/subgraphs",
+    from: ["/uma/developer_reference/subgraphs.html"],
+  },
   // community
   {
     to: "/community/events",
