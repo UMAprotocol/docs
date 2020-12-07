@@ -71,10 +71,10 @@ module.exports = [
     to: "/oracle/known-issues",
     from: ["/uma/oracle/known_issues.html"],
   },
-  {
-    to: "/oracle/mainnet-info",
-    from: ["/uma/oracle/mainnet_deployment_info.html"],
-  },
+  // {
+  //   to: "/oracle/mainnet-info",
+  //   from: ["/uma/oracle/mainnet_deployment_info.html"],
+  // },
   // developers (oracle)  
   {
     to: "/developers/dvm-integration",
