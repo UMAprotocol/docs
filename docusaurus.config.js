@@ -13,7 +13,7 @@ module.exports = {
   themeConfig: {
     navbar,
     footer,
-    sidebarCollapsible: false,
+    sidebarCollapsible: true,
     prism: {
       theme: require("prism-react-renderer/themes/nightOwl"),
     },

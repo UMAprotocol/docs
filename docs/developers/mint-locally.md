@@ -3,7 +3,7 @@ title: Minting Tokens Locally with the Truffle Console
 sidebar_label: With Truffle (locally)
 ---
 
-This tutorial will show you how to create synthetic tokens from the command line using UMA’s synthetic token template. Before beginning this tutorial, please make sure your environment is set up correctly by following the instructions in the setup [guide](tutorials/setup.md). After completing this section, you should:
+This tutorial will show you how to create synthetic tokens from the command line using UMA’s synthetic token template. Before beginning this tutorial, please make sure your environment is set up correctly by following the instructions in the setup [guide](developers/setup.md). After completing this section, you should:
 
 - Have the protocol repo cloned.
 - Be running an instance of Ganache on port 9545.
@@ -11,7 +11,7 @@ This tutorial will show you how to create synthetic tokens from the command line
 
 Below, we’ll discuss how to create and manage a token sponsor position via the command line on a local testnet.
 UMA also has a command-line interface (CLI) tool that bundles and renames some of these steps.
-[These](tutorials/cli-tool.md) tutorials discuss how to create and manage a token sponsor position using this CLI tool.
+[These](developers/cli-tool.md) tutorials discuss how to create and manage a token sponsor position using this CLI tool.
 
 - Begin [here](#parameterize-and-deploy-a-contract) if you are creating a new type of synthetic token on a local testnet.
 - Begin [here](#create-new-tokens-from-an-existing-contract) if you are creating synthetic tokens from an existing contract on a local testnet.
@@ -147,7 +147,7 @@ await emp.deposit({ rawValue: web3.utils.toWei("10") })
 ```
 
 2. For a token sponsor to withdraw collateral from his position, there are typically 2 ways to do this.
-   Read this [explainer](synthetic-tokens/explainer.md) for more information.
+   Read this [explainer](understanding-uma/explainer.md) for more information.
    In this scenario, because we are the only token sponsor, we will have to withdraw collateral the “slow” way. First, we need to request a withdrawal of 10 collateral tokens.
 
 ```js

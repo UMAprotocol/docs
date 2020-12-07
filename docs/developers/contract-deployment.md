@@ -40,13 +40,13 @@ The mandatory EMP parameters are:
 - `priceFeedIdentifier`: The plaintext price identifier converted to bytes32 format. Example for USDETH: `0x555344455448`.
 - `syntheticName`: The plaintext synthetic token name. Example: `Synthetic Test USDETH Dec 2024`.
 - `syntheticSymbol`: The plaintext synthetic token symbol. Example: `USDETH-DEC-2024`.
-- `collateralRequirement`: The [collateralization requirement ratio](https://docs.umaproject.org/synthetic-tokens/glossary#collateralization-requirement) converted to Wei. Example for a 1.5 ratio: `{ rawValue: '1500000000000000000' }`.
-- `disputeBondPct`: The percentage size of the [dispute bond](https://docs.umaproject.org/synthetic-tokens/explainer#liquidation-and-dispute) converted to 18 decimals. Example for 10%: `{ rawValue: '100000000000000000' }`.
-- `sponsorDisputeRewardPct`: The percentage size of the [dispute reward](https://docs.umaproject.org/synthetic-tokens/explainer#liquidation-and-dispute) paid to the position sponsor converted to 18 decimals. Example for 5%: `{ rawValue: '50000000000000000' }`.
+- `collateralRequirement`: The [collateralization requirement ratio](https://docs.umaproject.org/understanding-uma/glossary#collateralization-requirement) converted to Wei. Example for a 1.5 ratio: `{ rawValue: '1500000000000000000' }`.
+- `disputeBondPct`: The percentage size of the [dispute bond](https://docs.umaproject.org/understanding-uma/explainer#liquidation-and-dispute) converted to 18 decimals. Example for 10%: `{ rawValue: '100000000000000000' }`.
+- `sponsorDisputeRewardPct`: The percentage size of the [dispute reward](https://docs.umaproject.org/understanding-uma/explainer#liquidation-and-dispute) paid to the position sponsor converted to 18 decimals. Example for 5%: `{ rawValue: '50000000000000000' }`.
 - `disputerDisputeRewardPct`: The percentage size of the dispute reward paid to the disputer converted to 18 decimals. Example for 20%: `{ rawValue: '200000000000000000' }`.
 - `minSponsorTokens`: The minimum number of tokens required in a sponsor position converted to 18 decimals. Example for 100 tokens: `{ rawValue: '100000000000000000000' }`.
-- `withdrawalLiveness`: The length of the [withdrawal liveness period](https://docs.umaproject.org/synthetic-tokens/glossary#withdrawal-liveness-period) in seconds. Example for 2 hours: `7200`.
-- `liquidationLiveness`: The length of the [liquidation liveness period](https://docs.umaproject.org/synthetic-tokens/glossary#liquidation-liveness-period) in seconds. Example for 2 hours: `7200`.
+- `withdrawalLiveness`: The length of the [withdrawal liveness period](https://docs.umaproject.org/understanding-uma/glossary#withdrawal-liveness-period) in seconds. Example for 2 hours: `7200`.
+- `liquidationLiveness`: The length of the [liquidation liveness period](https://docs.umaproject.org/understanding-uma/glossary#liquidation-liveness-period) in seconds. Example for 2 hours: `7200`.
 - `excessTokenBeneficiary`: The Ethereum address that will receive excess collateral accrued by interest bearing collateral currencies, such as rDAI. For collateral types that do not accrue additional collateral, this should be still be set any wallet address that you own. This will just not accrue any additional collateral.
 
 This is what the parameters object will look like when correctly formatted.
@@ -82,12 +82,12 @@ To deploy an EMP, you will need to call the `createExpiringMultiParty()` functio
 Another method to create an EMP is to use a deployment script. 
 
 1. Clone the UMA protocol [repository](https://github.com/UMAprotocol/protocol).
-2. Follow the [setup instructions](https://docs.umaproject.org/tutorials/setup) to meet the prequisites, prepare the repo and connect your wallet to your workspace.
+2. Follow the [setup instructions](https://docs.umaproject.org/developers/setup) to meet the prequisites, prepare the repo and connect your wallet to your workspace.
 3. Edit the `constructorParams` object in the `DeployEMP.js` [script](https://github.com/UMAprotocol/protocol/blob/master/packages/core/scripts/local/DeployEMP.js#L99) with your desired parameters. Leave `priceFeedIdentifier` as is. This will be passed in as a command line argument. Note: all unit conversions will be done for you, so no need to convert arguments to 18 decimals or bytes32 format.
 4. Run `$(npm bin)/truffle exec ./packages/core/scripts/local/DeployEMP.js --network kovan_mnemonic --identifier USDETH` from the `protocol` folder to deploy your EMP on Kovan.
 
 ## Post-Deployment
 
-After following this tutorial, you will have successfully deployed an EMP contract! You will need to navigate to your contract address on Etherscan and mint an initial position to set the [GCR](https://docs.umaproject.org/synthetic-tokens/glossary#global-collateralization-ratio-gcr). This can be done by calling the `create(collateralAmount, numTokens)` function. [Here](https://docs.umaproject.org/tutorials/mint-etherscan) is a full walkthrough of minting tokens via Etherscan.
+After following this tutorial, you will have successfully deployed an EMP contract! You will need to navigate to your contract address on Etherscan and mint an initial position to set the [GCR](https://docs.umaproject.org/understanding-uma/glossary#global-collateralization-ratio-gcr). This can be done by calling the `create(collateralAmount, numTokens)` function. [Here](https://docs.umaproject.org/developers/mint-etherscan) is a full walkthrough of minting tokens via Etherscan.
 
 View this [documentation](https://docs-dot-uma-protocol.appspot.com/uma/contracts/ExpiringMultiParty.html) for a full explanation of available EMP functionality. 

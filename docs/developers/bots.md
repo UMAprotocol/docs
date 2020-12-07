@@ -35,13 +35,13 @@ docker logs <your container hash>
 ```
 
 Your liquidation bot should now be running, please read on to find out about how
-it works and how to [configure](tutorials/bot-param.md) it.
+it works and how to [configure](developers/bot-param.md) it.
 
 ## Motivation
 
 The prompt and accurate execution of liquidations and disputes is a core assumption to all priceless financial contracts compatible with the UMA DVM.
 Liquidation and dispute bots, as described below and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/packages/liquidator) and [here](https://github.com/UMAprotocol/protocol/tree/master/packages/disputer), are infrastructure tools that will help maintain the overall health of the UMA ecosystem.
-They are currently compatible with the priceless synthetic token contract template, as described [here](synthetic-tokens/explainer.md) and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/financial-templates).
+They are currently compatible with the priceless synthetic token contract template, as described [here](understanding-uma/explainer.md) and implemented [here](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/financial-templates).
 
 ### Liquidation vs Dispute Bot
 
@@ -54,7 +54,7 @@ In short, a liquidation bot is to liquidate under-collateralized positions while
 
 ## Incentives to Running a Bot
 
-Details about liquidation and dispute rewards can be found [here](synthetic-tokens/explainer.md#liquidation-and-dispute).
+Details about liquidation and dispute rewards can be found [here](understanding-uma/explainer.md#liquidation-and-dispute).
 
 ## Implementation
 
@@ -143,7 +143,7 @@ truffle(kovan_mnemonic)> accounts[0]
 ```
 
 You can now fund this wallet with the associated currency for the type of bot you want to run.
-To learn more about creating synthetic tokens to fund your liquidation bot see [this](tutorials/cli-tool.md) tutorial.
+To learn more about creating synthetic tokens to fund your liquidation bot see [this](developers/cli-tool.md) tutorial.
 
 ### Creating a price feed API key
 
@@ -457,4 +457,4 @@ These configurations can be added to the config in the same way the `crThreshold
 
 ## Bot configuration parameters
 
-For a more detailed document on bot-specific parameters see this [doc](tutorials/bot-param.md).
+For a more detailed document on bot-specific parameters see this [doc](developers/bot-param.md).

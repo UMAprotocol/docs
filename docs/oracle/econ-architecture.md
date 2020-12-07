@@ -5,7 +5,7 @@ sidebar_label: Economic Architecture
 
 The economic architecture of the UMA DVM is summarized here, and additional details can be found in the [whitepaper](https://github.com/UMAprotocol/whitepaper/blob/master/UMA-DVM-oracle-whitepaper.pdf).
 
-This section provides an overview of the current implementation of the economic guarantees of the DVM. For a discussion of the guiding principles behind designing the economic guarantees of the DVM, please look at [this section](getting-started/oracle.md).
+This section provides an overview of the current implementation of the economic guarantees of the DVM. For a discussion of the guiding principles behind designing the economic guarantees of the DVM, please look at [this section](understanding-uma/oracle.md).
 
 ## Economic Guarantees of the UMA DVM
 

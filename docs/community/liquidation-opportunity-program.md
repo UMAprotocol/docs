@@ -22,10 +22,10 @@ associated with the liquidation transaction.
 
 ## How do I run a bot?
 
-The in-depth tutorial [here](tutorials/bots.md) will walk you through the
+The in-depth tutorial [here](developers/bots.md) will walk you through the
 process of running a bot through various methods. However, the most expedient
 way to run a bot is from the Docker image. This process is detailed in the
-Docker [section](tutorials/bots.md#running-the-bots-locally-with-docker) of that
+Docker [section](developers/bots.md#running-the-bots-locally-with-docker) of that
 tutorial.
 
 For your convenience, however, the following is a quick summary of the important
@@ -37,14 +37,14 @@ points.
 
 This short guide only teaches you how to run a bot. To take advantage of the
 liquidation opportunity, you will have to tweak your polling interval and
-[liquidation sensitivity](tutorials/bots.md#specifying-liquidation-sensitivity-parameters)
+[liquidation sensitivity](developers/bots.md#specifying-liquidation-sensitivity-parameters)
 amongst other variables.
 
 :::
 
 First, create a file to set the appropriate configuration for your liquidation
 bot. Please edit the following example with your own values. You can reference
-the [tutorial](tutorials/bots.md) for appropriate values.
+the [tutorial](developers/bots.md) for appropriate values.
 
 ```shell title="example.env"
 EMP_ADDRESS=0xb56C5f1fB93b1Fbd7c473926c87B6B9c4d0e21d5

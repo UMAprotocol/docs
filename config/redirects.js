@@ -3,55 +3,55 @@ module.exports = [
     to: "/",
     from: ["/uma/index.html", "/uma/community/connecting_with_UMA.html"],
   },
-  // getting started
+  // understanding-uma
   {
-    to: "/getting-started/overview",
-    from: ["/uma/getting_started/architecture_overview.html"],
+    to: "/understanding-uma/overview",
+    from: ["/uma/understanding-uma/architecture_overview.html"],
   },
   {
-    to: "/getting-started/synthetic-tokens",
-    from: ["/uma/getting_started/priceless_defi_contracts.html"],
+    to: "/understanding-uma/synthetic-tokens",
+    from: ["/uma/understanding-uma/priceless_defi_contracts.html"],
   },
   {
-    to: "/getting-started/oracle",
-    from: ["/uma/getting_started/uma_oracle_design.html"],
+    to: "/understanding-uma/oracle",
+    from: ["/uma/understanding-uma/uma_oracle_design.html"],
   },
   // synthetic tokens
   {
-    to: "/synthetic-tokens/explainer",
+    to: "/understanding-uma/explainer",
     from: ["/uma/synthetic_tokens/explainer.html"],
   },
   {
-    to: "/synthetic-tokens/glossary",
+    to: "/understanding-uma/glossary",
     from: ["/uma/synthetic_tokens/glossary.html"],
   },
   {
-    to: "/synthetic-tokens/known-issues",
+    to: "/understanding-uma/known-issues",
     from: ["/uma/synthetic_tokens/known_issues.html"],
   },
-  // tutorials (synthetic tokens)
+  // developers (synthetic tokens)
   {
-    to: "/tutorials/setup",
+    to: "/developers/setup",
     from: ["/uma/synthetic_tokens/prerequisites.html"],
   },
   {
-    to: "/tutorials/mint-locally",
+    to: "/developers/mint-locally",
     from: ["/uma/synthetic_tokens/creating_from_truffle.html"],
   },
   {
-    to: "/tutorials/cli-tool",
+    to: "/developers/cli-tool",
     from: ["/uma/synthetic_tokens/using_the_uma_sponsor_cli_tool.html"],
   },
   {
-    to: "/tutorials/bots",
+    to: "/developers/bots",
     from: ["/uma/synthetic_tokens/liquidation.html"],
   },
   {
-    to: "/tutorials/bot-param",
+    to: "/developers/bot-param",
     from: ["/uma/synthetic_tokens/bot_parameterization.html"],
   },
   {
-    to: "/tutorials/mint-etherscan",
+    to: "/developers/mint-etherscan",
     from: ["/uma/synthetic_tokens/mint_tokens_via_etherscan.html"],
   },
   // oracle
@@ -75,9 +75,9 @@ module.exports = [
     to: "/oracle/mainnet-info",
     from: ["/uma/oracle/mainnet_deployment_info.html"],
   },
-  // tutorials (oracle)  
+  // developers (oracle)  
   {
-    to: "/tutorials/dvm-integration",
+    to: "/developers/dvm-integration",
     from: ["/uma/oracle/integrating_the_dvm.html"],
   },
   // UMA Tokenholders
@@ -101,11 +101,11 @@ module.exports = [
   },
   // developer reference
   {
-    to: "/dev-ref/addresses",
+    to: "/developers/addresses",
     from: ["/uma/developer_reference/contract_addresses.html"],
   },
   {
-    to: "/dev-ref/bug-bounty",
+    to: "/developers/bug-bounty",
     from: ["/uma/developer_reference/bug_bounty.html"],
   },
   // community

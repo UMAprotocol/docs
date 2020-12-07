@@ -23,20 +23,20 @@ minted from.
 Navigate to http://tools.umaproject.org/ and click the "Connect" button at the
 top right corner to connect your MetaMask wallet to the dapp.
 
-![connect](/docs/tutorials/emp_connect.png)
+![connect](/docs/developers/emp_connect.png)
 
 Then, select the `uUSDwETH` contract from the dropdown immediately underneath the
 header (above the tabs).
 
-![select EMP](/docs/tutorials/emp_select.png)
+![select EMP](/docs/developers/emp_select.png)
 
 Select the "Manage Position" tab.
 
-![manage position tab](/docs/tutorials/emp_manage-position.png)
+![manage position tab](/docs/developers/emp_manage-position.png)
 
 Scroll down to the "Actions" dropdown and ensure that "Create" is selected.
 
-![position actions dropdown](/docs/tutorials/emp_actions.png)
+![position actions dropdown](/docs/developers/emp_actions.png)
 
 At this point, make sure you read the text and confirm that:
 
@@ -59,12 +59,12 @@ WETH” tab.
 
 You may skip this step if you already have sufficient WETH.
 
-![weth converter](/docs/tutorials/emp_weth.png)
+![weth converter](/docs/developers/emp_weth.png)
 
 Once you have enough WETH to use as collateral, return to the "Manage Position"
 tab and scroll down to the form at the bottom of the page:
 
-![token minting form](/docs/tutorials/emp_form.png)
+![token minting form](/docs/developers/emp_form.png)
 
 In the first field, fill in the amount of collateral you want to supply.
 
@@ -91,7 +91,7 @@ Head to the `uUSDwETH/USDC`
 and click on the "Add Liquidity" button. You’ll be asked to Setup Proxy if you
 haven’t already
 
-![add liquidity button on balancer](/docs/tutorials/bal_add-liquidity.png)
+![add liquidity button on balancer](/docs/developers/bal_add-liquidity.png)
 
 Once the proxy is setup, the "Add Liquidity" button will show you a form for
 adding liquidity.
@@ -102,7 +102,7 @@ single-asset but that mechanism is out of scope for this tutorial.
 
 Under the "All Pool Assets" tab, you should see something like this:
 
-![deposit assets on balancer](/docs/tutorials/bal_deposit.png)
+![deposit assets on balancer](/docs/developers/bal_deposit.png)
 
 As with any other ERC20 token, you'll have to "unlock" (i.e. grant approval) for
 the dapp to transfer tokens on your behalf. Once you have done that, you can

@@ -24,7 +24,7 @@ account and will sign all transactions using its private keys.
 
 ## Prerequisites
 
-Before beginning this tutorial, please make sure your environment is set up correctly by following the instructions in the [Setup Guide](tutorials/setup.md). After completing this section, you should:
+Before beginning this tutorial, please make sure your environment is set up correctly by following the instructions in the [Setup Guide](developers/setup.md). After completing this section, you should:
 
 - Have the protocol repo cloned.
 - Be running an instance of Ganache on port 9545.
@@ -57,7 +57,7 @@ yarn truffle migrate --reset --network=test
    the `--test` flag to `true` in order to whitelist the collateral currency, approve the pricefeed identifier, use
    `MockOracle` as our oracle, create an initial sponsor position, and mint our default sponsor account some collateral
    tokens. The CLI tool does not support creating the first position globally for an `ExpiringMultiParty` contract
-   due to the GCR restriction, which you can read more about [here](synthetic-tokens/explainer.md). In short,
+   due to the GCR restriction, which you can read more about [here](understanding-uma/explainer.md). In short,
    every position that is created must be collateralized above the global collateralization ratio (GCR) for the
    contract (aggregate collateral divided by aggregate synthetic tokens outstanding), but the first position
    globally has no GCR to reference. Therefore, the sponsor's flow is different enough that we do not address it in
@@ -69,7 +69,7 @@ yarn truffle exec packages/core/scripts/local/DeployEMP.js --network=test --test
 
 This is the output you should see (the numbers might be slightly different):
 
-![](/docs/tutorials/deployEMP_output.png)
+![](/docs/developers/deployEMP_output.png)
 
 5. Run the CLI.
 
@@ -79,7 +79,7 @@ uma --network=test
 
 This will show you the top-level menu of the CLI tool.
 
-![](/docs/tutorials/toplevelmenu.png)
+![](/docs/developers/toplevelmenu.png)
 
 ## Navigate to Live Synthetic Tokens
 
@@ -87,56 +87,56 @@ Now that you can see the priceless synthetic token contract we will be interacti
 
 From the top-level menu in the CLI tool, use the arrow keys to select “Sponsor” and press “Enter”.
 
-![](/docs/tutorials/toplevelmenu_sponsor.png)
+![](/docs/developers/toplevelmenu_sponsor.png)
 
 View the live contracts to see a list of synthetic tokens on the network that are live (i.e. not yet expired).
 Because there is only one deployed contract on this local testnet, only one is shown. Select this one by pressing “Enter”.
 
-![](/docs/tutorials/livemarket.png)
+![](/docs/developers/livemarket.png)
 
 ## Creating New Synthetic Tokens
 
 Navigate to the list of live synthetic tokens. Because you are not yet a token sponsor for this synthetic token, you are prompted to “Sponsor new position”. Use the arrows to navigate to this option and press “Enter”. Enter the number of tokens you would like to create (1000 in this example, which is the
 minimum sponsor position allowed as described by the configuration object in the `DeployEMP.js` script).
 
-![](/docs/tutorials/create_numtokens.png)
+![](/docs/developers/create_numtokens.png)
 
 After displaying the required amount of collateral to create this position, you are prompted to confirm if you would like to proceed.
 
-![](/docs/tutorials/create_confirm.png)
+![](/docs/developers/create_confirm.png)
 
 A summary of the relevant transactions is displayed, as well as an updated summary of your token sponsor position.
 
-![](/docs/tutorials/create_complete.png)
+![](/docs/developers/create_complete.png)
 
 ## Depositing Additional Collateral
 
 Navigate to the list of live synthetic tokens. Select the token contract for which you are a token sponsor. Here are the options available to help manage your token sponsor position:
 
-![](/docs/tutorials/deposit_options.png)
+![](/docs/developers/deposit_options.png)
 
 Navigate to “Deposit collateral” and press “Enter”.
 Input the number of ETH you would like to deposit.
 
-![](/docs/tutorials/deposit_num.png)
+![](/docs/developers/deposit_num.png)
 
 After confirming the transaction, you will be presented with a summary of the transactions and an updated summary of your position.
 
-![](/docs/tutorials/deposit_complete.png)
+![](/docs/developers/deposit_complete.png)
 
 ## Withdrawing excess collateral
 
 Navigate to the list of live synthetic tokens. Select the token contract for which you are a token sponsor. Navigate to “Withdraw collateral” and press “Enter”.
 
-![](/docs/tutorials/withdraw_toplevel.png)
+![](/docs/developers/withdraw_toplevel.png)
 
-Because you are the only token sponsor, you cannot make a “fast” withdrawal as explained [here](synthetic-tokens/explainer.md#managing-token-sponsor-positions).
+Because you are the only token sponsor, you cannot make a “fast” withdrawal as explained [here](understanding-uma/explainer.md#managing-token-sponsor-positions).
 Rather, this will be a “slow” delay. The request will take 60 minutes to process, as the liveness period for withdrawals has been set in this local testnet deployment to 60 minutes.
 During this liveness period, the collateral in the contract is locked (a sponsor cannot add additional collateral or make another withdrawal request).
 Request to withdraw some ETH. After submitting this request, a summary of the relevant transaction will be displayed, as well as an updated summary of your token sponsor position.
 Note that the pending collateral withdrawal amount is now reflected.
 
-![](/docs/tutorials/withdraw_num.png)
+![](/docs/developers/withdraw_num.png)
 
 Because time does not advance automatically on your local blockchain with Ganache, you should exit the Sponsor CLI tool and advance time manually with the following command. Manually modifying contract time is possible because we are using the `MockOracle` which allows us to manually push prices and modify contract time.
 Running this script like so will advance time by 120 minutes.
@@ -156,17 +156,17 @@ Navigate to the contract you previously used to create a synthetic token positio
 Note that you have a pending withdrawal. Navigate to “Manage your withdrawal request” and press “Enter”.
 Note that the withdrawal request is now ready to be executed.
 
-![](/docs/tutorials/withdraw_execute.png)
+![](/docs/developers/withdraw_execute.png)
 
 Navigate to “Execute Pending Withdrawal” and press “Enter”. After confirming, you are presented with a summary of the relevant transactions and your updated position summary.
 
-![](/docs/tutorials/withdraw_complete.png)
+![](/docs/developers/withdraw_complete.png)
 
 ## Redeeming Synthetic Tokens
 
 Navigate to the list of live synthetic tokens and select the contract for which you are a token sponsor. Navigate to “Repay tokens” and press “Enter”.
 
-![](/docs/tutorials/redeem_start.png)
+![](/docs/developers/redeem_start.png)
 
 You will now indicate how many tokens you would like to redeem. Each token is redeemable for the pro rata collateralization of each token by the token sponsor.
 Only token sponsors are allowed to redeem tokens prior to their expiration. Before expiry, you are allowed to redeem as many tokens as you want provided that
@@ -174,7 +174,7 @@ you keep the tokens outstanding above the `minSponsorTokens` requirement which i
 100% of the tokens outstanding and simultaneously end the position.
 After confirming, you will be presented with the relevant transactions and a summary of the updated token sponsor position.
 
-![](/docs/tutorials/redeem_complete.png)
+![](/docs/developers/redeem_complete.png)
 
 ## Transferring a Token Sponsor Position
 
@@ -183,7 +183,7 @@ After confirming, your request to transfer the token sponsor position will be su
 
 Note that your summary indicates that there is a “Pending transfer request”.
 
-![](/docs/tutorials/transfer_start.png)
+![](/docs/developers/transfer_start.png)
 
 Because time does not advance automatically on your local blockchain with Ganache, you should exit the Sponsor CLI tool and advance time manually with the following command:
 
@@ -199,11 +199,11 @@ uma --network=test
 
 Navigate to the contract you are a token sponsor for.
 
-![](/docs/tutorials/transfer_confirm.png)
+![](/docs/developers/transfer_confirm.png)
 
 Navigate to “Transfer position to new owner” and press “Enter”.
 The Sponsor CLI tool indicates that the liveness period has elapsed and the request is ready to be executed.
 Navigate to “Execute Pending Transfer” and press “Enter”. You will be prompted to enter the address to transfer the position to. In this demo, the position will be transferred to `0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828`.
 After confirming, you will be notified that you are no longer a token sponsor.
 
-![](/docs/tutorials/transfer_complete.png)
+![](/docs/developers/transfer_complete.png)
