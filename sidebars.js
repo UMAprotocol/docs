@@ -14,7 +14,7 @@ module.exports = {
       {
         type: "category",
         label: "Using Existing Contracts",
-        items: ["tutorials/mint-farm-yusd", "tutorials/mint-farm-yusdbtc", "tutorials/redeem-tokens", "tutorials/cli-tool"],
+        items: ["tutorials/mint-farm-yusd", "tutorials/mint-farm-yusdbtc", "tutorials/redeem-tokens"],
       },
       {
         type: "category",
@@ -46,7 +46,6 @@ module.exports = {
       "oracle/econ-architecture",
       "oracle/dvm-interface",
       "oracle/known-issues",
-      "oracle/mainnet-info",
     ],
     "UMA Tokenholders": [
       "uma-tokenholders/uma-holders",
@@ -58,8 +57,10 @@ module.exports = {
   },
   devRef: {
     "Developer Reference": [
-      "dev-ref/bug-bounty",
       "dev-ref/addresses",
+      "dev-ref/subgraphs",
+      "dev-ref/bug-bounty",
+      "dev-ref/mainnet-info",
       {
         type: "link",
         label: "Contracts (Github)",

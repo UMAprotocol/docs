@@ -7,7 +7,7 @@ This tutorial will show you how to deploy an Expiring Multi Party (EMP) contract
 
 This is the high-level EMP deployment process that you will need to follow.
 
-- Verify that your desired [price identifier](https://docs.umaproject.org/uma-tokenholders/adding-price-id#what-is-a-price-identifier) and collateral type is available on the network you wish to deploy your contract to.
+- Verify that your desired [price identifier](/uma-tokenholders/adding-price-id#what-is-a-price-identifier) and [collateral type](/uma-tokenholders/adding-price-id#what-is-a-collateral-currency) is available on the network you wish to deploy your contract to.
 - Write your contract parameters.
 - Deploy your contract with Etherscan OR
 - Deploy your contract with a deployment script.
@@ -22,8 +22,8 @@ Before deploying a mainnet contract, it is highly recommended that you have test
 Before deploying a contract, you should verify that your desired price identifier and collateral currency is already approved on the network you are trying to deploy to.
 
 View approved price identifiers and currencies here:
-- [Approved mainnet collateral currencies](https://docs.umaproject.org/oracle/mainnet-info#approved-collateral-types-and-final-fees)
-- [Approved mainnet price identifiers](https://docs.umaproject.org/oracle/mainnet-info#approved-identifiers)
+- [Approved mainnet collateral currencies](/uma-tokenholders/adding-price-id#list-of-approved-collateral-currencies)
+- [Approved mainnet price identifiers](/uma-tokenholders/adding-price-id#list-of-approved-price-identifiers)
 - [Approved Kovan collateral currencies](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Whitelisted%20Collateral%20Currencies)
 - [Approved Kovan price identifiers](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers)
 

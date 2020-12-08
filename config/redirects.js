@@ -39,10 +39,6 @@ module.exports = [
     from: ["/uma/synthetic_tokens/creating_from_truffle.html"],
   },
   {
-    to: "/tutorials/cli-tool",
-    from: ["/uma/synthetic_tokens/using_the_uma_sponsor_cli_tool.html"],
-  },
-  {
     to: "/tutorials/bots",
     from: ["/uma/synthetic_tokens/liquidation.html"],
   },
@@ -70,10 +66,6 @@ module.exports = [
   {
     to: "/oracle/known-issues",
     from: ["/uma/oracle/known_issues.html"],
-  },
-  {
-    to: "/oracle/mainnet-info",
-    from: ["/uma/oracle/mainnet_deployment_info.html"],
   },
   // tutorials (oracle)  
   {
@@ -107,6 +99,14 @@ module.exports = [
   {
     to: "/dev-ref/bug-bounty",
     from: ["/uma/developer_reference/bug_bounty.html"],
+  },
+  {
+    to: "/dev-ref/subgraphs",
+    from: ["/uma/developer_reference/subgraphs.html"],
+  },
+  {
+    to: "/dev-ref/mainnet-info",
+    from: ["/uma/developer_reference/mainnet_deployment_info.html"],
   },
   // community
   {
