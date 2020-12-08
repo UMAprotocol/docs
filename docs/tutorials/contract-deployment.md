@@ -7,7 +7,7 @@ This tutorial will show you how to deploy an Expiring Multi Party (EMP) contract
 
 This is the high-level EMP deployment process that you will need to follow.
 
-- Verify that your desired [price identifier](https://docs.umaproject.org/uma-tokenholders/adding-price-id#what-is-a-price-identifier) and collateral type is available on the network you wish to deploy your contract to.
+- Verify that your desired [price identifier](/uma-tokenholders/adding-price-id#what-is-a-price-identifier) and [collateral type](/uma-tokenholders/adding-price-id#what-is-a-collateral-currency) is available on the network you wish to deploy your contract to.
 - Write your contract parameters.
 - Deploy your contract with Etherscan OR
 - Deploy your contract with a deployment script.

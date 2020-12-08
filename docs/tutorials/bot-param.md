@@ -13,14 +13,14 @@ All three bots (liquidator, disputer, and monitor) share some configuration opti
 
 ### Common config
 
-- `EMP_ADDRESS`**[required]**: address of the deployed expiring multi party contract on the given network you want to connect to. This config will determine the synthetic token that the bot will be concerned with.
-- `MNEMONIC`**[required OR `PRIVATE_KEY`]**: defines the wallet for the bots to use. Generate and seed with Ether & synthetics before running the bot.
-- `PRIVATE_KEY`**[required OR `MNEMONIC`]**: defines the wallet for the bots to use. Generate and seed with Ether & synthetics before running the bot.
-- `COMMAND`**[required if using Docker]**: initial entry point the bot uses when the bot's Docker container starts running.
-- `INFURA_API_KEY` [optional]: specify an Infura API key for the bot to use. By default this uses a shared key stored in the repo. If you experience issues with accessing Infura try adding your own key.
-- `CUSTOM_NODE_URL` [optional]: specify an Ethereum RPC node URL. This can run over `https` or `wss` depending on your preference.
-- `POLLING_DELAY`[optional]: how long the bot should wait (in seconds) before running a polling cycle. If excluded the bot defaults to polling every 60 seconds.
-- `PRICE_FEED_CONFIG`[optional]: configuration object used to parameterize the bot's price feed. If excluded then the bot will try and infer the price feed based on the identifer name. Optionally, you can override this. This config, if provided, contains the following:
+- `EMP_ADDRESS`**[required]**: Address of the deployed expiring multi party contract on the given network you want to connect to. This config will determine the synthetic token that the bot will be concerned with.
+- `MNEMONIC`**[required OR `PRIVATE_KEY`]**: Defines the wallet for the bots to use. Generate and seed with Ether & synthetics before running the bot.
+- `PRIVATE_KEY`**[required OR `MNEMONIC`]**: Defines the wallet for the bots to use. Generate and seed with Ether & synthetics before running the bot.
+- `COMMAND`**[required if using Docker]**: Initial entry point the bot uses when the bot's Docker container starts running.
+- `INFURA_API_KEY` [optional]: Specify an Infura API key for the bot to use. By default this uses a shared key stored in the repo. If you experience issues with accessing Infura try adding your own key.
+- `CUSTOM_NODE_URL` [optional]: Specify an Ethereum RPC node URL. This can run over `https` or `wss` depending on your preference.
+- `POLLING_DELAY`[optional]: How long the bot should wait (in seconds) before running a polling cycle. If excluded the bot defaults to polling every 60 seconds.
+- `PRICE_FEED_CONFIG`[optional]: Configuration object used to parameterize the bot's price feed. If excluded then the bot will try and infer the price feed based on the identifer name. Optionally, you can override this. This config, if provided, contains the following:
   - `type` specifies the configuration of the price feed. The `medianizer` provides the median of the price of the identifier over a set of different exchanges.
   - `apiKey` is the key generated in API key section of the Prerequisites.
   - `pair` defines the crypto pair whose price is being fetched as defined in CryptoWatch. Ex: `ethbtc`.
@@ -29,12 +29,12 @@ All three bots (liquidator, disputer, and monitor) share some configuration opti
   - `medianizedFeeds` is an array of type `priceFeed` that defines the feeds overwhich the medianizer will take the median of. Each of these have their own components which are defined as:
     - `type` Each instance of the medianizer is also a type. This could be a `medianizer`, `uniswap` or `cryptowatch` depending on the configuration of the bot. The sample bot is using only `cryptowatch` price feeds to compute the median.
     - `exchange` a string identifier for the exchange to pull prices from. This should be the identifier used to identify the exchange in CryptoWatch's REST API.
-- `ENVIRONMENT`[optional]: when set to `production`, will pipe logs to GCP stackdriver.
-- `SLACK_WEBHOOK`[optional]: can be included to send messages to a slack channel.
-- `PAGERDUTY_API_KEY`[optional]: if you want to configure your bot to send pager duty messages(sms, phone calls, or emails) when they crash or have `error` level logs you'll need an API key here.
-- `PAGERDUTY_SERVICE_ID`[optional]: each Pagerduty service has an unique id. This goes here.
-- `PAGERDUTY_FROM_EMAIL`[optional] each Pagerduty service also requires a `from email` to uniquely identify the logger.
-- `INFURA_API_KEY`[optional]: override the default Infura key used by the bot.
+- `ENVIRONMENT`[optional]: Set to `production` to pipe logs to GCP stackdriver.
+- `SLACK_WEBHOOK`[optional]: Can be included to send messages to a slack channel.
+- `PAGERDUTY_API_KEY`[optional]: If you want to configure your bot to send pager duty messages(sms, phone calls, or emails) when they crash or have `error` level logs you'll need an API key here.
+- `PAGERDUTY_SERVICE_ID`[optional]: Each Pagerduty service has an unique id. This goes here.
+- `PAGERDUTY_FROM_EMAIL`[optional] Each Pagerduty service also requires a `from email` to uniquely identify the logger.
+- `INFURA_API_KEY`[optional]: Override the default Infura key used by the bot.
 
 ## Liquidator bot
 
