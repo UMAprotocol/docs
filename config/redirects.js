@@ -39,10 +39,6 @@ module.exports = [
     from: ["/uma/synthetic_tokens/creating_from_truffle.html"],
   },
   {
-    to: "/tutorials/cli-tool",
-    from: ["/uma/synthetic_tokens/using_the_uma_sponsor_cli_tool.html"],
-  },
-  {
     to: "/tutorials/bots",
     from: ["/uma/synthetic_tokens/liquidation.html"],
   },

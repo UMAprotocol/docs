@@ -14,7 +14,7 @@ module.exports = {
       {
         type: "category",
         label: "Using Existing Contracts",
-        items: ["tutorials/mint-farm-yusd", "tutorials/mint-farm-yusdbtc", "tutorials/redeem-tokens", "tutorials/cli-tool"],
+        items: ["tutorials/mint-farm-yusd", "tutorials/mint-farm-yusdbtc", "tutorials/redeem-tokens"],
       },
       {
         type: "category",

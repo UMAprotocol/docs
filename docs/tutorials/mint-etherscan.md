@@ -3,9 +3,7 @@ title: Minting Tokens via Etherscan
 sidebar_label: With Etherscan
 ---
 
-This article will walk you through minting tokens (like ETHBTC or yCOMP) for the first time on Etherscan’s contract interaction GUI. If you already have a position (i.e. if you’ve already minted tokens, these steps may not apply to you). The screenshots and example numbers used in this tutorial reflect the ETHBTC token, but all steps in this article apply just the same to any other expiring multi-party token (like the yCOMP).
-
-You can already mint tokens via the [CLI tool](tutorials/cli-tool.md), but you may prefer to interact with the contract more directly via Etherscan. All you’ll need to get started is some DAI to use as collateral (50 DAI should be enough) and ETH to pay for transaction gas (0.05 ETH should be enough).
+This article will walk you through minting tokens (like ETHBTC or yCOMP) for the first time on Etherscan’s contract interaction GUI. If you already have a position (i.e. if you’ve already minted tokens, these steps may not apply to you). The screenshots and example numbers used in this tutorial reflect the ETHBTC token, but all steps in this article apply just the same to any other expiring multi-party token (like the yCOMP). All you’ll need to get started is some DAI to use as collateral (50 DAI should be enough) and ETH to pay for transaction gas (0.05 ETH should be enough).
 
 ## Before we begin: collateral approval
 
@@ -104,6 +102,6 @@ From this, we can conclude that we have successfully minted 1000 tokens with 40 
 
 ## What next?
 
-Now that you have minted your tokens, you need to make sure that it stays collateralized as the value of the underlying moves (e.g. the ETH to BTC ratio, or the price of COMP in USD). You can do this with the Sponsor [CLI tool](tutorials/cli-tool.md) that helps you manage your position. In the future, we might provide a dapp frontend for your convenience. Let us know on our Discord if you want to see this.
+Now that you have minted your tokens, you need to make sure that it stays collateralized as the value of the underlying moves (e.g. the ETH to BTC ratio, or the price of COMP in USD).
 
 In order to get short exposure, don't forget to sell these tokens rather than hold onto them (the idea is that you can buy them cheaper on the market later on to unwind your position). For example, on Uniswap you can trade ETHBTC tokens [here](https://uniswap.exchange/swap?inputCurrency=0x6b175474e89094c44da98b954eedeac495271d0f&outputCurrency=0x6d002a834480367fb1a1dc5f47e82fde39ec2c42) and yCOMP tokens [here](https://uniswap.exchange/swap?inputCurrency=0xc00e94cb662c3520282e6f5717214004a7f26888&outputCurrency=0xc78Ce805599188eD734C943C912800658807fA14). The tokens in the example above will expire on August 1st, 2020 (and become redeemable by anyone), so make sure to keep that in mind as well.

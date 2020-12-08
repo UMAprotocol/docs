@@ -10,8 +10,6 @@ This tutorial will show you how to create synthetic tokens from the command line
 - Have installed dependencies using `yarn` and have run `yarn qbuild` to build the contracts.
 
 Below, we’ll discuss how to create and manage a token sponsor position via the command line on a local testnet.
-UMA also has a command-line interface (CLI) tool that bundles and renames some of these steps.
-[These](tutorials/cli-tool.md) tutorials discuss how to create and manage a token sponsor position using this CLI tool.
 
 - Begin [here](#parameterize-and-deploy-a-contract) if you are creating a new type of synthetic token on a local testnet.
 - Begin [here](#create-new-tokens-from-an-existing-contract) if you are creating synthetic tokens from an existing contract on a local testnet.

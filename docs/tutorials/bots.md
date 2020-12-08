@@ -143,7 +143,7 @@ truffle(kovan_mnemonic)> accounts[0]
 ```
 
 You can now fund this wallet with the associated currency for the type of bot you want to run.
-To learn more about creating synthetic tokens to fund your liquidation bot see [this](tutorials/cli-tool.md) tutorial.
+To learn more about creating synthetic tokens to fund your liquidation bot see [this](tutorials/mint-etherscan.md) tutorial.
 
 ### Creating a price feed API key
 
