@@ -71,10 +71,6 @@ module.exports = [
     to: "/oracle/known-issues",
     from: ["/uma/oracle/known_issues.html"],
   },
-  {
-    to: "/oracle/mainnet-info",
-    from: ["/uma/oracle/mainnet_deployment_info.html"],
-  },
   // tutorials (oracle)  
   {
     to: "/tutorials/dvm-integration",
@@ -111,6 +107,10 @@ module.exports = [
   {
     to: "/dev-ref/subgraphs",
     from: ["/uma/developer_reference/subgraphs.html"],
+  },
+  {
+    to: "/dev-ref/mainnet-info",
+    from: ["/uma/developer_reference/mainnet_deployment_info.html"],
   },
   // community
   {
