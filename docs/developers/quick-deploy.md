@@ -82,12 +82,12 @@ To deploy an EMP, you will need to call the `createExpiringMultiParty()` functio
 Another method to create an EMP is to use a deployment script. 
 
 1. Clone the UMA protocol [repository](https://github.com/UMAprotocol/protocol).
-2. Follow the [setup instructions](https://docs.umaproject.org/tutorials/setup) to meet the prequisites, prepare the repo and connect your wallet to your workspace.
+2. Follow the [setup instructions](https://docs.umaproject.org/developers/setup) to meet the prequisites, prepare the repo and connect your wallet to your workspace.
 3. Edit the `constructorParams` object in the `DeployEMP.js` [script](https://github.com/UMAprotocol/protocol/blob/master/packages/core/scripts/local/DeployEMP.js#L99) with your desired parameters. Leave `priceFeedIdentifier` as is. This will be passed in as a command line argument. Note: all unit conversions will be done for you, so no need to convert arguments to 18 decimals or bytes32 format.
 4. Run `$(npm bin)/truffle exec ./packages/core/scripts/local/DeployEMP.js --network kovan_mnemonic --identifier USDETH` from the `protocol` folder to deploy your EMP on Kovan.
 
 ## Post-Deployment
 
-After following this tutorial, you will have successfully deployed an EMP contract! You will need to navigate to your contract address on Etherscan and mint an initial position to set the [GCR](https://docs.umaproject.org/synthetic-tokens/glossary#global-collateralization-ratio-gcr). This can be done by calling the `create(collateralAmount, numTokens)` function. [Here](https://docs.umaproject.org/tutorials/mint-etherscan) is a full walkthrough of minting tokens via Etherscan.
+After following this tutorial, you will have successfully deployed an EMP contract! You will need to navigate to your contract address on Etherscan and mint an initial position to set the [GCR](https://docs.umaproject.org/synthetic-tokens/glossary#global-collateralization-ratio-gcr). This can be done by calling the `create(collateralAmount, numTokens)` function. [Here](https://docs.umaproject.org/developers/mint-etherscan) is a full walkthrough of minting tokens via Etherscan.
 
 View this [documentation](https://docs-dot-uma-protocol.appspot.com/uma/contracts/ExpiringMultiParty.html) for a full explanation of available EMP functionality. 

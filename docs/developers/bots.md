@@ -35,7 +35,7 @@ docker logs <your container hash>
 ```
 
 Your liquidation bot should now be running, please read on to find out about how
-it works and how to [configure](tutorials/bot-param.md) it.
+it works and how to [configure](developers/bot-param.md) it.
 
 ## Motivation
 
@@ -143,7 +143,7 @@ truffle(kovan_mnemonic)> accounts[0]
 ```
 
 You can now fund this wallet with the associated currency for the type of bot you want to run.
-To learn more about creating synthetic tokens to fund your liquidation bot see [this](tutorials/mint-etherscan.md) tutorial.
+To learn more about creating synthetic tokens to fund your liquidation bot see [this](developers/mint-etherscan.md) tutorial.
 
 ### Creating a price feed API key
 
@@ -457,4 +457,4 @@ These configurations can be added to the config in the same way the `crThreshold
 
 ## Bot configuration parameters
 
-For a more detailed document on bot-specific parameters see this [doc](tutorials/bot-param.md).
+For a more detailed document on bot-specific parameters see this [doc](developers/bot-param.md).

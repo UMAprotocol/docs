@@ -7,35 +7,6 @@ module.exports = {
       "getting-started/oracle",
       "getting-started/developer-mining"
     ],
-  },
-  tutorials: {
-    Tutorials: [
-      "tutorials/setup",
-      {
-        type: "category",
-        label: "Using Existing Contracts",
-        items: ["tutorials/mint-farm-yusd", "tutorials/mint-farm-yusdbtc", "tutorials/redeem-tokens"],
-      },
-      {
-        type: "category",
-        label: "Deploying Contracts",
-        items: ["tutorials/contract-deployment"],
-      },
-      {
-        type: "category",
-        label: "Minting Tokens",
-        items: ["tutorials/mint-locally", "tutorials/mint-etherscan"],
-      },
-      {
-        type: "category",
-        label: "Bots",
-        items: ["tutorials/bots", "tutorials/bot-param"],
-      },
-  
-      "tutorials/dvm-integration",
-    ],
-  },
-  protocol: {
     "Synthetic Tokens": [
       "synthetic-tokens/explainer",
       "synthetic-tokens/glossary",
@@ -47,40 +18,66 @@ module.exports = {
       "oracle/dvm-interface",
       "oracle/known-issues",
     ],
-    "UMA Tokenholders": [
-      "uma-tokenholders/uma-holders",
-      "uma-tokenholders/adding-price-id",
-      "uma-tokenholders/umips",
-      "uma-tokenholders/voter-dApp",
-      "uma-tokenholders/voting-2key", 
-    ],
   },
-  devRef: {
-    "Developer Reference": [
-      "dev-ref/addresses",
-      "dev-ref/subgraphs",
-      "dev-ref/bug-bounty",
-      "dev-ref/mainnet-info",
+    Developers: [
       {
-        type: "link",
-        label: "Contracts (Github)",
-        href:
-          "https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts",
+        type: "category",
+        label: "Quick Start",
+        items: ["developers/setup", "developers/quick-deploy"],
       },
       {
-        type: "link",
-        label: "Contract Documentation",
-        href:
-          "https://docs-dot-uma-protocol.appspot.com/uma/index.html",
+        type: "category",
+        label: "Minting Tokens",
+        items: ["developers/mint-locally", "developers/mint-etherscan"],
+      },
+      {
+        type: "category",
+        label: "Bots",
+        items: ["developers/bots", "developers/bot-param", "developers/liquidation-opportunity-program"],
+      },
+      {
+        type: "category",
+        label: "Writing New Contract Types",
+        items: ["developers/dvm-integration"],
+      },
+      {
+        type: "category",
+        label: "Developer Reference",
+        items: ["dev-ref/addresses", "dev-ref/subgraphs", "dev-ref/bug-bounty", "dev-ref/mainnet-info",
+        {
+          type: "link",
+          label: "Contracts (Github)",
+          href:
+            "https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts",
+        },
+        {
+          type: "link",
+          label: "Contract Documentation",
+          href:
+            "https://docs-dot-uma-protocol.appspot.com/uma/index.html",
+        },],
+      },
+
+    ],
+  tokenholders: {
+      "UMA Tokenholders": [
+        "uma-tokenholders/uma-holders",
+        "uma-tokenholders/adding-price-id",
+        "uma-tokenholders/umips",
+        "uma-tokenholders/voter-dApp",
+        "uma-tokenholders/voting-2key", 
+      ],
+  },
+    "Users & Community": [
+      {
+        type: "category",
+        label: "Community",
+        items: [ "community/press", "community/blog-posts", "community/events"],
+      },
+      {
+        type: "category",
+        label: "Users",
+        items: ["users/mint-farm-yusd", "users/mint-farm-yusdbtc", "users/redeem-tokens"],
       },
     ],
-  },
-  community: {
-    Community: [
-      "community/press",
-      "community/blog-posts",
-      "community/events",
-      "community/liquidation-opportunity-program",
-    ],
-  },
 };

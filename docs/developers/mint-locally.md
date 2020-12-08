@@ -3,7 +3,7 @@ title: Minting Tokens Locally with the Truffle Console
 sidebar_label: With Truffle (locally)
 ---
 
-This tutorial will show you how to create synthetic tokens from the command line using UMA’s synthetic token template. Before beginning this tutorial, please make sure your environment is set up correctly by following the instructions in the setup [guide](tutorials/setup.md). After completing this section, you should:
+This tutorial will show you how to create synthetic tokens from the command line using UMA’s synthetic token template. Before beginning this tutorial, please make sure your environment is set up correctly by following the instructions in the setup [guide](developers/setup.md). After completing this section, you should:
 
 - Have the protocol repo cloned.
 - Be running an instance of Ganache on port 9545.

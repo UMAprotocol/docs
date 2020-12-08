@@ -5,9 +5,9 @@ slug: /
 ---
 
 :::note uUSD has launched
-Learn how to mint and farm `uUSD` tokens with this [tutorial](tutorials/mint-farm-yusd.md).
+Learn how to mint and farm `uUSD` tokens with this [tutorial](users/mint-farm-yusd.md).
 
-Learn how to redeem expired `uUSD` tokens with this [tutorial](tutorials/redeem-tokens.md).
+Learn how to redeem expired `uUSD` tokens with this [tutorial](users/redeem-tokens.md).
 :::
 
 UMA builds open-source infrastructure for “priceless” financial contracts on Ethereum. Specifically, this is two things:
@@ -23,7 +23,7 @@ If you would like to learn more about the concepts behind the DVM and priceless 
 
 ## For Developers
 
-If you are a developer interested in building with UMA’s technology, start with this [explainer](synthetic-tokens/explainer.md) of how UMA's priceless synthetic tokens work, and then try out this [tutorial](tutorials/mint-locally.md) for how to deploy your own token on testnet. You can find additional reference materials, including a list of UMA-supported mainnet and testnet deployments, [here](dev-ref/addresses.md).
+If you are a developer interested in building with UMA’s technology, start with this [explainer](synthetic-tokens/explainer.md) of how UMA's priceless synthetic tokens work, and then try out this [tutorial](developers/mint-locally.md) for how to deploy your own token on testnet. You can find additional reference materials, including a list of UMA-supported mainnet and testnet deployments, [here](dev-ref/addresses.md).
 
 ## For Market Makers
 

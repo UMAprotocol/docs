@@ -7,46 +7,47 @@ module.exports = {
   items: [
     {
       to: "/",
-      label: "Getting Started",
+      label: "Understanding UMA",
       position: "left",
       activeBaseRegex: "(getting-started/|/$)",
     },
+    // {
+    //   label: "Understanding UMA",
+    //   to: "synthetic-tokens/explainer",
+    //   position: "left",
+    //   activeBaseRegex: "(synthetic-tokens|oracle)",
+    //   // items: [
+    //   //   {
+    //   //     to: "synthetic-tokens/explainer",
+    //   //     label: "Synthetic Tokens",
+    //   //     activeBasePath: "synthetic-tokens",
+    //   //   },
+    //   //   {
+    //   //     to: "oracle/tech-architecture",
+    //   //     label: "Oracle (DVM)",
+    //   //     activeBasePath: "oracle",
+    //   //   },
+    //   // ],
+    // },
     {
-      to: "tutorials/setup",
-      label: "Tutorials",
+      to: "developers/setup",
+      label: "Developers",
       position: "left",
-      activeBasePath: "tutorials",
+      activeBasePath: "developers",
     },
     {
-      label: "The Protocol",
-      to: "synthetic-tokens/explainer",
+      to: "uma-tokenholders/uma-holders",
+      label: "Tokenholders",
       position: "left",
-      activeBaseRegex: "(synthetic-tokens|oracle|uma-tokenholders)",
-      items: [
-        {
-          to: "synthetic-tokens/explainer",
-          label: "Synthetic Tokens",
-          activeBasePath: "synthetic-tokens",
-        },
-        {
-          to: "oracle/tech-architecture",
-          label: "Oracle (DVM)",
-          activeBasePath: "oracle",
-        },
-        {
-          to: "uma-tokenholders/uma-holders",
-          label: "UMA Tokenholders",
-          activeBasePath: "uma-tokenholders",
-        },
-      ],
+      activeBasePath: "uma-tokenholders",
     },
-    {
-      to: "dev-ref/addresses",
-      label: "Developer Reference",
-      position: "left",
-      activeBasePath: "dev-ref",
-    },
-    { to: "community/press", label: "Community", position: "right" },
+    // {
+    //   to: "dev-ref/addresses",
+    //   label: "Developer Reference",
+    //   position: "left",
+    //   activeBasePath: "dev-ref",
+    // },
+    { to: "community/press", label: "Users & Community", position: "left" },
     {
       href: "https://github.com/UMAprotocol/protocol",
       className: "header-github-link",

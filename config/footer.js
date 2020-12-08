@@ -8,8 +8,8 @@ module.exports = {
           to: "getting-started/overview",
         },
         {
-          label: "Tutorials",
-          to: "tutorials/setup",
+          label: "Developers",
+          to: "developers/setup",
         },
         {
           label: "Synthetic Tokens",
