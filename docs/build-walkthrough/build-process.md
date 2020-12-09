@@ -25,7 +25,7 @@ View approved price identifiers and currencies here:
 
 To add a new price identifier or collateral currency to mainnet, please propose one to UMA voters by following the [UMIP process](/uma-tokenholders/umips).
 
-To add a new price identifier or collateral currency to Kovan, please follow these [instructions](/uma-tokenholders/adding-price-id#adding-a-price-identifier-to-the-kovan-testnet) or contact the UMA core team in Discord.
+To add a new price identifier or collateral currency to Kovan, please follow these [instructions](/build-walkthrough/new-params) or contact the UMA core team in Discord.
 
 ## Write a Price Feed
 
@@ -71,10 +71,11 @@ An example successful split of developer mining rewards involves
 
 For examples of incentives programs that could be built, refer [here](https://www.notion.so/Designing-an-Incentives-Program-3b33c05f5c5249f78063c029b9b29275).
 
+## Fulfill Developer Mining Criteria
+
 ## Repeat Kovan Steps for Mainnet Contract
 
-
-## Fulfill Developer Mining Criteria
+After you have deployed your contract to Kovan, have done liquidation bot testing against that contract and optionally have verified that you meet developer mining criteria, you will be ready 
 
 
 ## Post-Deployment
