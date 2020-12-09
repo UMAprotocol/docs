@@ -50,7 +50,7 @@ Token sponsors deposit collateral into the contract to collateralize synthetic t
 
 The global collateralization ratio (GCR) is the average collateralization ratio among all token sponsor positions that have not been liquidated. Requiring new token sponsors to collateralize their positions by as much as the GCR provides some assurances that so long as those token sponsors collateralized below the GCR have not yet been liquidated, those above the GCR need not be at risk of liquidation.
 
-This [tutorial](build-walkthrough/mint-locally#create-new-tokens-from-an-existing-contract) will show you how to mint tokens from the command line after having parameterized and deployed the synthetic token’s smart contract.
+This [tutorial](/build-walkthrough/mint-locally#create-new-tokens-from-an-existing-contract) will show you how to mint tokens from the command line after having parameterized and deployed the synthetic token’s smart contract.
 
 ## Managing Token Sponsor Positions
 
