@@ -5,9 +5,12 @@ sidebar_label: Building a Synthetic Asset
 
 Described in this tutorial is a high-level overview of the typical deployment process that a team would need to follow to successfully build a product on the UMA protocol. Before starting, you should make sure to follow the [setup instructions](/developers/setup) to prepare your workspace. 
 
-Below are the recommended synthetic asset build steps in the most typical order. This process may not work for all synthetic asset creation processes, but  
+These steps are intended to be followed in order, but, depending on your specific project's requirements, these may change some. To kick-off your synthetic asset build, you will first need to finalize your contract design.
 
 ## Finalize Contract Design
+
+Please review [Designing a Synthetic Asset](/build-walkthrough/designing-synth) for a description of the design considerations and process that you should take. S
+
 
 Decide on if you are building with the EMP or Perp. If neither works for your use-case, start reading up on the [UMA Optimistic Oracle](https://www.notion.so/Building-with-the-Optimistic-Oracle-7fc31aceba4348a188a393dfc0cc140b) for an idea on how you can start building quickly. 
 
