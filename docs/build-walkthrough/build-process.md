@@ -15,6 +15,18 @@ Decide on if you are building with the EMP or Perp. If neither works for your us
  
 ## Propose a New Price Identifier or Collateral Type
 
+Before deploying a contract, you should verify that your desired price identifier and collateral currency is already approved on the network you are trying to deploy to.
+
+View approved price identifiers and currencies here:
+- [Approved mainnet collateral currencies](/uma-tokenholders/adding-price-id#list-of-approved-collateral-currencies)
+- [Approved mainnet price identifiers](/uma-tokenholders/adding-price-id#list-of-approved-price-identifiers)
+- [Approved Kovan collateral currencies](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Whitelisted%20Collateral%20Currencies)
+- [Approved Kovan price identifiers](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers)
+
+To add a new price identifier or collateral currency to mainnet, please propose one to UMA voters by following the [UMIP process](/uma-tokenholders/umips).
+
+To add a new price identifier or collateral currency to Kovan, please follow these [instructions](/uma-tokenholders/adding-price-id#adding-a-price-identifier-to-the-kovan-testnet) or contact the UMA core team in Discord.
+
 ## Write a Price Feed
 
 ## Write Contract Parameters
