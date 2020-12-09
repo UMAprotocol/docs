@@ -65,16 +65,23 @@ To add a new price identifier or collateral currency to Kovan, please follow the
 
 ### 4. Define a Price Feed
 
-As part of the process to 
+When deploying an UMA contract, various requirements will depend on being able to calculate your price identifier off-chain. When submitting a price identifier UMIP, a proposer will need to define a method for:
+
+- DVM voters to determine the price at a given historical timestamp (at a minimum the most recent 72 hours of historical price data needs to be available)
+- off-chain infrastructure to get price updates in real-time (at least one update every hour)
+- off-chain infrastructure to determine the price at a given historical timestamp (at a minimum the most recent 72 hours of historical price data needs to be available)
 
 ### 5. Write Contract Parameters
 
-For an explanation of all EMP contract parameters, go here:
+For an explanation of all EMP contract parameters, go [here](/build-walkthrough/emp-parameters). Once you have written your EMP contructor parameters, use these to deploy an EMP.
 
 ### 6. Deploy an EMP to Kovan
 
-To deploy an EMP, follow these [instructions](/build-walkthrough/emp-deployment).
+Before starting the deployment process, make sure you have prepared your workstation by following the setup instructions.
 
+After you have completed the setup instructions, you can now deploy an EMP using one of the following methods.
+- Deploy an EMP using Etherscan by following this [tutorial](/build-walkthrough/emp-deployment).
+- Deploy an EMP using the Truffle console by following this [tutorial](/build-walkthrough/mint-locally).
 
 ### 7. Setting the GCR by Minting an Initial Position
 
