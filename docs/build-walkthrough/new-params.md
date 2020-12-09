@@ -17,7 +17,7 @@ The `IdentifierWhitelist` and `AddressWhitelist` contracts in the mainnet depl
 
 ## Adding a price identifier to a local deployment
 
-In a local deployment, your private key controls the `IdentifierWhitelist` contract. You can therefore add any price identifier desired using the `IdentifierWhitelist.addSupportedIdentifier`, as described in step 5 of this [tutorial](/developers/mint-locally).
+In a local deployment, your private key controls the `IdentifierWhitelist` contract. You can therefore add any price identifier desired using the `IdentifierWhitelist.addSupportedIdentifier`, as described in step 5 of this [tutorial](/build-walkthrough/mint-locally).
 
 ## Adding a price identifier to the Kovan testnet
 

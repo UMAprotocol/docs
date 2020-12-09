@@ -32,7 +32,7 @@ Whitelisted developer mining participants include:
 
 - [Medium Explainer](https://medium.com/uma-project/uma-announces-developer-mining-6f6fe15d5604)
 - [Tweet Storm](https://twitter.com/UMAprotocol/status/1323611059328962560)
-- [Tutorial for Launching a Product on UMA](https://docs.umaproject.org/developers/mint-locally)
+- [Tutorial for Launching a Product on UMA](/build-walkthrough/build-process)
 
 <!--
 To do: 

@@ -27,7 +27,7 @@ module.exports = {
       {
         type: "category",
         label: "A to Z Synthetic Tutorial",
-        items: ["build-walkthrough/designing-synth", "build-walkthrough/build-process", "build-walkthrough/emp-deployment", "build-walkthrough/emp-interface", "build-walkthrough/new-params", "build-walkthrough/minting-etherscan",],
+        items: ["build-walkthrough/build-process", "build-walkthrough/mint-locally", "build-walkthrough/emp-deployment", "build-walkthrough/emp-parameters", "build-walkthrough/emp-interface", "build-walkthrough/new-params", "build-walkthrough/minting-etherscan",],
       },
       // {
       //   type: "category",
@@ -52,7 +52,7 @@ module.exports = {
       {
         type: "category",
         label: "Developer Reference",
-        items: ["dev-ref/addresses", "dev-ref/subgraphs", "dev-ref/bug-bounty", "dev-ref/mainnet-info",
+        items: ["dev-ref/addresses", "dev-ref/subgraphs", "dev-ref/bug-bounty", "dev-ref/mainnet-info", "dev-ref/npm-packages",
         {
           type: "link",
           label: "Contracts (Github)",

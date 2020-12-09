@@ -35,7 +35,7 @@ module.exports = [
     from: ["/uma/synthetic_tokens/prerequisites.html"],
   },
   {
-    to: "/developers/mint-locally",
+    to: "/build-walkthrough/mint-locally",
     from: ["/uma/synthetic_tokens/creating_from_truffle.html"],
   },
   {
