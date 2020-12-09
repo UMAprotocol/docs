@@ -32,17 +32,19 @@ To add a new price identifier or collateral currency to Kovan, please follow the
 
 ## Write a Price Feed
 
+As part of the process to 
 ## Write Contract Parameters
 
-For an explanation of all EMP contract parameters, go here: [https://www.notion.so/umaproject/EMP-Deployment-7cc39e1aeedb4b9987523a270d29a142](https://www.notion.so/umaproject/EMP-Deployment-7cc39e1aeedb4b9987523a270d29a142)
+For an explanation of all EMP contract parameters, go here:
 
-For an explanation of all Perp contract parameters, go here: [https://www.notion.so/umaproject/EMP-Deployment-7cc39e1aeedb4b9987523a270d29a142](https://www.notion.so/Perp-Deployment-d7d7bc52f63e4e6b8986a7495a534481)
 
 ## Deploy an EMP to Kovan
 
-To deploy an EMP, follow these [instructions](https://www.notion.so/EMP-Deployment-7cc39e1aeedb4b9987523a270d29a142).
+To deploy an EMP, follow these [instructions](/build-walkthrough/emp-deployment).
 
 To deploy a perp contract, follow these instructions.
+
+## Setting the GCR by Minting an Initial Position
 
 ## Bot Deployment
 
@@ -50,15 +52,11 @@ Fund liquidation and dispute bots
 
 Deploy to GCP or equivalent
 
-[https://www.notion.so/umaproject/Running-Bots-f59f99cb4bba490b8b9b66e11c03addf](https://www.notion.so/umaproject/Running-Bots-f59f99cb4bba490b8b9b66e11c03addf)
-
 Testing (War Games)
-
-## Setting the GCR by Minting an Initial Position
 
 ## Create a dApp
 
-The most important EMP and Perp read and write methods are described [here](https://www.notion.so/Interfacing-with-the-EMP-and-Perp-20c95b9688e5402d9a692d411027c43c).
+The most important EMP methods to interact with are described [here](/build-walkthrough/emp-interface).
 
 An example dApp to interface with EMPs can be seen [here](https://github.com/UMAprotocol/emp-tools).
 
@@ -72,21 +70,20 @@ An example successful split of developer mining rewards involves
 - 30% to dApp mining or affiliate marketing
 - 60% to liquidity mining
 
-For examples of incentives programs that could be built, refer [here](https://www.notion.so/Designing-an-Incentives-Program-3b33c05f5c5249f78063c029b9b29275).
+For further elaboration on incentives programs that could be built, refer [here](/developers/designing-incentives).
 
 ## Fulfill Developer Mining Criteria
+
+For further elaboration on incentives programs that could be built, refer [here](/developers/designing-incentives).
 
 ## Repeat Kovan Steps for Mainnet Contract
 
 After you have deployed your contract to Kovan, have done liquidation bot testing against that contract and optionally have verified that you meet developer mining criteria, you will be ready 
 
-
 ## Post-Deployment
 
-Seed an AMM Pool
+**Seeding an AMM Pool**
 
-Monitor bots
+**Deploying Monitor Bots**
 
-Payout any rewards structures
-
-Participate in UMA voting
+**Payout any Rewards Structures**
