@@ -47,7 +47,7 @@ module.exports = [
     from: ["/uma/synthetic_tokens/bot_parameterization.html"],
   },
   {
-    to: "/developers/mint-etherscan",
+    to: "/dev-walkthrough/minting-etherscan",
     from: ["/uma/synthetic_tokens/mint_tokens_via_etherscan.html"],
   },
   // oracle

@@ -88,6 +88,6 @@ Another method to create an EMP is to use a deployment script.
 
 ## Post-Deployment
 
-After following this tutorial, you will have successfully deployed an EMP contract! You will need to navigate to your contract address on Etherscan and mint an initial position to set the [GCR](https://docs.umaproject.org/synthetic-tokens/glossary#global-collateralization-ratio-gcr). This can be done by calling the `create(collateralAmount, numTokens)` function. [Here](https://docs.umaproject.org/developers/mint-etherscan) is a full walkthrough of minting tokens via Etherscan.
+After following this tutorial, you will have successfully deployed an EMP contract! You will need to navigate to your contract address on Etherscan and mint an initial position to set the [GCR](https://docs.umaproject.org/synthetic-tokens/glossary#global-collateralization-ratio-gcr). This can be done by calling the `create(collateralAmount, numTokens)` function. [Here](/build-walkthrough/minting-etherscan) is a full walkthrough of minting tokens via Etherscan.
 
 View this [documentation](https://docs-dot-uma-protocol.appspot.com/uma/contracts/ExpiringMultiParty.html) for a full explanation of available EMP functionality. 

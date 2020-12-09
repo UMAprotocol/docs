@@ -27,7 +27,7 @@ module.exports = {
       {
         type: "category",
         label: "A to Z Synthetic Tutorial",
-        items: ["build-walkthrough/designing-synth", "build-walkthrough/build-process", "build-walkthrough/emp-deployment", "build-walkthrough/emp-interface", "build-walkthrough/new-params",],
+        items: ["build-walkthrough/designing-synth", "build-walkthrough/build-process", "build-walkthrough/emp-deployment", "build-walkthrough/emp-interface", "build-walkthrough/new-params", "build-walkthrough/minting-etherscan",],
       },
       // {
       //   type: "category",
