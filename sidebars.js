@@ -4,8 +4,7 @@ module.exports = {
       "getting-started/welcome",
       "getting-started/overview",
       "getting-started/synthetic-tokens",
-      "getting-started/oracle",
-      "getting-started/developer-mining"
+      "getting-started/oracle"
     ],
     "Synthetic Tokens": [
       "synthetic-tokens/explainer",
@@ -27,7 +26,7 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Building a Synthetic Asset (A to Z)",
+        label: "A to Z Synthetic Tutorial",
         items: ["build-walkthrough/designing-synth", "build-walkthrough/build-process", "build-walkthrough/emp-deployment", "build-walkthrough/emp-interface", "build-walkthrough/new-params",],
       },
       // {
@@ -39,6 +38,11 @@ module.exports = {
         type: "category",
         label: "Bots",
         items: ["developers/bots", "developers/bot-param", "developers/liquidation-opportunity-program"],
+      },
+      {
+        type: "category",
+        label: "Developer Mining",
+        items: ["developers/developer-mining", "developers/devmining-reqs", "developers/designing-incentives"],
       },
       {
         type: "category",

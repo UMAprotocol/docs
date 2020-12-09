@@ -1,6 +1,6 @@
 ---
-title: UMA Developer Mining
-sidebar_label: Developer Mining
+title: Designing an Incentives Structure
+sidebar_label: Designing an Incentives Structure
 ---
 
 UMA Developer mining is an incentives program designed to incentivize idea creation and ‘buidling’ on UMA, allowing devs to earn ownership in a network that they help create.
