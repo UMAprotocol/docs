@@ -27,9 +27,14 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Minting Tokens",
-        items: ["developers/mint-locally", "developers/mint-etherscan"],
+        label: "Building a Synthetic Asset (A to Z)",
+        items: ["build-walkthrough/designing-synth", "build-walkthrough/build-process", "build-walkthrough/emp-deployment", "build-walkthrough/emp-interface", "build-walkthrough/new-params",],
       },
+      // {
+      //   type: "category",
+      //   label: "Minting Tokens",
+      //   items: ["developers/mint-locally", "developers/mint-etherscan"],
+      // },
       {
         type: "category",
         label: "Bots",
@@ -37,7 +42,7 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Writing New Contract Types",
+        label: "Creating New Contract Types",
         items: ["developers/dvm-integration"],
       },
       {

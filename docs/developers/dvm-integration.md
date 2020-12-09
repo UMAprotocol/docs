@@ -1,6 +1,6 @@
 ---
-title: Integrating the DVM
-sidebar_label: Integrating the DVM
+title: Integrating with the DVM
+sidebar_label: Integrating with the DVM
 ---
 
 ## Toy Integration Example

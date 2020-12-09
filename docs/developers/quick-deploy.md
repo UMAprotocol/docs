@@ -1,6 +1,6 @@
 ---
-title: Deploying an EMP Contract
-sidebar_label: Expiring Multi-Party
+title: Deploying a Synthetic Asset on Kovan in 10 Minutes
+sidebar_label: Deploying Your First Synthetic
 ---
 
 This tutorial will show you how to deploy an Expiring Multi Party (EMP) contract using Etherscan or existing deployment scripts. By following these instructions, you will be able to launch an EMP on the Kovan testnet or Ethereum mainnet.
