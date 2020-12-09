@@ -3,30 +3,63 @@ title: Building a Synthetic Asset
 sidebar_label: Building a Synthetic Asset
 ---
 
-Described in this tutorial is a high-level overview of the typical deployment process that a team would need to follow to successfully build a product on the UMA protocol. Before starting, you should make sure to follow the [setup instructions](/developers/setup) to prepare your workspace. 
+Described in this tutorial is a high-level overview of the typical deployment process that a team would need to follow to successfully build a product on the UMA protocol. Steps include:
 
-These steps are intended to be followed in order, but, depending on your specific project's requirements, these may change some. To kick-off your synthetic asset build, you will first need to finalize your contract design.
+1. Designing the contract you will build
+2. Applying to the UMA developer mining program (Optional)
+3. Proposing a new price identifier or collateral type (Optional)
+4. Defining a price feed to easily get prices off-chain 
+5. Writing your contract's parameters
+6. Deploying an EMP to Kovan
+7. Minting initial token positions (set your contract's GCR)
+8. Deploying liquidator and dispute bots to secure your contract
+9. Creating a dApp (Optional)
+10. Creating your own incentives program
+11. Performing this process again on mainnet
+12. Verifying that you meet developer mining criteria and can receive rewards
 
-### 1. Finalize Contract Design
+This process is intended to be followed in order, but is flexible depending on your project's requirements.
 
-Please review [Designing a Synthetic Asset](/build-walkthrough/designing-synth) for a description of the design considerations and process that you should take. S
+### 1. Product Ideation
 
+To kick-off your synthetic asset build, you will need to decide on the product you would like to launch!
 
-Decide on if you are building with the EMP or Perp. If neither works for your use-case, start reading up on the [UMA Optimistic Oracle](https://www.notion.so/Building-with-the-Optimistic-Oracle-7fc31aceba4348a188a393dfc0cc140b) for an idea on how you can start building quickly. 
+Please review the synthetic token [explainer](/synthetic-tokens/explainer) for an in-depth description of what a synthetic token is and how it can be used.
+
+Some product ideas to get you started:
+
+- ETH gas price future
+- BTC volatilility tracker (a "crypto VIX")
+- San Francisco Real Estate prices tracker
+- A gold futures contract
+
+Some important design questions for you to consider:
+- What price or index will my synthetic token track?
+- How accessible is the price that users will need to access? Could the typical UMA DVM voter get access to and report the price deterministically?
+- What currency should contract user's collateralize this contract in?
+- What is the desired lifespan of my contract? Does it work financially as a fixed-term expiring contract?
+
+Once you have settled on the synthetic token that you would like to build, you are ready to apply to developer mining.
 
 ### 2. Apply to the UMA Developer Mining Program
- 
-### 3. Propose a New Price Identifier or Collateral Type
 
-Before deploying a contract, you should verify that your desired price identifier and collateral currency is already approved on the network you are trying to deploy to.
+Once you have an idea for a product to build, you are ready to apply to the UMA developer mining whitelist. Please note that you do not need to have all of your specifications worked out yet - we love to ideate and discuss, so almost any idea is welcome no matter how well formed it is. Please review this developer mining [overview](/developers/developer-mining) to get started.
 
-View approved price identifiers and currencies here:
+This step is completely optional, but encouraged, as it potentially gives new developer a source of funding to build and improve on their product.
+
+### 3. Propose Adding a New Price Identifier or Collateral Type 
+
+When generating on a synthetic token idea, you will need to decide on the metric or price that your contract will track and the currency that it will use to mint tokens. The UMA DVM and Contract Store only support price identifiers and collateral types that have been approved by an UMA tokenholders vote, and subsequently added to the `IdentifierWhitelist` or `AddressWhitelist` contract.
+
+It is very possible that your desired price identifier or collateral currency is already approved and usable immediately. Check these lists to determine if you need to move forward with a governance proposal:
 - [Approved mainnet collateral currencies](/uma-tokenholders/adding-price-id#list-of-approved-collateral-currencies)
 - [Approved mainnet price identifiers](/uma-tokenholders/adding-price-id#list-of-approved-price-identifiers)
+
+If your desired price identifier or collateral currency is not already approved, please propose one to UMA voters by following the [UMIP process](/uma-tokenholders/umips). This governance process can take in the realm of 1-4 weeks, depending on the complexity of the proposal, so it is recommended that you move forward with testing the rest of the deployment process on Kovan, as using these price IDs or currencies on Kovan requires no governance vote.
+
+View accessible Kovan price IDs and currencies here:
 - [Approved Kovan collateral currencies](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Whitelisted%20Collateral%20Currencies)
 - [Approved Kovan price identifiers](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers)
-
-To add a new price identifier or collateral currency to mainnet, please propose one to UMA voters by following the [UMIP process](/uma-tokenholders/umips).
 
 To add a new price identifier or collateral currency to Kovan, please follow these [instructions](/build-walkthrough/new-params) or contact the UMA core team in Discord.
 
@@ -42,7 +75,6 @@ For an explanation of all EMP contract parameters, go here:
 
 To deploy an EMP, follow these [instructions](/build-walkthrough/emp-deployment).
 
-To deploy a perp contract, follow these instructions.
 
 ### 7. Setting the GCR by Minting an Initial Position
 
