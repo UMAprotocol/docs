@@ -11,7 +11,7 @@ One goal of developer mining program is that you (the developer) will try to att
 
 Allocating rewards in such a way would allow you to handle the financial design, contract deployment and initial bare-bones dapp creation, and then use $UMA rewards to incentivize token liquidity and improvements of the synthetic token product/dapp experience. This rewards structure is customizable for every project's requirements and goals - but is intended to increase the overall utility, usability, excitement and total value minted for participating contracts.
 
-Below is an example implementation of how you could implement you own liquidity mining program.
+Below is an example of how you could implement you own liquidity mining program.
 
 ## Implementing a Liquidity Mining Program
 

@@ -19,15 +19,16 @@ module.exports = {
       },
     ],
     Developers: [
+      "build-walkthrough/build-process",
       {
         type: "category",
         label: "Quick Start",
-        items: ["developers/setup", "developers/quick-deploy"],
+        items: ["developers/setup", "build-walkthrough/mint-locally"],
       },
       {
         type: "category",
-        label: "A to Z Synthetic Tutorial",
-        items: ["build-walkthrough/build-process", "build-walkthrough/mint-locally", "build-walkthrough/emp-deployment", "build-walkthrough/emp-parameters", "build-walkthrough/emp-interface", "build-walkthrough/minting-etherscan",],
+        label: "Expiring Multiparty (EMP)",
+        items: ["build-walkthrough/emp-parameters", "build-walkthrough/emp-interface", "build-walkthrough/minting-etherscan",],
       },
       // {
       //   type: "category",
@@ -52,7 +53,7 @@ module.exports = {
       {
         type: "category",
         label: "Developer Reference",
-        items: ["dev-ref/addresses", "dev-ref/subgraphs", "dev-ref/bug-bounty", "dev-ref/mainnet-info",
+        items: ["dev-ref/mainnet-info", "dev-ref/addresses", "dev-ref/bug-bounty", "dev-ref/subgraphs",
         {
           type: "link",
           label: "Contracts (Github)",

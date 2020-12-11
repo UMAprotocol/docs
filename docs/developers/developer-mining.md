@@ -22,7 +22,7 @@ These ideas are still "up for grabs" but are by no means the limits of what a de
 
 ## Getting started
 
-The ideas above, along with any other financial contract idea a developer can think of, are still "up for grabs". To get started, a developer should settle on an idea to build, test the contract idea by [launching a contract](/build-walkthrough/emp-deployment) with UMA's Kovan contracts and then apply to the developer mining [whitelist](https://docs.google.com/forms/d/e/1FAIpQLSdPWOm4pNyqgDhXXr8wblWuSXXGslsGiJaFzrSNjN2RcG2RTQ/viewform). The whitelist is a lightweight process and is primarily intended to discourage non-productive products, such as ones that might be designed to soak up rewards but with no actual utility or transfer of risk.
+The ideas above, along with any other financial contract idea a developer can think of, are still "up for grabs". To get started, a developer should settle on an idea to build, test the contract idea by launching a contract with UMA's Kovan contracts and then apply to the developer mining [whitelist](https://docs.google.com/forms/d/e/1FAIpQLSdPWOm4pNyqgDhXXr8wblWuSXXGslsGiJaFzrSNjN2RcG2RTQ/viewform). The whitelist is a lightweight process and is primarily intended to discourage non-productive products, such as ones that might be designed to soak up rewards but with no actual utility or transfer of risk.
 
 Whitelisted developer mining participants include:
 
@@ -33,6 +33,11 @@ Whitelisted developer mining participants include:
 - [Medium Explainer](https://medium.com/uma-project/uma-announces-developer-mining-6f6fe15d5604)
 - [Tweet Storm](https://twitter.com/UMAprotocol/status/1323611059328962560)
 - [Tutorial for Launching a Product on UMA](/build-walkthrough/build-process)
+
+## Next Steps
+
+- [Review](/developers/devmining-reqs) the technical requirements for program onboarding.
+- [Explore](/developers/designing-incentives) how you can design your own incentives program with developer mining rewards.
 
 <!--
 To do: 

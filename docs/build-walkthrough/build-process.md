@@ -80,7 +80,6 @@ For an explanation of all EMP contract parameters, go [here](/build-walkthrough/
 Before starting the deployment process, make sure you have prepared your workstation by following the setup instructions.
 
 After you have completed the setup instructions, you can now deploy an EMP using one of the following methods.
-- Deploy an EMP using Etherscan by following this [tutorial](/build-walkthrough/emp-deployment).
 - Deploy an EMP using the Truffle console by following this [tutorial](/build-walkthrough/mint-locally).
 
 ### 7. Setting the GCR by Minting an Initial Position

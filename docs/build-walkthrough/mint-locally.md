@@ -1,6 +1,6 @@
 ---
-title: Creating an EMP with the Truffle Console
-sidebar_label: Deploying an EMP with the Truffle Console
+title: Creating a Synthetic Token Locally with the Truffle Console
+sidebar_label: Creating a Local Synthetic Token
 ---
 
 This tutorial will show you how to create synthetic tokens from the command line using UMA’s synthetic token template. Before beginning this tutorial, please make sure your environment is set up correctly by following the instructions in the setup [guide](developers/setup.md). After completing this section, you should:
@@ -41,7 +41,7 @@ Note that in this example, `priceFeedIdentifier`, `syntheticName`, and `syntheti
 
 <!-- prettier-ignore -->
 ```js
-const constructorParams = { expirationTimestamp: "1706780800", collateralAddress: TestnetERC20.address, priceFeedIdentifier: web3.utils.utf8ToHex("UMATEST"), syntheticName: "Test UMA Token", syntheticSymbol: "UMATEST", collateralRequirement: { rawValue: web3.utils.toWei("1.5") }, disputeBondPct: { rawValue: web3.utils.toWei("0.1") }, sponsorDisputeRewardPct: { rawValue: web3.utils.toWei("0.1") }, disputerDisputeRewardPct: { rawValue: web3.utils.toWei("0.1") }, minSponsorTokens: { rawValue: '100000000000000' }, timerAddress: Timer.address, withdrawalLiveness: 7200, liquidationLiveness: 7200, excessTokenBeneficiary: Store.address}
+const constructorParams = { expirationTimestamp: "1706780800", collateralAddress: TestnetERC20.address, priceFeedIdentifier: web3.utils.utf8ToHex("UMATEST"), syntheticName: "Test UMA Token", syntheticSymbol: "UMATEST", collateralRequirement: { rawValue: web3.utils.toWei("1.5") }, disputeBondPct: { rawValue: web3.utils.toWei("0.1") }, sponsorDisputeRewardPct: { rawValue: web3.utils.toWei("0.1") }, disputerDisputeRewardPct: { rawValue: web3.utils.toWei("0.1") }, minSponsorTokens: { rawValue: '100000000000000' }, timerAddress: Timer.address, withdrawalLiveness: 7200, liquidationLiveness: 7200, excessTokenBeneficiary: '0x0000000000000000000000000000000000000000', financialProductLibraryAddress: '0x0000000000000000000000000000000000000000'}
 ```
 
 5. Before the contract for the synthetic tokens can be created, the price identifier for the synthetic tokens must be registered with `IdentifierWhitelist`.
@@ -172,6 +172,7 @@ await emp.withdrawPassedRequest()
 // collateral token balance
 (await collateralToken.balanceOf(accounts[0])).toString()
 ```
+
 
 <!--
 
