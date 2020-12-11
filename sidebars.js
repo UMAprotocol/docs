@@ -1,23 +1,23 @@
 module.exports = {
-  gettingStarted: {
-    "Getting Started": [
+    
+    "Understanding UMA": [
       "getting-started/welcome",
-      "getting-started/overview",
-      "getting-started/synthetic-tokens",
-      "getting-started/oracle"
+      {
+        type: "category",
+        label: "Overviews",
+        items: ["getting-started/overview", "getting-started/synthetic-tokens", "getting-started/oracle"],
+      },
+      {
+        type: "category",
+        label: "Synthetic Tokens",
+        items: ["synthetic-tokens/explainer", "synthetic-tokens/glossary", "synthetic-tokens/known-issues"],
+      },
+      {
+        type: "category",
+        label: "Oracle (DVM)",
+        items: ["oracle/tech-architecture", "oracle/econ-architecture", "oracle/dvm-interface", "oracle/known-issues"],
+      },
     ],
-    "Synthetic Tokens": [
-      "synthetic-tokens/explainer",
-      "synthetic-tokens/glossary",
-      "synthetic-tokens/known-issues",
-    ],
-    "Oracle (DVM)": [
-      "oracle/tech-architecture",
-      "oracle/econ-architecture",
-      "oracle/dvm-interface",
-      "oracle/known-issues",
-    ],
-  },
     Developers: [
       {
         type: "category",
