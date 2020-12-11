@@ -49,7 +49,7 @@ This is done via the UMIP process, as described [here](uma-tokenholders/umips.md
 
 To view the list of approved mainnet price identifiers, see below or run the `Supported Identifiers` query on the [UMA Subgraph](https://thegraph.com/explorer/subgraph/protofire/uma?query=Supported%20Identifiers). Refer to the related [UMIP](https://github.com/UMAprotocol/UMIPs/tree/master/UMIPs) for clarity on the price that an identifier returns.
 
-### List of approved price identifiers
+### List of approved mainnet price identifiers
 
 |Price ID| Summary| Link to UMIP|
 |:-------| :------| :-----------|
@@ -69,7 +69,7 @@ To view the list of approved mainnet price identifiers, see below or run the `Su
 |USDPERL| The price of USD in PERL.| [UMIP-13](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-13.md)
 |USDBTC| The price of USD in BTC.| [UMIP-7](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-7.md)
 
-### List of approved collateral currencies
+### List of approved mainnet collateral currencies
 
 |Collateral Currency| Final Fee | Link to UMIP|
 |:-------| :-----------| :-----------|
@@ -79,3 +79,10 @@ To view the list of approved mainnet price identifiers, see below or run the `Su
 |DAI| 400 | [UMIP-8](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-8.md)
 |USDC; USDT| 400 | [UMIP-18](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-18.md)
 |rDAI| 400 | [UMIP-17](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-17.md)
+
+## Adding a price identifier to Kovan
+
+- To view a list of already approved Kovan price identifiers, please refer to [this subgraph query](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers).
+- To view a list of already approved Kovan collateral types, please refer to [this subgraph query](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Whitelisted%20Collateral%20Currencies).
+
+To add a new price identifier to Kovan, please submit a pull request that adds your price identifier in the correct format to the list [here](https://github.com/UMAprotocol/protocol/blob/master/packages/core/config/identifiers.json). Please follow the [UMA contribution guidelines](https://github.com/UMAprotocol/protocol/blob/master/CONTRIBUTING.md) and make sure to tag `@UMAprotocol/eng` for review.

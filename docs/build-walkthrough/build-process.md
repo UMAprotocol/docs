@@ -61,7 +61,7 @@ View accessible Kovan price IDs and currencies here:
 - [Approved Kovan collateral currencies](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Whitelisted%20Collateral%20Currencies)
 - [Approved Kovan price identifiers](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers)
 
-To add a new price identifier or collateral currency to Kovan, please follow these [instructions](/build-walkthrough/new-params) or contact the UMA core team in Discord.
+To add a new price identifier or collateral currency to Kovan, please follow these [instructions](/uma-tokenholders/adding-price-id#adding-a-price-identifier-to-kovan) or contact the UMA core team in Discord.
 
 ### 4. Define a Price Feed
 

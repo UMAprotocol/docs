@@ -27,7 +27,7 @@ module.exports = {
       {
         type: "category",
         label: "A to Z Synthetic Tutorial",
-        items: ["build-walkthrough/build-process", "build-walkthrough/mint-locally", "build-walkthrough/emp-deployment", "build-walkthrough/emp-parameters", "build-walkthrough/emp-interface", "build-walkthrough/new-params", "build-walkthrough/minting-etherscan",],
+        items: ["build-walkthrough/build-process", "build-walkthrough/mint-locally", "build-walkthrough/emp-deployment", "build-walkthrough/emp-parameters", "build-walkthrough/emp-interface", "build-walkthrough/minting-etherscan",],
       },
       // {
       //   type: "category",

@@ -7,7 +7,7 @@ The UMA protocol community consists of tokenholders, finance nerds, product desi
 
 ### Get involved
 
-- [Discord](https://discord.umaproject.org/): jump in to ask questions, meet other people interested in UMA or participate in UMA incentives programs.
+- [Discord](https://discord.umaproject.org/): jump in to ask questions, meet other UMA aficionados, collect bounties or participate in incentives programs.
 - [Twitter](https://twitter.com/UMAprotocol): official UMA protocol announcements and information.
 - [Medium](https://medium.com/uma-project): material on new updates and programs.
 - [Events](/community/events): past events and talks.
