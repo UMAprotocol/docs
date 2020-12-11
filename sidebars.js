@@ -46,13 +46,13 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Creating New Contract Types",
+        label: "Advanced Tutorials",
         items: ["developers/dvm-integration"],
       },
       {
         type: "category",
         label: "Developer Reference",
-        items: ["dev-ref/addresses", "dev-ref/subgraphs", "dev-ref/bug-bounty", "dev-ref/mainnet-info", "dev-ref/npm-packages",
+        items: ["dev-ref/addresses", "dev-ref/subgraphs", "dev-ref/bug-bounty", "dev-ref/mainnet-info",
         {
           type: "link",
           label: "Contracts (Github)",
@@ -68,24 +68,26 @@ module.exports = {
       },
 
     ],
-  tokenholders: {
       "UMA Tokenholders": [
         "uma-tokenholders/uma-holders",
         "uma-tokenholders/adding-price-id",
         "uma-tokenholders/umips",
-        "uma-tokenholders/voter-dApp",
-        "uma-tokenholders/voting-2key", 
+        {
+          type: "category",
+          label: "Voting Tutorials",
+          items: ["uma-tokenholders/voter-dApp", "uma-tokenholders/voting-2key"],
+        },
       ],
-  },
-    "Users & Community": [
+    "Events & Press": [
+      "community/community-overview",
       {
         type: "category",
-        label: "Community",
+        label: "Events & Press",
         items: [ "community/press", "community/blog-posts", "community/events"],
       },
       {
         type: "category",
-        label: "Users",
+        label: "Farming Tutorials",
         items: ["users/mint-farm-yusd", "users/mint-farm-yusdbtc", "users/redeem-tokens"],
       },
     ],
