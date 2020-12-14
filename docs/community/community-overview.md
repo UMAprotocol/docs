@@ -3,7 +3,7 @@ title: UMA Community Overview
 sidebar_label: UMA Community Overview
 ---
 
-The UMA protocol community consists of tokenholders, finance nerds, product designers and developers. No matter which bucket you fall in, we're happy that you are looking to learn more or start participating. Please reference the resources below to get started.
+The UMA protocol community consists of tokenholders, financial engineers, product designers and developers. No matter which bucket you fall in, we're happy to have you join. Please reference the resources below to get started.
 
 ### Get involved
 

@@ -30,7 +30,7 @@ module.exports = {
     //   // ],
     // },
     {
-      to: "developers/setup",
+      to: "build-walkthrough/build-process",
       label: "Developers",
       position: "left",
       activeBaseRegex: "(developers|build-walkthrough|dev-ref)",
