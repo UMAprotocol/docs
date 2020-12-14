@@ -3,7 +3,7 @@ title: Interacting with the EMP
 sidebar_label: Interacting with the EMP
 ---
 
-Once you have deployed your EMP contract, you will be able to interact with it in various ways to mint/burn synths, create liquidations and disputes and manage sponsors' positions. Some of the more important EMP methods are described below.
+Once you have deployed your EMP contract, you will be able to interact with it in various ways to mint/burn synths, create liquidations and disputes and manage sponsors' positions. Some important EMP methods are described below.
 
 ### `create`
 
