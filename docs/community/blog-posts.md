@@ -1,13 +1,12 @@
 ---
-title: Blog Posts and Resources
-sidebar_label: Blog Posts and Resources
+title: Whitepapers and Blog Posts
+sidebar_label: Whitepapers and Blog Posts
 ---
 
-## UMA Papers and Tools
+## UMA papers
 
 - Read our [whitepapers](https://github.com/UMAprotocol/whitepaper) - last updated July 11, 2019
 - Read our [research paper](https://twitter.com/UMAprotocol/status/1179045704918011906) on using priceless contract design to build a decentralized BitMEX - last updated Sep 30, 2019
-- Create a Rinkeby custom token using the Synthetic Token Builder [tool](http://tokenbuilder.umaproject.org), [intro](https://medium.com/uma-project/announcing-the-uma-synthetic-token-builder-8bf37c645e94)
 
 ## Blog Posts
 
