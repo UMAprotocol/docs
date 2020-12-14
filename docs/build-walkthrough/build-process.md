@@ -3,16 +3,20 @@ title: Development Guide
 sidebar_label: Development Guide
 ---
 
-To deploy a synthetic token and start receiving developer mining rewards, it recommended that you follow the docs tutorials in this order.
+To immediately start building on the UMA protocol, first check out the [Quick Start guide](/developers/setup) for setting up your environment and deploying your first synthetic token!
 
-1. [Create your first synthetic token.](/build-walkthrough/mint-locally)
-2. [Finalize your contract design.](/synthetic-tokens/explainer)
-3. [Apply to the UMA developer mining program.](/developers/developer-mining)
-4. [Propose a new price identifier or collateral type.](/uma-tokenholders/adding-price-id)
-5. [Deploy your contract on Kovan.](/build-walkthrough/mint-locally)
-6. [Mint your first synthetic tokens.](/build-walkthrough/minting-etherscan)
-7. [Deploy liquidator and dispute bots to secure your contract.](/developers/bots)
-8. [Deploy your contract on mainnet.](/build-walkthrough/mint-locally)
-9. [Finalize your developer mining and start receiving rewards.](/developers/devmining-reqs)
+The tutorials in this section are written to use the Expiring MultiParty (EMP) contract, which is the first available production ready template of a synthetic token. The EMP allows developers to quickly launch expiring synthetic tokens, such as the [UMA yield dollar](/users/mint-farm-yusd), but is by no means a limitation on the types of synthetic tokens that a developer could create.
 
-It is highly recommended that you preform steps 5-7 on Kovan before moving to mainnet.
+### Complete build process
+
+After following the quick start guide and deploying your first synthetic token, you can follow this general build process to launch a mainnet version of your expiring synthetic token.
+
+1. [Finalize your contract design.](/synthetic-tokens/explainer)
+2. [Apply to the UMA developer mining program.](/developers/developer-mining)
+3. [Propose a new price identifier or collateral type.](/uma-tokenholders/adding-price-id)
+4. [Deploy your contract.](/build-walkthrough/mint-locally)
+5. [Mint your first synthetic tokens.](/build-walkthrough/minting-etherscan)
+6. [Deploy liquidator and dispute bots to secure your contract.](/developers/bots)
+7. [Finalize your developer mining and start receiving rewards.](/developers/devmining-reqs)
+
+It is highly recommended that you perform steps 4-6 on Kovan before moving to mainnet.

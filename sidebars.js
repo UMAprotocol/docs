@@ -4,12 +4,12 @@ module.exports = {
       "getting-started/welcome",
       {
         type: "category",
-        label: "Overviews",
+        label: "Understanding UMA",
         items: ["getting-started/overview", "getting-started/synthetic-tokens", "getting-started/oracle"],
       },
       {
         type: "category",
-        label: "Synthetic Tokens",
+        label: "Priceless Contracts",
         items: ["synthetic-tokens/explainer", "synthetic-tokens/glossary", "synthetic-tokens/known-issues"],
       },
       {
