@@ -27,7 +27,7 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Expiring Multiparty (EMP)",
+        label: "Expiring MultiParty (EMP)",
         items: ["build-walkthrough/emp-parameters", "build-walkthrough/emp-interface", "build-walkthrough/minting-etherscan",],
       },
       // {
