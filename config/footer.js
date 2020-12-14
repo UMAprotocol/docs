@@ -4,20 +4,20 @@ module.exports = {
       title: "Docs",
       items: [
         {
-          label: "Getting Started",
-          to: "getting-started/overview",
+          label: "Understanding UMA",
+          to: "/",
         },
         {
-          label: "Tutorials",
-          to: "tutorials/setup",
+          label: "Developers",
+          to: "developers/setup",
         },
         {
-          label: "Synthetic Tokens",
-          to: "synthetic-tokens/explainer",
+          label: "Tokenholders",
+          to: "uma-tokenholders/uma-holders",
         },
         {
-          label: "Oracle (DVM)",
-          to: "oracle/tech-architecture",
+          label: "Community",
+          to: "community/community-overview",
         },
       ],
     },

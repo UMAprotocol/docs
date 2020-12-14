@@ -29,25 +29,25 @@ module.exports = [
     to: "/synthetic-tokens/known-issues",
     from: ["/uma/synthetic_tokens/known_issues.html"],
   },
-  // tutorials (synthetic tokens)
+  // developers (synthetic tokens)
   {
-    to: "/tutorials/setup",
+    to: "/developers/setup",
     from: ["/uma/synthetic_tokens/prerequisites.html"],
   },
   {
-    to: "/tutorials/mint-locally",
+    to: "/build-walkthrough/mint-locally",
     from: ["/uma/synthetic_tokens/creating_from_truffle.html"],
   },
   {
-    to: "/tutorials/bots",
+    to: "/developers/bots",
     from: ["/uma/synthetic_tokens/liquidation.html"],
   },
   {
-    to: "/tutorials/bot-param",
+    to: "/developers/bot-param",
     from: ["/uma/synthetic_tokens/bot_parameterization.html"],
   },
   {
-    to: "/tutorials/mint-etherscan",
+    to: "/build-walkthrough/minting-etherscan",
     from: ["/uma/synthetic_tokens/mint_tokens_via_etherscan.html"],
   },
   // oracle
@@ -67,9 +67,9 @@ module.exports = [
     to: "/oracle/known-issues",
     from: ["/uma/oracle/known_issues.html"],
   },
-  // tutorials (oracle)  
+  // developers (oracle)  
   {
-    to: "/tutorials/dvm-integration",
+    to: "/developers/dvm-integration",
     from: ["/uma/oracle/integrating_the_dvm.html"],
   },
   // UMA Tokenholders

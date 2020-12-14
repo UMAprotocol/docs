@@ -1,6 +1,6 @@
 ---
-title: Integrating the DVM
-sidebar_label: Integrating the DVM
+title: Integrating with the DVM
+sidebar_label: Integrating with the DVM
 ---
 
 ## Toy Integration Example
@@ -29,7 +29,7 @@ Details on these two fees are available [here](oracle/econ-architecture.md#step-
 
 ## Toy Integration Tutorial
 
-1. Ensure that you have followed all the prerequisite setup steps [here](tutorials/setup.md).
+1. Ensure that you have followed all the prerequisite setup steps [here](developers/setup.md).
 2. Migrate the contracts by running the following command:
 
 ```bash

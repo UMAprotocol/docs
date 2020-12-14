@@ -7,46 +7,50 @@ module.exports = {
   items: [
     {
       to: "/",
-      label: "Getting Started",
+      label: "Understanding UMA",
       position: "left",
-      activeBaseRegex: "(getting-started/|/$)",
+      activeBaseRegex: "(getting-started/|/$|synthetic-tokens|oracle)",
+    },
+    // {
+    //   label: "Understanding UMA",
+    //   to: "synthetic-tokens/explainer",
+    //   position: "left",
+    //   activeBaseRegex: "(synthetic-tokens|oracle)",
+    //   // items: [
+    //   //   {
+    //   //     to: "synthetic-tokens/explainer",
+    //   //     label: "Synthetic Tokens",
+    //   //     activeBasePath: "synthetic-tokens",
+    //   //   },
+    //   //   {
+    //   //     to: "oracle/tech-architecture",
+    //   //     label: "Oracle (DVM)",
+    //   //     activeBasePath: "oracle",
+    //   //   },
+    //   // ],
+    // },
+    {
+      to: "build-walkthrough/build-process",
+      label: "Developers",
+      position: "left",
+      activeBaseRegex: "(developers|build-walkthrough|dev-ref)",
     },
     {
-      to: "tutorials/setup",
-      label: "Tutorials",
+      to: "uma-tokenholders/uma-holders",
+      label: "Tokenholders",
       position: "left",
-      activeBasePath: "tutorials",
+      activeBasePath: "uma-tokenholders",
     },
-    {
-      label: "The Protocol",
-      to: "synthetic-tokens/explainer",
+    // {
+    //   to: "dev-ref/addresses",
+    //   label: "Developer Reference",
+    //   position: "left",
+    //   activeBasePath: "dev-ref",
+    // },
+    { to: "community/community-overview", 
+      label: "Community", 
       position: "left",
-      activeBaseRegex: "(synthetic-tokens|oracle|uma-tokenholders)",
-      items: [
-        {
-          to: "synthetic-tokens/explainer",
-          label: "Synthetic Tokens",
-          activeBasePath: "synthetic-tokens",
-        },
-        {
-          to: "oracle/tech-architecture",
-          label: "Oracle (DVM)",
-          activeBasePath: "oracle",
-        },
-        {
-          to: "uma-tokenholders/uma-holders",
-          label: "UMA Tokenholders",
-          activeBasePath: "uma-tokenholders",
-        },
-      ],
-    },
-    {
-      to: "dev-ref/addresses",
-      label: "Developer Reference",
-      position: "left",
-      activeBasePath: "dev-ref",
-    },
-    { to: "community/press", label: "Community", position: "right" },
+      activeBaseRegex: "(users|community)" },
     {
       href: "https://github.com/UMAprotocol/protocol",
       className: "header-github-link",

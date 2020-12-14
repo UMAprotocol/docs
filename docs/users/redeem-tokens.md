@@ -13,20 +13,20 @@ relevant expired tokens. Then navigate to http://tools.umaproject.org/ and click
 the "Connect" button at the top right corner to connect your MetaMask wallet to
 the dapp.
 
-![connect](/docs/tutorials/emp_connect.png)
+![connect](/docs/users/emp_connect.png)
 
 In the dropdown, select the relevant token that you hold.
 
-![select EMP](/docs/tutorials/emp_select.png)
+![select EMP](/docs/users/emp_select.png)
 
 Select the Manage Position tab.
 
-![manage position tab](/docs/tutorials/emp_manage-position.png)
+![manage position tab](/docs/users/emp_manage-position.png)
 
 If the token has expired, there should only be one option named "Settle" in the
 Actions dropdown.
 
-![manage position tab](/docs/tutorials/redeem_settle.png)
+![manage position tab](/docs/users/redeem_settle.png)
 
 The description here is self-explanatory, but it bears repeating that by
 redeeming your tokens, you will get the equivalent amount in collateral, where

@@ -16,7 +16,7 @@ Voters who participate and vote correctly earn an inflationary reward (currently
 
 Owners of UMA tokens will occasionally be asked to vote on price requests from financial contracts in a 2-stage (commit and reveal) voting period. Tokenholders must reveal their votes or it will not be counted! Each stage is open for 24 hours, so each voting period is 48 hours. 
 
-UMA Tokenholders can discuss their votes in the #voting channel of the UMA Discord before voting.
+UMA Tokenholders can discuss their votes in the #voting channel of the [UMA Discord](https://discord.umaproject.org/) before voting.
 
 ## Governing the UMA ecosystem
 
@@ -29,8 +29,8 @@ All governance issues will be addressed via an UMIP process. The UMIP process is
 
 Because UMA tokenholders will be responsible for voting on price requests from financial contracts using the DVM, they need to:
 
-- Approve new price identifiers
-- Approve new collateral currencies
+- Approve new price identifiers. Expanation [here](/uma-tokenholders/adding-price-id#adding-a-price-identifier-or-collateral-currency-to-mainnet).
+- Approve new collateral currencies. Explanation [here](/uma-tokenholders/adding-price-id#adding-a-price-identifier-or-collateral-currency-to-mainnet).
 - Upgrade the core DVM protocol and / or modify DVM parameters
 - Register and de-register contract templates
 - Shut down contract instantiations (in rare circumstances)

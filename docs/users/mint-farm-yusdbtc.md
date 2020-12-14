@@ -27,15 +27,15 @@ Wrapping BTC into renBTC is possible using [RenBridge](https://bridge.renproject
 
 Navigate to https://bridge.renproject.io/ and click the `Connect` button at the top right corner to connect your MetaMask wallet to the dapp.
 
-![connect](/docs/tutorials/renBTC_connect.png)
+![connect](/docs/users/renBTC_connect.png)
 
 Enter the amount of bitcoin you would like to wrap into renBTC,
 
-![amount](/docs/tutorials/renBTC_enteramount.png)
+![amount](/docs/users/renBTC_enteramount.png)
 
 then, click `Next` 
 
-![next](/docs/tutorials/renBTC_next.png)
+![next](/docs/users/renBTC_next.png)
 
 then click `confirm`. Before doing this, make sure you verify all the details in the modal.
 
@@ -47,11 +47,11 @@ Also, check the cost (`RenVM fee`, `Bitcoin Network fee`) and the amount of renB
 
 Once you have done all of this, you can then go ahead and click `confirm`.
 
-![confirm](/docs/tutorials/renBTC_confirm.png)
+![confirm](/docs/users/renBTC_confirm.png)
 
 A one-time deposit address is generated for you to send your BTC to. Send the exact amount of BTC you are wrapping to that address, in a single transaction.
 
-![deposit](/docs/tutorials/renBTC_deposit.png)
+![deposit](/docs/users/renBTC_deposit.png)
 
 * Your transaction requires 6 confirmations, which can take up to 1 hour, before the renBTC is sent to your wallet 
 * You will need to accept & sign the transaction that sends renBTC to your wallet.
@@ -67,20 +67,20 @@ minted from.
 Navigate to http://tools.umaproject.org/ and click the "Connect" button at the
 top right corner to connect your MetaMask wallet to the dapp.
 
-![connect](/docs/tutorials/emp_connect.png)
+![connect](/docs/users/emp_connect.png)
 
 Then, select the `uUSDrBTC` contract from the dropdown immediately underneath the
 header (above the tabs).
 
-![select EMP](/docs/tutorials/uUSD_selectemp.png)
+![select EMP](/docs/users/uUSD_selectemp.png)
 
 Select the "Manage Position" tab.
 
-![manage position tab](/docs/tutorials/uUSD_manage-positionemp.png)
+![manage position tab](/docs/users/uUSD_manage-positionemp.png)
 
 Scroll down to the "Actions" dropdown and ensure that "Create" is selected.
 
-![position actions dropdown](/docs/tutorials/emp_actions.png)
+![position actions dropdown](/docs/users/emp_actions.png)
 
 At this point, make sure you read the text and confirm that:
 
@@ -96,7 +96,7 @@ If you fully understand the above, and have decided on an appropriate amount of
 (1) collateral to supply and (2) tokens to mint, check to make sure you have
 enough collateral for minting.
 
-![token minting form](/docs/tutorials/uUSD_mintingform.png)
+![token minting form](/docs/users/uUSD_mintingform.png)
 
 In the first field, fill in the number of tokens you want to mint.
 
@@ -123,7 +123,7 @@ Read about this liquidity mining program [here](https://medium.com/uma-project/u
 Head to the `uUSDrBTC/USDC` [pool](https://pools.balancer.exchange/#/pool/0x2dd7255b487a62d738110bd10f8bc4b4ea989778/) and click on the "Add Liquidity" button. You’ll
 be asked to Setup Proxy if you haven’t already
 
-![add liquidity button on balancer](/docs/tutorials/uUSD_addliquiditybal.png)
+![add liquidity button on balancer](/docs/users/uUSD_addliquiditybal.png)
 
 Once the proxy is setup, the "Add Liquidity" button will show you a form for
 adding liquidity.
@@ -134,7 +134,7 @@ single-asset but that mechanism is out of scope for this tutorial.
 
 Under the "All Pool Assets" tab, you should see something like this:
 
-![deposit assets on balancer](/docs/tutorials/bal_deposit.png)
+![deposit assets on balancer](/docs/users/bal_deposit.png)
 
 As with any other ERC20 token, you'll have to "unlock" (i.e. grant approval) for
 the dapp to transfer tokens on your behalf. Once you have done that, you can

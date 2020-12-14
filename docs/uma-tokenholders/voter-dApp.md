@@ -20,11 +20,11 @@ You must commit `AND` reveal your vote in order for it to be counted
 
 2. Connect your metamask wallet and sign the transaction
 
-![sign](/docs/tutorials/votingdApp_sign.png)
+![sign](/docs/developers/votingdApp_sign.png)
 
 3. Commit period: You’ll see active votes in the “Active Requests” table. 
 
-![Activerequests](/docs/tutorials/votingdApp_activerequests.png)
+![Activerequests](/docs/developers/votingdApp_activerequests.png)
 - Type your vote into each row by using the “edit” button
 - Check the box in each row 
 - Click the “save” button
@@ -33,7 +33,7 @@ You must commit `AND` reveal your vote in order for it to be counted
 
 4. Reveal period: If there are committed votes to reveal, you’ll see them in the “Active Requests” table. 
 
-![reveal](/docs/tutorials/votingdApp_reveal.png)
+![reveal](/docs/developers/votingdApp_reveal.png)
 - Review your committed votes
 - Check the box in each row
 - Click the “reveal selected” button. Once revealed, this cannot be undone. 
