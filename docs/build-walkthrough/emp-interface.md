@@ -19,12 +19,12 @@ A position sponsor will use `requestWithdrawal` to attempt a slow withdrawal of 
 
 ### `createLiquidation`
 
-Anyone can call `createLiquidation` to attempt a liquidation against a sponsor's position. This method takes the following parameters:
-- `sponsor (address)`: 
-- `minCollateralPerToken`:
-- `maxCollateralPerToken`:
-- `maxTokensToLiquidate`:
-- `deadline`:
+Anyone can call `createLiquidation` to attempt a liquidation against a sponsor's position. This method accepts the following parameters:
+- `sponsor (address)` 
+- `minCollateralPerToken`
+- `maxCollateralPerToken`
+- `maxTokensToLiquidate`
+- `deadline`
 
 When calling this method, the caller must pay the final fee and the amount of tokens specified in `maxTokensToLiquidate`. The final fee is fixed  by the DVM for each type of supported collateral,
 
