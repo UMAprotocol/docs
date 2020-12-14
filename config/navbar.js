@@ -9,7 +9,7 @@ module.exports = {
       to: "/",
       label: "Understanding UMA",
       position: "left",
-      activeBaseRegex: "(getting-started/|/$)",
+      activeBaseRegex: "(getting-started/|/$|synthetic-tokens|oracle)",
     },
     // {
     //   label: "Understanding UMA",
@@ -33,7 +33,7 @@ module.exports = {
       to: "developers/setup",
       label: "Developers",
       position: "left",
-      activeBasePath: "developers",
+      activeBaseRegex: "(developers|build-walkthrough|dev-ref)",
     },
     {
       to: "uma-tokenholders/uma-holders",
@@ -47,7 +47,10 @@ module.exports = {
     //   position: "left",
     //   activeBasePath: "dev-ref",
     // },
-    { to: "community/community-overview", label: "Community", position: "left" },
+    { to: "community/community-overview", 
+      label: "Community", 
+      position: "left",
+      activeBaseRegex: "(users|community)" },
     {
       href: "https://github.com/UMAprotocol/protocol",
       className: "header-github-link",

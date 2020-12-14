@@ -9,7 +9,7 @@ The tutorials in this section are written to use the Expiring MultiParty (EMP) c
 
 ### Complete build process
 
-After following the quick start guide and deploying your first synthetic token, you can follow this general build process to launch a mainnet version of your expiring synthetic token.
+After following the quick start guide and deploying your first synthetic token, you can follow this general build process to launch and secure a mainnet version of your expiring synthetic token.
 
 1. [Finalize your contract design.](/synthetic-tokens/explainer)
 2. [Apply to the UMA developer mining program.](/developers/developer-mining)

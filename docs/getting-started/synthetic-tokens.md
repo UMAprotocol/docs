@@ -12,7 +12,8 @@ Oracles are only used when a liquidation is disputed — which is designed to be
 ### Priceless Synthetic Tokens
 
 One can write priceless financial contract templates to create various kinds of financial products.
-The UMA team has written one to create synthetic tokens.
+As a first template, the UMA team has written one to create expiring synthetic tokens, called the Expiring MultiParty (EMP). This is only the first example of a synthetic token implementation, and is by no means restrictive on the types of synthetic tokens that could be built on UMA's infrastructure.
+
 These are ERC-20 tokens whose required backing collateral is determined by the value of a price identifier.
 There is no on-chain price feed for the values of the price identifier; rather, token holders and token sponsors should monitor the value of this price identifier off-chain to inform their decisions about how much collateral to maintain on-chain.
 If token sponsors are improperly collateralized, liquidators can liquidate token sponsors’ positions.
