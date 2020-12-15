@@ -1,6 +1,6 @@
 ---
 title: Priceless DeFi Contracts
-sidebar_label: Synthetic Tokens
+sidebar_label: Priceless Contracts
 ---
 
 “Priceless” financial contracts are contracts that don’t require an on-chain price feed to function, and minimize on-chain oracle usage to reduce the frequency and surface area for oracle attacks.
