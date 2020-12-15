@@ -1,6 +1,6 @@
 ---
-title: UMA Oracle Design
-sidebar_label: Oracle Solution
+title: UMA's Oracle Design
+sidebar_label: Optimistic Oracle Service
 ---
 
 Many use-cases for blockchains and smart contracts require trustless access to off-chain information.

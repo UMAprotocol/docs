@@ -9,7 +9,7 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Priceless Contracts",
+        label: "Synthetic Assets",
         items: ["synthetic-tokens/explainer", "synthetic-tokens/glossary", "synthetic-tokens/known-issues"],
       },
       {
