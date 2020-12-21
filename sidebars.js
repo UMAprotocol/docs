@@ -73,6 +73,7 @@ module.exports = {
         "uma-tokenholders/uma-holders",
         "uma-tokenholders/adding-price-id",
         "uma-tokenholders/umips",
+
         {
           type: "category",
           label: "Voting Tutorials",
