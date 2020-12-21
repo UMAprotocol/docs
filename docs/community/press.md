@@ -23,6 +23,8 @@ sidebar_label: Interviews, Podcasts, and Press
 - May 12, 2020: [Uma Audit – Phase 2](https://blog.openzeppelin.com/uma-audit-phase-2/)
 - May 12, 2020: [UMA x Token Terminal: Interview with Allison Lu](https://medium.com/token-terminal/uma-x-token-terminal-interview-with-allison-lu-fad0ebd92ef8)
 - Apr 28, 2020: [Uma Audit – Phase 1](https://blog.openzeppelin.com/uma-audit-phase-1/)
+- Mar 31, 2020: [DeFi Fund Flows in March](https://doseofdefi.substack.com/p/defi-fund-flows-in-march)
+- Mar 30, 2020: [UMA Launches Priceless Synthetic Tokens](https://defirate.com/uma-priceless-synthetic-tokens/)
 - Mar 30, 2020: [How “priceless” tokens can limit oracle risk in DeFi liquidations](https://decrypt.co/24007/how-priceless-tokens-can-limit-oracle-risk-defi-liquidations?utm_source=twitter&utm_medium=social&utm_campaign=auto)
 - Nov 18, 2019: [Potential of MCD Conf Call](https://www.youtube.com/watch?v=BcQKQGB13s4#action=share)
 - Nov 12, 2019: [DeFi Rate on BitDEX](https://defirate.com/bitdex/)
