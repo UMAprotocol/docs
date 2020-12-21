@@ -19,12 +19,12 @@ In order to mint synthetic tokens, token sponsors are required to lock up funds 
 ## Approving new price identifiers and collateral currencies
 
 The `IdentifierWhitelist` contract in the mainnet deployment of the UMA DVM is controlled by a decentralized governance process.
-To add a new price identifier or collateral currency, UMA tokenholders must vote and approve the identifier or currency.
-This is done via the UMIP process, as described [here](uma-tokenholders/umips.md).
+To add a new price identifier or collateral currency, UMA tokenholders vote and approve the identifier or currency via the [voter dApp](https://vote.umaproject.org/).
 
-- [List of approved mainnet collateral currencies](/uma-tokenholders/approved-collateral-currencies) 
+Votes are proposed to the UMA community via the UMIP process, as described [here](uma-tokenholders/umips.md). Below is the list of collateral currencies and price identifiers that have already been approved by UMA tokenholders. 
 
 - [List of approved mainnet price identifiers](/uma-tokenholders/approved-price-identifiers)
+- [List of approved mainnet collateral currencies](/uma-tokenholders/approved-collateral-currencies) 
 
 ## Adding a price identifier to Kovan
 
