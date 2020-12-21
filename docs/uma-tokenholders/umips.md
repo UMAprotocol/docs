@@ -9,6 +9,29 @@ UMIPs are a convenient way to track the progress of an implementation. Examples 
 
 UMIPs need to provide a concise technical specification of the feature and a rationale for the feature. They are modeled after [EIPs](https://eips.ethereum.org/) and [ZEIPs](https://blog.0xproject.com/0x-protocol-governance-voting-walkthrough-and-faq-3becfd57a370). See here for an [EIP template](https://blog.0xproject.com/0x-protocol-governance-voting-walkthrough-and-faq-3becfd57a370) and [ZEIP template](https://github.com/0xProject/ZEIPs/blob/master/ISSUE_TEMPLATE.md). 
 
+## UMIP Process Overview
+
+### Step 1: Discuss
+
+If you are building with a price identifier or collateral currency not currently supported by the UMA DVM, you will need to propose it to the community of UMA tokenholders for a vote.
+You should create an UMIP in which you describe your project and the new price identifier(s) or collateral currencies being requested.
+At this time, you do not need to provide an implementation for the addition of a new price identifier or collateral currency.
+Details on how to write a UMIP are [here](umips.md). This UMIP will be discussed by members of the UMA community.
+
+### Step 2: Get ready for the vote 
+
+In order for the UMIP to move to the next stage of discussion, an off-chain transaction to add the proposed price identifier or collateral currency to the mainnet `IdentifierWhitelist` will need to be proposed. This transaction should be attached to the UMIP.
+
+### Step 3: Vote
+
+UMA voters will vote on the proposed transaction. Each UMA token represents one vote. If at least 5% of all tokens are used to vote, of which >50% of votes approve the UMIP, the UMIP is considered approved.
+
+### Step 4: Execute transaction
+
+Once the proposal has been approved, anyone can initiate the governor contract to execute the proposed transaction.
+The governor contract will then execute the transaction, approving the identifier in `IdentifierWhitelist`.
+
+
 ## What is the lifecycle of a UMIP?
 
 A successful UMIP will move along the following stages: Draft ⟶ Last Call ⟶ Final ⟶ Approved.

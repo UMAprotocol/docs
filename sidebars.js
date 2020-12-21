@@ -72,7 +72,10 @@ module.exports = {
       "UMA Tokenholders": [
         "uma-tokenholders/uma-holders",
         "uma-tokenholders/adding-price-id",
+        "uma-tokenholders/approved-price-identifiers",
+        "uma-tokenholders/approved-collateral-currencies",
         "uma-tokenholders/umips",
+
         {
           type: "category",
           label: "Voting Tutorials",
