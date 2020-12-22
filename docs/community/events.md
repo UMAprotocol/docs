@@ -1,7 +1,7 @@
 ---
 title: Notable Events
 sidebar_label: Events
----)
+---
 
 ## Past Events
 
