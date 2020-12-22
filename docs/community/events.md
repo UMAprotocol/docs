@@ -5,7 +5,7 @@ sidebar_label: Events
 
 ## Past Events
 
-- Oct 25, 2020: [IOSG DeFi Summit 2020](https://www.youtube.com/watch?v=Ymg73RUEVL4&feature=youtu.be
+- Oct 25, 2020: [IOSG DeFi Summit 2020](https://www.youtube.com/watch?v=Ymg73RUEVL4&feature=youtu.be)
 - Oct 20, 2020: [ETHOnline 🗣 AMA w/ Hart Lambur](https://www.youtube.com/watch?v=fUFgsdpJ7xI&feature=emb_logo)
 - Aug 9, 2020: [EDCON2020](https://medium.com/ethplanet/edcon-2020-a-recap-of-everything-you-need-to-know-b173f9da30dc)
 - May 27, 2020: 'Decentralized Finance: Money Legos or Money Jenga?' by Allison Lu [link](https://www.meetup.com/Women-in-Blockchain-Boston-Meetup/events/270611418/)
