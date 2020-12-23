@@ -1,6 +1,6 @@
 ---
-title: Price identifiers and collateral currencies
-sidebar_label: Price Identifiers & Collateral Currencies
+title: Overview of price identifiers and collateral currencies
+sidebar_label: Overview
 ---
 
 ## What is a price identifier?
