@@ -7,7 +7,7 @@ One goal of developer mining program is that you (the developer) will try to att
 
 - 10% as profit for the core contract development team
 - 50% to liquidity mining
-- 40% to other developers who build additional dapps or perform marketing
+- 40% to other developers who build additional dApps or perform marketing (dApp mining)
 
 Allocating rewards in such a way would allow you to handle the financial design, contract deployment and initial bare-bones dapp creation, and then use $UMA rewards to incentivize token liquidity and improvements of the synthetic token product/dapp experience. This rewards structure is customizable for every project's requirements and goals - but is intended to increase the overall utility, usability, excitement and total value minted for participating contracts.
 
@@ -33,6 +33,9 @@ This calculation takes snapshots of the liquidity pool every 256 blocks to deter
 
 The uGAS liquidity mining program is performed similarly, but is designed so that only people that minted tokens **AND** provided liquidity would be able to liquidity mine. This design was chosen to reduce the impact on token price, as liquidity miners would not be able to mine by just purchasing tokens. The main uGAS AMM pool was on Uniswap rather than balancer, so a different [script](https://github.com/UMAprotocol/protocol/blob/master/packages/affiliates/liquidity-mining/CalculateUniswapLPRewards.js) was used to calculate Uniswap LM rewards. This Uniswap calculation script by default supports the minters + liquidity provider requirement. [Here](https://github.com/UMAprotocol/protocol/pull/2272) is an example PR that details this calculation further.
 
+## Implementing a dApp mining program
+
+Refer to these [instructions](https://github.com/UMAprotocol/protocol/blob/master/packages/affiliates/README.md) for a quick overview on how a dApp mining program could be constructed.
 <!-- TO DO
 ## Calculating APY for Liquidity Miners -->
 
