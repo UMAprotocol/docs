@@ -30,7 +30,4 @@ Votes are proposed to the UMA community via the UMIP process, as described [here
 
 ## Adding a price identifier to Kovan
 
-- To view a list of already approved Kovan price identifiers, please refer to [this subgraph query](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers).
-- To view a list of already approved Kovan collateral types, please refer to [this subgraph query](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Whitelisted%20Collateral%20Currencies).
-
-To add a new price identifier to Kovan, please submit a pull request that adds your price identifier in the correct format to the list [here](https://github.com/UMAprotocol/protocol/blob/master/packages/core/config/identifiers.json). Please follow the [UMA contribution guidelines](https://github.com/UMAprotocol/protocol/blob/master/CONTRIBUTING.md) and make sure to tag `@UMAprotocol/eng` for review.
+To add a price identifier to Kovan, refer to these [instructions](/build-walkthrough/emp-parameters#adding-new-price-identifiers-or-collateral-currencies) in the Developers section.
