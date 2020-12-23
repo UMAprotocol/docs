@@ -20,6 +20,7 @@ sidebar_label: Approved Price Identifiers
 |GASETH-1HR-1M; GASETH-4HR-1M; GASETH-1D-1M; GASETH-1W-1M; GASETH-1M-1M| Aggregatory gas prices on the Ethereum blockchain in multiples of a million. This will reflect the price of a million units of gas.| [UMIP-20](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-20.md)
 |GASETH-1HR; GASETH-4HR; GASETH-1D; GASETH-1W; GASETH-1M| Aggregatory gas prices of finalized blocks on the Ethereum blockchain.| [UMIP-16](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-16.md)
 |GASETH-TWAP-1Mx1M|  A price that resolves to the median monthly Ethereum gas price or a 2-hour Time-Weighted Average Price (TWAP) on the highest volume Uniswap ETH/uGAS pool based on the timestamp of the price request.| [UMIP-22](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-22.md)
+|GASETH-FEB21, GASETH-MAR21| A price that resolves to the median monthly Ethereum gas price or a 2-hour Time-Weighted Average Price (TWAP) on the highest volume Uniswap ETH/uGAS pool based on the timestamp of the price request in relation to the end of February or the end of March| [UMIP-25](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-25.md)
 |PERLUSD| The price of PERL in USD.| [UMIP-13](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-13.md)
 |SUSHIUNI_TVL| The TVL ratio between Uniswap and Sushiswap| [UMIP-24](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-24.md)
 |USDETH| The price of USD in ETH.| [UMIP-6](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-6.md)
