@@ -159,6 +159,6 @@ the dapp to transfer tokens on your behalf. Once you have done that, you can
 deposit `YD-ETH-MAR21` and `USDC` into the Balancer pool in exchange for some Balancer
 Pool Tokens (i.e. `BPT`) specific to this pool.
 
-This enables you to passively gain `BAL` as well as `UMA` in accordance to the. If you have any questions regarding
+This enables you to passively gain `BAL` as well as `UMA`. If you have any questions regarding
 this process, please don't hesitate to reach out on
 [Discord](https://discord.umaproject.org/).
