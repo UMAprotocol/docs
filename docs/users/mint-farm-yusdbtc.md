@@ -10,10 +10,10 @@ This tutorial will show you how to leverage your `BTC` holdings to earn `BAL` an
 
 - [EMP Tools link for `YD-BTC-MAR21`](https://tools.umaproject.org/?address=0x1c3f1A342c8D9591D9759220d114C685FD1cF6b8)
 - [OpenDAO's Interface for `YD-BTC-MAR21`](https://ydollar.opendao.io/?address=0x1c3f1A342c8D9591D9759220d114C685FD1cF6b8)
-- [Balancer Pool for `uUSDrBTC-DEC/USDC`](https://pools.balancer.exchange/#/pool/0x6be6258fe363288b397882c071531b3623fd5fd9/)
+- [Balancer Pool for `YD-BTC-MAR21/USDC`](https://pools.balancer.exchange/#/pool/0x6be6258fe363288b397882c071531b3623fd5fd9/)
 
 
-## Step 1: Mint YD-ETH-MAR21
+## Step 1: Mint YD-BTC-MAR21
 
 You can now mint yield dollar tokens from two different interfaces.  
 
