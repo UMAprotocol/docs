@@ -108,7 +108,7 @@ balance of renBTC, you can easily convert your BTC to renBTC via the `BTC to ren
 
 You may skip this step if you already have sufficient renBTC.
 
-![weth converter](static/docs/users/ydbtc_opendao-renbtc.png)
+![weth converter](/docs/users/ydbtc_opendao-renbtc.png)
 
 Once you have enough renBTC to use as collateral, return to "Mint Y-Dollars".
 
