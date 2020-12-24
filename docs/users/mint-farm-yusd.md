@@ -108,8 +108,8 @@ enough collateral for minting.
 
 In the case of `YD-ETH-MAR21`, the collateral you need is [WETH](https://weth.io/),
 which is just ETH with an ERC20 interface. If you do not have a sufficient
-balance of WETH, you can easily convert your ETH to WETH via the “Wrap/Unwrap
-WETH” tab.
+balance of WETH, you can easily convert your ETH to WETH via the “Convert your `ETH` into
+WETH” section.
 
 You may skip this step if you already have sufficient WETH.
 
