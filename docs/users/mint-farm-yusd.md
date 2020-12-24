@@ -18,7 +18,7 @@ minutes (subject to network congestion).
 
 You can now mint yield dollar tokens from two different interfaces.  
 
-- [EMP Tools](http://tools.umaproject.org/)&
+- [EMP Tools](http://tools.umaproject.org/) &
 - [OpenDAO's Interface](https://ydollar.opendao.io/)
 
 ## Minting using EMP Tools 
