@@ -24,4 +24,4 @@ sidebar_label: Whitelisting on Coingecko and Balancer
  - Website link
  - Description 
  
- Feel free to ping Henry on Discord (tag: Henry | UMA#3300) if you have any questions or need help.
+Feel free to ping Henry on Discord (tag: Henry | UMA#3300) if you have any questions or need help.
