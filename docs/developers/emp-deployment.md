@@ -61,7 +61,7 @@ The recommended method to deploy an EMP is to use the `DeployEMP.js` script.
 
 1. Clone the UMA protocol [repository](https://github.com/UMAprotocol/protocol).
 2. Follow the [setup instructions](/developers/setup) to meet the prequisites, prepare the repo and connect your wallet to your workspace.
-3. Edit the `constructorParams` object in the `DeployEMP.js` [script](https://github.com/UMAprotocol/protocol/blob/master/packages/core/scripts/local/DeployEMP.js#L99) with your desired parameters. Leave `priceFeedIdentifier` as is. This will be passed in as a command line argument. Note: all unit conversions will be done for you, so no need to convert arguments to 18 decimals or bytes32 format.
+3. Edit the `constructorParams` object in the `DeployEMP.js` [script](https://github.com/UMAprotocol/protocol/blob/master/packages/core/scripts/local/DeployEMP.js#L96) with your desired parameters. Leave `priceFeedIdentifier` as is. This will be passed in as a command line argument. Note: all unit conversions will be done for you, so no need to convert arguments to 18 decimals or bytes32 format.
 4. Run `$(npm bin)/truffle exec ./packages/core/scripts/local/DeployEMP.js --network kovan_mnemonic --identifier USDETH` from the `protocol` folder to deploy your EMP on Kovan. You can adjust the identifier flag to use different price identifiers.
 
 ## Post-Deployment
