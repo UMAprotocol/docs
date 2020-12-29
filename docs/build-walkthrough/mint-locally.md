@@ -135,7 +135,7 @@ await emp.positions(accounts[0])
 
 ## Deposit and withdraw collateral
 
-1. As a token sponsor, we may wish to add additional collateral to our position to avoid being liquidated by a token holder.
+1. As a token sponsor, we may wish to add additional collateral to our position to avoid being liquidated by a tokenholder.
    Let’s deposit 10 additional collateral tokens to our position and see our updated balance, from 9,925 to 9,915.
 
 <!-- prettier-ignore -->
@@ -177,7 +177,7 @@ await emp.withdrawPassedRequest()
 <!--
 
 --END OF TUTORIAL--
-Notes: We might prefer to show people how to settle a contract after expiration using a CLI tool so they can change between token sponsor, token holder, and DVM voter personas more easily.
+Notes: We might prefer to show people how to settle a contract after expiration using a CLI tool so they can change between token sponsor, tokenholder, and DVM voter personas more easily.
 
-This is particularly relevant for settling a token after the expiration time, when as a token sponsor they might settle, as a voter they might decide on the final token redemption value, and as token holder they might redeem.
+This is particularly relevant for settling a token after the expiration time, when as a token sponsor they might settle, as a voter they might decide on the final token redemption value, and as tokenholder they might redeem.
 -->

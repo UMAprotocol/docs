@@ -3,7 +3,7 @@ title: Redeeming Expired Tokens
 sidebar_label: Redeeming Expired Tokens
 ---
 
-Once a token has expired, token holders will likely want to redeem the tokens
+Once a token has expired, tokenholders will likely want to redeem the tokens
 they hold for the amount of collateral that they are entitled to. The easiest
 way to redeem is via [EMP Tools](https://tools.umaproject.org) and this tutorial
 will walk you through how to do so.

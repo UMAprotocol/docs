@@ -16,8 +16,8 @@ They can do so by providing rewards to counterparties or third parties for ident
 To confirm that these positions are improperly collateralized, these contracts may rely on a “Data Verification Mechanism” (DVM).
 
 The DVM is an optimistic oracle service available to respond to price requests made by financial contracts that are registered with it.
-These price requests ask UMA token holders to vote on the value of a price identifier at a historic timestamp.
-UMA token holders commit and reveal their votes on-chain in a process that can take 2-4 days.
+These price requests ask UMA tokenholders to vote on the value of a price identifier at a historic timestamp.
+UMA tokenholders commit and reveal their votes on-chain in a process that can take 2-4 days.
 Once the votes are revealed, the mode of these votes is returned to the financial contract as the value determined by the UMA voters for the price request.
 The financial contract then distributes collateral to its counterparties based on the value returned by the DVM.
 

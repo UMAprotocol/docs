@@ -13,7 +13,7 @@ The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-pha
 Below is a list of known limitation and attack vectors affecting `ExpiringMultiparty.sol`, the contract used to create synthetic tokens.
 
 Note that the financial contract template has an emergency shutdown feature that prematurely expires the contract.
-This can only be triggered by a vote approved by UMA token holders.
+This can only be triggered by a vote approved by UMA tokenholders.
 Emergency shutdown prematurely expires the contract and the final resolution depends on a DVM price, which could take 2-4 days to arrive.
 
 ## Issues affecting incentives to liquidate:
@@ -37,7 +37,7 @@ Emergency shutdown prematurely expires the contract and the final resolution dep
 
 - Scenario: If the collateralization ratio for any token sponsor's position is below 100%, there is no incentive to liquidate them.
   If the contract expires with the collateralization ratio for any token sponsors below 100%, there will be a race to pull collateral from the contract.
-  Whichever sponsors and token holders redeem first will receive collateral.
+  Whichever sponsors and tokenholders redeem first will receive collateral.
   Whoever comes last will receive less or nothing depending on the amount of collateral left in the contract.
 - Conclusion: Although we expect the economic incentives to work without a haircut mechanism, if the collateralization ratio for any token sponsor's position does reach below 100%, UMA will liquidate these positions uneconomically.
 
@@ -86,7 +86,7 @@ Emergency shutdown prematurely expires the contract and the final resolution dep
 ### Fees may be charged on collateral outside of “Profit From Corruption”
 
 - Scenario: In the current implementation, collateral that isn’t part of PFC is still taxed, which technically isn’t correct. Once a liquidation is settled, any collateral that hasn’t been withdrawn is charged until withdrawn. Similarly, once the contract expires, all non-withdrawn sponsor and tokenholder collateral is charged until withdrawn.
-- Conclusion: It is up to token holders and liquidators to withdraw collateral they are owed in a timely manner.
+- Conclusion: It is up to tokenholders and liquidators to withdraw collateral they are owed in a timely manner.
 
 ### Final fee for the DVM is determined at liquidation time, not dispute time
 

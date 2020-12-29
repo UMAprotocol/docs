@@ -6,15 +6,17 @@ slug: /
 
 ## UMA is open-source infrastructure for deploying and enforcing synthetic assets on Ethereum
 
-UMA enables developers to quickly and easily build synthetic tokens that track the price of anything! Synthetic tokens are collateral-backed tokens whose value fluctuates depending on the tokens’ reference index. Synthetic tokens blend features of prediction markets, futures markets, and collateralized loans.
+UMA enables developers to quickly and easily build synthetic tokens that track the price of anything! 
+
+Synthetic tokens are collateral-backed tokens whose value fluctuates depending on the tokens’ reference index. Synthetic tokens blend features of prediction markets, futures markets, and collateralized loans.
 
 Some examples of synthetic tokens include:
 
-* Synthetic real-world assets (eg: gold or Tesla stock price)
-* Synthetic cross-chain cryptoassets
-* Tracking tokens for various non-tradable indices
+* Synthetic real-world assets (e.g., real estate, gold, water)
+* Synthetic cross-chain cryptoassets (e.g., BTC, BCH, ATOM)
+* Tracking tokens for various non-tradable indices (e.g., volatility index, gas prices, defi usage, subgraph popularity)
 
-## What infrastructure does UMA provide to developers?
+## What infrastructure does UMA provide?
 
 UMA enables developers to create synthetic assets via two core components:
 
@@ -33,7 +35,7 @@ If you are a developer interested in building with UMA’s technology, start wit
 
 ## For UMA Tokenholders
 
-If you are interested in the UMA project token, please read this [section](uma-tokenholders/uma-holders.md) to learn more about the role of the UMA project token in the DVM and the rights and responsibilities of UMA project token holders.
+If you are interested in the UMA project token, please read this [section](uma-tokenholders/uma-holders.md) to learn more about the role of the UMA project token in the DVM and the rights and responsibilities of UMA project tokenholders.
 
 ## Contact Us
 

@@ -3,11 +3,11 @@ title: How UMA Works
 sidebar_label: How UMA works
 ---
 
-
+To create a synthetic token, developers use UMA's priceless synthetic contract templates to easily deploy the new contract. To manage and enforce contracts, the contracts leverage UMA's optimistic oracle known as the Data Verification Mechanism (DVM). Below explains how contracts are managed and enforced on UMA. 
 
 ## Managing Token Sponsor Positions
 
-During the lifetime of the synthetic token, token sponsors may want to deposit additional collateral to their positions so as to avoid liquidation. Sponsors may also want to withdraw excess collateral if the position has moved in their favor.
+During the lifetime of the synthetic token, token sponsors (people who create new synthetic tokens) may want to deposit additional collateral to their positions to avoid liquidation. Sponsors may also want to withdraw excess collateral if the position has moved in their favor.
 
 Token sponsors can deposit additional collateral at any time.
 
@@ -23,19 +23,19 @@ A “fast” withdrawal allows a token sponsor to withdraw excess collateral fro
 
 ### “Slow” withdrawal:
 
-If the token sponsor wishes to withdraw collateral from his position that would bring his collateralization below the global collateralization ratio, he can do so via a “slow” withdrawal. Because withdrawing this amount of collateral could potentially jeopardize the solvency of the fungible synthetic tokens, this “slow”, 2-part, withdrawal process allows other token holders to flag if a withdrawal would render the token sponsor insolvent.
+If the token sponsor wishes to withdraw collateral from his position that would bring his collateralization below the global collateralization ratio, he can do so via a “slow” withdrawal. Because withdrawing this amount of collateral could potentially jeopardize the solvency of the fungible synthetic tokens, this “slow”, 2-part, withdrawal process allows other tokenholders to flag if a withdrawal would render the token sponsor insolvent.
 
 In a “slow” withdrawal, there are two parts:
 The token sponsor submits a withdrawal request to the contract indicating the amount of collateral he wishes to withdraw and the timestamp of the request.
 
-During this period, any token holder can liquidate the token sponsor’s position if they believe a withdrawal of the amount indicated in the withdrawal request would bring the token sponsor’s collateralization below the “[collateralization requirement](synthetic-tokens/glossary.md#collateralization-requirement)” at the time of liquidation.
-If the “[withdrawal liveness period](synthetic-tokens/glossary.md#withdrawal-liveness-period)” passes without a token holder liquidating the token sponsor, the token sponsor may withdraw collateral from his position up to the amount requested.
+During this period, any tokenholder can liquidate the token sponsor’s position if they believe a withdrawal of the amount indicated in the withdrawal request would bring the token sponsor’s collateralization below the “[collateralization requirement](synthetic-tokens/glossary.md#collateralization-requirement)” at the time of liquidation.
+If the “[withdrawal liveness period](synthetic-tokens/glossary.md#withdrawal-liveness-period)” passes without a tokenholder liquidating the token sponsor, the token sponsor may withdraw collateral from his position up to the amount requested.
 
 ## Liquidation and Dispute
 
-At any time, a token holder may liquidate a token sponsor’s position. Liquidations happen immediately without calling the oracle. Anyone may dispute a liquidation within the “[liquidation liveness period](synthetic-tokens/glossary.md#liquidation-liveness-period)”.
+At any time, a tokenholder may liquidate a token sponsor’s position. Liquidations happen immediately without calling the oracle. Anyone may dispute a liquidation within the “[liquidation liveness period](synthetic-tokens/glossary.md#liquidation-liveness-period)”.
 
-To liquidate a token sponsor position, a token holder submits tokens to the contract and posts a liquidation bond.
+To liquidate a token sponsor position, a tokenholder submits tokens to the contract and posts a liquidation bond.
 The liquidation bond covers the cost of calling the DVM if the liquidation is disputed.
 If the liquidation is not disputed, the liquidation bond is returned to the liquidator.
 The tokens are submitted for 3 purposes: to indicate the size of the position to be liquidated, to close the token sponsor’s position, and to attest to the liquidator’s belief that the token sponsor’s position should be liquidated.
@@ -80,6 +80,6 @@ Consider the following example. Assume a token sponsor has deposited 150 DAI of 
 
 After the expiration timestamp for the synthetic tokens, anyone may settle the contract. This calls on the UMA [DVM](synthetic-tokens/glossary.md#dvm) to return the value of the token’s price identifier at the expiration timestamp.
 
-After this value is returned to the contract and the contract is settled, any token holder can redeem the tokens against the contract. Redemption of the tokens returns the token holder collateral equal to the [price identifier](synthetic-tokens/glossary.md#price-identifier) value returned by the UMA DVM.
+After this value is returned to the contract and the contract is settled, any tokenholder can redeem the tokens against the contract. Redemption of the tokens returns the tokenholder collateral equal to the [price identifier](synthetic-tokens/glossary.md#price-identifier) value returned by the UMA DVM.
 
 ![](/docs/synthetic-tokens/st_expiration.png)

@@ -11,7 +11,7 @@ Instead, it is only used to resolve disputes of liquidations and to settle synth
 ### Token sponsor
 
 A token sponsor is an entity who bears the financial risk of the synthetic tokens.
-This entity deposits collateral into the smart contract and withdraws synthetic tokens that they can then sell to token holders.
+This entity deposits collateral into the smart contract and withdraws synthetic tokens that they can then sell to tokenholders.
 Token sponsors have short exposure to the price identifiers of the synthetic tokens they sponsor.
 
 ## Parameters of a synthetic token smart contract:
@@ -25,13 +25,13 @@ Because DVM voters need to be able to vote on the value of this price identifier
 
 ### Token redemption value
 
-This is a function which, when evaluated only in the event of a dispute, returns the amount of collateral to be returned to a token holder, not including any penalties or fees.
+This is a function which, when evaluated only in the event of a dispute, returns the amount of collateral to be returned to a tokenholder, not including any penalties or fees.
 
 - Example: 24-hour TWAP price of gold June 2020 synthetic token trades on Uniswap.
 
 ### Token settlement value
 
-This is a function which, when evaluated at or after the expiration timestamp of a synthetic token, returns the amount of collateral that will be returned to a token holder who redeems a synthetic token.
+This is a function which, when evaluated at or after the expiration timestamp of a synthetic token, returns the amount of collateral that will be returned to a tokenholder who redeems a synthetic token.
 
 - Example: Price of 1 oz of gold on June 2020 at 5pm ET.
 

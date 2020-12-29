@@ -6,9 +6,9 @@ sidebar_label: Priceless Synthetic Tokens
 
 ## Priceless Synthetic Tokens
 
-Synthetic tokens are the first type of priceless contracts developers can create with UMA. 
+The first type of priceless contract developers can use on UMA is for creating synthetic tokens. 
 
-Priceless synthetic tokens are synthetic tokens that are securely collateralized without an on-chain price feed. These tokens are designed with mechanisms to incentivize token sponsors (those who create synthetic tokens) to properly collateralize their positions. These mechanisms include a liquidation and dispute process that allows token holders to be rewarded for identifying improperly collateralized [token sponsor](synthetic-tokens/glossary.md#token-sponsor) positions. The dispute process relies on an optimistic oracle, the UMA [DVM](synthetic-tokens/glossary.md#dvm), to settle disputes regarding liquidations.
+Priceless synthetic tokens are synthetic tokens that are securely collateralized without an on-chain price feed. These tokens are designed with mechanisms to incentivize token sponsors (those who create synthetic tokens) to properly collateralize their positions. These mechanisms include a liquidation and dispute process that allows tokenholders to be rewarded for identifying improperly collateralized [token sponsor](synthetic-tokens/glossary.md#token-sponsor) positions. The dispute process relies on an optimistic oracle, the UMA [DVM](synthetic-tokens/glossary.md#dvm), to settle disputes regarding liquidations.
 
 To ensure that the rewards for liquidations and disputes are economical (i.e. worth the gas/transaction cost to liquidate or dispute), deployers of this financial contract template can set a minimum sponsor size.
 This is the minimum number of tokens that a token sponsor must have created against the contract.
@@ -17,9 +17,9 @@ This includes partial liquidations that leave the sponsor's position smaller tha
 
 ## Launching a Priceless Synthetic Token
 
-To launch a new type of synthetic token for which an existing market does not yet exist, that synthetic token’s smart contract must first be parameterized and deployed. Anyone can parameterize and deploy this contract.
+To launch a new type of synthetic token for which an existing market does not yet exist, the synthetic token’s smart contract needs to be be parameterized and deployed.
 
-This smart contract can be deployed using UMA’s synthetic token contract template and defining key parameters. Some parameters to highlight are:
+By using UMA's priceless synthetic token contract template, developers ca easily deploy a new synthetic asset by defining a few key parameters. Some parameters to highlight are:
 
 - Token’s [price identifier](synthetic-tokens/glossary.md#price-identifier) (the price feed this token should track)
 - Token expiration timestamp

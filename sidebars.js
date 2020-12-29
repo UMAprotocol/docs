@@ -5,18 +5,19 @@ module.exports = {
       {
         type: "category",
         label: "Understanding UMA",
-        items: ["getting-started/overview", "getting-started/synthetic-tokens", "getting-started/oracle"],
+        items: ["getting-started/overview", "getting-started/synthetic-tokens", "getting-started/oracle", "getting-started/how-uma-works"],
       },
       {
         type: "category",
         label: "Synthetic Assets",
-        items: ["synthetic-tokens/what-are-synthetic-assets" "synthetic-tokens/explainer", "synthetic-tokens/glossary", "synthetic-tokens/known-issues"],
+        items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/explainer",  "synthetic-tokens/known-issues"],
       },
       {
         type: "category",
         label: "Oracle (DVM)",
         items: ["oracle/tech-architecture", "oracle/econ-architecture", "oracle/dvm-interface", "oracle/known-issues"],
       },
+      "synthetic-tokens/glossary"
     ],
     Developers: [
       "build-walkthrough/build-process",

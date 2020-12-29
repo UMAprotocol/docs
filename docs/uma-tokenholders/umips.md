@@ -106,7 +106,7 @@ The technical specification should describe the syntax and semantics of the prop
 - <b> Quote Currency</b>: The currency to report the  base currency in.
 - <b> Data sources</b>: Where tokenholders will obtain price information (e.g., exchanges)
 - <b>Result Processing</b>: The DVM will aggregate votes from tokenholders on price requests. The result processing field denotes the processing the DVM will perform to determine the final price of an asset (e.g., take the median or mode of all votes submitted).
-- <b>Input Processing</b>: Denotes if and why UMA token holders should change the calculation method for a price identifier. For example, for ETH/USD price requests, inputs are results received from exchanges and if an exchange is no longer valid, then human intervention is required. The input processing can typically be denoted as "Human intervention in extreme circumstances where the result differs from broad market consensus". 
+- <b>Input Processing</b>: Denotes if and why UMA tokenholders should change the calculation method for a price identifier. For example, for ETH/USD price requests, inputs are results received from exchanges and if an exchange is no longer valid, then human intervention is required. The input processing can typically be denoted as "Human intervention in extreme circumstances where the result differs from broad market consensus". 
 - <b> Price Steps</b>: The amount of decimal places the price identifier will be reported in. <b>Note </b> - the amount of decimals in a contract's collateral currency type needs to be greater than or equal to the amount of decimals in the contract's price identifier. 
 - <b>Rounding</b>:  How UMA tokenholders should round prices obtained during a price request (e.g., 0.5 round up).
 - <b>Pricing Interval</b>: Price feeds do not always have granularity in seconds, so this allows a UMIP to specify how to round the timestamp. For example, if you had a pricing interval of 1 minute (which is common), it means you would "round" 10:50:45 to 10:50:00. 
@@ -135,7 +135,7 @@ An implementation must be completed before any UMIP proceeds to “Last Call” 
 
 #### Example template for adding a new price identifier
 
-After following the suggested steps to obtain the price, token holders should determine whether that median differs from broad market consensus. This is meant to be vague as the $UMA tokenholders are responsible for defining broad market consensus.
+After following the suggested steps to obtain the price, tokenholders should determine whether that median differs from broad market consensus. This is meant to be vague as the $UMA tokenholders are responsible for defining broad market consensus.
 
 Ultimately, how one queries the exchanges should be varied and determined by the voter to ensure that there is no central point of failure. While it's important for tokenholders to have redundancy in their sources, bots and users that interact with the system in realtime need fast sources of price information. In these cases, it can be assumed that the exchange median is accurate enough.
 
@@ -153,6 +153,6 @@ All UMIPs must include a discussion of the security implications/considerations 
 
 #### Example template for adding a new price identifier
 
-Adding this new identifier by itself poses little security risk to the DVM or priceless financial contract users. However, anyone deploying a new priceless token contract referencing this identifier should take care to parameterize the contract appropriately to the reference asset’s volatility and liquidity characteristics to avoid the loss of funds for synthetic token holders. 
+Adding this new identifier by itself poses little security risk to the DVM or priceless financial contract users. However, anyone deploying a new priceless token contract referencing this identifier should take care to parameterize the contract appropriately to the reference asset’s volatility and liquidity characteristics to avoid the loss of funds for synthetic tokenholders. 
     
 Additionally, the contract deployer should ensure that there is a network of liquidators and disputers ready to perform the services necessary to keep the contract solvent. $UMA-holders should evaluate the ongoing cost and benefit of supporting price requests for this identifier and also contemplate de-registering this identifier if security holes are identified. 

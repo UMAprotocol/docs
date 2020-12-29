@@ -30,7 +30,7 @@ This is a 3 step process:
 ### Step 1: Create a system to measure the Cost of Corruption (CoC)
 
 The DVM uses a Schelling-Point style voting system with tokenized voting rights.
-Token holders vote on price requests that are submitted by contracts registered with it, and they are paid a reward for voting honestly and penalized otherwise.
+Tokenholders vote on price requests that are submitted by contracts registered with it, and they are paid a reward for voting honestly and penalized otherwise.
 As long as there is an honest majority, voters will vote correctly.
 This means the Cost of Corruption is the cost to buy control of 51% of the voting tokens.
 These voting tokens are the UMA project token.
@@ -58,22 +58,11 @@ A fascinating result of this design is that when market participants expect grow
 
 For more detailed research on these mechanisms, please look at this [repo](https://github.com/UMAprotocol/research).
 
-## UMA Project Token
+## UMA Token
 
-The UMA project token is the voting token for the UMA DVM.
-Owners of the UMA token have the following rights and responsibilities:
+The UMA project token is the voting token for the UMA DVM. 
 
-- Vote on price requests raised by financial contracts registered with the DVM
-- Register or de-register contract templates with the DVM
-- Conduct an emergency shutdown of specific contract deployments
-- Approve new price identifiers
-- Upgrade core DVM protocol
-- Modify DVM parameters
-
-To vote on price requests, voters will be able to use [vote.umaproject.org](https://vote.umaproject.org/) (uma-tokenholders/voter-dApp.md).
-
-All responsibilities relating to governance of the UMA ecosystem (any responsibility outside of voting on price requests) will be effected via the UMIP (UMA Improvement Proposal) process.
-To read more about UMIPs, please look at this [repo](https://github.com/UMAprotocol/UMIPs).
+View [here](https://docs.umaproject.org/uma-tokenholders/uma-holders) to learn more about how UMA token is used to manage and enforce financial contracts. 
 
 ## Additional Resources
 
