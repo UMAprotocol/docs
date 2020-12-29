@@ -38,7 +38,7 @@ This smart contract can be deployed using UMA’s synthetic token contract templ
 - token expiration timestamp
 - token [collateralization requirement](synthetic-tokens/glossary.md#collateralization-requirement) (e.g. a synthetic token must have collateral worth at least 120% of the price indentifier’s current value)
 
-This [tutorial](build-walkthrough/mint-locally) will show you how to parameterize and deploy the smart contract for a new synthetic token from the command line.
+This [tutorial](/build-walkthrough/mint-locally) will show you how to parameterize and deploy the smart contract for a new synthetic token from the command line.
 
 ## Creating Synthetic Tokens From an Existing Contract
 
