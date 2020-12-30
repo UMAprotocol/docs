@@ -16,7 +16,7 @@ UMIPs need to provide a concise technical specification of the feature and a rat
 If you are building with a price identifier or collateral currency not currently supported by the UMA DVM, you will need to propose it to the community of UMA tokenholders for a vote.
 You should create an UMIP in which you describe your project and the new price identifier(s) or collateral currencies being requested.
 At this time, you do not need to provide an implementation for the addition of a new price identifier or collateral currency.
-Details on how to write a UMIP are [here](umips.md). This UMIP will be discussed by members of the UMA community.
+Details on how to write a UMIP are [here](/uma-tokenholders/umips#what-are-the-components-of-a-umip). This UMIP will be discussed by members of the UMA community.
 
 ### Step 2: Get ready for the vote 
 

@@ -25,8 +25,17 @@ By using UMA's priceless synthetic token contract template, developers ca easily
 - Token expiration timestamp
 - Token [collateralization requirement](synthetic-tokens/glossary.md#collateralization-requirement) (e.g. a synthetic token must have collateral worth at least 120% of the price indentifier’s current value)
 
-This [tutorial](build-walkthrough/mint-locally) will show you how to parameterize and deploy the smart contract for a new synthetic token from the command line.
+This [tutorial](/build-walkthrough/mint-locally) will show you how to parameterize and deploy the smart contract for a new synthetic token from the command line.
 
+### UMA's Expiring MultiParty (EMP) template 
+
+One can write priceless financial contract templates to create various kinds of financial products.
+As a first template, the UMA team has written one to create expiring synthetic tokens, called the Expiring MultiParty (EMP). This is only the first example of a synthetic token implementation, and is by no means restrictive on the types of synthetic tokens that could be built on UMA's infrastructure.
+
+These are ERC-20 tokens whose required backing collateral is determined by the value of a price identifier.
+There is no on-chain price feed for the values of the price identifier; rather, tokenholders and token sponsors should monitor the value of this price identifier off-chain to inform their decisions about how much collateral to maintain on-chain.
+If token sponsors are improperly collateralized, liquidators can liquidate token sponsors’ positions.
+Improper liquidations can be disputed by disputers. Details on these mechanisms are available [here](synthetic-tokens/explainer.md).
 
 ## Additional Resources
 

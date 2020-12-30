@@ -1,6 +1,6 @@
 ---
-title: What are synthetic assets?
-sidebar_label: What are synthetic assets?
+title: Synthetic tokens
+sidebar_label: Synthetic tokens
 ---
 
 ## What are synthetic tokens?

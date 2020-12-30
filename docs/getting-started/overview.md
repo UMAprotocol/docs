@@ -1,6 +1,6 @@
 ---
-title: Overview of UMA
-sidebar_label: Overview of UMA
+title: UMA Overview
+sidebar_label: What is UMA?
 ---
 
 UMA builds open-source infrastructure for “priceless” financial contracts on Ethereum. Specifically, this is two things:

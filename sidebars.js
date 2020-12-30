@@ -4,18 +4,18 @@ module.exports = {
       "getting-started/welcome",
       {
         type: "category",
-        label: "Understanding UMA",
-        items: ["getting-started/overview", "getting-started/synthetic-tokens", "getting-started/oracle", "getting-started/how-uma-works"],
+        label: "Overview",
+        items: ["getting-started/overview", "getting-started/synthetic-tokens", "getting-started/oracle"],
       },
       {
         type: "category",
         label: "Synthetic Assets",
-        items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/explainer",  "synthetic-tokens/known-issues"],
+        items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/explainer", "synthetic-tokens/how-uma-works",  "synthetic-tokens/known-issues"],
       },
       {
         type: "category",
         label: "Oracle (DVM)",
-        items: ["oracle/tech-architecture", "oracle/econ-architecture", "oracle/dvm-interface", "oracle/known-issues"],
+        items: ["oracle/economic-guarantees", "oracle/tech-architecture", "oracle/econ-architecture", "oracle/dvm-interface",  "oracle/known-issues"],
       },
       "synthetic-tokens/glossary"
     ],
@@ -28,8 +28,8 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Expiring MultiParty (EMP)",
-        items: ["build-walkthrough/emp-parameters", "build-walkthrough/minting-etherscan",],
+        label: "ExpiringMultiParty (EMP)",
+        items: ["developers/emp-deployment", "build-walkthrough/emp-parameters", "build-walkthrough/minting-etherscan",],
       },
       // {
       //   type: "category",
