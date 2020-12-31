@@ -135,7 +135,7 @@ await emp.positions(accounts[0])
 
 ## Deposit and withdraw collateral
 
-1. As a token sponsor, we may wish to add additional collateral to our position to avoid being liquidated by a tokenholder.
+1. As a token sponsor, we may wish to add additional collateral to our position to avoid being liquidated.
    Let’s deposit 10 additional collateral tokens to our position and see our updated balance, from 9,925 to 9,915.
 
 <!-- prettier-ignore -->
