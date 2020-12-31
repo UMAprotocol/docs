@@ -21,7 +21,7 @@ These contracts are used by the DVM to keep track of which financial contracts d
 - [Rinkeby (network id: 4)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/4.json)
 - [Kovan (network id: 42)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/42.json)
 
-## Key Contracts
+<!-- ## Key Contracts
 
 **IdentifierWhitelist**
 
@@ -56,7 +56,7 @@ This is the contract that voters interact with to provide prices and vote on new
 The governor contract is used to propose new protocol upgrade votes. To propose an upgrade, a participant would need to call `propose()`.
 
 | [Mainnet Address](https://etherscan.io/address/0x592349F7DeDB2b75f9d4F194d4b7C16D82E507Dc)         | [Kovan Address](https://kovan.etherscan.io/address/0xca4575EE197308c9D2aBF813A5f064f44898b7a4)      | [Docs](https://docs-dot-uma-protocol.appspot.com/uma/contracts/Governor.html)  | [Source Code](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/oracle/implementation/Governor.sol)
-| ----------------------- | ------------------ | ---------------------- | ---------------------- |
+| ----------------------- | ------------------ | ---------------------- | ---------------------- | -->
 
 <!-- # Deployed Synthetic Tokens
 
