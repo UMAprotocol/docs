@@ -53,4 +53,4 @@ For more detailed research on these mechanisms, view [here](https://docs.umaproj
 
 The UMA project token is the voting token for the UMA DVM. 
 
-View [here](https://docs.umaproject.org/uma-tokenholders/uma-holders) to learn more about how UMA token is used to manage and enforce financial contracts. 
+View [here](uma-tokenholders/uma-holders) to learn more about how UMA token is used to manage and enforce financial contracts. 
