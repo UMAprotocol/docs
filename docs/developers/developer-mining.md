@@ -27,6 +27,8 @@ The ideas above, along with any other financial contract idea a developer can th
 Whitelisted developer mining participants include:
 
 - [PerlinX](https://app.perlinx.finance/pools)
+- [youmychicfila](https://mario.cash/)
+- [uGAS](https://degenerative.finance/)
 
 ## Additional resources
 
