@@ -1,6 +1,6 @@
 ---
-title: Synthetic tokens
-sidebar_label: Synthetic tokens
+title: Synthetic Tokens
+sidebar_label: Synthetic Tokens
 ---
 
 ## What are synthetic tokens?
@@ -20,6 +20,7 @@ Some of the most creative ideas for synthetic tokens fall in the last category. 
 * Tokens that track the success of trade ideas on r/WallStreetBets
 
 By changing the price identifier of a priceless synthetic token, you can create synthetic tokens that behave like tokenized versions of other derivatives, like options.
+<<<<<<< HEAD
 
 ## Priceless Synthetic Tokens
 
@@ -64,3 +65,5 @@ Here are some additional resources to better understand how the priceless synthe
 
 
 
+=======
+>>>>>>> 255a61e918d352c89d6d2e416671975b04ac046a
