@@ -15,7 +15,7 @@ module.exports = {
       {
         type: "category",
         label: "Oracle (DVM)",
-        items: ["oracle/economic-guarantees", "oracle/tech-architecture", "oracle/econ-architecture", "oracle/dvm-interface",  "oracle/known-issues"],
+        items: ["oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface",  "oracle/known-issues"],
       },
       "synthetic-tokens/glossary"
     ],

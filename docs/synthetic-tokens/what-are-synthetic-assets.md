@@ -34,7 +34,7 @@ This includes partial liquidations that leave the sponsor's position smaller tha
 
 To launch a new type of synthetic token for which an existing market does not yet exist, the synthetic token’s smart contract needs to be be parameterized and deployed.
 
-By using UMA's priceless synthetic token contract template, developers ca easily deploy a new synthetic asset by defining a few key parameters. Some parameters to highlight are:
+By using UMA's priceless synthetic token contract template, developers can easily deploy a new synthetic asset by defining a few key parameters and using an approved UMA contract factory. Some parameters to highlight are:
 
 - Token’s [price identifier](synthetic-tokens/glossary.md#price-identifier) (the price feed this token should track)
 - Token expiration timestamp
