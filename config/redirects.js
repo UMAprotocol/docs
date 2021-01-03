@@ -19,8 +19,8 @@ module.exports = [
   // synthetic tokens
 
   {
-    to: "/synthetic-tokens/explainer",
-    from: ["/uma/synthetic_tokens/explainer.html"],
+    to: "/synthetic-tokens/expiring-synthetic-tokens",
+    from: ["/uma/synthetic-tokens/expiring-synthetic-tokens.html"],
   },
   {
     to: "/synthetic-tokens/glossary",
