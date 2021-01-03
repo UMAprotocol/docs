@@ -4,17 +4,8 @@ sidebar_label: Welcome to UMA
 slug: /
 ---
 
-## UMA is open-source infrastructure for deploying and enforcing synthetic assets on Ethereum
+UMA is open-source infrastructure for deploying and enforcing synthetic assets on Ethereum. UMA enables developers to quickly and easily build synthetic tokens that track the price of anything! View [here](http://docs.umaproject.org/synthetic-tokens/what-are-synthetic-assets) to learn more about synthetic tokens!
 
-UMA enables developers to quickly and easily build synthetic tokens that track the price of anything! 
-
-Synthetic tokens are collateral-backed tokens whose value fluctuates depending on the tokens’ reference index. Synthetic tokens blend features of prediction markets, futures markets, and collateralized loans.
-
-Some examples of synthetic tokens include:
-
-* Synthetic real-world assets (e.g., real estate, gold, water)
-* Synthetic cross-chain cryptoassets (e.g., BTC, BCH, ATOM)
-* Tracking tokens for various non-tradable indices (e.g., volatility index, gas prices, defi usage, subgraph popularity)
 
 ## What infrastructure does UMA provide?
 

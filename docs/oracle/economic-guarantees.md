@@ -1,5 +1,5 @@
 ---
-title: UMA's Optimistic Oracle is secured by Economic Guarantees
+title: UMA's Optimistic Oracle is Secured by Economic Guarantees
 sidebar_label: Economic guarantees
 ---
 

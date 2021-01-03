@@ -1,5 +1,5 @@
 ---
-title: "Synthetic Tokens: Glossary"
+title: Glossary
 sidebar_label: Glossary
 ---
 

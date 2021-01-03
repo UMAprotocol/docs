@@ -3,8 +3,6 @@ title: Synthetic Tokens
 sidebar_label: Synthetic Tokens
 ---
 
-## What are synthetic tokens?
-
 Synthetic tokens are collateral-backed tokens whose value fluctuates depending on the tokens’ reference index. Synthetic tokens blend features of prediction markets, futures markets, and collateralized loans.
 
 Some examples of synthetic tokens include:
@@ -20,7 +18,6 @@ Some of the most creative ideas for synthetic tokens fall in the last category. 
 * Tokens that track the success of trade ideas on r/WallStreetBets
 
 By changing the price identifier of a priceless synthetic token, you can create synthetic tokens that behave like tokenized versions of other derivatives, like options.
-<<<<<<< HEAD
 
 ## Priceless Synthetic Tokens
 
@@ -45,15 +42,15 @@ By using UMA's priceless synthetic token contract template, developers ca easily
 
 This [tutorial](/build-walkthrough/mint-locally) will show you how to parameterize and deploy the smart contract for a new synthetic token from the command line.
 
-### UMA's Expiring MultiParty (EMP) template 
+### UMA's Expiring MultiParty (EMP) contract template 
 
 One can write priceless financial contract templates to create various kinds of financial products.
-As a first template, the UMA team has written one to create expiring synthetic tokens, called the Expiring MultiParty (EMP). This is only the first example of a synthetic token implementation, and is by no means restrictive on the types of synthetic tokens that could be built on UMA's infrastructure.
+The first contract template created on UMA enables creating expiring synthetic tokens, called the ExpiringMultiParty (EMP) contract. This is only the first example of a synthetic token implementation, and is by no means restrictive on the types of synthetic tokens that could be built on UMA's infrastructure.
 
 These are ERC-20 tokens whose required backing collateral is determined by the value of a price identifier.
-There is no on-chain price feed for the values of the price identifier; rather, tokenholders and token sponsors should monitor the value of this price identifier off-chain to inform their decisions about how much collateral to maintain on-chain.
+There is no on-chain price feed for the values of the price identifier;token sponsors, liquidators and disputers monitor the value of this price identifier off-chain to determine  how much collateral needs to be maintain. 
 If token sponsors are improperly collateralized, liquidators can liquidate token sponsors’ positions.
-Improper liquidations can be disputed by disputers. Details on these mechanisms are available [here](synthetic-tokens/explainer.md).
+Disputers then verify these liquidations, and ultimately will send a price dispute to the UMA DVM if there is a disagreement on a token sponsor's under-collateralization status. Details on these mechanisms are available [here](synthetic-tokens/explainer.md).
 
 ## Additional Resources
 
@@ -62,8 +59,3 @@ Here are some additional resources to better understand how the priceless synthe
 - [Blog post](https://medium.com/uma-project/priceless-synthetic-tokens-f28e6452c18b)
 - [Twitter thread](https://twitter.com/UMAprotocol/status/1242891550872535042?s=20)
 - [Github implementation](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/financial-templates/expiring-multiparty)
-
-
-
-=======
->>>>>>> 255a61e918d352c89d6d2e416671975b04ac046a
