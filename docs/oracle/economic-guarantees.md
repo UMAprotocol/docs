@@ -47,7 +47,7 @@ Importantly, the DVM system is designed to levy the lowest fees possible while m
 As such, the system is not rent-seeking — it is designed to minimize the fees required to maintain the security of the system.
 A fascinating result of this design is that when market participants expect growth in the future usage of the protocol, this expectation of growth can maintain the CoC > PfC inequality without the DVM levying any fees at all.
 
-For more detailed research on these mechanisms, view [here](https://docs.umaproject.org/oracle/econ-architecture) and at this [repo](https://github.com/UMAprotocol/research).
+For more detailed research on these mechanisms, view our explainer [here](oracle/econ-architecture) and our research [here](https://github.com/UMAprotocol/research).
 
 ## UMA Token
 
