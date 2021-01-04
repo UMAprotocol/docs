@@ -37,5 +37,5 @@ require you to approve the smart contract to move your tokens on your behalf. On
 longer have any more of the expired token but you will have gained the
 equivalent in collateral.
 
-The [link](synthetic-tokens/explainer.md#redeeming-after-expiry) in the
+The [link](synthetic-tokens/what-are-synthetic-assets.md#redeeming-after-expiry) in the
 screenshot is worth reading if you want to learn more about expiry.

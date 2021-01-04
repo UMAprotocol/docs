@@ -50,7 +50,7 @@ The first contract template created on UMA enables creating expiring synthetic t
 These are ERC-20 tokens whose required backing collateral is determined by the value of a price identifier.
 There is no on-chain price feed for the values of the price identifier;token sponsors, liquidators and disputers monitor the value of this price identifier off-chain to determine  how much collateral needs to be maintain. 
 If token sponsors are improperly collateralized, liquidators can liquidate token sponsors’ positions.
-Disputers then verify these liquidations, and ultimately will send a price dispute to the UMA DVM if there is a disagreement on a token sponsor's under-collateralization status. Details on these mechanisms are available [here](synthetic-tokens/explainer.md).
+Disputers then verify these liquidations, and ultimately will send a price dispute to the UMA DVM if there is a disagreement on a token sponsor's under-collateralization status. Details on these mechanisms are available [here](synthetic-tokens/what-are-synthetic-assets.md).
 
 ## Additional Resources
 
