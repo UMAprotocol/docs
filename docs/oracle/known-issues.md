@@ -22,12 +22,12 @@ This is also used to determine what inflationary rewards, in the form of newly m
 
 The whitepaper describes a method for the DVM to calculate this value via a median calculation:
 
-- If the distribution of votes is highly unimodal (frequency of the mode >50%), the mode is returned as the verified price. Token holders who voted for the mode are rewarded; all other token holders are penalized.
-- If the frequency of the mode of the votes is <50%, the median price is returned as the verified price. Token holders who submitted votes between the 25th and 75th percentile are rewarded; all other token holders are penalized.
+- If the distribution of votes is highly unimodal (frequency of the mode >50%), the mode is returned as the verified price. Tokenholders who voted for the mode are rewarded; all other tokenholders are penalized.
+- If the frequency of the mode of the votes is <50%, the median price is returned as the verified price. Tokenholders who submitted votes between the 25th and 75th percentile are rewarded; all other tokenholders are penalized.
 
 However, this is not reflected in the v1 implementation of the DVM. The v1 implementation of the DVM instead conducts the following calculation:
 
-- If the distribution of votes is highly unimodal (frequency of the mode >50%), the mode is returned as the verified price. Token holders who voted for the mode are rewarded; all other token holders are penalized.
+- If the distribution of votes is highly unimodal (frequency of the mode >50%), the mode is returned as the verified price. Tokenholders who voted for the mode are rewarded; all other tokenholders are penalized.
 - If the frequency of the mode of the votes is <50%, the vote is delayed until the next round.
 
 #### Automated Buy and Burn Program
@@ -92,7 +92,7 @@ The DVM uses a Schelling-Point style voting system with tokenized voting rights 
 
 In a bribery attack, assume that there exists a 3rd party individual who would like to corrupt the DVM by bribing any UMA tokenholder who puts in a corrupted vote with a reward of `x`.
 
-Assume each UMA token is worth 1 unit of value and entitles the token holder to submit 1 vote.
+Assume each UMA token is worth 1 unit of value and entitles the tokenholder to submit 1 vote.
 Each voter must decide whether to submit a corrupted vote (“be corrupted”) or an uncorrupted vote (“not be corrupted”).
 The system is considered corrupted if the majority of UMA tokenholders submit the corrupted vote.
 
@@ -100,7 +100,7 @@ We assume that if the system is corrupted, the UMA voting token becomes worthles
 
 To compel voters to submit accurate votes, the UMA system issues `r` newly minted UMA tokens, to be distributed proportionally to all voters who voted with the majority.
 We label that the fraction of voters who are honest (not corrupted) as `p` (this means `p` is between 0 and 1).
-The reward that an honest voter receives is therefore scaled by how many token holders vote honestly—the reward paid to an honest voter is `r/p`.
+The reward that an honest voter receives is therefore scaled by how many tokenholders vote honestly—the reward paid to an honest voter is `r/p`.
 If `p=1` and all voters are honest, the reward received is `r`; if `p=0.5` and only half of the voters are honest, the reward received is `2*r`.
 
 The payout for each voter depends both on the vote they submit and the votes that all other voters submit.
@@ -122,8 +122,8 @@ An attacker can successfully bribe the system by promising to pay 2 times the re
 In the previous game, the “rules” were fixed and defined before-hand; it was a static game. In reality, the DVM has a protocol for governance, which includes updating and changing the rules of the game.
 
 If there were an outside party that proposed a bribe of `x` in order to try and convince voters to submit corrupt votes, the token-holders could vote to increase the reward offered by the DVM such that `x < 2*r`.
-By doing so, token holders can continuously stay ahead of any bribes.
+By doing so, tokenholders can continuously stay ahead of any bribes.
 
-It’s worth remembering that token holders do not want to be successfully bribed. In the event of a successful bribe, the token they own collapses in value.
-As such, token holders have a large incentive to change the rules to prevent any bribe.
-Because attackers know this, it means even attempting to bribe the token holders is futile—token holders will just quickly increase the reward `r` to thwart the bribe attempt.
+It’s worth remembering that tokenholders do not want to be successfully bribed. In the event of a successful bribe, the token they own collapses in value.
+As such, tokenholders have a large incentive to change the rules to prevent any bribe.
+Because attackers know this, it means even attempting to bribe the tokenholders is futile—tokenholders will just quickly increase the reward `r` to thwart the bribe attempt.

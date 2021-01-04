@@ -99,7 +99,7 @@ the amount that was approved.
 
 ## The Voting Interface
 
-The Voting Interface is used by _token holders_ to vote on prices for pending price requests. When we say token holders
+The Voting Interface is used by _token holders_ to vote on prices for pending price requests. When we say tokenholders
 in this section, we are referring to UMA tokens, which should not be confused with synthetic tokens that are produced
 by financial contracts that use the UMA DVM.
 
