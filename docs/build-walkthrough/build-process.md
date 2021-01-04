@@ -5,7 +5,7 @@ sidebar_label: Development Guide
 
 To immediately start building on the UMA protocol, first check out the [Quick Start guide](/developers/setup) for setting up your environment and deploying your first local [synthetic token](/build-walkthrough/mint-locally).
 
-The tutorials in this section are written to use the Expiring MultiParty (EMP) contract, which is the first available production ready template of a synthetic token. The EMP allows developers to quickly launch expiring synthetic tokens, such as the [UMA yield dollar](/users/mint-farm-yusd), but is by no means a limitation on the types of synthetic tokens that a developer could create.
+The tutorials in this section are written to use the Expiring MultiParty (EMP) contract, which is the first available production ready template of a synthetic token. The EMP allows developers to quickly launch expiring synthetic tokens, such as the [UMA yield dollar](https://medium.com/uma-project/the-yield-dollar-on-uma-3a492e79069f), but is by no means a limitation on the types of synthetic tokens that a developer could create.
 
 ### Complete build process
 

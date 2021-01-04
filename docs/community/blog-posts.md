@@ -10,6 +10,8 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Jan 1, 2021: [UMA Token Release & Treasury Update](https://medium.com/uma-project/uma-token-release-treasury-update-b33867f534c9)
+- Dec 23, 2020: [UMA Yield Dollar dApp Mining & Christmas Rollover](https://medium.com/uma-project/uma-yield-dollar-dapp-mining-christmas-rollover-e2c07396e7f)
 - Dec 10, 2020: [UMA x YAM Collaboration](https://medium.com/uma-project/uma-x-yam-collaboration-d43b00cbaa41)
 - Nov 30, 2020: [uLABS Gas Futures Token](https://medium.com/uma-project/ulabs-gas-futures-token-9f51682778dd)
 - Nov 11, 2020: [The Journey Towards Universal Market Access](https://medium.com/uma-project/the-journey-towards-universal-market-access-94e627aff775)

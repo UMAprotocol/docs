@@ -6,7 +6,6 @@ slug: /
 
 UMA is open-source infrastructure for deploying and enforcing synthetic assets on Ethereum. UMA enables developers to quickly and easily build synthetic tokens that track the price of anything! View [here](synthetic-tokens/what-are-synthetic-assets.md) to learn more about synthetic tokens!
 
-
 ## What infrastructure does UMA provide?
 
 UMA enables developers to create synthetic assets via two core components:
