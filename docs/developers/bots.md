@@ -54,7 +54,7 @@ In short, a liquidation bot is to liquidate under-collateralized positions while
 
 ## Incentives to Running a Bot
 
-Details about liquidation and dispute rewards can be found [here](synthetic-tokens/expiring-synthetic-tokens#liquidation-and-dispute).
+Details about liquidation and dispute rewards can be found [here](synthetic-tokens/expiring-synthetic-tokens.md).
 
 ## Implementation
 
