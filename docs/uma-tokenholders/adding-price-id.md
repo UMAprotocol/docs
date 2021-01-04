@@ -14,7 +14,7 @@ That UMIP would contain more information about how to determine the price identi
 
 ## What is a collateral currency?
 
-In order to mint synthetic tokens, token sponsors are required to lock up funds in a smart contract to back the value of minted synthetic tokens. The amount of collateral needed is determined by the value of a price identifier. Token holders and token sponsors should monitor the value of this price identifier off-chain to inform their decisions about how much collateral to maintain on-chain. If token sponsors are improperly collateralized, liquidators can liquidate token sponsors’ positions.
+In order to mint synthetic tokens, token sponsors are required to lock up funds in a smart contract to back the value of minted synthetic tokens. The amount of collateral needed is determined by the value of a price identifier. Tokenholders and token sponsors should monitor the value of this price identifier off-chain to inform their decisions about how much collateral to maintain on-chain. If token sponsors are improperly collateralized, liquidators can liquidate token sponsors’ positions.
 
 ## Approving new price identifiers and collateral currencies
 

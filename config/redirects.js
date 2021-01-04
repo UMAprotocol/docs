@@ -17,9 +17,10 @@ module.exports = [
     from: ["/uma/getting_started/uma_oracle_design.html"],
   },
   // synthetic tokens
+
   {
-    to: "/synthetic-tokens/explainer",
-    from: ["/uma/synthetic_tokens/explainer.html"],
+    to: "/synthetic-tokens/expiring-synthetic-tokens",
+    from: ["/uma/synthetic-tokens/expiring-synthetic-tokens.html"],
   },
   {
     to: "/synthetic-tokens/glossary",

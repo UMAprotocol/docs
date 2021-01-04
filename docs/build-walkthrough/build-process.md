@@ -11,7 +11,7 @@ The tutorials in this section are written to use the Expiring MultiParty (EMP) c
 
 After following the quick start guide and deploying your first synthetic token, you can follow this general build process to launch and secure a mainnet version of your expiring synthetic token.
 
-1. [Finalize your contract design.](/synthetic-tokens/explainer)
+1. [Finalize your contract design.](/synthetic-tokens/what-are-synthetic-assets)
 2. [Apply to the UMA developer mining program.](/developers/developer-mining)
 3. [Propose a new price identifier or collateral type.](/uma-tokenholders/adding-price-id)
 4. [Deploy your contract.](/developers/emp-deployment)
