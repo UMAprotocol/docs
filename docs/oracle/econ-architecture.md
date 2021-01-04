@@ -60,13 +60,13 @@ Currently, UMA tokenholders must manually observe the PfC and CoC to determine t
 The rates should generally go up as the CoC > PfC inequality comes closer to being violated.
 Higher fees slightly reduce the PfC since the collateral is pulled from the contracts to put into the Store, and the Risk Labs Foundation regularly withdraws the fees that have collected in the `Store` and uses them to “buy and burn” UMA tokens to increase the CoC.
 
-Fee rates, as well as other parameters relating to the DVM, are established via on-chain governance by UMA tokenholders via the [UMIP process](http://umaproject.org/uma-tokenholders/umips.md).
+Fee rates, as well as other parameters relating to the DVM, are established via on-chain governance by UMA tokenholders via the [UMIP process](uma-tokenholders/umips.md).
 
 ## UMA Token
 
 The UMA token is the voting token for the UMA DVM. 
 
-View [here](http://umaproject.org/uma-tokenholders/uma-holders) to learn more about how UMA token is used to manage and enforce financial contracts. 
+View [here](uma-tokenholders/uma-holders.md) to learn more about how UMA token is used to manage and enforce financial contracts. 
 
 
 ## Additional Research
