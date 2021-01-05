@@ -1,6 +1,6 @@
 ---
 title: How UMA solves the Oracle Problem
-sidebar_label: UMA's solution to the oracle problem
+sidebar_label: Solving the oracle problem
 ---
 
 UMA’s DVM design embraces the fact that any on-chain oracle can be corrupted — for a price.

@@ -1,5 +1,5 @@
 ---
-title: How Expiring Multi-Party Tokens Work
+title: How Expiring Synthetic Tokens Work
 sidebar_label: Expiring Synthetic Tokens
 ---
 
@@ -33,17 +33,20 @@ If the “[withdrawal liveness period](synthetic-tokens/glossary.md#withdrawal-l
 
 ## Liquidation and Dispute
 
-At any time, a tokenholder may liquidate a token sponsor’s position. Liquidations happen immediately without calling the oracle. Anyone may dispute a liquidation within the “[liquidation liveness period](synthetic-tokens/glossary.md#liquidation-liveness-period)”.
+At any time, liquidator bots may liquidate a token sponsor’s position based on the off-chain price feed it references to help determine if a position is properly collateralized. Liquidations happen immediately without calling an oracle. Anyone may dispute a liquidation within the “[liquidation liveness period](synthetic-tokens/glossary.md#liquidation-liveness-period)”.
 
-To liquidate a token sponsor position, a tokenholder submits tokens to the contract and posts a liquidation bond.
-The liquidation bond covers the cost of calling the DVM if the liquidation is disputed.
-If the liquidation is not disputed, the liquidation bond is returned to the liquidator.
-The tokens are submitted for 3 purposes: to indicate the size of the position to be liquidated, to close the token sponsor’s position, and to attest to the liquidator’s belief that the token sponsor’s position should be liquidated.
-The liquidator will lose a portion of the collateral corresponding to the tokens if their liquidation is disputed and found to be invalid.
+To liquidate a token sponsor position, liquidator bots submit synthetic tokens to the contract to post a liquidation bond. The liquidation bond is pre-defined prior to launching the synthetic contract and is used for the following: 
+
+1. To attest to the liquidator’s belief that the token sponsor’s position should be liquidated.
+2. To indicate the size of the position to be liquidated
+3. To close the token sponsor’s position
+4. Covering the cost of calling the DVM if the liquidation is disputed
+
+If the liquidation is not disputed, the liquidation bond is returned to the liquidator. The liquidator will lose a portion of the collateral corresponding to the tokens if their liquidation is disputed and found to be invalid.
 
 Here are three ways in which a liquidation can be resolved:
 
-1. No one disputes the liquidation during the liquidation liveness period. After the liquidation liveness period ends, collateral deposited by the token sponsor is returned to the liquidator, proportional to the number of synthetic tokens the liquidator has submitted in liquidation. As a numerical example, assume a token sponsor has deposited 150 DAI of collateral to create 100 synthetic tokens, which they then sold to the market. Later, a liquidator submits 30 synthetic tokens to liquidate the token sponsor. If no one disputes the liquidation, the liquidator will receive 30% of the token sponsor’s collateral, or 45 DAI.
+1. No one disputes the liquidation during the liquidation liveness period. After the liquidation liveness period ends, collateral deposited by the token sponsor is returned to the liquidator, proportional to the number of synthetic tokens the liquidator has submitted in liquidation. As an example, assume a token sponsor has deposited 150 DAI of collateral to create 100 synthetic tokens, which they then sold to the market. Later, a liquidator submits 30 synthetic tokens to liquidate the token sponsor. If no one disputes the liquidation, the liquidator will receive 30% of the token sponsor’s collateral, or 45 DAI.
 
 ![](/docs/synthetic-tokens/st_liquidation_1.png)
 
@@ -70,7 +73,7 @@ A table summarizing these payouts is below:
 
 ## Redeeming Tokens
 
-Before the expiration date of the token, tokens may only be redeemed by token sponsors. A token sponsor redeems a token by submitting it to the contract to be burned and receiving collateral proportional to the total amount of collateral that the token sponsor has deposited to the contract.
+Before the expiration date of the synthetic token, tokens may only be redeemed by token sponsors. A token sponsor redeems a token by submitting it to the contract to be burned and receiving collateral proportional to the total amount of collateral that the token sponsor has deposited to the contract.
 
 ![](/docs/synthetic-tokens/st_redeem_token.png)
 

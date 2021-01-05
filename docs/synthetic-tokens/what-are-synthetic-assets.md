@@ -1,6 +1,6 @@
 ---
 title: Synthetic Tokens
-sidebar_label: Synthetic Tokens
+sidebar_label: Understanding Synthetic Tokens
 ---
 
 Synthetic tokens are collateral-backed tokens whose value fluctuates depending on the tokens’ reference index. Synthetic tokens blend features of prediction markets, futures markets, and collateralized loans.
@@ -23,7 +23,7 @@ By changing the price identifier of a priceless synthetic token, you can create 
 
 The first type of priceless contract developers can use on UMA is for creating synthetic tokens. 
 
-Priceless synthetic tokens are synthetic tokens that are securely collateralized without an on-chain price feed. These tokens are designed with mechanisms to incentivize token sponsors (those who create synthetic tokens) to properly collateralize their positions. These mechanisms include a liquidation and dispute process that allows tokenholders to be rewarded for identifying improperly collateralized [token sponsor](synthetic-tokens/glossary.md#token-sponsor) positions. The dispute process relies on an optimistic oracle, the UMA [DVM](synthetic-tokens/glossary.md#dvm), to settle disputes regarding liquidations.
+Priceless synthetic tokens are synthetic tokens that are securely collateralized without an on-chain price feed. These tokens are designed with mechanisms to incentivize token sponsors (those who create synthetic tokens) to properly collateralize their positions. These mechanisms include a liquidation and dispute process that allows individuals running liquidator bots to be rewarded for identifying improperly collateralized [token sponsor](synthetic-tokens/glossary.md#token-sponsor) positions. The dispute process relies on an optimistic oracle, the UMA [DVM](synthetic-tokens/glossary.md#dvm), to settle disputes regarding liquidations.
 
 To ensure that the rewards for liquidations and disputes are economical (i.e. worth the gas/transaction cost to liquidate or dispute), deployers of this financial contract template can set a minimum sponsor size.
 This is the minimum number of tokens that a token sponsor must have created against the contract.
@@ -42,15 +42,16 @@ By using UMA's priceless synthetic token contract template, developers can easil
 
 This [tutorial](/build-walkthrough/mint-locally) will show you how to parameterize and deploy the smart contract for a new synthetic token from the command line.
 
-### UMA's Expiring MultiParty (EMP) contract template 
+### The ExpiringMultiParty (EMP) Contract Template 
 
-One can write priceless financial contract templates to create various kinds of financial products.
-The first contract template created on UMA enables creating expiring synthetic tokens, called the ExpiringMultiParty (EMP) contract. This is only the first example of a synthetic token implementation, and is by no means restrictive on the types of synthetic tokens that could be built on UMA's infrastructure.
+One can write priceless financial contract templates to create various kinds of financial products.The first type of synthetic contracts on UMA  is used for creating expiring synthetic tokens and is called the ExpiringMultiParty (EMP) contract. 
 
-These are ERC-20 tokens whose required backing collateral is determined by the value of a price identifier.
-There is no on-chain price feed for the values of the price identifier;token sponsors, liquidators and disputers monitor the value of this price identifier off-chain to determine  how much collateral needs to be maintain. 
-If token sponsors are improperly collateralized, liquidators can liquidate token sponsors’ positions.
-Disputers then verify these liquidations, and ultimately will send a price dispute to the UMA DVM if there is a disagreement on a token sponsor's under-collateralization status. Details on these mechanisms are available [here](synthetic-tokens/what-are-synthetic-assets.md).
+The EMP allows token sponsors (i.e., people who mint new synthetic tokens) to collateralize their position in a defined collateral currency. Anytime after the EMP’s expiration date, any synthetic tokenholder can redeem their tokens for a settlement value, which is denominated in the collateral currency and fixed to the price of the EMP contract’s price identifier at the expiration timestamp. The price determining the settlement value is resolved by UMA’s oracle contract, the “DVM”. 
+
+This is only the first example of a synthetic token implementation, and is by no means restrictive on the types of synthetic tokens that could be built on UMA's infrastructure.
+
+View [here](synthetic-tokens/expiring-synthetic-tokens.md) to learn more about UMA's EMP contract. 
+
 
 ## Additional Resources
 

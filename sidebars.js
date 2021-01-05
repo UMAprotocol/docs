@@ -9,7 +9,7 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Synthetic Assets",
+        label: "Synthetic Tokens",
         items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens",  "synthetic-tokens/known-issues"],
       },
       {

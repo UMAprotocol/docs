@@ -22,7 +22,11 @@ If you would like to learn more about the concepts behind UMA's priceless financ
 
 ## For Developers
 
-If you are a developer interested in building with UMA’s technology, start with this [explainer](synthetic-tokens/what-are-synthetic-assets.md) of how UMA's priceless synthetic tokens work, and then follow our [development guide](build-walkthrough/build-process) to learn how to launch your own project on UMA. You can find additional reference materials, including a list of UMA's testnet and mainnet contracts [here](dev-ref/addresses.md).
+If you are a developer interested in building with UMA Protocol, view this [explainer](synthetic-tokens/what-are-synthetic-assets.md) of how UMA's priceless synthetic tokens work and to learn more about UMA's expiring synthetic tokens. 
+
+Additionally, the [development guide](build-walkthrough/build-process) to learn how to launch your own expiring synthetic token on UMA. 
+
+You can find additional reference materials, including a list of UMA's testnet and mainnet contracts [here](dev-ref/addresses.md).
 
 ## For UMA Tokenholders
 
