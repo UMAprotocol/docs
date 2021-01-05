@@ -39,7 +39,7 @@ This contract stores the address and final fee for all supported collateral curr
 
 **ExpiringMultiPartyCreator**
 
-This is the factory contract that provides a template for all Expiring Multi Party (EMP) contracts. To create a new Expiring Multi Party contract, a deployer only needs to call `createExpiringMultiParty()`.
+This is the factory contract that provides a template for all ExpiringMultiParty (EMP) contracts. To create a new ExpiringMultiParty contract, a deployer only needs to call `createExpiringMultiParty()`.
 
 | [Mainnet Address](https://etherscan.io/address/0x9A077D4fCf7B26a0514Baa4cff0B481e9c35CE87)         | [Kovan Address](https://kovan.etherscan.io/address/0xF763D367E1302A16716b6c40783A17c1aC754F2E)      | [Docs](https://docs-dot-uma-protocol.appspot.com/uma/contracts/ExpiringMultiPartyCreator.html)  | [Source Code](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/expiring-multiparty/ExpiringMultiPartyCreator.sol)
 | ----------------------- | ------------------ | ---------------------- | ---------------------- |

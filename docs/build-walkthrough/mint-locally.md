@@ -28,7 +28,7 @@ yarn truffle console --network test
 truffle(test)> migrate
 ```
 
-3. Create an instance of the expiring multiparty creator (the contract factory for synthetic tokens).
+3. Create an instance of the ExpiringMultiParty creator (the contract factory for synthetic tokens).
    This command should return “undefined”.
 
 ```js
@@ -52,7 +52,7 @@ const identifierWhitelist = await IdentifierWhitelist.deployed()
 await identifierWhitelist.addSupportedIdentifier(constructorParams.priceFeedIdentifier)
 ```
 
-6. We also need to register the `empCreator` factory with the `registry` to give it permission to create new expiring multiparty (emp) synthetic tokens.
+6. We also need to register the `empCreator` factory with the `registry` to give it permission to create new ExpiringMultiParty (EMP) synthetic tokens.
 
 ```js
 const registry = await Registry.deployed()
@@ -66,7 +66,7 @@ const collateralTokenWhitelist = await AddressWhitelist.deployed()
 await collateralTokenWhitelist.addToWhitelist(TestnetERC20.address)
 ```
 
-8. Now, we can create a new expiring multiparty synthetic token with the factory instance.
+8. Now, we can create a new ExpiringMultiParty synthetic token with the factory instance.
 
 ```js
 const txResult = await empCreator.createExpiringMultiParty(constructorParams)

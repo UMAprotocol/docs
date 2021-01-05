@@ -3,7 +3,7 @@ title: Deploying an EMP Contract
 sidebar_label: Deploying an EMP Contract
 ---
 
-This tutorial will show you how to deploy an Expiring Multi Party (EMP) contract using Etherscan or existing deployment scripts. By following these instructions, you will be able to launch an EMP on the Kovan testnet or Ethereum mainnet.
+This tutorial will show you how to deploy an ExpiringMultiParty (EMP) contract using Etherscan or existing deployment scripts. By following these instructions, you will be able to launch an EMP on the Kovan testnet or Ethereum mainnet.
 
 This is the high-level EMP deployment process that you will need to follow.
 

@@ -36,6 +36,3 @@ If you are interested in the UMA project token, please read this [section](uma-t
 
 If you have any questions or want to connect with the UMA community, please check out our community [page](community/community-overview) or join our [Discord](https://discord.umaproject.org/).
 
-
-
----

@@ -3,7 +3,7 @@ title: How Expiring Synthetic Tokens Work
 sidebar_label: Expiring Synthetic Tokens
 ---
 
-To create a synthetic token, developers use UMA's priceless synthetic contract templates to easily deploy the new contract. To manage and enforce contracts, the contracts leverage UMA's optimistic oracle known as the Data Verification Mechanism (DVM). Below explains how UMA's Expiring MultiParty (EMP) contracts are managed and enforced on UMA. 
+To create a synthetic token, developers use UMA's priceless synthetic contract templates to easily deploy the new contract. To manage and enforce contracts, the contracts leverage UMA's optimistic oracle known as the Data Verification Mechanism (DVM). Below explains how UMA's ExpiringMultiParty (EMP) contracts are managed and enforced on UMA. 
 
 ## Managing Token Sponsor Positions
 

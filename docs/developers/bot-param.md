@@ -13,7 +13,7 @@ All three bots (liquidator, disputer, and monitor) share some configuration opti
 
 ### Common config
 
-- `EMP_ADDRESS`**[required]**: Address of the deployed expiring multi party contract on the given network you want to connect to. This config will determine the synthetic token that the bot will be concerned with.
+- `EMP_ADDRESS`**[required]**: Address of the deployed ExpiringMultiParty contract on the given network you want to connect to. This config will determine the synthetic token that the bot will be concerned with.
 - `MNEMONIC`**[required OR `PRIVATE_KEY`]**: Defines the wallet for the bots to use. Generate and seed with Ether & synthetics before running the bot.
 - `PRIVATE_KEY`**[required OR `MNEMONIC`]**: Defines the wallet for the bots to use. Generate and seed with Ether & synthetics before running the bot.
 - `COMMAND`**[required if using Docker]**: Initial entry point the bot uses when the bot's Docker container starts running.
@@ -38,7 +38,7 @@ All three bots (liquidator, disputer, and monitor) share some configuration opti
 
 ## Liquidator bot
 
-The liquidation bot monitors all open positions within a given expiring multi-party contract and liquidates positions if their collateralization ratio, as inferred from off-chain information about the value of the price identifier, drops below a given threshold.
+The liquidation bot monitors all open positions within a given ExpiringMultiParty contract and liquidates positions if their collateralization ratio, as inferred from off-chain information about the value of the price identifier, drops below a given threshold.
 
 ### Minimum viable liquidator config:
 
@@ -66,7 +66,7 @@ Note that this minimum config will use the free tier crypto watch price feed. Wi
 
 ## Disputer bots
 
-The dispute bot monitors all liquidations occurring within a given expiring multi-party contract and initiates disputes against liquidations it deems invalid, as inferred from off-chain information about the value of the price identifier.
+The dispute bot monitors all liquidations occurring within a given ExpiringMultiParty contract and initiates disputes against liquidations it deems invalid, as inferred from off-chain information about the value of the price identifier.
 A liquidation is invalid if a position was correctly collateralized at the time of liquidation.
 
 ### Minimum viable disputer config:
