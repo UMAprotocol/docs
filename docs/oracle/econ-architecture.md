@@ -3,7 +3,7 @@ title: How UMA solves the Oracle Problem
 sidebar_label: Solving the oracle problem
 ---
 
-UMA’s DVM design embraces the fact that any on-chain oracle can be corrupted — for a price.
+The DVM embraces the fact that any on-chain oracle can be corrupted — for a price.
 Because there is no "rule of law" on blockchains outside of economic incentives, UMA's DVM relies on a system of economic incentives to ensure that there is no profitable way to corrupt the DVM.
 
 UMA’s DVM introduces a simple economic security framework for evaluating oracles.
@@ -18,7 +18,9 @@ This is a 3 step process:
 
 ### Step 1: Measuring Cost-of-Corruption (CoC)
 
-The DVM uses a Schelling-Point style voting system with tokenized voting rights. Tokenholders vote on price requests that are submitted by contracts registered with it, and they are paid a reward for voting honestly and penalized otherwise. As long as there is an honest majority, voters will vote correctly. This means the Cost of Corruption is the cost to buy control of 51% of the UMA tokens.
+The DVM uses a Schelling-Point style voting system with tokenized voting rights. [UMA tokenholders](uma-tokenholders/uma-holders.md) vote on price requests that are submitted by contracts registered with the DVM. 
+
+UMA tokehnolders are paid a reward for voting honestly and penalized otherwise. As long as there is an honest majority, voters will vote correctly. This means the Cost of Corruption is the cost to buy control of 51% of the UMA tokens.
 
 ### Step 2: Measuring the Profit from Corruption (PfC)
 
