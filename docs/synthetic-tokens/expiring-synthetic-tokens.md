@@ -1,4 +1,5 @@
 ---
+
 title: How Expiring Synthetic Tokens Work
 sidebar_label: Expiring Synthetic Tokens
 ---
@@ -32,6 +33,7 @@ During this period, any tokenholder can liquidate the token sponsor’s position
 If the “[withdrawal liveness period](synthetic-tokens/glossary.md#withdrawal-liveness-period)” passes without a tokenholder liquidating the token sponsor, the token sponsor may withdraw collateral from his position up to the amount requested.
 
 ## Liquidation and Dispute
+
 
 At any time, liquidator bots may liquidate a token sponsor’s position based on the off-chain price feed it references to help determine if a position is properly collateralized. Liquidations happen immediately without calling an oracle. Anyone may dispute a liquidation within the “[liquidation liveness period](synthetic-tokens/glossary.md#liquidation-liveness-period)”.
 
@@ -73,7 +75,9 @@ A table summarizing these payouts is below:
 
 ## Redeeming Tokens
 
+
 Before the expiration date of the synthetic token, tokens may only be redeemed by token sponsors. A token sponsor redeems a token by submitting it to the contract to be burned and receiving collateral proportional to the total amount of collateral that the token sponsor has deposited to the contract.
+
 
 ![](/docs/synthetic-tokens/st_redeem_token.png)
 

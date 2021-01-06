@@ -1,5 +1,6 @@
 ---
 title: How UMA solves the Oracle Problem
+
 sidebar_label: Solving the oracle problem
 ---
 
@@ -37,22 +38,6 @@ The CoC > PfC mechanism is enforced by a variable-fee policy (see section "Fees 
 Enforcing the CoC > PfC inequality requires keeping the cost of 51% of the participating UMA voting tokens above the system-wide PfC.
 In other words, the total market cap of the participating UMA voting tokens needs to be >200% the system-wide PfC.
 
-The DVM is designed to do this by continuously monitoring the CoC > PfC relationship and initiating programmatic, repeated, token buybacks if the voting token price drops below target.
-All purchased tokens are burned, reducing token supply (which increases the market cap).
-The funds needed to conduct these buybacks are raised by levying pro rata fees on the contracts using the system.
-(Note that the current implementation of the DVM (v1) has not yet implemented the programmatic buy-and-burn process; this is currently a manual process. The DVM will be upgraded to programmatically perform this function in the future).
-
-Importantly, the DVM system is designed to levy the lowest fees possible while maintaining the CoC > PfC economic guarantee.
-As such, the system is not rent-seeking — it is designed to minimize the fees required to maintain the security of the system.
-A fascinating result of this design is that when market participants expect growth in the future usage of the protocol, this expectation of growth can maintain the CoC > PfC inequality without the DVM levying any fees at all.
-
-### Fees paid to the DVM
-
-The DVM collects two types of fees from registered financial contracts, a “regular fee” and a “final fee”. Each financial contract must report its PfC in terms of its single collateral currency.
-
-The regular fee is paid periodically by financial contracts (generally whenever someone interacts with them). They are calculated based on the PfC, the amount of time since they last paid them, and the current fee rate. The exact formula used can be found in the `computeRegularFee` function of the `Store` contract [here](https://bit.ly/2yBUPlj). These fees are paid into the `Store` contract.
-
-UMA tokenholders control which address has `Withdrawer` privilege from the `Store`. 
 The owner of the `Withdrawer` privilege uses the funds from the `Store` to perform “buy and burn” operations on the $UMA tokens to maintain CoC > PfC.
 
 The “final fee” is paid to the `Store` each time that a financial contract makes a price request from the DVM.

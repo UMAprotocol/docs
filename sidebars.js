@@ -9,7 +9,9 @@ module.exports = {
       },
       {
         type: "category",
+
         label: "Synthetic Tokens",
+
         items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens",  "synthetic-tokens/known-issues"],
       },
       {
@@ -44,7 +46,7 @@ module.exports = {
       {
         type: "category",
         label: "Developer Mining",
-        items: ["developers/developer-mining", "developers/devmining-reqs", "developers/designing-incentives"],
+        items: ["developers/developer-mining", "developers/devmining-reqs", "developers/designing-incentives", "developers/whitelist-contracts"],
       },
       {
         type: "category",

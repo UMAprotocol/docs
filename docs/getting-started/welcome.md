@@ -32,7 +32,5 @@ You can find additional reference materials, including a list of UMA's testnet a
 
 If you are interested in the UMA project token, please read this [section](uma-tokenholders/uma-holders.md) to learn more about the role of the UMA project token in the DVM and the rights and responsibilities of UMA project tokenholders.
 
-## Contact Us
-
+## Contact 
 If you have any questions or want to connect with the UMA community, please check out our community [page](community/community-overview) or join our [Discord](https://discord.umaproject.org/).
-
