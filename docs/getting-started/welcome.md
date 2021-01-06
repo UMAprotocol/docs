@@ -6,6 +6,7 @@ slug: /
 
 UMA is open-source infrastructure for deploying and enforcing synthetic assets on Ethereum. UMA enables developers to quickly and easily build synthetic tokens that track the price of anything! View [here](synthetic-tokens/what-are-synthetic-assets.md) to learn more about synthetic tokens!
 
+
 ## What infrastructure does UMA provide?
 
 UMA enables developers to create synthetic assets via two core components:
@@ -21,16 +22,15 @@ If you would like to learn more about the concepts behind UMA's priceless financ
 
 ## For Developers
 
-If you are a developer interested in building with UMA’s technology, start with this [explainer](synthetic-tokens/what-are-synthetic-assets.md) of how UMA's priceless synthetic tokens work, and then follow our [development guide](build-walkthrough/build-process) to learn how to launch your own project on UMA. You can find additional reference materials, including a list of UMA's testnet and mainnet contracts [here](dev-ref/addresses.md).
+If you are a developer interested in building with UMA Protocol, view this [explainer](synthetic-tokens/what-are-synthetic-assets.md) of how UMA's priceless synthetic tokens work and to learn more about UMA's expiring synthetic tokens. 
+
+Additionally, the [development guide](build-walkthrough/build-process) to learn how to launch your own expiring synthetic token on UMA. 
+
+You can find additional reference materials, including a list of UMA's testnet and mainnet contracts [here](dev-ref/addresses.md).
 
 ## For UMA Tokenholders
 
 If you are interested in the UMA project token, please read this [section](uma-tokenholders/uma-holders.md) to learn more about the role of the UMA project token in the DVM and the rights and responsibilities of UMA project tokenholders.
 
-## Contact Us
-
+## Contact 
 If you have any questions or want to connect with the UMA community, please check out our community [page](community/community-overview) or join our [Discord](https://discord.umaproject.org/).
-
-
-
----

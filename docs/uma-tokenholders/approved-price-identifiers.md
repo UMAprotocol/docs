@@ -26,7 +26,7 @@ sidebar_label: Approved Price Identifiers
 |GASETH-FEB21, GASETH-MAR21| A price that resolves to the median monthly Ethereum gas price or a 2-hour Time-Weighted Average Price (TWAP) on the highest volume Uniswap ETH/uGAS pool based on the timestamp of the price request in relation to the end of February or the end of March| [UMIP-25](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-25.md)
 |GBPUSD| The price of the pound sterling in USD.| [UMIP-29](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-29.md)
 |PERLUSD| The price of PERL in USD.| [UMIP-13](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-13.md)
-|STABLESPREAD| A price that tracks the spread between how well ethereum versus non-ethereum stablecoin baskets maintain their peg to $1 (quoted in ETH).| [UMIP-28](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-28.md)
+|STABLESPREAD| A price that tracks the spread between how well ethereum versus non-ethereum stablecoin baskets maintain their peg to $1| [UMIP-28](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-28.md)
 |STABLESPREAD/BTC| Tracks the spread between how well ethereum versus non-ethereum stablecoin baskets maintain their peg to $1 (quoted in BTC).| [UMIP-31](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-31.md)
 |STABLESPREAD/USDC| A price that tracks the spread between how well ethereum versus non-ethereum stablecoin baskets maintain their peg to $1 (quoted in USDC).| [UMIP-31](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-31.md)
 |SUSHIUNI_TVL| The TVL ratio between Uniswap and Sushiswap| [UMIP-24](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-24.md)

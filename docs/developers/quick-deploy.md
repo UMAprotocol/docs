@@ -3,7 +3,7 @@ title: Deploying a Synthetic Asset on Kovan in 10 Minutes
 sidebar_label: Deploying Your First Synthetic
 ---
 
-This tutorial will show you how to use Etherscan to deploy an Expiring Multi Party (EMP) contract on Kovan in 10 minutes. By the end of this tutorial, you will have deployed a synthetic token that represents an expiring gold future and be able to view your token in MetaMask.
+This tutorial will show you how to use Etherscan to deploy an ExpiringMultiParty (EMP) contract on Kovan in 10 minutes. By the end of this tutorial, you will have deployed a synthetic token that represents an expiring gold future and be able to view your token in MetaMask.
 
 This is the high-level EMP deployment process that you will need to follow.
 

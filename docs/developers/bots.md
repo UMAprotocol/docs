@@ -45,9 +45,9 @@ They are currently compatible with the priceless synthetic token contract templa
 
 ### Liquidation vs Dispute Bot
 
-The liquidation bot monitors all open positions within a given expiring multi-party contract and liquidates positions if their collateralization ratio, as inferred from off-chain information about the value of the price identifier, drops below a given threshold.
+The liquidation bot monitors all open positions within a given ExpiringMultiParty contract and liquidates positions if their collateralization ratio, as inferred from off-chain information about the value of the price identifier, drops below a given threshold.
 
-The dispute bot monitors all liquidations occurring within a given expiring multi-party contract and initiates disputes against liquidations it deems invalid, as inferred from off-chain information about the value of the price identifier.
+The dispute bot monitors all liquidations occurring within a given ExpiringMultiParty contract and initiates disputes against liquidations it deems invalid, as inferred from off-chain information about the value of the price identifier.
 A liquidation is invalid if a position was correctly collateralized at the time of liquidation.
 
 In short, a liquidation bot is to liquidate under-collateralized positions while a dispute bot is used for disputing those liquidations if they incorrectly report a position as under-collateralized. Since a dispute is the only way a price request is triggered in the system, they are very important to the operation of the DVM.
@@ -70,8 +70,8 @@ This tutorial will be broken down into three main sections:
 2. [Running the bots within a dockerized environment from the official UMA Docker image](#running-the-bots-locally-with-docker)
 3. [Deploying bots to production in Google Cloud Compute](#running-the-bots-in-the-cloud-with-gcp)
 
-This tutorial will guide you through setting up a liquidator and disputer to monitor an expiring multi party deployed on the Kovan test network.
-A verified version of the expiring multi party contract can be found on Kovan [here](https://kovan.etherscan.io/address/0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1).
+This tutorial will guide you through setting up a liquidator and disputer to monitor an ExpiringMultiParty deployed on the Kovan test network.
+A verified version of the ExpiringMultiParty contract can be found on Kovan [here](https://kovan.etherscan.io/address/0xDe15ae6E8CAA2fDa906b1621cF0F7296Aa79d9f1).
 This contract is an ETHBTC synthetic, collateralized in Dai.
 
 ## Prerequisites
@@ -421,9 +421,9 @@ The tutorial thus far assumed you are running Kovan liquidation and dispute bots
 
 Running on mainnet involves first repeating the [funding accounts](#funding-accounts) section on the main Ethereum network to acquire collateral to fund the liquidator and disputer bots.
 
-**2) Updating the EMP address to point to mainnet expiring multi party contract**
+**2) Updating the EMP address to point to mainnet ExpiringMultiParty contract**
 
-Update your environment configuration `EMP_ADDRESS` to refer to the mainnet address of the expiring multiparty contract you want to monitor.
+Update your environment configuration `EMP_ADDRESS` to refer to the mainnet address of the ExpiringMultiParty contract you want to monitor.
 
 <!-- TODO: add a link to another docs page that outlines the EMP address for all mainnet deployments -->
 

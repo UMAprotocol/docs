@@ -3,7 +3,7 @@ title: EMP Parameterization
 sidebar_label: EMP Parameterization
 ---
 
-To deploy a new Expiring Multi Party contract, deployers will need to call the `createExpiringMultiParty` method on a mainnet or Kovan version of the `ExpiringMultiPartyCreator` factory contract. This method call will automatically generate a new `ExpiringMultiParty` contract which is configured based upon the passed constructor parameters. The mandatory constructor parameters to pass are explained below.
+To deploy a new ExpiringMulti Party contract, deployers will need to call the `createExpiringMultiParty` method on a mainnet or Kovan version of the `ExpiringMultiPartyCreator` factory contract. This method call will automatically generate a new `ExpiringMultiParty` contract which is configured based upon the passed constructor parameters. The mandatory constructor parameters to pass are explained below.
 
 ## Mandatory EMP Parameters
 
