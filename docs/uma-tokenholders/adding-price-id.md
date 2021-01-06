@@ -30,4 +30,4 @@ Votes are proposed to the UMA community via the UMIP process, as described [here
 
 ## Adding a price identifier to Kovan
 
-To add a price identifier to Kovan, refer to these [instructions](/build-walkthrough/emp-parameters#adding-new-price-identifiers-or-collateral-currencies) in the Developers section.
+To add a price identifier to Kovan, refer to these [instructions](/developers/emp-deployment#is-your-desired-price-identifier-and-collateral-type-supported) in the Developers section.

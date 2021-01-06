@@ -21,7 +21,7 @@ This is a 3 step process:
 
 The DVM uses a Schelling-Point style voting system with tokenized voting rights. [UMA tokenholders](uma-tokenholders/uma-holders.md) vote on price requests that are submitted by contracts registered with the DVM. 
 
-UMA tokehnolders are paid a reward for voting honestly and penalized otherwise. As long as there is an honest majority, voters will vote correctly. This means the Cost of Corruption is the cost to buy control of 51% of the UMA tokens.
+UMA tokenholders are paid a reward for voting honestly and penalized otherwise. As long as there is an honest majority, voters will vote correctly. This means the Cost of Corruption is the cost to buy control of 51% of the UMA tokens.
 
 ### Step 2: Measuring the Profit from Corruption (PfC)
 

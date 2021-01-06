@@ -22,7 +22,7 @@ The Oracle Interface is used by financial contracts to retrieve prices. This int
 contracts that request prices _sparingly_. This is dependent on the specifics of the financial contract, but, in
 general, prices should only be requested for dispute resolution and contract settlement.
 
-There are four methods that make up the Oracle Interface: `requestPrice`, `hasPrice`, and
+There are three methods that make up the Oracle Interface: `requestPrice`, `hasPrice`, and
 `getPrice`.
 
 ### `requestPrice`
