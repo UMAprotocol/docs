@@ -12,7 +12,7 @@ UMA is open-source infrastructure for deploying and enforcing synthetic assets o
 UMA enables developers to create synthetic assets via two core components:
 
 - [Priceless financial contract templates](https://docs.umaproject.org/getting-started/synthetic-tokens)
-- [An optimistic oracle service](https://docs.umaproject.org/getting-started/oracle)
+- [Optimistic oracle service](https://docs.umaproject.org/getting-started/oracle)
 
 Together, these two components enable the creation of fast, efficient, and secure synthetic derivatives on the Ethereum blockchain.
 

@@ -5,7 +5,7 @@ sidebar_label: What is UMA?
 
 UMA builds open-source infrastructure for “priceless” financial contracts on Ethereum. Specifically, this is two things:
 
-- [Priceless financial contract designs](getting-started/synthetic-tokens.md), which can be used to create synthetic tokens
+- [Priceless financial contract templates](getting-started/synthetic-tokens.md), which can be used to create synthetic tokens
 - [Data Verification Mechanism](getting-started/oracle.md) (DVM), an optimistic oracle service
 
 Together, these two technologies enable the creation of fast, efficient, and secure synthetic derivatives on the Ethereum blockchain.
