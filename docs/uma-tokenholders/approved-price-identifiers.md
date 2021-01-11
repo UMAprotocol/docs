@@ -32,7 +32,7 @@ sidebar_label: Approved Price Identifiers
 |STABLESPREAD/BTC| Tracks the spread between how well ethereum versus non-ethereum stablecoin baskets maintain their peg to $1 (quoted in BTC).| [UMIP-31](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-31.md)
 |STABLESPREAD/USDC| A price that tracks the spread between how well ethereum versus non-ethereum stablecoin baskets maintain their peg to $1 (quoted in USDC).| [UMIP-31](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-31.md)
 |SUSHIUNI_TVL| The TVL ratio between Uniswap and Sushiswap| [UMIP-24](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-24.md)
-|USDAMPL| The price of USD in AMPL. [UMIP-33](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-33.md)
+|USDAMPL| The price of USD in AMPL.| [UMIP-33](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-33.md)
 |USDETH| The price of USD in ETH.| [UMIP-6](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-6.md)
 |USDPERL| The price of USD in PERL.| [UMIP-13](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-13.md)
 |USDBTC| The price of USD in BTC.| [UMIP-7](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-7.md)
