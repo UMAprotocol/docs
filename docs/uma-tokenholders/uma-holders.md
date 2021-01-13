@@ -9,18 +9,15 @@ UMA token is a utility token used to operate UMA's optimistic oracle, known as t
 
 UMA token enables you to:
 
-1. Vote on price requests from financial contracts using the DVM
-2. Govern the UMA ecosystem by voting on parameter changes and approving system upgrades
+1. Earn rewards for voting on price requests from financial contracts using the DVM
+2. Earn rewards for governing the UMA ecosystem by voting on parameter changes and approving system upgrades
      - System upgrades can include supporting new price identifiers or collateral types
 
 Voters who participate and vote correctly earn an inflationary reward (currently 0.05% of total network token supply), distributed pro-rata by stake.
 
+As the total value of collateral locked in UMA grows, UMA token is required to increase in value to ensure the security of the DVM. The DVM is designed with an economic guarantee around the cost it would take to corrupt the oracle and the profit someone would receive from corrupting the oracle.  The cost of corrupting the DVM is as measured by the cost of obtaining 51% of UMA voting tokens. 
 
-## Why hold UMA tokens?
-
-As the total value of collateral locked in UMA grows, **UMA token is required to increase in value to ensure the security of the DVM**. 
-
-The DVM is designed with an economic guarantee around the cost it would take to corrupt the oracle and the profit someone would receive from corrupting the oracle.  The cost of corrupting the DVM is as measured by the cost of obtaining 51% of UMA voting tokens. The DVM ensures the price to obtain 51% of UMA tokens is greater than the profit from corrupting the DVM, as measured by the collateral stored in the financial contracts that are registered with it. To ensure that this inequality holds, the DVM may charge fees to financial contracts that are used to raise the price of the UMA voting tokens.
+The DVM ensures the price to obtain 51% of UMA tokens is greater than the profit from corrupting the DVM, as measured by the collateral stored in the financial contracts that are registered with it. To ensure this inequality holds, the DVM may charge fees to financial contracts which the DVM would use to buy UMA tokens. 
 
 ## Voting on price requests
 
