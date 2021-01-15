@@ -11,7 +11,7 @@ appropriately collateralized.
 ## When is the next opportunity?
 
 On Friday, August 14th at 11:30am Pacific Time (i.e. San Francisco time), Risk Labs will intentionally create an under-collateralized
-position, creating an on-chain profit opportunity of approximately \$2,000 for
+position, creating an on-chain profit opportunity of approximately $2,000 for
 any liquidator bot to take.
 
 ## What do I need to liquidate a position?
