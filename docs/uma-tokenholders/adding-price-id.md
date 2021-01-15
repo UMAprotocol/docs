@@ -9,8 +9,13 @@ A [price identifier](synthetic-tokens/glossary.md#price-identifier) is a natural
 Because UMA tokenholders need to be able to vote on the value of this price identifier when disputes are raised, the DVM keeps a list of approved price identifiers.
 
 For example, `GOLD_USD` might be a price identifier to return the USD spot price of 1oz of gold according to a pre-defined set of rules. If approved, UMA tokenholders would be expected to vote on the `GOLD_USD` value when price requests are raised to the DVM.
-The rules behind this `GOLD_USD` price identifier would be documented in detail in an [UMIP](umips.md) that was has been approved by UMA tokenholders.
+The rules behind this `GOLD_USD` price identifier would be documented in detail in a UMIP that was has been approved by UMA tokenholders. For more information on UMIPs, view [here](umips.md). 
 That UMIP would contain more information about how to determine the price identifier.
+
+## Creating a UMIP for a price identifier 
+
+- Read the [Price Identifier Guide](https://github.com/UMAprotocol/UMIPs/blob/master/price-identifier-guide.md)
+- Use the [Price Identifier Template](https://github.com/UMAprotocol/UMIPs/blob/master/price-identifier-template.md) 
 
 ## What is a collateral currency?
 
