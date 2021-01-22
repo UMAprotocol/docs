@@ -11,7 +11,9 @@ UMA token is used to operate UMA's optimistic oracle, known as the Data Verifica
 The benefits of owning UMA include:
 
 1. Earning rewards for voting on price requests from financial contracts using the DVM
+
 2. Earning rewards for governing the UMA ecosystem by voting on parameter changes and approving system upgrades
+
      - System upgrades can include supporting new price identifiers or collateral types
 
 Voters who participate and vote correctly earn an inflationary reward (currently 0.05% of total network token supply), distributed pro-rata by stake.
