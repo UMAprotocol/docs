@@ -22,9 +22,7 @@ A UMIP with a status of 'Draft' is open for consideration and is undergoing rapi
 
 If you plan to build with a price identifier or collateral currency not currently supported by the UMA DVM, you will need to propose it to the community of UMA tokenholders for a vote. View [here](adding-price-id.md) for guidance on creating a UMIP for a price identifier or collateral currency. 
 
-Every UMIP author is responsible for facilitating conversations and building community consensus for the proposal. During the 'Draft' stage, the UMIP author must address implementation issues brought up by community members. If the UMIP requires code changes, the core devs must review the UMIP.
-
-In addition to asynchronous reviews conducted by the community in Github, a weekly UMIP review call occurs every Monday at 15:00 UTC.  The objective of the call is for the community to discuss the UMIPs to move into 'Last Call' status. Issues identified on the Monday weekly UMIP review call need to be addressed within 48 hours (Wednesday at 14:00 UTC) in order to be able to be proposed as a vote in the same week as the UMIP review call. If not, the UMIP will be assessed in the follow week's UMIP review call. 
+Every UMIP author is responsible for facilitating conversations and building community consensus for the proposal. During the 'Draft' stage, the UMIP author must address implementation issues brought up by community members. If the UMIP requires code changes, the core devs must review the UMIP. 
 
 ### Last Call
 
