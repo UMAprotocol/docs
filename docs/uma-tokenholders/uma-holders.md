@@ -5,7 +5,8 @@ sidebar_label: Overview
 
 ## What are UMA tokens?
 
-UMA token is a utility token used to operate UMA's optimistic oracle, known as the Data Verification Mechanism (DVM) and a voting token to govern the protocol. 
+UMA token is used to operate UMA's optimistic oracle, known as the Data Verification Mechanism (DVM). Owning UMA gives you the ability to contribute price information to the DVM and get rewarded for doing so! UMA token is also used to govern UMA protocol.  
+
 
 UMA token enables you to:
 
