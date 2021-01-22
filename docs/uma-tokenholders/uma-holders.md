@@ -5,13 +5,13 @@ sidebar_label: Overview
 
 ## What are UMA tokens?
 
-UMA token is used to operate UMA's optimistic oracle, known as the Data Verification Mechanism (DVM). Owning UMA gives you the ability to contribute price information to the DVM and get rewarded for doing so! UMA token is also used to govern UMA protocol.  
+UMA token is used to operate UMA's optimistic oracle, known as the Data Verification Mechanism (DVM). Owning UMA gives you the ability to contribute price information to the DVM and govern UMA protocol.  
 
 
-UMA token enables you to:
+The benefits of owning UMA include:
 
-1. Earn rewards for voting on price requests from financial contracts using the DVM
-2. Earn rewards for governing the UMA ecosystem by voting on parameter changes and approving system upgrades
+1. Earning rewards for voting on price requests from financial contracts using the DVM
+2. Earning rewards for governing the UMA ecosystem by voting on parameter changes and approving system upgrades
      - System upgrades can include supporting new price identifiers or collateral types
 
 Voters who participate and vote correctly earn an inflationary reward (currently 0.05% of total network token supply), distributed pro-rata by stake.
