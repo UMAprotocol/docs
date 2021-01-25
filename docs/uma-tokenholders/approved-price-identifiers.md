@@ -9,11 +9,13 @@ sidebar_label: Approved Price Identifiers
 |Price ID| Summary| Link to UMIP|
 |:-------| :------| :-----------|
 |ALTDOM| An altcoin dominance index price.| [UMIP-21](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-21.md)
+|AMPLUSD| The price of AMPL in USD.| [UMIP-33](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-33.md)
 |ARSUSD| The price of the Argentine peso in USD.| [UMIP-19](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-19.md)
 |BCHNBTC| A BCHNBTC price identifier to enable the creation of a Bitcoin Cash N, backed by BTC.| [UMIP-23](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-23.md)
 |BTCDOM| A Bitcoin dominance index price.| [UMIP-21](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-21.md)
 |BTCUSD| The price of BTC in USD.| [UMIP-7](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-7.md)
 |CHFUSD| The price of the Swiss franc in USD.| [UMIP-29](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-29.md)
+|CNYUSD| The price of CNY in USD.| [UMIP-32](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-32.md)
 |COMPUSD| The price of COMP in USD.| [UMIP-5](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-5.md)
 |DEFI_PULSE_TOTAL_TVL| The TVL of projects on DeFi Pulse| [UMIP-24](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-24.md)
 |ELASTIC_STABLESPREAD/USDC| A price that tracks the spread between how well ethereum versus non-ethereum elastic stablecoin baskets maintain their peg to $1.| [UMIP-30](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-30.md)
@@ -30,6 +32,7 @@ sidebar_label: Approved Price Identifiers
 |STABLESPREAD/BTC| Tracks the spread between how well ethereum versus non-ethereum stablecoin baskets maintain their peg to $1 (quoted in BTC).| [UMIP-31](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-31.md)
 |STABLESPREAD/USDC| A price that tracks the spread between how well ethereum versus non-ethereum stablecoin baskets maintain their peg to $1 (quoted in USDC).| [UMIP-31](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-31.md)
 |SUSHIUNI_TVL| The TVL ratio between Uniswap and Sushiswap| [UMIP-24](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-24.md)
+|USDAMPL| The price of USD in AMPL.| [UMIP-33](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-33.md)
 |USDETH| The price of USD in ETH.| [UMIP-6](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-6.md)
 |USDPERL| The price of USD in PERL.| [UMIP-13](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-13.md)
 |USDBTC| The price of USD in BTC.| [UMIP-7](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-7.md)

@@ -16,4 +16,3 @@ Our goal is to enable anyone to attain or transfer any form of risk seamlessly t
 
 UMA builds open source infrastructure which enables developers to create financial instruments in a permissionless, secure and efficient manner.  We work with developers, financial engineers and product designers to support them build products on our infrastructure, while supporting tokenholders to actively participate in the governance of our protocol.
 
-
