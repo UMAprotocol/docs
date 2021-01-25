@@ -1,23 +1,31 @@
 module.exports = {
     
     "Understanding UMA": [
-      "getting-started/welcome",
+      "getting-started/welcome_mhairi",
       {
         type: "category",
         label: "Overview",
-        items: ["getting-started/overview", "getting-started/synthetic-tokens", "getting-started/oracle"],
+        items: ["getting-started/priceless_contracts_mhairi", "getting-started/governance_mhairi", "getting-started/oracle_mhairi"],
       },
       {
         type: "category",
 
-        label: "Synthetic Tokens",
+        label: "More on Priceless Contracts",
 
-        items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens",  "synthetic-tokens/known-issues"],
+        items: ["synthetic-tokens/synthetic_tokens_mhairi" , "synthetic-tokens/expiring_multiparty_contracts_mhairi",  "perpetuals_mhairi"],
+      },
+
+      {
+        type: "category",
+
+        label: "More on Governance",
+
+        items: ["governance/umips_mhairi" , "governance/liquidation_disputes_mhairi",  "governance/voting_mhairi"],
       },
       {
         type: "category",
-        label: "Oracle (DVM)",
-        items: ["oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface",  "oracle/known-issues"],
+        label: "More on the Optimistic Oracle",
+        items: ["oracle/solving_the_oracle_problem", "oracle/liquidations_and_disputes_mhair", "oracle/the_DVM_mhairi",],
       },
       "synthetic-tokens/glossary"
     ],
