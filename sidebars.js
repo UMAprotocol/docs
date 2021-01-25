@@ -25,7 +25,7 @@ module.exports = {
       {
         type: "category",
         label: "More on the Optimistic Oracle",
-        items: ["oracle/solving_the_oracle_problem", "oracle/liquidations_and_disputes_mhair", "oracle/the_DVM_mhairi",],
+        items: ["oracle/solving_the_oracle_problem_mhairi", "oracle/liquidations_and_disputes_mhairi", "oracle/the_DVM_mhairi",],
       },
       "synthetic-tokens/glossary"
     ],
