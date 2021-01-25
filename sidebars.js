@@ -12,7 +12,7 @@ module.exports = {
 
         label: "More on Priceless Contracts",
 
-        items: ["synthetic-tokens/synthetic_tokens_mhairi" , "synthetic-tokens/expiring_multiparty_contracts_mhairi",  "perpetuals_mhairi"],
+        items: ["getting-started/synthetic_tokens_mhairi" , "getting-started/expiring_multiparty_contracts_mhairi",  "getting-started/perpetuals_mhairi"],
       },
 
       {
@@ -20,12 +20,12 @@ module.exports = {
 
         label: "More on Governance",
 
-        items: ["governance/umips_mhairi" , "governance/liquidation_disputes_mhairi",  "governance/voting_mhairi"],
+        items: ["getting-started/umips_mhairi" , "getting-started/liquidation_disputes_mhairi",  "getting-started/voting_mhairi"],
       },
       {
         type: "category",
         label: "More on the Optimistic Oracle",
-        items: ["oracle/solving_the_oracle_problem_mhairi", "oracle/liquidations_and_disputes_mhairi", "oracle/the_DVM_mhairi",],
+        items: ["getting-started/solving_the_oracle_problem_mhairi", "getting-started/liquidations_and_disputes_mhairi", "getting-started/the_DVM_mhairi",],
       },
       "synthetic-tokens/glossary"
     ],
