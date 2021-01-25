@@ -1,4 +1,3 @@
-
 ---
 title: Synthetic Tokens
 sidebar_label: Synthetic Tokens
