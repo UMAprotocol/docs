@@ -1,4 +1,3 @@
-
 ---
 title: Expiring Multiparty Contracts
 sidebar_label: Expiring Multiparty Contracts
