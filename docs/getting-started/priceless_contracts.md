@@ -4,7 +4,7 @@ sidebar_label: Priceless Financial Contracts
 slug: /Welcome
 ---
 
-“Priceless” financial contracts are contracts that don’t require an on-chain price feed.  
+“Priceless” financial contracts are contracts that only require an on-chain price feed in the event of a dispute
 
 This minimises their reliance on oracles, making them less vulnerable to attacks, especially flash loan attacks, so they are more secure than contracts which need a continuous price feed. Oracles are only used when a liquidation is disputed, which is intended to be rare.
 
