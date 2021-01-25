@@ -1,18 +1,18 @@
 module.exports = {
     
     "Understanding UMA": [
-      "getting-started/welcome_mhairi",
+      "getting-started/welcome",
       {
         type: "category",
         label: "Overview",
-        items: ["getting-started/priceless_contracts_mhairi", "getting-started/governance_mhairi", "getting-started/oracle_mhairi"],
+        items: ["getting-started/priceless_contracts", "getting-started/governance", "getting-started/oracle"],
       },
       {
         type: "category",
 
         label: "More on Priceless Contracts",
 
-        items: ["getting-started/synthetic_tokens_mhairi" , "getting-started/expiring_multiparty_contracts_mhairi",  "getting-started/perpetuals_mhairi"],
+        items: ["getting-started/synthetic_tokens" , "getting-started/expiring_multiparty_contracts",  "getting-started/perpetuals"],
       },
 
       {
@@ -20,12 +20,12 @@ module.exports = {
 
         label: "More on Governance",
 
-        items: ["getting-started/umips_mhairi" , "getting-started/liquidation_disputes_mhairi",  "getting-started/voting_mhairi"],
+        items: ["getting-started/umips" , "getting-started/liquidation_disputes",  "getting-started/voting"],
       },
       {
         type: "category",
         label: "More on the Optimistic Oracle",
-        items: ["getting-started/solving_the_oracle_problem_mhairi", "getting-started/liquidations_and_disputes_mhairi", "getting-started/the_DVM_mhairi",],
+        items: ["getting-started/solving_the_oracle_problem", "getting-started/liquidations_and_disputes", "getting-started/the_DVM",],
       },
       "synthetic-tokens/glossary"
     ],
