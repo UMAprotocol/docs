@@ -1,4 +1,3 @@
-
 ---
 title: Priceless Financial Contracts
 sidebar_label: Priceless Financial Contracts
