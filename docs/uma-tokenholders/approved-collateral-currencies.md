@@ -13,4 +13,8 @@ sidebar_label: Approved Collateral Currencies
 |DAI| 400 | [UMIP-8](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-8.md)
 |USDC; USDT| 400 | [UMIP-18](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-18.md)
 |rDAI| 400 | [UMIP-17](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-17.md)
+|bwBTC/ETH SLP| 0.000000013 | [UMIP-35](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-35.md)
+|bBadger| 24 | [UMIP-35](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-35.md)
+|DSD| 600 | [UMIP-36](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-36.md)
+
 
