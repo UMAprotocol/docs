@@ -22,3 +22,7 @@ After following the quick start guide and deploying your first synthetic token, 
 7. [Finalize your developer mining and start receiving rewards.](/developers/devmining-reqs)
 
 It is highly recommended that you perform steps 4-6 on Kovan before moving to mainnet.
+
+### UMA Team Support
+
+To receive support in your build process, especially if you wish to receive developer mining rewards, please make sure to reach out in the UMA Discord and also fill out the [Developer Mining Whitelist Application](https://docs.google.com/forms/d/e/1FAIpQLSdPWOm4pNyqgDhXXr8wblWuSXXGslsGiJaFzrSNjN2RcG2RTQ/viewform) as well as the [Contract Launch Tracker](https://docs.google.com/forms/d/e/1FAIpQLSfhrCopRz7nUSbBQZB75j8yGqnXbOzRW68Oe6-uFuNVSvqrOQ/viewform).
