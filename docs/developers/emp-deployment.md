@@ -49,7 +49,7 @@ git clone https://github.com/UMAprotocol/launch-emp.git
 
 ## Install System Dependencies and Packages
 
-To use this repository, you will need to install [Node.js v12](https://nodejs.org/en/) and [Yarn v1.22.x](https://yarnpkg.com/). We recommend using `nvm` to manage node versions.
+To use this repository, you will need to install [Node.js v14](https://nodejs.org/en/) and [Yarn v1.22.x](https://yarnpkg.com/). We recommend using `nvm` to manage node versions.
 
 Note: these additional dependencies are required -- you may or may not have them on your system already:
 - `libudev`
