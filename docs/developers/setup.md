@@ -11,7 +11,7 @@ The following steps require the `git` CLI to be installed. If you are on Windows
 
 Clone the UMA [repo](https://github.com/UMAprotocol/protocol). Start in the top-level directory in this repository, `protocol/`.
 
-1. Install version 12.x of [Node.js](https://nodejs.org/) and [Yarn](https://classic.yarnpkg.com/) is installed along with it.
+1. Install version 14.x of [Node.js](https://nodejs.org/) and [Yarn](https://classic.yarnpkg.com/) is installed along with it.
 2. Run the following in the root of the repo to install all packages from the UMA mono repo:
 ```bash
 yarn

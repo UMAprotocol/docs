@@ -8,9 +8,9 @@ Before receiving rewards, a new developer mining participant must meet certain c
 This is the high-level developer mining onboarding process that you will need to follow.
 
 - If you have not done so already, apply to the developer mining [whitelist](https://docs.google.com/forms/d/e/1FAIpQLSdPWOm4pNyqgDhXXr8wblWuSXXGslsGiJaFzrSNjN2RcG2RTQ/viewform).
-- Deploy liquidation and dispute bots.
-- Ensure the availability of your synthetic token's price.
-- Send deployment information to the UMA core team.
+- Deploy liquidation and dispute bots
+- Ensure the availability of your synthetic token's price
+- Send deployment information to the UMA core team
 
 ### Deploy liquidation and dispute bots
 
@@ -33,13 +33,18 @@ To perform this process, each synthetic token must have an available price feed 
 
 ### Send deployment information to the UMA core team
 
-The final step required to be added to developer mining rewards is to alert a member of the UMA core team of your successful deployment. After deploying your contract and deploying your liquidation and dispute bots, you will need to provide the following information to start receiving rewards.
+The final step required to be added to developer mining rewards is to alert a member of the UMA core team of your successful deployment. To do this, fill out the google form [here](https://docs.google.com/forms/d/e/1FAIpQLSfhrCopRz7nUSbBQZB75j8yGqnXbOzRW68Oe6-uFuNVSvqrOQ/viewform).
 
-- Your deployed contract's address.
-- The wallet address that you would like developer mining rewards sent to.
+This form will ask for a variety of information including:
+- Your deployed contract's address
+- The wallet address that you would like developer mining rewards sent to
+- Various contract parameters
 
-You will also need to send the parameters of your deployed contract. Please note that these parameters must meet certain criteria to make your contract eligible for developer mining rewards. The requirements are as follows.
+You are also able to go back and edit your entry at any time. As an example, you are able to change the address that you will receive your developer mining rewards or the estimated contract launch date at any time. It is your responsibility to keep the form up to date to ensure correct payouts and bot support from the core team. 
+
+Please note that to be eligible for developer mining rewards, your contract parameters must meet certain requirements. These include:
 
 - Your `collateralRequirement` must be above 1.2 for contracts using volatile price identifiers, and 1.05 for less volatile price ids. Determination of volatility is subjective and left up to the UMA core team, but you may be asked to provide your price identifiers realized 30 day volatility to support your chosen `collateralRequirement`. 
 - Your price identifier must have a working price feed that has been added to the UMA [price feed directory](https://github.com/UMAprotocol/protocol/tree/master/packages/financial-templates-lib/src/price-feed).
 - Your price feed must have a method called `getHistoricalPricePeriods` to calculate historical prices for more than one week of time (example [here](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.js#L136)), or your synthetic token must be listed on [CoinGecko](https://www.coingecko.com/en/coins/uusdrbtc-synthetic-token-expiring-1-october-2020).
+- Your `minSponsorTokens` must equate to between ~$100 and ~$2,500 in synth value at the time of contract launch.
