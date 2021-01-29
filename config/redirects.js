@@ -16,6 +16,7 @@ module.exports = [
     to: "/getting-started/oracle",
     from: ["/uma/getting_started/uma_oracle_design.html"],
   },
+  
   // synthetic tokens
 
   {

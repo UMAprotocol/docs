@@ -5,13 +5,11 @@ module.exports = {
       {
         type: "category",
         label: "Overview",
-        items: ["getting-started/overview", "getting-started/synthetic-tokens", "getting-started/oracle"],
+        items: ["getting-started/overview", "getting-started/how-uma-works", "getting-started/synthetic-tokens", "getting-started/oracle"],
       },
       {
         type: "category",
-
         label: "Synthetic Tokens",
-
         items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens",  "synthetic-tokens/known-issues"],
       },
       {
