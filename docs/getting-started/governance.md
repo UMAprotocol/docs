@@ -4,16 +4,17 @@ sidebar_label: Governance
 slug: /Welcome
 ---
 
-The UMA token is a governance token which grants voting rights to all holders.  
+UMA token is used to operate UMA's optimistic oracle, known as the Data Verification Mechanism (DVM). Owning UMA gives you the ability to contribute price information to the DVM and govern UMA protocol. 
 
-There are two main types of decisions that UMA token holders are asked to make decisions about
+The two main types of decisions UMA token holders make include:
 
-**UMA Improvement Proposals**
+**UMA Improvement Proposals (UMIPs)**
 
-Known as UMIPs these documents propose changes to the UMA ecosystem.  Any change must go through this process to gain community approval before it is implemented.  Common types of UMIP include the addition of a new collateral currency, or a new price identifier, which specifies which prices will be referenced and where they will be sourced from 
+UMIPs propose changes to the UMA ecosystem.  Any modification to the UMA protocol must be proposed and voted on through a UMIP before it can be implemented.  Common types of UMIPs include the addition of a new collateral currency or a new price identifier, which specifies how to obtain the price of a particular synthetic asset. 
 
-**Liquidation Disputes**
+**Disputes from liquidations**
 
-Should a dispute over liquidation occur, token holders will be asked to supply the price that they believe to be correct using the collateral currency and the price identifier used in the priceless contract where the liquidation has occurred.
+If a Liquidator Bot identifies a position it believes to be undercollatearlized, a Dispute Bot can dispute the liquidation if it believes the Liquidator Bot is incorrect or acting malicious. When a Dispute Bot disputes a liquidation, a request to UMA's oracle known as the Data Verification Mechanism (DVM) will be initiated. The DVM will propose a request to UMA token holders to supply the price of an asset at a particular timestamp. The DVM will aggregate UMA token holder votes and report the price of the asset on-chain and reward the Disputer Bot and penalize the Liquidator Bot (or vice versa if the liquidator was correct). Following the result from the DVM, the position will become liquidated or remain solvent. 
 
-Holders are rewarded for participation in governance by a 5% reward for voting in congruence with the majority, incentivising considered participation. Changes to the UMA ecosystem are proposed as UMIPs (UMA Improvement Proposal) and voted on through a binary yes/no vote; while liquidation disputes are handled by token holders calculating the “true price” at the time of the liquidation and entering that into the voting.
+
+UMA token holders are rewarded for participation in governance by a 5% reward for voting in congruence with the majority, incentivising considered participation. 
