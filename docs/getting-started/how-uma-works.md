@@ -17,7 +17,7 @@ These contracts are configured to act optimistically. Economic guarantees and ne
 4. UMA Tokenholders
 5. Data Verification Mechanism (DVM)
 
-### Process Overview
+### How synthetic assets are secured on UMA
 
 **Token sponsors** are individuals who lock collateral in a smart contract to mint synthetic tokens. 
 
