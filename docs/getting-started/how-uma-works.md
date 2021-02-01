@@ -28,4 +28,3 @@ The DVM will resolve the dispute by proposing a vote to **UMA Tokenholders** to 
 If the Disputer was correct, the DVM will reward the Disputer and the Token Sponsor of the effected position. If the Liquidator was correct the DVM will reward the Liquidator, penalize the Disputer, and the Token Sponsor will lose the funds in their position. 
 
 
-
