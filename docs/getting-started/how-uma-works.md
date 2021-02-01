@@ -3,10 +3,10 @@ title: How UMA Works
 sidebar_label: How UMA Works
 ---
 
-UMA has created what is known as Priceless financial contracts.  Priceless financial contracts are smart contracts that only require an on-chain price feed in the event of a dispute.
+UMA has created what is known as priceless financial contracts.  Priceless financial contracts are smart contracts that only require an on-chain price feed in the event of a dispute.
 
 
-These contracts are configured to act optimistically. Economic guarantees and network incentives ensure  network actors will act honestly most of the time, but in the event of a malicious actor or an ad hoc market event, a dispute can be raised to call UMA’s optimistic oracle known as the Data Verification Mechanism (DVM). 
+These contracts are configured to act optimistically. Economic guarantees and network incentives ensure network actors will act honestly most of the time, but in the event of a malicious actor or an ad hoc market event, a dispute can be raised to call UMA’s optimistic oracle known as the Data Verification Mechanism (DVM). 
 
 
 ### There are five main network actors on UMA
