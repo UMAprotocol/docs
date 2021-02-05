@@ -5,6 +5,7 @@ sidebar_label: Events
 
 ## Past Events
 
+- Jan 21, 2020: [MarketMake, Jan202won](https://www.youtube.com/watch?v=z21xyy7C0EM&feature=youtu.be)
 - Oct 25, 2020: [IOSG DeFi Summit 2020](https://www.youtube.com/watch?v=Ymg73RUEVL4&feature=youtu.be)
 - Oct 20, 2020: [ETHOnline 🗣 AMA w/ Hart Lambur](https://www.youtube.com/watch?v=fUFgsdpJ7xI&feature=emb_logo)
 - Aug 9, 2020: [EDCON2020](https://medium.com/ethplanet/edcon-2020-a-recap-of-everything-you-need-to-know-b173f9da30dc)
