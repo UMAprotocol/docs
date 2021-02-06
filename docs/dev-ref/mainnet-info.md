@@ -39,6 +39,8 @@ the introduction of a new [UMIP](uma-tokenholders/umips.md).
 ## Approved Financial Contract Templates:
 
 - ExpiringMultiPartyCreator:
+  [0xB3De1e212B49e68f4a68b5993f31f63946FCA2a6](https://etherscan.io/address/0xB3De1e212B49e68f4a68b5993f31f63946FCA2a6)
+- ExpiringMultiPartyCreator (deprecated):
   [0xad8fD1f418FB860A383c9D4647880af7f043Ef39](https://etherscan.io/address/0xad8fD1f418FB860A383c9D4647880af7f043Ef39)
 - ExpiringMultiPartyCreator (deprecated):
   [0xdebB91Ab3e473025bb8ce278c02361A3C4f13124](https://etherscan.io/address/0xdebB91Ab3e473025bb8ce278c02361A3C4f13124)
