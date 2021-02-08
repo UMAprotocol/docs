@@ -34,7 +34,7 @@ View approved price identifiers and currencies here:
 
 To add a new price identifier or collateral currency to mainnet, please propose one to UMA voters by following the instructions detailed [here](/uma-tokenholders/adding-price-id).
 
-To add a new price identifier to Kovan, please submit a pull request that adds your price identifier in the correct format to the list [here](https://github.com/UMAprotocol/protocol/blob/master/packages/core/config/identifiers.json). Please follow the UMA contribution guidelines and make sure to tag `@UMAprotocol/eng` for review. As an alternative, you can contact the UMA core team in the UMA Discord.
+To add a new price identifier or collateral currency to Kovan, please contact the UMA team in Discord.
 
 ## Clone the Launch EMP Repo
 
