@@ -11,6 +11,16 @@ Each two-key contract is a unique smart contract that you deploy. It keeps track
 - The address of your hot wallet; the hot wallet is permissioned to sign transactions and vote in DVM governance
 - The address of your cold wallet; the cold wallet (and importantly, not the hot wallet or any other address) is permissioned to withdraw UMA tokens from the two-key contract
 
+:::danger
+
+If you do not know exactly why you are setting up a 2-Key contract, then you likely do not need one. Deploying the contract is expensive and unnecessary unless you need to vote with separate hot and cold keys.
+
+Voters using a hardware wallet are unlikely to need to set up a 2-Key contract. You can likely vote by connecting your hardware wallet to MetaMask or another wallet provider.
+
+If you have any doubt about your need for a 2-Key contract, please ask in the UMA Discord before proceeding. 
+
+:::
+
 ## Prerequisities
 
 - You need some ETH in your hot wallet for the initial deployment of the 2-key contract and for submitting all subsequent votes.
