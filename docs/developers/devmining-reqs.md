@@ -48,3 +48,10 @@ Please note that to be eligible for developer mining rewards, your contract para
 - Your price identifier must have a working price feed that has been added to the UMA [price feed directory](https://github.com/UMAprotocol/protocol/tree/master/packages/financial-templates-lib/src/price-feed).
 - Your price feed must have a method called `getHistoricalPricePeriods` to calculate historical prices for more than one week of time (example [here](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.js#L136)), or your synthetic token must be listed on [CoinGecko](https://www.coingecko.com/en/coins/uusdrbtc-synthetic-token-expiring-1-october-2020).
 - Your `minSponsorTokens` must equate to between ~$100 and ~$2,500 in synth value at the time of contract launch.
+
+A few additional parameters should generally be left as the default suggestion. If your contract's parameters do not use the defaults provided below, you may be asked for some additional clarification.
+- `disputeBondPct`: 0.1 (10%)
+- `sponsorDisputeRewardPct`: 0.05 (5%)
+- `disputerDisputeRewardPct`: 0.2 (20%)
+- `liquidationLiveness`: 7200
+- `withdrawalLiveness`: 7200
