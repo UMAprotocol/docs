@@ -16,5 +16,9 @@ sidebar_label: Approved Collateral Currencies
 |bwBTC/ETH SLP| 0.000000013 | [UMIP-35](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-35.md)
 |bBadger| 24 | [UMIP-35](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-35.md)
 |DSD| 600 | [UMIP-36](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-36.md)
+|renDOGE| 11000 | [UMIP-42](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-42.md)
+|OCEAN| 1000 | [UMIP-43](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-43.md)
+|YAM| 150 | [UMIP-44](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-44.md)
+|wBTC| 0.0147 | [UMIP-45](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-45.md)
 
 
