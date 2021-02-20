@@ -10,6 +10,11 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Feb 18, 2021: [UMA Developer Mining Update](https://medium.com/uma-project/uma-developer-mining-update-3c635d502fe1)
+- Feb 17, 2021: [UMA — In Case You Missed It Issue #2 Week Ending Feb 14th](https://medium.com/uma-project/uma-in-case-you-missed-it-issue-2-week-ending-feb-14th-2ba1ca965030)
+- Feb 11, 2021: [UMA KPI Options and Airdrop](https://medium.com/uma-project/uma-kpi-options-and-airdrop-bae86be16ce4)
+- Feb 7, 2021: [UMA — In Case You Missed It Issue #1 Week Ending Jan 31](https://medium.com/uma-project/in-case-you-missed-it-c04d62187063)
+- Feb 6, 2021: [Bitcoin Dominance on UMA: Announcing the Domination Finance Team](https://medium.com/uma-project/bitcoin-dominance-on-uma-announcing-the-domination-finance-team-e2d8501a1f82)
 - Feb 3, 2021: [uLABS and uSTONKS](https://medium.com/uma-project/ulabs-and-ustonks-7a6ba1ed8eb3)
 - Jan 28, 2021: [uLABS Notes: Borrow USDC with your ETH for FREE](https://medium.com/uma-project/ulabs-notes-borrow-usdc-with-your-eth-for-free-ab687991728f)
 - Jan 26, 2021: [uLABS Volatility Token (uVOL)](https://medium.com/uma-project/ulabs-volatility-token-uvol-58fe5173dc22)
