@@ -6,7 +6,7 @@ sidebar_label: KPI Options
 
 Community options, growth options or performance options - the naming is not the point, more that these options are designed to create aligned incentives with your community to grow. We have decided to call them *Key Performance Indicator options* or *KPI options*. 
 
-### What are these options? 
+### What are KPI options? 
 
 Using UMA’s Expiring Multi Party (EMP) contract template, any project can create an incentive mechanism which offers rewards to their targeted community in exchange for the community’s support in helping them achieve their Key Performance Metrics. 
 
