@@ -16,8 +16,8 @@ Our goal is to enable anyone to attain or transfer any form of risk seamlessly t
 UMA builds open source infrastructure which enables developers to create financial instruments in a permissionless, secure and efficient manner.  We work with developers, financial engineers and product designers to support them build products on our infrastructure, while supporting tokenholders to actively participate in the governance of our protocol. 
 
 Specifically this involves 
- - [Priceess financial contract templates](getting-started/priceless-financial-contracts.md) which can be used to create synthetic tokens
-  - [Governance](getting-started/governance.md) which manages improvements to the UMA protocol
+ - [Priceess financial contract templates](getting-started/priceless-contracts.md) which can be used to create synthetic tokens
+  - [Governance](getting-started/umips.md) which manages improvements to the UMA protocol
   - [Data Verification Mechanism](getting-started/oracle.md) (DVM), an optimistic oracle service 
 
 Together these enable the creation of fast efficient and secure synthetic derivatives on the ethereum blockchain.
