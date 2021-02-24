@@ -10,7 +10,7 @@ Community options, growth options or performance options - the naming is not the
 
 Using UMA’s Expiring Multi Party (EMP) contract template, any project can create an incentive mechanism which offers rewards to their targeted community in exchange for the community’s support in helping them achieve their Key Performance Metrics. 
 
-At a high-level, KPI options are synthetic ERC20 tokens that can be redeemed , but only if the project hits it’s predetermined KPI targets before expiry. These targets are up to each project and could be TVL, number of contracts deployed, number of transactions, etc.
+At a high-level, KPI options are synthetic ERC20 tokens that can be redeemed, but only if the project hits it’s predetermined KPI targets before expiry. These targets are up to each project and could be TVL, number of contracts deployed, number of transactions, etc.
 
 Every community member airdropped these KPI options, becoming vested in helping the project succeed on its Key Metrics, as the token grows more valuable as the target approaches.  This provides powerful incentive alignment between the protocol and its community. 
 
