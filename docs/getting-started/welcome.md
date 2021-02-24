@@ -17,8 +17,8 @@ UMA builds open source infrastructure which enables developers to create financi
 
 Specifically this involves 
  - [Priceess financial contract templates](getting-started/priceless-financial-contracts.md) which can be used to create synthetic tokens
- -[Governance](getting-started/governance.md) which manages improvements to the UMA protocol
- -[Data Verification Mechanism](getting-started/oracle.md) (DVM), an optimistic oracle service 
+  - [Governance](getting-started/governance.md) which manages improvements to the UMA protocol
+  - [Data Verification Mechanism](getting-started/oracle.md) (DVM), an optimistic oracle service 
 
 Together these enable the creation of fast efficient and secure synthetic derivatives on the ethereum blockchain.
 
@@ -41,7 +41,7 @@ During the 2-hour delay, Dispute Bots are incentivized to continuously monitor c
 
 When a Dispute Bot calls the DVM, the liquidated position is reported to UMA Tokenholders where they will reference off-chain price feeds to report price information to the DVM. The DVM will aggregate UMA tokenholder votes and report the price of the asset on-chain and reward the Disputer Bot and penalize the Liquidator Bot (or vice versa if the liquidator was correct). Following the result from the DVM, the position will become liquidated or remain solvent. 
 
-##For Developers
+**For Developers**
 
 If you are a developer interesting building with the UMA protocol, view this [explainer](/priceless-financial-contracts/priceless-contracts.md) of how UMA's priceless synthetic tokens wor and to learn more about UMA's synthetic tokens.
 
@@ -49,11 +49,11 @@ Additionally, the [development guide](build-walkthrough/build-process) to learn 
 
 You can find additional reference materials, including a list of UMA's testnet and mainnet contracts [here](dev-ref/addresses.md)
 
-##For UMA Tokenholders
+**For UMA Tokenholders**
 
 If you are interested in the UMA project token, please read [this section](uma-tokenholders/uma-holders.md) to learn more about the role of the UMA project token in the DVM and the rights and responsibilities of UMA project tokenholders.
 
-##Contacts
+**Contacts**
 If you have any questions or want to connect with the UMA community, please check out our [community page](community/community-overview), join our [discord](https//discord.umaproject.org) and [discourse](https://discourse.umaproject.org)
 
 
