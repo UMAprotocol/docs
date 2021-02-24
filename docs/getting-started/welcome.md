@@ -51,4 +51,5 @@ If you are a developer interesting building with the UMA protocol, view this [ex
 If you are interested in the UMA project token, please read [this section](uma-tokenholders/uma-holders.md) to learn more about the role of the UMA project token in the DVM and the rights and responsibilities of UMA project tokenholders.
 
 **Contacts**
+
 If you have any questions or want to connect with the UMA community, please check out our [community page](community/community-overview), join our [discord](https//discord.umaproject.org) and [discourse](https://discourse.umaproject.org)
