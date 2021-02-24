@@ -44,11 +44,7 @@ When a Dispute Bot calls the DVM, the liquidated position is reported to UMA Tok
 
 **For Developers**
 
-If you are a developer interesting building with the UMA protocol, view this [explainer](/priceless-financial-contracts/priceless-contracts.md) of how UMA's priceless synthetic tokens wor and to learn more about UMA's synthetic tokens.
-
-Additionally, the [development guide](build-walkthrough/build-process) to learn how to launch your own expiring synthetic token on UMA.
-
-You can find additional reference materials, including a list of UMA's testnet and mainnet contracts [here](dev-ref/addresses.md)
+If you are a developer interesting building with the UMA protocol, view this [explainer](/priceless-financial-contracts/priceless-contracts.md) of how UMA's priceless synthetic tokens work and to learn more about UMA's synthetic tokens, then take a look at our [development guide](build-walkthrough/build-process) to learn how to launch your own expiring synthetic token on UMA.You can find additional reference materials, including a list of UMA's testnet and mainnet contracts [here](dev-ref/addresses.md)
 
 
 **For UMA Tokenholders**
