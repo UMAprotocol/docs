@@ -1,6 +1,7 @@
 ---
 title: Welcome to UMA
 sidebar_label: Welcome to UMA
+slug: /
 ---
 
 UMA stands for "Universal Market Access" 
