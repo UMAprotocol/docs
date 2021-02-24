@@ -26,7 +26,7 @@ Together these enable the creation of fast efficient and secure synthetic deriva
 **How UMA works**
 
 There are five main network actors on UMA. 
-
+ 
 1. Token sponsors
 2. Liquidator bots
 3. Disputer bots
