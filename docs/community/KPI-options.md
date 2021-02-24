@@ -14,7 +14,7 @@ At a high-level, KPI options are synthetic ERC20 tokens that can be redeemed, bu
 
 Every community member airdropped these KPI options, becoming vested in helping the project succeed on its Key Metrics, as the token grows more valuable as the target approaches.  This provides powerful incentive alignment between the protocol and its community. 
 
-### How it works?
+### Launch your own KPI option
 
 The first step is create an UMIP to add your token to our list of accepted collateral currencies (if it isn’t already). Then you'll need to 
 define the Key Performance Metrics. This can be any metric that is important to you, and that you think the community can help you achieve.
