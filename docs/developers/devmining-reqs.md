@@ -55,3 +55,5 @@ A few additional parameters should generally be left as the default suggestion. 
 - `disputerDisputeRewardPct`: 0.2 (20%)
 - `liquidationLiveness`: 7200
 - `withdrawalLiveness`: 7200
+
+Additionally, to be eligible for developer mining, you must deploy with the most recent contract factories available at the time of deployment. You will not be eligible if you deploy with a deprecated factory. Here are the most up to date mainnet [contracts](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/1.json).
