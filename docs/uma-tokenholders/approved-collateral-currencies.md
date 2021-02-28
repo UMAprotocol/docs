@@ -20,5 +20,15 @@ sidebar_label: Approved Collateral Currencies
 |OCEAN| 1000 | [UMIP-43](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-43.md)
 |YAM| 150 | [UMIP-44](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-44.md)
 |wBTC| 0.0147 | [UMIP-45](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-45.md)
+|AAVE| 1 | [UMIP-56](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-56.md)
+|LINK| 12.5 | [UMIP-56](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-56.md)
+|SNX| 20 | [UMIP-56](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-56.md)
+|UMA| 15 | [UMIP-56](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-56.md)
+|UNI| 20 | [UMIP-56](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-56.md)
+|WBTC-ETH| 0.0000002 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md)
+|USDC-ETH| 0.0000035 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md)
+|UNI-ETH| 0.55 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md)
+|UMA-ETH| 0.8 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md)
+|Total| No of Approved collateral currencies | [23](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
