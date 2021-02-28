@@ -73,4 +73,5 @@ sidebar_label: Approved Price Identifiers
 |XAUUSD| A troy ounce of gold returned in USD| [UMIP-26](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-26.md)
 |YAMETH| The price of YAM in ETH.| [UMIP-50](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-50.md)
 |YAMUSD| The price of YAM in USD.| [UMIP-50](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-50.md)
+|| No of Approved Price Identifiers.| [60]()
 
