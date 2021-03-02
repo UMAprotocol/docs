@@ -28,7 +28,7 @@ On contract expiry, the synthetics will be redeemable according to the KPI’s p
 
 ### Create options using UMA
 
-UMA has a flexible [contract template](https://docs.umaproject.org/synthetic-tokens/what-are-synthetic-assets#the-expiringmultiparty-emp-contract-template) which has freedom to adjust contract parameter as needed (ie., collateral currency, expiry date, price identifier, etc.)
+UMA has a flexible [expiring contract template](https://docs.umaproject.org/synthetic-tokens/what-are-synthetic-assets#the-expiringmultiparty-emp-contract-template) which allows for freedom to create a variety of expiring contracts, simply by adjusting contract deployment parameters (i.e. collateral currency, expiry date, price tracked etc.).
 
 The project has the freedom to choose high value airdrop recipients, including their ideal community members, effective helpers or contributors to their ecosystem.
 
