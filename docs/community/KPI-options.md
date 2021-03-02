@@ -18,7 +18,7 @@ Every community member airdropped these KPI options, becoming vested in helping 
 
 ### Launch your own KPI option
 
-The first step is [create an UMIP](https://docs.umaproject.org/uma-tokenholders/umips) to add your token to our list of accepted collateral currencies (if it isn’t already). Then you'll need to define the Key Performance Metrics. This can be any metric that is important to you, and that you think the community can help you achieve.
+The first step is to submit an UMA Improvement Proposal [(UMIP)](https://docs.umaproject.org/uma-tokenholders/umips) to add your token to our list of accepted collateral currencies (if it isn’t already). You will also need to submit a proposal to define how to price your option based off of your chosen KPI.
 
 Once the necessary UMIPs have been passed, your project will be able to deploy an expiring KPI options contract. This process is extremely simple, and requires no contract development work or experience! [Here](https://docs.umaproject.org/developers/emp-deployment) is a tutorial to walk you through the contract deployment process. After deployment, you will be able to lock your collateral in the contract and mint your KPI Option tokens. 
 
