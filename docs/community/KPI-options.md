@@ -36,7 +36,7 @@ Our unique [DVM solution](https://docs.umaproject.org/synthetic-tokens/glossary#
 
 
 ### Next Steps & Resources 
-Read this [medium article](https://medium.com/uma-project/uma-kpi-options-and-airdrop-bae86be16ce4)  which reviews UMA’s example TVL Option. 
+Read this [medium article](https://medium.com/uma-project/uma-kpi-options-and-airdrop-bae86be16ce4) which explains UMA’s KPI Options. 
 
 Watch [this video](https://www.youtube.com/watch?v=U1xNkCbuiPA&amp%3Bfeature=youtu.be) to gain some additional insight as well.
 
