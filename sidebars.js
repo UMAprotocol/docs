@@ -88,6 +88,11 @@ module.exports = {
       "community/community-overview",
       {
         type: "category",
+        label: "Community Growth",
+        items: [ "community/KPI-options",],
+      },
+      {
+        type: "category",
         label: "Events & Press",
         items: [ "community/press", "community/blog-posts", "community/events"],
       },
