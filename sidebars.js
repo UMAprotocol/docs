@@ -44,7 +44,7 @@ module.exports = {
       {
         type: "category",
         label: "Developer Mining",
-        items: ["developers/developer-mining", "developers/devmining-reqs", "developers/designing-incentives", "developers/whitelist-contracts"],
+        items: ["developers/developer-mining", "developers/devmining-reqs", "developers/whitelisted-developermining", "developers/designing-incentives", "developers/whitelist-contracts"],
       },
       {
         type: "category",
