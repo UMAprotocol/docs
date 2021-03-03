@@ -80,6 +80,11 @@ module.exports = {
         "uma-tokenholders/umips",
         {
           type: "category",
+          label: "uLABs",
+          items: ["uma-tokenholders/ulabs-liquiditymining"],
+        },
+        {
+          type: "category",
           label: "Voting Tutorials",
           items: ["uma-tokenholders/voter-dApp", "uma-tokenholders/voting-2key"],
         },
