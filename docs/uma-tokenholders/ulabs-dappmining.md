@@ -12,9 +12,9 @@ uLABS rewards all dApps responsible for minting Yield Dollars with 30% of the re
 
 |Name| Website| Last Payout|
 |:-------| :------| :-----------|
-|EMP Tools| https://tools.umaproject.org/ .| 9405.5
-|OpenDAO| https://ydollar.opendao.io .| 260.4
-|MakeShift Finance| https://makeshift.finance .| 0.1
-|UMABILLS| https://umabills.com .| 235.0
+|EMP Tools| https://tools.umaproject.org/ | 9405.5
+|OpenDAO| https://ydollar.opendao.io | 260.4
+|MakeShift Finance| https://makeshift.finance | 0.1
+|UMABILLS| https://umabills.com | 235.0
 
 A total of 9,901 $UMA tokens was distributed by uLABS as dapp mining rewards in the last payout. 
