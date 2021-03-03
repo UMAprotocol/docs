@@ -7,9 +7,9 @@ This section explains the UMA Subgraph and how to interact with it. The UMA subg
 
 ## Resources
 
-- [Sandbox](https://thegraph.com/explorer/subgraph/protofire/uma) for querying data for developers.
+- [Sandbox](https://thegraph.com/explorer/subgraph/umaprotocol/uma) for querying data for developers.
 - [Sandbox](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan) for querying data on Kovan.
-- [Source code](https://github.com/protofire/uma-subgraph) for deployed subgraph.
+- [Source code](https://github.com/UMAprotocol/uma-subgraph) for deployed subgraph.
 
 ## Making Queries
 
