@@ -81,7 +81,7 @@ module.exports = {
         {
           type: "category",
           label: "uLABs",
-          items: ["uma-tokenholders/ulabs-liquiditymining"],
+          items: ["uma-tokenholders/ulabs-liquiditymining", "uma-tokenholders/ulabs-dappmining"],
         },
         {
           type: "category",
