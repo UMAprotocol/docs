@@ -1,6 +1,6 @@
 ---
-title: uLABs DaPP Mining Program
-sidebar_label: DaPP Mining
+title: uLABS dApp Mining Program
+sidebar_label: dApp Mining
 ---
 
 uLABS, the product arm of UMA, shepherds the yield dollar token contracts and manages the liquidity mining program. Half of the rewards for the Yield Dollar tokens are allocated for liquidity mining, with the other half unspent.
