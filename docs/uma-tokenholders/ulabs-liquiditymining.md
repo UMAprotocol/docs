@@ -3,7 +3,7 @@ title: uLABs Liquidity Mining Program
 sidebar_label: Liquidity Mining
 ---
 
-The Liquidity Mining program was moved under the umbrella of the developer mining, with uLABs as the developer responsible for distributing rewards accrued by 
+The Liquidity Mining program was [moved under](https://twitter.com/UMAprotocol/status/1324199135080148993) the umbrella of the developer mining, with uLABs as the developer responsible for distributing rewards accrued by 
 yield dollar tokens(YD-ETH-MAR21 & YD-BTC-MAR21). 
 
 ## YD-ETH-MAR21 
