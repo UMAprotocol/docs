@@ -46,3 +46,12 @@ Examples of governance proposals include:
 - Upgrading the core DVM protocol and / or modify DVM parameters
 - Registering and de-registering contract templates
 - Shutting down contract instantiations (in rare circumstances)
+
+## Voting rebate
+
+Voting requires a voter to spend gas to commit, reveal their vote and then claim voting rewards. Since voting takes place irrelevant to the current gas price, there is a rebate for the gas spent in the voting process. The rebate is designed to ensure voter turnout even during high gas fee spikes and make it more attractive for voters with smaller balances to participate.
+
+The rebate will be sent to voters monthly in $UMA. You will be rebated the dollar for dollar amount of gas you spent. For example, if you spent $20 in gas to commit and reveal, you will be rebated $20 in $UMA tokens. Only votes that successfully revealed their vote will receive the rebate. It is important to note that, your vote does not have to be the correct to receive the gas rebate.
+
+If you would like to read more about the rebate program, we have an [article](https://medium.com/uma-project/voter-gas-fee-rebate-program-f9cce3391cb5) with more details
+
