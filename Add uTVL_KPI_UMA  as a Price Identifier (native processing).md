@@ -172,7 +172,7 @@ Note - see rationale for further discussion
  - Ocean	- see UMIP 46
  -  YAM  - 	- see  UMIP 50
  -  Aave, Link, SNX, UMA, UNI - see UMIP 57
- -  RenDoge.  Binance -  
+ -  RenDoge.  
  -  	https://api.cryptowat.ch/markets/binance/dogeusdt/price
  -  	https://api.cryptowat.ch/markets/bittrex/dogeusdt/price 
  -  	https://api.cryptowat.ch/markets/huobi/dogeusdt/price
@@ -252,24 +252,24 @@ As there is no requirement for ongoing monitoring through liquidation or dispute
 
 **3. Quote currency** - There is no quote currency, the denominator is fixed at 10^8 (100 Million)
 
-- If your price identifier is a currency pair, your quote currency will be the
+If your price identifier is a currency pair, your quote currency will be the
 denominator of your currency pair. If your price identifier does not have a quote currency, please explain the reasoning behind this.
 
-This price identifier does not have a quote currency as it is designed not to be tied to a currency price metric,.
+ - This price identifier does not have a quote currency as it is designed not to be tied to a currency price metric,.
 
-- Please be aware that the value of any UMA synthetic token is the value of the price identifier in units of the collateral currency used. If a contract’s price identifier returns 1, and is collateralized in renBTC, each synthetic will be worth 1 renBTC. In most cases, the value of your quote currency and intended collateral currency should be equal.
+Please be aware that the value of any UMA synthetic token is the value of the price identifier in units of the collateral currency used. If a contract’s price identifier returns 1, and is collateralized in renBTC, each synthetic will be worth 1 renBTC. In most cases, the value of your quote currency and intended collateral currency should be equal.
 
 - The collateral redemption is designed to be tied to the value of the TVL of the protocol by design.
 
 **4. Intended Collateral Currency** - UMA
 
-- Does the value of this collateral currency match the standalone value of the listed quote currency? 
+Does the value of this collateral currency match the standalone value of the listed quote currency? 
 
-    - No.  This is a design feature.
+- No.  This is a design feature.
 
-- Is your collateral currency already approved to be used by UMA financial contracts? If no, submit a UMIP to have the desired collateral currency approved for use. 
+Is your collateral currency already approved to be used by UMA financial contracts? If no, submit a UMIP to have the desired collateral currency approved for use. 
 
- - YES - UMA was approved as a collateral currency in[UMIP 56](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-56.md) 
+- YES - UMA was approved as a collateral currency in[UMIP 56](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-56.md) 
 
 **5. Collateral Decimals** - 18
 
@@ -284,10 +284,9 @@ This price identifier does not have a quote currency as it is designed not to be
 
 # RATIONALE
 
-- This synthetic is designed as an incentivisation mechanism to leverage the UMA community, our partners and the wider Defi userbase to grow our protocol as measured by our identified Key Performance Indicator of Total Value Locked. 
+This synthetic is designed as an incentivisation mechanism to leverage the UMA community, our partners and the wider Defi userbase to grow our protocol as measured by our identified Key Performance Indicator of Total Value Locked. 
 
 This price identifier offers a guarantee that these options will be of value, even if this key metric is poor through the floor price mechanism, however the nature of UMA is such that the amount of value that can be locked in the protocol is potentially limitless and consequently a ceiling price is required to limit provide a cap.
-
 
 The methods used to calculate the dollar value of each of the collateral currencies have been chosen to adhere to previous design decisions in such calculations through UMIPs that have already been approved through our governance procedure however note the following assumptions.
 
@@ -304,17 +303,15 @@ There are other forms of dollar stablecoins which are not approved as collateral
 4. Four Uniswap Liquidity Tokens (wBTC-Eth, USDC-Eth, UNI-Eth, UMA-Eth) are approved as collateral within the UMA protocol. 
 It is recommended that any additional proposal to add Uniswap liquidity tokens as approved collateral currencies are evaluated against UMIP 59 and follow those market and data sources unless there is good reason for deviance
 
-5.One Sushisaw Liquidity Token ( [bwBTC/ETH SLP) is approved as collateral in the UMA Protocol. 
+5. One Sushisaw Liquidity Token ( [bwBTC/ETH SLP) is approved as collateral in the UMA Protocol. 
 It is recommended that any additional proposal to add Uniswap liquidity tokens as approved collateral currencies are evaluated against UMIP 39 and follow those market and data sources unless there is good reason for deviance.
 
-RenDoge is approved as a collateral currency in UMA, however there is no associated price identifier UMIP.  
-It is recommended that for this purpose, 1 RenDoge = 1 Doge.  While that assumption may be somewhat inaccurate, it has minimal impact on the overall calculation,  cuts down on processing complexity, and works on a “common sense” attitude that wrapped Doge on the Eth chain are equivalent in value to native doge.  
-
-The most common doge pair is Doge/USDT, the three markets with greatest volume as reported by Coingecko were chosen.
+6. RenDoge is approved as a collateral currency in UMA, however there is no associated price identifier UMIP.  
+It is recommended that for this purpose, 1 RenDoge = 1 Doge.  While that assumption may be somewhat inaccurate, it has minimal impact on the overall calculation,  cuts down on processing complexity, and works on a “common sense” attitude that wrapped Doge on the Eth chain are equivalent in value to native doge.  The most common doge pair is Doge/USDT, the three markets with greatest volume as reported by Coingecko were chosen.
 
 There is no need for price processing.  This is a snapshot based on a particular time, however it may be useful for TVL Options holders to have oversight of the ongoing TVL and consequently the value of their options on an ongoing basis.  There are currently two dashboards that track the TVL of UMA - 
- - [SimpleID[(https://monitor.simpleid.xyz/uma)
- -[Yuen] (https://docs.google.com/spreadsheets/d/e/2PACX-1vSEMURxiVQuu6jSDp2zmI7kdKKaJjgmhWNiVjwStyJekDx9hWgclKzm_yv9iyj82IRP4d9dZ8rgvCCB/pubhtml) 
+ - [SimpleID](https://monitor.simpleid.xyz/uma)
+ - [Yuen](https://docs.google.com/spreadsheets/d/e/2PACX-1vSEMURxiVQuu6jSDp2zmI7kdKKaJjgmhWNiVjwStyJekDx9hWgclKzm_yv9iyj82IRP4d9dZ8rgvCCB/pubhtml) 
 
 These currently monitor different contracts and calculate the value slightly differently.
 
@@ -338,11 +335,11 @@ These should then be summed to obtain the total value locked (TVL) measured in d
 
 3. **Input processing**
 
-    - From the list of ExpiringMultiPartyCreator (available at https://github.com/UMAprotocol/protocol/blob/master/packages/affiliates/payouts/devmining-status.json), query all EMP addresses from createExpiringMultiParty() and call pfc() on all of them, repeat same steps for PerpetualCreator and just check the createPerpetual()  event, to identify the amount of each collateral type locked in UMA contracts. 
+- From the list of ExpiringMultiPartyCreator (available at https://github.com/UMAprotocol/protocol/blob/master/packages/affiliates/payouts/devmining-status.json), query all EMP addresses from createExpiringMultiParty() and call pfc() on all of them, repeat same steps for PerpetualCreator and check the createPerpetual()  event, to identify the amount of each collateral type locked in UMA contracts. 
 
-The dollar value of each contract should then be calculated using the details supplied in the Markets and Data section referencing the relevant UMIPs
+ - The dollar value of each contract should then be calculated using the details supplied in the Markets and Data section referencing the relevant UMIPs
 
-These should then be summed to obtain the total value locked (TVL) measured in dollars.
+ - These should then be summed to obtain the total value locked (TVL) measured in dollars.
 
 
 4. **Result processing** 
@@ -366,14 +363,14 @@ These should then be summed to obtain the total value locked (TVL) measured in d
 
 3. Do the instructions for determining the price provide people with enough certainty?
 
-YES
+ - YES
 
 4. What are current or future concern possibilities with the way the price identifier is defined?
 
-It is likely that new forms of collateral will be approved prior to the expiry date.  These need to be added to this price identifier to be considered for inclusion in the TVL calculations.
+ - It is likely that new forms of collateral will be approved prior to the expiry date.  These need to be added to this price identifier to be considered for inclusion in the TVL calculations.
 
 5. Are there any concerns around if the price identifier implementation is deterministic?
 
-This price identifier excludes collateral locked in  Jarvis contracts and the optimistic oracle contracts.
+ - This price identifier excludes collateral locked in  Jarvis contracts and the optimistic oracle contracts.
 
 
