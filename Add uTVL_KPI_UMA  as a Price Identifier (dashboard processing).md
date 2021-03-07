@@ -50,8 +50,8 @@ There are a variety of assets approved as Collateral within UMA's priceless cont
 A list of these assets is [available on our docs site](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies). 
 
 There are currently two dashboards which are tracking the TVL of UMA contracts. 
-[Simple ID](https://monitor.simpleid.xyz/d/x4CYPILGk/uma?orgId=1)
-[Yuen] (https://docs.google.com/spreadsheets/d/e/2PACX-1vSEMURxiVQuu6jSDp2zmI7kdKKaJjgmhWNiVjwStyJekDx9hWgclKzm_yv9iyj82IRP4d9dZ8rgvCCB/pubhtml#)
+ - [Simple ID](https://monitor.simpleid.xyz/d/x4CYPILGk/uma?orgId=1)
+ - [Yuen](https://docs.google.com/spreadsheets/d/e/2PACX-1vSEMURxiVQuu6jSDp2zmI7kdKKaJjgmhWNiVjwStyJekDx9hWgclKzm_yv9iyj82IRP4d9dZ8rgvCCB/pubhtml#)
 
 These dashboards already query the contracts to determine the collateral locked, calculate a dollar value for each of the collateral types and sum the locked capital.
 
@@ -63,37 +63,35 @@ These dashboards already query the contracts to determine the collateral locked,
 
 1. What markets should the price be queried from? It is recommended to have at least 3 markets.
 
-No need to directly query markets as SimpleID dashboard and Yuen already track these
+ - No need to directly query markets as SimpleID dashboard and Yuen already track these
 
 2.  Which specific pairs should be queried from each market?
-	The “total value locked” statistic should be queried.  This will return a dollar value.
+
+ - The “total value locked” statistic should be queried.  This will return a dollar value.
 
 3. Provide recommended endpoints to query for real-time prices from each market listed. 
 
-	No need to query markets directly
+ - No need to query markets directly
 
 4. How often is the provided price updated?
-	Simple ID - 15 seconds
-	YUEN - 10 minutes.
+ - Simple ID - 15 seconds
+ - YUEN - 10 minutes.
 
 5. Provide recommended endpoints to query for historical prices from each market listed. 
 
-    	No need to directly query markets.
+ - No need to directly query markets.
 
 6.  Do these sources allow for querying up to 74 hours of historical data? 
 
-No, however there is no requirement for ongoing data.
+  - No, however there is no requirement for ongoing data.
 
 7.  How often is the provided price updated?
 
-   Simple ID - 15 seconds
-YUEN - 10 minutes.
+ - Simple ID - 15 seconds
+ - YUEN - 10 minutes.
 
 8. Is an API key required to query these sources? 
-NO.
-
-
-
+ - NO.
 
 9. Is there a cost associated with usage? 
 
@@ -105,7 +103,7 @@ NO
 
 11.  What would be the cost of sending 15,000 queries?
 
-Free
+Free, but no requirement to send 15,000 queries.
 
 <br>
 
@@ -198,8 +196,7 @@ If there is a dispute as to the accuracy of the figures from the SimpleID or Yue
 
 1. Where could manipulation occur?
 
-Manipulation could occur at the SimpleID dashboard level or on the Yuen dashboard level, either in the amount of collateral locked or in the dollar calculation of the value of that collateral
-This can be checked on-chain in the case of a dispute.
+ - Manipulation could occur at the SimpleID dashboard level or on the Yuen dashboard level, either in the amount of collateral locked or in the dollar calculation of the value of that collateral.  This can be checked on-chain in the case of a dispute.
 
 2. How could this price ID be exploited?
 
@@ -210,14 +207,14 @@ This can be checked on-chain in the case of a dispute.
 
 3. Do the instructions for determining the price provide people with enough certainty?
 
-YES
+ - YES
 
 4. What are current or future concern possibilities with the way the price identifier is defined?
 
-It appears that neither of the dashboards are monitoring all of the contracts currently running on UMA, and that they calculate the dollar value of the TVL slightly differently
-It is likely that new forms of collateral will be approved prior to the expiry date.  These need to be added into the Yuen or SimpleID Dashboards.
+ - It appears that neither of the dashboards are monitoring all of the contracts currently running on UMA, and that they calculate the dollar value of the TVL slightly differently
+ - It is likely that new forms of collateral will be approved prior to the expiry date.  These need to be added into the Yuen or SimpleID Dashboards.
 
 5. Are there any concerns around if the price identifier implementation is deterministic?
 
-
+ - the current minor discrepancies in calculating dollar value may become significant.
 
