@@ -25,6 +25,8 @@ The value locked is calculated using the methods included in previous UMIPs whic
 
 The dollar value of each of the collateral types is then summed to provide the total value locked.
 
+Options are redeemed on the basis of TVL/10^8, with a floor of 0.1 and a ceiling of 2.
+
   
 
 
@@ -54,22 +56,39 @@ There are a variety of assets approved as Collateral within UMA's priceless cont
 A list of these assets is [available on our docs site](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies).  To maintain consistency with existing price identifier UMIPs, it is suggested that different markets are queried for different collateral types. These are grouped below. 
 
 [wEth] - the wrapped native token of the Ethereum Network (henceforth referred to as ETH)
+
 [renBTC, wBTC] - wrapped ERC20 versions of Bitcoin (henceforth referred to as BTC)
+
 [DAI, USDC, USDT, rDai]  - ERC20 dollar stable coins (henceforth referred to as USD)
+
 [wBTC-Eth, USDC-Eth, UNI-Eth, UMA-Eth] -UNI Liquidity Tokens (henceforth referred to as uLQ)
+
 [bwBTC/ETH SLP] Sushi Liquidity Tokens (henceforth referred to a sLQ)
 
+[RenDoge] Wrapped Doge
+
+It is proposed that these are treated in the above groups for the purposes of determining markets and data sources.  For discussion on this see #Rationale 
+
 Additionally there are a number of “native” ERC20 tokens which are also accepted as collateral, namely
+
 bBadger, 
+
 PERL, 
+
 DSD, 
-renDoge, 
+
 OCEAN, 
+
 YAM, 
+
 Aave, 
+
 Link, 
+
 SNX, 
+
 UMA, 
+
 UNI
 
 It is proposed that these are treated in the above groups for the purposes of determining markets and data sources.  For discussion on this see #Rationale 
@@ -106,77 +125,86 @@ Note - see rationale for further discussion
 
 DSD - Uniswap (calculation performed as per UMIP 37
 https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-37.md
+
 bBadger - Sushiswap (calculations performed as per UMIP 39)
 https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-39.md
+
 PERL - Binance (calculations performed as per UMIP 13)
 https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-13.md
+
 Ocean - Binance, Bittrex, BitZ (calculations performed as per UMIP 46)
 https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-46.md
+
 YAM - Sushiswap, Uniswap (calculations performed as per UMIP 50)
 https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-50.md
+
 Aave, Link, SNX, UMA, UNI - Coinbase, Binance, OKEx (calculations performed as per UMIP 57
 https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-57.md
+
 RenDoge.  Binance, Huobi, OKEx.
 Note - see rationale for further discussion
 
 2.  Which specific pairs should be queried from each market?
-	1. ETH 	-  see UMIP 6 
-2.BTC 		- see UMIP 7
-3 USD 	no query requirement  
-4. uLQ 	- see UMIP 59
-5. sLQ 	- see UMIP 39
-6. DSD 	- see UMIP 37
-7. bBadger - 	- see UMIP 39
-8. PERL 	- see UMIP 13
-9. Ocean	- see UMIP 46
-10. YAM  - 	- see  UMIP 50
-11.Aave, Link, SNX, UMA, UNI - see UMIP 57
-12. RenDoge.  Doge/USDT
+
+ -  ETH 	-  see UMIP 6 
+ - BTC 		- see UMIP 7
+ - USD 	no query requirement  
+ -  uLQ 	- see UMIP 59
+ -  sLQ 	- see UMIP 39
+ -  DSD 	- see UMIP 37
+ -  bBadger - 	- see UMIP 39
+ -  PERL 	- see UMIP 13
+ - Ocean	- see UMIP 46
+ -  YAM  - 	- see  UMIP 50
+ - Aave, Link, SNX, UMA, UNI - see UMIP 57
+ - RenDoge.  Doge/USDT
 
 3. Provide recommended endpoints to query for real-time prices from each market listed. 
 
-	1. ETH 	- see UMIP 6
-2.BTC 		- see UMIP 7
-3 USD 	no query requirement  
-4. uLQ 	- see UMIP 59
-5. sLQ 	- see UMIP 39
-6. DSD 	- see UMIP 37
-7. bBadger - 	- see UMIP 39
-8. PERL 	- see UMIP 13
-9. Ocean	- see UMIP 46
-10. YAM  - 	- see  UMIP 50
-11.Aave, Link, SNX, UMA, UNI - see UMIP 57
-12. RenDoge.  Binance -  https://api.cryptowat.ch/markets/binance/dogeusdt/price
- https://api.cryptowat.ch/markets/bittrex/dogeusdt/price https://api.cryptowat.ch/markets/huobi/dogeusdt/price
+ - ETH 	- see UMIP 6
+ - BTC 		- see UMIP 7
+ - USD 	no query requirement  
+ - uLQ 	- see UMIP 59
+ - sLQ 	- see UMIP 39
+ - DSD 	- see UMIP 37
+ - bBadger - 	- see UMIP 39
+ - PERL 	- see UMIP 13
+ - Ocean	- see UMIP 46
+ -  YAM  - 	- see  UMIP 50
+ -  Aave, Link, SNX, UMA, UNI - see UMIP 57
+ -  RenDoge.  Binance -  
+ -  	https://api.cryptowat.ch/markets/binance/dogeusdt/price
+ -  	https://api.cryptowat.ch/markets/bittrex/dogeusdt/price 
+ -  	https://api.cryptowat.ch/markets/huobi/dogeusdt/price
 
 4. How often is the provided price updated?
-	1. ETH 	- see UMIP 6
-2.BTC 		- see UMIP 7
-3 USD 	n/a - assumed to be consistent
-4. uLQ 	- see UMIP 59
-5. sLQ 	- see UMIP 39
-6. DSD 	- see UMIP 37
-7. bBadger - 	- see UMIP 39
-8. PERL 	- see UMIP 13
-9. Ocean	- see UMIP 46
-10. YAM  - 	- see  UMIP 50
-11.Aave, Link, SNX, UMA, UNI - see UMIP 57
-12. RenDoge - The lower bound on the update frequency is 1 minute.
+ - ETH 	- see UMIP 6
+ - BTC 		- see UMIP 7
+ - USD 	n/a - assumed to be fixed price
+ - uLQ 	- see UMIP 59
+ - sLQ 	- see UMIP 39
+ - DSD 	- see UMIP 37
+ - bBadger - 	- see UMIP 39
+ - PERL 	- see UMIP 13
+ - Ocean	- see UMIP 46
+ -  YAM  - 	- see  UMIP 50
+ -  Aave, Link, SNX, UMA, UNI - see UMIP 57
+ -  RenDoge - The lower bound on the update frequency is 1 minute.
 
 5. Provide recommended endpoints to query for historical prices from each market listed. 
 
-    	1. ETH 	- see UMIP 6
-2.BTC 		- see UMIP 7
-3 USD 	n/a - historical price is always $1
-4. uLQ 	- see UMIP 59
-5. sLQ 	- see UMIP 39
-6. DSD 	- see UMIP 37
-7. bBadger - 	- see UMIP 39
-8. PERL 	- see UMIP 13
-9. Ocean	- see UMIP 46
-10. YAM  - 	- see  UMIP 50
-11.Aave, Link, SNX, UMA, UNI - see UMIP 57
-12 Rendoge  ??UNCLEAR??
+ - ETH 	- see UMIP 6
+ - BTC 		- see UMIP 7
+ - USD 	n/a - historical price is always $1
+ - uLQ 	- see UMIP 59
+ - sLQ 	- see UMIP 39
+ - DSD 	- see UMIP 37
+ - bBadger - 	- see UMIP 39
+ - PERL 	- see UMIP 13
+ - Ocean	- see UMIP 46
+ -  YAM  - 	- see  UMIP 50
+ -  Aave, Link, SNX, UMA, UNI - see UMIP 57
+ -  Rendoge  ??UNCLEAR??
 
 6.  Do these sources allow for querying up to 74 hours of historical data? 
 
@@ -185,20 +213,20 @@ Note - see rationale for further discussion
 
 7.  How often is the provided price updated?
 
-   Where updated prices are required, relevant UMIPs refer to the frequency
-RenDoge - lower bound is 1 minute 
+ - Where updated prices are required, relevant UMIPs refer to the frequency
+ - RenDoge - lower bound is 1 minute 
 
 8. Is an API key required to query these sources? 
-See Relevant UMIPs
-API key is required to query cryptowatch for RenDoge 
+ - See Relevant UMIPs
+ - API key is required to query cryptowatch for RenDoge 
 
 
 
 
 9. Is there a cost associated with usage? 
 
-    - See relevant UMIPs
-	- RenDoge, there is a cost associated with the use of cryptowatch.
+- See relevant UMIPs
+- RenDoge, there is a cost associated with the use of cryptowatch.
 
 10. If there is a free tier available, how many queries does it allow for?
 
@@ -206,7 +234,7 @@ API key is required to query cryptowatch for RenDoge
 
 11.  What would be the cost of sending 15,000 queries?
 
-There is no need to sent 15, 000 queries for this price identifier as it does not require bots. 
+ - There is no need to sent 15, 000 queries for this price identifier as it does not require bots. 
 
 <br>
 
@@ -241,7 +269,7 @@ This price identifier does not have a quote currency as it is designed not to be
 
 - Is your collateral currency already approved to be used by UMA financial contracts? If no, submit a UMIP to have the desired collateral currency approved for use. 
 
-YES - UMA was approved as a collateral currency in[UMIP 56](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-56.md) 
+ - YES - UMA was approved as a collateral currency in[UMIP 56](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-56.md) 
 
 **5. Collateral Decimals** - 18
 
@@ -297,8 +325,8 @@ The use of these dashboards was considered but rejected due to the potential for
 
 # IMPLEMENTATION
 
-The dollar value of each of the contracts should be calculated using the UMIPs and guidence in the Markets and Data section.  These should then be summed to obtain the total value locked (TVL) measured in dollars.
-
+The dollar value of each of the contracts should be calculated using the UMIPs and guidence in the Markets and Data section.  
+These should then be summed to obtain the total value locked (TVL) measured in dollars.
 
 
 1. **What prices should be queried for and from which markets?**
@@ -327,7 +355,7 @@ These should then be summed to obtain the total value locked (TVL) measured in d
 
 1. Where could manipulation occur?
 
-Negligible opportunities for manipulation.
+ - Negligible opportunities for manipulation.
 
 2. How could this price ID be exploited?
 
