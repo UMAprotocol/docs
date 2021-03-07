@@ -91,7 +91,7 @@ UMA,
 
 UNI
 
-It is proposed that these are treated in the above groups for the purposes of determining markets and data sources.  For discussion on this see #Rationale 
+
 
  **Required questions**
 
