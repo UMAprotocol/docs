@@ -44,7 +44,7 @@ You are also able to go back and edit your entry at any time. As an example, you
 
 Please note that to be eligible for developer mining rewards, your contract parameters must meet certain requirements. These include:
 
-- Your `collateralRequirement` must be above 1.2 for contracts using volatile price identifiers, and 1.05 for less volatile price ids. Determination of volatility is subjective and left up to the UMA core team, but you may be asked to provide your price identifiers realized 30 day volatility to support your chosen `collateralRequirement`. 
+- Your `collateralRequirement` must be above 1.2.
 - Your price identifier must have a working price feed that has been added to the UMA [price feed directory](https://github.com/UMAprotocol/protocol/tree/master/packages/financial-templates-lib/src/price-feed).
 - Your price feed must have a method called `getHistoricalPricePeriods` to calculate historical prices for more than one week of time (example [here](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.js#L136)), or your synthetic token must be listed on [CoinGecko](https://www.coingecko.com/en/coins/uusdrbtc-synthetic-token-expiring-1-october-2020).
 - Your `minSponsorTokens` must equate to between ~$100 and ~$2,500 in synth value at the time of contract launch.
