@@ -81,7 +81,7 @@ module.exports = {
         {
           type: "category",
           label: "Voting Tutorials",
-          items: ["uma-tokenholders/voter-dApp", "uma-tokenholders/voting-2key"],
+          items: ["uma-tokenholders/voter-dApp"],
         },
       ],
     "Events & Press": [
