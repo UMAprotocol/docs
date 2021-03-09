@@ -28,7 +28,6 @@ These components enable the creation of fast, efficient, and secure synthetic as
 
 If you are a developer interesting building with the UMA protocol, view this [explainer](/priceless-financial-contracts/priceless-contracts.md) of how UMA's priceless synthetic tokens wor and to learn more about UMA's synthetic tokens. The [development guide](build-walkthrough/build-process) to learn how to launch your own expiring synthetic token on UMA.  Additional reference materials, including a list of UMA's testnet and mainnet contracts [are also available](dev-ref/addresses.md)
 
-
 **For UMA Tokenholders**
 
 If you are interested in the UMA project token, please read [this section](uma-tokenholders/uma-holders.md) to learn more about the role of the UMA project token in the DVM and the rights and responsibilities of UMA project tokenholders.
