@@ -34,8 +34,6 @@ Because the DVM requires 2-4 days to respond to a price request, it is not inten
 
 The DVM is designed to include an economic guarantee around its cost of corruption and profit from corruption. The cost of corrupting the DVM, as measured by the cost of 51% of the UMA voting tokens, should be greater than the profit from corrupting the DVM, as measured by the collateral stored in the financial contracts that are registered with it. To ensure that this inequality holds, the DVM may charge fees to financial contracts that are used to raise the price of the UMA voting tokens.
 
-Governance is provided by the UMA Improvement Proposals (UMIPs) which allow new collateral types and price identifiers to be added to the system as well as new types of factory contract.
-
 
 ## How UMA works ##
 
