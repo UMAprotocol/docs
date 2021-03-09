@@ -15,14 +15,14 @@ UMA's goal is to enable anyone to attain or transfer any form of risk seamlessly
 
 ## What is UMA ##
 
-UMA builds open source infrastructure for developers to create financial instruments in a permissionless, secure and efficient manner. 
+UMA is open source infrastructure for developers to create financial instruments in a permissionless, secure and efficient manner. 
 
 This infrastructure includes:
  - [Priceless financial contract templates](getting-started/priceless-financial-contracts.md) which can be used to create synthetic tokens
  - An optimistic oracle known as the [Data Verification Mechanism](getting-started/oracle.md) (DVM) to enforce financial contracts built on UMA
  - A [Decentralized Governance Process](getting-started/governance.md) to manages improvements of UMA protocol
 
-These components enable the creation of fast, efficient, and secure synthetic assets on Ethereum.
+These components enable the creation of fast, efficient, and secure synthetic assets on Ethereum. 
 
 **For Developers**
 
