@@ -7,11 +7,11 @@ sidebar_label: Welcome to UMA
 
 UMA stands for "Universal Market Access" 
 
-Our mission is to make financial markets universally fair and accessible.
+UMA's mission is to make financial markets universally fair and accessible.
 
-UMA is driven by a shared belief that financial markets should be universally accessible - unrestrained by censorship, pre-existing financial and social capital, or beliefs and values. The economic freedom created by open market access enables everyone equal access and footing to pursue prosperity and build their financial independence.  Free and universal access to financial markets is a pre-requisite to a free, open and fair financial system. 
+UMA is driven by a shared belief that financial markets should be universally accessible - unrestrained by censorship, pre-existing financial and social capital, or beliefs and values. The economic freedom created by open markets enables everyone equal access and footing to pursue prosperity and build their financial independence.  Universal access to financial markets is a pre-requisite to a free, open and fair financial system. 
 
-UMA's goal is to enable anyone to attain or transfer any form of risk seamlessly and securely through the UMA protocol thus empowering everyone to participate in a universally accessible financial system.
+UMA's goal is to enable anyone to attain or transfer any form of risk seamlessly and securely through UMA protocol thus empowering everyone to participate in a universally accessible financial system.
 
 ## What is UMA ##
 
@@ -20,17 +20,20 @@ UMA is open source infrastructure for developers to create financial instruments
 This infrastructure includes:
  - [Priceless financial contract templates](getting-started/priceless-financial-contracts.md) which can be used to create synthetic tokens
  - An optimistic oracle known as the [Data Verification Mechanism](getting-started/oracle.md) (DVM) to enforce financial contracts built on UMA
- - A [Decentralized Governance Process](getting-started/governance.md) to manages improvements of UMA protocol
 
 These components enable the creation of fast, efficient, and secure synthetic assets on Ethereum. 
 
 **For Developers**
 
-If you are a developer interesting building with the UMA protocol, view this [explainer](/priceless-financial-contracts/priceless-contracts.md) of how UMA's priceless synthetic tokens wor and to learn more about UMA's synthetic tokens. The [development guide](build-walkthrough/build-process) to learn how to launch your own expiring synthetic token on UMA.  Additional reference materials, including a list of UMA's testnet and mainnet contracts [are also available](dev-ref/addresses.md)
+If you are a developer interested in building with UMA Protocol, view [this](https://docs.umaproject.org/synthetic-tokens/what-are-synthetic-assets) explainer of how UMA's priceless synthetic tokens work and to learn more about UMA's expiring synthetic tokens.
+
+Additionally, the [development guide](https://docs.umaproject.org/build-walkthrough/build-process) to learn how to launch your own expiring synthetic token on UMA.
+
+You can find additional reference materials, including a list of UMA's testnet and mainnet contracts [here](https://docs.umaproject.org/dev-ref/addresses).
 
 **For UMA Tokenholders**
 
-If you are interested in the UMA project token, please read [this section](uma-tokenholders/uma-holders.md) to learn more about the role of the UMA project token in the DVM and the rights and responsibilities of UMA project tokenholders.
+If you are interested in the UMA project token, please read [this section](uma-tokenholders/uma-holders.md) to learn more about the role of the UMA project token and the rights and responsibilities of UMA project tokenholders.
 
 **Contacts**
 
