@@ -36,7 +36,8 @@ You can find additional reference materials, including a list of UMA's testnet a
 
 **For UMA Tokenholders**
 
-If you are interested in the UMA project token, please read [this section](uma-tokenholders/uma-holders.md) to learn more about the role of the UMA project token and the rights and responsibilities of UMA project tokenholders.
+If you are interested in the $UMA governance token, please read [this section](uma-tokenholders/uma-holders.md) to learn more about the rights and responsibilities of $UMA tokenholders.
+
 
 **Contacts**
 
