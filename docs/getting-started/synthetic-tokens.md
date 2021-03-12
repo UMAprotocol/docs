@@ -3,12 +3,13 @@ title: Priceless DeFi Contracts
 sidebar_label: Priceless Contracts
 ---
 
-“Priceless” financial contracts are contracts that don’t require an on-chain price feed to function, and minimize on-chain oracle usage to reduce the frequency and surface area for oracle attacks.
-They are designed with mechanisms to incentivize counterparties to properly collateralize their positions without requiring any on-chain price feed.
+Decentralized oracle solutions today consist of API's that repeatedly submit price data on-chain to manage DeFi contracts. Solutions also have no way to dispute an incorrect price reported from an API. This makes contracts vulnerable to corruption, manipulation, flash loan attacks and ad-hoc market events.
 
-These mechanisms include a liquidation and dispute process that allows counterparties to be rewarded for identifying improperly collateralized positions.
-Unless a position is liquidated, it is assumed to be solvent (properly collateralized).
-Oracles are only used when a liquidation is disputed — which is designed to be rare.
+Priceless financial contracts are contracts that only require writing a price on-chain in the event of a dispute (which is designed to be rare). Priceless contracts minimize reliance on oracles, making contracts on UMA less vulnerable to attacks. 
+
+Priceless contracts are designed with mechanisms to incentivize people who mint synthetic tokens (called token sponsors) to ensure that their positions are backed with the appropriate amount of collateral. Taking out a position involves minting a synthetic token, which can be repaid to close the position and return the collateral. Positions are assumed to be solvent unless they are identified as being under collateralized. It is the responsibility of token sponsors to ensure that their positions are always backed by the required amount of collateral.
+
+A key mechanism to ensure a position is properly collateralized is a liquidations and disputes process that rewards the liquidation of positions that are under collateralized. Anyone can initiate a liquidation by staking a liquidator bond and referencing their own off-chain price feeds to determine what the price of the asset is. The liquidation will pend for 2 hours until the liquidation liveness period ends to provide the opportunity for a Disputer to dispute the liquidation (if needed). Most liquidations and disputes are initiated automatically by bots monitoring contracts on UMA. 
 
 
 #### Additional Resources
