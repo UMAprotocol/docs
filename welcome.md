@@ -9,7 +9,8 @@ UMA stands for "Universal Market Access"
 
 UMA's mission is to make financial markets universally fair and accessible.
 
-UMA is driven by a shared belief that financial markets should be universally accessible - unrestrained by censorship, pre-existing financial and social capital, or beliefs and values. The economic freedom created by open markets enables everyone equal access and footing to pursue prosperity and build their financial independence.  Universal access to financial markets is a pre-requisite to a free, open and fair financial system. 
+UMA is driven by a shared belief that financial markets should be universally accessible - unrestrained by censorship, pre-existing financial and social capital, or beliefs and values. The economic freedom created by open markets enables everyone equal access and footing to pursue prosperity and build their financial independence. Universal access to financial markets is a pre-requisite to a free, open and fair financial system. 
+
 
 UMA's goal is to enable anyone to attain or transfer any form of risk seamlessly and securely through UMA protocol thus empowering everyone to participate in a universally accessible financial system.
 
