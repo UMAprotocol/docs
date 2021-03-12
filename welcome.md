@@ -27,7 +27,8 @@ These components enable the creation of fast, efficient, and secure synthetic as
 
 **For Developers**
 
-If you are a developer interested in building with UMA Protocol, view [this](https://docs.umaproject.org/synthetic-tokens/what-are-synthetic-assets) explainer of how UMA's priceless synthetic tokens work and to learn more about UMA's expiring synthetic tokens.
+If you are a developer interested in building with UMA Protocol, view [this](https://docs.umaproject.org/synthetic-tokens/what-are-synthetic-assets) explainer of how UMA's priceless synthetic tokens work.
+
 
 Additionally, the [development guide](https://docs.umaproject.org/build-walkthrough/build-process) to learn how to launch your own expiring synthetic token on UMA.
 
