@@ -7,7 +7,6 @@ UMA stands for Universal Market Access. UMA's mission is to make financial marke
 
 UMA's goal is to enable anyone to attain or transfer any form of risk seamlessly and securely through UMA protocol to empower everyone to participate in a universally accessible financial system.
 
-
 ## What is UMA?
 
 UMA is open-source infrastructure for deploying and enforcing synthetic assets on Ethereum. UMA enables developers to quickly and easily build synthetic tokens that track the price of anything! View [here](synthetic-tokens/what-are-synthetic-assets.md) to learn more about synthetic tokens!
