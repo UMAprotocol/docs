@@ -4,6 +4,12 @@ title: How UMA solves the Oracle Problem
 sidebar_label: Solving the oracle problem
 ---
 
+## Economic Guarantees
+
+Despite a large body of existing research into oracle system design, current oracle solutions are missing one key feature: an economic guarantee around the cost of corrupting the oracle. 
+
+Economic guarantees are critical for the development of useful smart contracts, particularly in decentralized finance (DeFi) applications. UMA’s oracle system guarantees the economic security of a smart contract and oracle system in a fully decentralized and permissionless blockchain setting. 
+
 The DVM embraces the fact that any on-chain oracle can be corrupted — for a price.
 Because there is no "rule of law" on blockchains outside of economic incentives, UMA's DVM relies on a system of economic incentives to ensure that there is no profitable way to corrupt the DVM.
 
