@@ -3,7 +3,7 @@ title: Welcome to UMA
 sidebar_label: Welcome to UMA
 slug: /
 ---
-UMA stands for Universal Market Access and has a mission is to make financial markets universally fair and accessible.
+UMA stands for Universal Market Access. UMA's mission is to make financial markets universally fair and accessible.
 
 UMA is driven by a shared belief that financial markets should be free, open and fair. The economic freedom created by open market access enables everyone equal access to pursue prosperity and build financial independence.  
 
