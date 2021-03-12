@@ -49,13 +49,13 @@ git clone https://github.com/UMAprotocol/launch-emp.git
 
 ## Install System Dependencies and Packages
 
-To use this repository, you will need to install [Node.js v14](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/). We recommend using `nvm` to manage node versions.
+To use this repository, you will need to install [Node.js v12](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/). We recommend using `nvm` to manage node versions.
 
 Note: these additional dependencies are required -- you may or may not have them on your system already:
 - `libudev`
 - `libusb`
   
-Example ubuntu installation command for additional deps:
+These dependencies are installed on MacOSX by installing the XCode Developer Tools. For Linux, the example ubuntu installation command for additional deps is
 
 ```bash
 sudo apt-get update && sudo apt-get install -y libudev-dev libusb-1.0-0-dev
@@ -77,7 +77,7 @@ Please note the following important parameterization guidance.
 - `expirationTimestamp` should be the exact Unix timestamp that your contract should expire at. It is recommended that you set this to 10:00 pm UTC on your desired expiry day. 
 - `collateralAddress` lists the token address of an approved collateral currency on the network you are trying to deploy to. As an example, deploying a contract collateralized by WETH to Kovan should use the Kovan WETH address `0xd0a1e359811322d97991e03f863a0c30c2cf029c`.
 - `priceFeedIdentifier` matches the exact name of the approved price identifier that you would like to use.
-- `collateralRequirement` is not less than "1.2" for volatile assets, and never less than "1.05".
+- `collateralRequirement` should always be at or higher than `1.25`.
 - `minSponsorTokens` should be targeted to approximately $100 of value at your synthetic token's expected price. If your synthetic token is expected to be worth $1, `minSponsorTokens` should be `{ rawValue: toWei("100") }`.
 - `liquidationLiveness` and `withdrawalLiveness` should almost always be at least `7200` seconds.
 - `excessTokenBeneficiary` should be set to the UMA contract store by default. `0x41AF40Eb92Bec4dD8DA77103597838b3dBBD3B6f` for Kovan and `0x54f44eA3D2e7aA0ac089c4d8F7C93C27844057BF` for Mainnet.
@@ -101,13 +101,13 @@ wss://mainnet.infura.io/ws/v3/{projectId}
 From within the `launch-emp` directory, start ganache.
 
 ```bash
-yarn ganache-fork your.node.url.io
+yarn ganache-fork YOUR_NODE_URL
 ```
 
 In a separate terminal, run the deployment script (it defaults to using localhost:8545 as the ETH node, which is desired in this case). Note: mnemonic is optional here -- without it, ganache will use its default pre-loaded account.
 
 ```bash
-node index.js --gasprice 50 --mnemonic "your mnemonic (12 word seed phrase)"
+node index.js --gasprice 50 --mnemonic "your mnemonic (12 word seed phrase)" --priceFeedIdentifier USDETH --collateralAddress "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2" --expirationTimestamp "1643678287" --syntheticName "Yield Dollar [WETH Jan 2022]" --syntheticSymbol "YD-ETH-JAN22" --minSponsorTokens "100"
 ```
 
 Now you should be able to use localhost:8545 to interact with a forked version of mainnet (or kovan) where your contract is deployed.
@@ -120,13 +120,13 @@ First verify that your contract parameters within the script match the type of d
 - `collateralRequirement` is not less than "1.2" for volatile assets, and never less than "1.05".
 - `collateralAddress` lists the token address of an approved collateral currency on the network you are trying to deploy to.
 
-Before deploying, please note that the script will deploy to the network that your node URL is for. If using Infura for a Kovan deployment, `your.node.url.io` will follow this format:
+Before deploying, please note that the script will deploy to the network that your node URL is for. If using Infura for a Kovan deployment, `YOUR_NODE_URL` will follow this format:
 
 ```bash
 wss://kovan.infura.io/ws/v3/{projectId}
 ```
 
-If using Infura for a mainnet fork, `your.node.url.io` will follow this format:
+If using Infura for a mainnet fork, `YOUR_NODE_URL` will follow this format:
 
 ```bash
 wss://mainnet.infura.io/ws/v3/{projectId}
@@ -137,7 +137,7 @@ You should also verify that you have ETH for the network you are trying to deplo
 You can now run the deployment script. From within the `launch-emp` directory, run:
 
 ```bash
-node index.js --gasprice 50 --url your.node.url.io --mnemonic "your mnemonic (12 word seed phrase)"
+node index.js --gasprice 50 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --priceFeedIdentifier USDETH --collateralAddress "0xd0a1e359811322d97991e03f863a0c30c2cf029c" --expirationTimestamp "1643678287" --syntheticName "Yield Dollar [WETH Jan 2022]" --syntheticSymbol "YD-ETH-JAN22" --minSponsorTokens "100"
 ```
 
 Once deployed, the script will list the address of your newly deployed EMP. A successful output will look like this:
