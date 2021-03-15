@@ -3,6 +3,7 @@ title: Interviews, Podcasts, and Press
 sidebar_label: Interviews, Podcasts, and Press
 ---
 
+- Mar 9, 2021: [DEFI TIMES - Bitcoin, DeFi & NFT News](https://twitter.com/defitimes/status/1369334883382886414?s=20)
 - Feb 18, 2021: [DeFi Club AMA](https://twitter.com/_TomHoward/status/1362387273161969668?s=20)
 - Feb 2, 2021: [UMA audit - Phase 4](https://blog.openzeppelin.com/uma-audit-phase-4/)
 - Dec 4, 2020: [DeFi Hack Season Is Upon US](https://mbroome02.medium.com/defi-hack-season-is-upon-us-c1ed807656d8)
