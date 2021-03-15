@@ -8,7 +8,7 @@ sidebar_label: Interviews, Podcasts, and Press
 - Feb 24, 2021: [Bankless: AMA with Hart Lambur, Co-Founder of UMA Protocol](https://www.youtube.com/watch?v=__f0CrAIIgE)
 - Feb 19, 2021: [UMA Improvement Proposals (UMIPs) & Seeing the Future](https://medium.com/opendao/uma-improvement-proposals-umips-seeing-the-future-3ae09deeefb3)
 - Feb 18, 2021: [DeFi Club AMA](https://www.youtube.com/watch?v=kMkNKxcreaU)
-- Feb 17, 2021: [Bitwise Launches World’s First Decentralized Finance (“DeFi”) Crypto Index Fund](
+- Feb 17, 2021: [Bitwise Launches World’s First Decentralized Finance (“DeFi”) Crypto Index Fund](https://www.bitwiseinvestments.com/resources/press-releases/bitwise-launches-worlds-first-decentralized-finance-defi-crypto-index-fund)
 - Feb 2, 2021: [UMA audit - Phase 4](https://blog.openzeppelin.com/uma-audit-phase-4/)
 - Dec 4, 2020: [DeFi Hack Season Is Upon US](https://mbroome02.medium.com/defi-hack-season-is-upon-us-c1ed807656d8)
 - Nov 25, 2020: ["Exodus Wallet", What is UMA crypto?](https://www.youtube.com/watch?v=so2LDOgVSqY&feature=youtu.be)
