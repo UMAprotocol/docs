@@ -3,8 +3,6 @@ title: UMA's Oracle System
 sidebar_label: Oracle System
 ---
 
-## UMA's Oracle System
-
 UMA's oracle system is comprised of two core components: 
 
 1. Optimistic Oracle 
