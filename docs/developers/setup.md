@@ -31,7 +31,7 @@ If everything worked, we should see the line "> Compiled successfully using:" in
 Ganache-CLI was already installed via `yarn` and now we will use it to run a test-chain with this command:
 
 ```bash
-npx ganache-cli -p 9545 -e 1000000 -l 10000000
+yarn ganache-cli -p 9545 -e 1000000 -l 10000000
 ```
 
 Here, we are running Ganache:
