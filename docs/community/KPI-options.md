@@ -2,42 +2,29 @@
 title: KPI Options
 sidebar_label: KPI Options
 ---
-## KPI Option Overview
 
-Key Performance Indicator (KPI) Options are way for your protocol to encourage your community to participate in its growth by creating aligned incentives, where your community benefits from achieving your performance targets.
+Key Performance Indicator (KPI) options are synthetic tokens that will pay out more rewards if a project’s KPI reaches predetermined targets before a given expiry date. Every KPI option holder has an incentive to improve that KPI because their option will be worth more. This is intended to align individual token holder interests with the collective interests of the protocol.
 
-The aligned incentive means that your community's assistance in helping you reach your goals is rewarded and by working together all community members benefit by your protocol's growth.
+Using UMA’s [Expiring Multi Party](/synthetic-tokens/what-are-synthetic-assets#the-expiringmultiparty-emp-contract-template) (EMP) contract template and [Optimistic Oracle](/oracle/econ-architecture), any project can create their own KPI Option tokens. These can be backed by any approved ERC-20 token and can be valued against any KPI that a project wants to improve! 
 
-### What are KPI options? 
+## Getting Started
 
-Using UMA’s Expiring Multi Party (EMP) contract template, any project can create an incentive mechanism which offers rewards to their targeted community in exchange for the community’s support in helping them achieve their Key Performance Metrics. 
+The process to launch a KPI options contract on UMA is surprisingly simple. No on-chain price feed or smart contract development is ever required. This is the typical process that you will need to follow to launch your own.
 
-At a high-level, KPI options are synthetic ERC20 tokens that can be redeemed, but only if the project hits it’s predetermined KPI targets before expiry. These targets are up to each project. TVL Options for DeFi protocols, Volume Options for exchange protocols or DAU Options for dapps
+1. You should submit two [UMA Improvement Proposals](/uma-tokenholders/umips) (UMIPs). The first should add your governance token as a supported collateral type. The second should define a methodology for how the UMA Optimistic Oracle should price your KPI options.
+2. Once these proposals are approved through UMA governance, you can launch your expiring KPI Options contract! This can be done in a few minutes by following the [EMP deployment tutorial](/developers/emp-deployment).
+3. After your expiring contract has been launched, you will be able to mint KPI tokens by locking collateral in the contract. Once minted, you can airdrop these KPI tokens in whatever manner and to whoever you wish.
+4. Upon contract expiry, the KPI Options will be redeemable for an amount determined by your KPI’s progress. Alternatively, your project could decide to “roll over” into new KPI options to attempt to compound your KPI’s growth.
 
-Every community member airdropped these KPI options, becoming vested in helping the project succeed on its Key Metrics, as the token grows more valuable as the target approaches.  This provides powerful incentive alignment between the protocol and its community. 
+## Why UMA?
 
-### Launch your own KPI option
+- UMA has a flexible expiring contract template which allows anyone to launch a large variety of expiring contracts with little to no development work.
+- Our unique [oracle solution](/getting-started/oracle) allows for an optimistic and economically incentivized decentralized solution to an otherwise, corruptible centralized oracle. It also offers a large amount of flexibility, where not all prices need to be programmatically retrieved!
+- You get paid to build on UMA! As part of UMA’s developer mining program, you will be paid $UMA rewards for any value locked in your KPI Options contract. This could be passed on as extra rewards to airdrop recipients, or used to fund future development work.
 
-The first step is to submit an UMA Improvement Proposal [(UMIP)](https://docs.umaproject.org/uma-tokenholders/umips) to add your token to our list of accepted collateral currencies (if it isn’t already). You will also need to submit a proposal to define how to price your option based off of your chosen KPI.
+## Next Steps & Resources 
 
-Once the necessary UMIPs have been passed, your project will be able to deploy an expiring KPI options contract. This process is extremely simple, and requires no contract development work or experience! [Here](https://docs.umaproject.org/developers/emp-deployment) is a tutorial to walk you through the contract deployment process. After deployment, you will be able to lock your collateral in the contract and mint your KPI Option tokens. 
-
-The KPI options tokens can then be airdropped to community members. This can be current token holders or others, but presumably you’ll want them to be enthusiastic about helping you achieve your targets. 
-
-On contract expiry, the synthetics will be redeemable according to the KPI’s progress. Alternatively, a project could decide to create a new KPI option to “roll over” into, compounding their own success and growth.
-
-### Create options using UMA
-
-UMA has a flexible [expiring contract template](https://docs.umaproject.org/synthetic-tokens/what-are-synthetic-assets#the-expiringmultiparty-emp-contract-template) which allows for freedom to create a variety of expiring contracts, simply by adjusting contract deployment parameters (i.e. collateral currency, expiry date, price tracked etc.).
-
-The project has the freedom to choose high value airdrop recipients, including their ideal community members, effective helpers or contributors to their ecosystem.
-
-Our unique [DVM solution](https://docs.umaproject.org/synthetic-tokens/glossary#dvm) allows for an optimistic and economically incentivized decentralized solution to an otherwise, corruptible centralized oracle. 
-
-
-### Next Steps & Resources 
-Read this [medium article](https://medium.com/uma-project/uma-kpi-options-and-airdrop-bae86be16ce4) which explains UMA’s KPI Options. 
-
-Watch [this video](https://www.youtube.com/watch?v=U1xNkCbuiPA&amp%3Bfeature=youtu.be) to gain some additional insight as well.
-
-Reach out to us along the way if you have any questions. We’re available on Discord or at hello@umaproject.org  
+- Read this [medium article](https://medium.com/uma-project/uma-kpi-options-and-airdrop-bae86be16ce4) which explains UMA’s TVL Options experiment. 
+- Watch this KPI Options explainer [video](https://www.youtube.com/watch?v=U1xNkCbuiPA&amp%3Bfeature=youtu.be).
+- Start exploring which performance metrics you would like your community to work towards.
+- Reach out to us along the way if you have any questions. We’re available on Discord or at hello@umaproject.org  
