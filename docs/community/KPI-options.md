@@ -24,7 +24,7 @@ The process to launch a KPI options contract on UMA is surprisingly simple. No o
 
 ## Next Steps & Resources 
 
-- Read this [medium article](https://medium.com/uma-project/uma-kpi-options-and-airdrop-bae86be16ce4) which explains UMA’s KPI Options. 
-- Watch [this video](https://www.youtube.com/watch?v=U1xNkCbuiPA&amp%3Bfeature=youtu.be) to gain some additional insight as well.
-- Check out our developer quickstart tutorial to learn how to launch your own expiring contract.
+- Read this [medium article](https://medium.com/uma-project/uma-kpi-options-and-airdrop-bae86be16ce4) which explains UMA’s TVL Options experiment. 
+- Watch this KPI Options explainer [video](https://www.youtube.com/watch?v=U1xNkCbuiPA&amp%3Bfeature=youtu.be).
+- Start exploring which performance metrics you would like your community to work towards.
 - Reach out to us along the way if you have any questions. We’re available on Discord or at hello@umaproject.org  
