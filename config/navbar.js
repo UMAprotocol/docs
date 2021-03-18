@@ -66,5 +66,10 @@ module.exports = {
       className: "header-discord-link",
       position: "right",
     },
+    {
+      href: "https://discourse.umaproject.org/",
+      className: "header-discourse-link",
+      position: "right",
+    },
   ],
 };
