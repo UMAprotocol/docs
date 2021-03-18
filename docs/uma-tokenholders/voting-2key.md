@@ -45,7 +45,7 @@ Only your cold wallet will be allowed to withdraw tokens from this smart contrac
 
 The following steps help you verify that your two-key contract was deployed correctly and check that the permissions are held by the correct address.
 
-- Copy the 2-key smart contract address from the voter dApp and view it on Etherscan (etherscan.io/address/YOUR_TWO_KEY_ADDRESS#readContract)
+- Copy the 2-key smart contract address (i.e., DesignatedVoting Escrow Account) from the voter dApp and view it on Etherscan (etherscan.io/address/YOUR_TWO_KEY_ADDRESS#readContract)
 - Input roleID `0` in function `1. getMember`, and click query. Check that the address output matches your cold wallet address.
 - Input roleID `1` in function `1. getMember`, and click query. Check that the address output matches your hot wallet address.
 
@@ -54,7 +54,7 @@ This is recommended before transfering UMA tokens into the two-key contract.
 
 ### Transfer
 
-Send UMA tokens to the two-key contract address.
+Send UMA tokens to the two-key contract address (this is known as the DesignatedVoting Escrow Account).
 You can immediately start voting with your hot keys at the voter dApp.
 
 ### Withdraw
