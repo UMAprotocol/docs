@@ -41,7 +41,7 @@ Note that in this example, `priceFeedIdentifier`, `syntheticName`, and `syntheti
 
 <!-- prettier-ignore -->
 ```js
-const constructorParams = { expirationTimestamp: "1706780800", collateralAddress: TestnetERC20.address, priceFeedIdentifier: web3.utils.padRight(web3.utils.fromAscii("UMATEST")), syntheticName: "Test UMA Token", syntheticSymbol: "UMATEST", collateralRequirement: { rawValue: web3.utils.toWei("1.5") }, disputeBondPercentage: { rawValue: web3.utils.toWei("0.1") }, sponsorDisputeRewardPercentage: { rawValue: web3.utils.toWei("0.1") }, disputerDisputeRewardPercentage: { rawValue: web3.utils.toWei("0.1") }, minSponsorTokens: { rawValue: '100000000000000' }, timerAddress: Timer.address, withdrawalLiveness: 7200, liquidationLiveness: 7200, financialProductLibraryAddress: '0x0000000000000000000000000000000000000000'}
+const constructorParams = { expirationTimestamp: "1706780800", collateralAddress: TestnetERC20.address, priceFeedIdentifier: web3.utils.padRight(web3.utils.utf8ToHex("UMATEST"), 64), syntheticName: "Test UMA Token", syntheticSymbol: "UMATEST", collateralRequirement: { rawValue: web3.utils.toWei("1.5") }, disputeBondPercentage: { rawValue: web3.utils.toWei("0.1") }, sponsorDisputeRewardPercentage: { rawValue: web3.utils.toWei("0.1") }, disputerDisputeRewardPercentage: { rawValue: web3.utils.toWei("0.1") }, minSponsorTokens: { rawValue: '100000000000000' }, timerAddress: Timer.address, withdrawalLiveness: 7200, liquidationLiveness: 7200, financialProductLibraryAddress: '0x0000000000000000000000000000000000000000'}
 ```
 
 5. Before the contract for the synthetic tokens can be created, the price identifier for the synthetic tokens must be registered with `IdentifierWhitelist`.
