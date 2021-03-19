@@ -22,7 +22,7 @@ These ideas are still "up for grabs" but are by no means the limits of what a de
 
 ## Getting started
 
-The ideas above, along with any other financial contract idea a developer can think of, are still "up for grabs". To get started, a developer should settle on an idea to build, test the contract idea by launching a contract with UMA's Kovan contracts. 
+The ideas above, along with any other financial contract idea a developer can think of, are still "up for grabs." To get started, a developer should settle on an idea to build, test the contract idea by launching a contract with UMA's Kovan contracts. 
 
 Post an idea in UMA's [Discourse](https://discourse.umaproject.org/c/ideas-bank/23) ideas bank, create a discussion around the idea and if it is a viable product, we will include it in developer mining once launched on mainet.
 
