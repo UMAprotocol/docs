@@ -7,7 +7,6 @@ Before receiving rewards, a new developer mining participant must meet certain c
 
 This is the high-level developer mining onboarding process that you will need to follow.
 
-- If you have not done so already, apply to the developer mining [whitelist](https://docs.google.com/forms/d/e/1FAIpQLSdPWOm4pNyqgDhXXr8wblWuSXXGslsGiJaFzrSNjN2RcG2RTQ/viewform).
 - Deploy liquidation and dispute bots
 - Ensure the availability of your synthetic token's price
 - Send deployment information to the UMA core team
