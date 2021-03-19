@@ -22,13 +22,18 @@ These ideas are still "up for grabs" but are by no means the limits of what a de
 
 ## Getting started
 
-The ideas above, along with any other financial contract idea a developer can think of, are still "up for grabs". To get started, a developer should settle on an idea to build, test the contract idea by launching a contract with UMA's Kovan contracts and then apply to the developer mining [whitelist](https://docs.google.com/forms/d/e/1FAIpQLSdPWOm4pNyqgDhXXr8wblWuSXXGslsGiJaFzrSNjN2RcG2RTQ/viewform). The whitelist is a lightweight process and is primarily intended to discourage non-productive products, such as ones that might be designed to soak up rewards but with no actual utility or transfer of risk.
+The ideas above, along with any other financial contract idea a developer can think of, are still "up for grabs". To get started, a developer should settle on an idea to build, test the contract idea by launching a contract with UMA's Kovan contracts. 
+
+Post an idea in UMA's [Discourse](https://discourse.umaproject.org/c/ideas-bank/23) ideas bank, create a discussion around the idea and if it is a viable product, we will include it in developer mining once launched on mainet.
 
 Whitelisted developer mining participants include:
 
 - [PerlinX](https://app.perlinx.finance/pools)
 - [youmychicfila](https://mario.cash/)
 - [uGAS](https://degenerative.finance/)
+- [uSTONKS](https://degenerative.finance/)
+- [Domination Finance](https://domination.finance/)
+
 
 ## Additional resources
 
