@@ -30,6 +30,10 @@ sidebar_label: Approved Collateral Currencies
 |UNI-ETH| 0.55 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md)
 |UMA-ETH| 0.8 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md)
 |ANT| 120 | [UMIP-60](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-60.md)
-|Total| No of Approved collateral currencies | [24](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
+|INDEX| 24 | [UMIP-63](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-63.md)
+|DPI| 1 | [UMIP-63] (https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-63.md)
+|SUSHI| 25 | [UMIP-67](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-67.md)
+|xSUSHI| 22 | [UMIP-67](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-67.md)
+|Total| No of Approved collateral currencies | [28](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
