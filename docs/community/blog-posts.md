@@ -10,6 +10,7 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Mar 16, 2021: [UMA Call Options Now Live: Building Call Options on UMA (Part 2)](https://medium.com/uma-project/uma-call-options-now-live-da8dcf080319)
 - Mar 15, 2021: [In Case You Missed It #5](https://medium.com/uma-project/in-case-you-missed-it-5-6fa2222d9d06)
 - Mar 6, 2021: [In Case You Missed It #4](https://medium.com/uma-project/icymi-4-daff230fb544)
 - Mar 5, 2021: [UMA Airdrop Recipient Addresses](https://medium.com/uma-project/uma-airdrop-recipient-addresses-a9ba41dfadc2)
