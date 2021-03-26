@@ -52,13 +52,13 @@ module.exports = {
       position: "left",
       activeBaseRegex: "(users|community)" },
     {
+      href: "https://umaproject.org/",
+      className: "header-website-link",
+      position: "right",
+    },  
+    {
       href: "https://github.com/UMAprotocol/protocol",
       className: "header-github-link",
-      position: "right",
-    },
-    {
-      href: "https://twitter.com/UMAprotocol",
-      className: "header-twitter-link",
       position: "right",
     },
     {
