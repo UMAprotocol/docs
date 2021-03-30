@@ -10,6 +10,9 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Mar 28, 2021: [In Case You Missed It #7](https://medium.com/uma-project/icymi-7-f2a0da92cd4f)
+- Mar 24, 2021: [Call Options on UMA — The 2x4 Lego](https://medium.com/uma-project/call-options-on-uma-the-2x4-lego-3b63e0d489f3)
+- Mar 22, 2021: [In Case You Missed It #6](https://medium.com/uma-project/in-case-you-missed-it-6-42c0385e396)
 - Mar 16, 2021: [UMA Call Options Now Live: Building Call Options on UMA (Part 2)](https://medium.com/uma-project/uma-call-options-now-live-da8dcf080319)
 - Mar 15, 2021: [In Case You Missed It #5](https://medium.com/uma-project/in-case-you-missed-it-5-6fa2222d9d06)
 - Mar 6, 2021: [In Case You Missed It #4](https://medium.com/uma-project/icymi-4-daff230fb544)
