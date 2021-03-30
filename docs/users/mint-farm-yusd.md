@@ -1,20 +1,19 @@
 ---
-title: Mint and Farm YD-ETH-MAR21
-sidebar_label: Mint and Farm YD-ETH-MAR21
+title: Mint and Farm YD-ETH-JUN21
+sidebar_label: Mint and Farm YD-ETH-JUN21
 ---
 
-This tutorial will show you how to mint `YD-ETH-MAR21` and farm them on a Balancer pool
+This tutorial will show you how to mint `YD-ETH-JUN21` and farm them on a Balancer pool
 to get `BAL` and also `UMA` tokens via the UMA liquidity mining
 program. It's a simple two-step process and should take you no longer than a few
 minutes (subject to network congestion).
 
 ### Useful Links
 
-- [EMP Tools link for `YD-ETH-MAR21`](https://tools.umaproject.org/?address=0xE4256C47a3b27a969F25de8BEf44eCA5F2552bD5)
-- [OpenDAO Interface link for `YD-ETH-MAR21`](https://ydollar.opendao.io/?address=0xE4256C47a3b27a969F25de8BEf44eCA5F2552bD5)
-- [Balancer Pool for `YD-ETH-MAR21`](https://pools.balancer.exchange/#/pool/0x5e065d534d1daaf9e6222afa1d09e7dac6cbd0f7/)
+- [EMP Tools link for `YD-ETH-JUN21`](https://tools.umaproject.org/?address=0x0f4e2a456aAfc0068a0718E3107B88d2e8f2bfEF)
+- [Balancer Pool for `YD-ETH-JUN21`](https://pools.balancer.exchange/#/pool/0xf08241998394d61dc0bbbac767b0b8242549761f/)
 
-## Step 1: Mint YD-ETH-MAR21
+## Step 1: Mint YD-ETH-JUN21
 
 You can now mint yield dollar tokens from two different interfaces.  
 
@@ -28,7 +27,7 @@ top right corner to connect your MetaMask wallet to the dapp.
 
 ![connect](/docs/users/emp_connect.png)
 
-Then, select the `YD-ETH-MAR21` contract from the dropdown immediately underneath the
+Then, select the `YD-ETH-JUN21` contract from the dropdown immediately underneath the
 header (above the tabs).
 
 ![select EMP](/docs/users/ydeth_emp-select.png)
@@ -45,17 +44,17 @@ At this point, make sure you read the text and confirm that:
 
 1. You will be minting at a collateralization ratio above the global
    collateralization ratio (GCR);
-2. You will be minting the minimum required number of tokens (100 for `YD-ETH-MAR21`),
+2. You will be minting the minimum required number of tokens (100 for `YD-ETH-JUN21`),
    and;
 3. You will keep your position collateralized above the minimum required
    collateralization ratio (CR) or else risk getting liquidated (the required CR
-   is 125% for `YD-ETH-MAR21`).
+   is 125% for `YD-ETH-JUN21`).
 
 If you fully understand the above, and have decided on an appropriate amount of
 (1) collateral to supply and (2) tokens to mint, check to make sure you have
 enough collateral for minting.
 
-In the case of `YD-ETH-MAR21`, the collateral you need is [WETH](https://weth.io/),
+In the case of `YD-ETH-JUN21`, the collateral you need is [WETH](https://weth.io/),
 which is just ETH with an ERC20 interface. If you do not have a sufficient
 balance of WETH, you can easily convert your ETH to WETH via the “Wrap/Unwrap
 WETH” tab.
@@ -75,7 +74,7 @@ In the second field, fill in the number of tokens you want to mint.
 
 If these values are appropriate, you can then click the "Create" button which
 will trigger a transaction with MetaMask. Once that is confirmed and the
-transaction is mined, you shall have your `YD-ETH-MAR21` tokens!
+transaction is mined, you shall have your `YD-ETH-JUN21` tokens!
 
 ## Minting using OpenDAO's Interface 
 
@@ -84,7 +83,7 @@ top right corner to connect your MetaMask wallet to the dapp.
 
 ![connect](/docs/users/ydeth_opendao-connect.png)
 
-Then click `select Btc or Eth` and select the `ETH(YD-ETH-MAR21)` contract from the dropdown.
+Then click `select Btc or Eth` and select the `ETH(YD-ETH-JUN21)` contract from the dropdown.
 
 ![select EMP](/docs/users/ydeth_opendao-select.png)
 
@@ -96,17 +95,17 @@ At this point, make sure you confirm that you know that:
 
 1. You will be minting at a collateralization ratio above the global
    collateralization ratio (GCR);
-2. You will be minting the minimum required number of tokens (100 for `YD-ETH-MAR21`),
+2. You will be minting the minimum required number of tokens (100 for `YD-ETH-JUN21`),
    and;
 3. You will keep your position collateralized above the minimum required
    collateralization ratio (CR) or else risk getting liquidated (the required CR
-   is 125% for `YD-ETH-MAR21`).
+   is 125% for `YD-ETH-JUN21`).
 
 If you fully understand the above, and have decided on an appropriate amount of
 (1) collateral to supply and (2) tokens to mint, check to make sure you have
 enough collateral for minting.
 
-In the case of `YD-ETH-MAR21`, the collateral you need is [WETH](https://weth.io/),
+In the case of `YD-ETH-JUN21`, the collateral you need is [WETH](https://weth.io/),
 which is just ETH with an ERC20 interface. If you do not have a sufficient
 balance of WETH, you can easily convert your ETH to WETH via the “Convert your `ETH` into
 WETH” section.
@@ -123,21 +122,21 @@ In the second field, fill in the number of tokens you want to mint.
 
 If these values are appropriate, you can then click the "Create" button which
 will trigger a transaction with MetaMask. Once that is confirmed and the
-transaction is mined, you shall have your `YD-ETH-MAR21` tokens!
+transaction is mined, you shall have your `YD-ETH-JUN21` tokens!
 
 ## Step 2: Farm on Balancer
 
 :::danger
 
-Supplying _only_ `USDC` to the pool will result in auto-purchasing `YD-ETH-MAR21` at the current price. This means you are market-buying `YD-ETH-MAR21`, so be mindful of the trading price of `YD-ETH-MAR21` before doing this.
+Supplying _only_ `USDC` to the pool will result in auto-purchasing `YD-ETH-JUN21` at the current price. This means you are market-buying `YD-ETH-JUN21`, so be mindful of the trading price of `YD-ETH-JUN21` before doing this.
 
 :::
 
-By supplying liquidity to the `YD-ETH-MAR21` Balancer pool, you have the
+By supplying liquidity to the `YD-ETH-JUN21` Balancer pool, you have the
 opportunity to earn both `BAL` and `UMA` tokens. 
 
-Head to the `YD-ETH-MAR21`
-[pool](https://pools.balancer.exchange/#/pool/0x5e065d534d1daaf9e6222afa1d09e7dac6cbd0f7/)
+Head to the `YD-ETH-JUN21`
+[pool](https://pools.balancer.exchange/#/pool/0xf08241998394d61dc0bbbac767b0b8242549761f/)
 and click on the "Add Liquidity" button. You’ll be asked to Setup Proxy if you
 haven’t already
 
@@ -156,7 +155,7 @@ Under the "All Pool Assets" tab, you should see something like this:
 
 As with any other ERC20 token, you'll have to "unlock" (i.e. grant approval) for
 the dapp to transfer tokens on your behalf. Once you have done that, you can
-deposit `YD-ETH-MAR21` and `USDC` into the Balancer pool in exchange for some Balancer
+deposit `YD-ETH-JUN21` and `USDC` into the Balancer pool in exchange for some Balancer
 Pool Tokens (i.e. `BPT`) specific to this pool.
 
 This enables you to passively gain `BAL` as well as `UMA`. If you have any questions regarding
