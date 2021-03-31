@@ -62,11 +62,11 @@ html[data-theme=dark] .header-github-link:before {
   width: 35px;
   height: 35px;
   display: flex;
-  background: url('/static/img/Black.svg') no-repeat center center / contain;
+  background: url('/img/Black.svg') no-repeat center center / contain;
 }
 
 html[data-theme=dark] .header-web-link:before {
-  background: url('/static/img/White.svg') no-repeat center center / contain;
+  background: url('/img/White.svg') no-repeat center center / contain;
 }
 
 .header-twitter-link:before {
