@@ -3,7 +3,7 @@ title: Deploying an EMP Contract
 sidebar_label: Deploying an EMP Contract
 ---
 
-This tutorial will show you how to deploy an ExpiringMultiParty (EMP) contract by using the UMA `launch-emp` repository. By following these instructions, you will be able to launch a custom EMP on the Kovan testnet or Ethereum mainnet. The following tutorial is highly recommended for you to get familiar with the process. If you are familiar with process and understand how to correctly set parameters you can use a community made contract [deployer tool](https://syntheticbuilder.xyz/) to launch your EMP. 
+This tutorial will show you how to deploy an ExpiringMultiParty (EMP) contract by using the UMA `launch-emp` repository. By following these instructions, you will be able to launch a custom EMP on the Kovan testnet or Ethereum mainnet. The following tutorial is highly recommended for you to get familiar with the process. 
 
 This is the high-level EMP deployment process that you will need to follow.
 
@@ -146,6 +146,13 @@ Once deployed, the script will list the address of your newly deployed EMP. A su
 Simulating Deployment...
 Simulation successful. Expected Address: 0x44978157afE92c926619EBB54599bbc483eBe871
 ```
+
+### Alternative contract deployment tool
+
+As an alternative to deploying your contract manually, you can use a community made contract deployer. The [deployer tool](https://syntheticbuilder.xyz/) allows you to deploy the same EMP contracts as the above tutorial at the trade-off of being able to customize parameters. Contracts launched with this tool are still eligible for Developer Mining Rewards.
+
+Please note: this tool has successfully deployed contracts to mainnet and is community built and maintained. Use at own risk. 
+
 ## Post-Deployment
 
 After following this tutorial, you will have successfully deployed an EMP contract! You will need to navigate to your contract address on Etherscan and mint an initial position to set the [GCR](/synthetic-tokens/glossary#global-collateralization-ratio-gcr). This can be done by calling the `create(collateralAmount, numTokens)` function. [Here](/build-walkthrough/minting-etherscan) is a full walkthrough of minting tokens via Etherscan.
