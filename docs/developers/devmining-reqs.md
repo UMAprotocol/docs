@@ -32,7 +32,7 @@ To perform this process, each synthetic token must have an available price feed 
 
 ### Send deployment information to the UMA core team
 
-The final step required to be added to developer mining rewards is to alert a member of the UMA core team of your successful deployment.
+The final step required to be added to developer mining rewards is to alert a member of the UMA core team of your successful deployment. To do this, fill out the google form [here](https://docs.google.com/forms/d/e/1FAIpQLSfhrCopRz7nUSbBQZB75j8yGqnXbOzRW68Oe6-uFuNVSvqrOQ/viewform).
 
 This form will ask for a variety of information including:
 - Your deployed contract's address

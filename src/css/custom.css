@@ -59,14 +59,14 @@ html[data-theme=dark] .header-github-link:before {
 
 .header-web-link:before {
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   display: flex;
-  background: url('https://api.iconify.design/mdi:web.svg') no-repeat center center / contain;
+  background: url('/static/img/Black.svg') no-repeat center center / contain;
 }
 
 html[data-theme=dark] .header-web-link:before {
-  background: url('https://api.iconify.design/mdi:web.svg?color=white') no-repeat center center / contain;
+  background: url('/static/img/White.svg') no-repeat center center / contain;
 }
 
 .header-twitter-link:before {
