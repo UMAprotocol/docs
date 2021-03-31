@@ -52,6 +52,11 @@ module.exports = {
       position: "left",
       activeBaseRegex: "(users|community)" },
     {
+        href: "https://umaproject.org",
+        className: "header-web-link",
+        position: "right",
+    },
+    {
       href: "https://github.com/UMAprotocol/protocol",
       className: "header-github-link",
       position: "right",

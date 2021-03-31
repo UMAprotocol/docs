@@ -17,6 +17,11 @@ module.exports = {
         label: "Oracle (DVM)",
         items: ["oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface",  "oracle/known-issues"],
       },
+      {
+        type: "category",
+        label: "Featured Products",
+        items: ["products/KPI-options"],
+      },
       "synthetic-tokens/glossary"
     ],
     Developers: [
@@ -86,11 +91,6 @@ module.exports = {
       ],
     "Events & Press": [
       "community/community-overview",
-      {
-        type: "category",
-        label: "Community Growth",
-        items: [ "community/KPI-options",],
-      },
       {
         type: "category",
         label: "Events & Press",
