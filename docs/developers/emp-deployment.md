@@ -7,7 +7,7 @@ This tutorial will show you how to deploy an ExpiringMultiParty (EMP) contract b
 
 ## Alternative contract deployment tool
 
-As an alternative to deploying your contract manually, you can use a community made contract deployer. The [deployer tool](https://syntheticbuilder.xyz/) allows you to deploy the same EMP contracts as the above tutorial at the trade-off of being able to customize parameters. Contracts launched with this tool are still eligible for Developer Mining Rewards.
+As an alternative to deploying your contract manually, you can use a community made synthetic token builder. The [builder](https://syntheticbuilder.xyz/) allows you to deploy the same EMP contracts as the tutorial below. It offers an easier deployment process, but less options for customizing deployment parameters.
 
 Please note: this tool has been used to successfully deploy contracts to mainnet, but is community built and maintained. Please use at your own risk.
 
