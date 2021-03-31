@@ -3,7 +3,7 @@ title: Deploying an EMP Contract
 sidebar_label: Deploying an EMP Contract
 ---
 
-This tutorial will show you how to deploy an ExpiringMultiParty (EMP) contract by using the UMA `launch-emp` repository. By following these instructions, you will be able to launch a custom EMP on the Kovan testnet or Ethereum mainnet.
+This tutorial will show you how to deploy an ExpiringMultiParty (EMP) contract by using the UMA `launch-emp` repository. By following these instructions, you will be able to launch a custom EMP on the Kovan testnet or Ethereum mainnet. The following tutorial is highly recommended for you to get familiar with the process. If you are familiar with process and understand how to correctly set parameters you can use a community made contract [deployer tool](https://syntheticbuilder.xyz/) to launch your EMP. 
 
 This is the high-level EMP deployment process that you will need to follow.
 
