@@ -41,6 +41,6 @@ There are a number of reasons for call options in the traditional financial worl
 ## Additional Resources 
 
 - [Call Options Part 1](https://medium.com/uma-project/ulabs-building-call-options-on-uma-part-1-efd3188714c5)
-- [Call Options Par 2](https://medium.com/uma-project/uma-call-options-now-live-da8dcf080319)
+- [Call Options Part 2](https://medium.com/uma-project/uma-call-options-now-live-da8dcf080319)
 - [Call options the 2x4 lego block](https://medium.com/uma-project/call-options-on-uma-the-2x4-lego-3b63e0d489f3)
 - Reach out to us along the way if you have any questions. We’re available on Discord or at hello@umaproject.org
