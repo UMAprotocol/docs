@@ -3,8 +3,11 @@ title: Interviews, Podcasts, and Press
 sidebar_label: Interviews, Podcasts, and Press
 ---
 
+- Apr 5, 2021: [Blockzero labs: Understanding UMA as a Non-Developer](https://www.youtube.com/watch?v=vsf1HpYg2jI)
+- Apr 2, 2021: [The Giving Block Adds Support for UMA Donations](https://www.thegivingblock.com/post/the-giving-block-adds-support-for-uma-donations?utm_content=160681104&utm_medium=social&utm_source=twitter&hss_channel=tw-997232321328709632)
+- Apr 2, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=LlEbctAGtGY)
 - Mar 26, 2021: [Coinbase Eearn: Learn Universal Market Access.Earn UMA.](https://www.coinbase.com/earn/uma)
-- Mar 26, 2021: [TVL Vlog](https://www.youtube.com/watch?v=4ZtEkTCWMn4)
+- Mar 26, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=4ZtEkTCWMn4)
 - Mar 25, 2021: [DeFi-ing Gravity — UMA DeFi Accelerator Ready for Liftoff!](https://medium.com/bombx/defi-ing-gravity-uma-defi-accelerator-ready-for-liftoff-ae8697315fd0)
 - Mar 24, 2021: [Around the Block](https://twitter.com/blockzerolabs/status/1374395459028971539?s=20)
 - Mar 9, 2021: [DEFI TIMES - Bitcoin, DeFi & NFT News](https://twitter.com/defitimes/status/1369334883382886414?s=20)
