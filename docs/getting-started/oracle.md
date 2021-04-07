@@ -50,7 +50,7 @@ The Data Verification Mechanism (DVM) is the dispute resolution service for cont
 
 4. The DVM will aggregate votes from UMA tokenholders to determine the final price of the asset for a given timestamp. If the price returned by the DVM concludes the Disputer was correct, the Proposer or Liquidator (depending on where the dispute derived from) will lose the bond that was staked and the Disputer will be rewarded. If the DVM concludes the Proposer or Liquidator was correct the disputer will lose its dispute bond and the Liquidator or Proposer will be rewarded. 
 
-The DVM is powerful because it encompasses an element of human judgment to ensure contracts are securely and correctly managed when issues arise from volatile (and sometimes maniputable) markets. 
+The DVM is powerful because it encompasses an element of human judgment to ensure contracts are securely and correctly managed when issues arise from volatile (and sometimes manipulatable) markets. 
 
 UMA's oracle system is constructed with economic guarantees around the cost of corrupting the DVM to ensure it will cost more to corrupt the oracle (i.e., obtain 51% or more UMA tokens) than the amount someone could profit from corrupting the oracle (i.e. stealing funds within contracts on UMA). View [here](oracle/econ-architecture.md) for more details behind the economic guarantees provided by UMA's oracle system. 
 
