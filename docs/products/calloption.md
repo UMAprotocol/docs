@@ -2,7 +2,7 @@
 title: Call Options
 sidebar_label: Call Options
 ---
-A call options is a building block for the derivatives market. It gives the buyer the right but not the obligation to buy the asset at a specific price (strike) at a specific time. 
+A call option is a building block for the derivatives market. It gives the buyer the right but not the obligation to buy the asset at a specific price (strike) at a specific time. 
 
 This page will detail how to create your own call options and layout a few reasons why you would want to create call options.
 
