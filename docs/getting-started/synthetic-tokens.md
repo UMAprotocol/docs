@@ -3,7 +3,7 @@ title: Priceless DeFi Contracts
 sidebar_label: Priceless Contracts
 ---
 
-Decentralized oracle solutions today consist of API's that repeatedly submit price data on-chain to manage DeFi contracts. Solutions also have no way to dispute an incorrect price reported from an API. This makes contracts vulnerable to corruption, manipulation, flash loan attacks and ad-hoc market events.
+Decentralized oracle solutions today consist of API's that repeatedly submit price data on-chain to manage DeFi contracts. These solutions also have no way to dispute an incorrect price reported from an API. This makes contracts vulnerable to corruption, manipulation, flash loan attacks and ad-hoc market events.
 
 Priceless financial contracts are contracts that only require writing a price on-chain in the event of a dispute (which is designed to be rare). Priceless contracts minimize reliance on oracles, making contracts on UMA less vulnerable to attacks. 
 
