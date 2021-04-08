@@ -10,6 +10,9 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Apr 5, 2021: [SushiSwap x UMA: Announcing Call Options for xSUSHI: Building Call Options on UMA (Part 3)](https://medium.com/uma-project/sushiswap-x-uma-announcing-call-options-for-xsushi-4770b89f68dd)
+- Apr 4, 2021: [In Case You Missed It #8](https://medium.com/uma-project/icymi-8-38f2d3560239)
+- Mar 31, 2021: [The UMA KPI Options Airdrop is now claimable and the Super Uman campaign is live!](https://medium.com/uma-project/the-uma-kpi-options-airdrop-is-now-claimable-and-the-super-uman-campaign-is-live-7e9baa5c1669)
 - Mar 28, 2021: [In Case You Missed It #7](https://medium.com/uma-project/icymi-7-f2a0da92cd4f)
 - Mar 24, 2021: [Call Options on UMA — The 2x4 Lego](https://medium.com/uma-project/call-options-on-uma-the-2x4-lego-3b63e0d489f3)
 - Mar 22, 2021: [In Case You Missed It #6](https://medium.com/uma-project/in-case-you-missed-it-6-42c0385e396)
