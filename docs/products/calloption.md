@@ -20,7 +20,7 @@ If the price of the option was less than $2000 the option will expire worthless.
 
 ## Create your own options
 
-Using UMA's infrastructure a team can create a call option using our EMP contract template. These would allow a team to create European style options which are only redeemable at the time of expiry. 
+Using UMA's infrastructure, a team can create a covered call option using the UMA EMP contract template. These covered calls are European style options which are only redeemable at the time of expiry. 
 
 To create your own options you can make use of one of the currently approved [price identifiers](/uma-tokenholders/approved-price-identifiers.md) and [collateral types](uma-tokenholders/approved-collateral-currencies.md). 
 
