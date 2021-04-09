@@ -26,7 +26,7 @@ To create your own options you can make use of one of the currently approved [pr
 
 With the contracts being cash settled and the terms of the contract being constant throughout, the need to manage your position or run liquidation bots is not needed. 
 
-## Reasons to use call options
+## DeFi Call Option Use Cases
 
 There are a number of reasons for call options in the traditional financial world. Some of the reasons translate to the DeFi space as well as open new uses cases such as: 
 
