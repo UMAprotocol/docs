@@ -8,10 +8,9 @@ This page will detail how to create your own call options on UMA.
 
 ## How options work
 
-A trader buys a call option with a strike price of 2,000 USD for 0.05 ETH. Now he has the right to buy 1 ETH for 2,000 USD. At the expiry, ETH/USD is at 2,500 USD, and the delivery price is 2,500 USD.
+A trader buys an ETH call option with a strike price of 2,000 USD for 0.05 ETH. Now he has the right to buy 1 ETH for 2,000 USD. At the expiry, ETH/USD is at 2,500 USD, and the delivery price is 2,500 USD.
 
 In this case, the option is settled for 500 USD per 1 ETH. At the expiry, the trader’s account is credited with 0.2 ETH (500/2,500), and the seller’s account is debited with 0.2 ETH. The initial purchase price was 0.05 ETH; therefore, the trader’s profit is 0.15 ETH.
-Any call option with an exercise price (strike price) above 2,500 USD will expire worthless.
 
 If the price of the option was less than $2000 the option will expire worthless. The payout function can be seen as:
 
@@ -22,9 +21,14 @@ If the price of the option was less than $2000 the option will expire worthless.
 
 Using UMA's infrastructure, a team can create a covered call option using the UMA EMP contract template. These covered calls are European style options which are only redeemable at the time of expiry. 
 
-To create your own options you can make use of one of the currently approved [price identifiers](/uma-tokenholders/approved-price-identifiers.md) and [collateral types](uma-tokenholders/approved-collateral-currencies.md). 
+1. To create your own options you can make use of one of the currently approved [price identifiers](/uma-tokenholders/approved-price-identifiers.md) and [collateral types](uma-tokenholders/approved-collateral-currencies.md). If your price price identifiers or collateral typesis not approved you can follow our [UMIP process](/uma-tokenholders/umips.md) to get your specific requirements approved.
 
-With the contracts being cash settled and the terms of the contract being constant throughout, the need to manage your position or run liquidation bots is not needed. 
+2. You can then launch your contracting my following the [EMP launch tutorial](/Users/chandler/Devwork/UMA/docs/docs/developers/emp-deployment.md). Be sure to include the covered call from our [financial product library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/CoveredCallFinancialProductLibrary.sol)
+
+With the contracts being cash settled, the terms of the contract remaining constant throughout, and positions always being fully collateralized by definition, there is no need to manage your position or run liquidation bots. 
+
+3. Then to wrap up you should choose the strike price and the starting price of your option. First choose the strike price (the price the collateral will be sold for) and then use an options pricing calculator to derive the starting price. YAn exmample of such a calculator can be this [Black Scholes Calculator](https://goodcalculators.com/black-scholes-calculator/).
+
 
 ## DeFi Call Option Use Cases
 
