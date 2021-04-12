@@ -23,16 +23,16 @@ Using UMA's infrastructure, a team can create a covered call option using the UM
 
 1. To create your own options you can make use of one of the currently approved [price identifiers](/uma-tokenholders/approved-price-identifiers.md) and [collateral types](uma-tokenholders/approved-collateral-currencies.md). If your price price identifiers or collateral typesis not approved you can follow our [UMIP process](/uma-tokenholders/umips.md) to get your specific requirements approved.
 
-2. You can then launch your contracting my following the [EMP launch tutorial](/Users/chandler/Devwork/UMA/docs/docs/developers/emp-deployment.md). Be sure to include the covered call from our [financial product library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/CoveredCallFinancialProductLibrary.sol)
+2. You can then launch your contracting by following the [EMP launch tutorial](/Users/chandler/Devwork/UMA/docs/docs/developers/emp-deployment.md). Be sure to include the covered call from our [financial product library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/CoveredCallFinancialProductLibrary.sol)
 
 With the contracts being cash settled, the terms of the contract remaining constant throughout, and positions always being fully collateralized by definition, there is no need to manage your position or run liquidation bots. 
 
-3. Then to wrap up you should choose the strike price and the starting price of your option. First choose the strike price (the price the collateral will be sold for) and then use an options pricing calculator to derive the starting price. YAn exmample of such a calculator can be this [Black Scholes Calculator](https://goodcalculators.com/black-scholes-calculator/).
+3. Then to wrap up you should choose the strike price and the starting price of your option. First choose the strike price (the price the collateral will be sold for) and then use an options pricing calculator to derive the starting price. An exmample of such a calculator can be this [Black Scholes Calculator](https://goodcalculators.com/black-scholes-calculator/).
 
 
 ## DeFi Call Option Use Cases
 
-There are a number of reasons for call options in the traditional financial world. Some of the reasons translate to the DeFi space as well as open new uses cases such as: 
+There are a number of reasons for call options in the traditional financial world. Some of the reasons translate to the DeFi space as well as open new use cases such as: 
 
 **Leveraged Speculation** — The simplest use for a long call position is the ability to speculate on the appreciation of an asset with leverage while also limiting your downside. To obtain the right to be long 1 ETH at a price of 2000 in our example above, the token holder only needs to pay 5% of an ETH. However, the flip side to that is the value of the option will depreciate or decay very quickly to zero if it does not trade above the strike price.
 
