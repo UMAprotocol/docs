@@ -16,7 +16,6 @@ If the price of the option was less than $2000 the option will expire worthless.
 
 ![Diagram](/img/option_payout.png)
 
-
 ## Getting Started
 
 Using UMA's infrastructure, a team can create a covered call option using the UMA EMP contract template. These covered calls are European style options which are only redeemable at the time of expiry. 
