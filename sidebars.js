@@ -20,7 +20,7 @@ module.exports = {
       {
         type: "category",
         label: "Featured Products",
-        items: ["products/KPI-options"],
+        items: ["products/KPI-options", "products/calloption"],
       },
       "synthetic-tokens/glossary"
     ],
