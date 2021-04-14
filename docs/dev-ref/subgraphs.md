@@ -7,9 +7,11 @@ This section explains the UMA Subgraph and how to interact with it. The UMA subg
 
 ## Resources
 
-- [Sandbox](https://thegraph.com/explorer/subgraph/umaprotocol/uma) for querying data for developers.
-- [Sandbox](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan) for querying data on Kovan.
-- [Source code](https://github.com/UMAprotocol/uma-subgraph) for deployed subgraph.
+- [Mainnet Subgraph](https://thegraph.com/explorer/subgraph/umaprotocol/mainnet-contracts) for financial contracts.
+- [Mainnet Subgraph](https://thegraph.com/explorer/subgraph/umaprotocol/mainnet-voting) for voting contracts.
+- [Kovan Subgraph](https://thegraph.com/explorer/subgraph/umaprotocol/kovan-contracts) for financial contracts.
+- [Kovan Subgraph](https://thegraph.com/explorer/subgraph/umaprotocol/kovan-voting) for voting contracts.
+- [Source code](https://github.com/UMAprotocol/subgraphs) for deployed subgraphs.
 
 ## Making Queries
 
