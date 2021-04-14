@@ -3,7 +3,15 @@ title: Deploying an EMP Contract
 sidebar_label: Deploying an EMP Contract
 ---
 
-This tutorial will show you how to deploy an ExpiringMultiParty (EMP) contract by using the UMA `launch-emp` repository. By following these instructions, you will be able to launch a custom EMP on the Kovan testnet or Ethereum mainnet.
+This tutorial will show you how to deploy an ExpiringMultiParty (EMP) contract by using the UMA `launch-emp` repository. By following these instructions, you will be able to launch a custom EMP on the Kovan testnet or Ethereum mainnet. 
+
+## Alternative contract deployment tool
+
+As an alternative to deploying your contract manually, you can use a community made synthetic token builder. The [builder](https://syntheticbuilder.xyz/) allows you to deploy the same EMP contracts as the tutorial below. It offers an easier deployment process, but less options for customizing deployment parameters.
+
+Please note: this tool has been used to successfully deploy contracts to mainnet, but is community built and maintained. Please use at your own risk.
+
+## Standard deployment process
 
 This is the high-level EMP deployment process that you will need to follow.
 
@@ -145,7 +153,8 @@ Once deployed, the script will list the address of your newly deployed EMP. A su
 ```bash
 Simulating Deployment...
 Simulation successful. Expected Address: 0x44978157afE92c926619EBB54599bbc483eBe871
-```
+``` 
+
 ## Post-Deployment
 
 After following this tutorial, you will have successfully deployed an EMP contract! You will need to navigate to your contract address on Etherscan and mint an initial position to set the [GCR](/synthetic-tokens/glossary#global-collateralization-ratio-gcr). This can be done by calling the `create(collateralAmount, numTokens)` function. [Here](/build-walkthrough/minting-etherscan) is a full walkthrough of minting tokens via Etherscan.
