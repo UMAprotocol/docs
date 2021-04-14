@@ -33,8 +33,9 @@ sidebar_label: Approved Collateral Currencies
 |INDEX| 24 | [UMIP-63](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-63.md)
 |DPI| 1 | [UMIP-63](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-63.md)
 |SUSHI| 25 | [UMIP-67](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-67.md)
+|BAL| 8 |[UMIP-72](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-72.md)
 |xSUSHI| 22 | [UMIP-67](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-67.md)
 |XIO| 1500 | [UMIP-71](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-70.md)
-|Total| No of Approved collateral currencies | [29](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
+|Total| No of Approved collateral currencies | [30](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 

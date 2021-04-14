@@ -3,6 +3,8 @@ title: Interviews, Podcasts, and Press
 sidebar_label: Interviews, Podcasts, and Press
 ---
 
+- Apr 10, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=_aZxvMq6LO8)
+- Apr 6, 2021: [Network Effect: An Overview of UMA – Universal Market Access](https://networkeffect.substack.com/p/what-is-uma-universal-market-access)
 - Apr 5, 2021: [Blockzero labs: Understanding UMA as a Non-Developer](https://www.youtube.com/watch?v=vsf1HpYg2jI)
 - Apr 2, 2021: [The Giving Block Adds Support for UMA Donations](https://www.thegivingblock.com/post/the-giving-block-adds-support-for-uma-donations?utm_content=160681104&utm_medium=social&utm_source=twitter&hss_channel=tw-997232321328709632)
 - Apr 2, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=LlEbctAGtGY)
