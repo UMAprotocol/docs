@@ -36,11 +36,11 @@ module.exports = {
         label: "ExpiringMultiParty (EMP)",
         items: ["developers/emp-deployment", "build-walkthrough/emp-parameters", "build-walkthrough/minting-etherscan",],
       },
-      // {
-      //   type: "category",
-      //   label: "Minting Tokens",
-      //   items: ["developers/mint-locally", "developers/mint-etherscan"],
-      // },
+      {
+      type: "category",
+      label: "Perpetual (Perp)",
+      items: ["developers/perp-deployment", "build-walkthrough/perp-parameters"],
+      },
       {
         type: "category",
         label: "Bots",
