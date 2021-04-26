@@ -10,6 +10,9 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Apr 26, 2021: [In Case You Missed It #11](https://medium.com/uma-project/icymi-11-9af3b2b2f7ee)
+- Apr 23, 2021: [uLABS: CryptoPunks Synthetic Token — uPUNK](https://medium.com/uma-project/ulabs-cryptopunks-synthetic-token-upunk-25d9d97600c3)
+- Apr 21, 2021: [UMA — Building Decentralized Talent Referrals](https://medium.com/uma-project/talent-referral-options-program-170bc347542a)
 - Apr 19, 2021: [BAL and UNI Join The Call Options Party: Building Call Options on UMA (Part 4)](https://medium.com/uma-project/bal-and-uni-join-the-call-options-party-eed7965df9d1)
 - Apr 16, 2021: [In Case You Missed It #10](https://medium.com/uma-project/icymi-10-d1c6bcd84b0)
 - Apr 13, 2021: [Introducing the dVIX protocol volatility token](https://medium.com/uma-project/introducing-the-dvix-protocol-volatility-tokens-90c164ffc4a5)
