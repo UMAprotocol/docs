@@ -48,6 +48,7 @@ sidebar_label: Approved Collateral Currencies
 |CRV| 137 | [UMIP-77](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-77.md)
 |RGT| 30 | [UMIP-77](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-77.md)
 |NFTX| 2.25 | [UMIP-77](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-77.md)
-|Total| No of Approved collateral currencies | [42](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
+|SGT| 30 | [UMIP-80](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-80.md)
+|Total| No of Approved collateral currencies | [43](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 

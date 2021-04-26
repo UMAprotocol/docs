@@ -125,6 +125,7 @@ sidebar_label: Approved Price Identifiers
 |USDYFI| The price of USD in YFI.| [UMIP-78](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-78.md)
 |USDyUSD| The price of USD in yUSD.| [UMIP-78](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-78.md)
 |uSTONKS_APR21| A basket of stocks that represents the following markets, NYSE: GME, AMC, NOK, BB, NASDAQ: TSLA, PLTR, SNDL, AAPL, SPCE NYSE Arca: SLV.| [UMIP-47](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-47.md)
+|uSTONKS_JUN21| A basket of stocks that represents the following markets, NYSE: GME, SQ, RBLX NASDAQ: TSLA, PLTR, AAPL, COIN, RIOT, MVIS, MARA.| [UMIP-79](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-79.md)
 |uTVL_KPI_UMA| A price identifier that tracks the total value of locked collateral in UMA.| [UMIP-65](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-65.md)
 |uVOL-BTC-APR21| A price identifier that tracks the 30-day daily volatility of BTC/USD.| [UMIP-41](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-41.md)
 |XAUPERL| A troy ounce of gold returned in PERL.| [UMIP-26](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-26.md)
@@ -137,5 +138,5 @@ sidebar_label: Approved Price Identifiers
 |YAMUSD| The price of YAM in USD.| [UMIP-50](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-50.md)
 |YFIUSD| The price of YFI in USD.| [UMIP-78](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-78.md)
 |yUSDUSD| The price of yUSD in USD.| [UMIP-78](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-78.md)
-|Total| No of Approved Price Identifiers.| [138](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
+|Total| No of Approved Price Identifiers.| [139](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
 
