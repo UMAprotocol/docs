@@ -10,6 +10,9 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Apr 19, 2021: [BAL and UNI Join The Call Options Party: Building Call Options on UMA (Part 4)](https://medium.com/uma-project/bal-and-uni-join-the-call-options-party-eed7965df9d1)
+- Apr 16, 2021: [In Case You Missed It #10](https://medium.com/uma-project/icymi-10-d1c6bcd84b0)
+- Apr 13, 2021: [Introducing the dVIX protocol volatility token](https://medium.com/uma-project/introducing-the-dvix-protocol-volatility-tokens-90c164ffc4a5)
 - Apr 12, 2021: [In Case You Missed It #9](https://medium.com/uma-project/icymi-9-96550a8c9fdf)
 - Apr 5, 2021: [SushiSwap x UMA: Announcing Call Options for xSUSHI: Building Call Options on UMA (Part 3)](https://medium.com/uma-project/sushiswap-x-uma-announcing-call-options-for-xsushi-4770b89f68dd)
 - Apr 4, 2021: [In Case You Missed It #8](https://medium.com/uma-project/icymi-8-38f2d3560239)

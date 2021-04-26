@@ -3,6 +3,8 @@ title: Interviews, Podcasts, and Press
 sidebar_label: Interviews, Podcasts, and Press
 ---
 
+- Apr 19, 2021: [Bitstamp: What is Universal Market Access (UMA)? Basic guide to cryptocurrency](https://www.youtube.com/watch?v=QTTvaiyXw8A)
+- Apr 16, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=othG7AA6VEI)
 - Apr 10, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=_aZxvMq6LO8)
 - Apr 6, 2021: [Network Effect: An Overview of UMA – Universal Market Access](https://networkeffect.substack.com/p/what-is-uma-universal-market-access)
 - Apr 5, 2021: [Blockzero labs: Understanding UMA as a Non-Developer](https://www.youtube.com/watch?v=vsf1HpYg2jI)
