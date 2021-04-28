@@ -31,6 +31,17 @@ To add a new price identifier or collateral currency to mainnet, please propose 
 
 To add a new price identifier or collateral currency to Kovan, please contact the UMA team in Discord.
 
+## Clone the Launch EMP Repo
+
+The following steps require the git CLI to be installed. If you are on Windows, you can install via Git Bash Shell [(link)](https://gitforwindows.org/).
+
+1. Navigate to the UMA `launch-perpetual` GitHub repository.
+2. Clone the repo in your CLI by running the following command in the directory you wish to work from.
+
+```bash
+git clone https://github.com/UMAprotocol/launch-perpetual
+```
+
 ## Install system dependencies
 
 To use this repository, you will need to install [Node.js v12](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/). We recommend using `nvm` to manage node versions.
@@ -52,7 +63,17 @@ yarn
 ```
 ## Customize Perpetual parameters
 
-TO DO
+To customize the type of Perp that you will deploy, you will need to modify your local version of the `launch-perpetual/index.js` script. Using your favorite text editor, navigate to the `perpetualParams` line within `index.js` and edit the parameters to meet the design of your contract. 
+
+Please note the following important parameterization guidance:
+
+- `collateralAddress` lists the token address of an approved collateral currency on the network you are trying to deploy to.
+- `priceFeedIdentifier` matches the exact name of the approved price identifier that you would like to use.
+- ` fundingRateIdentifier` is the rate you want to use for your perpetual
+- `collateralRequirement` should always be at or higher than `1.25`.
+- `minSponsorTokens` should be targeted to approximately $100 of value at your synthetic token's expected price. If your synthetic token is expected to be worth $1, `minSponsorTokens` should be `{ rawValue: toWei("100") }`.
+- `liquidationLiveness` and `withdrawalLiveness` should almost always be at least `7200` seconds.
+- `excessTokenBeneficiary` should be set to the UMA contract store by default. `0x41AF40Eb92Bec4dD8DA77103597838b3dBBD3B6f` for Kovan and `0x54f44eA3D2e7aA0ac089c4d8F7C93C27844057BF` for Mainnet.
 
 ## Deploy an Perpetual on a Mainnet fork
 
