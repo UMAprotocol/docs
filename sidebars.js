@@ -101,5 +101,10 @@ module.exports = {
         label: "Farming Tutorials",
         items: ["users/mint-farm-yusd", "users/mint-farm-yusdbtc", "users/redeem-tokens"],
       },
+      {
+        type: "category",
+        label: "FAQ",
+        items: ["community/uTVLFAQ"],
+      },
     ],
 };

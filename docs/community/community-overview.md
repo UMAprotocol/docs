@@ -21,7 +21,7 @@ We encourage open, transparent and collaborative development within our communit
 ### List of resources
 
 - [Discord](https://discord.umaproject.org/): jump in to ask questions, meet other UMA aficionados, collect bounties or participate in incentives programs.
-- Discourse](https://discourse.umaproject.org/): for the longer form discussions.
+- [Discourse](https://discourse.umaproject.org/): for the longer form discussions.
 - [Twitter](https://twitter.com/UMAprotocol): official UMA protocol announcements and information.
 - [Medium](https://medium.com/uma-project): material on new updates and programs.
 - [Events](/community/events): past events and presentations.
