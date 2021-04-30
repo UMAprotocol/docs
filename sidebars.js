@@ -90,11 +90,11 @@ module.exports = {
         },
       ],
     "Events & Press": [
-      "community/community-overview",
+      "community/community-overview", "community/usingtokens",
       {
         type: "category",
         label: "Events & Press",
-        items: [ "community/press", "community/blog-posts", "community/events"],
+        items: ["community/press", "community/blog-posts", "community/events"],
       },
       {
         type: "category",
