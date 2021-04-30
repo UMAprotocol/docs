@@ -90,7 +90,7 @@ module.exports = {
         },
       ],
     "Events & Press": [
-      "community/community-overview", "community/usingtokens",
+      "community/community-overview", "community/usingtokens", "community/communityguide",
       {
         type: "category",
         label: "Events & Press",
