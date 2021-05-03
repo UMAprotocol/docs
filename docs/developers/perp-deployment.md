@@ -77,12 +77,34 @@ Please note the following important parameterization guidance:
 
 ## Deploy an Perpetual on a Mainnet fork
 
-TO DO
+Since the Perpetual contract won't expire, it is a good idea to run the EMP on a mainnet fork before deploying to mainet directly. This is to make sure the contract is correctly set-up the way you expect it to work.
 
-## Deploy an EMP on Mainnet or Kovan
+The type of fork that you are creating will depend upon the node you are referencing in your.node.url.io. If using Infura for a Kovan fork, your.node.url.io will follow this format
 
-TO DO
+```bash
+wss://kovan.infura.io/ws/v3/{projectId}
+```
 
-## Post-Deployment
+If using Infura for a mainnet fork, `your.node.url.io` will follow this format:
+
+```bash
+wss://mainnet.infura.io/ws/v3/{projectId}
+```
+
+From within the `launch-perpetual` directory, start ganache.
+
+```bash
+yarn ganache-fork YOUR_NODE_URL
+```
+
+In a separate terminal, run the deployment script (it defaults to using localhost:8545 as the ETH node, which is desired in this case). Note: mnemonic is optional here -- without it, ganache will use its default pre-loaded account.
+
+```bash
+node index.js --gasprice 50 --mnemonic "your mnemonic (12 word seed phrase)" --priceFeedIdentifier ETHBTC_FR --collateralAddress "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2" --syntheticName "ETHBTC_Perp" --minSponsorTokens "100"
+```
+
+Now you should be able to use localhost:8545 to interact with a forked version of mainnet (or kovan) where your contract is deployed.
+
+## Deploy an Perpetual on Mainnet or Kovan
 
 TO DO
