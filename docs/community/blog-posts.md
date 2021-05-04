@@ -10,6 +10,8 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- May 3, 2021: [In Case You Missed It #12](https://medium.com/uma-project/icymi-12-6f3ff0a3deae)
+- May 3, 2021: [uLABS: How Uniswap v3 Will Level Up UMA and DeFi](https://medium.com/uma-project/ulabs-how-uniswap-v3-will-level-up-uma-and-defi-f8683316460f)
 - Apr 26, 2021: [In Case You Missed It #11](https://medium.com/uma-project/icymi-11-9af3b2b2f7ee)
 - Apr 23, 2021: [uLABS: CryptoPunks Synthetic Token — uPUNK](https://medium.com/uma-project/ulabs-cryptopunks-synthetic-token-upunk-25d9d97600c3)
 - Apr 21, 2021: [UMA — Building Decentralized Talent Referrals](https://medium.com/uma-project/talent-referral-options-program-170bc347542a)
