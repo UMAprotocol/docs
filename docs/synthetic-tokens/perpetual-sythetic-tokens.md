@@ -11,4 +11,11 @@ Without the promise of impending expiry, perpetual synthetic token holders can n
 
 To illustrate how the funding rate works, we use the following example:
 
-There is a perpetual contract that looks at the ETHUSD price, accepts DAI as collateral at a 150% CR and mints synthetic ETH called uETH. 
+There is a perpetual contract that looks at the ETHUSD price, accepts DAI as collateral at a 150% CR and mints synthetic ETH called uETH. The uETH synthetic can be traded on another market like on a DEX. For a simple example the synthetic uETH trades against ETH with the assumption that price between them would be 1:1. For mean reasons this does not always hold true. In the case when the price between a synthetic and its underlying asset differ (ETH and uETH),  perpetual contract constantly queries an external contract which applies a funding rate. This in turn updates a multiply which adjust a "funding rate multiplier."  
+
+An increase or decrease in the multiplier changes the value of the token debt. 
+
+//TO DO 
+- Complete the explainer narrative, 
+- Work on technical price fetching
+- Diagrams to accompany  

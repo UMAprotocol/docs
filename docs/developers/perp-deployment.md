@@ -4,7 +4,7 @@ title: Deploying a Perpetual Contract
 sidebar_label: Deploying a Perpetual Contract
 ---
 
-This tutorial will show you how to deploy a Perpetual (Perp) contract by using the UMA launch-perpetual repository. This tutorial will follow a very similar flow to the [Deploying an EMP Contract](docs/developers/emp-deployment.md) so if you are familiar with the EMP flow, this will be easy to grasp.
+This tutorial will show you how to deploy a Perpetual (Perp) contract by using the UMA launch-perpetual repository. This tutorial will follow a very similar flow to the [Deploying an EMP Contract](developers/emp-deployment.md) so if you are familiar with the EMP flow, this will be easy to grasp.
 
 ## Standard deployment process
 
