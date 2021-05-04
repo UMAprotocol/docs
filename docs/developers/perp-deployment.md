@@ -31,11 +31,11 @@ To add a new price identifier or collateral currency to mainnet, please propose 
 
 To add a new price identifier or collateral currency to Kovan, please contact the UMA team in Discord.
 
-## Clone the Launch EMP Repo
+## Clone the Launch Perpetual Repo
 
 The following steps require the git CLI to be installed. If you are on Windows, you can install via Git Bash Shell [(link)](https://gitforwindows.org/).
 
-1. Navigate to the UMA `launch-perpetual` GitHub repository.
+1. Navigate to the UMA `launch-perpetual` [GitHub repository](https://github.com/UMAprotocol/launch-perpetual).
 2. Clone the repo in your CLI by running the following command in the directory you wish to work from.
 
 ```bash
@@ -77,7 +77,7 @@ Please note the following important parameterization guidance:
 
 ## Deploy an Perpetual on a Mainnet fork
 
-Since the Perpetual contract won't expire, it is a good idea to run the EMP on a mainnet fork before deploying to mainet directly. This is to make sure the contract is correctly set-up the way you expect it to work.
+Since the Perpetual contract won't expire, it is a good idea to test on a mainnet fork before deploying to mainnet directly. This is to make sure the contract is correctly set-up the way you expect it to work.
 
 The type of fork that you are creating will depend upon the node you are referencing in your.node.url.io. If using Infura for a Kovan fork, your.node.url.io will follow this format
 
@@ -100,11 +100,27 @@ yarn ganache-fork YOUR_NODE_URL
 In a separate terminal, run the deployment script (it defaults to using localhost:8545 as the ETH node, which is desired in this case). Note: mnemonic is optional here -- without it, ganache will use its default pre-loaded account.
 
 ```bash
-node index.js --gasprice 50 --mnemonic "your mnemonic (12 word seed phrase)" --priceFeedIdentifier ETHBTC_FR --collateralAddress "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2" --syntheticName "ETHBTC_Perp" --minSponsorTokens "100"
+node index.js --gasprice 50 --url your.node.url.io --mnemonic "your mnemonic (12 word seed phrase)" --priceFeedIdentifier ETHUSD --fundingRateIdentifier "ETH/BTC" --collateralAddress "0xaddress" --syntheticName "Synthetic ETH" --syntheticSymbol uETH --minSponsorTokens .01
 ```
 
 Now you should be able to use localhost:8545 to interact with a forked version of mainnet (or kovan) where your contract is deployed.
 
 ## Deploy an Perpetual on Mainnet or Kovan
 
-TO DO
+Make sure you double check all details before deploying your contract. It is encouraged to check all details before deploying your contract but here are a few we suggest to double check: 
+- Please make sure your `YOUR_NODE_URL` is pointing to the right network
+- You have enough ETH for the network you are deploying to
+- Your collateral requirement is set to the recommended 125% 
+- Your collateral currency is approved on the specific network you are deploying to
+
+### Deployment 
+
+Once you have done the needed check you can run the below command in your `launch-perpetual` repo (Remember to change to parameters to your needs).
+```bash
+node index.js --gasprice 50 --url your.node.url.io --mnemonic "your mnemonic (12 word seed phrase)" --priceFeedIdentifier ETHUSD --fundingRateIdentifier "ETH/BTC" --collateralAddress "0xaddress" --syntheticName "Synthetic ETH" --syntheticSymbol uETH --minSponsorTokens .01
+```
+Once deployed, the script will list the address of your newly deployed EMP. A successful output the following: 
+```bash
+Simulating Deployment...
+Simulation successful. Expected Address: 0x44978157afE92c926619EBB54599bbc483eBe871
+```
