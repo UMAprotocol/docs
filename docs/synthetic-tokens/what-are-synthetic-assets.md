@@ -50,7 +50,7 @@ This [tutorial](/build-walkthrough/mint-locally) will show you how to parameteri
 
 One can write priceless financial contract templates to create various kinds of financial products. The first type of synthetic contracts on UMA is used for creating expiring synthetic tokens and is called the ExpiringMultiParty (EMP) contract.
 
-The EMP allows token sponsors (i.e., people who mint new synthetic tokens) to collateralize their position in a defined collateral currency. Anytime after the EMP’s expiration date, any synthetic tokenholder can redeem their tokens for a settlement value, which is denominated in the collateral currency and fixed to the price of the EMP contract’s price identifier at the expiration timestamp. The price determining the settlement value is resolved by UMA’s oracle contract, the “DVM”.
+The EMP allows token sponsors (i.e., people who mint new synthetic tokens) to collateralize their position in a defined collateral currency. Anytime after the EMP’s expiration date, any synthetic tokenholder can redeem their tokens for a settlement value, which is denominated in the collateral currency and fixed to the price of the EMP contract’s price identifier at the expiration timestamp. The settlement value is determined after 2 hours from the expiry timestamp by UMA’s Optimistic Oracle. In the rare event of a dispute of the price from the Optimistic Oracle, UMA's Data Verification Mechanism (DVM) will be called to resolve the price within 48 hours. 
 
 This is only the first example of a synthetic token implementation, and is by no means restrictive on the types of synthetic tokens that could be built on UMA's infrastructure.
 
