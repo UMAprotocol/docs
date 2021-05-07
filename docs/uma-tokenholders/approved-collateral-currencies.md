@@ -49,6 +49,16 @@ sidebar_label: Approved Collateral Currencies
 |RGT| 30 | [UMIP-77](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-77.md)
 |NFTX| 2.25 | [UMIP-77](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-77.md)
 |SGT| 30 | [UMIP-80](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-80.md)
-|Total| No of Approved collateral currencies | [43](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
+|LON| 75 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
+|MASK| 32 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
+|BANK| 1 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
+|SFI| 0.28 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
+|VSP| 10.5 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
+|FRAX| 400 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
+|DEXTF| 500 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
+|ORN| 35 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
+|BOND| 10 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
+|PUNK-BASIC| 0.000 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
+|Total| No of Approved collateral currencies | [53](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
