@@ -31,8 +31,6 @@ Call options are tokens which allow you to purchase the asset at a fixed price a
 KPI Options are tokens which expire to an as yet undetermined amount of the underlying asset, based on known metric.  They are typically minted by a protocol and airdropped to community members or aligned parties as an incentive to work towards a shared goal.
 
  - [**UMA TVL Options**](https://claim.umaproject.org/) (token address: [uTVL-0621](https://etherscan.io/token/0x21ae9e080a53ab98cc1266ed1c8cc27ffd3256d5))
-<!--- Aragon Migration KPI Options
-<!- DIGG Rebase KPI Options --->
 
 ###  Stock Market Indices
 
@@ -68,7 +66,5 @@ Synthetic USD tokens allow hedging against stablecoin variations.
  - [**Tether DEC21**](makeshift.finance) (token address: [USDT-21](https://etherscan.io/token/0x1cb38a02f9483577ae7672cdc366823292b370c2))
 
  - [**Zelda "Summer Nuts" USDC**](https://zelda.cash/) (token address: [Zelda Summer Nuts Cash](https://etherscan.io/token/0xa48920cc1ad85d8ea13af5d7be180c0338c306dd))
-
-
 
  - **[Zelda "Summer Shield"](https://zelda.cash/)** (token address:  [Zelda Summer Shield Cash](https://etherscan.io/token/0xc031d8f198f64eadb00ea3b9a0bb114ba49b52d3))
