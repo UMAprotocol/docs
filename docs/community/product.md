@@ -13,9 +13,9 @@ Yield Dollars are created when you lock collateral in a contract to borrow a syn
      * [Umanji User Guide](https://machinalabs.medium.com/umanji-user-guide-dc115f77b079)
 
  -  [**UMA Bills**](https://umabills.com/) (token address: [YD-BTC-DEC21](https://etherscan.io/token/0x68555bc772ad33be7a761168d7d9874cfc369b83))
+
     * [About UMA Bills](https://umabills.com/about)
     * [Overview of UMA Bills](https://medium.com/@eric.baleine/minting-yield-dollars-guide-of-umabills-eceafe973f9b)
-<!--- - Synthetic XIO (sXIO) -->
 
 ### Call Options
 
