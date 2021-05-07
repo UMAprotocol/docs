@@ -18,14 +18,3 @@ There is an ongoing [Coinbase Earn](https://www.coinbase.com/earn/uma) campaign 
 
 We encourage open, transparent and collaborative development within our community, which are a vital part of our success.  We also have a number of [outstanding vacancies](https://angel.co/company/uma-project) as well as a [“talent referral options”](https://medium.com/uma-project/talent-referral-options-program-170bc347542a) program, which offers up to 1000 $UMA to anyone who refers suitably qualified candidates for any of our open positions. 
 
-### List of resources
-
-- [Discord](https://discord.umaproject.org/): jump in to ask questions, meet other UMA aficionados, collect bounties or participate in incentives programs.
-- [Discourse](https://discourse.umaproject.org/): for the longer form discussions.
-- [Twitter](https://twitter.com/UMAprotocol): official UMA protocol announcements and information.
-- [Medium](https://medium.com/uma-project): material on new updates and programs.
-- [Events](/community/events): past events and presentations.
-- [Podcasts and Press](/community/press): third party press and podcasts about UMA.
-- [Whitepapers and Blog Posts](/community/blog-posts): official UMA whitepapers and additional reading materials.
-- [Farming opportunities](/users/mint-farm-yusd): opportunities and tutorials to earn yield by using UMA protocol products.
-- [Internal Learning Sessions](https://www.notion.so/umaproject/Internal-Learning-Sessions-37bfc33a941841a4906fa14f414d3a80): Learning sessions for collaborative learning on technical or financial engineering
