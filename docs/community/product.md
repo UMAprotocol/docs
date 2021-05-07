@@ -1,6 +1,6 @@
 ---
-title: Community guide to product
-sidebar_label: Community guide to product
+title: Community guide to products
+sidebar_label: Community guide to products
 ---
 Here you will find details of all the products currently built on UMA, along with both official and community produced resources for their use. 
 
