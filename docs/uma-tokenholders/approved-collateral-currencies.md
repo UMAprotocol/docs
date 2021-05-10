@@ -58,7 +58,9 @@ sidebar_label: Approved Collateral Currencies
 |DEXTF| 500 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
 |ORN| 35 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
 |BOND| 10 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
-|PUNK-BASIC| 0.000 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
-|Total| No of Approved collateral currencies | [53](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
+|PUNK-BASIC| 0.009| [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
+|LUSD| 400 | [UMIP-86](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-86.md)
+|iFARM| 2 | [UMIP-88](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-88.md)
+|Total| No of Approved collateral currencies | [55](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
