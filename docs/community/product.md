@@ -44,7 +44,7 @@ Stock market indices track a defined basket of  stocks, this may be an establish
 ### Metals Indices
 
 Metals indices track the price of a metal, and expire to exactly that value in the collateral currency.
- - [**pxGOLD Synthetic Gold**](app.perlinx.finance) (token address: [pxGOLD_MAR2022](https://etherscan.io/token/0x5247c0db4044fb6f97f32c7e1b48758019a5a912))
+ - [**pxGOLD Synthetic Gold**](https://perlinx.finance) (token address: [pxGOLD_MAR2022](https://etherscan.io/token/0x5247c0db4044fb6f97f32c7e1b48758019a5a912))
 
 ### Crypto Metrics
 Crypto Metric tokens are synthetic assets which track a cryptocurrency value - this might be a metric (such as gas), relative price (such as hybrid tokens), or a tokenised off-chain currency
@@ -60,10 +60,10 @@ Crypto Metric tokens are synthetic assets which track a cryptocurrency value - t
 
 Synthetic USD tokens allow hedging against stablecoin variations. 
 
- - [**Makeshift Finance**](https://makeshift.finance/) (token address: [mAMPL-USD-JUNE21](https://etherscan.io/token/0x9ddd23adcc2ce37bbdb53998eb7170c354fddf0b))
+ - [**Makeshift Finance**](https://makeshift.finance) (token address: [mAMPL-USD-JUNE21](https://etherscan.io/token/0x9ddd23adcc2ce37bbdb53998eb7170c354fddf0b))
 
 
- - [**Tether DEC21**](makeshift.finance) (token address: [USDT-21](https://etherscan.io/token/0x1cb38a02f9483577ae7672cdc366823292b370c2))
+ - [**Tether DEC21**](https://makeshift.finance) (token address: [USDT-21](https://etherscan.io/token/0x1cb38a02f9483577ae7672cdc366823292b370c2))
 
  - [**Zelda "Summer Nuts" USDC**](https://zelda.cash/) (token address: [Zelda Summer Nuts Cash](https://etherscan.io/token/0xa48920cc1ad85d8ea13af5d7be180c0338c306dd))
 
