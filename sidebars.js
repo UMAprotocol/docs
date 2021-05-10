@@ -90,16 +90,21 @@ module.exports = {
         },
       ],
     "Events & Press": [
-      "community/community-overview",
+      "community/community-overview", "community/usingtokens", "community/communityguide", "community/product",
       {
         type: "category",
         label: "Events & Press",
-        items: [ "community/press", "community/blog-posts", "community/events"],
+        items: ["community/press", "community/blog-posts", "community/events"],
       },
       {
         type: "category",
         label: "Farming Tutorials",
         items: ["users/mint-farm-yusd", "users/mint-farm-yusdbtc", "users/redeem-tokens"],
+      },
+      {
+        type: "category",
+        label: "FAQ",
+        items: ["community/uTVLFAQ"],
       },
     ],
 };
