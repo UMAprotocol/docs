@@ -17,6 +17,8 @@ A synthetic asset contract needs to know two things - the collateral type that t
 
 The first step is to write a UMIP to get your collateral type approved (if it is not already) as well as a Price Identifier UMIIP to define how people should calculate the price of the asset. Once you are ready to write an UMIP, the [guide](https://www.notion.so/UMIP-Writing-and-Process-Walkthrough-DRAFT-e115a166c0b84cd791a821d31395c3f2) to UMIP writing tells you everything you need to know and you might also want to watch a [video walkthrough](https://www.youtube.com/watch?v=4kDVMJywaQE) of an UMIP and what the different sections mean.
 
+Templates for UMIPs are now available on the [Discourse](https://discourse.umaproject.org/). Starting a new topic in one of the UMIP template categories, will bring up a preformatted template to use as a base
+
 ### Using the Synths Builder
 
 Once your collateral type and price identifier have been approved for use by the UMA protocol, you now need to develop the contract for the synthetic asset. We have an interactive builder where you can spin up an UMA contract in minutes without any coding knowledge through a [point-and-click interface](http://syntheticbuilder.xyz/).
