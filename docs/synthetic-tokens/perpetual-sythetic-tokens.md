@@ -15,7 +15,7 @@ A perpetual contract looks at the ETHUSD price, accepts DAI as collateral at a 1
 
 An increase or decrease in the multiplier changes the value of the token debt or synthetic. This is a slight deviation from traditional perpetual contracts, which changes the value of the collateral. This change is optimal in the DeFi space since being able to pull collateral is challenging and costly.
 
-[ADD picture]
+If for example the price of a the synthetic token is trading higher than the underlying, then the funding rate will apply a decreasing rate to bring the synthetic back to peg. The same is true in the opposite direction
 
 ## Liquidations and collateralization ratios.
 
