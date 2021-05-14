@@ -10,6 +10,7 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- May 10, 2021: [In Case You Missed It #13](https://medium.com/uma-project/icymi-13-282216414174)
 - May 3, 2021: [In Case You Missed It #12](https://medium.com/uma-project/icymi-12-6f3ff0a3deae)
 - May 3, 2021: [uLABS: How Uniswap v3 Will Level Up UMA and DeFi](https://medium.com/uma-project/ulabs-how-uniswap-v3-will-level-up-uma-and-defi-f8683316460f)
 - Apr 26, 2021: [In Case You Missed It #11](https://medium.com/uma-project/icymi-11-9af3b2b2f7ee)
