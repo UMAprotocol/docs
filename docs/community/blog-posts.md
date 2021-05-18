@@ -10,6 +10,10 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- May 17, 2021: [In Case You Missed It #14](https://medium.com/uma-project/icymi-14-552dbbee6566)
+- May 13, 2021: [BadgerDAO’s “Rebase Mining” Kicks Off Now Using UMA’s KPI Options](https://medium.com/uma-project/badgerdaos-rebase-mining-kicks-off-now-using-uma-s-kpi-options-cd75f71dc1fa)
+- May 13, 2021: [Introducing UMA’s Optimistic Oracle](https://medium.com/uma-project/introducing-umas-optimistic-oracle-d92ce5d1a4bc)
+- May 12, 2021: [Crypto.com, Yam Finance, and UMA to Collaborate on a Suite of NFT Products](https://medium.com/uma-project/crypto-com-yam-finance-and-uma-to-collaborate-on-a-suite-of-nft-products-b58a77526a81)
 - May 10, 2021: [In Case You Missed It #13](https://medium.com/uma-project/icymi-13-282216414174)
 - May 3, 2021: [In Case You Missed It #12](https://medium.com/uma-project/icymi-12-6f3ff0a3deae)
 - May 3, 2021: [uLABS: How Uniswap v3 Will Level Up UMA and DeFi](https://medium.com/uma-project/ulabs-how-uniswap-v3-will-level-up-uma-and-defi-f8683316460f)
