@@ -22,7 +22,7 @@ Liquidity mining rewards are available for those who mint the token and use it t
 
 A call option gives the buyer the right - but not the obligation - to buy an asset at a specified price (strike) at a specific time period (expiry).  Call Options for UMA can be minted on the [MySynths platform](http://mysynths.finance). 
 
-[Call Options}(https://medium.com/uma-project/ulabs-building-call-options-on-uma-part-1-efd3188714c5) may be an unfamiliar product to many DeFi users, so we would encourage people to read the articles explaining call options and how they have been implemented on UMA.  For a deeper dive, there is also an internal [learning session](https://www.notion.so/umaproject/Kevin-Chan-Call-Options-a8f9e8961c80409ca27d059cf75d7f22) on our YouTube which goes into more depth. 
+[Call Options](https://medium.com/uma-project/ulabs-building-call-options-on-uma-part-1-efd3188714c5) may be an unfamiliar product to many DeFi users, so we would encourage people to read the articles explaining call options and how they have been implemented on UMA.  For a deeper dive, there is also an internal [learning session](https://www.notion.so/umaproject/Kevin-Chan-Call-Options-a8f9e8961c80409ca27d059cf75d7f22) on our YouTube which goes into more depth. 
 
 ## uTVL Options
 
