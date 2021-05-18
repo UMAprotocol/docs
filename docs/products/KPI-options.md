@@ -5,7 +5,7 @@ sidebar_label: KPI Options
 
 Key Performance Indicator (KPI) options are synthetic tokens that will pay out more rewards if a project’s KPI reaches predetermined targets before a given expiry date. Every KPI option holder has an incentive to improve that KPI because their option will be worth more. This is intended to align individual token holder interests with the collective interests of the protocol.
 
-Using UMA’s [Expiring Multi Party](/synthetic-tokens/what-are-synthetic-assets#the-expiringmultiparty-emp-contract-template) (EMP) contract template and [Optimistic Oracle](/oracle/econ-architecture), any project can create their own KPI Option tokens. These can be backed by any approved ERC-20 token and can be valued against any KPI that a project wants to improve! 
+Using UMA’s [Expiring Multi Party](/synthetic-tokens/what-are-synthetic-assets#the-expiringmultiparty-emp-contract-template) (EMP) contract template and [Optimistic Oracle](/getting-started/oracle.md), any project can create their own KPI Option tokens. These can be backed by any approved ERC-20 token and can be valued against any KPI that a project wants to improve! 
 
 ## Getting Started
 
