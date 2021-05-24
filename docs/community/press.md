@@ -3,6 +3,10 @@ title: Interviews, Podcasts, and Press
 sidebar_label: Interviews, Podcasts, and Press
 ---
 
+- May 24, 2021: [Coindesk: Opium, UMA to Launch Decentralized Insurance for SpaceX Flights](https://www.coindesk.com/opium-uma-spacex-decentralized-insurance-contract)
+- May 24, 2021: [Opium and Uma on launching SpaceX insurance using Uma’s Optimistic Oracle](https://opium.finance/blog/uma-opium/UMAarticle/)
+- May 22, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=WLSbROAo4z4)
+- May 15, 2021: [CryptoJobslist: Communications Lead at UMA](https://cryptojobslist.com/jobs/communications-lead-at-uma-remote)
 - May 2, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=OBg3YUFRaSQ)
 - Apr 29, 2021; [Injective Partners with UMA to Launch Innovative Synthetic Products](https://blog.injectiveprotocol.com/injective-partners-with-uma-to-launch-new-synthetic-products/)
 - Apr 21, 2021: [UMA Interview with 0xMaki from Sushi](https://www.youtube.com/watch?v=HQgYjT-ecRQ)

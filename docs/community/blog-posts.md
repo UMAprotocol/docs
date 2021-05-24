@@ -10,6 +10,7 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- May 24, 2021: [In Case You Missed It #15](https://medium.com/uma-project/icymi-15-f7772afb7e5d)
 - May 17, 2021: [In Case You Missed It #14](https://medium.com/uma-project/icymi-14-552dbbee6566)
 - May 13, 2021: [BadgerDAO’s “Rebase Mining” Kicks Off Now Using UMA’s KPI Options](https://medium.com/uma-project/badgerdaos-rebase-mining-kicks-off-now-using-uma-s-kpi-options-cd75f71dc1fa)
 - May 13, 2021: [Introducing UMA’s Optimistic Oracle](https://medium.com/uma-project/introducing-umas-optimistic-oracle-d92ce5d1a4bc)
