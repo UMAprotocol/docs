@@ -105,6 +105,7 @@ sidebar_label: Approved Price Identifiers
 |R3_30D_GM| A price that tracks the 30 day geometric mean of RAI redemption rate coefficient APR.| [UMIP-85](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-85.md)
 |SFIUSD| The price of SFI in USD.| [UMIP-91](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-91.md)
 |SNXUSD| The price of SNX in USD.| [UMIP-57](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-57.md)
+|SPACEXLAUNCH| The purpose of the SPACEXLAUNCH price identifier is to be a generalized way to evaluate the success rate of the rocket launches made by SpaceX before request date considering launches provided in ancillary data.| [UMIP-97](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-97.md)
 |STABLESPREAD| A price that tracks the spread between how well ethereum versus non-ethereum stablecoin baskets maintain their peg to $1| [UMIP-28](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-28.md)
 |STABLESPREAD/BTC| Tracks the spread between how well ethereum versus non-ethereum stablecoin baskets maintain their peg to $1 (quoted in BTC).| [UMIP-31](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-31.md)
 |STABLESPREAD/BTC_18DEC| Replacement for deprecated [STABLESPREAD/BTC](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-31.md) price identifier.| [UMIP-66](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-66.md)
@@ -166,6 +167,7 @@ sidebar_label: Approved Price Identifiers
 |uSTONKS_JUN21| A basket of stocks that represents the following markets, NYSE: GME, SQ, RBLX NASDAQ: TSLA, PLTR, AAPL, COIN, RIOT, MVIS, MARA.| [UMIP-79](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-79.md)
 |uTVL_KPI_UMA| A price identifier that tracks the total value of locked collateral in UMA.| [UMIP-65](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-65.md)
 |uVOL-BTC-APR21| A price identifier that tracks the 30-day daily volatility of BTC/USD.| [UMIP-41](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-41.md)
+|vBNTBNT| The use of this price identifier will primarily be for call options. This UMIP will also outline how to calculate the price of vBNT in BNT using a custom script that will be used for the call option price calculation.| [UMIP-98](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-98.md)
 |V2migration_KPI_Aragon| Price Identifier for Aragon KPI options.| [UMIP-81](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-81.md)
 |VSPUSD| The price of VSP in USD.| [UMIP-91](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-91.md)
 |XAUPERL| A troy ounce of gold returned in PERL.| [UMIP-26](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-26.md)
@@ -180,5 +182,5 @@ sidebar_label: Approved Price Identifiers
 |yUSDUSD| The price of yUSD in USD.| [UMIP-78](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-78.md)
 |ZARUMA| The price of South African RAND in UMA.| [UMIP-95](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-95.md)
 |ZARUSD| The price of South African RAND in USD.| [UMIP-90](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-90.md)
-|Total| No of Approved Price Identifiers.| [182](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
+|Total| No of Approved Price Identifiers.| [184](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
 
