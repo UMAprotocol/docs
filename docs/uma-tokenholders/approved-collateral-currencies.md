@@ -63,6 +63,14 @@ sidebar_label: Approved Collateral Currencies
 |iFARM| 2 | [UMIP-88](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-88.md)
 |yvUSDC| 400 | [UMIP-93](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-93.md)
 |UST| 400 | [UMIP-94](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-94.md)
-|Total| No of Approved collateral currencies | [57](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
+|BNT| 100 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
+|vBNT| 270 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
+|BAND| 50 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
+|SDT| 185 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
+|KP3R| 3 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
+|CREAM| 4 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
+|CHAIN| 3000 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
+|ERN| 70 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
+|Total| No of Approved collateral currencies | [65](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
