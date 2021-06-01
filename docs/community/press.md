@@ -3,6 +3,10 @@ title: Interviews, Podcasts, and Press
 sidebar_label: Interviews, Podcasts, and Press
 ---
 
+- May 30, 2021: [SuperUMAns #1 - AMA about UMA with Hart Lambert!](https://www.publish0x.com/mind-puzzle/superumans-1-ama-about-uma-with-hart-lambert-xerqzdm?a=pmbk1p5ezJ)
+- May 28, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=tWAlDzkc5Cg)
+- May 27, 2021: [DeFi Pulse: Founder Fireside Chat with Clayton Roche of UMA](https://defipulse.com/blog/founder-fireside-chat-with-clayton-roche-of-uma/)
+- May 26, 2021: [SOSV: Unblocked with UMA Protocol's Clayton Roche](https://www.youtube.com/watch?v=lzWHWzNb4ns)
 - May 24, 2021: [Coindesk: Opium, UMA to Launch Decentralized Insurance for SpaceX Flights](https://www.coindesk.com/opium-uma-spacex-decentralized-insurance-contract)
 - May 24, 2021: [Opium and Uma on launching SpaceX insurance using Uma’s Optimistic Oracle](https://opium.finance/blog/uma-opium/UMAarticle/)
 - May 22, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=WLSbROAo4z4)
