@@ -20,7 +20,7 @@ The process to launch a KPI options contract on UMA is surprisingly simple. No o
 
 - UMA has a flexible expiring contract template which allows anyone to launch a large variety of expiring contracts with little to no development work.
 - Our unique [oracle solution](/getting-started/oracle) allows for an optimistic and economically incentivized decentralized solution to an otherwise, corruptible centralized oracle. It also offers a large amount of flexibility, where not all prices need to be programmatically retrieved!
-- You get paid to build on UMA! As part of UMA’s developer mining program, you will be paid $UMA rewards for any value locked in your KPI Options contract. This could be passed on as extra rewards to airdrop recipients, or used to fund future development work.
+
 
 ## Next Steps & Resources 
 
