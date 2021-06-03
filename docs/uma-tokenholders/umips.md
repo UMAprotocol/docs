@@ -20,7 +20,7 @@ In order for a UMIP to be voted on it must achieve a status of 'Final. See below
 
 Early stage UMIPs can be placed in the [Early Stage forum on Discourse](https://discourse.umaproject.org/c/umip-templates/34).   Opening a new topic in any of the subcategories will open up a pre-formatted template appropriate to that UMIP type.  We have a team of early stage reviewers who can provide feedback and support to ensure that the UMIP is complete and well formed prior to draft submission to the Github.
 
-### Step 1 - Draft
+### Step 2 - Draft
 
 A UMIP with a status of 'Draft' is open for consideration and is undergoing rapid iteration and changes. 
 
