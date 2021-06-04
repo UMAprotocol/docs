@@ -11,12 +11,15 @@ UMIPs need to provide a concise technical specification of the feature and a rat
 
 ## UMIP Process Overview
 
-A successful UMIP will move along the following stages: Draft ⟶ Last Call ⟶ Final ⟶ Approved.
+A successful UMIP will move along the following stages: Early Stage ⟶ Draft ⟶ Last Call ⟶ Final ⟶ Approved.
 Unsuccessful states are also possible: Abandoned and Rejected.
 
 In order for a UMIP to be voted on it must achieve a status of 'Final. See below for the steps needed to be completed by a UMIP author for their UMIP to reach a 'Final' status and be proposed as a vote to UMA tokenholders. 
 
-### Step 1 - Draft
+### Step 1 - Early Stage
+Proposed UMIPs should first be created in the [Early Stage Forum on Discourse](https://discourse.umaproject.org/c/umip-templates/34).  Starting a new topic in any of the subcategories will bring up a preformatted template which includes the necessary sections and guidence on how to complete.  We have a team of Early Stage reviewers who can offer help and support if required to ensure that your UMIP is complete and well formed prior to github submission.
+
+### Step 2 - Draft
 
 A UMIP with a status of 'Draft' is open for consideration and is undergoing rapid iteration and changes. 
 
