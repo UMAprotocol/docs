@@ -90,6 +90,7 @@ sidebar_label: Approved Price Identifiers
 |NGNUMA| The price of Nigerian Naira in UMA.| [UMIP-95](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-95.md)
 |NGNUSD| The price of Nigerian Naira in USD.| [UMIP-90](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-90.md)
 |OCEANUSD| The price of OCEAN in USD.| [UMIP-46](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-46.md)
+|OPENUSD| The price of OPEN in USD.| [UMIP-103](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-103.md)
 |ORNUSD| The price of ORN in USD.| [UMIP-91](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-91.md)
 |PERLUSD| The price of PERL in USD.| [UMIP-13](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-13.md)
 |PHPDAI| The price of Philippine Peso in DAI.| [UMIP-49](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-49.md)
@@ -137,6 +138,7 @@ sidebar_label: Approved Price Identifiers
 |USDLON| The price of USD in LON.| [UMIP-91](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-91.md)
 |USDMASK| The price of USD in MASK.| [UMIP-91](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-91.md)
 |USDOCEAN| The price of USD in OCEAN. | [UMIP-46](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-46.md)
+|USDOPEN| The price of USD in OPEN.| [UMIP-103](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-103.md)
 |USDORN| The price of USD in ORN.| [UMIP-91](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-91.md)
 |USDPERL| The price of USD in PERL.| [UMIP-13](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-13.md)
 |USDSFI| The price of USD in SFI.| [UMIP-91](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-91.md)
@@ -182,5 +184,5 @@ sidebar_label: Approved Price Identifiers
 |yUSDUSD| The price of yUSD in USD.| [UMIP-78](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-78.md)
 |ZARUMA| The price of South African RAND in UMA.| [UMIP-95](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-95.md)
 |ZARUSD| The price of South African RAND in USD.| [UMIP-90](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-90.md)
-|Total| No of Approved Price Identifiers.| [184](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
+|Total| No of Approved Price Identifiers.| [186](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
 
