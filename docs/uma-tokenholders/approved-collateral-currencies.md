@@ -71,6 +71,7 @@ sidebar_label: Approved Collateral Currencies
 |CREAM| 4 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
 |CHAIN| 3000 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
 |ERN| 70 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
-|Total| No of Approved collateral currencies | [65](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
+|OPEN| 600 | [UMIP-102](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-102.md)
+|Total| No of Approved collateral currencies | [66](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
