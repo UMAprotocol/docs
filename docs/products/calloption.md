@@ -22,7 +22,7 @@ Using UMA's infrastructure, a team can create a covered call option using the UM
 
 1. To create your own options you can make use of one of the currently approved [price identifiers](/uma-tokenholders/approved-price-identifiers.md) and [collateral types](uma-tokenholders/approved-collateral-currencies.md). If your price price identifiers or collateral typesis not approved you can follow our [UMIP process](/uma-tokenholders/umips.md) to get your specific requirements approved.
 
-2. You can then launch your contracting by following the [EMP launch tutorial](/developers/emp-deployment.md). Be sure to include the covered call from our [financial product library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/CoveredCallFinancialProductLibrary.sol)
+2. You can then launch your contracting by following the [EMP launch tutorial](/developers/emp-deployment.md). Be sure to include the covered call from our [financial product library]https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/CallOptionContractForDifferenceFinancialProductLibrary.sol)
 
 With the contracts being cash settled, the terms of the contract remaining constant throughout, and positions always being fully collateralized by definition, there is no need to manage your position or run liquidation bots. 
 
