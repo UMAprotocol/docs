@@ -3,9 +3,6 @@ title: Approved price identifiers
 sidebar_label: Approved Price Identifiers
 ---
 
-
-### List of approved mainnet price identifiers
-
 |Price ID| Summary| Link to UMIP|
 |:-------| :------| :-----------|
 |AAVEUSD| The price of AAVE in USD.| [UMIP-57](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-57.md)
