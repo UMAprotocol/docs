@@ -1,4 +1,4 @@
-###Guidence for the Addition of Collateral Currencies
+###Guidance for the Addition of Collateral Currencies
 
 Collateral currencies can be added through the collateral currency UMIP template available on Github, by adding 
  - the name of the token to the be added 
