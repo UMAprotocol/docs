@@ -3,9 +3,7 @@ title: UMA Tokenholders
 sidebar_label: Overview
 ---
 
-## What are UMA tokens?
-
-UMA token is used to operate UMA's dispute resolution system, known as the Data Verification Mechanism (DVM). Owning UMA gives you the ability to contribute price information to the DVM and govern UMA protocol.  
+The UMA governance token is used to operate UMA's dispute resolution system, known as the Data Verification Mechanism (DVM). Owning UMA gives you the ability to contribute price information to the DVM and contribute to UMA protocol governance decisions.  
 
 
 The benefits of owning UMA include:

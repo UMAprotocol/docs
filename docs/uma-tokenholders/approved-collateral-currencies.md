@@ -3,8 +3,6 @@ title: Approved collateral currencies
 sidebar_label: Approved Collateral Currencies
 ---
 
-### List of approved mainnet collateral currencies
-
 |Collateral Currency| Final Fee | Link to UMIP|
 |:-------| :-----------| :-----------|
 |WETH| 0.2 |  [UMIP-10](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-10.md)
