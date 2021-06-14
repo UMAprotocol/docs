@@ -31,6 +31,10 @@ module.exports = [
     to: "/synthetic-tokens/known-issues",
     from: ["/uma/synthetic_tokens/known_issues.html"],
   },
+  {
+    to: "/synthetic-tokens/long-short-pair",
+    from: ["/uma/synthetic_tokens/long-short-pair.html"],
+  },
   // developers (synthetic tokens)
   {
     to: "/developers/setup",
@@ -63,6 +67,10 @@ module.exports = [
   },
   {
     to: "/oracle/dvm-interface",
+    from: ["/uma/oracle/dvm_interfaces.html"],
+  },
+  {
+    to: "/oracle/optimistic-oracle-interface",
     from: ["/uma/oracle/dvm_interfaces.html"],
   },
   {

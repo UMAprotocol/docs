@@ -10,12 +10,12 @@ module.exports = {
       {
         type: "category",
         label: "Synthetic Tokens",
-        items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens",  "synthetic-tokens/known-issues"],
+        items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens", "synthetic-tokens/long-short-pair",  "synthetic-tokens/known-issues"],
       },
       {
         type: "category",
-        label: "Oracle (DVM)",
-        items: ["oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface",  "oracle/known-issues"],
+        label: "Oracle Service",
+        items: ["oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface", "oracle/optimistic-oracle-interface", "oracle/known-issues"],
       },
       {
         type: "category",
