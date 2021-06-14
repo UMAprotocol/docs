@@ -1,6 +1,7 @@
 ### Guidance for the Addition of Collateral Currencies
 
 Collateral currencies can be added through the collateral currency UMIP template available on Github, by adding 
+
  - the name of the token to the be added 
  - the contract address of the token  together with a link to the address on etherscan
  - the amount that should be added to the store as final fee expressed in units of the intended collateral currency.   
