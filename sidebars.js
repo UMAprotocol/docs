@@ -14,8 +14,8 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Oracle (DVM)",
-        items: ["oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface",  "oracle/known-issues"],
+        label: "Oracle Service",
+        items: ["oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface", "oracle/optimistic-oracle-interface", "oracle/known-issues"],
       },
       {
         type: "category",

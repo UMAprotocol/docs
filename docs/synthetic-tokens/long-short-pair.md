@@ -3,6 +3,7 @@ title: The Long Short Pair (LSP)
 sidebar_label: Long Short Pair (LSP)
 ---
 
+The UMA Long Short Pair (LSP) contract is . This allows for 
 ## LSP Construction Parameters
 
 - `expirationTimestamp`: unix timestamp when the contract will expire.
