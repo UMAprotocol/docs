@@ -17,7 +17,13 @@ The UMA Long Short Pair (LSP) contract is . This allows for
 
 ## LSP Functions
 
-The LSP is a simple contract and only has four external pieces of functionality that can be used. 
+The LSP is a simple contract and only has four ways to interact with the contract.
+
+The method are:
+- `create`
+- `redeem`
+- `expire`
+- `settle`
 
 ### `create`
 
@@ -29,7 +35,7 @@ At any point pre-expiry, anyone can call `redeem` with a pair of long and short 
 
 ### `expire`
 
-After the expiration timestamp, anyone can call `expire` to request a price from the UMA Optimistic Oracle. This function takes no parameters.
+After the expiration timestamp, anyone can call `expire` to request a price from the UMA Optimistic Oracle. This function takes no parameters and will revert if the current time is not later than `expirationTimestamp`. 
 
 ### `settle`
 
@@ -39,13 +45,13 @@ Once the Optimistic Oracle or DVM returns a price, token holders of either long 
 
 All LSPs will use an approved DVM price identifier together with a financial product library. Any value that is potentially non-deterministic and requires an "off-chain" calculation should be part of the price identifer. The financial product library will be used to transform the value returned by the price identifier into a final settlement value within the desired bounded payout range.
 
-This can be done in a multitiude of ways to create different types of financial contracts. Some audited examples have already been created and are below.
+This can be done in a multitiude of ways to create different types of financial contracts. Some examples, that are currently being audited, have already been created and are below.
 
 - [Call options library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/CallOptionContractForDifferenceFinancialProductLibrary.sol)
 - [Linear payout libary](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/LinearContractForDifferenceFinancialProductLibrary.sol)
 - [Range bond library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/RangeBondContractForDifferenceFinancialProductLibrary.sol)
 
-On deployment, the `financialProductLibraryAddress` should be set to the address of the desired financial product library. For a list of addresses for already deployed financial product libraries, refer here. If your desired financial product library is not already deployed, refer [here](https://github.com/UMAprotocol/launch-emp#deploying-financial-product-libraries) for instructions on deploying and verifying your own financial product library contract.
+On deployment, the `financialProductLibraryAddress` should be set to the address of the desired financial product library. For a list of addresses for already deployed financial product libraries, reach out to the UMA team on Discord. If your desired financial product library is not already deployed, refer [here](https://github.com/UMAprotocol/launch-emp#deploying-financial-product-libraries) for instructions on deploying and verifying your own financial product library contract.
 
 ## Launching a LSP
 
