@@ -10,7 +10,7 @@ Minters can lock a unit of collateral in return for a pair of "long" and "short"
 Some ideas for contracts that can be made with the LSP include: 
 - Binary Options - insurance products, prediction markets.
 - Linear payouts - speculating on the ratio of DEX to CEX monthly volume. 
-- Covered call options
+- Covered call options.
 - Range Bonds for treasury management.
 
 ## LSP Example
