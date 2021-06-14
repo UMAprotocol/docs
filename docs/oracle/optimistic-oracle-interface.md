@@ -3,7 +3,7 @@ title: Optimistic Oracle Interface
 sidebar_label: Optimistic Oracle Interface
 ---
 
-This document explains how various participants can interact with the Optimistic Oracle. To view the most updated mainnet, kovan or L2 deployments of the Optimistic Oracle contracts, refer to the production addresses listed [here](/dev-ref/addresses.md).
+This document explains how different participants can interact with the Optimistic Oracle. To view the most updated mainnet, kovan or L2 deployments of the Optimistic Oracle contracts, refer to the production addresses listed [here](/dev-ref/addresses.md).
 
 ## The Optimistic Oracle Interface
 
