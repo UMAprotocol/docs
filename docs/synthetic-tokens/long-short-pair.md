@@ -3,7 +3,16 @@ title: The Long Short Pair (LSP)
 sidebar_label: Long Short Pair (LSP)
 ---
 
-The UMA Long Short Pair (LSP) contract is . This allows for 
+The UMA Long Short Pair (LSP) contract template allows for the creation of unliquidatable capped-payout financial contracts.
+
+Minters can lock a unit of collateral in return for a pair of "long" and "short" tokens, and then market make or take a long or short position by selling the long or short token. Other users can go long or short simply by purchasing the tokenized positon.
+
+Some ideas for contracts that can be made with the LSP include: 
+- Binary Options - insurance products, prediction markets.
+- Linear payouts - speculating on the DEX/CEX volume ratio, 
+- Covered call options
+- Range Bonds for treasury management.
+
 ## LSP Construction Parameters
 
 - `expirationTimestamp`: unix timestamp when the contract will expire.
@@ -15,7 +24,7 @@ The UMA Long Short Pair (LSP) contract is . This allows for
 - `customAncillaryData`: Custom ancillary data to be passed along with the price request. If not needed, this should be left as a 0-length bytes array. This is used to pass parameters other than the request timestamp along with the price request. For an explanation of ancillary data functionality and desired format, refer [here](https://docs.google.com/document/d/1vl1BcIMO3NTNxvR0u6fFQqdUgWtIY8XyjVtx8Hkl8Qk/edit). For an example of a price identifier that uses ancillary data, refer [here](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-83.md#technical-specifications).
 - `finderAddress`: UMA protocol Finder contract address used to discover other protocol contracts.
 
-## LSP Functions
+## LSP Interaction
 
 The LSP is a simple contract and only has four ways to interact with the contract.
 
@@ -52,6 +61,23 @@ This can be done in a multitiude of ways to create different types of financial 
 - [Range bond library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/RangeBondContractForDifferenceFinancialProductLibrary.sol)
 
 On deployment, the `financialProductLibraryAddress` should be set to the address of the desired financial product library. For a list of addresses for already deployed financial product libraries, reach out to the UMA team on Discord. If your desired financial product library is not already deployed, refer [here](https://github.com/UMAprotocol/launch-emp#deploying-financial-product-libraries) for instructions on deploying and verifying your own financial product library contract.
+
+## LSP Example
+
+Bob decides that he wants to offer a suite of covered call options to the DeFi community. As his first product, he has decided that he wants to create a covered call option on ETH. He knows that the ETH/USD price identifier has already been registered by UMA governance, so it should take him no more than a few minutes to create this contract.
+
+The price of ETH is currently 2500, so Bob deploys a covered call option, that uses UMA's [call options library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/), and sets the contract's strike to 3000 ETH/USD.
+
+Alice, Troy and Rachel are DeFi users and want to take different bets on the price of ETH.
+
+- Alice wants to mint 1000 covered call option tokens. Alice deposits 1000 WETH and is sent 1000 long tokens and 1000 short tokens. The amount of WETH needed for each long/short pair is determined by `collateralPerPair`. In this case, it is set to 1.
+- Alice wants to collect premium on her call options, so she sells 100 of her long tokens to Troy, who believes that ETH will be greater than 3000 ETH/USD when the contract expires.
+- Alice also wants to hedge out the call options that she sold to Troy, so she sells 100 short tokens to Rachel, who does not believe that the price of ETH will be greater than 3000 ETH/USD when the contract expires.
+- Pre-expiry Alice decides she wants 500 WETH back. She calls `redeem` and burns 500 long and 500 short tokens in return for 500 of the WETH in her position. She would not be able to do this without equal numbers of long and short tokens.
+- At expiry, Bob calls `expire`. UMA's [Optimistic Oracle](/oracle/optimistic-oracle-interface.md) returns 3600 as the ETH/USD price. The financial product library, that Bob used in deployment, compares 3600 against the 3000 ETH/USD strike price and sets the contract's `expiryPercentageLong` to: (expiry price - strike price)/strike price. In this case, the `expiryPercentageLong` is set to (3600 - 3000)/3000 or 0.2.
+- Alice can now call `settle` and receives 400 WETH back. The 400 long tokens she still held were worth 0.2 WETH apiece, while each short token was worth 0. Note, for any LSP contract, the sum of long and short token pair at settlement would always be worth the amount of collateral determined by `collateralPerPair`.
+- Troy calls `settle` and receives 20 WETH, since the ETH/USD price was greater than the 3000 ETH/USD strike price. The amount of collateral he received was calculated with: number of long tokens * `expiryPercentageLong`.
+- Rachel calls settle and receives 80 WETH. The value of her short tokens is determined by: number of short tokens * (1 - `expiryPercentageLong`).
 
 ## Launching a LSP
 
