@@ -73,8 +73,8 @@ All LSPs will use an approved DVM price identifier together with a financial pro
 
 This can be done in a multitiude of ways to create different types of financial contracts. Some examples, that are currently being audited, have already been created and are below.
 
-- [Call options library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/CallOptionContractForDifferenceFinancialProductLibrary.sol)
-- [Linear payout libary](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/LinearContractForDifferenceFinancialProductLibrary.sol)
+- [Covered call options library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/CoveredCallContractForDifferenceFinancialProductLibrary.sol)
+- [Linear payout library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/LinearContractForDifferenceFinancialProductLibrary.sol)
 - [Range bond library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/RangeBondContractForDifferenceFinancialProductLibrary.sol)
 
 On deployment, the `financialProductLibraryAddress` should be set to the address of the desired financial product library. For a list of addresses for already deployed financial product libraries, reach out to the UMA team on Discord. If your desired financial product library is not already deployed, refer [here](https://github.com/UMAprotocol/launch-emp#deploying-financial-product-libraries) for instructions on deploying and verifying your own financial product library contract.
