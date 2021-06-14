@@ -80,7 +80,7 @@ module.exports = {
         {
           type: "category",
           label: "Price IDs and Collateral Currencies",
-          items: ["uma-tokenholders/adding-price-id", "uma-tokenholders/approved-price-identifiers", "uma-tokenholders/approved-collateral-currencies",],
+          items: ["uma-tokenholders/adding-price-id", "uma-tokenholders/approved-price-identifiers", "uma-tokenholders/approved-collateral-currencies","uma-tokenholders/guidence-on-collateral-currency-addition",],
         },
         "uma-tokenholders/umips",
         {
