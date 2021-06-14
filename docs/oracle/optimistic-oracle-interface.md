@@ -5,8 +5,6 @@ sidebar_label: Optimistic Oracle Interface
 
 This document explains how different participants can interact with the Optimistic Oracle. To view the most updated mainnet, kovan or L2 deployments of the Optimistic Oracle contracts, refer to the production addresses listed [here](/dev-ref/addresses.md).
 
-## The Optimistic Oracle Interface
-
 The Optimistic Oracle is used by financial contracts or any third party to retrieve prices. Once a price is requested, anyone can propose a price in response. Once proposed, the price goes through a liveness period where anyone can dispute the proposed price and send the disputed price to the UMA DVM for settlement.
 
 There are twelve methods that make up the Optimistic Oracle interface.
