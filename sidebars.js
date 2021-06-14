@@ -1,5 +1,5 @@
 module.exports = {
-    
+
     "Understanding UMA": [
       "getting-started/welcome",
       {
@@ -54,7 +54,7 @@ module.exports = {
       {
         type: "category",
         label: "Advanced Tutorials",
-        items: ["developers/dvm-integration"],
+        items: ["developers/optimistic-oracle-integration", "developers/dvm-integration"],
       },
       {
         type: "category",
