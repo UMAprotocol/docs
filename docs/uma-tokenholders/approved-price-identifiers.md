@@ -193,5 +193,5 @@ sidebar_label: Approved Price Identifiers
 |yUSDUSD| The price of yUSD in USD.| [UMIP-78](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-78.md)
 |ZARUMA| The price of South African RAND in UMA.| [UMIP-95](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-95.md)
 |ZARUSD| The price of South African RAND in USD.| [UMIP-90](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-90.md)
-|Total| No of Approved Price Identifiers.| [186](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
+|Total| No of Approved Price Identifiers.| [198](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
 
