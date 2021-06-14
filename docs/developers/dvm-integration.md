@@ -3,6 +3,10 @@ title: Integrating with the DVM
 sidebar_label: Integrating with the DVM
 ---
 
+## Update
+
+In most cases, it is better to integrate with the Optimistic Oracle rather than integrating with the DVM directly. See the [Optimistic Oracle tutorial](developers/optimistic-oracle-integration.md) for details.
+
 ## Toy Integration Example
 
 This example will set up a `DepositBox` contract which custodies a user’s ERC-20 token balance.
