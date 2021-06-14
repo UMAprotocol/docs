@@ -3,7 +3,7 @@ title: Integrating with the Optimistic Oracle
 sidebar_label: Integrating with the Optimistic Oracle
 ---
 
-## Integration Example Contract
+## "Deposit Box" Example Contract
 
 This example will set up an `OptimisticDepositBox` contract which custodies a user’s ERC-20 token balance.
 
