@@ -31,6 +31,10 @@ module.exports = [
     to: "/synthetic-tokens/known-issues",
     from: ["/uma/synthetic_tokens/known_issues.html"],
   },
+  {
+    to: "/synthetic-tokens/long-short-pair",
+    from: ["/uma/synthetic_tokens/long-short-pair.html"],
+  },
   // developers (synthetic tokens)
   {
     to: "/developers/setup",
@@ -47,6 +51,18 @@ module.exports = [
   {
     to: "/developers/bot-param",
     from: ["/uma/synthetic_tokens/bot_parameterization.html"],
+  },
+  {
+    to: "/developers/fpl-intro",
+    from: ["/uma/synthetic_tokens/fpl-intro.html"],
+  },
+  {
+    to: "/developers/fpl-deployment",
+    from: ["/uma/synthetic_tokens/fpl-deployment.html"],
+  },
+  {
+    to: "/developers/deployed-fpls",
+    from: ["/uma/synthetic_tokens/deployed-fpls.html"],
   },
   {
     to: "/build-walkthrough/minting-etherscan",

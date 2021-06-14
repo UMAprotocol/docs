@@ -10,7 +10,7 @@ module.exports = {
       {
         type: "category",
         label: "Synthetic Tokens",
-        items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens",  "synthetic-tokens/known-issues"],
+        items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens", "synthetic-tokens/long-short-pair",  "synthetic-tokens/known-issues"],
       },
       {
         type: "category",
@@ -45,6 +45,11 @@ module.exports = {
         type: "category",
         label: "Bots",
         items: ["developers/bots", "developers/bot-param", "developers/liquidation-opportunity-program"],
+      },
+      {
+        type: "category",
+        label: "Financial Product Libraries",
+        items: ["developers/fpl-intro", "developers/fpl-deployment", "developers/deployed-fpls"],
       },
       {
         type: "category",
