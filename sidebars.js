@@ -48,11 +48,6 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Financial Product Libraries",
-        items: ["developers/fpl-intro", "developers/fpl-deployment", "developers/deployed-fpls"],
-      },
-      {
-        type: "category",
         label: "Developer Mining",
         items: ["developers/developer-mining", "developers/devmining-reqs", "developers/designing-incentives", "developers/whitelist-contracts"],
       },

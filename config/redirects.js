@@ -53,18 +53,6 @@ module.exports = [
     from: ["/uma/synthetic_tokens/bot_parameterization.html"],
   },
   {
-    to: "/developers/fpl-intro",
-    from: ["/uma/synthetic_tokens/fpl-intro.html"],
-  },
-  {
-    to: "/developers/fpl-deployment",
-    from: ["/uma/synthetic_tokens/fpl-deployment.html"],
-  },
-  {
-    to: "/developers/deployed-fpls",
-    from: ["/uma/synthetic_tokens/deployed-fpls.html"],
-  },
-  {
     to: "/build-walkthrough/minting-etherscan",
     from: ["/uma/synthetic_tokens/mint_tokens_via_etherscan.html"],
   },
