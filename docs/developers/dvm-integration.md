@@ -6,22 +6,22 @@ sidebar_label: Integrating with the DVM
 ## Toy Integration Example
 
 This example will set up a `DepositBox` contract which custodies a user’s ERC-20 token balance.
-On a local testnet blockchain, the user will deposit ETH into the contract and withdraw ETH corresponding to a desired USD amount.
+On a local testnet blockchain, the user will deposit wETH (Wrapped Ether) into the contract and withdraw wETH corresponding to a desired USD amount.
 
 The user links the `DepositBox` with one of the price identifiers enabled on the DVM.
-In this example, the user will deposit ETH into the `DepositBox` and register it with the "ETH-USD" price identifier.
-The user can now withdraw a "USD"-denominated amount of "ETH" from their `DepositBox` via smart contract calls.
+In this example, the user will deposit wETH into the `DepositBox` and register it with the "ETH/USD" price identifier.
+The user can now withdraw a USD-denominated amount of wETH from their `DepositBox` via smart contract calls.
 The feature introduced by the DVM is on-chain pricing of the user's ERC-20 balance.
-In this example, the user would not have been able to transfer "USD"-denominated amounts of "ETH" without referencing an off-chain "ETH-USD" price feed.
+In this example, the user would not have been able to transfer USD-denominated amounts of wETH without referencing an off-chain `ETH-USD` price feed.
 The DVM therefore enables the user to "pull" a reference price.
 
-While the example below uses ETH as the currency for deposits to the `DepositBox` and ETH/USD as the price identifier, the code supports use of any ERC-20 token as the currency for deposits.
+While the example below uses wETH as the currency for deposits to the `DepositBox` and ETH/USD as the price identifier, the code supports use of any ERC-20 token as the currency for deposits.
 The code can also be deployed with other price identifiers.
 For example, if users wanted to denominate their withdrawals in BTC instead of USD, the price identifier could be set to ETH/BTC.
 
 Note that this toy example would perform poorly as a mainnet product, given the long period of time it would take for the UMA DVM to return the corresponding amount of ETH.
 This example is intended to serve as a technical tutorial for how to integrate the DVM into a project.
-Moreover, the DepositBox user would be paying for the privilege of having the DVM help them withdraw USD denominated ETH deposits.
+Moreover, the DepositBox user would be paying for the privilege of having the DVM help them withdraw USD denominated wETH deposits.
 
 The `DepositBox` contract will pay regular fees to the DVM proportional to the amount of collateral deposited into the contract. Additionally, whenever a user makes a withdrawal request, the contract will pay a fixed final fee to the DVM.
 
