@@ -57,7 +57,7 @@ A minter can call `create` to deposit collateral to mint an equal number of long
 
 ### `redeem`
 
-At any point pre-expiry, anyone can call `redeem` with a pair of long and short tokens and receive an amount of collateral determined  `collateralPerPair`. The total amount of collaterl received is determined by `collateralPerPair` * `tokensToRedeem`.
+At any point pre-expiry, anyone can call `redeem` with a pair of long and short tokens and receive an amount of collateral determined  `collateralPerPair`. The total amount of collateral received is determined by `collateralPerPair` * `tokensToRedeem`.
 
 ### `expire`
 
