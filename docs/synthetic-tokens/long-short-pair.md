@@ -11,7 +11,7 @@ Some ideas for contracts that can be made with the LSP include:
 - Binary Options - insurance products, prediction markets.
 - Linear payouts - speculating on the ratio of DEX to CEX monthly volume. 
 - Covered call options.
-- Range Bonds for treasury management.
+- [Range Tokens for treasury management](https://medium.com/uma-project/treasury-diversification-with-range-tokens-145d4b12614e).
 
 ## LSP Example
 
@@ -75,7 +75,7 @@ This can be applied in many types of ways to create different types of financial
 
 - [Covered call options library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/CoveredCallContractForDifferenceFinancialProductLibrary.sol)
 - [Linear payout library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/LinearContractForDifferenceFinancialProductLibrary.sol)
-- [Range bond library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/RangeBondContractForDifferenceFinancialProductLibrary.sol)
+- [Range token library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/RangeBondContractForDifferenceFinancialProductLibrary.sol)
 
 On deployment, the `financialProductLibraryAddress` should be set to the address of the desired financial product library. For a list of addresses for already deployed financial product libraries, reach out to the UMA team on Discord. If your desired financial product library is not already deployed, refer [here](https://github.com/UMAprotocol/launch-emp#deploying-financial-product-libraries) for instructions on deploying and verifying your own financial product library contract.
 
