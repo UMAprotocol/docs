@@ -15,11 +15,13 @@ On a local testnet blockchain, the user will deposit wETH (Wrapped Ether) into t
 
 In this example, the user would not have been able to transfer USD-denominated amounts of wETH without referencing an off-chain `ETH/USD` price feed. The Optimistic Oracle therefore enables the user to "pull" a reference price.
 
-Unlike price requests to the DVM, a price request to the Optimistic Oracle can be resolved within a specified liveness window if there are no disputes, which can be significantly shorter than the DVM voting period. The price requestor is not currently required to pay fees to the DVM.
+Unlike price requests to the DVM, a price request to the Optimistic Oracle can be resolved within a specified liveness window if there are no disputes, which can be significantly shorter than the DVM voting period. The liveness window is configurable, but is typically two hours, compared to 2-3 days for settlement via the DVM.
 
-The requestor can offer a reward for the proposer who responds to a price request, but the reward value is set to `0` in this example.
+The price requestor is not currently required to pay fees to the DVM. The requestor can offer a reward for the proposer who responds to a price request, but the reward value is set to `0` in this example.
 
 The price proposer posts a bond along with their price, which will be refunded if the price is not disputed, or if a dispute is resolved in the proposer's favor. Otherwise, this bond is used to pay the final fee to the DVM and pay a reward to a successful disputer.
+
+In the demo, the requestor does not require an additional bond from the price proposer, so the total bond posted is equal to the [wETH final fee](uma-tokenholders/approved-collateral-currencies.md), currently 0.2 wETH. See the `proposePriceFor` function in the `OptimisticOracle` [contract](https://docs-dot-uma-protocol.appspot.com/uma/contracts/OptimisticOracle.html) for implementation details.
 
 ## Running the Demo
 
@@ -101,4 +103,8 @@ This example is intended to serve as a basic technical tutorial for how to integ
 
 The Optimistic Oracle is a powerful tool for smart contracts that need quick and secure resolution of any kind of off-chain data, and this tutorial is only scratching the surface.
 
-To learn more about the Optimistic Oracle, see the [full contract documentation](https://docs-dot-uma-protocol.appspot.com/uma/contracts/OptimisticOracle.html), and if you have ideas or questions about something you'd like to build, join our community on [Discord](https://discord.com/invite/jsb9XQJ).
+To learn more about the Optimistic Oracle, see the [full contract documentation](https://docs-dot-uma-protocol.appspot.com/uma/contracts/OptimisticOracle.html).
+
+If you'd like to test your contract on Kovan or Ethereum mainnet, you can find deployed addresses [here](https://docs.umaproject.org/dev-ref/addresses).
+
+If you have ideas or questions about something you'd like to build, join our community on [Discord](https://discord.com/invite/jsb9XQJ).
