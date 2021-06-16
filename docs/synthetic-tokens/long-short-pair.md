@@ -69,9 +69,9 @@ Once the Optimistic Oracle or DVM returns a price, token holders of either long 
 
 ## Financial Product Libraries (FPL)
 
-All LSPs will use an approved DVM price identifier together with a financial product library. Any value that is potentially non-deterministic and requires an "off-chain" calculation should be part of the price identifer. The financial product library will be used to transform the value returned by the price identifier into a final settlement value within the desired bounded payout range.
+All LSPs will use an approved DVM price identifier together with a financial product library. Any value that is potentially non-deterministic and requires an "off-chain" calculation should be part of the price identifier. The financial product library will be used to transform the value returned by the price identifier into a final settlement value within the desired bounded payout range.
 
-This can be applied in many types of ways to create different types of financial contracts. Some examples, that are currently being audited, have already been created and are below.
+This can be applied in various ways to create different types of financial contracts. Some examples, which are currently being audited, have already been created and are linked below.
 
 - [Covered call options library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/CoveredCallContractForDifferenceFinancialProductLibrary.sol)
 - [Linear payout library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/LinearContractForDifferenceFinancialProductLibrary.sol)
