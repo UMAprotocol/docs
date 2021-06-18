@@ -44,7 +44,7 @@ module.exports = {
       {
         type: "category",
         label: "Bots",
-        items: ["developers/bots", "developers/bot-param", "developers/liquidation-opportunity-program"],
+        items: ["developers/bots", "developers/bot-param"],
       },
       {
         type: "category",
