@@ -12,7 +12,7 @@ _This should equate to approximately $400 at the time the UMIP is submitted.  If
 ***Note**: rebasing tokens should not be added as collateral currencies as they do not work with most registered UMA contracts*
 
 ____________
-The below provides some guidelines when using collateral currencies in an UMA contract
+Below are some items to consider when using collateral currencies in an UMA contract. Note that these items do not necessarily need to be directly addressed in a collateral currency UMIP.
 
 ### Stablecoins
 
