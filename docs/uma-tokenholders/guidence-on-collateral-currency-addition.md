@@ -18,9 +18,13 @@ Below are some items to consider when using collateral currencies in an UMA cont
 
 Consider carefully whether to treat stablecoins as their intended peg, or as the current market value.
 
+UMA collateral types within most registered financial contracts are treated pricelessly. That is to say that a financial contract's price identifier does not necessarily take into account the USD denominated value of a stablecoin or other collateral. This means that a price in an UMA financial contract only determines the units of collateral that a synthetic token is worth.
+
+Because of this, if it is wished to use a stablecoin as collateral and account for its fluctuations away from a $1 peg, the price identifier used should also account for the stablecoin's price in USD (or other fiat currency). As an example, an Expiring Multiparty contract that creates synthetic ETH with USDT as collateral will need to define a price identifier similar to the ETHUSD price identifier. With the ETHUSD price identifier defined as is and ETHUSD at 2500, each synthetic token will be worth 2500 USDT. If a contract deployer wishes to reflect the true ETHUSDT price, they will need to define a new price identifier that determines both the ETH/USD and the USD/USDT prices and multiplies the two.
+
 ### Non-traded tokens
 
-Some tokens, such as interest bearing tokens or liquidity tokens may have no direct market.  
+Some tokens, such as interest bearing tokens or liquidity tokens may have no direct market, information on how the final store fee was calculated should be detailed in the rationale section to inform how a dollar value can be calculated for such a token which does not have a direct market price.    
 
 If using such tokens in a contract which requires collateral monitoring, such as Expiring Multiparty Contracts (EMP), please ensure that there is a clear way for liquidity to be obtained should it be required.  It may be useful to add this information to the UMIP, under the security section.
 
