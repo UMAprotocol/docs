@@ -40,7 +40,7 @@ When there is little liquidity for a token, or where there is a low ratio of tok
 
 ### Bridged tokens
  
-To be accepted as a collateral currency, there must be some availablilty of the token on the ethereum chain. 
+To be accepted as a collateral currency, there must be some availability of the token on Ethereum mainnet. 
  
 Where the majority of the liquidity is available on another chain, including a sidechain, the UMIP should identify bridges where the collateral currency can be obtained. Note that any token and contract address added should be the ERC20 version, (not the token on the native chain)
 
