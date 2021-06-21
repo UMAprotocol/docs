@@ -9,7 +9,7 @@ Collateral currencies can be added through the collateral currency UMIP template
  - the amount that should be added to the store as final fee expressed in units of the intended collateral currency.   
 _This should equate to approximately $400 at the time the UMIP is submitted.  If the token is not directly listed on Coingecko and/or Coinmarketcap, please add how the estimated dollar value of the token was obtained in the Rationale section._
 
-***Note**: rebasing tokens cannot be added as collateral currencies as they do not work with UMA's factory contracts*
+***Note**: rebasing tokens should not be added as collateral currencies as they do not work with most registered UMA contracts*
 
 ____________
 The below provides some guidelines when using collateral currencies in an UMA contract
@@ -41,4 +41,3 @@ To be accepted as a collateral currency, there must be some availablilty of the 
 Where the majority of the liquidity is available on another chain, including a sidechain, the UMIP should identify bridges where the collateral currency can be obtained. Note that any token and contract address added should be the ERC20 version, (not the token on the native chain)
 
 Developers considering using such a currency for a contract that requires collateral monitoring should ensure that these bridges are robust enough to obtain sufficient collateral currency should it be required for liquidations. 
-
