@@ -17,7 +17,7 @@ Some ideas for contracts that can be made with the LSP include:
 
 Bob decides that he wants to offer a suite of covered call options to the DeFi community. As his first product, he has decided that he wants to create a covered call option on ETH. He knows that the ETH/USD price identifier has already been registered by UMA governance, so it should take him no more than a few minutes to create this contract.
 
-The price of ETH is currently 2500, so Bob deploys a covered call option, that uses UMA's [call options library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/CoveredCallContractForDifferenceFinancialProductLibrary.sol), and sets the contract's strike to 3000 ETH/USD.
+The price of ETH is currently 2500, so Bob deploys a covered call option, that uses UMA's [call options library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries/CoveredCallLongShortPairFinancialProductLibrary.sol), and sets the contract's strike to 3000 ETH/USD.
 
 Alice, Troy and Rachel are DeFi users and want to take different bets on the price of ETH.
 
@@ -73,9 +73,9 @@ All LSPs will use an approved DVM price identifier together with a financial pro
 
 This can be applied in many types of ways to create different types of financial contracts. Some examples, that are currently being audited, have already been created and are below.
 
-- [Covered call options library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/CoveredCallContractForDifferenceFinancialProductLibrary.sol)
-- [Linear payout library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/LinearContractForDifferenceFinancialProductLibrary.sol)
-- [Range token library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/contract-for-difference-libraries/RangeBondContractForDifferenceFinancialProductLibrary.sol)
+- [Covered call options library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries/CoveredCallLongShortPairFinancialProductLibrary.sol)
+- [Linear payout library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries/LinearLongShortPairFinancialProductLibrary.sol)
+- [Range token library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries/RangeBondLongShortPairFinancialProductLibrary.sol)
 
 On deployment, the `financialProductLibraryAddress` should be set to the address of the desired financial product library. For a list of addresses for already deployed financial product libraries, reach out to the UMA team on Discord. If your desired financial product library is not already deployed, refer [here](https://github.com/UMAprotocol/launch-emp#deploying-financial-product-libraries) for instructions on deploying and verifying your own financial product library contract.
 
