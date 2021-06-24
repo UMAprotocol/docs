@@ -1,0 +1,17 @@
+version: 2.1
+jobs:
+  test:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - run:
+          name: Test dependencies
+          command: |
+            echo "No tests"
+            circleci-agent step halt;
+
+workflows:
+  version: 2.1
+  workflow_test:
+      jobs:
+        - test
