@@ -5,6 +5,7 @@ sidebar_label: Events
 
 ## Past Events
 
+- June 17, 2021: [ETHglobal:Building with UMA's New Products](https://www.youtube.com/watch?v=xfQKeUuOA0U)
 - Mar 5, 2020: [DeFiiCON](https://twitter.com/UMAprotocol/status/1367932930518048768?s=20)
 - Jan 21, 2020: [MarketMake, Jan202won](https://www.youtube.com/watch?v=z21xyy7C0EM&feature=youtu.be)
 - Oct 25, 2020: [IOSG DeFi Summit 2020](https://www.youtube.com/watch?v=Ymg73RUEVL4&feature=youtu.be)
