@@ -71,7 +71,7 @@ sidebar_label: Approved Collateral Currencies
 |ERN| 70 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
 |OPEN| 600 | [UMIP-102](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-102.md)
 |DFX| 400 | [UMIP-104](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-104.md)
-|BASL| 4 | [UMIP-105](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-105.md)
+|BASK| 4 | [UMIP-105](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-105.md)
 |Total| No of Approved collateral currencies | [68](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
