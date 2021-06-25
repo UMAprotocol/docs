@@ -3,6 +3,7 @@ title: Interviews, Podcasts, and Press
 sidebar_label: Interviews, Podcasts, and Press
 ---
 
+- June 17, 2021: [ETHglobal:Building with UMA's New Products](https://www.youtube.com/watch?v=xfQKeUuOA0U)
 - May 30, 2021: [SuperUMAns #1 - AMA about UMA with Hart Lambert!](https://www.publish0x.com/mind-puzzle/superumans-1-ama-about-uma-with-hart-lambert-xerqzdm?a=pmbk1p5ezJ)
 - May 28, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=tWAlDzkc5Cg)
 - May 27, 2021: [DeFi Pulse: Founder Fireside Chat with Clayton Roche of UMA](https://defipulse.com/blog/founder-fireside-chat-with-clayton-roche-of-uma/)
