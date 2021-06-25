@@ -10,6 +10,11 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Jun 23, 2021: [In Case You Missed It #19](https://medium.com/uma-project/icymi-19-cd1651a0102)
+- Jun 21, 2021: [uLABS: Range Tokens in Detail](https://medium.com/uma-project/ulabs-range-tokens-in-detail-f24ceffdf90b)
+- Jun 18, 2021: [Introducing UMA’s Long Short Pair (LSP) Financial Primitive](https://medium.com/uma-project/introducing-umas-long-short-pair-lsp-financial-primitive-84596803864f)
+- Jun 18, 2021: [In Case You Missed It #18](https://medium.com/uma-project/icmy-18-c7a7c94c91ab)
+- Jun 16, 2021: [UMA is scaling to every EVM compatible chain](https://medium.com/uma-project/uma-is-scaling-to-every-evm-compatible-chain-18ca2404698d)
 - Jun 14, 2021: [Treasury Diversification With Range Tokens](https://medium.com/uma-project/treasury-diversification-with-range-tokens-145d4b12614e)
 - Jun 9, 2021: [Developer Mining Retrospective and the KPI Options Grant Program](https://medium.com/uma-project/developer-mining-retrospective-and-the-kpi-options-grant-program-81f4c9eef7d6)
 - Jun 9, 2021: [In Case You Missed It #17](https://medium.com/uma-project/icymi-17-a1655ac0e2e7)
