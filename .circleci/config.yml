@@ -2,13 +2,15 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: circleci/node:lts
+      - image: cimg/ruby:3.0.1
     steps:
+      - checkout
       - run:
-          name: Test dependencies
+          name: Test links
           command: |
-            echo "No tests"
-            circleci-agent step halt;
+            gem install awesome_bot
+            cd docs/
+            find . -type d -exec bash -c 'cd "$0" && awesome_bot --allow-redirect --allow-dupe --allow-ssl *' {} \;
 
 workflows:
   version: 2.1
