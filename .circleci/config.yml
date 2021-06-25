@@ -9,7 +9,7 @@ jobs:
           name: Test links
           command: |
             cd docs/
-            awesome_bot --allow-dupe --allow-redirect --skip-save-results `find . -name "*.md"`
+            awesome_bot --allow-dupe --allow-redirect --allow 403 --skip-save-results `find . -name "*.md"`
 
 workflows:
   version: 2.1
