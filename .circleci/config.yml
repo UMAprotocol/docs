@@ -11,7 +11,8 @@ jobs:
           command: |
             cd docs/
             pwd
-            circleci tests glob "docs/**/*.md" | circleci tests split > /tmp/test-docs
+            circleci tests glob "docs/**/*.md"
+            #| circleci tests split > /tmp/test-docs
             awesome_bot --allow-dupe --allow-redirect --allow 403 --skip-save-results $(echo '$(cat /tmp/test-docs)')
 
 
