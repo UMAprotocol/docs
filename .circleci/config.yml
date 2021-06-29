@@ -3,7 +3,7 @@ jobs:
   test:
     docker:
       - image: dkhamsing/awesome_bot
-    parallelism: 80
+    parallelism: 50
     steps:
       - checkout
       - run:
