@@ -10,14 +10,22 @@ jobs:
           name: Test links
           command: |
             cd docs/
-            pwd
             find . -name '*.md' | circleci tests split > /tmp/test-docs
-            cat /tmp/test-docs
             awesome_bot --allow-dupe --allow-redirect --allow 403 --skip-save-results $(cat /tmp/test-docs)
-
 
 workflows:
   version: 2.1
   workflow_test:
       jobs:
         - test
+
+  workflow_nightly:
+        triggers:
+          - schedule:
+              cron: "0 0 * * *"
+              filters:
+                branches:
+                  only:
+                    - master
+        jobs:
+          - test
