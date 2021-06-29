@@ -3,29 +3,19 @@ jobs:
   test:
     docker:
       - image: dkhamsing/awesome_bot
-    parallelism: 50
+    parallelism: 83
     steps:
       - checkout
       - run:
           name: Test links
           command: |
-            cd docs/
-            find . -name '*.md' | circleci tests split > /tmp/test-docs
-            awesome_bot --allow-dupe --allow-redirect --allow 403 --skip-save-results $(cat /tmp/test-docs)
+            pwd
+            circleci tests glob "docs/**/*.md" | circleci tests split > /tmp/test-docs
+            awesome_bot --allow-dupe --allow-redirect --allow 403 --skip-save-results $(echo '$(cat /tmp/test-docs)')
+
 
 workflows:
   version: 2.1
   workflow_test:
       jobs:
         - test
-
-  workflow_nightly:
-        triggers:
-          - schedule:
-              cron: "0 0 * * *"
-              filters:
-                branches:
-                  only:
-                    - master
-        jobs:
-          - test
