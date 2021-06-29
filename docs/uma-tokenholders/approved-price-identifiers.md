@@ -118,7 +118,7 @@ sidebar_label: Approved Price Identifiers
 |STABLESPREAD/USDC_18DEC| Replacement for deprecated [STABLESPREAD/USDC](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-31.md) price identifier.| [UMIP-66](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-66.md)
 |SUSHIUNI_TVL| The TVL ratio between Uniswap and Sushiswap| [UMIP-24](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-24.md)
 |SUSHIUSD| The price of SUSHI in USD.| [UMIP-68](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-68.md)
-|uCRSPTMT_SEP21| A price that tracks the CRSP US Total Market TR Index (CRSPTMT), a highly diversified index that aims to track the US stock market as a whole.| [UMIP-92](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-92.md0
+|uCRSPTMT_SEP21| A price that tracks the CRSP US Total Market TR Index (CRSPTMT), a highly diversified index that aims to track the US stock market as a whole.| [UMIP-92](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-92.md)
 |UMAUSD| The price of UMA in USD.| [UMIP-57](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-57.md)
 |UNIUSD| The price of UNI in USD.| [UMIP-57](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-57.md)
 |USDAAVE| The price of USD in AAVE.| [UMIP-57](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-57.md)

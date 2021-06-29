@@ -35,7 +35,6 @@ sidebar_label: Events
 - Room B2: Building Synthetic Derivatives on Ethereum, [Slides](https://docs.google.com/presentation/d/1syx5UmERftHfuiLeuSatI-GZGMIkkSPggRpNaDxDjkU/edit?usp=sharing) and [Video](https://www.youtube.com/watch?v=TjeB27zIn4g)
 - Hall D: BitDEX: Building a Decentralized BitMEX, [Slides](https://docs.google.com/presentation/d/19SuDaniZD7alZVsPDHIIpHBVKRJfMe9bRFVnBqqIoJA/edit?usp=sharing) and [Video](https://www.youtube.com/watch?v=4Uwznzfne1w)
 - Oct 7, 2019 in Osaka: The path from overcollateralization to undercollateralization, [video at 6:16](https://youtu.be/M8fBFhi-EE0)
-- Oct 5, 2019 in Tokyo: [node.tokyo How to scale DeFi to \$T of value](https://nodetokyo.jp/schedule/)
 - Oct 3, 2019 in NYC: [DeFi NYC: Demo Day](https://www.meetup.com/DeFiNYC/events/265090673/)
 - Oct 1, 2019 in NYC: [TQuorum DeFi meets CeFi Panel](http://tquorum.com/)
 - Sept 16, 2019 in NYC: [NYC Blockchain Devs: Intro to DeFi and Financial Derivatives on the Blockchain](https://www.meetup.com/nyc-blockchain-devs/events/264896876/)
