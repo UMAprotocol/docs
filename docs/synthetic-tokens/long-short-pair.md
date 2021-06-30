@@ -36,8 +36,8 @@ Alice, Troy and Rachel are DeFi users and want to take different bets on the pri
 - `collateralPerPair`: how many units of collateral are required to mint one pair of synthetic tokens.
 - `priceIdentifier`: registered DVM price identifier that the long and short pair will track.
 - `financialProductLibraryAddress`: Contract providing settlement payout logic. Will typically creates bounds and transform the value returned by the price identifier.
-- `longTokenAddress`: ERC20 token used as long in the CFD.
-- `shortTokenAddress`: ERC20 token used as short in the CFD.
+- `longTokenAddress`: ERC20 token used as long in the LSP.
+- `shortTokenAddress`: ERC20 token used as short in the LSP.
 - `customAncillaryData`: Custom ancillary data to be passed along with the price request. If not needed, this should be left as a 0-length bytes array. This is used to pass parameters other than the request timestamp along with the price request. For an explanation of ancillary data functionality and desired format, refer [here](https://docs.google.com/document/d/1vl1BcIMO3NTNxvR0u6fFQqdUgWtIY8XyjVtx8Hkl8Qk/edit). For an example of a price identifier that uses ancillary data, refer [here](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-83.md#technical-specifications).
 - `finderAddress`: UMA protocol Finder contract address used to discover other protocol contracts.
 
