@@ -36,6 +36,6 @@ When there is little liquidity for a token, or where there is a low ratio of tok
  
 To be accepted as a collateral currency, there must be some availability of the token on Ethereum mainnet. 
  
-Where the majority of the liquidity is available on another chain, including a sidechain, the UMIP should identify bridges where the collateral currency can be obtained. Note that any token and contract address added should be the ERC20 version, (not the token on the native chain)
+When the majority of the liquidity for a bridged token is available on a chain other than Ethereum mainnet, but it is desired to add the Ethereum mainnet ERC-20, the UMIP should specify how the token can be bridged to Ethereum mainnet. Note that both the Ethereum mainnet token address and token address, that is being bridged, should be specified.
 
 Developers considering using such a currency for a contract that requires collateral monitoring should ensure that these bridges are robust enough to obtain sufficient collateral currency should it be required for liquidations. 
