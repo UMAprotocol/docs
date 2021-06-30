@@ -36,6 +36,11 @@ module.exports = {
         label: "ExpiringMultiParty (EMP)",
         items: ["developers/emp-deployment", "build-walkthrough/emp-parameters", "build-walkthrough/minting-etherscan",],
       },
+      {
+        type: "category",
+        label: "Deploying on Polygon",
+        items: ["developers/deploy-on-polygon",],
+      },
       // {
       //   type: "category",
       //   label: "Minting Tokens",
