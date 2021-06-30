@@ -28,12 +28,6 @@ Some tokens, such as interest bearing tokens or liquidity tokens may have no dir
 
 If using such tokens in a contract which requires collateral monitoring, such as Expiring Multiparty Contracts (EMP), please ensure that there is a clear way for liquidity to be obtained should it be required.  It may be useful to add this information to the UMIP, under the security section.
 
-### Volatility
-
-Where a proposed collateral type has high volatility, it is suggested that a higher store fee than the recommended $400 may be appropriate.
-
-Where this is the case, this should be noted in the rationale section together with a justification for the value of the store fee.
-
 ### Liquidity
 
 When there is little liquidity for a token, or where there is a low ratio of tokens available on the market compared with protocol treasury stores, care should be taken in using this collateral currency in a contract and developers should investigate the distribution schedule when considering its use.
