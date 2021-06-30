@@ -75,3 +75,4 @@ sidebar_label: Approved Collateral Currencies
 |Total| No of Approved collateral currencies | [68](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
+To submit a token to be considered as a collateral currency, please see the _[Guidance on Collateral Currency Addition](uma-tokenholders/guidence-on-collateral-currency-addition.md)
