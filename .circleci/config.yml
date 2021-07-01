@@ -11,7 +11,12 @@ jobs:
           command: |
             cd docs/
             find . -name '*.md' | circleci tests split > /tmp/test-docs
-            awesome_bot --allow-dupe --allow-redirect --white-list angel.co --skip-save-results $(cat /tmp/test-docs)
+            awesome_bot \
+            --allow-dupe \
+            --allow-redirect \
+            --white-list angel.co,etherscan.io,kovan.etherscan.io \
+            --skip-save-results \
+            $(cat /tmp/test-docs)
 
 workflows:
   version: 2.1
