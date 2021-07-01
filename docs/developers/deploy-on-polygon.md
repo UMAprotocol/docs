@@ -2,16 +2,16 @@
 title: Deploying the LSP on Polygon
 sidebar_label: Deploying the LSP on Polygon
 ---
-UMA's infrasturcture is also available on Polygon for developers to make use of the scaling solution. The following will explain the details on how to deploy on Polygon. 
+UMA's infrasturcture is also available on Polygon for developers to make use as a scaling solution. The following will explain the details on how to deploy on Polygon. 
 
 Deploying to Polygon follows a near identical launch process as to launching any UMA contract on Ethereum. By using one of our launch repo's and amending the destination network, you can quickly deploy your contracts on Polygon.
 
 ## Deployment process
 
-At the end of this deployment process, you should have a deployed contract on Polygon mainnet or on Mumbai testnet. The following is an overview of the deployment setps below.
+At the end of this deployment process, you should have a deployed contract on Polygon mainnet or Mumbai testnet. The following is an overview of the deployment steps below.
 
 1. Clone the repo
-2. Install the dependancies
+2. Install the dependencies
 3. Set your parameters
 5. Run the deployment on Mumbai testnet
 6. Run the deployment on Polygon mainnet  
@@ -19,7 +19,7 @@ At the end of this deployment process, you should have a deployed contract on Po
 
 ## Clone the repo
 
-1. Clone the specific repository contract you need by choosing one of the two below:
+1. Clone the repo:
 
  - [launch-lsp](https://github.com/UMAprotocol/launch-lsp)
 ```bash
@@ -27,7 +27,7 @@ At the end of this deployment process, you should have a deployed contract on Po
 ```
 ## Install the dependencies
 
-You will need to install nodejs v12 (we recommend nvm to manage node versions) and yarn.
+You will need to install nodejs v14 (we recommend nvm to manage node versions) and yarn.
 
 Note: these additional dependencies are required -- you may or may not have them on your system already:
 
@@ -41,17 +41,17 @@ sudo apt-get update && sudo apt-get install -y libudev-dev libusb-1.0-0-dev
 ```
 ## Setting your parameters
 
-It is important to understand that each contract type requires the following parameters to be set at the point deployment. 
+It is important to understand that each contract requires the following parameters to be set at the point deployment. 
 
 ### Long-Short-Pair parameters
 
-- `gasprice:` The gas pricec used for your contract deployment  
+- `gasprice:` The gas price used for your contract deployment  
 - `url:` your node URL. In the case for Polygon deployments, you can use the Polygon Node URL.
 - `mnemonic:` Your 12 word seed phrase or mnemonic 
 - `lspCreatorAddress:` The address used in deploying your LSP. The default is set to: `0x3e665D15425fAee14eEF53B9caaa0762b243911a`
-- `expirationTimestamp:` Timestanp your your contrac will expire at 
+- `expirationTimestamp:` Timestamp at which your contract will expire 
 - `collateralPerPair:` The amount of collateral required to mint each long and short pair. Default set to `1000000000000000000` 
-- `priceIdentifier"` The approached price identifier to be used in your contract 
+- `priceIdentifier"` The approved price identifier to be used  
 - `collateralToken:` Collateral currency to be used to be deposited 
 - `syntheticName:` The long name of the token
 - `syntheticSymbol:` The short name of the token or ticker symbol
