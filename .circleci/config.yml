@@ -2,16 +2,35 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: circleci/node:lts
+      - image: dkhamsing/awesome_bot
+    parallelism: 50
     steps:
+      - checkout
       - run:
-          name: Test dependencies
+          name: Test links
           command: |
-            echo "No tests"
-            circleci-agent step halt;
+            cd docs/
+            find . -name '*.md' | circleci tests split > /tmp/test-docs
+            awesome_bot \
+            --allow-dupe \
+            --allow-redirect \
+            --white-list angel.co,etherscan.io,kovan.etherscan.io \
+            --skip-save-results \
+            $(cat /tmp/test-docs)
 
 workflows:
   version: 2.1
   workflow_test:
       jobs:
         - test
+
+  workflow_nightly:
+        triggers:
+          - schedule:
+              cron: "0 0 * * *"
+              filters:
+                branches:
+                  only:
+                    - master
+        jobs:
+          - test
