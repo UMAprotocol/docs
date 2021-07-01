@@ -84,7 +84,7 @@ https://polygon-mumbai.infura.io/v3/{projectId}
 
 Run the deployment script with your specific parameters.
 ```bash
-node index.js --gasprice 20 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --lspCreatorAddress 0x6883FeB1c131F58C1Cd629289Da3dE0051d2aa0d --expirationTimestamp 1643678287 --collateralPerPair 1000000000000000000 --priceIdentifier ETHUSD --collateralToken 0xd0a1e359811322d97991e03f863a0c30c2cf029c --syntheticName "ETH 9000 USD Call [December 2021]" --syntheticSymbol ETHc9000-1221 --financialProductLibrary 0xc19B7EF43a6eBd393446F401d1eCFac01B181ac0
+node index.js --gasprice 1 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --lspCreatorAddress 0x6883FeB1c131F58C1Cd629289Da3dE0051d2aa0d --expirationTimestamp 1643678287 --collateralPerPair 1000000000000000000 --priceIdentifier ETHUSD --collateralToken 0xd0a1e359811322d97991e03f863a0c30c2cf029c --syntheticName "ETH 9000 USD Call [December 2021]" --syntheticSymbol ETHc9000-1221 --financialProductLibrary 0xc19B7EF43a6eBd393446F401d1eCFac01B181ac0
 ```
 ## Deploying to Polygon Mainnet
 
