@@ -2,17 +2,15 @@
 title: Deploying the LSP on Polygon
 sidebar_label: Deploying the LSP on Polygon
 ---
-UMA's infrasturcture is also available on Polygon for developers to make use as a scaling solution. The following will explain the details on how to deploy on Polygon. 
+UMA's infrastructure is also available on Polygon for developers to make use of as a scaling solution. The following will explain the details on how to deploy on Polygon. 
 
-Deploying to Polygon follows a near identical launch process as to launching any UMA contract on Ethereum. By using one of our launch repo's and amending the destination network, you can quickly deploy your contracts on Polygon.
+Deploying to Polygon follows a near-identical launch process as to launching any UMA contract on Ethereum. Using one of our launch repo's and amending the destination network, you can quickly deploy your contracts on Polygon.
 
 ## How UMA works on Polygon
 
-UMA makes use of a arbitary message bridge that allows for two-way messages to pass between Polygon network and Ethereum mainet. The message bridge is makes use of Polygon Arbitary Message system, meaning it can be as trusted as the Polygon networek itself. 
+UMA makes use of an arbitrary message bridge that allows for two-way messages to pass between the Polygon network and Ethereum mainet. The message bridge makes use of the Polygon Arbitrary Message system, meaning it can be as trusted as the Polygon network itself. 
 
-UMA's Optimitic Oracle is used as the arbitor of price requests locally on the Polygon network. A request request will ask the locally deployed Optimitic Oracle. If the request goes undisputed, then the the result is deemed the accepted outcome. 
-
-![](img/PolygonOO.png)
+UMA's Optimistic Oracle is used as the arbiter of price requests locally on the Polygon network. A request will ask the locally deployed Optimitic Oracle. If the proposal goes undisputed, then the result is deemed the accepted outcome. 
 
 If the event is disputed, then the following steps will be taken to bridge the disputed result back to the final arbitator, the DVM:
 1. A Polygon contract, such as a prediction market, needs a price to settle a payout. The contract expects to get this price from an optimistic oracle (“Polygon Oracle”).
@@ -25,7 +23,7 @@ Once the DVM has resolved a price request, the outcome of the vote is pushed to 
 7. Finally, the Oracle Child Tunnel then sends a message back to the Polygon Oracle
 8. The outcome of the dispute is resolved.
 
-![](img/PolygonDispute.png)
+![](/img/PolygonDispute.png)
 
 ## Deployment process
 
