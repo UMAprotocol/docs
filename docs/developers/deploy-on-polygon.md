@@ -6,6 +6,27 @@ UMA's infrasturcture is also available on Polygon for developers to make use as 
 
 Deploying to Polygon follows a near identical launch process as to launching any UMA contract on Ethereum. By using one of our launch repo's and amending the destination network, you can quickly deploy your contracts on Polygon.
 
+## How UMA works on Polygon
+
+UMA makes use of a arbitary message bridge that allows for two-way messages to pass between Polygon network and Ethereum mainet. The message bridge is makes use of Polygon Arbitary Message system, meaning it can be as trusted as the Polygon networek itself. 
+
+UMA's Optimitic Oracle is used as the arbitor of price requests locally on the Polygon network. A request request will ask the locally deployed Optimitic Oracle. If the request goes undisputed, then the the result is deemed the accepted outcome. 
+
+![](img/PolygonOO.png)
+
+If the event is disputed, then the following steps will be taken to bridge the disputed result back to the final arbitator, the DVM:
+1. A Polygon contract, such as a prediction market, needs a price to settle a payout. The contract expects to get this price from an optimistic oracle (“Polygon Oracle”).
+2. For some reason, a user disagrees with the price returned by the Polygon Oracle and disputes the price.
+3. The disputed price request is passed from the Polygon Oracle to a contract called the “Oracle Child Tunnel”, whose sole responsibility is to communicate with an “Oracle Root 
+4. Tunnel” on the Ethereum network. The Child Tunnel relays the dispute to Ethereum mainnet to the Root Tunnel.
+5. The Oracle Root Tunnel has special permission to request a price from the DVM, where the familiar voting and resolution process occurs amongst UMA voting token holders.
+Once the DVM has resolved a price request, the outcome of the vote is pushed to Oracle Root Tunnel. It is important to note that the DVM is not aware of which chain the request came from, nor does it need to.
+6. Like before, the Oracle Root Tunnel relays the result from the DVM to the Child Tunnel on Polygon.
+7. Finally, the Oracle Child Tunnel then sends a message back to the Polygon Oracle
+8. The outcome of the dispute is resolved.
+
+![](img/PolygonDispute.png)
+
 ## Deployment process
 
 At the end of this deployment process, you should have a deployed contract on Polygon mainnet or Mumbai testnet. The following is an overview of the deployment steps below.
@@ -34,7 +55,7 @@ Note: these additional dependencies are required -- you may or may not have them
 - libudev
 - libusb
 
-These dependencies are installed on MacOSX by installing the XCode Developer Tools. For Linux, the example ubuntu installation command for additional deps is:
+These dependencies are installed on MacOS by installing the XCode Developer Tools. For Linux, the example ubuntu installation command for additional deps is:
 
 ```bash
 sudo apt-get update && sudo apt-get install -y libudev-dev libusb-1.0-0-dev
