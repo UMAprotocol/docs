@@ -43,7 +43,7 @@ On a more serious note, superUMAns are an indispensable component of the machine
  - Every member of our community has their own unique blend of superpowers and we value all of them
 
 ## How do you become a superUMAn?
-All you have to do to become a superUMAn is show up and dive in! It really is that easy. If anything about UMA speaks to you, come join us on Discord in the superUMAn lair. Bring all your questions!
+All you have to do to become a superUMAn is show up and dive in! It really is that easy. If anything about UMA speaks to you, come join us on [Discord](https://discord.com/invite/jsb9XQJ) in the superUMAn lair. Bring all your questions!
 
 Let us know who you are, how you found us, what you’re all about, and how you’d like to get involved.
 
