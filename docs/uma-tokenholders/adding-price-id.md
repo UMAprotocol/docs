@@ -3,8 +3,6 @@ title: Overview of price identifiers and collateral currencies
 sidebar_label: Overview
 ---
 
-## What is a price identifier?
-
 A [price identifier](synthetic-tokens/glossary.md#price-identifier) is a natural language descriptor of a reference index, whose value the oracle will determine upon request.
 Because UMA tokenholders need to be able to vote on the value of this price identifier when disputes are raised, the DVM keeps a list of approved price identifiers.
 
@@ -12,10 +10,7 @@ For example, `GOLD_USD` might be a price identifier to return the USD spot price
 The rules behind this `GOLD_USD` price identifier would be documented in detail in a UMIP that has been approved by UMA tokenholders. For more information on UMIPs, view [here](umips.md). 
 That UMIP would contain more information about how to determine the price identifier.
 
-## Creating a UMIP for a price identifier 
-
-- Read the [Price Identifier Guide](https://github.com/UMAprotocol/UMIPs/blob/master/price-identifier-guide.md)
-- Use the [Price Identifier Template](https://github.com/UMAprotocol/UMIPs/blob/master/price-identifier-template.md) 
+To get started, refer to the [price identifier template](https://github.com/UMAprotocol/UMIPs/blob/master/price-identifier-template.md), which explains all of the information required in a price identifier UMIP.
 
 ## What is a collateral currency?
 

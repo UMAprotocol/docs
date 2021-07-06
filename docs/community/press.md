@@ -3,7 +3,10 @@ title: Interviews, Podcasts, and Press
 sidebar_label: Interviews, Podcasts, and Press
 ---
 
-- May 30, 2021: [SuperUMAns #1 - AMA about UMA with Hart Lambert!](https://www.publish0x.com/mind-puzzle/superumans-1-ama-about-uma-with-hart-lambert-xerqzdm?a=pmbk1p5ezJ)
+- June 17, 2021: [ETHglobal:Building with UMA's New Products](https://www.youtube.com/watch?v=xfQKeUuOA0U)
+- June 11, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=68XnJWp0Yk0&list=PLtbecZTA1xzyBxba9Zh8wmfqtA0YCwh6p&index=12)
+- June 4, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=NBV87PCgprI&list=PLtbecZTA1xzyBxba9Zh8wmfqtA0YCwh6p&index=11)
+- May 30, 2021: [SuperUMAns #1 - AMA about UMA with Hart Lambur](https://www.publish0x.com/mind-puzzle/superumans-1-ama-about-uma-with-hart-lambert-xerqzdm?a=pmbk1p5ezJ)
 - May 28, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=tWAlDzkc5Cg)
 - May 27, 2021: [DeFi Pulse: Founder Fireside Chat with Clayton Roche of UMA](https://defipulse.com/blog/founder-fireside-chat-with-clayton-roche-of-uma/)
 - May 26, 2021: [SOSV: Unblocked with UMA Protocol's Clayton Roche](https://www.youtube.com/watch?v=lzWHWzNb4ns)
@@ -69,5 +72,4 @@ sidebar_label: Interviews, Podcasts, and Press
 - Sep 7, 2019: [Intro to Synthetics](https://medium.com/zenith-ventures/synthetic-assets-in-defi-use-cases-opportunities-19b11f57a776)
 - Jun 11, 2019: [WyreTalks ep.38: UMA, the Primitive for Tokenized Financial Exposure](https://wyre-talks.simplecast.com/episodes/ep-38-uma-the-primitive-for-tokenized-7vXX_xPm)
 - May 16, 2019: [BorderlessCrypto ep. 4](https://t.co/bdRlx2yfir?amp=1)
-- Apr 13, 2019: [CruxofCrypto ep.5: Creating Synthetic Derivatives on the Blockchain](http://cruxofcrypto.com/e05-creating-synthetic-derivatives-on-the-blockchain-with-hart-lambur-of-uma/)
 - Mar 27, 2019: [TheBlockCrypto: "A crypto venture is launching a tokenized version of the stock market"](https://www.theblockcrypto.com/2019/03/27/a-crypto-venture-is-launching-a-tokenized-version-of-the-stock-market/)

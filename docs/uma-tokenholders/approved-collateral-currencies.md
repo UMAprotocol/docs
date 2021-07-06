@@ -3,8 +3,6 @@ title: Approved collateral currencies
 sidebar_label: Approved Collateral Currencies
 ---
 
-### List of approved mainnet collateral currencies
-
 |Collateral Currency| Final Fee | Link to UMIP|
 |:-------| :-----------| :-----------|
 |WETH| 0.2 |  [UMIP-10](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-10.md)
@@ -72,7 +70,9 @@ sidebar_label: Approved Collateral Currencies
 |CHAIN| 3000 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
 |ERN| 70 | [UMIP-96](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-96.md)
 |OPEN| 600 | [UMIP-102](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-102.md)
-|Total| No of Approved collateral currencies | [66](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
+|DFX| 400 | [UMIP-104](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-104.md)
+|BASK| 4 | [UMIP-105](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-105.md)
+|Total| No of Approved collateral currencies | [68](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
 To submit a token to be considered as a collateral currency, please see the _[Guidance on Collateral Currency Addition](uma-tokenholders/guidence-on-collateral-currency-addition.md)

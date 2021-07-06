@@ -17,6 +17,12 @@ The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-pha
 The contracts in [the financial-templates directory](https://github.com/UMAprotocol/protocol/tree/e6eaa48124ae3f209fb117cf05eb18292cf26d21/core/contracts/financial-templates/implementation) have been audited by OpenZeppelin.
 The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-2/).
 
+Updates to the Expiring Multiparty contracts and flash loan mitigations for the voting contracts have been audited by OpenZeppelin. The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-3/).
+
+The [Perpetual Multiparty](https://github.com/UMAprotocol/protocol/tree/1631ef7ad29aaeba756ef3b9a01c667e1343df85/packages/core/contracts/financial-templates/perpetual-multiparty) and [Optimistic Oracle](https://github.com/UMAprotocol/protocol/tree/1631ef7ad29aaeba756ef3b9a01c667e1343df85/packages/core/contracts/oracle) have been audited by OpenZeppelin. The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-4/).
+
+Additionally, OpenZeppelin audits incremental upgrades to UMA's contracts on a continuous basis. The continuous audit report can be found [here](https://blog.openzeppelin.com/uma-continuous-audit/).  
+
 ## Rewards
 
 UMA offers substantial rewards for discoveries that can prevent the loss of assets, the freezing of assets, or harm to users.
