@@ -28,12 +28,6 @@ Maybe! People active in the UMA ecosystem and other DeFi communities are. The ea
 2. Then search for that address in this [list](https://github.com/UMAprotocol/token-distribution/blob/master/outputs/governance_recipients.json). 
 3. If your address isn't on the list but you still really, pinky promise think you're eligible, share it in a public channel of the UMA Discord server and we'll try to help you
 
-#### I got my options. What do I do now? 
-You can now either hold your uTVL options and help the community drive up the uTVL of UMA to increase their value or sell them on [SushiSwap](https://app.sushi.com/pair/0x0ba348713a1ad7079cd741a2358fcdc7322d3db1).  You can also provide liquidity to this pool and receive liquidity provider fees. 
-
-#### I missed the airdrop.  Can I still get uTVL?
-The UMA community has developed a secondary market on [Sushiswap](https://app.sushi.com/pair/0x0ba348713a1ad7079cd741a2358fcdc7322d3db1) where you can purchase uTVL tokens. 
-
 #### How do I track the value of my options? 
 We have not one but two dashboards for you: - [Google Sheets](https://docs.google.com/spreadsheets/d/e/2PACX-1vSEMURxiVQuu6jSDp2zmI7kdKKaJjgmhWNiVjwStyJekDx9hWgclKzm_yv9iyj82IRP4d9dZ8rgvCCB/pubhtml#) and [Grafana](https://monitor.simpleid.xyz/d/x4CYPILGk/uma?orgId=1&refresh=1m)
 (as well as a little uTVL bot in the corner of our discord).
