@@ -1,16 +1,12 @@
-
 ---
 title: Who are the SuperUMAns?
 sidebar_label: SuperUMAns
 ---
 
-
 ## What is a SuperUMAns?
-
 SuperUMAns are the community's ninja troops.  They know how powerful UMA is, the kinds of things that UMA can be used for and they are determined to spread the word.
 
 *If you find yourself reading this, you probably already have your own inner SuperUMAn - you may just not know it yet....*
-
 
 ## Who can become a SuperUMAn?
 SuperUMAns come from all walks of life. Maybe you have accidentally found your way to UMA, wanting to try a little bit of everything, and need somewhere for your endless curiosity and passion for questioning the status quo and asking “what if” questions. On UMA’s discord boards, the “what ifs” are always encouraged to try to build something, better, stronger, quicker than what has gone before.
