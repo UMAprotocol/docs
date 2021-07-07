@@ -13,6 +13,13 @@ For example, if the native token is trading at $25 at settlement, a 100 USDC deb
 
 A range token seller (the DAO in this case) cannot be liquidated and therefore, the number of tokens given to the range token holder is capped. The range token holder is effectively short a put option and will have exposure to the downside of the native token below a certain price. To compensate the range token holder for taking on this “default” risk, the holder is rewarded a call option on the native token. A minimum number of native tokens is given to the range token holder no matter how much the native token rallies. The combination of the structure creates a tradeoff between the seller and the buyer.
 
+## Why Should DAOs Mint Range Tokens?
+
+There are many reasons why it is beneficial for DAOs to consider range tokens when diversifying their treasury and securing funds for their future operations.
+
+- Range tokens allow DAOs to borrow funds without the risk of liquidation and utilizes their native token which dominates most of their treasury. In contrast, yield dollars and CDPs require borrowers to maintain a certain collateral ratio or face liquidation. Fighting against liquidation would be very detrimental for a DAO if the price of its native token drops aggressively and the DAO is forced to put a significant amount of its native token and treasury at risk. The embedded put in the range token prevents this potential dilution and protects the DAO’s existing token holders and community.
+- DAOs should be happy to sell a call option because they are willing to sell their tokens at a higher valuation. Selling that optionality to the range token holder in return for downside protection as described above is a great trade off for the DAO.
+- If the expectation is for the protocol to grow, a DAO would want to delay selling their native token and instead find a way to borrow off of these tokens now and sell fewer of them at a higher price in the future. This is the core strategy and purpose of the range token. The DAO is leveraging its treasury to delay the sale of their native tokens and to bet on its own success. This can be particularly effective for promising new projects who need funds now, but believe their token will be worth more in the future. This buys them time to build out their idea and prove to the market they deserve a premium.
 
 ## Getting Started
 
