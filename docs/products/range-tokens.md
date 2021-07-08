@@ -9,9 +9,17 @@ A range token can be viewed similarly to convertible debt. In the venture capita
 
 ## Example
 
-For example, if the native token is trading at $25 at settlement, a 100 USDC debt would be settled with 4 tokens (100 / 25). This is similar to a yield dollar or a CDP (collateralized debt position); however, there are a couple of added features.
+For example, if the $UNI token is trading at $25 at settlement, a 100 USDC debt would be settled with 4 UNI (100 / 25). This is similar to a yield dollar or a CDP (collateralized debt position); however, there are a couple of added features.
 
 A range token seller (the DAO in this case) cannot be liquidated and therefore, the number of tokens given to the range token holder is capped. The range token holder is effectively short a put option and will have exposure to the downside of the native token below a certain price. To compensate the range token holder for taking on this “default” risk, the holder is rewarded a call option on the native token. A minimum number of native tokens is given to the range token holder no matter how much the native token rallies. The combination of the structure creates a tradeoff between the seller and the buyer.
+
+![](/docs/range-tokens/range_token_formula.png)
+
+If the bounds of the range token are set to say $20 and $30, the payout amount in the native backing token (or UNI in this case) will increase as UNI's USD price gets closer to the lower bound and increase as it gets closer to the upper. In the previous scenario with a 100 USDC debt, the debt would be settled with 5 UNI if the trading price at settlement was $20 - (100 / 20) - and 3.33 tokens if the price was $30.
+
+Within the bounds, the range token holder would always receive $100 worth of the native token at settlement, but beyond the bounds the range token holder is exposed to the price of the underlying token. The payout function looks like this:
+
+![](/docs/range-tokens/range_token_payout.png)
 
 ## Why Should DAOs Mint Range Tokens?
 
@@ -26,8 +34,8 @@ There are many reasons why it is beneficial for DAOs to consider range tokens wh
 The process to launch and manage a range token on UMA is surprisingly simple.
 
 1. Check to see if the collateral token, that you want to use to back your range token, is added as a supported collateral. You will also need a price identifier in the form of COLLATERAL_TOKEN/USD. Here are the currently supported [collateral types](/uma-tokenholders/approved-collateral-currencies) and [price identifiers](/uma-tokenholders/approved-price-identifiers). If these are not already approved, you can submit two [UMA Improvement Proposals](/uma-tokenholders/umips) (UMIPs) to have these supported.
-2. Once these proposals are approved through UMA governance, you can launch your range token contract! This can be done in a few minutes by following the [LSP deployment tutorial](https://github.com/UMAprotocol/launch-lsp)
-3. After your expiring contract has been launched, you will be able to mint range tokens by locking collateral in the contract. Once minted, you can sell the long range tokens and hold onto the short range tokens.
+2. Once these proposals are approved through UMA governance, you can launch your range token contract! This can be done in a few minutes by following the [LSP deployment tutorial](https://github.com/UMAprotocol/launch-lsp).
+3. After your contract has been launched, you will be able to mint range tokens by locking collateral in the contract. Once minted, you can sell the long range tokens and hold onto the short range tokens. Short range tokens are just a tokenized version of overcollateralization in a minted position.
 
 ## Next Steps & Resources 
 
