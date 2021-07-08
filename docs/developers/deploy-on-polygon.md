@@ -10,18 +10,18 @@ Deploying to Polygon follows a near-identical launch process as to launching any
 
 UMA makes use of an arbitrary message bridge that allows for two-way messages to pass between the Polygon network and Ethereum mainet. The message bridge makes use of the Polygon Arbitrary Message system, meaning it can be as trusted as the Polygon network itself. 
 
-UMA's Optimistic Oracle is used as the arbiter of price requests locally on the Polygon network. A request will ask the locally deployed Optimitic Oracle. If the proposal goes undisputed, then the result is deemed the accepted outcome. 
+UMA's Optimistic Oracle is used as the arbiter of price requests natively on the Polygon network. A request will ask the Polygon Optimitic Oracle. If the proposal goes undisputed, then the result is deemed the accepted outcome. 
 
 If the event is disputed, then the following steps will be taken to bridge the disputed result back to the final arbitator, the DVM:
-1. A Polygon contract, such as a prediction market, needs a price to settle a payout. The contract expects to get this price from an optimistic oracle (“Polygon Oracle”).
-2. For some reason, a user disagrees with the price returned by the Polygon Oracle and disputes the price.
-3. The disputed price request is passed from the Polygon Oracle to a contract called the “Oracle Child Tunnel”, whose sole responsibility is to communicate with an “Oracle Root 
-4. Tunnel” on the Ethereum network. The Child Tunnel relays the dispute to Ethereum mainnet to the Root Tunnel.
-5. The Oracle Root Tunnel has special permission to request a price from the DVM, where the familiar voting and resolution process occurs amongst UMA voting token holders.
-Once the DVM has resolved a price request, the outcome of the vote is pushed to Oracle Root Tunnel. It is important to note that the DVM is not aware of which chain the request came from, nor does it need to.
-6. Like before, the Oracle Root Tunnel relays the result from the DVM to the Child Tunnel on Polygon.
-7. Finally, the Oracle Child Tunnel then sends a message back to the Polygon Oracle
-8. The outcome of the dispute is resolved.
+1. A Polygon contract, such as a prediction market, needs a price to settle a payout. The contract expects to get this price from an optimistic oracle `Polygon Oracle`.
+2. For some reason, a user disagrees with the price returned by the `Polygon Oracle` and disputes the price.
+3. The disputed price request is passed from the Polygon Oracle to a contract called the `Oracle Child Tunnel`, whose sole responsibility is to communicate with an `Oracle Root Tunnel` on the Ethereum network. 
+4. The `Oracle Child Tunnel` relays the dispute to Ethereum mainnet to the `Oracle Root Tunnel`.
+5. The `Oracle Root Tunnel` has special permission to request a price from the DVM, where the familiar voting and resolution process is performed by UMA voting token holders.
+Once the DVM has resolved a price request, the outcome of the vote is pushed to `Oracle Root Tunnel`. It is important to note that the DVM is not aware of which chain the request came from, nor does it need to.
+6. Like before, the `Oracle Root Tunnel` relays the result from the DVM to the `Child Tunnel` on Polygon.
+7. Finally, the `Oracle Child Tunnel` then sends a message back to the `Polygon Oracle`.
+8. The outcome of the dispute is resolved and Polygon based contracts can now used the resolved price.
 
 ![](/img/PolygonDispute.png)
 
@@ -35,6 +35,12 @@ At the end of this deployment process, you should have a deployed contract on Po
 5. Run the deployment on Mumbai testnet
 6. Run the deployment on Polygon mainnet  
 7. Connect to a financial product library  
+
+### Is your desired price identifier and collateral type supported?
+
+Please check with the UMA team if your collateral and price identifiers have been approved for use on Polygon. There will be a subset of commomly used collaterals that will be available on Polygon at launch. 
+
+To add a new price identifier or collateral currency to Mumbai testnet, please contact the UMA team in Discord.
 
 ## Clone the repo
 
@@ -60,14 +66,14 @@ sudo apt-get update && sudo apt-get install -y libudev-dev libusb-1.0-0-dev
 ```
 ## Setting your parameters
 
-It is important to understand that each contract requires the following parameters to be set at the point deployment. 
+Each deployment requires the following parameters to be set at the point deployment. 
 
-### Long-Short-Pair parameters
+### Deployment parameters
 
 - `gasprice:` The gas price used for your contract deployment  
 - `url:` your node URL. In the case for Polygon deployments, you can use the Polygon Node URL.
 - `mnemonic:` Your 12 word seed phrase or mnemonic 
-- `lspCreatorAddress:` The address used in deploying your LSP. The default is set to: `0x3e665D15425fAee14eEF53B9caaa0762b243911a`
+- `lspCreatorAddress:` The address used in deploying your LSP. For exampple: `0x3e665D15425fAee14eEF53B9caaa0762b243911a`
 - `expirationTimestamp:` Timestamp at which your contract will expire 
 - `collateralPerPair:` The amount of collateral required to mint each long and short pair. Default set to `1000000000000000000` 
 - `priceIdentifier"` The approved price identifier to be used  
@@ -80,13 +86,13 @@ It is important to understand that each contract requires the following paramete
 
 Before running this command, you should customize the parameters to your needs. YOUR_NODE_URL should be filled in with a url for the network that you wish to deploy to and the `LongShortPairCreator` value should be substituted with the creator address on that same network. Added to that you should also choose the corresponding financial product library (FPL) that makes sense for your use case. The script has been pre-filled with the FPL for the covered call options
 
-All the required Mumbai addresses can be seen on our [Github repo](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/80001.json) however to give you a quick reference here are a few key contracts to use. 
+All the required Mumbai addresses can be seen on our [Github repo](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/80001.json) with the most important items in the list for specific launch are:
 
-- `Mumbai LongShortPairCreator:` 0x6883FeB1c131F58C1Cd629289Da3dE0051d2aa0d
-- `BinaryOptionLongShortPairFinancialProductLibrary:` 0x2158C256b2d9B2b58D90D3ddA1b6a90d64498F7d
-- `CoveredCallLongShortPairFinancialProductLibrary:` 0xc19B7EF43a6eBd393446F401d1eCFac01B181ac0
-- `LinearLongShortPairFinancialProductLibrary:` 0x2aBf1Bd76655de80eDB3086114315Eec75AF500c
-- `RangeBondLongShortPairFinancialProductLibrary:` 0xb53A60f595EE2418be9F6057121EE77f0249AC28
+- `Mumbai LongShortPairCreator` 
+- `BinaryOptionLongShortPairFinancialProductLibrary` 
+- `CoveredCallLongShortPairFinancialProductLibrary` 
+- `LinearLongShortPairFinancialProductLibrary` 
+- `RangeBondLongShortPairFinancialProductLibrary` 
 
 Before deploying, please note that the script will deploy to the network that your node URL is for. If using Infura for a Mumbai deployment, `YOUR_NODE_URL` will follow this format:
 
@@ -109,13 +115,13 @@ node index.js --gasprice 1 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 wor
 
 The method to deploy onto mainnet is the exact same as with Mumbai, with a few key items to note. Your `url`, `lspCreatorAddress` and `financialProductLibrary` will need to be amended for use on Polygon mainnet. Since the library addresses are different between the networks. 
 
-All the required Polygon Mainnet addresses can be seen on our [Github repo](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/137.json) however to give you a quick reference here are a few key contracts to use. 
+All the required Polygon Mainnet addresses can be seen on our [Github repo](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/137.json) with the most important items in the list for specific launch are:
 
-- `Polygon LongShortPairCreator:` 0x3e665D15425fAee14eEF53B9caaa0762b243911a
-- `BinaryOptionLongShortPairFinancialProductLibrary:` 0xda768D869f1e89ea005cde7e1dBf630ff9307F33
-- `CoveredCallLongShortPairFinancialProductLibrary:` 0x3F62D7F4Be7671cc93BCDFE7A3Dd900FEC4b5025
-- `LinearLongShortPairFinancialProductLibrary:` 0xcFF28e9E83cEc1BCa8D8619dC7eA60244b433502
-- `RangeBondLongShortPairFinancialProductLibrary:` 0x7A9Bbd278b40f90F1269cB3a9D94a63333febdD4
+- `Polygon LongShortPairCreator` 
+- `BinaryOptionLongShortPairFinancialProductLibrary` 
+- `CoveredCallLongShortPairFinancialProductLibrary` 
+- `LinearLongShortPairFinancialProductLibrary` 
+- `RangeBondLongShortPairFinancialProductLibrary` 
 
 Please note that the script will deploy to the network that your node URL is for. If using Infura for a Polygon deployment, `YOUR_NODE_URL` will follow this format:
 
@@ -134,7 +140,7 @@ You can now run the deployment script. From within the `launch-lsp` directory, r
 ```bash
 node index.js --gasprice 20 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --lspCreatorAddress 0x3e665D15425fAee14eEF53B9caaa0762b243911a --expirationTimestamp 1643678287 --collateralPerPair 1000000000000000000 --priceIdentifier ETHUSD --collateralToken 0xd0a1e359811322d97991e03f863a0c30c2cf029c --syntheticName "ETH 9000 USD Call [December 2021]" --syntheticSymbol ETHc9000-1221 --financialProductLibrary 0x3F62D7F4Be7671cc93BCDFE7A3Dd900FEC4b5025
 ```
-Once deployed, the script will list the address of your newly deployed EMP. A successful output will look like this:
+Once deployed, the script will list the address of your newly deployed LSP. A successful output will look like this:
 
 ```bash
 Simulating Deployment...
@@ -142,8 +148,10 @@ Simulation successful. Expected Address: 0x44978157afE92c926619EBB54599bbc483eBe
 ``` 
 ## Linking your Financial Product Library
 
-Once your contract is deployed, you can head over the the specific Financial Product Library your contract wants to use on [Polygonscan](https://polygonscan.com/). You need to link your newly deployed contract to the Financial Product Library. 
+Once your contract is deployed, you can head over the specific Financial Product Library your contract wants to use on [Polygonscan](https://polygonscan.com/). You need to link your newly deployed contract to the Financial Product Library. 
 
 In the case of this launch demo, we used the `CoveredCallLongShortPairFinancialProductLibrary:` 0x3F62D7F4Be7671cc93BCDFE7A3Dd900FEC4b5025 and will link the new contract with a given strike price. 
+
+In the `longShortPair address` field, you can put in your newly created LSP contract (output from the deployment script) and in the `strikePrice` you can put the strike price that the financial product library will use to calculate the valeu fo the long and short tokens (note: the stoke price should be converted to an 18 decimal number)
 
 ![](/img/PolygonFPL.png)
