@@ -38,7 +38,7 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Deploying on Polygon",
+        label: "Long Short Pair (LSP)",
         items: ["developers/deploy-on-polygon",],
       },
       // {
