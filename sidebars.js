@@ -20,7 +20,7 @@ module.exports = {
       {
         type: "category",
         label: "Featured Products",
-        items: ["products/KPI-options", "products/calloption"],
+        items: ["products/KPI-options", "products/range-tokens", "products/calloption"],
       },
       "getting-started/scalingsolutions", "synthetic-tokens/glossary"
       
@@ -96,7 +96,7 @@ module.exports = {
         },
       ],
     "Events & Press": [
-      "community/community-overview", "community/usingtokens", "community/communityguide", "community/product",
+      "community/community-overview", "community/superUMAns", "community/usingtokens", "community/communityguide", "community/product",
       {
         type: "category",
         label: "Events & Press",

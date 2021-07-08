@@ -47,14 +47,14 @@ sudo apt-get update && sudo apt-get install -y libudev-dev libusb-1.0-0-dev
 ```
 ## Setting your parameters
 
-Each deployment requires the following parameters to be set at the point deployment. 
+Each deployment requires the following parameters to be set at the point of deployment. 
 
 ### Deployment parameters
 
 - `gasprice:` The gas price used for your contract deployment  
 - `url:` your node URL. In the case for Polygon deployments, you can use the Polygon Node URL.
 - `mnemonic:` Your 12 word seed phrase or mnemonic 
-- `lspCreatorAddress:` The address used in deploying your LSP. For exampple: `0x3e665D15425fAee14eEF53B9caaa0762b243911a`
+- `lspCreatorAddress:` The contract factory address used to deploy your LSP.
 - `expirationTimestamp:` Timestamp at which your contract will expire 
 - `collateralPerPair:` The amount of collateral required to mint each long and short pair. Default set to `1000000000000000000` 
 - `priceIdentifier"` The approved price identifier to be used  
@@ -131,7 +131,7 @@ Simulation successful. Expected Address: 0x44978157afE92c926619EBB54599bbc483eBe
 
 Once your contract is deployed, you can head over the specific Financial Product Library your contract wants to use on [Polygonscan](https://polygonscan.com/). You need to link your newly deployed contract to the Financial Product Library. 
 
-In the case of this launch demo, we used the `CoveredCallLongShortPairFinancialProductLibrary:` 0x3F62D7F4Be7671cc93BCDFE7A3Dd900FEC4b5025 and will link the new contract with a given strike price. 
+In the case of this launch demo, we used the `CoveredCallLongShortPairFinancialProductLibrary` to link the new LSP contract with a strike price. 
 
 In the `longShortPair address` field, you can put in your newly created LSP contract (output from the deployment script) and in the `strikePrice` you can put the strike price that the financial product library will use to calculate the valeu fo the long and short tokens (note: the stoke price should be converted to an 18 decimal number)
 
