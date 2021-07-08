@@ -14,7 +14,7 @@ jobs:
             awesome_bot \
             --allow-dupe \
             --allow-redirect \
-            --white-list angel.co,etherscan.io,kovan.etherscan.io \
+            --white-list angel.co,etherscan.io,kovan.etherscan.io, polygon-mumbai.infura.io, polygon-mainnet.infura.io   \
             --skip-save-results \
             $(cat /tmp/test-docs)
 
