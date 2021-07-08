@@ -22,7 +22,8 @@ module.exports = {
         label: "Featured Products",
         items: ["products/KPI-options", "products/calloption"],
       },
-      "synthetic-tokens/glossary"
+      "getting-started/scalingsolutions", "synthetic-tokens/glossary"
+      
     ],
     Developers: [
       "build-walkthrough/build-process",

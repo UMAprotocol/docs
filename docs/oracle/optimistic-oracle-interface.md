@@ -155,3 +155,4 @@ View the audited Optimistic Oracle contracts [here](https://github.com/UMAprotoc
 The Optimistic Oracle audit report, performed by OpenZeppelin, is [here](https://blog.openzeppelin.com/uma-audit-phase-4/).
 
 Refer [here](/uma-tokenholders/approved-price-identifiers.md) for all of the registered price identifiers that are supported by the Optimistic Oracle. To register your own with an UMA Improvement Proposal (UMIP), get started [here](/uma-tokenholders/adding-price-id.md).
+
