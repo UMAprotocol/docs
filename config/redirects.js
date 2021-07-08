@@ -35,6 +35,19 @@ module.exports = [
     to: "/synthetic-tokens/long-short-pair",
     from: ["/uma/synthetic_tokens/long-short-pair.html"],
   },
+  // featured products
+  {
+    to: "/products/KPI-options",
+    from: ["/uma/products/KPI-options.html"],
+  },
+  {
+    to: "/products/range-tokens",
+    from: ["/uma/products/range-tokens.html"],
+  },
+  {
+    to: "/products/calloption",
+    from: ["/uma/products/calloption.html"],
+  },
   // developers (synthetic tokens)
   {
     to: "/developers/setup",
