@@ -66,7 +66,7 @@ sudo apt-get update && sudo apt-get install -y libudev-dev libusb-1.0-0-dev
 ```
 ## Setting your parameters
 
-Each deployment requires the following parameters to be set at the point deployment. 
+Each deployment requires the following parameters to be set at the point of deployment. 
 
 ### Deployment parameters
 
