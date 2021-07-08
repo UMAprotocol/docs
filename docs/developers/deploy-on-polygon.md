@@ -54,7 +54,7 @@ Each deployment requires the following parameters to be set at the point of depl
 - `gasprice:` The gas price used for your contract deployment  
 - `url:` your node URL. In the case for Polygon deployments, you can use the Polygon Node URL.
 - `mnemonic:` Your 12 word seed phrase or mnemonic 
-- `lspCreatorAddress:` The address used in deploying your LSP. For exampple: `0x3e665D15425fAee14eEF53B9caaa0762b243911a`
+- `lspCreatorAddress:` The contract factory address used to deploy your LSP.
 - `expirationTimestamp:` Timestamp at which your contract will expire 
 - `collateralPerPair:` The amount of collateral required to mint each long and short pair. Default set to `1000000000000000000` 
 - `priceIdentifier"` The approved price identifier to be used  
