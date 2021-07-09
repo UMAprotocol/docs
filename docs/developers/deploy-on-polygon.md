@@ -98,7 +98,7 @@ The method to deploy onto mainnet is the exact same as with Mumbai, with a few k
 
 All the required Polygon Mainnet addresses can be seen on our [Github repo](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/137.json) with the most important items in the list for specific launch are:
 
-- `Polygon LongShortPairCreator` 
+- `LongShortPairCreator` 
 - `BinaryOptionLongShortPairFinancialProductLibrary` 
 - `CoveredCallLongShortPairFinancialProductLibrary` 
 - `LinearLongShortPairFinancialProductLibrary` 
