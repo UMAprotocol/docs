@@ -12,7 +12,7 @@ Having a decoupled architecture gives the advantage of being able to deploy to a
 
 UMA makes use of an arbitrary message bridge that allows for two-way messages to pass between the Polygon network and Ethereum mainet. The message bridge uses the Polygon Arbitrary Message system, meaning it can be as trusted as the Polygon network itself. 
 
-UMA's Optimistic Oracle is used as the arbiter of price requests natively on the Polygon network. A request will ask the Polygon Optimitic Oracle. If the proposal goes undisputed, then the result is deemed the accepted outcome. 
+UMA's Optimistic Oracle is used as the arbiter of price requests natively on the Polygon network. A price request will first be sent the Polygon Optimistic Oracle. If the responding price proposal goes undisputed, then the result is deemed the accepted outcome. 
 
 If the event is disputed, then the following steps will be taken to bridge the disputed result back to the final arbitator, the DVM:
 1. A Polygon contract, such as a prediction market, needs a price to settle a payout. The contract expects to get this price from an optimistic oracle `Polygon Oracle`.
