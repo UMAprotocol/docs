@@ -69,7 +69,7 @@ Before running this command, you should customize the parameters to your needs. 
 
 All the required Mumbai addresses can be seen on our [Github repo](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/80001.json) with the most important items in the list for specific launch are:
 
-- `Mumbai LongShortPairCreator` 
+- `LongShortPairCreator` 
 - `BinaryOptionLongShortPairFinancialProductLibrary` 
 - `CoveredCallLongShortPairFinancialProductLibrary` 
 - `LinearLongShortPairFinancialProductLibrary` 
