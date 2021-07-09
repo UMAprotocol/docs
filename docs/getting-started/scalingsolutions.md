@@ -2,7 +2,7 @@
 title: Scaling UMA 
 sidebar_label: Scaling Solutions
 ---
-This section explains the how UMA is scaling to the Polygon network. Polygon is the first scaling solution enabled with more to follow soon.
+This section explains how UMA is scaling to the Polygon network. Polygon is the first supported scaling solution with more to soon follow.
 
 ## How scaling UMA works on Polygon
 
