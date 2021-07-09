@@ -69,7 +69,7 @@ Before running this command, you should customize the parameters to your needs. 
 
 All the required Mumbai addresses can be seen on our [Github repo](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/80001.json) with the most important items in the list for specific launch are:
 
-- `LongShortPairCreator` 
+- `Mumbai LongShortPairCreator` 
 - `BinaryOptionLongShortPairFinancialProductLibrary` 
 - `CoveredCallLongShortPairFinancialProductLibrary` 
 - `LinearLongShortPairFinancialProductLibrary` 
@@ -98,7 +98,7 @@ The method to deploy onto mainnet is the exact same as with Mumbai, with a few k
 
 All the required Polygon Mainnet addresses can be seen on our [Github repo](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/137.json) with the most important items in the list for specific launch are:
 
-- `LongShortPairCreator` 
+- `Polygon LongShortPairCreator` 
 - `BinaryOptionLongShortPairFinancialProductLibrary` 
 - `CoveredCallLongShortPairFinancialProductLibrary` 
 - `LinearLongShortPairFinancialProductLibrary` 
@@ -133,6 +133,6 @@ Once your contract is deployed, you can head over the specific Financial Product
 
 In the case of this launch demo, we used the `CoveredCallLongShortPairFinancialProductLibrary` to link the new LSP contract with a strike price. 
 
-In the `longShortPair address` field, you can put in your newly created LSP contract (output from the deployment script) and in the `strikePrice` you can put the strike price that the financial product library will use to calculate the valeu fo the long and short tokens (note: the strike price should be converted to an 18 decimal number)
+In the `longShortPair address` field, you can put in your newly created LSP contract (output from the deployment script) and in the `strikePrice` you can put the strike price that the financial product library will use to calculate the valeu fo the long and short tokens (note: the stoke price should be converted to an 18 decimal number)
 
 ![](/img/PolygonFPL.png)

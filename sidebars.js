@@ -20,9 +20,10 @@ module.exports = {
       {
         type: "category",
         label: "Featured Products",
-        items: ["products/KPI-options", "products/calloption"],
+        items: ["products/KPI-options", "products/range-tokens", "products/calloption"],
       },
-      "synthetic-tokens/glossary"
+      "getting-started/scalingsolutions", "synthetic-tokens/glossary"
+      
     ],
     Developers: [
       "build-walkthrough/build-process",
@@ -38,7 +39,7 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Deploying on Polygon",
+        label: "Long Short Pair (LSP)",
         items: ["developers/deploy-on-polygon",],
       },
       // {
@@ -95,7 +96,7 @@ module.exports = {
         },
       ],
     "Events & Press": [
-      "community/community-overview", "community/usingtokens", "community/communityguide", "community/product",
+      "community/community-overview", "community/superUMAns", "community/usingtokens", "community/communityguide", "community/product",
       {
         type: "category",
         label: "Events & Press",

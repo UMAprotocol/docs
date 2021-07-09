@@ -9,7 +9,7 @@ module.exports = {
       to: "/",
       label: "Understanding UMA",
       position: "left",
-      activeBaseRegex: "(getting-started/|/$|synthetic-tokens|oracle)",
+      activeBaseRegex: "(getting-started/|/$|synthetic-tokens|oracle|products)",
     },
     // {
     //   label: "Understanding UMA",
