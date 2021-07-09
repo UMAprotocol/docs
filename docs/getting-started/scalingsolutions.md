@@ -6,7 +6,7 @@ This section explains the how UMA is scaling to the Polygon network. Polygon is 
 
 ## How scaling UMA works on Polygon
 
-The UMA ecosystem comprises a dispute resolution layer — the Data Verification Mechanism (DVM), and the financial contracts it secures. UMA’s architecture has from conception been decoupled, meaning the dispute layer and the contract layer do not need to live on the same chain.
+The UMA ecosystem comprises a dispute resolution layer — the Data Verification Mechanism (DVM), and the financial contracts it secures. UMA’s architecture has, from conception, been decoupled, meaning the dispute layer and the contract layer do not need to live on the same chain.
 
 Having a decoupled architecture gives the advantage of being able to deploy to any EVM chain efficiently. Our scaling strategy allows the contract layer on Polygon or any EVM scaling solution to access the same DVM any contract native to Ethereum has access to.
 
