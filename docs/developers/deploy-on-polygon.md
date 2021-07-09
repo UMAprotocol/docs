@@ -82,11 +82,11 @@ Before running this command, you should customize the parameters to your needs. 
 
 All the required Mumbai addresses can be seen on our [Github repo](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/80001.json) however to give you a quick reference here are a few key contracts to use. 
 
-- `Mumbai LongShortPairCreator:` 0x6883FeB1c131F58C1Cd629289Da3dE0051d2aa0d
-- `BinaryOptionLongShortPairFinancialProductLibrary:` 0x2158C256b2d9B2b58D90D3ddA1b6a90d64498F7d
-- `CoveredCallLongShortPairFinancialProductLibrary:` 0xc19B7EF43a6eBd393446F401d1eCFac01B181ac0
-- `LinearLongShortPairFinancialProductLibrary:` 0x2aBf1Bd76655de80eDB3086114315Eec75AF500c
-- `RangeBondLongShortPairFinancialProductLibrary:` 0xb53A60f595EE2418be9F6057121EE77f0249AC28
+- `Mumbai LongShortPairCreator` 
+- `BinaryOptionLongShortPairFinancialProductLibrary` 
+- `CoveredCallLongShortPairFinancialProductLibrary` 
+- `LinearLongShortPairFinancialProductLibrary` 
+- `RangeBondLongShortPairFinancialProductLibrary` 
 
 Before deploying, please note that the script will deploy to the network that your node URL is for. If using Infura for a Mumbai deployment, `YOUR_NODE_URL` will follow this format:
 
@@ -111,11 +111,11 @@ The method to deploy onto mainnet is the exact same as with Mumbai, with a few k
 
 All the required Polygon Mainnet addresses can be seen on our [Github repo](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/137.json) however to give you a quick reference here are a few key contracts to use. 
 
-- `Polygon LongShortPairCreator:` 0x3e665D15425fAee14eEF53B9caaa0762b243911a
-- `BinaryOptionLongShortPairFinancialProductLibrary:` 0xda768D869f1e89ea005cde7e1dBf630ff9307F33
-- `CoveredCallLongShortPairFinancialProductLibrary:` 0x3F62D7F4Be7671cc93BCDFE7A3Dd900FEC4b5025
-- `LinearLongShortPairFinancialProductLibrary:` 0xcFF28e9E83cEc1BCa8D8619dC7eA60244b433502
-- `RangeBondLongShortPairFinancialProductLibrary:` 0x7A9Bbd278b40f90F1269cB3a9D94a63333febdD4
+- `Polygon LongShortPairCreator` 
+- `BinaryOptionLongShortPairFinancialProductLibrary` 
+- `CoveredCallLongShortPairFinancialProductLibrary` 
+- `LinearLongShortPairFinancialProductLibrary` 
+- `RangeBondLongShortPairFinancialProductLibrary` 
 
 Please note that the script will deploy to the network that your node URL is for. If using Infura for a Polygon deployment, `YOUR_NODE_URL` will follow this format:
 
