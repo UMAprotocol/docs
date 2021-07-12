@@ -59,9 +59,14 @@ Each deployment requires the following parameters to be set at the point of depl
 - `collateralPerPair:` The amount of collateral required to mint each long and short pair. Default set to `1000000000000000000` 
 - `priceIdentifier"` The approved price identifier to be used  
 - `collateralToken:` Collateral currency to be used to be deposited 
-- `syntheticName:` The long name of the token
-- `syntheticSymbol:` The short name of the token or ticker symbol
-- `financialProductLibrary:` The financial library your contract will use to calculate the payment at expiry. For the list of the available financial product libraries we have available, you can go [here](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries).
+- `pairName"` The name of token pairs (i.e. both the long and short tokens)
+- `longSynthName:` The extended name of the long token
+- `longSynthSymbol` The ticker name of the long token or ticker symbol
+- `shortSynthName:` The extended name of the short token
+- `shortSynthSymbol:` The ticker name of the short token or ticker symbol
+- `customAncillaryData"` Set the format of the ancillary data 
+- `optimisticOracleLivenessTime:` the time, set in seconds, for how long each Optimistic Oracle request can be disputed 
+- `fpl:` The financial library your contract will use to calculate the payment at expiry. For the list of the available financial product libraries we have available, you can go [here](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries).
 
 ## Deploying on Mumbai
 
@@ -90,7 +95,7 @@ https://polygon-mumbai.infura.io/v3/{projectId}
 
 Run the deployment script with your specific parameters.
 ```bash
-node index.js --gasprice 1 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --lspCreatorAddress 0x6883FeB1c131F58C1Cd629289Da3dE0051d2aa0d --expirationTimestamp 1643678287 --collateralPerPair 1000000000000000000 --priceIdentifier ETHUSD --collateralToken 0xd0a1e359811322d97991e03f863a0c30c2cf029c --syntheticName "ETH 9000 USD Call [December 2021]" --syntheticSymbol ETHc9000-1221 --financialProductLibrary 0xc19B7EF43a6eBd393446F401d1eCFac01B181ac0
+node index.js --gasprice 80 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --lspCreatorAddress 0x566f98ECadE3EF95a6c5840621C43F15f403274c --pairName "UMA \$4-12 Range Token Pair August 2021" --expirationTimestamp 1630447200 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "UMA \$4-12 Range Token August 2021" --longSynthSymbol rtUMA-0821 --shortSynthName "UMA \$4-12 Range Short Token August 2021" --shortSynthSymbol rtUMA-0821s --collateralToken 0x489Bf230d4Ab5c2083556E394a28276C22c3B580 --customAncillaryData "twapLength:3600" --optimisticOracleLivenessTime 3600 --fpl RangeBond
 ```
 ## Deploying to Polygon Mainnet
 
@@ -119,7 +124,7 @@ https://polygon-mainnet.infura.io/v3/{projectId}
 
 You can now run the deployment script. From within the `launch-lsp` directory, run:
 ```bash
-node index.js --gasprice 20 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --lspCreatorAddress 0x3e665D15425fAee14eEF53B9caaa0762b243911a --expirationTimestamp 1643678287 --collateralPerPair 1000000000000000000 --priceIdentifier ETHUSD --collateralToken 0xd0a1e359811322d97991e03f863a0c30c2cf029c --syntheticName "ETH 9000 USD Call [December 2021]" --syntheticSymbol ETHc9000-1221 --financialProductLibrary 0x3F62D7F4Be7671cc93BCDFE7A3Dd900FEC4b5025
+node index.js --gasprice 80 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --lspCreatorAddress 0x566f98ECadE3EF95a6c5840621C43F15f403274c --pairName "UMA \$4-12 Range Token Pair August 2021" --expirationTimestamp 1630447200 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "UMA \$4-12 Range Token August 2021" --longSynthSymbol rtUMA-0821 --shortSynthName "UMA \$4-12 Range Short Token August 2021" --shortSynthSymbol rtUMA-0821s --collateralToken 0x489Bf230d4Ab5c2083556E394a28276C22c3B580 --customAncillaryData "twapLength:3600" --optimisticOracleLivenessTime 3600 --fpl RangeBond
 ```
 Once deployed, the script will list the address of your newly deployed LSP. A successful output will look like this:
 
