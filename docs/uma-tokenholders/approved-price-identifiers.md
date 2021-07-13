@@ -98,7 +98,7 @@ sidebar_label: Approved Price Identifiers
 |PERLUSD| The price of PERL in USD.| [UMIP-13](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-13.md)
 |PHPDAI| The price of Philippine Peso in DAI.| [UMIP-49](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-49.md)
 |PHPUMA| The price of Philippine Peso in UMA.| [UMIP-95](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-95.md)
-|PHPUSD| The price of Philippine Peso in USD.| [UMIP-91](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-90.md)
+|PHPUSD| The price of Philippine Peso in USD.| [UMIP-90](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-90.md)
 |PUNK-BASICUSD| The price of PUNK-BASIC in USD.| [UMIP-91](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-91.md)
 |PUNKETH| A price that will be used to measure the fair market value at expiration of uPUNK and is computed by taking the median most recent purchase price (in ETH) of each unique CryptoPunk traded in the last 30 days.| [UMIP-84](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-84.md)
 |PUNKETH_TWAP| A price that will be used to measure the current value of uPUNK and is a "self-referential" price. It is computed from the 2-hour TWAP on the highest volume Uniswap ETH/uPUNK pool (for a specified iteration of uPUNK, i.e. uPUNK-JUNE21).| [UMIP-84](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-84.md)
