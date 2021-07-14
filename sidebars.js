@@ -22,7 +22,7 @@ module.exports = {
         label: "Featured Products",
         items: ["products/KPI-options", "products/range-tokens", "products/calloption"],
       },
-      "synthetic-tokens/glossary"
+      "getting-started/scalingsolutions", "synthetic-tokens/glossary"
     ],
     Developers: [
       "build-walkthrough/build-process",
@@ -35,6 +35,11 @@ module.exports = {
         type: "category",
         label: "ExpiringMultiParty (EMP)",
         items: ["developers/emp-deployment", "build-walkthrough/emp-parameters", "build-walkthrough/minting-etherscan",],
+      },
+      {
+        type: "category",
+        label: "LongShortPair (LSP)",
+        items: ["developers/deploy-on-polygon"],
       },
       // {
       //   type: "category",
