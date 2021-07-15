@@ -15,4 +15,4 @@ This section explains the UMA Subgraph and how to interact with it. The UMA subg
 
 ## Making Queries
 
-To learn more about querying a subgraph refer to [The Graph’s documentation](https://thegraph.com/docs/introduction).
+To learn more about querying a subgraph refer to [The Graph’s documentation](https://thegraph.com/docs/about/introduction).

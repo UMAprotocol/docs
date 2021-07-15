@@ -22,7 +22,7 @@ module.exports = {
         label: "Featured Products",
         items: ["products/KPI-options", "products/range-tokens", "products/calloption"],
       },
-      "synthetic-tokens/glossary"
+      "getting-started/scalingsolutions", "synthetic-tokens/glossary"
     ],
     Developers: [
       "build-walkthrough/build-process",
@@ -35,6 +35,11 @@ module.exports = {
         type: "category",
         label: "ExpiringMultiParty (EMP)",
         items: ["developers/emp-deployment", "build-walkthrough/emp-parameters", "build-walkthrough/minting-etherscan",],
+      },
+      {
+        type: "category",
+        label: "LongShortPair (LSP)",
+        items: ["developers/deploy-on-polygon"],
       },
       // {
       //   type: "category",
@@ -80,7 +85,7 @@ module.exports = {
         {
           type: "category",
           label: "Price IDs and Collateral Currencies",
-          items: ["uma-tokenholders/adding-price-id", "uma-tokenholders/approved-price-identifiers", "uma-tokenholders/approved-collateral-currencies","uma-tokenholders/guidence-on-collateral-currency-addition",],
+          items: ["uma-tokenholders/adding-price-id", "uma-tokenholders/approved-price-identifiers", "uma-tokenholders/approved-collateral-currencies","uma-tokenholders/guidance-on-adding-price-identifiers","uma-tokenholders/guidence-on-collateral-currency-addition",],
         },
         "uma-tokenholders/umips",
         {

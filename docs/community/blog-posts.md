@@ -10,6 +10,10 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Jul 10, 2021: [UMA Raises $2.6mm with the Pilot of the Range Token](https://medium.com/uma-project/uma-raises-2-6mm-in-the-pilot-of-the-range-token-de5be578fa5e)
+- Jul 8, 2021: [In Case You Missed It #20](https://medium.com/uma-project/icymi-21-8eac3967ac07)
+- Jul 2, 2021: [UMA’s uTVL KPI Options — A Retrospective and the Next Launch](https://medium.com/uma-project/umas-utvl-kpi-options-a-retrospective-and-the-next-launch-169473209335)
+- Jun 29, 2021: [In Case You Missed It #20](https://medium.com/uma-project/icymi-20-f03da1fbb50f)
 - Jun 23, 2021: [In Case You Missed It #19](https://medium.com/uma-project/icymi-19-cd1651a0102)
 - Jun 21, 2021: [uLABS: Range Tokens in Detail](https://medium.com/uma-project/ulabs-range-tokens-in-detail-f24ceffdf90b)
 - Jun 18, 2021: [Introducing UMA’s Long Short Pair (LSP) Financial Primitive](https://medium.com/uma-project/introducing-umas-long-short-pair-lsp-financial-primitive-84596803864f)
