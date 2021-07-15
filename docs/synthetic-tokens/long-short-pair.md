@@ -7,9 +7,9 @@ The UMA Long Short Pair (LSP) contract template allows for the creation of unliq
 
 Minters can lock a unit of collateral in return for a pair of "long" and "short" tokens, and then market make or take a long or short position by selling the long or short token. Other users can go long or short simply by purchasing the tokenized position.
 
-Some ideas for contracts that can be made with the LSP include: 
+Some ideas for contracts that can be made with the LSP include:
 - Binary Options - insurance products, prediction markets.
-- Linear payouts - speculating on the ratio of DEX to CEX monthly volume. 
+- Linear payouts - speculating on the ratio of DEX to CEX monthly volume.
 - Covered call options.
 - [Range Tokens for treasury management](https://medium.com/uma-project/treasury-diversification-with-range-tokens-145d4b12614e).
 
@@ -17,7 +17,7 @@ To deploy an LSP contract, use the [launch-lsp repo](https://github.com/UMAproto
 
 ## Financial Product Libraries (FPL)
 
-On deployment, the `financialProductLibraryAddress` parameter should be set to the address of the desired financial product library which defines the payout function for the LSP contract. All LSPs will use an approved DVM price identifier together with a financial product library. Any value that is potentially non-deterministic and requires an "off-chain" calculation should be part of the price identifier. 
+On deployment, the `financialProductLibraryAddress` parameter should be set to the address of the desired financial product library which defines the payout function for the LSP contract. All LSPs will use an approved DVM price identifier together with a financial product library. Any value that is potentially non-deterministic and requires an "off-chain" calculation should be part of the price identifier.
 
 The financial product library will be used to transform the value returned by the price identifier into a final settlement value within the desired bounded payout range. This can be applied in many types of ways to create different types of financial contracts. Some examples, that are currently being audited, have already been created and are below.
 
@@ -39,7 +39,7 @@ The method are:
 
 ### `create`
 
-After an LSP contract has been deployed, tokens can be minted by calling the `create` function before the contract’s `expirationTimestamp`. The `create` function deposits collateral into the contract in exchange for an equal amount of long and short tokens based on the `collateralPerPair` parameter. The `collateralPerPair` parameter determines the amount of collateral that is required for each pair of long and short tokens. 
+After an LSP contract has been deployed, tokens can be minted by calling the `create` function before the contract’s `expirationTimestamp`. The `create` function deposits collateral into the contract in exchange for an equal amount of long and short tokens based on the `collateralPerPair` parameter. The `collateralPerPair` parameter determines the amount of collateral that is required for each pair of long and short tokens.
 
 ![](/docs/lsp-tokens/lsp_create.png)
 
@@ -57,7 +57,7 @@ Regardless of the value of the long and short tokens when redeemed, the summed v
 
 ### `expire`
 
-When the current timestamp is later than the `expirationTimestamp` parameter, token holders are unable to settle their tokens for collateral until a price has been received by the Optimistic Oracle. The `settle` function will revert until the `expire` function is called once by anyone. 
+When the current timestamp is later than the `expirationTimestamp` parameter, token holders are unable to settle their tokens for collateral until a price has been received by the Optimistic Oracle. The `settle` function will revert until the `expire` function is called once by anyone.
 
 The `expire` function does not take any parameters and requests a price from the Optimistic Oracle for the LSP contract's `priceIdentifier`, `expirationTimestamp`, `customAncillaryData`, `collateralToken`, and `prepaidProposerReward`.
 
@@ -74,7 +74,7 @@ Disputers can refute a price submitted by a Proposer within the proposal livenes
 ## LSP State
 
 The `contractState` of an LSP changes based on the following events and can be read using the designated enum values. The Read Contract tab in Etherscan can be used to check the `contractState` of any LSP contract.
-- `Open` (value of 0): The contract state remains open until the price has been requested. 
+- `Open` (value of 0): The contract state remains open until the price has been requested.
 - `ExpiredPriceRequested` (value of 1): Once the price has been requested, the `contractState` changes to 1. The `contractState` stays in this state until the first person calls `settle` even if the price has been returned by the Optimistic Oracle. This is due to the LSP having no context that the price has been resolved until requested successfully.
 - `ExpiredPriceReceived` (value of 2): The price is available from the Optimistic Oracle and `settle` has been called successfully.
 
