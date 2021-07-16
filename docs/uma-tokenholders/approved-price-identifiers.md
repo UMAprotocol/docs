@@ -191,7 +191,7 @@ sidebar_label: Approved Price Identifiers
 |USD/UNI_V2_UMA_ETH_LP| A price that tracks the Uniswap LP token of the UMA-ETH pool.| [UMIP-59](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-59.md)
 |USD/UNI_V2_UNI_ETH_LP| A price that tracks the Uniswap LP token of the UNI-ETH pool.| [UMIP-59](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-59.md)
 |USD/UNI_V2_USDC_ETH_LP| A price that tracks the Uniswap LP token of the USDC-ETH pool.| [UMIP-59](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-59.md)
-|USD/UNI_V2_WBTC_ETH_LP| A price that tracks the Uniswap LP token of the WBTC-ETH pool.| [UMIP-59](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-59.md) 
+|USD/UNI_V2_WBTC_ETH_LP| A price that tracks the Uniswap LP token of the WBTC-ETH pool.| [UMIP-59](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-59.md)
 |USDRAI| The price of USD in RAI.| [UMIP-78](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-78.md)
 |USDREN| The price of USD in REN.| [UMIP-78](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-78.md)
 |USDRGT| The price of USD in RGT.| [UMIP-78](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-78.md)
@@ -227,4 +227,3 @@ sidebar_label: Approved Price Identifiers
 |ZARUMA| The price of South African RAND in UMA.| [UMIP-95](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-95.md)
 |ZARUSD| The price of South African RAND in USD.| [UMIP-90](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-90.md)
 |Total| No of Approved Price Identifiers.| [221](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
-
