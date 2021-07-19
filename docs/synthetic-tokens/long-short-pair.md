@@ -81,4 +81,4 @@ On deployment, the `financialProductLibraryAddress` should be set to the address
 
 ## Launching a LSP
 
-A launch repo for launching your own LSP is coming soon and will function similarly to the UMA Expiring Multiparty (EMP) [launch-repo](https://github.com/UMAprotocol/launch-emp).
+A launch repo for launching your own LSP is coming soon and will function similarly to the UMA Expiring Multiparty (EMP) [launch-repo](https://github.com/UMAprotocol/launch-lsp).
