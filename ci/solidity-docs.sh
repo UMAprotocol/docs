@@ -8,7 +8,7 @@ uname -a
 npm -v
 node -v
 
-apt-get install rsync -y
+apt install rsync -y
 npm install solidity-docgen
 
 git clone http://github.com/umaprotocol/protocol/
