@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guidance for the Addition of Price Identifiers
 sidebar_label: Guidance for the Addition of Price Identifiers
 ---
@@ -96,6 +96,7 @@ Even though technically, ancillary data can be set to anything provided it fits 
   * Delimit UTF8 string by "," (commas) into a list of key-value pairs;
   * Each key-value pair can be further delimited by ":", colons. The author of the UMIP for the associated identifier is free to define how the values in these key-value pairs should be formatted in UTF8;
   * Key-value pairs, where keys are only different by trailing incrementing natural numbers, can be combined into arrays.
+  * Use the double backslash “\\\” to escape “,” and “:” characters in the ancillary data that are not intended to delimit the key-value dictionary.
 
 ### Example applications
 
