@@ -4,10 +4,13 @@ set -o errexit
 set -o nounset
 
 #Check versions
+uname -a
 npm -v
 node -v
 
+apt-get install rsync -y
 npm install solidity-docgen
+
 git clone http://github.com/umaprotocol/protocol/
 cd protocol
 yarn
