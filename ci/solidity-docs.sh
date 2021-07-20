@@ -3,6 +3,10 @@
 set -o errexit
 set -o nounset
 
+#Check versions
+npm -v
+node -v
+
 npm install solidity-docgen
 git clone http://github.com/umaprotocol/protocol/
 cd protocol
