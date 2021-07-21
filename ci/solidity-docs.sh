@@ -9,7 +9,6 @@ npm -v
 node -v
 
 npm install solidity-docgen
-npm install rsync
 
 git clone http://github.com/umaprotocol/protocol/
 cd protocol
