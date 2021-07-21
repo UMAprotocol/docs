@@ -19,4 +19,4 @@ echo "building contracts..."
 yarn --cwd packages/core/ hardhat compile
 
 echo "generating docs files..."
-solidity-docgen --solc-module solc-0.8 -i packages/core/contracts/ -o ../temp-docs/
+solidity-docgen --solc-module solc-0.8 -i packages/core/contracts/ -o temp-docs/
