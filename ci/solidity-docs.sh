@@ -15,4 +15,5 @@ cd protocol
 yarn
 cd packages/core
 yarn hardhat compile
+cd ../..
 solidity-docgen --solc-module solc-0.8 -i packages/core/contracts/ -o ../temp-docs/
