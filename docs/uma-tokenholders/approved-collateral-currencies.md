@@ -13,7 +13,7 @@ sidebar_label: Approved Collateral Currencies
 |rDAI| 400 | [UMIP-17](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-17.md)
 |bwBTC/ETH SLP| 0.000000013 | [UMIP-35](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-35.md)
 |bBadger| 40 | [UMIP-35](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-35.md)
-|DSD| 2500 | [UMIP-36](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-36.md)
+|DSD| 20000 | [UMIP-36](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-36.md)
 |renDOGE| 1500 | [UMIP-42](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-42.md)
 |OCEAN| 1000 | [UMIP-43](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-43.md)
 |YAM| 500 | [UMIP-44](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-44.md)
@@ -46,7 +46,6 @@ sidebar_label: Approved Collateral Currencies
 |CRV| 250 | [UMIP-77](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-77.md)
 |RGT| 85 | [UMIP-77](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-77.md)
 |NFTX| 7.5 | [UMIP-77](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-77.md)
-|SGT| 30 | [UMIP-80](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-80.md)
 |LON| 130 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
 |MASK| 115 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
 |BANK| 5.75 | [UMIP-82](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-82.md)
@@ -77,6 +76,7 @@ sidebar_label: Approved Collateral Currencies
 |APW| 400 | [UMIP-111](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-111.md)
 |SNOW| 60 | [UMIP-111](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-111.md)
 |NDX| 100 | [UMIP-111](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-111.md)
+|BPRO| 200 | [UMIP-115](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-115.md)
 |Total| No of Approved collateral currencies | [73](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
