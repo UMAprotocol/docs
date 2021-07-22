@@ -3,20 +3,23 @@
 set -o errexit
 set -o nounset
 
-#Check versions
-uname -a
-npm -v
-node -v
-
+echo "installing required tools..."
 npm install solidity-docgen
 
 echo "installing protocol repo..."
 git clone http://github.com/umaprotocol/protocol/
-cd protocol
 yarn
+yarn --cwd protocol/
 
 echo "building contracts..."
-yarn --cwd packages/core/ hardhat compile
+yarn --cwd protocol/packages/core/ hardhat compile
 
 echo "generating docs files..."
+cd protocol/
 solidity-docgen --solc-module solc-0.8 -i packages/core/contracts/ -o temp-docs/
+
+echo "configuring docs..."
+cd ..
+mv protocol/temp-docs/ ./docs/contracts
+
+yarn run build
