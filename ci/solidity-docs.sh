@@ -5,10 +5,11 @@ set -o nounset
 
 echo "installing required tools..."
 npm install solidity-docgen
+yarn install
 
 echo "installing protocol repo..."
 git clone http://github.com/umaprotocol/protocol/
-yarn
+
 yarn --cwd protocol/
 
 echo "building contracts..."
