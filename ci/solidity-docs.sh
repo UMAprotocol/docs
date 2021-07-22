@@ -22,6 +22,5 @@ echo "configuring docs..."
 cd ..
 mv protocol/temp-docs/ ./docs/contracts
 
-echo "pwd"
-pwd
-yarn run build
+npx docusaurus-init
+yarn build
