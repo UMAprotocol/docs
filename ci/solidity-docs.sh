@@ -21,6 +21,3 @@ solidity-docgen --solc-module solc-0.8 -i packages/core/contracts/ -o temp-docs/
 echo "configuring docs..."
 cd ..
 mv protocol/temp-docs/ ./docs/contracts
-
-echo "building docs..."
-npm run build
