@@ -12,7 +12,7 @@ Here's the quickest workflow for how you can add a PR. This method is recommende
 
 2. Click the Fork button
 
-![Create](/docs/GitHub-walkthrough/creating a fork.png)
+![Create](/docs/GitHub-walkthrough/creating-a-fork.png)
 
 Once that is done, you should have a fork in your own github profile. Here's an example.
 
