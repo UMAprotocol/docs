@@ -77,7 +77,17 @@ sidebar_label: Approved Collateral Currencies
 |SNOW| 60 | [UMIP-111](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-111.md)
 |NDX| 100 | [UMIP-111](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-111.md)
 |BPRO| 200 | [UMIP-115](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-115.md)
-|Total| No of Approved collateral currencies | [73](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
+|Badger| 60 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md)
+|OHM| 0.8 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md)
+|IDLE| 130 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md)
+|GNO| 3 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md)
+|QI Polygon| 500 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md)
+|POOL| 45 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md)
+|PieDAO DOUGH V2| 1100 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md)
+|FEI| 400 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md)
+|TRIBE| 800 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md)
+|FOX| 670 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md)
+|Total| No of Approved collateral currencies | [83](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
 To submit a token to be considered as a collateral currency, please see the _[Guidance on Collateral Currency Addition](uma-tokenholders/guidence-on-collateral-currency-addition.md)
