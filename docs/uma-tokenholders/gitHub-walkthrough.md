@@ -22,7 +22,7 @@ Next, you'll want to **Create a new branch**
 
 Each pr that you should submit should be siloed to an individual branch. So if you want to submit three separate umips, you should create three separate branches for each.
 
-Click on the button that says *master
+Click on the button that says **master**
 
 ![Master](/docs/GitHub-walkthrough/Create-a-branch.png)
 
