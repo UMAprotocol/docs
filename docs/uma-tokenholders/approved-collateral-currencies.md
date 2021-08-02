@@ -3,7 +3,7 @@ title: Approved collateral currencies
 sidebar_label: Approved Collateral Currencies
 ---
 
-|Collateral Currency| Final Fee | Network|
+|Collateral Currency| Final Fee | UMIP | Network|
 |:-------| :-----------| :-----------| :-----------|
 |WETH| 0.2 |  [Ethereum ](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-10.md), [Polygon](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-113.md)
 |renBTC| 0.012 |  [Ethereum](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-11.md)
