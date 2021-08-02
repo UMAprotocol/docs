@@ -5,7 +5,7 @@ sidebar_label: Approved Collateral Currencies
 
 |Collateral Currency| Final Fee | UMIP | Network|
 |:-------| :-----------| :-----------| :-----------|
-|WETH| 0.2 |  [Ethereum ](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-10.md), [Polygon](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-113.md)
+|WETH| 0.2 |  [UMIP-10](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-10.md), [Polygon](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-113.md) | [Ethereum](https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2), [Polygon](https://polygonscan.com/address/0x7ceb23fd6bc0add59e62ac25578270cff1b9f619)
 |renBTC| 0.012 |  [Ethereum](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-11.md)
 |PERL| 6000 | [Ethereum](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-12.md)
 |DAI| 400 | [Ethereum](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-8.md), [Polygon](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-113.md)
