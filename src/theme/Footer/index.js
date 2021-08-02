@@ -112,17 +112,6 @@ function Footer() {
               </div>
             )}
 
-            <div style={{ padding: "1rem" }}>
-              Powered by{" "}
-              <a
-                href="https://vercel.com/?utm_source=uma%2Fdocs"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <VercelLogo />
-              </a>
-            </div>
-
             <div
               dangerouslySetInnerHTML={{
                 __html: copyright,

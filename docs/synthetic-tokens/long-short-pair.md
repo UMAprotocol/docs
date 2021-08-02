@@ -25,7 +25,7 @@ Alice, Troy and Rachel are DeFi users and want to take different bets on the pri
 - Alice wants to collect premium on her call options, so she sells 100 of her long tokens to Troy, who believes that ETH will be greater than 3000 ETH/USD when the contract expires.
 - Alice also wants to hedge out the call options that she sold to Troy, so she sells 100 short tokens to Rachel, who does not believe that the price of ETH will be greater than 3000 ETH/USD when the contract expires.
 - Pre-expiry Alice decides she wants 500 WETH back. She calls `redeem` and burns 500 long and 500 short tokens in return for 500 of the WETH in her position. She would not be able to do this without equal numbers of long and short tokens.
-- At expiry, Bob calls `expire`. UMA's [Optimistic Oracle](/oracle/optimistic-oracle-interface.md) returns 3600 as the ETH/USD price. The financial product library, which Bob used in deployment, compares 3600 against the 3000 ETH/USD strike price and sets the contract's `expiryPercentageLong` to: (expiry price - strike price)/strike price. In this case, the `expiryPercentageLong` is set to (3600 - 3000)/3000 or 0.2.
+- At expiry, Bob calls `expire`. UMA's [Optimistic Oracle](/oracle/optimistic-oracle-interface.md) returns 3750 as the ETH/USD price. The financial product library, which Bob used in deployment, compares 3750 against the 3000 ETH/USD strike price and sets the contract's `expiryPercentageLong` to: (expiry price - strike price)/expiry price. In this case, the `expiryPercentageLong` is set to (3750 - 3000)/3750 or 0.2.
 - Alice can now call `settle` and receives 400 WETH back. The 400 long tokens she still held were worth 0.2 WETH apiece, while each short token was worth 0.8. Note, for any LSP contract, the sum of the long and short token pair at settlement would always be worth the amount of collateral determined by `collateralPerPair`.
 - Troy calls `settle` and receives 20 WETH, since the ETH/USD price was greater than the 3000 ETH/USD strike price. The amount of collateral he received was calculated with: number of long tokens * `expiryPercentageLong`.
 - Rachel calls settle and receives 80 WETH. The value of her short tokens is determined by: number of short tokens * (1 - `expiryPercentageLong`).
@@ -81,4 +81,4 @@ On deployment, the `financialProductLibraryAddress` should be set to the address
 
 ## Launching a LSP
 
-A launch repo for launching your own LSP is coming soon and will function similarly to the UMA Expiring Multiparty (EMP) [launch-repo](https://github.com/UMAprotocol/launch-emp).
+A launch repo for launching your own LSP is coming soon and will function similarly to the UMA Expiring Multiparty (EMP) [launch-repo](https://github.com/UMAprotocol/launch-lsp).
