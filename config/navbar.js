@@ -54,7 +54,7 @@ module.exports = {
     { to: "contracts/Migrations",
       label: "Contracts",
       position: "left",
-      activeBaseRegex: "(users|community)" },
+      activeBaseRegex: "(contracts)" },
     {
         href: "https://umaproject.org",
         className: "header-web-link",
