@@ -90,11 +90,6 @@ module.exports = {
         "uma-tokenholders/umips",
         {
           type: "category",
-          label: "Creating an UMIP PR",
-          items: ["uma-tokenholders/gitHub-walkthrough"],
-        },
-        {
-          type: "category",
           label: "Voting Tutorials",
           items: ["uma-tokenholders/voter-dApp"],
         },
