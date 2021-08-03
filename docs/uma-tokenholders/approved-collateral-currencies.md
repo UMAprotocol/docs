@@ -88,7 +88,7 @@ sidebar_label: Approved Collateral Currencies
 |TRIBE| 800 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md) | [Ethereum](https://etherscan.io/token/0xc7283b66Eb1EB5FB86327f08e1B5816b0720212B)
 |FOX| 670 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md) | [Ethereum](https://etherscan.io/token/0xc770eefad204b5180df6a14ee197d99d808ee52d)
 |RBN| 10 000 | [UMIP-120](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-120.md) | [Polygon](https://etherscan.io/token/0x6123B0049F904d730dB3C36a31167D9d4121fA6B)
-|Total| No of Approved collateral currencies | [83](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
+|Total| No of Approved collateral currencies | [84](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
 To submit a token to be considered as a collateral currency, please see the _[Guidance on Collateral Currency Addition](uma-tokenholders/guidence-on-collateral-currency-addition.md)
