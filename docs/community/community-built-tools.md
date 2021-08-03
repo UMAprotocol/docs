@@ -5,7 +5,7 @@ sidebar_label: Tools & Resources
 
 Various UMA community members and SuperUMANs have created different tools and resources for public consumption. To have your contribution added to this list, please reach out in Discord.
 
-Please note that these tools are community built and maintained and Risk Labs does not assume responsiblity for their security or functionality. 
+Please note that these tools are community-built and maintained and Risk Labs does not assume responsibility for their security or functionality. 
 
 ## Synthetic Token Builder
 
