@@ -19,11 +19,9 @@ You must commit `AND` reveal your vote in order for it to be counted
 1. Go to http://vote.umaproject.org/
 
 2. Connect your metamask wallet and sign the transaction
-
 ![sign](/docs/developers/votingdApp_sign.png)
 
 3. Commit period: You’ll see active votes in the “Active Requests” table. 
-
 ![Activerequests](/docs/voterdappguide/edit-votes.png)
 ![Confirmationbar](/docs/voterdappguide/sign-commit.png)
 - Type your vote for each vote under the **"current vote"** dropdown.
@@ -32,7 +30,6 @@ You must commit `AND` reveal your vote in order for it to be counted
   MAKE YOUR VOTE COUNT: make sure that your $UMA tokens are in the account you use to commit a vote before the reveal period begins. A snapshot is taken at the beginning of the reveal period. 
 
 4. Reveal period: If there are committed votes to reveal, you’ll see them in the “Active Requests” table. 
-
 - Review your committed votes
 - Click the **“reveal vote”** button. Once revealed, this cannot be undone. 
 
