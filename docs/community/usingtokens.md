@@ -4,7 +4,7 @@ sidebar_label: How to use your UMA tokens?
 ---
 Want to know a bit more about what you can do with your UMA tokens?
 
-Read on to find some suggestions for how you can use your UMA to participate in keeping our protocol secure, use it as collateral to mint dollar pegged expiring tokens or call options which entitle you to purchase more UMA at a fixed point int he future, If you have held UMA for a while, its worth checking if you received our uTVL airdrop which you can claim until the end of June.
+Read on to find some suggestions for how you can use your UMA to participate in keeping our protocol secure, use it as collateral to mint dollar pegged expiring tokens or call options which entitle you to purchase more UMA at a fixed point in the future. If you have held UMA for a while, its worth checking if you received our uTVL airdrop which you can claim until the end of June.
 
 ## Voting
 
