@@ -3,7 +3,7 @@ title: Community Built Tools & Resources
 sidebar_label: Tools & Resources 
 ---
 
-Various UMA community members and SuperUMANs have created different tools and resources as public consumption. To have your contribution added to this list, please reach out in Discord.
+Various UMA community members and SuperUMANs have created different tools and resources for public consumption. To have your contribution added to this list, please reach out in Discord.
 
 Please note that these tools are community built and maintained and Risk Labs does not assume responsiblity for their security or functionality. 
 
