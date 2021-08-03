@@ -1,6 +1,6 @@
 ---
-title: Guidance on Selecting and Configuring Price Feeds
-sidebar_label: Guidance on Selecting and Configuring Price Feeds
+title: Price Feed Configuration
+sidebar_label: Price Feed Configuration
 ---
 
 Price feeds allow the creation of bots that can programmatically calculate prices off-chain and use this information to propose on optimistic price requests, dispute price proposals, monitor and liquidate sponsor positions or dispute liquidations. In the event of disputes being brought up to DVM for resolution price feeds can also assist UMA voters in their initial evaluation, though voters should always use human judgement to interpret obtained results.
@@ -11,9 +11,9 @@ Availability of price feed is an absolute must for liquidable contracts and they
 
 Product developers should document their price feed implementation choice and configuration when writing UMIP for new price identifier or passing price feed configuration as ancillary data for a generic price identifier. [UMA protocol repo](https://github.com/UMAprotocol/protocol/tree/master/packages/financial-templates-lib/src/price-feed) contains number of price feed implementations and this documentation guides on selecting and configuring those that could be more generally applicable for most applications.
 
-Most popular price feed implementations used by financial products build on UMA currently are [CryptoWatch](/uma-tokenholders/price-feed-configuration-guidance.md#cryptowatch) for fetching cryptocurrency pricing from centralized exchanges, [Uniswap](/uma-tokenholders/price-feed-configuration-guidance.md#uniswap) covering AMM pricing (includes Uniswap v2/v3 and SushiSwap) and [Expression](/uma-tokenholders/price-feed-configuration-guidance.md#expression)/[Medianizer](/uma-tokenholders/price-feed-configuration-guidance.md#medianizer) for combining/aggregating data from other price feeds.
+Most popular price feed implementations used by financial products build on UMA currently are [CryptoWatch](/developers/pf-configuration.md#cryptowatch) for fetching cryptocurrency pricing from centralized exchanges, [Uniswap](/developers/pf-configuration.md#uniswap) covering AMM pricing (includes Uniswap v2/v3 and SushiSwap) and [Expression](/developers/pf-configuration.md#expression)/[Medianizer](/developers/pf-configuration.md#medianizer) for combining/aggregating data from other price feeds.
 
-If the tracked asset is traded on Balancer pools one might use [Balancer](/uma-tokenholders/price-feed-configuration-guidance.md#balancer) price feed. Also [Liquidity Provider](/uma-tokenholders/price-feed-configuration-guidance.md#liquidity-provider) price feed can be used to price any liquidity pool token where the pool contract holds the underlying asset. Some financial products might require foreign exchange rate data that could use [TraderMade](/uma-tokenholders/price-feed-configuration-guidance.md#tradermade) price feed. When multiple price feeds should be combined in a fallback mode one can also use the [FallBack](/uma-tokenholders/price-feed-configuration-guidance.md#fallback) price feed.
+If the tracked asset is traded on Balancer pools one might use [Balancer](/developers/pf-configuration.md#balancer) price feed. Also [Liquidity Provider](/developers/pf-configuration.md#liquidity-provider) price feed can be used to price any liquidity pool token where the pool contract holds the underlying asset. Some financial products might require foreign exchange rate data that could use [TraderMade](/developers/pf-configuration.md#tradermade) price feed. When multiple price feeds should be combined in a fallback mode one can also use the [FallBack](/developers/pf-configuration.md#fallback) price feed.
 
 ## Price Feed Configuration Syntax
 
@@ -137,7 +137,7 @@ In the example above one can observe how multi-line `expression` syntax works wi
 
 ### Medianizer
 
-Select [Medianizer](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/MedianizerPriceFeed.js) price feed by setting `type: "medianizer"` in the configuration to calculate median/mean from included price feeds. Note that this price feed implementation was developed before the [Expression](/uma-tokenholders/price-feed-configuration-guidance.md#expression) price feed that can also effectively achieve the same result by using [median](https://mathjs.org/docs/reference/functions/median.html)/[mean](https://mathjs.org/docs/reference/functions/mean.html) functions from `mathjs`. Supported configuration parameters are listed below:
+Select [Medianizer](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/MedianizerPriceFeed.js) price feed by setting `type: "medianizer"` in the configuration to calculate median/mean from included price feeds. Note that this price feed implementation was developed before the [Expression](/developers/pf-configuration.md#expression) price feed that can also effectively achieve the same result by using [median](https://mathjs.org/docs/reference/functions/median.html)/[mean](https://mathjs.org/docs/reference/functions/mean.html) functions from `mathjs`. Supported configuration parameters are listed below:
 
 * `medianizedFeeds`: An array of price feed configuration objects to medianize. The list should include at least one price feed configuration element.
 * `computeMean` (optional): If this boolean variable is set to `true` then the result will be calculated as arithmetic mean from provided price feeds. If not provided it defaults to `false` so that median value is calculated.
