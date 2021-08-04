@@ -49,7 +49,7 @@ module.exports = {
       {
         type: "category",
         label: "Bots",
-        items: ["developers/bots", "developers/bot-param"],
+        items: ["developers/bots", "developers/bot-param", "developers/pf-configuration"],
       },
       {
         type: "category",
