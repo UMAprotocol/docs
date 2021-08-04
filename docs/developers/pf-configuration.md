@@ -58,7 +58,7 @@ PRICE_FEED_CONFIG={"lookback":300000}
 Select [CryptoWatch](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.js) price feed by setting `type: "cryptowatch"` in the configuration to fetch cryptocurrency pricing data from CryptoWatch. Supported configuration parameters are listed below:
 
 * Common `lookback`, `minTimeBetweenUpdates` and `priceFeedDecimals` parameters.
-* `cryptowatchApiKey` (optional): This is an application specific parameter, where the user would provide its CryptoWatch account API key.
+* `cryptowatchApiKey` (optional): This is an application specific parameter, where the user would provide its CryptoWatch account API key. Due to security considerations this parameter should be set in user's `PRICE_FEED_CONFIG` environment variable and not published in [DefaultPriceFeedConfigs.js](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefaultPriceFeedConfigs.js) or passed in the price feed configuration as ancillary data.
 * `exchange`: Identifier for the exchange to pull prices from. One can check supported exchange symbols [here](https://api.cryptowat.ch/exchanges).
 * `pair`: Representation of the pair the price feed is tracking. This pair should be available on the provided exchange. One can check supported pairs for each exchange [here](https://api.cryptowat.ch/markets).
 * `ohlcPeriod` (optional): Number of seconds interval between OHLC prices requested from CryptoWatch. If not provided it defaults to 60 seconds.
@@ -102,7 +102,7 @@ Select [TraderMade](https://github.com/UMAprotocol/protocol/blob/master/packages
 * Common `minTimeBetweenUpdates` and `priceFeedDecimals` parameters.
 * `minuteLookback` (optional if `hourlyLookback` is provided): Number of seconds how far in the past the historical minute interval prices will be fetched. Maximum allowed value is 172800 seconds (2 days).
 * `hourlyLookback` (optional): Number of seconds how far in the past the historical hourly prices will be fetched. Hourly historical prices can be used as a fallback to the minute time-series if no minute data is available (e.g. on weekends). Maximum allowed value is 5184000 seconds (2 months).
-* `tradermadeApiKey`: This is an application specific parameter, where the user should provide its TraderMade account API key.
+* `tradermadeApiKey`: This is an application specific parameter, where the user should provide its TraderMade account API key. Due to security considerations this parameter should be set in user's `PRICE_FEED_CONFIG` environment variable and not published in [DefaultPriceFeedConfigs.js](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefaultPriceFeedConfigs.js) or passed in the price feed configuration as ancillary data.
 * `pair`: Representation of the pair the price feed is tracking. One can check supported pairs [here](https://marketdata.tradermade.com/historical-currencies-list).
 * `ohlcPeriod` (optional): Number of minutes interval between OHLC prices requested from TraderMade. Valid values for supported intervals are 1, 5, 10, 15 or 30. If not provided it defaults to 1 minute.
 
