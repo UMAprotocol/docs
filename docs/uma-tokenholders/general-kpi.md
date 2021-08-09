@@ -31,9 +31,9 @@ A short description and units of the KPI or metric you wish to incentivize. The 
 
 #### Metric Examples
 
-* `Protocol TVL in USD.`
-* `Liquidity Pool Value in USD.`
-* `The number of integrations a team can deliver.`
+* `UMA protocol TVL in USD.`
+* `SushiSwap UMA/ETH liquidity pool value in USD.`
+* `The number of integrations UMA team can deliver.`
 
 ### Endpoint
 
