@@ -1,6 +1,6 @@
 ---
-title: Launching Generalized KPI Options
-sidebar_label: Launching Generalized KPI Options
+title: Using the Generalized KPI Options Price Identifier
+sidebar_label: Using the Generalized KPI Options Price Identifier
 ---
 With the introduction of the General_KPI price identifier specified in [UMIP-117](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-117.md), project teams no longer need to go through the UMIP governance process for their specific KPI options price identifier. However, project tokens should still be approved as a supported collateral type. While this reduces some friction in the launch process, project teams should still carefully design and document their KPI options program to launch it using the General_KPI price identifier.
 
