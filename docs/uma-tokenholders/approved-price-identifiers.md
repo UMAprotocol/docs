@@ -133,6 +133,7 @@ sidebar_label: Approved Price Identifiers
 |SUSHIUNI_TVL| The TVL ratio between Uniswap and Sushiswap| [UMIP-24](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-24.md)
 |SUSHIUSD| The price of SUSHI in USD.| [UMIP-68](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-68.md)
 |uCRSPTMT_SEP21| A price that tracks the CRSP US Total Market TR Index (CRSPTMT), a highly diversified index that aims to track the US stock market as a whole.| [UMIP-92](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-92.md)
+|TOKEN_PRICE| The TOKEN_PRICE identifier returns a price of any fungible token expressed in units of another fungible token, cryptocurrency or fiat currency. Ancillary data will guide voters in identifying which token should be priced, what should be its quote currency, which markets should be queried and any other processing instructions for resolving a particular price request.| [UMIP-121](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-121.md)
 |TRIBEUSD| The price of TRIBE in USD.| [UMIP-118](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-118.md)
 |UMAUSD| The price of UMA in USD.| [UMIP-57](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-57.md)
 |UNIUSD| The price of UNI in USD.| [UMIP-57](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-57.md)
@@ -224,5 +225,5 @@ sidebar_label: Approved Price Identifiers
 |yUSDUSD| The price of yUSD in USD.| [UMIP-78](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-78.md)
 |ZARUMA| The price of South African RAND in UMA.| [UMIP-95](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-95.md)
 |ZARUSD| The price of South African RAND in USD.| [UMIP-90](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-90.md)
-|Total| No of Approved Price Identifiers.| [219](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
+|Total| No of Approved Price Identifiers.| [220](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
 
