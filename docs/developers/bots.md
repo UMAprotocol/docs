@@ -1,5 +1,5 @@
 ---
-title: Liquidation and Dispute Bots
+title: Running Optimistic Oracle and EMP Bots
 sidebar_label: Running Bots
 ---
 
