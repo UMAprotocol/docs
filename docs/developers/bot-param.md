@@ -61,6 +61,7 @@ COMMAND=yarn optimistic-oracle --network kovan_mnemonic
   - `cryptowatchApiKey`: Necessary to propose and dispute prices reliant on a CryptoWatch price feed.
   - `tradermadeApiKey`: Necessary to propose and dispute prices reliant on a TraderMade price feed.
   - `quandlApiKey`: Necessary to propose and dispute prices reliant on a Quandl price feed.
+- `OPTIMISTIC_ORACLE_PROPOSER_CONFIG` [optional]: enables the override of the price dispute threshold. For example, to dispute proposed prices that are 3% off of what the bot calculated, use: `{"disputePriceErrorPercent":0.03}`
 
 ## Liquidator bot
 
