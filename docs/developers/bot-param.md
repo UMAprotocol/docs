@@ -5,7 +5,7 @@ sidebar_label: Bot Parameterization
 
 The UMA `optimistic-oracle`, `liquidator`, `disputer`, and `monitor` bots are highly configurable enabling their operation to be fine tuned in different deployment environments. Additionally, the bots are designed to be runnable with very little configuration out of the box due to ample use of sensible defaults. This makes the bots simple to setup if you don't need all the settings that come with a more involved configuration.
 
-Note that to propose and dispute prices with the Optimistic Oracle, you will only need to run the `optimistic-oracle` bot. The other bots are specific to liquidatable [ExpiringMultiParty (EMP)](https://docs.umaproject.org/developers/emp-deployment) contracts.
+Note that to propose and dispute prices with the Optimistic Oracle, you will only need to run the `optimistic-oracle` bot. The other bots are specific to liquidatable [ExpiringMultiParty (EMP)](/emp-deployment) contracts.
 
 This doc outlines possible configuration options for bot deployment.
 
@@ -49,11 +49,18 @@ You can run an `optimistic-oracle` bot by providing a mnemonic with an associate
 Price feeds will only be constructed as needed
 
 ```bash
-MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
+MNEMONIC="sail chuckle school attitude symptom tenant fragile patch ring immense main rapid"
 COMMON_PRICE_FEED_CONFIG='"commonPriceFeedConfig": {"cryptowatchApiKey": "abcd","tradermadeApiKey": "efg","quandlApiKey": "hijklmnop"}'
 # Be sure to replace with your mnemonic.
 COMMAND=yarn optimistic-oracle --network kovan_mnemonic
 ```
+
+### Possible optimistic-oracle config options
+
+- `COMMON_PRICE_FEED_CONFIG` **[required]**: enables the override of specific bot settings. Contains the following sub-settings:
+  - `cryptowatchApiKey`: Necessary to propose and dispute prices reliant on a CryptoWatch price feed.
+  - `tradermadeApiKey`: Necessary to propose and dispute prices reliant on a TraderMade price feed.
+  - `quandlApiKey`: Necessary to propose and dispute prices reliant on a Quandl price feed.
 
 ## Liquidator bot
 
@@ -66,7 +73,7 @@ You can run a liquidator bot by simply providing the EMP address of the contract
 ```bash
 # yUSD-SEP20 contract on Kovan
 EMP_ADDRESS=0x834adA34847ff7b9442cF269E0DE3091DC7BB895
-MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
+MNEMONIC="sail chuckle school attitude symptom tenant fragile patch ring immense main rapid"
 # Be sure to replace with your mnemonic.
 COMMAND=yarn liquidator --network kovan_mnemonic
 ```
@@ -95,7 +102,7 @@ You can run a disputer bot by simply providing the EMP address of the contract y
 ```bash
 # yUSD-SEP30 contract on Kovan
 EMP_ADDRESS=0xFb70A4CBD537B36e647553C279a93E969b041DF0
-MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
+MNEMONIC="sail chuckle school attitude symptom tenant fragile patch ring immense main rapid"
 # Be sure to replace with your mnemonic.
 COMMAND=yarn disputer --network kovan_mnemonic
 ```
