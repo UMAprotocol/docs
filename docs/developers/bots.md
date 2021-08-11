@@ -5,7 +5,7 @@ sidebar_label: Running Bots
 
 ## Quick Start: Optimistic Oracle Bot
 
-This section is intended for those who are familiar with Docker and just want to get up and running. The `optimistic-oracle` bot will propose and dispute prices with the Optimistic Oracle and is the most versatile and important bot in UMA's ecosystem. Advanced tutorials for [ExpiringMultiParty](/emp-deployment) bots (`liquidator`, `disputer`, and `monitors`) are included further down in the article, but these bots are not necessary for most use cases.
+This section is intended for those who are familiar with Docker and just want to get up and running. The `optimistic-oracle` bot will propose and dispute prices with the Optimistic Oracle and is the most versatile and important bot in UMA's ecosystem. Advanced tutorials for [ExpiringMultiParty](/developers/emp-deployment) bots (`liquidator`, `disputer`, and `monitors`) are included further down in the article, but these bots are not necessary for most use cases.
 
 First, create a file to set the appropriate configuration for your `optimistic-oracle` bot. Please edit the following example with your own values.
 
@@ -41,13 +41,13 @@ The bots described below are infrastructure tools that help maintain the overall
 
 ## Incentives to Running an Optimistic Oracle Bot
 
-Contracts making a price request to the [Optimistic Oracle](/optimistic-oracle-integration) may offer a `proposerReward` paid out to a price proposer, usually a keeper running an `optimistic-oracle` bot. Project creators may also expect to propose their own prices, in which case there may be no proposer reward, but running an `optimistic-oracle` bot can make their lives easier.
+Contracts making a price request to the Optimistic Oracle may offer a `proposerReward` paid out to a price proposer, usually a keeper running an `optimistic-oracle` bot. Project creators may also expect to propose their own prices, in which case there may be no proposer reward, but running an `optimistic-oracle` bot can make their lives easier.
 
 The `optimistic-oracle` bot will also automatically dispute any prices that appear to be different from the true price as calculated by the price feed, outside of a user-specified allowable margin of error. A dispute will trigger a vote on the actual price in the DVM. If UMA tokenholders vote in favor of the disputer, the disputer will earn the proposer's bond (equal to the final fee for the collateral type used by the contract, ~$400) plus any additional bond required by the price requestor.
 
 ## Advanced Section: ExpiringMultiParty Bots
 
-The following sections cover the `liquidator`, `disputer`, and `monitors` bots for interacting with [ExpiringMultiParty](/emp-deployment) contracts.
+The following sections cover the `liquidator`, `disputer`, and `monitors` bots for interacting with [ExpiringMultiParty](/developers/emp-deployment) contracts.
 
 ## Quick Start: Liquidator Bot
 

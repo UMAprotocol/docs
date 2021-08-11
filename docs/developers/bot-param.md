@@ -5,7 +5,7 @@ sidebar_label: Bot Parameterization
 
 The UMA `optimistic-oracle`, `liquidator`, `disputer`, and `monitor` bots are highly configurable enabling their operation to be fine tuned in different deployment environments. Additionally, the bots are designed to be runnable with very little configuration out of the box due to ample use of sensible defaults. This makes the bots simple to setup if you don't need all the settings that come with a more involved configuration.
 
-Note that to propose and dispute prices with the Optimistic Oracle, you will only need to run the `optimistic-oracle` bot. The other bots are specific to liquidatable [ExpiringMultiParty (EMP)](/emp-deployment) contracts.
+Note that to propose and dispute prices with the Optimistic Oracle, you will only need to run the `optimistic-oracle` bot. The other bots are specific to liquidatable [ExpiringMultiParty (EMP)](/developers/emp-deployment) contracts.
 
 This doc outlines possible configuration options for bot deployment.
 
