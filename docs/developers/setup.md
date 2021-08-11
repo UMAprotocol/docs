@@ -63,7 +63,7 @@ Public networks include the Ethereum mainnet and any public testnets, like Rinke
 these networks, you'll generally need to know:
 
 1. Which public network you intend to use.
-   A list of UMA supported networks is available [here](https://github.com/UMAprotocol/protocol/blob/master/packages/common/src/PublicNetworks.js).
+   A list of UMA supported networks is available [here](https://github.com/UMAprotocol/protocol/blob/master/packages/common/src/PublicNetworks.ts).
 
 2. What private key you want to use and how your private keys are stored.
    Below is information regarding the two types of keys that are supported, mnemonics/seed phrases and hardware wallets.

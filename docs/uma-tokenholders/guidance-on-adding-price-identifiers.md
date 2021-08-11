@@ -1,4 +1,4 @@
-﻿---
+---
 title: Guidance for the Addition of Price Identifiers
 sidebar_label: Guidance for the Addition of Price Identifiers
 ---
@@ -95,7 +95,9 @@ Even though technically, ancillary data can be set to anything provided it fits 
   * Convert bytes to UTF8;
   * Delimit UTF8 string by "," (commas) into a list of key-value pairs;
   * Each key-value pair can be further delimited by ":", colons. The author of the UMIP for the associated identifier is free to define how the values in these key-value pairs should be formatted in UTF8;
-  * Key-value pairs, where keys are only different by trailing incrementing natural numbers, can be combined into arrays.
+  * Key-value pairs, where keys are only different by trailing incrementing natural numbers, can be combined into arrays;
+  * If a value should contain "," or ":" characters, such value should be enclosed in double quotes;
+  * Values enclosed in "{}" (curly braces) or "[]" (square brackets) should be parsed as JSON objects.
 
 ### Example applications
 
@@ -107,4 +109,6 @@ Even though technically, ancillary data can be set to anything provided it fits 
 * `competition:World Cup,date:07-09-2024,match:FRA-ESP,requester:0xabc` could be used for a Sport-x catch-all identifier.
 * `Strike:2500,expiry:1626732098` could be used for a `ETHUSD` identifier for a call option contract.
 * `id0:1337,id1:2448` represents an array of ids: [1337,2488].
+* `sourceURL:"https://www.binance.com/en/trade/ETH_USDT"` illustrates enclosing value in double quotes to escape ":" character that should be part of the URL link.
+* `title:"priceFeedConfiguration",priceFeed:{"type": "expression","expression": "ETHBTC_FV = ETH\\/BTC * PERP_FRM; round(max(-0.00001, min(0.00001, (ETHBTC_FV - ETHBTC_PERP) / ETHBTC_FV / 86400)), 9)","lookback": 7200,"minTimeBetweenUpdates": 60,"twapLength": 3600,"customFeeds": {"ETHBTC_PERP": {"type": "uniswap","invertPrice": true,"uniswapAddress": "0x899a45ee5a03d8cc57447157a17ce4ea4745b199"},"PERP_FRM": {    "type": "frm","perpetualAddress": "0x32f0405834c4b50be53199628c45603cea3a28aa"}}}` exemplifies passing price feed configuration formatted as JSON object so that a bot/voter could use it to compute price for generic identifier.
 

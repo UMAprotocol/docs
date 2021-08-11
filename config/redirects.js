@@ -84,7 +84,7 @@ module.exports = [
   },
   {
     to: "/oracle/optimistic-oracle-interface",
-    from: ["/uma/oracle/dvm_interfaces.html"],
+    from: ["/uma/oracle/optimistic-oracle-interface.html"],
   },
   {
     to: "/oracle/known-issues",
