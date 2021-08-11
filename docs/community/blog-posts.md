@@ -10,6 +10,11 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Jul 23, 2021: [In Case You Missed It #23](https://medium.com/uma-project/icymi-23-a078865b9355)
+- Jul 21, 2021: [Update: Developer Mining and Grants Program](https://medium.com/uma-project/update-developer-mining-and-grants-program-77b7521fdde5)
+- Jul 16, 2021: [Success Tokens: An Incentive Aligned Way for VC Funds to Invest in DAOs](https://medium.com/uma-project/success-tokens-an-incentive-aligned-way-for-vc-funds-to-invest-in-daos-1e8b8244f2f4)
+- Jul 16, 2021: [UMA at ETH Global HackMoney Hackathon](https://medium.com/uma-project/uma-at-eth-global-hackmoney-hackathon-5aaa9d290990)
+- Jul 14,2021: [In Case You Missed It #22](https://medium.com/uma-project/icymi-22-1229cb2c211e)
 - Jul 10, 2021: [UMA Raises $2.6mm with the Pilot of the Range Token](https://medium.com/uma-project/uma-raises-2-6mm-in-the-pilot-of-the-range-token-de5be578fa5e)
 - Jul 8, 2021: [In Case You Missed It #20](https://medium.com/uma-project/icymi-21-8eac3967ac07)
 - Jul 2, 2021: [UMA’s uTVL KPI Options — A Retrospective and the Next Launch](https://medium.com/uma-project/umas-utvl-kpi-options-a-retrospective-and-the-next-launch-169473209335)
