@@ -23,10 +23,10 @@ sidebar_label: Approved Collateral Currencies
 |SNX| 65 | [umip-56](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-56.md) | [Ethereum](https://etherscan.io/token/0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f), [Polygon](https://polygonscan.com/address/0x50b728d8d964fd00c2d0aad81718b71311fef68a)|
 |UMA| 45 | [UMIP-56](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-56.md) | [Ethereum](https://etherscan.io/token/0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828)|
 |UNI| 20 | [UMIP-56](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-56.md) | [Ethereum](https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984), [Polygon](https://polygonscan.com/address/0xb33eaad8d922b1083446dc23f610c2567fb5180f)|
-|WBTC-ETH| 0.0000002 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md) | [Ethereum]()|
-|USDC-ETH| 0.0000035 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md) | [Ethereum]()|
-|UNI-ETH| 0.55 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md) | [Ethereum]()|
-|UMA-ETH| 0.8 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md) | [Ethereum]()|
+|WBTC-ETH| 0.0000002 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md) | [Ethereum](https://etherscan.io/address/0xBb2b8038a1640196FbE3e38816F3e67Cba72D940)|
+|USDC-ETH| 0.0000035 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md) | [Ethereum](https://etherscan.io/address/0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc)|
+|UNI-ETH| 0.55 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md) | [Ethereum](https://etherscan.io/address/0xd3d2E2692501A5c9Ca623199D38826e513033a17)|
+|UMA-ETH| 0.8 | [UMIP-58](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-58.md) | [Ethereum](https://etherscan.io/address/0x88D97d199b9ED37C29D846d00D443De980832a22)|
 |ANT| 120 | [UMIP-60](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-60.md) | [Ethereum](https://etherscan.io/token/0xa117000000f279d81a1d3cc75430faa017fa5a2e)|
 |INDEX| 24 | [UMIP-63](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-63.md) | [Ethereum](https://etherscan.io/token/0x0954906da0Bf32d5479e25f46056d22f08464cab)|
 |DPI| 1.75 | [UMIP-63](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-63.md) | [Ethereum](https://etherscan.io/token/0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b)|
