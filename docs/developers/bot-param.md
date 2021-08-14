@@ -1,15 +1,17 @@
 ---
-title: Liquidator, disputer, and monitor bot parameterization
+title: Bot parameterization
 sidebar_label: Bot Parameterization
 ---
 
-The UMA liquidator, disputer, and monitor bots are highly configurable enabling their operation to be fine tuned in different deployment environments. Additionally, the bots are designed to be runnable with very little configuration out of the box due to ample use of sensible defaults. This makes the bots simple to setup if you don't need all the settings that come with a more involved configuration.
+The UMA `optimistic-oracle`, `liquidator`, `disputer`, and `monitor` bots are highly configurable enabling their operation to be fine tuned in different deployment environments. Additionally, the bots are designed to be runnable with very little configuration out of the box due to ample use of sensible defaults. This makes the bots simple to setup if you don't need all the settings that come with a more involved configuration.
+
+Note that to propose and dispute prices with the Optimistic Oracle, you will only need to run the `optimistic-oracle` bot. The other bots are specific to liquidatable [ExpiringMultiParty (EMP)](/developers/emp-deployment) contracts.
 
 This doc outlines possible configuration options for bot deployment.
 
 ## Common configuration settings
 
-All three bots (liquidator, disputer, and monitor) share some configuration options, but each also have bot-specific options as well.
+All four bots (`optimistic-oracle`, `liquidator`, `disputer`, and `monitor`) share some configuration options, but the EMP bots have bot-specific options as well.
 
 ### Common config
 
@@ -20,7 +22,7 @@ All three bots (liquidator, disputer, and monitor) share some configuration opti
 - `INFURA_API_KEY` [optional]: Specify an Infura API key for the bot to use. By default this uses a shared key stored in the repo. If you experience issues with accessing Infura try adding your own key.
 - `CUSTOM_NODE_URL` [optional]: Specify an Ethereum RPC node URL. This can run over `https` or `wss` depending on your preference.
 - `POLLING_DELAY`[optional]: How long the bot should wait (in seconds) before running a polling cycle. If excluded the bot defaults to polling every 60 seconds.
-- `PRICE_FEED_CONFIG`[optional]: Configuration object used to parameterize the bot's price feed. If excluded then the bot will try and infer the price feed based on the identifer name. Optionally, you can override this. This config, if provided, contains the following:
+- `PRICE_FEED_CONFIG`[optional]: Configuration object used to parameterize the bot's price feed. If excluded then the bot will try and infer the price feed based on the identifier name. Optionally, you can override this. This config, if provided, contains the following:
   - `type` specifies the configuration of the price feed. The `medianizer` provides the median of the price of the identifier over a set of different exchanges.
   - `apiKey` is the key generated in API key section of the Prerequisites.
   - `pair` defines the crypto pair whose price is being fetched as defined in CryptoWatch. Ex: `ethbtc`.
@@ -36,9 +38,34 @@ All three bots (liquidator, disputer, and monitor) share some configuration opti
 - `PAGERDUTY_FROM_EMAIL`[optional] Each Pagerduty service also requires a `from email` to uniquely identify the logger.
 - `INFURA_API_KEY`[optional]: Override the default Infura key used by the bot.
 
+## Optimistic Oracle bot
+
+The `optimistic-oracle` bot proposes and disputes prices with the Optimistic Oracle based on off-chain information about the value of the price identifier. By default, the bot will only dispute prices that are off (according to its calculations) by more than 5%.
+
+## Minimum viable optimistic-oracle config:
+
+You can run an `optimistic-oracle` bot by providing a mnemonic with an associated private key that the bot should use and a `COMMON_PRICE_FEED_CONFIG` to provide price feeds with api keys. No financial product contract addresses are required, since the bot will watch for all active price requests in the Optimistic Oracle.
+
+Price feeds will only be constructed as needed
+
+```bash
+MNEMONIC="sail chuckle school attitude symptom tenant fragile patch ring immense main rapid"
+COMMON_PRICE_FEED_CONFIG='"commonPriceFeedConfig": {"cryptowatchApiKey": "abcd","tradermadeApiKey": "efg","quandlApiKey": "hijklmnop"}'
+# Be sure to replace with your mnemonic.
+COMMAND=yarn optimistic-oracle --network kovan_mnemonic
+```
+
+### Possible optimistic-oracle config options
+
+- `COMMON_PRICE_FEED_CONFIG` **[required]**: enables the override of specific bot settings. Contains the following sub-settings:
+  - `cryptowatchApiKey`: Necessary to propose and dispute prices reliant on a CryptoWatch price feed.
+  - `tradermadeApiKey`: Necessary to propose and dispute prices reliant on a TraderMade price feed.
+  - `quandlApiKey`: Necessary to propose and dispute prices reliant on a Quandl price feed.
+- `OPTIMISTIC_ORACLE_PROPOSER_CONFIG` [optional]: enables the override of the price dispute threshold. For example, to dispute proposed prices that are 3% off of what the bot calculated, use: `{"disputePriceErrorPercent":0.03}`
+
 ## Liquidator bot
 
-The liquidation bot monitors all open positions within a given ExpiringMultiParty contract and liquidates positions if their collateralization ratio, as inferred from off-chain information about the value of the price identifier, drops below a given threshold.
+The liquidator bot monitors all open positions within a given ExpiringMultiParty contract and liquidates positions if their collateralization ratio, as inferred from off-chain information about the value of the price identifier, drops below a given threshold.
 
 ### Minimum viable liquidator config:
 
@@ -47,12 +74,12 @@ You can run a liquidator bot by simply providing the EMP address of the contract
 ```bash
 # yUSD-SEP20 contract on Kovan
 EMP_ADDRESS=0x834adA34847ff7b9442cF269E0DE3091DC7BB895
-MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
+MNEMONIC="sail chuckle school attitude symptom tenant fragile patch ring immense main rapid"
 # Be sure to replace with your mnemonic.
-COMMAND=yarn truffle exec ./packages/liquidator/index.js --network kovan_mnemonic
+COMMAND=yarn liquidator --network kovan_mnemonic
 ```
 
-Note that this minimum config will use the free tier crypto watch price feed. Without an account this will run out of credits very quickly. We recommend creating an account and paramaterzing the price feed to use this feed by adding `PRICE_FEED_CONFIG={"apiKey":"YOUR-CRYPTO-WATCH-API-KEY-HERE"}` to your config file.
+Note that this minimum config will use the free tier crypto watch price feed. Without an account this will run out of credits very quickly. We recommend creating an account and paramaterizing the price feed to use this feed by adding `PRICE_FEED_CONFIG={"apiKey":"YOUR-CRYPTO-WATCH-API-KEY-HERE"}` to your config file.
 
 ### Possible liquidator config options
 
@@ -66,7 +93,7 @@ Note that this minimum config will use the free tier crypto watch price feed. Wi
 
 ## Disputer bots
 
-The dispute bot monitors all liquidations occurring within a given ExpiringMultiParty contract and initiates disputes against liquidations it deems invalid, as inferred from off-chain information about the value of the price identifier.
+The disputer bot monitors all liquidations occurring within a given ExpiringMultiParty contract and initiates disputes against liquidations it deems invalid, as inferred from off-chain information about the value of the price identifier.
 A liquidation is invalid if a position was correctly collateralized at the time of liquidation.
 
 ### Minimum viable disputer config:
@@ -76,9 +103,9 @@ You can run a disputer bot by simply providing the EMP address of the contract y
 ```bash
 # yUSD-SEP30 contract on Kovan
 EMP_ADDRESS=0xFb70A4CBD537B36e647553C279a93E969b041DF0
-MNEMONIC=sail chuckle school attitude symptom tenant fragile patch ring immense main rapid
+MNEMONIC="sail chuckle school attitude symptom tenant fragile patch ring immense main rapid"
 # Be sure to replace with your mnemonic.
-COMMAND=yarn truffle exec ./packages/disputer/index.js --network kovan_mnemonic
+COMMAND=yarn disputer --network kovan_mnemonic
 ```
 
 ### Possible disputer config options
@@ -105,7 +132,7 @@ The config below will start up a monitor bot that will: (1) send messages when n
 # yUSD-SEP30 contract on Kovan
 EMP_ADDRESS=0xFb70A4CBD537B36e647553C279a93E969b041DF0
 # Be sure to replace with your mnemonic.
-COMMAND=yarn truffle exec ./packages/monitors/index.js --network kovan_mnemonic
+COMMAND=yarn monitors --network kovan_mnemonic
 ```
 
 ### Possible monitor config options
