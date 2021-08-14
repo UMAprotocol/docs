@@ -43,7 +43,7 @@ The bots described below are infrastructure tools that help maintain the overall
 
 Contracts making a price request to the Optimistic Oracle may offer a `proposerReward` paid out to a price proposer, usually a keeper running an `optimistic-oracle` bot. Project creators may also expect to propose their own prices, in which case there may be no proposer reward, but running an `optimistic-oracle` bot can make their lives easier.
 
-The `optimistic-oracle` bot will also automatically dispute any prices that appear to be different from the true price as calculated by the price feed, outside of a user-specified allowable margin of error. A dispute will trigger a vote on the actual price in the DVM. If UMA tokenholders vote in favor of the disputer, the disputer will earn the proposer's bond (equal to the final fee for the collateral type used by the contract, ~$400) plus any additional bond required by the price requestor.
+The `optimistic-oracle` bot will also automatically dispute any prices that appear to be different from the true price as calculated by the price feed, outside of a user-specified allowable margin of error. A dispute will trigger a vote on the actual price in the DVM. If UMA tokenholders vote in favor of the disputer, the disputer will earn the proposer's bond, which defaults to the collateral's final fee, but is often more, and can be increased or decreased by the price requestor.
 
 ## Advanced Section: ExpiringMultiParty Bots
 
