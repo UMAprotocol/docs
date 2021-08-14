@@ -44,7 +44,7 @@ The `optimistic-oracle` bot proposes and disputes prices with the Optimistic Ora
 
 ## Minimum viable optimistic-oracle config:
 
-You can run an `optimistic-oracle` bot by providing a mnemonic with an associated private key that the bot should use and a `COMMON_PRICE_FEED_CONFIG`. No financial product contract addresses are required, since the bot will watch for all active price requests in the Optimistic Oracle.
+You can run an `optimistic-oracle` bot by providing a mnemonic with an associated private key that the bot should use and a `COMMON_PRICE_FEED_CONFIG` to provide price feeds with api keys. No financial product contract addresses are required, since the bot will watch for all active price requests in the Optimistic Oracle.
 
 Price feeds will only be constructed as needed
 
