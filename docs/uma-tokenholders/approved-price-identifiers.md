@@ -217,6 +217,7 @@ sidebar_label: Approved Price Identifiers
 |XIOETH| The price of XIO in ETH.| [UMIP-71](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-71.md)
 |XIOUSD| The price of XIO in USD.| [UMIP-71](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-71.md)
 |XRPDOM| A Ripple dominance index price.| [UMIP-69](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-69.md)
+|XSUSHI_APY| A price identifier that tracks the xSushi APY derived from an arbitrary number of days of sushi yield data.| [UMIP-123](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-123.md)
 |XSUSHIUSD| The price of XSUSHI in USD.| [UMIP-68](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-68.md)
 |YAMETH| The price of YAM in ETH.| [UMIP-50](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-50.md)
 |YAMUSD| The price of YAM in USD.| [UMIP-50](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-50.md)
