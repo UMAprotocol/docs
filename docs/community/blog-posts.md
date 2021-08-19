@@ -10,6 +10,7 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Aug 16, 2021: [Designing A Smart Liquidity Mining Program (LM 2.0)](https://medium.com/uma-project/designing-a-smart-liquidity-mining-program-lm-2-0-d46072a11cfd)
 - Jul 23, 2021: [In Case You Missed It #23](https://medium.com/uma-project/icymi-23-a078865b9355)
 - Jul 21, 2021: [Update: Developer Mining and Grants Program](https://medium.com/uma-project/update-developer-mining-and-grants-program-77b7521fdde5)
 - Jul 16, 2021: [Success Tokens: An Incentive Aligned Way for VC Funds to Invest in DAOs](https://medium.com/uma-project/success-tokens-an-incentive-aligned-way-for-vc-funds-to-invest-in-daos-1e8b8244f2f4)
