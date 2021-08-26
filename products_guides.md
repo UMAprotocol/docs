@@ -53,9 +53,9 @@ Crypto Metric tokens are synthetic assets which track a cryptocurrency value - t
  - **[uGas](https://degenerative.finance/asset/ugas)** (token address: [uGAS-JUN21](https://etherscan.io/token/0xa6b9d7e3d76cf23549293fb22c488e0ea591a44e))
  -- [Video Overview and Walkthrough](https://www.youtube.com/watch?v=BT-OF7l0t8I&t=6s)
  - [**SUSHIUNI**](https://tvlsnacks.finance/) (token address: [SUSHIUNI_JULY21](https://etherscan.io/token/0x43145836a4830d1a9e303dee2a301765e3f66429))
- - [**Mini Mario Cash Summer**](https://mario.cash/) (token address: [Mini_Mario_Summer_Cash](https://etherscan.io/token/0x8104c9f13118320eefe5fbea8a44d600b85981ef))
+ - [**Mini Mario Cash Summer**](https://mario.cash/fall) (token address: [Mini_Mario_Summer_Cash](https://etherscan.io/token/0x8104c9f13118320eefe5fbea8a44d600b85981ef))
 
- - **[Mario Summer Cash](https://mario.cash/)** (token address: [Mario Summer Cash](https://etherscan.io/token/0xd375d21f5eb95f7c31fc49a7251ceab341dac1ca))
+ - **[Mario Summer Cash](https://mario.cash/fall)** (token address: [Mario Summer Cash](https://etherscan.io/token/0xd375d21f5eb95f7c31fc49a7251ceab341dac1ca))
 
 
 ### Synthetic USD
