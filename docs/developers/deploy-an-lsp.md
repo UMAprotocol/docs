@@ -56,7 +56,6 @@ Each deployment requires the following parameters to be set at the point of depl
 
 ### Mandatory deployment parameters
 
-<<<<<<< HEAD
 - `gasprice:` The gas price used for your contract deployment.
 - `url:` your node URL.
 - `mnemonic:` Your 12 word seed phrase or mnemonic. 
@@ -69,36 +68,15 @@ Each deployment requires the following parameters to be set at the point of depl
 - `longSynthSymbol:` The ticker name of the long token.
 - `shortSynthName:` The full-length name of the short token.
 - `shortSynthSymbol:` The ticker name of the short token or ticker symbol.
-=======
-- `gasprice:` The gas price used for your contract deployment  
-- `url:` your node URL
-- `mnemonic:` Your 12 word seed phrase or mnemonic 
-- `expirationTimestamp:` Timestamp at which your contract will expire 
-- `collateralPerPair:` The amount of collateral required to mint each long and short pair. Default set to `1000000000000000000` 
-- `priceIdentifier:` The approved price identifier to be used  
-- `collateralToken:` Approved collateral currency to be used.
-- `pairName:` The desired name of the token pair.
-- `longSynthName:` The extended name of the long token
-- `longSynthSymbol:` The ticker name of the long token.
-- `shortSynthName:` The extended name of the short token
-- `shortSynthSymbol:` The ticker name of the short token or ticker symbol
->>>>>>> Apply suggestions from code review
 
 ### Optional deployment parameters
 
 - `fpl`: The financial library your contract will use to calculate the payment at expiry. For the list of the available financial product libraries we have available, you can go [here](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries).
-<<<<<<< HEAD
 - `financialProductLibraryAddress:` Contract address providing settlement payout logic. Only required if a custom financial product library is used and `fpl` is not included.
 - `customAncillaryData:` Custom ancillary data to be passed along with the price request. If not needed, this flag can be excluded and will be left as a 0-length bytes array.
 - `prepaidProposerReward:` Proposal reward to be forwarded to the created contract to be used to incentivize price proposals.
 - `optimisticOracleLivenessTime:` Custom liveness window for disputing optimistic oracle price proposals in seconds. A longer liveness time provides more security, while a shorter one provides faster settlement. By default, this is set to 7200 seconds.
 - `optimisticOracleProposerBond:` Additional bond a proposer must post with the optimistic oracle. A higher bond makes incorrect disputes and proposals more costly.
-=======
-- `customAncillaryData:` Custom ancillary data to be passed along with the price request. If not needed, this flag can be excluded and will be left as a 0-length bytes array.
-- `prepaidProposerReward:` Proposal reward to be forwarded to the created contract to be used to incentivize price proposals.
-- `optimisticOracleLivenessTime:` Custom liveness window for disputing optimistic oracle price proposals in seconds. A longer liveness time provides more security, while a shorter one provides faster settlement. By default, this is set to 7200 seconds.
-- `optimisticOracleProposerBond:` Additional bond proposer must post with the optimistic oracle. A higher bond increases rewards to disputers if the price is incorrect.
->>>>>>> Apply suggestions from code review
 
 ### FPL deployment parameters
 
