@@ -28,7 +28,7 @@ Using UMA's infrastructure, a team can create a covered call option using the UM
 
 With the contracts being cash settled, the terms of the contract remaining constant throughout, and positions always being fully collateralized by definition, there is no need to manage your position or run liquidation bots. 
 
-3. Then to wrap up you should choose the strike price and the starting price of your option. First choose the strike price (the price the collateral will be sold for) and then use an options pricing calculator to derive the starting price. An exmample of such a calculator can be this [Black Scholes Calculator](https://goodcalculators.com/black-scholes-calculator/).
+3. Then to wrap up you should choose the strike price and the starting price of your option. First choose the strike price (the price the collateral will be sold for) and then use an options pricing calculator to derive the starting price. An example of such a calculator can be this [Black Scholes Calculator](https://goodcalculators.com/black-scholes-calculator/).
 
 
 ## DeFi Call Option Use Cases

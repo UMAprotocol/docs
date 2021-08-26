@@ -17,7 +17,7 @@ If the tracked asset is traded on Balancer pools one might use [Balancer](/devel
 
 ## Price Feed Configuration Syntax
 
-Price feed configuration contains parameters stored as key-value pairs in a JavaScript object. All supported price identifiers are stored as `defaultConfigs` object in [DefaultPriceFeedConfigs.js](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefaultPriceFeedConfigs.js) where each key should be named after the price identifier and its value should be the respective configuration object for such price identifier. In case price identifier name contains any other character than allowed ones (letters, numbers, underscores and dollar signs) or it starts with a number, its key should be enclosed in double quotes in the price feed configuration. As an example, please see below the configuration for ETH/BTC identifier where key is `"ETH/BTC"` and the configuration is enclosed in curly braces:
+Price feed configuration contains parameters stored as key-value pairs in a JavaScript object. All supported price identifiers are stored as `defaultConfigs` object in [DefaultPriceFeedConfigs.js](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefaultPriceFeedConfigs.ts) where each key should be named after the price identifier and its value should be the respective configuration object for such price identifier. In case price identifier name contains any other character than allowed ones (letters, numbers, underscores and dollar signs) or it starts with a number, its key should be enclosed in double quotes in the price feed configuration. As an example, please see below the configuration for ETH/BTC identifier where key is `"ETH/BTC"` and the configuration is enclosed in curly braces:
 
 ```
   "ETH/BTC": {
@@ -55,10 +55,10 @@ PRICE_FEED_CONFIG={"lookback":300000}
 
 ### CryptoWatch
 
-Select [CryptoWatch](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.js) price feed by setting `type: "cryptowatch"` in the configuration to fetch cryptocurrency pricing data from CryptoWatch. Supported configuration parameters are listed below:
+Select [CryptoWatch](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.ts) price feed by setting `type: "cryptowatch"` in the configuration to fetch cryptocurrency pricing data from CryptoWatch. Supported configuration parameters are listed below:
 
 * Common `lookback`, `minTimeBetweenUpdates` and `priceFeedDecimals` parameters.
-* `cryptowatchApiKey` (optional): This is an application specific parameter, where the user would provide its CryptoWatch account API key. Due to security considerations this parameter should be set in user's `PRICE_FEED_CONFIG` environment variable and not published in [DefaultPriceFeedConfigs.js](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefaultPriceFeedConfigs.js) or passed in the price feed configuration as ancillary data.
+* `cryptowatchApiKey` (optional): This is an application specific parameter, where the user would provide its CryptoWatch account API key. Due to security considerations this parameter should be set in user's `PRICE_FEED_CONFIG` environment variable and not published in [DefaultPriceFeedConfigs.js](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefaultPriceFeedConfigs.ts) or passed in the price feed configuration as ancillary data.
 * `exchange`: Identifier for the exchange to pull prices from. One can check supported exchange symbols [here](https://api.cryptowat.ch/exchanges).
 * `pair`: Representation of the pair the price feed is tracking. This pair should be available on the provided exchange. One can check supported pairs for each exchange [here](https://api.cryptowat.ch/markets).
 * `ohlcPeriod` (optional): Number of seconds interval between OHLC prices requested from CryptoWatch. If not provided it defaults to 60 seconds.
@@ -68,7 +68,7 @@ Select [CryptoWatch](https://github.com/UMAprotocol/protocol/blob/master/package
 
 ### Uniswap
 
-Select [Uniswap](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/UniswapPriceFeed.js) price feed by setting `type: "uniswap"` in the configuration to fetch pricing data from Uniswap type AMM pools. Supported configuration parameters are listed below:
+Select [Uniswap](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/UniswapPriceFeed.ts) price feed by setting `type: "uniswap"` in the configuration to fetch pricing data from Uniswap type AMM pools. Supported configuration parameters are listed below:
 
 * Common `lookback` and `priceFeedDecimals` parameters.
 * `version` (optional): `"v2"` indicates Uniswap v2 or SushiSwap pool, while `"v3"` should be used for Uniswap v3 pools. If not provided it defaults to `"v2"`.
@@ -78,7 +78,7 @@ Select [Uniswap](https://github.com/UMAprotocol/protocol/blob/master/packages/fi
 
 ### Balancer
 
-Select [Balancer](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/BalancerPriceFeed.js) price feed by setting `type: "balancer"` in the configuration to fetch pricing data from Balancer pools. Supported configuration parameters are listed below:
+Select [Balancer](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/BalancerPriceFeed.ts) price feed by setting `type: "balancer"` in the configuration to fetch pricing data from Balancer pools. Supported configuration parameters are listed below:
 
 * Common `lookback` and `priceFeedDecimals` parameters.
 * `balancerAddress`: Address of the Balancer pool the price feed is monitoring.
@@ -89,7 +89,7 @@ Select [Balancer](https://github.com/UMAprotocol/protocol/blob/master/packages/f
 
 ### Liquidity Provider
 
-Select [Liquidity Provider](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/LPPriceFeed.js) price feed by setting `type: "lp"` in the configuration to fetch pricing data of pool tokens expressed in underlying tokens. Note that in order to calculate full LP token value one has to combine price feeds from all pool reserve tokens. Supported configuration parameters are listed below:
+Select [Liquidity Provider](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/LPPriceFeed.ts) price feed by setting `type: "lp"` in the configuration to fetch pricing data of pool tokens expressed in underlying tokens. Note that in order to calculate full LP token value one has to combine price feeds from all pool reserve tokens. Supported configuration parameters are listed below:
 
 * Common `minTimeBetweenUpdates` and `priceFeedDecimals` parameters.
 * `poolAddress`: Address of the LP pool to monitor.
@@ -97,22 +97,22 @@ Select [Liquidity Provider](https://github.com/UMAprotocol/protocol/blob/master/
 
 ### TraderMade
 
-Select [TraderMade](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/TraderMadePriceFeed.js) price feed by setting `type: "tradermade"` in the configuration to fetch forex pricing data from TraderMade. Supported configuration parameters are listed below:
+Select [TraderMade](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/TraderMadePriceFeed.ts) price feed by setting `type: "tradermade"` in the configuration to fetch forex pricing data from TraderMade. Supported configuration parameters are listed below:
 
 * Common `minTimeBetweenUpdates` and `priceFeedDecimals` parameters.
 * `minuteLookback` (optional if `hourlyLookback` is provided): Number of seconds how far in the past the historical minute interval prices will be fetched. Maximum allowed value is 172800 seconds (2 days).
 * `hourlyLookback` (optional): Number of seconds how far in the past the historical hourly prices will be fetched. Hourly historical prices can be used as a fallback to the minute time-series if no minute data is available (e.g. on weekends). Maximum allowed value is 5184000 seconds (2 months).
-* `tradermadeApiKey`: This is an application specific parameter, where the user should provide its TraderMade account API key. Due to security considerations this parameter should be set in user's `PRICE_FEED_CONFIG` environment variable and not published in [DefaultPriceFeedConfigs.js](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefaultPriceFeedConfigs.js) or passed in the price feed configuration as ancillary data.
+* `tradermadeApiKey`: This is an application specific parameter, where the user should provide its TraderMade account API key. Due to security considerations this parameter should be set in user's `PRICE_FEED_CONFIG` environment variable and not published in [DefaultPriceFeedConfigs.js](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefaultPriceFeedConfigs.ts) or passed in the price feed configuration as ancillary data.
 * `pair`: Representation of the pair the price feed is tracking. One can check supported pairs [here](https://marketdata.tradermade.com/historical-currencies-list).
 * `ohlcPeriod` (optional): Number of minutes interval between OHLC prices requested from TraderMade. Valid values for supported intervals are 1, 5, 10, 15 or 30. If not provided it defaults to 1 minute.
 
 ### Expression
 
-Select [Expression](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/ExpressionPriceFeed.js) price feed by setting `type: "expression"` in the configuration to combine the results of other price feeds in mathematical expression. Supported configuration parameters are listed below:
+Select [Expression](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/ExpressionPriceFeed.ts) price feed by setting `type: "expression"` in the configuration to combine the results of other price feeds in mathematical expression. Supported configuration parameters are listed below:
 
 * Common `priceFeedDecimals` parameter.
 * `expression`: Mathematical expression to use for combining results of multiple price feeds. Other price feed names can be referenced as variables and any special characters in price feed names must be escaped by double backslash (`\\`). Please consult [mathjs documentation](https://mathjs.org/docs/expressions/syntax.html) for supported expression syntax. Note that for multi-line expressions this price feed will only take the result of the last line as a price, hence, any lines computing intermediary variables should be ended with semi-column (`;`) in order to skip them from output.
-* `customFeeds` (optional): Instead of referencing other named price feeds from default configuration one can also define other custom price feeds in the `customFeeds` parameter with the same syntax as `defaultConfigs` object in [DefaultPriceFeedConfigs.js](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefaultPriceFeedConfigs.js). When referring to  custom price feeds in the `expression` with the same name as found in the default price feed configuration, the custom price feed will take precedence.
+* `customFeeds` (optional): Instead of referencing other named price feeds from default configuration one can also define other custom price feeds in the `customFeeds` parameter with the same syntax as `defaultConfigs` object in [DefaultPriceFeedConfigs.js](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefaultPriceFeedConfigs.ts). When referring to  custom price feeds in the `expression` with the same name as found in the default price feed configuration, the custom price feed will take precedence.
 
 As an illustration, please see the default ETH/BTC funding rate configuration below:
 
@@ -137,11 +137,11 @@ In the example above one can observe how multi-line `expression` syntax works wi
 
 ### Medianizer
 
-Select [Medianizer](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/MedianizerPriceFeed.js) price feed by setting `type: "medianizer"` in the configuration to calculate median/mean from included price feeds. Note that this price feed implementation was developed before the [Expression](/developers/pf-configuration.md#expression) price feed that can also effectively achieve the same result by using [median](https://mathjs.org/docs/reference/functions/median.html)/[mean](https://mathjs.org/docs/reference/functions/mean.html) functions from `mathjs`. Supported configuration parameters are listed below:
+Select [Medianizer](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/MedianizerPriceFeed.ts) price feed by setting `type: "medianizer"` in the configuration to calculate median/mean from included price feeds. Note that this price feed implementation was developed before the [Expression](/developers/pf-configuration.md#expression) price feed that can also effectively achieve the same result by using [median](https://mathjs.org/docs/reference/functions/median.html)/[mean](https://mathjs.org/docs/reference/functions/mean.html) functions from `mathjs`. Supported configuration parameters are listed below:
 
 * `medianizedFeeds`: An array of price feed configuration objects to medianize. The list should include at least one price feed configuration element.
 * `computeMean` (optional): If this boolean variable is set to `true` then the result will be calculated as arithmetic mean from provided price feeds. If not provided it defaults to `false` so that median value is calculated.
 
 ### FallBack
 
-Select [FallBack](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/FallBackPriceFeed.js) price feed by setting `type: "fallback"` in the configuration to combine multiple price feeds in a fallback mode. The only configuration parameter is `orderedFeeds` that should be set as an array of price feed configuration objects. Ordered price feeds will fall back from the begining of the array to the end so that the first working configuration will be used to calculate the requested price. The list should include at least one price feed configuration element.
+Select [FallBack](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/FallBackPriceFeed.ts) price feed by setting `type: "fallback"` in the configuration to combine multiple price feeds in a fallback mode. The only configuration parameter is `orderedFeeds` that should be set as an array of price feed configuration objects. Ordered price feeds will fall back from the begining of the array to the end so that the first working configuration will be used to calculate the requested price. The list should include at least one price feed configuration element.

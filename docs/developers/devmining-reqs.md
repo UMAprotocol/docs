@@ -16,9 +16,9 @@ This is the high-level developer mining onboarding process that you will need to
 After deploying your contract, you will need to deploy liquidation and dispute bots to ensure the security of that contract. Instructions for bot deployment are [here](/developers/bots).
 
 Currently supported price feeds for bots include:
-- [CryptoWatch](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.js)
-- [Uniswap Pool Price](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/UniswapPriceFeed.js)
-- [Balancer Pool Price](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/BalancerPriceFeed.js)
+- [CryptoWatch](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.ts)
+- [Uniswap Pool Price](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/UniswapPriceFeed.ts)
+- [Balancer Pool Price](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/BalancerPriceFeed.ts)
 
 If your contract's price identifier is not supported by the existing price feeds above, you will need to write a custom price feed that works within UMA's bot infrastructure. After writing this price feed, please follow the UMA [contribution guidelines](https://github.com/UMAprotocol/protocol/blob/master/CONTRIBUTING.md) to submit a pull request [here](https://github.com/UMAprotocol/protocol/tree/master/packages/financial-templates-lib/src/price-feed).
 
@@ -45,7 +45,7 @@ Please note that to be eligible for developer mining rewards, your contract para
 
 - Your `collateralRequirement` must be above 1.2.
 - Your price identifier must have a working price feed that has been added to the UMA [price feed directory](https://github.com/UMAprotocol/protocol/tree/master/packages/financial-templates-lib/src/price-feed).
-- Your price feed must have a method called `getHistoricalPricePeriods` to calculate historical prices for more than one week of time (example [here](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.js#L136)), or your synthetic token must be listed on [CoinGecko](https://www.coingecko.com/en/coins/uusdrbtc-synthetic-token-expiring-1-october-2020).
+- Your price feed must have a method called `getHistoricalPricePeriods` to calculate historical prices for more than one week of time (example [here](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.ts#L136)), or your synthetic token must be listed on [CoinGecko](https://www.coingecko.com/en/coins/uusdrbtc-synthetic-token-expiring-1-october-2020).
 - Your `minSponsorTokens` must equate to between ~$100 and ~$2,500 in synth value at the time of contract launch.
 
 A few additional parameters should generally be left as the default suggestion. If your contract's parameters do not use the defaults provided below, you may be asked for some additional clarification.
