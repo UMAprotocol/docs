@@ -55,7 +55,7 @@ PRICE_FEED_CONFIG={"lookback":300000}
 
 ### CryptoWatch
 
-Select [CryptoWatch](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.js) price feed by setting `type: "cryptowatch"` in the configuration to fetch cryptocurrency pricing data from CryptoWatch. Supported configuration parameters are listed below:
+Select [CryptoWatch](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/CryptoWatchPriceFeed.ts) price feed by setting `type: "cryptowatch"` in the configuration to fetch cryptocurrency pricing data from CryptoWatch. Supported configuration parameters are listed below:
 
 * Common `lookback`, `minTimeBetweenUpdates` and `priceFeedDecimals` parameters.
 * `cryptowatchApiKey` (optional): This is an application specific parameter, where the user would provide its CryptoWatch account API key. Due to security considerations this parameter should be set in user's `PRICE_FEED_CONFIG` environment variable and not published in [DefaultPriceFeedConfigs.js](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/DefaultPriceFeedConfigs.js) or passed in the price feed configuration as ancillary data.
@@ -68,7 +68,7 @@ Select [CryptoWatch](https://github.com/UMAprotocol/protocol/blob/master/package
 
 ### Uniswap
 
-Select [Uniswap](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/UniswapPriceFeed.js) price feed by setting `type: "uniswap"` in the configuration to fetch pricing data from Uniswap type AMM pools. Supported configuration parameters are listed below:
+Select [Uniswap](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/UniswapPriceFeed.ts) price feed by setting `type: "uniswap"` in the configuration to fetch pricing data from Uniswap type AMM pools. Supported configuration parameters are listed below:
 
 * Common `lookback` and `priceFeedDecimals` parameters.
 * `version` (optional): `"v2"` indicates Uniswap v2 or SushiSwap pool, while `"v3"` should be used for Uniswap v3 pools. If not provided it defaults to `"v2"`.
@@ -78,7 +78,7 @@ Select [Uniswap](https://github.com/UMAprotocol/protocol/blob/master/packages/fi
 
 ### Balancer
 
-Select [Balancer](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/BalancerPriceFeed.js) price feed by setting `type: "balancer"` in the configuration to fetch pricing data from Balancer pools. Supported configuration parameters are listed below:
+Select [Balancer](https://github.com/UMAprotocol/protocol/blob/master/packages/financial-templates-lib/src/price-feed/BalancerPriceFeed.ts) price feed by setting `type: "balancer"` in the configuration to fetch pricing data from Balancer pools. Supported configuration parameters are listed below:
 
 * Common `lookback` and `priceFeedDecimals` parameters.
 * `balancerAddress`: Address of the Balancer pool the price feed is monitoring.
