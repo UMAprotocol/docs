@@ -29,6 +29,6 @@ Once the DVM has resolved a price request, the outcome of the vote is pushed to 
 
 ## Resources
 
-For more information on how to laucnh a contract to Polygon, you can follow the [tutorial](developers/deploy-on-polygon.md).
+For more information on how to laucnh a contract to Polygon, you can follow the [tutorial](developers/deploy-an-lsp.md).
 
 If you want to know more about how to UMA plans to scale to more scaling solutions you can read out [article](https://medium.com/uma-project/uma-is-scaling-to-every-evm-compatible-chain-18ca2404698d).
