@@ -29,7 +29,7 @@ Post an idea in UMA's [Discourse](https://discourse.umaproject.org/c/ideas-bank/
 Whitelisted developer mining participants include:
 
 - [PerlinX](https://app.perlinx.finance/pools)
-- [youmychicfila](https://mario.cash/)
+- [youmychicfila](https://mario.cash/fall)
 - [uGAS](https://degenerative.finance/)
 - [uSTONKS](https://degenerative.finance/)
 - [Domination Finance](https://domination.finance/)
