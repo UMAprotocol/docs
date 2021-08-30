@@ -4,7 +4,7 @@ set -o errexit
 set -o nounset
 
 echo "installing required tools..."
-yarn install
+CI=false yarn install
 npm install -g solidity-docgen
 
 echo "installing protocol repo..."
