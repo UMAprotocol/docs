@@ -15,5 +15,8 @@ echo "generating docs files..."
 cd protocol/
 solidity-docgen --solc-module solc-0.8 -i packages/core/contracts/ -t ../ci/ -o temp-docs/
 
+solidity-docgen --solc-module solc-0.8 -i packages/core/contracts-ovm/ -t ../ci/ -o temp-docs-ovm/
+
 echo "configuring docs..."
+mv temp-docs-ovm/ ../docs/contracts
 mv temp-docs/ ../docs/contracts
