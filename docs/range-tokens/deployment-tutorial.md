@@ -28,7 +28,7 @@ Each LSP contract requires the following parameters to be set at the point of de
 
 - `gasprice:` The gas price used for your contract deployment.
 - `url:` your node URL.
-- `mnemonic:` Your 12 word seed phrase. 
+- `mnemonic:` Your 12 word seed phrase.
 - `expirationTimestamp:` Timestamp at which your contract will expire. The rtUMA-0821 token used 1630447200 which represents the Unix timestamp for August 31, 2021.
 - `collateralPerPair:` The amount of collateral required to mint each long and short pair. The rtUMA-0821 token used 0.25 UMA, meaning 0.25 UMA minted 1 long and 1 short token. If 1 $UMA was used as collateral to mint, the minter would receive 4 long and 4 short tokens.
 - `priceIdentifier:` The approved price identifier to be used. The rtUMA-0821 contract used UMAUSD.
@@ -48,14 +48,14 @@ Each LSP contract requires the following parameters to be set at the point of de
 
 ### FPL deployment parameters
 
-The `fpl` parameter is used in the deployment script to designate `RangeBond` as the financial library used to calculate the payout at expiry. `RangeBond` requires `lowerBound` and `upperBound` parameters to be added to the deployment script. 
+The `fpl` parameter is used in the deployment script to designate `RangeBond` as the financial library used to calculate the payout at expiry. `RangeBond` requires `lowerBound` and `upperBound` parameters to be added to the deployment script.
 
 A price at expiry inside the `lowerBound` and `upperBound` parameters gives a payout equivalent to a yield dollar. Above the `upperBound`, holders of the long token are entitled to a fixed, minimum number of collateral and below the `lowerBound` each range token is worth the number of collateral that is set using `collateralPerPair`.
 
 The payout structure of a range token using the `upperBound` of $12 and `lowerBound` of $4 used by the rtUMA-0821 token is:
 - If the $UMA price is above $12, the investor has long exposure to a $12 call option.
 - If the $UMA price is below $4, the investor has exposure to a $4 put option.
-- If the $UMA price is between $4 and $12, the payout is equivalent to a yield dollar and shifts to keep the payout in dollar terms equal to the bond notional. 
+- If the $UMA price is between $4 and $12, the payout is equivalent to a yield dollar and shifts to keep the payout in dollar terms equal to the bond notional.
 
 ## Deploying to Kovan
 
@@ -90,4 +90,4 @@ Once deployed, the script will list the address of your newly deployed LSP. A su
 ```bash
 Simulating Deployment...
 Simulation successful. Expected Address: 0x44978157afE92c926619EBB54599bbc483eBe871
-``` 
+```
