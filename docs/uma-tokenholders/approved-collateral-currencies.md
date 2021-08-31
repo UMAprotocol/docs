@@ -88,7 +88,10 @@ sidebar_label: Approved Collateral Currencies
 |FOX| 670 | [UMIP-116](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-116.md) | [Ethereum](https://etherscan.io/token/0xc770eefad204b5180df6a14ee197d99d808ee52d)|
 |RBN| 10 000 | [UMIP-120](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-120.md) | [Polygon](https://etherscan.io/token/0x6123B0049F904d730dB3C36a31167D9d4121fA6B)|
 |BANK| 5500 | [UMIP-124](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-124.md) | [Ethereum](https://etherscan.io/address/0x2d94aa3e47d9d5024503ca8491fce9a2fb4da198)|
-|Total| No of Approved collateral currencies | [85](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
+|MATIC| 380 | [UMIP-125](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-125.md) | [Ethereum](https://etherscan.io/address/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0), [Polygon](https://polygonscan.com/token/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270)|
+|INST| 45 | [UMIP-125](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-125.md) | [Ethereum](https://etherscan.io/address/0x6f40d4a6237c257fff2db00fa0510deeecd303eb), [Polygon](https://polygonscan.com/address/0xf50D05A1402d0adAfA880D36050736f9f6ee7dee)|
+|JRT| 4000 | [UMIP-125](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-125.md) | [Ethereum](https://etherscan.io/address/0x8a9c67fee641579deba04928c4bc45f66e26343a)|
+|Total| No of Approved collateral currencies | [88](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
 To submit a token to be considered as a collateral currency, please see the _[Guidance on Collateral Currency Addition](uma-tokenholders/guidence-on-collateral-currency-addition.md)
