@@ -3,6 +3,8 @@
 set -o errexit
 set -o nounset
 
+
+
 echo "installing required tools..."
 yarn install
 npm install -g solidity-docgen
@@ -13,8 +15,16 @@ yarn install --cwd protocol/packages/core --ignore-scripts
 
 echo "generating docs files..."
 cd protocol/
+
+docs_ovm_array=($(grep -r -l -i --include="*.sol" "solidity >=0.7.6" ./packages/core/contracts-ovm))
+
+for doc in "${docs_ovm_array[@]}"
+  do
+    cp $doc ./ovm
+  done
+
 solidity-docgen --solc-module solc-0.8 -i packages/core/contracts/ -t ../ci/ -o temp-docs/
-solidity-docgen --solc-module solc-0.7 -i packages/core/contracts-ovm/ -t ../ci/ -o temp-docs/
+solidity-docgen --solc-module solc-0.7 -i ovm/ -t ../ci/ -o temp-docs/
 
 echo "configuring docs..."
 mv temp-docs/ ../docs/contracts
