@@ -17,6 +17,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "solc-0.8": "npm:solc@^0.8.6",
+    "solc-0.7": "npm:solc@^0.7.6",
     "solidity-docgen": "^0.5.13"
   },
   "browserslist": {
