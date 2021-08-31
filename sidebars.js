@@ -9,6 +9,11 @@ module.exports = {
       },
       {
         type: "category",
+        label: "Range Tokens",
+        items: ["range-tokens/summary", "range-tokens/deployment-tutorial", "range-tokens/usage-tutorial",  "range-tokens/references"],
+      },
+      {
+        type: "category",
         label: "Synthetic Tokens",
         items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens", "synthetic-tokens/long-short-pair",  "synthetic-tokens/known-issues"],
       },
