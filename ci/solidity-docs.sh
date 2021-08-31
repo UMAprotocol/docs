@@ -10,8 +10,8 @@ set -o nounset
 # npm install -g solidity-docgen
 #
 # echo "installing protocol repo..."
-# git clone http://github.com/umaprotocol/protocol/ --single-branch || echo "Repo already exists"
-# yarn install --cwd protocol/packages/core --ignore-scripts
+git clone http://github.com/umaprotocol/protocol/ --single-branch || echo "Repo already exists"
+yarn install --cwd protocol/packages/core --ignore-scripts
 
 echo "generating docs files..."
 cd protocol/
