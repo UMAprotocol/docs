@@ -13,7 +13,7 @@ yarn install --cwd protocol/packages/core --ignore-scripts
 
 echo "generating docs files..."
 cd protocol/
-cp packages/core/contracts-ovm/insured-bridge packages/core/contracts/
+cp -R packages/core/contracts-ovm/insured-bridge packages/core/contracts/
 solidity-docgen --solc-module solc-0.8 -i packages/core/contracts/ -t ../ci/ -o temp-docs/
 
 echo "configuring docs..."
