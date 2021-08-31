@@ -17,10 +17,10 @@ echo "generating docs files..."
 cd protocol/
 
 docs_ovm_array=($(grep -r -l -i --include="*.sol" "solidity >=0.7.6" ./packages/core/contracts-ovm))
-
+mkdir ovm-docs/
 for doc in "${docs_ovm_array[@]}"
   do
-    cp $doc ./ovm
+    cp $doc ovm-docs/$doc
   done
 
 solidity-docgen --solc-module solc-0.8 -i packages/core/contracts/ -t ../ci/ -o temp-docs/
