@@ -6,22 +6,22 @@ sidebar_label: Usage Tutorial
 Now that you have a deployed LSP contract, this tutorial will walk you through the four ways to interact with the contract and your range tokens.
 
 Throughout this usage tutorial, we are going to continue using the [UMA Range Token](https://umaverse.vercel.app/0x372802d8A2D69bB43872a1AABe2bd403a0FafA1F) (rtUMA-0821) as a reference. As a reminder, the following parameters were used for the rtUMA-0821 contract:
-- A `lowerBound` of $4 and `upperBound` of $12. 
+- A `lowerBound` of $4 and `upperBound` of $12.
 - UMAUSD as a price identiifer.
 - An expiration date of August 31, 2021.
 - `collateralPerPair` of 0.25. Meaning 0.25 $UMA minted 1 long and 1 short token.
 
 ### Minting Range Tokens
 
-After a range token contract has been deployed, it is time to mint your first tokens. First, approve the token minting contract to transfer the collateral currency on your behalf. Tokens can then be minted by calling `create` on the LSP contract. This can be done using the Write Contract tab for your LSP contract in Etherscan or [UMAverse](https://umaverse.vercel.app/). 
+After a range token contract has been deployed, it is time to mint your first tokens. First, approve the token minting contract to transfer the collateral currency on your behalf. Tokens can then be minted by calling `create` on the LSP contract. This can be done using the Write Contract tab for your LSP contract in Etherscan or [UMAverse](https://umaverse.vercel.app/).
 
-`create` can be called anytime before the contract’s `expirationTimestamp` and simply deposits collateral into the contract in exchange for an equal amount of long and short tokens based on the `collateralPerPair` parameter. The `collateralPerPair` parameter, which was set in the deployment script, determines the amount of collateral that is required for each pair of long and short tokens. 
+`create` can be called anytime before the contract’s `expirationTimestamp` and simply deposits collateral into the contract in exchange for an equal amount of long and short tokens based on the `collateralPerPair` parameter. The `collateralPerPair` parameter, which was set in the deployment script, determines the amount of collateral that is required for each pair of long and short tokens.
 
 For the rtUMA-0821 contract, $UMA was used as collateral and the `collateralPerPair` was set to 0.25. Each long and short token minted required 0.25 UMA of collateral. If instead the `collateralPerPair` parameter would have been set to 3 $UMA on deployment, the screenshot below shows how each long and short token minted would have required 3 $UMA as collateral.
 
 ![](/docs/range-tokens/range-token-mint.png)
 
-After tokens are minted, to confirm that tokens have been issued by the contract, call `getPositionTokens` on the LSP contract with the address used to mint the tokens as the argument. This will return the number of long and short tokens which will be an equal number. The long and short tokens received represent a fully collateralized and risk-neutral position. Short range tokens are just a tokenized version of overcollateralization in a minted position. As the issuer, you can sell the long tokens and hold the short tokens. 
+After tokens are minted, to confirm that tokens have been issued by the contract, call `getPositionTokens` on the LSP contract with the address used to mint the tokens as the argument. This will return the number of long and short tokens which will be an equal number. The long and short tokens received represent a fully collateralized and risk-neutral position. Short range tokens are just a tokenized version of overcollateralization in a minted position. As the issuer, you can sell the long tokens and hold the short tokens.
 
 ### Redeeming Range Tokens
 
@@ -35,11 +35,11 @@ Using the rtUMA-0821 contract as an example, the UMA treasury could have minted 
 
 After the range token contract has expired, token holders are unable to settle their tokens for collateral until a price has been received by the Optimistic Oracle. `settle` will revert until `expire` has been called once by anyone. `expire` does not take any parameters and requests a price from the Optimistic Oracle for the LSP contract's `priceIdentifier`, `expirationTimestamp`, `customAncillaryData`, `collateralToken`, and `prepaidProposerReward` which were set in your deployment script.
 
-### Settling Range Tokens 
+### Settling Range Tokens
 
 Once a price request exists, Proposers respond by referencing off-chain price feeds and calling `proposePrice` on the Optimistic Oracle contract passing `priceIdentifier`, `timestamp`, `ancillaryData`, and `proposedPrice` as arguments. In return, Proposers receive a pre-defined proposal reward set by the Requestor. To propose prices, the Proposer is required to stake a proposal bond. Proposal bond amounts are custom for each LSP contract and are set using the `optimisticOracleProposerBond` parameter on deployment. If the price information provided is disputed and deemed incorrect, the Proposer will lose their bond. Setting a higher bond requirement makes incorrect disputes and proposals more costly.
 
-When a Proposer called `proposePrice` on the Optimistic Oracle contract for rtUMA-0821, the following parameters were used: 
+When a Proposer called `proposePrice` on the Optimistic Oracle contract for rtUMA-0821, the following parameters were used:
 - `priceIdentifier`: UMAUSD
 - `timestamp`: 1630447200 (Unix timestamp for August 31, 2021)
 - `ancillaryData`: twapLength:3600
@@ -53,7 +53,7 @@ Once the price is accepted, the `expiryPrice` returned by the Optimistic Oracle 
 
 `settle` can now be called which uses `ExpiryPercentLong` to determine the redemption rate between the long and short tokens by returning a number between 0 and 1, where a value of 0 allocates all collateral to the short tokens and a value of 1 allocates all collateral to the long tokens. The collateral returned is the sum of the two payouts and both the long and short tokens are burned.
 
-### UMA Range Token Settlement 
+### UMA Range Token Settlement
 
 With the `expiryPrice` of $12.95 for the rtUMA-0821 contract being greater than the `upperBound` of $12, `ExpiryPercentLong` is calculated as ( notional value / upperBound) / collateralPerPair . The rtUMA-0821 contract was calculated as (1/12)/.25 = 0.33. Therefore, long tokens receive 33.33% of the collateral and short tokens receive 66.66%.
 

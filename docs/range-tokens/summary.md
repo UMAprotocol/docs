@@ -3,7 +3,7 @@ title: Range Tokens Summary
 sidebar_label: Summary
 ---
 
-The range token enables a DAO or nascent project to use its native token as collateral to borrow funds. At maturity, if the debt is not paid, the range token holder is instead compensated with an equivalent amount of the collateral (the native token) using the settlement price of the native token to determine the number of tokens. 
+The range token enables a DAO or nascent project to use its native token as collateral to borrow funds. At maturity, if the debt is not paid, the range token holder is instead compensated with an equivalent amount of the collateral (the native token) using the settlement price of the native token to determine the number of tokens.
 
 A range token can be viewed similarly to convertible debt. In the venture capital world, convertible debt allows startup companies to receive funding today without issuing equity upfront. The range token holder is effectively short a put option and will have exposure to the downside of the native token below a certain price. To compensate the range token holder for taking on this “default” risk, the holder is rewarded a call option on the native token. A minimum number of native tokens is given to the range token holder no matter how much the native token rallies. The combination of the structure creates a tradeoff between the seller and the buyer.
 
@@ -16,7 +16,7 @@ DAOs have become massive with some treasuries valued in the billions of dollars.
 The `lowerBound` of $4 and `upperBound` of $12 are important parameters for a range token as they determine the payout logic:
 - If the $UMA price is above $12, the investor has long exposure to a $12 call option.
 - If the $UMA price is below $4, the investor has exposure to a $4 put option.
-- If the $UMA price is between $4 and $12, the payout is equivalent to a yield dollar and the number of $UMA shifts to keep the payout in dollar terms equal to the bond notional. 
+- If the $UMA price is between $4 and $12, the payout is equivalent to a yield dollar and the number of $UMA shifts to keep the payout in dollar terms equal to the bond notional.
 
 The following chart demonstrates how the $1 debt will be settled in $UMA for rtUMA-0821 based on the UMAUSD price at expiration. Please note, the current price of $8 is to demonstrate the price between the `lowerBound` and `upperBound`.
 
@@ -34,7 +34,7 @@ Another aspect to consider with range tokens is the price the range tokens are s
 ## Why Should Investors Buy Range Tokens?
 Range tokens create a unique risk profile that best suits investors who believe in the long-term success of a project. Range tokens are especially suited for passive investors who are willing to buy the project token on a significant sell-off and potentially earn meaningful yield while waiting in the range. As well, a range token investor is not overly concerned about missing gains in a significant rally because they are rewarded a call option.
 
-The general difference between buying the project token and the range token is that the project token provides immediate upside and downside exposure, whereas buying the range token pays a yield and only provides upside and downside exposure to the project token on significant moves. Investors can also get creative with the risk exposure of a range token by decomposing the parts. 
+The general difference between buying the project token and the range token is that the project token provides immediate upside and downside exposure, whereas buying the range token pays a yield and only provides upside and downside exposure to the project token on significant moves. Investors can also get creative with the risk exposure of a range token by decomposing the parts.
 
 For example, an investor that is only looking for yield could buy the range token and sell out an equivalent call option to bet that the project token price will be relatively stable and in return, he/she would essentially collect the premium on the put option and earn a sizable yield. It is interesting to highlight that a range token buyer may not even care about the upside exposure to the project and just believes the project will exist until maturity and return a healthy yield. This is almost similar to a traditional finance investor buying a high yield corporate bond in the belief of its strong credit rating. In general, the range token opens up interesting risk profiles that are currently not available in DeFi.
 
