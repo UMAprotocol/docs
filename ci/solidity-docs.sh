@@ -17,7 +17,7 @@ cd protocol/
 
 grep -r -l -i --include="*.sol" "solidity >=0.7.6" packages/core/contracts-ovm > ${filename}
 
-mkdir ovm_docs
+mkdir ovm_docs || echo "Folder already exists"
 docs_ovm_array=(`cat "$filename"`)
 
  for doc in "${docs_ovm_array[@]}"
@@ -25,7 +25,9 @@ docs_ovm_array=(`cat "$filename"`)
     cp ${doc} ovm_docs/
   done
 
+echo "generating docs for contrats using solc-0.8"
 solidity-docgen --solc-module solc-0.8 -i packages/core/contracts/ -t ../ci/ -o temp-docs/
+echo "generating docs for contrats using solc-0.7"
 solidity-docgen --solc-module solc-0.7 -i ovm-docs/ -t ../ci/ -o temp-docs/
 
 echo "configuring docs..."
