@@ -29,7 +29,7 @@ grep -r -l -i --include="*.sol" "solidity ^0.8.0" packages/core/contracts-ovm > 
 mkdir ${solc07_folder} ${solc08_folder} || echo "Folder already exists"
 
 contract_ovm_array=(`cat "$solc08"`)
- for doc in "${docs_ovm_array[@]}"
+ for doc in "${contract_ovm_array[@]}"
   do
     cp ${doc} ${solc08_folder}
   done
