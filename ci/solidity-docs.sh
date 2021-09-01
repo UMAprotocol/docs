@@ -19,7 +19,7 @@ solc07_folder="ovm_docs_07/"
 solc08_folder="ovm_docs_08/"
 output_docs_folder="temp-docs/"
 template_folder="../ci/"
-genreal_contracts_folder="packages/core/contracts/"
+general_contracts_folder="packages/core/contracts/"
 
 cd protocol/
 
@@ -41,13 +41,13 @@ contract_ovm_array=(`cat "$solc07"`)
   done
 
 echo "generating docs for general contrats using solc-0.8"
-solidity-docgen --solc-module solc-0.8 -i ${general_contracts_folder} -t ${template_folder} -o ${output_docs}
+solidity-docgen --solc-module solc-0.8 -i ${general_contracts_folder} -t ${template_folder} -o ${output_docs_folder}
 
 echo "generating docs for ovm contrats using solc-0.8"
-solidity-docgen --solc-module solc-0.8 -i ${solc08_folder} -t ${template_folder} -o ${output_docs}
+solidity-docgen --solc-module solc-0.8 -i ${solc08_folder} -t ${template_folder} -o ${output_docs_folder}
 
 echo "generating docs for ovm contrats using solc-0.7"
-solidity-docgen --solc-module solc-0.7 -i ${solc07_folder} -t ${template_folder} -o ${output_docs}
+solidity-docgen --solc-module solc-0.7 -i ${solc07_folder} -t ${template_folder} -o ${output_docs_folder}
 
 echo "configuring docs..."
 mv temp-docs/ ../docs/contracts
