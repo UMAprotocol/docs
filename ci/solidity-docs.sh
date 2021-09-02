@@ -52,13 +52,13 @@ mv "${ovm_contract_folder}" "${ovm_contract_folder}_original/"
 mv ${solc08_folder} ${ovm_contract_folder}
 
 echo "generating docs for ovm contrats using solc-0.8"
-solidity-docgen --solc-module solc-0.8 -i ${solc08_folder} -t ${template_folder} -o ${output_docs_folder} || continue
+solidity-docgen --solc-module solc-0.8 -i ${ovm_contract_folder} -t ${template_folder} -o ${output_docs_folder} || continue
 
 rm -rf ${ovm_contract_folder}
 mv ${solc07_folder} ${ovm_contract_folder}
 
 echo "generating docs for ovm contrats using solc-0.7"
-solidity-docgen --solc-module solc-0.7 -i ${solc07_folder} -t ${template_folder} -o ${output_docs_folder} || continue
+solidity-docgen --solc-module solc-0.7 -i ${ovm_contract_folder} -t ${template_folder} -o ${output_docs_folder} || continue
 
 echo "configuring docs..."
 mv temp-docs/ ../docs/contracts
