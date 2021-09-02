@@ -14,24 +14,30 @@ yarn install --cwd protocol/packages/core --ignore-scripts
 echo "generating docs files..."
 
 ovm_contract_folder="packages/core/contracts-ovm"
-general_contracts_folder="packages/core/contracts-ovm/insured-bridge/"
-solc07_folder="packages/core/solc0.7"
-solc08_folder="packages/core/solc0.8"
+ovm_general_contracts_folder="packages/core/contracts-ovm/insured-bridge/"
+general_contracts_folder="packages/core/contracts/"
+solc07_folder="packages/core/solc0.7/insured-bridge/"
+solc08_folder="packages/core/solc0.8/insured-bridge/"
 solc07_files="${solc07_folder}/ovm-solc07_docs"
 solc08_files="${solc08_folder}/ovm-solc08_docs"
 output_docs_folder="temp-docs/"
+ovm_output_docs_folder="ovm-temp-docs/"
+ovm_output_docs_folder2="ovm-temp-docs2/"
 template_folder="../ci/"
 
 cd protocol/
 
-mkdir ${solc07_folder} || echo "Folder already exists"
-mkdir ${solc08_folder} || echo "Folder already exists"
+mkdir -p ${solc07_folder} || echo "Folder already exists"
+mkdir -p ${solc08_folder} || echo "Folder already exists"
 
-cp -R ${general_contracts_folder} ${solc07_folder}
-cp -R ${general_contracts_folder} ${solc08_folder}
+cp -R ${ovm_general_contracts_folder} ${solc07_folder}
+cp -R ${ovm_general_contracts_folder} ${solc08_folder}
 
 grep -r -l -i --include="*.sol" "solidity >=0.7.6" ${solc08_folder} > ${solc08_files}
 grep -r -l -i --include="*.sol" "solidity ^0.8.0" ${solc07_folder} > ${solc07_files}
+
+echo "generating docs for general contrats using solc-0.8"
+solidity-docgen --solc-module solc-0.8 -i ${general_contracts_folder} -t ${template_folder} -o ${output_docs_folder}
 
 contract_ovm_08_array=(`cat "$solc08_files"`)
  for contract in "${contract_ovm_08_array[@]}"
@@ -39,26 +45,23 @@ contract_ovm_08_array=(`cat "$solc08_files"`)
     rm -rf ${contract}
   done
 
+mv "${ovm_contract_folder}" "${ovm_contract_folder}_original/"
+mv ${solc08_folder} ${ovm_contract_folder}
+
+echo "generating docs for ovm contrats using solc-0.8"
+solidity-docgen --solc-module solc-0.8 -i ${solc08_folder} -t ${template_folder} -o ${ovm_output_docs_folder} || echo "Unknow error"
+
 contract_ovm_07_array=(`cat "$solc07_files"`)
  for contract in "${contract_ovm_07_array[@]}"
   do
     rm -rf ${contract}
   done
 
-echo "generating docs for general contrats using solc-0.8"
-solidity-docgen --solc-module solc-0.8 -i ${general_contracts_folder} -t ${template_folder} -o ${output_docs_folder}
-
-mv "${ovm_contract_folder}" "${ovm_contract_folder}_original/"
-mv ${solc08_folder} ${ovm_contract_folder}
-
-echo "generating docs for ovm contrats using solc-0.8"
-solidity-docgen --solc-module solc-0.8 -i ${ovm_contract_folder} -t ${template_folder} -o ${output_docs_folder} || continue
-
 rm -rf ${ovm_contract_folder}
 mv ${solc07_folder} ${ovm_contract_folder}
 
 echo "generating docs for ovm contrats using solc-0.7"
-solidity-docgen --solc-module solc-0.7 -i ${ovm_contract_folder} -t ${template_folder} -o ${output_docs_folder} || continue
+solidity-docgen --solc-module solc-0.7 -i ${solc07_folder} -t ${template_folder} -o ${ovm_output_docs_folder2} || echo "Unknow error"
 
 echo "configuring docs..."
 mv temp-docs/ ../docs/contracts
