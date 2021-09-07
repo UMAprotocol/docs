@@ -62,7 +62,7 @@ After tokens are minted, to confirm that tokens have been issued by the contract
 
 At any point pre-expiry, anyone can call `redeem` with a pair of long and short tokens and receive an amount of collateral determined by `collateralPerPair`. The total amount of collateral received from the contract is determined by `collateralPerPair` * `tokensToRedeem`.
 
-Regardless of the value of the long and short tokens when redeemed, the summed value of the two tokens will always be worth the total amount of collateral used to mint. The contract burns the tokens and returns collateral proportional to the amount that the token sponsor has deposited to the contract. The caller does not need to approve this contract to transfer any number of redeemed tokens since long and short tokens are burned, rather than transferred.
+Regardless of the value of the long and short tokens when redeemed, the summed value of the two tokens will always be worth the total amount of collateral used to mint (collateralPerPair). The contract burns the tokens and returns collateral proportional to the amount that the token sponsor has deposited to the contract. The caller does not need to approve this contract to transfer any number of redeemed tokens since long and short tokens are burned, rather than transferred.
 
 ![](/docs/lsp-tokens/lsp_redeem.png)
 
@@ -70,7 +70,7 @@ Regardless of the value of the long and short tokens when redeemed, the summed v
 
 When the current timestamp is later than the `expirationTimestamp` parameter, token holders are unable to settle their tokens for collateral until a price has been received by the Optimistic Oracle. The `settle` function will revert until the `expire` function is called once by anyone. 
 
-The `expire` function does not take any parameters and requests a price from the Optimistic Oracle for the LSP contract's `priceIdentifier`, `expirationTimestamp`, `customAncillaryData`, `collateralToken`, and `prepaidProposerReward`. At this time, a proposal bond can be set associated with the price request using `setBond` along with a custom liveness value for the request using `setCustomLiveness`. Liveness is the amount of time a proposal must wait before being resolved.
+The `expire` function does not take any parameters and requests a price from the Optimistic Oracle for the LSP contract's `priceIdentifier`, `expirationTimestamp`, `customAncillaryData`, `collateralToken`, and `prepaidProposerReward`.
 
 ![](/docs/lsp-tokens/lsp_expire.png)
 
@@ -85,14 +85,14 @@ Disputers can refute a price submitted by a Proposer within the proposal livenes
 To propose a price through Etherscan, use the Write Contract tab in the Optimistic Oracle contract to find proposePrice. For reference, [here](https://github.com/UMAprotocol/protocol/tree/master/packages/core/networks) is a list of contract addresses for each network that can be used to find the Optimistic Oracle contract. The parameters for proposing a price are:
 
 - `Requestor`: sender of the initial price request
-- `Identifier`: price identifier to identify the existing request
+- `Identifier`: price identifier to identify the existing request in bytes32 format
 - `timestamp`: timestamp to identify the existing request
 - `ancillaryData`: ancillary data of the price being requested
-- `proposedPrice`: price being proposed
+- `proposedPrice`: price being proposed scaled to 18 decimals
 
-After a price has been proposed, the same parameters can then be used with the `hasPrice` and `getRequest` functions. The `hasPrice` queries whether a request has been resolved. If `hasPrice` is equal to true, values will be returned for `expiryPrice` and `expiryPercentLong` in the Read Contract tab for the LSP contract and the `settle` function can be called. The `getRequest` function gets the current data structure containing all information about a price request.
+After a price has been proposed, the same parameters can then be used with the `hasPrice` and `getRequest` functions. The `hasPrice` queries whether a request has been resolved. If `hasPrice` is true, a price is available and the `settle` function can be called on the LSP. Once the first `settle` call is executed, the LSP's state will update with the resolved price. At this point, the price and its settlement outcome can be read with the `expiryPrice` and `expiryPercentLong` functions. The `getRequest` function gets the current data structure containing all information about a price request.
 
-The `expiryPrice` is the value returned by the Optimistic Oracle for the contract's `expirationTimestamp` which is used by the `financialProductLibrary` to calculate `expiryPercentLong` and determine the redemption rate between long and short tokens. `ExpiryPercentLong` is a number between 0 and 1, where 0 sends all collateral to the short tokens and 1 sends all collateral to the long tokens. The collateral returned is the sum of the two payouts and both the long and short tokens are burned. A simple calculation for how to use these values to predict payouts is shown below.
+The `expiryPrice` is the value returned by the Optimistic Oracle for the contract's `expirationTimestamp` which is used by the `financialProductLibrary` to calculate `expiryPercentLong` and determine the redemption rate between long and short tokens. `ExpiryPercentLong` is a number between 0 and 1, where 0 assigns all collateral to the short tokens and 1 assigns all collateral to the long tokens. The collateral returned is the sum of the two payouts and both the long and short tokens are burned. A simple calculation for how to use these values to predict payouts is shown below.
 
 ![](/docs/lsp-tokens/CollateralReceivedCalc.png)
 
