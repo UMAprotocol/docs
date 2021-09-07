@@ -107,6 +107,8 @@ The below financial product libraries require the following FPL parameters:
     - `strikePrice`
     - `basePercentage`
 
+For additional guidance on what each FPL parameter means, please utilize the [launch-lsp repo](https://github.com/UMAprotocol/launch-lsp#binary-option).
+
 ## Deploying to Kovan
 
 Before running this command, you should customize the parameters to your needs. YOUR_NODE_URL should be filled in with a url for the network that you wish to deploy to. You should also choose the corresponding financial product library (FPL) that makes sense for your use case. The script has been pre-filled with `CoveredCall` which uses `--strikePrice` to set the FPL parameter.

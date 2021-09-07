@@ -13,18 +13,7 @@ Some ideas for contracts that can be made with the LSP include:
 - Covered call options.
 - [Range Tokens for treasury management](https://medium.com/uma-project/treasury-diversification-with-range-tokens-145d4b12614e).
 
-## LSP Contract Deployment
-
-To deploy an LSP contract, the [launch-lsp repo](https://github.com/UMAprotocol/launch-lsp) is utilized to customize LSP deployment parameters shown below. The deployment parameters are used by the `LongShortPairCreator`, a factory contract that creates new instances of long short pair contracts. The `LongShortPairCreator` is responsible for constraining the parameters used by new LSP contracts and creates the LSP contract and associated long and short tokens.
-
-- `expirationTimestamp`: unix timestamp when the contract will expire.
-- `collateralPerPair`: how many units of collateral are required to mint one pair of synthetic tokens.
-- `priceIdentifier`: registered DVM price identifier that the long and short pair will track.
-- `financialProductLibraryAddress`: Contract providing settlement payout logic. Will typically creates bounds and transform the value returned by the price identifier.
-- `longTokenAddress`: ERC20 token used as long in the CFD.
-- `shortTokenAddress`: ERC20 token used as short in the CFD.
-- `customAncillaryData`: Custom ancillary data to be passed along with the price request. If not needed, this should be left as a 0-length bytes array. This is used to pass parameters other than the request timestamp along with the price request. For an explanation of ancillary data functionality and desired format, refer [here](https://docs.google.com/document/d/1vl1BcIMO3NTNxvR0u6fFQqdUgWtIY8XyjVtx8Hkl8Qk/edit). For an example of a price identifier that uses ancillary data, refer [here](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-83.md#technical-specifications).
-- `finderAddress`: UMA protocol Finder contract address used to discover other protocol contracts.
+To deploy an LSP contract, use the [launch-lsp repo](https://github.com/UMAprotocol/launch-lsp) for guidance through the deployment process and customizing LSP deployment parameters.
 
 ## Financial Product Libraries (FPL)
 
@@ -54,7 +43,7 @@ After an LSP contract has been deployed, tokens can be minted by calling the `cr
 
 ![](/docs/lsp-tokens/lsp_create.png)
 
-To create tokens, first approve the token minting contract to transfer the collateral currency on your behalf. Then input the number of tokens you would like to create into the Write Contract tab of the LSP contract in Etherscan. If the collateral is WETH and the `collateralPerPair` is set to 1, each long and short token minted would require 1 WETH as collateral.
+To create tokens, first approve the token minting contract to transfer the collateral currency on your behalf. Then input the number of tokens you would like to create into the Write Contract tab of the LSP contract in Etherscan. If the collateral is WETH and the `collateralPerPair` is set to 1, each long and short token minted would require 1 WETH as collateral. If instead the `collateralPerPair` is set to 0.25 WETH on deployment, each long and short token minted would require 0.25 WETH as collateral.
 
 After tokens are minted, to confirm that tokens have been issued by the contract, go to the Read Contract tab of the LSP contract in Etherscan and call the `getPositionTokens` function with the address you minted the tokens from. This will return the number of long and short tokens which will be an equal amount after you mint. The short and long tokens received represent a fully collateralized and risk-neutral position. A minter only receives long or short exposure by selling one of the tokens while a buyer receives exposure simply by purchasing one of the tokens.
 
@@ -76,11 +65,16 @@ The `expire` function does not take any parameters and requests a price from the
 
 ### `settle`
 
-Once a price request exists, Proposers respond by referencing off-chain price feeds and submitting parameters for the `priceIdentifier`, `timestamp`, `ancillaryData`, and `proposedPrice` through the Optimistic Oracle contract. In return, Proposers receive a pre-defined proposal reward set by the Requestor. To propose prices, the Proposer is required to stake a proposal bond. If the price information they provided is disputed and deemed incorrect, the Proposer will lose their bond.
+Once a price request exists, Proposers respond by referencing off-chain price feeds and submitting parameters for the `priceIdentifier`, `timestamp`, `ancillaryData`, and `proposedPrice` through the Optimistic Oracle contract. In return, Proposers receive a pre-defined proposal reward set by the Requestor. To propose prices, the Proposer is required to stake a proposal bond. Proposal bond amounts are custom for each LSP contract and are set using the `optimisticOracleProposerBond` parameter on deployment. If the price information provided is disputed and deemed incorrect, the Proposer will lose their bond. Setting a higher bond requirement makes incorrect disputes and proposals more costly.
 
-Disputers can refute a price submitted by a Proposer within the proposal liveness period by referencing their own off-chain price feeds. The proposal liveness period is a pre-defined amount of time a proposal can be disputed before the Requestor receives the price of the asset. If Disputers do not refute the price submitted by the Proposer within the proposal liveness period, the price is sent to the Requestor. If a proposal is disputed, the price will be submitted to UMA’s DVM and resolved after 48-hours.
+Disputers can refute a price submitted by a Proposer within the proposal liveness period by referencing their own off-chain price feeds. Similar to proposal bonds, the proposal liveness period can be customized for each LSP contract using the `optimisticOracleLivenessTime` parameter on deployment. The liveness period determines the amount of time a proposal can be disputed before the Requestor receives the price of the asset. If Disputers do not refute the price submitted by the Proposer within the proposal liveness period, the price is treated as correct and can now be read from the Optimistic Oracle. If a proposal is disputed, the price will be escalated to UMA’s Decentralized Verification Mechanism (DVM) and resolved after a 48-96 hour voting period.
 
 ![](/docs/lsp-tokens/lsp_settle.png)
+
+The `contractState` of an LSP changes based on the following events and can be read using the designated enum values. The Read Contract tab in Etherscan can be used to check the `contractState` of any LSP contract.
+- `Open` (value of 0): The contract state remains open until the price has been requested. 
+- `ExpiredPriceRequested` (value of 1): Once the price has been requested, the `contractState` changes to 1. The `contractState` stays in this state until the first person calls `settle` even if the price has been returned by the Optimistic Oracle. This is due to the LSP having no context that the price has been resolved until requested successfully.
+- `ExpiredPriceReceived` (value of 2): The price is available from the Optimistic Oracle and `settle` has been called successfully.
 
 To propose a price through Etherscan, use the Write Contract tab in the Optimistic Oracle contract to find proposePrice. For reference, [here](https://github.com/UMAprotocol/protocol/tree/master/packages/core/networks) is a list of contract addresses for each network that can be used to find the Optimistic Oracle contract. The parameters for proposing a price are:
 
