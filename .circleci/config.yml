@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  test:
+  links-check:
     docker:
       - image: dkhamsing/awesome_bot
     parallelism: 50
@@ -17,12 +17,23 @@ jobs:
             --white-list angel.co,etherscan.io,kovan.etherscan.io,polygon-mumbai.infura.io,polygon-mainnet.infura.io,project/measures/metric,api.llama.fi/protocol/project-slug,data-api.defipulse.com/api/v1/defipulse/api/GetHistory?project=project-slug,github.com/Project/KPI/blob/master/README.md,github.com/DefiLlama/DefiLlama-Adapters/blob/main/projects/project-slug/index.js,mario.cash,zelda.cash \
             --skip-save-results \
             $(cat /tmp/test-docs)
+  spelling-check:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      - run:
+          name: Test doc spelling
+          command: |
+          npm i markdown-spellcheck -g
+          ./ci/spelling-check.sh
 
 workflows:
   version: 2.1
   workflow_test:
       jobs:
-        - test
+        - link-check
+        - spelling-check
 
   workflow_nightly:
         triggers:
@@ -33,4 +44,5 @@ workflows:
                   only:
                     - master
         jobs:
-          - test
+          - link-check
+          - spelling-check
