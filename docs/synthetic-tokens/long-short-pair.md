@@ -71,12 +71,16 @@ Disputers can refute a price submitted by a Proposer within the proposal livenes
 
 ![](/docs/lsp-tokens/lsp_settle.png)
 
+### `LSP State`
+
 The `contractState` of an LSP changes based on the following events and can be read using the designated enum values. The Read Contract tab in Etherscan can be used to check the `contractState` of any LSP contract.
 - `Open` (value of 0): The contract state remains open until the price has been requested. 
 - `ExpiredPriceRequested` (value of 1): Once the price has been requested, the `contractState` changes to 1. The `contractState` stays in this state until the first person calls `settle` even if the price has been returned by the Optimistic Oracle. This is due to the LSP having no context that the price has been resolved until requested successfully.
 - `ExpiredPriceReceived` (value of 2): The price is available from the Optimistic Oracle and `settle` has been called successfully.
 
-To propose a price through Etherscan, use the Write Contract tab in the Optimistic Oracle contract to find proposePrice. For reference, [here](https://github.com/UMAprotocol/protocol/tree/master/packages/core/networks) is a list of contract addresses for each network that can be used to find the Optimistic Oracle contract. The parameters for proposing a price are:
+### `Settlement`
+
+Once a contract has requested a settlement price, anyone can propose a response or verify and dispute other proposals. To propose, proposers will respond by calling `proposePrice()` on the Optimistic Oracle contract. The parameters for proposing a price are:
 
 - `Requestor`: sender of the initial price request
 - `Identifier`: price identifier to identify the existing request in bytes32 format
