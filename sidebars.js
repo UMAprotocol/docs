@@ -39,7 +39,7 @@ module.exports = {
       {
         type: "category",
         label: "LongShortPair (LSP)",
-        items: ["developers/deploy-on-polygon"],
+        items: ["developers/deploy-an-lsp"],
       },
       // {
       //   type: "category",
