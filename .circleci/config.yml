@@ -32,7 +32,7 @@ workflows:
   version: 2.1
   workflow_test:
       jobs:
-        - link-check
+        - links-check
         - spelling-check
 
   workflow_nightly:
@@ -44,5 +44,5 @@ workflows:
                   only:
                     - master
         jobs:
-          - link-check
+          - links-check
           - spelling-check
