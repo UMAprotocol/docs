@@ -25,7 +25,7 @@ jobs:
       - run:
           name: Test doc spelling
           command: |
-            npm i markdown-spellcheck -g
+            sudo npm i markdown-spellcheck -g
             ./ci/spelling-check.sh
 
 workflows:
