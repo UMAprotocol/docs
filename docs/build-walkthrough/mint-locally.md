@@ -5,7 +5,7 @@ sidebar_label: Creating a Local Synthetic Token
 
 This tutorial will show you how to create synthetic tokens from the command line using UMA’s synthetic token template. Before beginning this tutorial, please make sure your environment is set up correctly by following the instructions in the setup [guide](developers/setup.md). After completing this section, you should:
 
-- Have the protocol repo cloned.
+- Have the protocol repository cloned.
 - Be running an instance of Ganache on port 9545.
 - Have installed dependencies using `yarn` and have run `yarn qbuild` to build the contracts.
 
