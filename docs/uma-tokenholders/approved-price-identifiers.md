@@ -122,6 +122,7 @@ sidebar_label: Approved Price Identifiers
 |R3_30D_GM| A price that tracks the 30 day geometric mean of RAI redemption rate coefficient APR.| [UMIP-85](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-85.md)
 |SDTUSD| The price of SDT in USD.| [UMIP-106](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-106.md)
 |SFIUSD| The price of SFI in USD.| [UMIP-91](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-91.md)
+|SGDUSD| The price of SGD in USD.| [UMIP-127](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-127.md)
 |SNOWUSD| The price of SNOW in USD.| [UMIP-110](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-110.md)
 |SNXUSD| The price of SNX in USD.| [UMIP-57](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-57.md)
 |SPACEXLAUNCH| The purpose of the SPACEXLAUNCH price identifier is to be a generalized way to evaluate the success rate of the rocket launches made by SpaceX before request date considering launches provided in ancillary data.| [UMIP-97](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-97.md)
@@ -226,4 +227,4 @@ sidebar_label: Approved Price Identifiers
 |yUSDUSD| The price of yUSD in USD.| [UMIP-78](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-78.md)
 |ZARUMA| The price of South African RAND in UMA.| [UMIP-95](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-95.md)
 |ZARUSD| The price of South African RAND in USD.| [UMIP-90](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-90.md)
-|Total| No of Approved Price Identifiers.| [221](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
+|Total| No of Approved Price Identifiers.| [222](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
