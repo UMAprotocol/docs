@@ -14,6 +14,11 @@ module.exports = {
       },
       {
         type: "category",
+        label: "Success Tokens",
+        items: ["success-tokens/summary", "success-tokens/deployment-tutorial", "success-tokens/usage-tutorial",  "success-tokens/references"],
+      },
+      {
+        type: "category",
         label: "Synthetic Tokens",
         items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens", "synthetic-tokens/long-short-pair",  "synthetic-tokens/known-issues"],
       },
@@ -34,7 +39,7 @@ module.exports = {
       {
         type: "category",
         label: "Quick Start",
-        items: ["developers/setup", "build-walkthrough/mint-locally"],
+        items: ["developers/setup","developers/lsp-prereqs", "build-walkthrough/mint-locally"],
       },
       {
         type: "category",
