@@ -24,11 +24,11 @@ For our deployment tutorial, we are going to continue using the UMA success toke
 
 ### Mandatory deployment parameters
 
-Each deployment requires the following parameters to be set at the point of deployment: 
+Each deployment requires the following parameters to be set at the point of deployment:
 
 - `gasprice:` The gas price used for your contract deployment.
 - `url:` your node URL.
-- `mnemonic:` Your 12 word seed phrase. 
+- `mnemonic:` Your 12 word seed phrase.
 - `expirationTimestamp:` Timestamp at which your contract will expire. The stUMA-1221 contract uses 1640966400 which represents the Unix timestamp for December 31, 2021.
 - `collateralPerPair:` The amount of collateral required to mint each long and short pair. The stUMA-1221 contract uses 1 UMA, meaning 1 UMA minted 1 long and 1 short token. If you minted using 4 $UMA as collateral, you would receive 4 long and 4 short tokens.
 - `priceIdentifier:` The approved price identifier to be used. The stUMA-1221 contract uses UMAUSD.
@@ -48,7 +48,7 @@ Each deployment requires the following parameters to be set at the point of depl
 
 ### FPL deployment parameters
 
-The `fpl` parameter is used in the deployment script to designate `SuccessToken` or `SimpleSuccessToken` as the financial library used to calculate the payout at expiry. `SuccessToken` requires `strikePrice` and `basePercentage` parameters to be added to the deployment script while `SuccessToken` only requires `strikePrice`. 
+The `fpl` parameter is used in the deployment script to designate `SuccessToken` or `SimpleSuccessToken` as the financial library used to calculate the payout at expiry. `SuccessToken` requires `strikePrice` and `basePercentage` parameters to be added to the deployment script while `SuccessToken` only requires `strikePrice`.
 
 The `basePercentage` parameter is the percentage of collateral per pair used as the floor. This parameter is always set to 50% for `SimpleSuccessToken` but you can set this to a custom value for `SuccessToken`. As an example, if `basePercentage` is set to 40%, then 40% of the success token would act as collateral with 60% functioning as an embedded covered call. The `strikePrice` parameter is used for the strike price of the embedded call option.
 
@@ -87,4 +87,4 @@ Once deployed, the script will list the address of your newly deployed LSP. A su
 ```bash
 Simulating Deployment...
 Simulation successful. Expected Address: 0x44978157afE92c926619EBB54599bbc483eBe871
-``` 
+```
