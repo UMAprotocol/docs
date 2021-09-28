@@ -19,6 +19,11 @@ module.exports = {
       },
       {
         type: "category",
+        label: "KPI Options",
+        items: ["kpi-options/summary", "kpi-options/deployment-tutorial","kpi-options/kpi-price-identifier", "kpi-options/usage-tutorial","kpi-options/references"],
+      },
+      {
+        type: "category",
         label: "Synthetic Tokens",
         items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens", "synthetic-tokens/long-short-pair",  "synthetic-tokens/known-issues"],
       },

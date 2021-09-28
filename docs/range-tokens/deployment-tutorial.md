@@ -9,24 +9,10 @@ The process to launch and manage a range token on UMA is surprisingly simple. Th
 
 The following is an overview of the deployment steps below.
 
-1. Install the dependencies
+1. LSP Prerequisites
 2. Set your parameters
 3. Run the deployment on testnet (Kovan)
 4. Run the deployment on mainnet (Ethereum)
-
-### Is your desired price identifier and collateral type supported?
-
-Before deploying a contract, you should verify that your desired price identifier and collateral currency are already approved on the network you are trying to deploy to.
-
-View approved price identifiers and currencies here:
-- [Approved mainnet collateral currencies](/uma-tokenholders/approved-collateral-currencies)
-- [Approved mainnet price identifiers](/uma-tokenholders/approved-price-identifiers)
-- [Approved Kovan collateral currencies subgraph query](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Whitelisted%20Collateral%20Currencies)
-- [Approved Kovan price identifiers subgraph query](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers)
-
-To add a new price identifier or collateral currency to mainnet, please propose one to UMA voters by following the instructions detailed [here](/uma-tokenholders/adding-price-id).
-
-To add a new price identifier or collateral currency to Kovan, please contact the UMA team in Discord.
 
 ## LSP Prerequisites
 
