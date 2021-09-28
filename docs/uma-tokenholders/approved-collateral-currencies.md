@@ -92,7 +92,13 @@ sidebar_label: Approved Collateral Currencies
 |INST| 45 | [UMIP-125](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-125.md) | [Ethereum](https://etherscan.io/address/0x6f40d4a6237c257fff2db00fa0510deeecd303eb), [Polygon](https://polygonscan.com/address/0xf50D05A1402d0adAfA880D36050736f9f6ee7dee)|
 |JRT| 4000 | [UMIP-125](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-125.md) | [Ethereum](https://etherscan.io/address/0x8a9c67fee641579deba04928c4bc45f66e26343a)|
 |YEL| 33 000 | [UMIP-126](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-126.md) | [Ethereum](https://etherscan.io/token/0x7815bda662050d84718b988735218cffd32f75ea), [Polygon](https://polygonscan.com/token/0xd3b71117e6c1558c1553305b44988cd944e97300)|
-|Total| No of Approved collateral currencies | [89](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
+|VOL| 1200 | [UMIP-131](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-131.md) | [Ethereum](https://etherscan.io/token/0x5166e09628b696285e3a151e84fb977736a83575)|
+|IF| 250 | [UMIP-131](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-131.md) | [Ethereum](https://etherscan.io/token/0xb0e1fc65c1a741b4662b813eb787d369b8614af1)|
+|miMATIC| 400 | [UMIP-131](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-131.md)  |  [Polygon](https://polygonscan.com/token/0xa3fa99a148fa48d14ed51d610c367c61876997f1)|
+|BIFI| 0.5 | [UMIP-131](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-131.md) | [Polygon](https://polygonscan.com/token/0xfbdd194376de19a88118e84e279b977f165d01b8)|
+|ICE| 23 000 | [UMIP-131](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-131.md) | [Polygon](https://polygonscan.com/token/0x4A81f8796e0c6Ad4877A51C86693B0dE8093F2ef)|
+|IRON| 400 | [UMIP-131](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-131.md) | [Polygon](https://polygonscan.com/token/0xD86b5923F3AD7b585eD81B448170ae026c65ae9a)
+|Total| No of Approved collateral currencies | [95](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)
 
 
 To submit a token to be considered as a collateral currency, please see the _[Guidance on Collateral Currency Addition](uma-tokenholders/guidence-on-collateral-currency-addition.md)
