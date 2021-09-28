@@ -24,7 +24,7 @@ For our deployment tutorial, we are going to continue using the example KPI Opti
 
 ### Mandatory deployment parameters
 
-Each deployment requires the following parameters to be set at the point of deployment: 
+Each deployment requires the following parameters to be set at the point of deployment:
 
 - `gasprice:` The gas price used for your contract deployment.
 - `url:` your node URL.
@@ -74,7 +74,7 @@ The `fpl` parameter determines the type of financial product library (FPL) used 
 The UMA-TVL-1221 contract uses `Linear` as the FPL parameter which instructs voters on how to resolve a price request for the price identifier and request timestamp. An implementation file linked to the contract with the `Method` parameter should provide the methodology for calculating the TVL for UMA contracts.
 
 For the UMA-TVL-1221 contract, the following methodology would be outlined in the implementation file:
-- If the UMA TVL is greater than $1 billion, 1 should be returned and each long token would be worth 1 $UMA. 
+- If the UMA TVL is greater than $1 billion, 1 should be returned and each long token would be worth 1 $UMA.
 - If the UMA TVL is less than $100 million, 0.1 should be returned and each long token would be worth 0.1 $UMA.
 - If the UMA TVL is between $100 million and $1 billion, a value should be returned that is directly comparable to the UMA TVL at expiry. For example, if the UMA TVL expires at $750 million, the payout for each long token would be worth 0.75 $UMA.
 - If the price request is unable to be resolved, 0 would be returned and each long token would expire worthless.
@@ -115,4 +115,4 @@ Once deployed, the script will list the address of your newly deployed LSP. A su
 ```bash
 Simulating Deployment...
 Simulation successful. Expected Address: 0x44978157afE92c926619EBB54599bbc483eBe871
-``` 
+```

@@ -15,7 +15,7 @@ Throughout this usage tutorial, we are going to continue using the UMA KPI Optio
 
 After a target KPI has been identified and a KPI Option contract has been deployed, it is time to mint your first tokens. First, approve the token minting contract to transfer the collateral currency on your behalf. Tokens can then be minted by calling `create` on the LSP contract. This can be done using the Write Contract tab for your LSP contract in Etherscan or [UMAverse](https://umaverse.vercel.app/).
 
-`create` can be called anytime before the contract’s `expirationTimestamp` and simply deposits collateral into the contract in exchange for an equal amount of long and short tokens based on the `collateralPerPair` parameter. The `collateralPerPair` parameter, which was set in the deployment script, determines the amount of collateral that is required for each pair of long and short tokens. 
+`create` can be called anytime before the contract’s `expirationTimestamp` and simply deposits collateral into the contract in exchange for an equal amount of long and short tokens based on the `collateralPerPair` parameter. The `collateralPerPair` parameter, which was set in the deployment script, determines the amount of collateral that is required for each pair of long and short tokens.
 
 Using the UMA-TVL-1221 contract as an example, the UMA treasury decided to allocate 10,000 $UMA to the contract with the `collateralPerPair` parameter set to 1. Therefore, 10,000 $UMA will mint 10,000 long tokens and 10,000 short tokens. If instead the `collateralPerPair` parameter would have been set to 3 $UMA on deployment, the screenshot below shows how each long and short token minted requires 3 $UMA as collateral.
 
@@ -37,7 +37,7 @@ After the KPI Options contract has expired, token holders are unable to settle t
 
 Once a price request exists, Proposers respond by referencing off-chain price feeds and calling `proposePrice` on the Optimistic Oracle contract passing `priceIdentifier`, `timestamp`, `ancillaryData`, and `proposedPrice` as arguments. In return, Proposers receive a pre-defined proposal reward set by the Requestor. To propose prices, the Proposer is required to stake a proposal bond. Proposal bond amounts are custom for each LSP contract and are set using the `optimisticOracleProposerBond` parameter on deployment. If the price information provided is disputed and deemed incorrect, the Proposer will lose their bond. Setting a higher bond requirement makes incorrect disputes and proposals more costly.
 
-When the UMA-TVL-1221 contract expires, a Proposer can call `proposePrice` on the Optimistic Oracle contract passing the following parameters: 
+When the UMA-TVL-1221 contract expires, a Proposer can call `proposePrice` on the Optimistic Oracle contract passing the following parameters:
 - `priceIdentifier`: General_KPI.
 - `timestamp`: 1640966400 (Unix timestamp for December 31, 2021).
 - `ancillaryData`: The below key-value pairs from deployment, input as bytes.
@@ -60,7 +60,7 @@ Once the price is accepted, the `expiryPrice` returned by the Optimistic Oracle 
 
 `settle` can now be called which uses `ExpiryPercentLong` to determine the redemption rate between the long and short tokens by returning a number between 0 and 1, where a value of 0 allocates all collateral to the short tokens and a value of 1 allocates all collateral to the long tokens. The collateral returned is the sum of the two payouts and both the long and short tokens are burned.
 
-### UMA KPI Options Settlement 
+### UMA KPI Options Settlement
 
 Let's assume for the UMA-TVL-1221 contract that the UMA TVL returned at expiry is 750 million USD. Proposers should propose 0.75 which would be returned by the Optimistic Oracle for the `expiryPrice`. The `expiryPercentLong` uses the `Linear` payout function to calculate the payout based on (expiryPrice - lowerBound) / (upperBound - lowerBound).
 

@@ -3,9 +3,9 @@ title: KPI Options References
 sidebar_label: References
 ---
 
-## Additional Resources 
+## Additional Resources
 
-- Medium articles: 
+- Medium articles:
     - [UMA’s TVL Options experiment](https://medium.com/uma-project/uma-kpi-options-and-airdrop-bae86be16ce4)
 - Implementations:
     - [BadgerDAO’s “Rebase Mining” Implementation](https://medium.com/uma-project/badgerdaos-rebase-mining-kicks-off-now-using-uma-s-kpi-options-cd75f71dc1fa)
@@ -16,4 +16,4 @@ sidebar_label: References
 
 ## Questions?
 
-Reach out to us if you have any questions. We’re available on Discord or at hello@umaproject.org. 
+Reach out to us if you have any questions. We’re available on Discord or at hello@umaproject.org.
