@@ -21,7 +21,7 @@ After tokens are minted, to confirm that tokens have been issued by the contract
 
 ### Redeeming Range Tokens
 
-At any point pre-expiry, `redeem` can be called with a pair of long and short range tokens and collateral is returned based on `collateralPerPair`. As the issuer, it is important to remember you must have an equal number of long and short tokens to redeem your range tokens. If you sell the long tokens, you either have to buy them back or wait until after the `expirationTimestamp` to settle.
+At any point pre-expiry, `redeem` can be called with a pair of long and short range tokens and collateral is returned based on `collateralPerPair`. As the issuer, it is important to remember you must have an equal number of long and short tokens to redeem your collateral. If you sell the long tokens, you either have to buy them back or wait until after the `expirationTimestamp` to settle.
 
 The total amount of collateral received from the contract is determined by `collateralPerPair` * `tokensToRedeem`. Regardless of the value of the long and short tokens when redeemed, the summed value of the two tokens will always be worth the total amount of collateral used to mint. The contract burns the tokens and returns collateral proportional to the amount that the token sponsor has deposited to the contract. The caller does not need to approve this contract to transfer any number of redeemed tokens since long and short tokens are burned, rather than transferred.
 
