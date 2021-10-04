@@ -144,6 +144,8 @@ Parameters:
 - `ancillaryData`: ancillary data of the price being requested.
 - `proposedPrice`: price being proposed.
 
+## SkinnyOptimisticOracle
+This implements the core functionality of the `OptimisticOracle` in a different interface in order to reduce function gas costs. The main internal change is that `Request` entries no longer store all of their parameters. Instead, the `keccak256` hash of the `Request` parameters are stored, which means that the interface methods such as `proposePrice` and `disputePrice` all require the existing `Request` entries to be passed as input. There are secondary feature constraints detailed [here](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/oracle/interfaces/SkinnyOptimisticOracleInterface.sol).
 ## Resources
 
 Interacting with the Optimistic Oracle is simple and can be used to trustlessly determine almost limitless types of information, enabling the creation of a multitude of different types of financial contracts.
