@@ -35,7 +35,7 @@ If a dispute is raised, a request is sent to the DVM. All contracts built on UMA
 
 ## UMA's Data Verification Mechanism
 
-The Data Verification Mechanism (DVM) is the dispute resolution service for contracts built on UMA Protocol. Disputes occur via to channels: 
+The Data Verification Mechanism (DVM) is the dispute resolution service for contracts built on UMA Protocol. Disputes occur via two channels: 
 
 - Disputes from the Optimistic Oracle
 - Disputes from contract liquidations

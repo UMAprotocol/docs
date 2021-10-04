@@ -32,11 +32,6 @@ module.exports = {
         label: "Oracle Service",
         items: ["oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface", "oracle/optimistic-oracle-interface", "oracle/known-issues"],
       },
-      {
-        type: "category",
-        label: "Featured Products",
-        items: ["products/KPI-options", "products/range-tokens", "products/calloption"],
-      },
       "getting-started/scalingsolutions", "synthetic-tokens/glossary"
     ],
     Developers: [
@@ -44,7 +39,7 @@ module.exports = {
       {
         type: "category",
         label: "Quick Start",
-        items: ["developers/setup","developers/lsp-prereqs", "build-walkthrough/mint-locally"],
+        items: ["developers/setup"],
       },
       {
         type: "category",
@@ -54,7 +49,7 @@ module.exports = {
       {
         type: "category",
         label: "LongShortPair (LSP)",
-        items: ["developers/deploy-an-lsp"],
+        items: ["developers/lsp-prereqs", "developers/deploy-an-lsp"],
       },
       // {
       //   type: "category",
@@ -65,11 +60,6 @@ module.exports = {
         type: "category",
         label: "Bots",
         items: ["developers/bots", "developers/bot-param", "developers/pf-configuration"],
-      },
-      {
-        type: "category",
-        label: "Developer Mining",
-        items: ["developers/developer-mining", "developers/devmining-reqs", "developers/designing-incentives", "developers/whitelist-contracts"],
       },
       {
         type: "category",

@@ -14,12 +14,10 @@ The tutorials in this section are written to use the ExpiringMultiParty (EMP) co
 After following the quick start guide and deploying your first synthetic token, you can follow this general build process to launch and secure a mainnet version of your expiring synthetic token.
 
 1. [Finalize your contract design.](/synthetic-tokens/what-are-synthetic-assets)
-2. [Apply to the UMA developer mining program.](/developers/developer-mining)
-3. [Propose a new price identifier or collateral type.](/uma-tokenholders/adding-price-id)
-4. [Deploy your contract.](/developers/emp-deployment)
-5. [Mint your first synthetic tokens to set the contract GCR.](/build-walkthrough/minting-etherscan)
-6. [Deploy liquidator and dispute bots to secure your contract.](/developers/bots)
-7. [Finalize your developer mining and start receiving rewards.](/developers/devmining-reqs)
+2. [Propose a new price identifier or collateral type.](/uma-tokenholders/adding-price-id)
+3. [Deploy your contract.](/developers/emp-deployment)
+4. [Mint your first synthetic tokens to set the contract GCR.](/build-walkthrough/minting-etherscan)
+5. [Deploy liquidator and dispute bots to secure your contract.](/developers/bots)
 
 It is highly recommended that you perform steps 4-6 on Kovan before moving to mainnet.
 
