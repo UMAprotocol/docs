@@ -9,7 +9,7 @@ The process to launch and manage KPI Options on UMA is surprisingly simple. This
 
 The following is an overview of the deployment steps below.
 
-1. LSP Prerequisites
+1. Setup LSP Deployment Prerequisites
 2. Set your parameters
 3. Run the deployment on testnet (Kovan)
 4. Run the deployment on mainnet (Ethereum)
