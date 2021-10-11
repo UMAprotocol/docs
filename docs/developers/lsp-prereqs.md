@@ -26,6 +26,12 @@ These dependencies are installed on MacOS by installing the XCode Developer Tool
 sudo apt-get update && sudo apt-get install -y libudev-dev libusb-1.0-0-dev
 ```
 
+## Install packages
+
+```bash
+yarn
+```
+
 ## Is your desired price identifier and collateral type supported?
 
 Before deploying a contract, you should verify that your desired price identifier and collateral currency are already approved on the network you are trying to deploy to.
