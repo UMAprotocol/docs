@@ -19,7 +19,7 @@ After following the quick start guide and deploying your first synthetic token, 
 4. [Mint your first synthetic tokens to set the contract GCR.](/build-walkthrough/minting-etherscan)
 5. [Deploy liquidator and dispute bots to secure your contract.](/developers/bots)
 
-It is highly recommended that you perform steps 4-6 on Kovan before moving to mainnet.
+It is highly recommended that you perform steps 3-5 on Kovan before moving to mainnet.
 
 ### UMA Team Support
 

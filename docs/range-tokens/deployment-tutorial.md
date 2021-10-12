@@ -9,8 +9,8 @@ The process to launch and manage a range token on UMA is surprisingly simple. Th
 
 The following is an overview of the deployment steps below.
 
-1. Setup LSP Deployment Prerequisites
-2. Set your parameters
+1. Set up LSP deployment prerequisites
+2. Decide on your contract design
 3. Run the deployment on testnet (Kovan)
 4. Run the deployment on mainnet (Ethereum)
 
@@ -28,7 +28,7 @@ Each LSP contract requires the following parameters to be set at the point of de
 
 - `gasprice:` The gas price used for your contract deployment.
 - `url:` your node URL.
-- `mnemonic:` Your 12 word seed phrase or mnemonic. 
+- `mnemonic:` Your 12 word seed phrase. 
 - `expirationTimestamp:` Timestamp at which your contract will expire. The rtUMA-0821 token used 1630447200 which represents the Unix timestamp for August 31, 2021.
 - `collateralPerPair:` The amount of collateral required to mint each long and short pair. The rtUMA-0821 token used 0.25 UMA, meaning 0.25 UMA minted 1 long and 1 short token. If 1 $UMA was used as collateral to mint, the minter would receive 4 long and 4 short tokens.
 - `priceIdentifier:` The approved price identifier to be used. The rtUMA-0821 contract used UMAUSD.

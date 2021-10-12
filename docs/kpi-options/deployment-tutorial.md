@@ -28,7 +28,7 @@ Each deployment requires the following parameters to be set at the point of depl
 
 - `gasprice:` The gas price used for your contract deployment.
 - `url:` your node URL.
-- `mnemonic:` Your 12 word seed phrase or mnemonic. 
+- `mnemonic:` Your 12 word seed phrase.
 - `expirationTimestamp:` Unix timestamp when the KPI Options expire that should be aligned with your program objectives. The UMA treasury wants to incentivize a TVL over $500 million by the end of 2021. Therefore, the UMA-TVL-1221 contract uses 1640966400 which represents the Unix timestamp for December 31, 2021.
 - `collateralPerPair:` The amount of collateral required to mint each long and short pair. The UMA-TVL-1221 contract uses 1 $UMA, meaning 1 $UMA mints 1 long and 1 short token. If 4 $UMA was used as collateral to mint, the minter would receive 4 long and 4 short tokens.
 - `priceIdentifier:` Should be set to `General_KPI`.
@@ -88,7 +88,7 @@ The `fpl` parameter determines the type of financial product library (FPL) used 
 
 The UMA-TVL-1221 contract uses `Linear` as the FPL parameter which instructs voters on how to resolve a price request for the price identifier and request timestamp. An implementation file linked to the contract with the `Method` parameter should provide the methodology for calculating the TVL for UMA contracts. 
 
-At or above $500 million TVL at expiry, each long token is worth 1 $UMA and below $500 million TVL at expiry each long token is worth 0.5 $UMA. The `Linear` FPL requires `lowerBound` and `upperBound` parameters to be set to determine the payout function. The `lowerBound` could be set to 0 and the `upperBound` could be set to 1 in order for the following payout logic to result at expiry (should be detailed in the implementation document):
+For the example contract, if UMA's TVL was at or above $500 million at expiry, each long token would be worth 1 $UMA and below $500 million TVL at expiry each long token would be worth 0.5 $UMA. The `Linear` FPL requires `lowerBound` and `upperBound` parameters to be set to determine the payout function. The `lowerBound` could be set to 0 and the `upperBound` could be set to 1 in order for the following payout logic to result at expiry (should be detailed in the implementation document):
 - TVL < $500 million, 0.5 would be returned and each long token would be worth 0.5 $UMA. 
 - TVL > $500 million, 1  would be returned and each long token would be worth 1 $UMA.
 - If the price request is unable to be resolved, 0 would be returned as specified in the `Unresolved` parameter in the ancillary data.
