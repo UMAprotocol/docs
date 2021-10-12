@@ -9,7 +9,7 @@ The process to launch and manage a success token on UMA is surprisingly simple. 
 
 The following is an overview of the deployment steps below.
 
-1. Setup LSP Deployment Prerequisites
+1. Set up LSP deployment prerequisites
 2. Set your parameters
 3. Run the deployment on testnet (Kovan)
 4. Run the deployment on mainnet (Ethereum)
@@ -28,7 +28,7 @@ Each deployment requires the following parameters to be set at the point of depl
 
 - `gasprice:` The gas price used for your contract deployment.
 - `url:` your node URL.
-- `mnemonic:` Your 12 word seed phrase or mnemonic. 
+- `mnemonic:` Your 12 word seed phrase. 
 - `expirationTimestamp:` Timestamp at which your contract will expire. The stUMA-1221 contract uses 1640966400 which represents the Unix timestamp for December 31, 2021.
 - `collateralPerPair:` The amount of collateral required to mint each long and short pair. The stUMA-1221 contract uses 1 UMA, meaning 1 UMA minted 1 long and 1 short token. If you minted using 4 $UMA as collateral, you would receive 4 long and 4 short tokens.
 - `priceIdentifier:` The approved price identifier to be used. The stUMA-1221 contract uses UMAUSD.
