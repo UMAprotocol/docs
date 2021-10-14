@@ -9,7 +9,7 @@ Throughout this usage tutorial, we are going to continue using the UMA KPI Optio
 - `General_KPI` is used as the price identifier with the `customAncillaryData` parameter including details on how to resolve a price request.
 - The contract has an expiration date of December 31, 2021.
 - 10,000 $UMA is allocated to the contract with the `collateralPerPair` parameter set to 1. Meaning 1 $UMA mints 1 long and 1 short token.
-- `Linear` is used as the fpl parameter with the `lowerBound` set to 0 and the `upperBound` set to 1. Voters will return 0.5 or 1 depending on if the UMA TVL is above or below the $500 million threshold at expiry.
+- `Linear` is used as the fpl parameter with the `lowerBound` set to 0 and the `upperBound` set to 1. Voters will return a value depending on the UMA TVL at expiry.
 
 ### Minting KPI Options
 
@@ -17,7 +17,9 @@ After a target KPI has been identified and a KPI Option contract has been deploy
 
 `create` can be called anytime before the contract’s `expirationTimestamp` and simply deposits collateral into the contract in exchange for an equal amount of long and short tokens based on the `collateralPerPair` parameter. The `collateralPerPair` parameter, which was set in the deployment script, determines the amount of collateral that is required for each pair of long and short tokens. 
 
-The UMA treasury has decided to allocate 10,000 $UMA to the UMA-TVL-1221 contract and the `collateralPerPair` has been set to 1. Therefore, 10,000 $UMA will mint 10,000 long tokens and 10,000 short tokens. If instead the `collateralPerPair` would have been set to 0.25 $UMA on deployment, each long and short token minted would require 0.25 $UMA as collateral and 40,000 long and 40,000 short tokens would have been minted with 10,000 $UMA.
+The UMA team has decided to allocate 10,000 $UMA to the UMA-TVL-1221 contract and the `collateralPerPair` parameter has been set to 1. Therefore, 10,000 $UMA will mint 10,000 long tokens and 10,000 short tokens. If instead the `collateralPerPair` parameter would have been set to 3 $UMA on deployment, the screenshot below shows how each long and short token minted requires 3 $UMA as collateral.
+
+![](/docs/kpi-options/kpi-options-mint.png)
 
 After tokens are minted, to confirm that tokens have been issued by the contract, call `getPositionTokens` on the LSP contract with the address used to mint the tokens as the argument. This will return the number of long and short tokens which will be an equal number. The long and short tokens received represent a fully collateralized and risk-neutral position. Short KPI Options tokens are just a tokenized version of overcollateralization in a minted position. As the issuer, you can distribute the long tokens to the community and hold the short tokens.
 
@@ -48,7 +50,7 @@ Interval:Updated every 10 minutes,
 Rounding:-6,
 Scaling:-6
 ```
-- `proposedPrice`: 0.5 or 1 depending on the TVL. If the number value is unable to be resolved, 0 would be returned.
+- `proposedPrice`: Between 0.1 and 1 depending on the UMA TVL. If the number value is unable to be resolved, 0 would be returned.
 
 The `priceIdentifier`, `timestamp`, and `ancillaryData` use the UMA-TVL-1221 parameters set on deployment while `proposedPrice` references off-chain price feeds to determine the UMA TVL value at expiry.
 
@@ -60,10 +62,10 @@ Once the price is accepted, the `expiryPrice` returned by the Optimistic Oracle 
 
 ### UMA KPI Options Settlement 
 
-Let's assume for the UMA-TVL-1221 contract that the UMA TVL returned at expiry is 750 million USD. Due to the price being above the 500 million USD threshold, Proposers should propose 1 which would be returned by the Optimistic Oracle for the `expiryPrice`. The `expiryPercentLong` uses the `Linear` payout function to calculate the payout based on (expiryPrice - lowerBound) / (upperBound - lowerBound).
+Let's assume for the UMA-TVL-1221 contract that the UMA TVL returned at expiry is 750 million USD. Proposers should propose 0.75 which would be returned by the Optimistic Oracle for the `expiryPrice`. The `expiryPercentLong` uses the `Linear` payout function to calculate the payout based on (expiryPrice - lowerBound) / (upperBound - lowerBound).
 
-With the `lowerBound` set to 0 and `upperBound` set to 1, the `expiryPercentLong` would be calculated as ( 1 - 0 ) / ( 1 - 0 ) = 1. This means that each KPI Option long token is worth 1 $UMA and out of the 10,000 $UMA tokens allocated to the contract, 100% of the $UMA collateral goes to the long tokens (community) and the short tokens (UMA treasury) expire worthless.
+With the `lowerBound` set to 0 and `upperBound` set to 1, the `expiryPercentLong` would be calculated as ( 0.75 - 0 ) / ( 1 - 0 ) = 0.75 meaning that each KPI Option long token is worth 0.75 $UMA. Out of the 10,000 $UMA tokens allocated to the contract, 75% of the $UMA collateral is allocated to the long tokens (community) and 25% of the $UMA collateral is allocated to the short tokens (UMA).
 
-If `expiryPrice` would have been below the $500 million threshold, 0.5 should be proposed. The `expiryPercentLong` would be calculated as ( 0.5 - 0 ) / ( 1 - 0 ) = 0.5 based on the `Linear` payout function. Therefore, 50% of the collateral is allocated to long token holders and 50% is allocated to short token holders. Since the `collateralPerPair` parameter set to 1, 0.5 $UMA would be allocated to long holders (community) and 0.5 $UMA would have been allocated to short token holders (UMA treasury).
+If `expiryPrice` would have been $500 million, 0.5 should be proposed. The `expiryPercentLong` would be calculated as ( 0.5 - 0 ) / ( 1 - 0 ) = 0.5 based on the `Linear` payout function. Therefore, 50% of the collateral is allocated to long token holders and 50% is allocated to short token holders. Since the `collateralPerPair` parameter set to 1, 0.5 $UMA would be allocated to long holders (community) and 0.5 $UMA would have been allocated to short token holders (UMA).
 
-If the price request is unable to be resolved, 0 should be returned. This would result in 0 $UMA allocated to the community and the 10,000 $UMA in the contract allocated back to the UMA treasury.
+If the price request is unable to be resolved, 0 should be returned. This would result in 0 $UMA allocated to the community and the 10,000 $UMA in the contract allocated back to UMA.
