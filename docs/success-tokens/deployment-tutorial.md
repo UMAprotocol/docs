@@ -10,7 +10,7 @@ The process to launch and manage a success token on UMA is surprisingly simple. 
 The following is an overview of the deployment steps below.
 
 1. Set up LSP deployment prerequisites
-2. Set your parameters
+2. Decide on your contract design
 3. Run the deployment on testnet (Kovan)
 4. Run the deployment on mainnet (Ethereum)
 
