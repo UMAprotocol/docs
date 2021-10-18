@@ -15,7 +15,11 @@ Throughout this usage tutorial, we are going to continue using the [UMA Range To
 
 After a range token contract has been deployed, it is time to mint your first tokens. First, approve the token minting contract to transfer the collateral currency on your behalf. Tokens can then be minted by calling `create` on the LSP contract. This can be done using the Write Contract tab for your LSP contract in Etherscan or [UMAverse](https://umaverse.vercel.app/). 
 
-`create` can be called anytime before the contract’s `expirationTimestamp` and simply deposits collateral into the contract in exchange for an equal amount of long and short tokens based on the `collateralPerPair` parameter. The `collateralPerPair` parameter, which was set in the deployment script, determines the amount of collateral that is required for each pair of long and short tokens. For the rtUMA-0821 contract, $UMA was used as collateral and the `collateralPerPair` was set to 0.25. Each long and short token minted required 0.25 UMA of collateral. If instead the `collateralPerPair` would have been set to 1 $UMA on deployment, each long and short token minted would have required 1 $UMA of collateral.
+`create` can be called anytime before the contract’s `expirationTimestamp` and simply deposits collateral into the contract in exchange for an equal amount of long and short tokens based on the `collateralPerPair` parameter. The `collateralPerPair` parameter, which was set in the deployment script, determines the amount of collateral that is required for each pair of long and short tokens. 
+
+For the rtUMA-0821 contract, $UMA was used as collateral and the `collateralPerPair` was set to 0.25. Each long and short token minted required 0.25 UMA of collateral. If instead the `collateralPerPair` parameter would have been set to 3 $UMA on deployment, the screenshot below shows how each long and short token minted would have required 3 $UMA as collateral.
+
+![](/docs/range-tokens/range-token-mint.png)
 
 After tokens are minted, to confirm that tokens have been issued by the contract, call `getPositionTokens` on the LSP contract with the address used to mint the tokens as the argument. This will return the number of long and short tokens which will be an equal number. The long and short tokens received represent a fully collateralized and risk-neutral position. Short range tokens are just a tokenized version of overcollateralization in a minted position. As the issuer, you can sell the long tokens and hold the short tokens. 
 
