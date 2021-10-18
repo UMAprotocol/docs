@@ -17,7 +17,7 @@ After a target KPI has been identified and a KPI Option contract has been deploy
 
 `create` can be called anytime before the contract’s `expirationTimestamp` and simply deposits collateral into the contract in exchange for an equal amount of long and short tokens based on the `collateralPerPair` parameter. The `collateralPerPair` parameter, which was set in the deployment script, determines the amount of collateral that is required for each pair of long and short tokens. 
 
-The UMA team has decided to allocate 10,000 $UMA to the UMA-TVL-1221 contract and the `collateralPerPair` parameter has been set to 1. Therefore, 10,000 $UMA will mint 10,000 long tokens and 10,000 short tokens. If instead the `collateralPerPair` parameter would have been set to 3 $UMA on deployment, the screenshot below shows how each long and short token minted requires 3 $UMA as collateral.
+Using the UMA-TVL-1221 contract as an example, the UMA treasury decided to allocate 10,000 $UMA to the contract with the `collateralPerPair` parameter set to 1. Therefore, 10,000 $UMA will mint 10,000 long tokens and 10,000 short tokens. If instead the `collateralPerPair` parameter would have been set to 3 $UMA on deployment, the screenshot below shows how each long and short token minted requires 3 $UMA as collateral.
 
 ![](/docs/kpi-options/kpi-options-mint.png)
 
