@@ -51,7 +51,7 @@ module.exports = {
       label: "Community",
       position: "left",
       activeBaseRegex: "(users|community)" },
-    { to: "contracts/Migrations",
+    { to: "contracts/Contracts",
       label: "Contracts",
       position: "left",
       activeBaseRegex: "(contracts)" },
