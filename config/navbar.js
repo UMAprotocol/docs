@@ -54,7 +54,7 @@ module.exports = {
     { to: "contracts/Contracts",
       label: "Contracts",
       position: "left",
-      activeBaseRegex: "(contracts)" },
+      activeBaseRegex: "(Contracts)" },
     {
         href: "https://umaproject.org",
         className: "header-web-link",

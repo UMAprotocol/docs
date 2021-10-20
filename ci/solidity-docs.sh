@@ -18,7 +18,7 @@ solidity-docgen --solc-module solc-0.8 -i packages/core/contracts/ -t ../ci/ -o 
 echo "configuring docs..."
 mv temp-docs/ ../docs/contracts
 
-contracts_file="../docs/contracts/contracts.md"
+contracts_file="../docs/contracts/Contracts.md"
 touch $contracts_file
 
 cat << EOF > $contracts_file
