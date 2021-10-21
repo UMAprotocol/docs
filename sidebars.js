@@ -9,6 +9,21 @@ module.exports = {
       },
       {
         type: "category",
+        label: "Range Tokens",
+        items: ["range-tokens/summary", "range-tokens/deployment-tutorial", "range-tokens/usage-tutorial",  "range-tokens/references"],
+      },
+      {
+        type: "category",
+        label: "Success Tokens",
+        items: ["success-tokens/summary", "success-tokens/deployment-tutorial", "success-tokens/usage-tutorial",  "success-tokens/references"],
+      },
+      {
+        type: "category",
+        label: "KPI Options",
+        items: ["kpi-options/summary", "kpi-options/deployment-tutorial","kpi-options/kpi-price-identifier", "kpi-options/usage-tutorial","kpi-options/references"],
+      },
+      {
+        type: "category",
         label: "Synthetic Tokens",
         items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens", "synthetic-tokens/long-short-pair",  "synthetic-tokens/known-issues"],
       },
@@ -17,11 +32,6 @@ module.exports = {
         label: "Oracle Service",
         items: ["oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface", "oracle/optimistic-oracle-interface", "oracle/known-issues"],
       },
-      {
-        type: "category",
-        label: "Featured Products",
-        items: ["products/KPI-options", "products/range-tokens", "products/calloption"],
-      },
       "getting-started/scalingsolutions", "synthetic-tokens/glossary"
     ],
     Developers: [
@@ -29,7 +39,7 @@ module.exports = {
       {
         type: "category",
         label: "Quick Start",
-        items: ["developers/setup", "build-walkthrough/mint-locally"],
+        items: ["developers/setup"],
       },
       {
         type: "category",
@@ -39,7 +49,7 @@ module.exports = {
       {
         type: "category",
         label: "LongShortPair (LSP)",
-        items: ["developers/deploy-an-lsp"],
+        items: ["developers/lsp-prereqs", "developers/deploy-an-lsp"],
       },
       // {
       //   type: "category",
@@ -50,11 +60,6 @@ module.exports = {
         type: "category",
         label: "Bots",
         items: ["developers/bots", "developers/bot-param", "developers/pf-configuration"],
-      },
-      {
-        type: "category",
-        label: "Developer Mining",
-        items: ["developers/developer-mining", "developers/devmining-reqs", "developers/designing-incentives", "developers/whitelist-contracts"],
       },
       {
         type: "category",
@@ -86,11 +91,6 @@ module.exports = {
           type: "category",
           label: "Price IDs and Collateral Currencies",
           items: ["uma-tokenholders/adding-price-id", "uma-tokenholders/approved-price-identifiers", "uma-tokenholders/approved-collateral-currencies","uma-tokenholders/guidance-on-adding-price-identifiers","uma-tokenholders/guidence-on-collateral-currency-addition",],
-        },
-        {
-          type: "category",
-          label: "Generalized Price IDs",
-          items: ["uma-tokenholders/general-kpi",],
         },
         "uma-tokenholders/umips",
         {

@@ -11,10 +11,6 @@ Yield Dollars are created when you lock collateral in a contract to borrow a syn
 
   - [**Umanji**](https://umanji.xyz) (token address: [yUMA21](https://etherscan.io/token/0x3108c33b6fb38efedaefd8b5f7ca01d5f5c7372d))
     * [Umanji User Guide](https://machinalabs.medium.com/umanji-user-guide-dc115f77b079)
-
-  -  [**UMA Bills**](https://umabills.com/) (token address: [YD-BTC-DEC21](https://etherscan.io/token/0x68555bc772ad33be7a761168d7d9874cfc369b83))
-      * [About UMA Bills](https://umabills.com/about)
-      * [Overview of UMA Bills](https://medium.com/@eric.baleine/minting-yield-dollars-guide-of-umabills-eceafe973f9b)
     
    -  [**fCash**](https://fcash.farmdashboard.xyz/) (token address: [fCash](https://etherscan.io/token/0x531261a091f31bfd93dd393a6ca447ed6fb2043c))
        * [What is fCASH](https://www.publish0x.com/bityard/superumans-4-what-is-fcash-by-harvest-finance-xjojqor)
