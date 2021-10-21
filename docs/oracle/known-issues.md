@@ -90,7 +90,7 @@ A “bribery attack” arises if the cost of controlling 50% of the participatin
 This would cause the CoC of the UMA DVM to be lower than the PfC, and the economic guarantee of the UMA DVM may not hold.
 
 This bribery attack is a variation on the "P + Epsilon attack" Vitalik Buterin described [here](https://blog.ethereum.org/2015/01/28/p-epsilon-attack/).
-Our version of this attack (and solution) is formalized in this research [note](https://github.com/UMAprotocol/research/blob/master/notes/BribeAttack.pdf) and is summarized below.
+Our version of this attack (and solution) is formalized in this research [note](https://github.com/UMAprotocol/research/blob/master/notes/bribe_attack/BribeAttack.pdf) and is summarized below.
 
 ##### Overview of Attack
 
