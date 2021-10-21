@@ -113,4 +113,4 @@ Alice, Troy and Rachel are DeFi users and want to take different bets on the pri
 
 ## Launching a LSP
 
-A [launch-lsp repo](https://github.com/UMAprotocol/launch-lsp) for launching your own LSP is available along with additional [documentation](https://docs.umaproject.org/developers/deploy-on-polygon) on the LSP deployment process.
+A [launch-lsp repo](https://github.com/UMAprotocol/launch-lsp) for launching your own LSP is available along with additional [documentation](https://docs.umaproject.org/developers/deploy-an-lsp) on the LSP deployment process.

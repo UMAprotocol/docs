@@ -45,7 +45,7 @@ Most of price feed implementations share the following configuration parameters:
 
 ## Application Specific Parameters
 
-If the application requires setting custom price feed parameters they can be configured by the user to override default price feed configuration. Most common use cases include setting custom `lookback` parameters or providing API keys for data sources. In order to set overriding parameters one has to provide them in `.env` file assigned to `PRICE_FEED_CONFIG` variable as JSON string. As an example, DVM voters might want to set `lookback` to 300000 seconds in order to ensure that prices can be looked up historically with [getHistoricalPrice.js](https://github.com/UMAprotocol/protocol/blob/master/packages/core/scripts/local/getHistoricalPrice.js) script during the maximum DVM resolvement period of 72 hours plus added reserve for any required TWAP start period before that:
+If the application requires setting custom price feed parameters they can be configured by the user to override default price feed configuration. Most common use cases include setting custom `lookback` parameters or providing API keys for data sources. In order to set overriding parameters one has to provide them in `.env` file assigned to `PRICE_FEED_CONFIG` variable as JSON string. As an example, DVM voters might want to set `lookback` to 300000 seconds in order to ensure that prices can be looked up historically with [getHistoricalPrice.js](https://github.com/UMAprotocol/protocol/blob/master/packages/scripts/src/local/getHistoricalPrice.js) script during the maximum DVM resolvement period of 72 hours plus added reserve for any required TWAP start period before that:
 
 ```
 PRICE_FEED_CONFIG={"lookback":300000}

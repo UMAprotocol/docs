@@ -44,7 +44,7 @@ When the UMA-TVL-1221 contract expires, a Proposer can call `proposePrice` on th
 ```
 Metric:TVL in UMA financial contracts measured in millions of USD,
 Endpoint:"https://api.umaproject.org/uma-tvl",
-Method:"https://github.com/UMAprotocol/UMIPs/blob/master/Implementations/uma-tvl.md",
+Method:"https​://github.com/UMAprotocol/UMIPs/blob/master/Implementations/uma-tvl.md",
 Key:currentTvl,
 Interval:Updated every 10 minutes,
 Rounding:-6,
