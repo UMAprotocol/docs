@@ -10,6 +10,7 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Sep 10, 2021: [Risk Labs Developer Mining Update and Retrospective](https://medium.com/uma-project/risk-labs-developer-mining-update-and-retrospective-ec9dfe2cff28)
 - Aug 16, 2021: [Designing A Smart Liquidity Mining Program (LM 2.0)](https://medium.com/uma-project/designing-a-smart-liquidity-mining-program-lm-2-0-d46072a11cfd)
 - Jul 23, 2021: [In Case You Missed It #23](https://medium.com/uma-project/icymi-23-a078865b9355)
 - Jul 21, 2021: [Update: Developer Mining and Grants Program](https://medium.com/uma-project/update-developer-mining-and-grants-program-77b7521fdde5)
