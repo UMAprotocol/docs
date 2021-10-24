@@ -31,7 +31,7 @@ If everything worked, we should see the line "> Compiled successfully using:" in
 Ganache-CLI was already installed via `yarn` and now we will use it to run a test-chain with this command:
 
 ```bash
-yarn ganache-cli -p 9545 -e 1000000 -l 10000000
+npx ganache-cli -p 9545 -e 1000000 -l 10000000
 ```
 
 Here, we are running Ganache:
@@ -46,15 +46,15 @@ If everything was setup correctly, we should be able to run automated tests from
 
 ```bash
 cd packages/core
-yarn truffle test --network test
+npx hardhat test --network test
 ```
 
 These tests will take a while to finish, but if set up correctly, all tests should pass (with the possible exception of a few that depend on the Intrinio API).
 
 ## Keys and Networks
 
-When using UMA infrastructure, you often have to open the `truffle console` or run a script using `truffle exec`. When
-using truffle in the context of this repository, it's important to understand what types of keys you can use and what
+When using UMA infrastructure, you often have to open the `hardhat console` or run a script using `hardhat run`. When
+using hardhat in the context of this repository, it's important to understand what types of keys you can use and what
 to specify for the `--network` argument.
 
 ### Public Networks
@@ -68,13 +68,13 @@ these networks, you'll generally need to know:
 2. What private key you want to use and how your private keys are stored.
    Below is information regarding the two types of keys that are supported, mnemonics/seed phrases and hardware wallets.
 
-The `--network` parameter that's passed to all truffle commands depends on both of these factors. Here's an example:
+The `--network` parameter that's passed to all hardhat commands depends on both of these factors. Here's an example:
 
 ```bash
-yarn truffle console --network rinkeby_mnemonic
+npx hardhat console --network rinkeby_mnemonic
 ```
 
-That command will tell truffle that the user wants to use the Rinkeby testnet and their private key is a mnemonic, or
+That command will tell hardhat that the user wants to use the Rinkeby testnet and their private key is a mnemonic, or
 seed phrase. Generally, the network argument is structured as `--network [NETWORK_NAME]_[KEY_TYPE]`.
 
 ### Mnemonic, or seed phrase (less secure)
@@ -93,11 +93,11 @@ With a real mnemonic, this would look like:
 export MNEMONIC="candy maple cake sugar pudding cream honey rich smooth crumble sweet treat"
 ```
 
-Once you've done that you're ready to run a truffle command. When using a mnemonic, your network argument should look
+Once you've done that you're ready to run a hardhat command. When using a mnemonic, your network argument should look
 like `--network [NETWORK_NAME]_mnemonic`. So, for example, using a mnemonic on Kovan would look like:
 
 ```bash
-yarn truffle console --network kovan_mnemonic
+npx hardhat console --network kovan_mnemonic
 ```
 
 ### Hardware wallets (more secure)
@@ -117,15 +117,15 @@ To set up a Ledger hardware wallet for use with our system:
 
 5. Go to the Ethereum app settings on the device and change the "Contract data" setting to yes if it isn't already.
 
-Now that you're set up, you should be able to run truffle commands with the network argument
+Now that you're set up, you should be able to run hardhat commands with the network argument
 `--network [NETWORK_NAME]_ledger`. Note: this network uses the default Ledger Live derivation path: `m/44'/60'/x'/0/0`.
 For the legacy derivation path (`m/44'/60'/0'/x`), use `[NETWORK_NAME]_legder_legacy`.
 
-For example, you could connect your ledger wallet to the truffle console and begin running commands against mainnet
+For example, you could connect your ledger wallet to the hardhat console and begin running commands against mainnet
 with the following command:
 
 ```bash
-yarn truffle console --network mainnet_ledger
+npx hardhat console --network mainnet_ledger
 ```
 
 Note: outgoing transactions will require manual approval on the ledger device. If you fail to approve, the command will
