@@ -10,6 +10,8 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Sep 30, 2021: [UMA Range Token Retro - Analyzing The First Implementation by a DAO](https://github.com/UMAprotocol/docs/edit/docs-site-update-1/docs/community/blog-posts.md)
+- Sep 29, 2021: [Three Projects Embark on Liquidity Mining 2.0 — Yield paid in KPI options](https://medium.com/uma-project/state-of-kpi-liquidity-mining-40cbdec79ea8)
 - Sep 10, 2021: [Risk Labs Developer Mining Update and Retrospective](https://medium.com/uma-project/risk-labs-developer-mining-update-and-retrospective-ec9dfe2cff28)
 - Aug 16, 2021: [Designing A Smart Liquidity Mining Program (LM 2.0)](https://medium.com/uma-project/designing-a-smart-liquidity-mining-program-lm-2-0-d46072a11cfd)
 - Jul 23, 2021: [In Case You Missed It #23](https://medium.com/uma-project/icymi-23-a078865b9355)
