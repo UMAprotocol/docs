@@ -24,7 +24,7 @@ If the expiration price is below the strike price, the investor only receives th
 
 ### Note on Success Token Parameters
 
-On-chain, `Number of Project Tokens` and `Call Option Collateral` are actually determined by two other parameters. These are called `collateralPerPair` and `basePercentage`. `collateralPerPair` is simply the total units of collateral backing one success token. `basePercentage` determines the percentage of the total success token collateral (`collateralPerPair`) that is used as the floor price for the success token versus the percentage that is used to collateralize the covered call option.
+On-chain, `Number of Project Tokens` and `Call Option Collateral` are actually determined by two other parameters. These are called `collateralPerPair` and `basePercentage`. `collateralPerPair` is simply the total units of collateral backing one success token. `basePercentage` determines the percentage of the total success token collateral (`collateralPerPair`) that is used as the floor value for the success token versus the percentage that is used to collateralize the covered call option.
 
 As an example, a success token with a `collateralPerPair` of 2 and a `basePercentage` of 0.75 would have a floor value of 1.5 units of collateral combined with a covered call option backed by 0.5 units of collateral.
 
