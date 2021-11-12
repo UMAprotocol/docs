@@ -11,8 +11,8 @@ Before contract deployment, the following parameters should be negotiated betwee
 - The strike price of the call option.
 - The expiry date.
 - The price at which the success token is sold.
-- The amount of project tokens that should be sold per success token. In the graphic below, this is referenced as `Number of Project Tokens`. 
-- The amount of project tokens backing each covered call option per success token. In the graphic, this is referenced as `Call Option Collateral`.
+- The units of collateral that should be used as the floor value per success token. In the graphic below, this is referenced as `Number of Project Tokens`. 
+- The units of collateral backing each covered call option per success token. In the graphic, this is referenced as `Call Option Collateral`.
 
 The success token payout calculation uses these parameters to determine the following payout at expiry:
 
