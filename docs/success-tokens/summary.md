@@ -18,7 +18,7 @@ Before contract deployment, the following parameters should be negotiated betwee
 
 The success token payout calculation uses these parameters to determine the following payout at expiry:
 
-![](/docs/success-tokens/success-token-payout.png)
+![](/docs/success-tokens/success-token-payout2.png)
 
 If the expiration price is below the strike price, the investor only receives the project token and does not receive any portion of the collateral backing the covered call option. If the expiration price is above the strike price, the call option pays investors an additional amount demonstrated as the bonus value below: 
 
