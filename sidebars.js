@@ -5,7 +5,7 @@ module.exports = {
       {
         type: "category",
         label: "Overview",
-        items: ["getting-started/overview", "getting-started/how-uma-works", "getting-started/synthetic-tokens", "getting-started/oracle"],
+        items: ["getting-started/how-uma-works", "getting-started/synthetic-tokens", "getting-started/oracle"],
       },
       {
         type: "category",
@@ -25,14 +25,14 @@ module.exports = {
       {
         type: "category",
         label: "Synthetic Tokens",
-        items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens", "synthetic-tokens/long-short-pair",  "synthetic-tokens/known-issues"],
+        items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens", "synthetic-tokens/known-issues"],
       },
       {
         type: "category",
         label: "Oracle Service",
         items: ["oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface", "oracle/optimistic-oracle-interface", "oracle/known-issues"],
       },
-      "getting-started/scalingsolutions", "synthetic-tokens/glossary"
+      "synthetic-tokens/glossary"
     ],
     Developers: [
       "build-walkthrough/build-process",
@@ -44,12 +44,12 @@ module.exports = {
       {
         type: "category",
         label: "ExpiringMultiParty (EMP)",
-        items: ["developers/emp-deployment", "build-walkthrough/emp-parameters", "build-walkthrough/minting-etherscan",],
+        items: ["developers/emp-deployment", "build-walkthrough/minting-etherscan"],
       },
       {
         type: "category",
         label: "LongShortPair (LSP)",
-        items: ["developers/lsp-prereqs", "developers/deploy-an-lsp"],
+        items: ["synthetic-tokens/long-short-pair", "developers/lsp-prereqs", "developers/deploy-an-lsp"],
       },
       // {
       //   type: "category",
@@ -69,7 +69,7 @@ module.exports = {
       {
         type: "category",
         label: "Developer Reference",
-        items: ["dev-ref/mainnet-info", "dev-ref/addresses", "dev-ref/bug-bounty", "dev-ref/subgraphs",
+        items: ["dev-ref/mainnet-info", "dev-ref/addresses", "dev-ref/bug-bounty", "dev-ref/subgraphs", "getting-started/scalingsolutions",
         {
           type: "link",
           label: "Contracts (Github)",

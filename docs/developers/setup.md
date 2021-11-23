@@ -31,7 +31,7 @@ If everything worked, we should see the line "> Compiled successfully using:" in
 Ganache-CLI was already installed via `yarn` and now we will use it to run a test-chain with this command:
 
 ```bash
-yarn ganache-cli -p 9545 -e 1000000 -l 10000000
+npx ganache-cli -p 9545 -e 1000000 -l 10000000
 ```
 
 Here, we are running Ganache:
@@ -42,91 +42,40 @@ Here, we are running Ganache:
 
 This will make sure we have enough ETH and a high enough gas limit to deploy our larger contracts.
 
-If everything was setup correctly, we should be able to run automated tests from `protocol/packages/core`. In a separate terminal, run the following commands:
+If everything was set up correctly, we should be able to run automated tests from `protocol/packages/core`. In a separate terminal, run the following commands:
 
 ```bash
 cd packages/core
-yarn truffle test --network test
+npx hardhat test
 ```
 
 These tests will take a while to finish, but if set up correctly, all tests should pass (with the possible exception of a few that depend on the Intrinio API).
 
 ## Keys and Networks
 
-When using UMA infrastructure, you often have to open the `truffle console` or run a script using `truffle exec`. When
-using truffle in the context of this repository, it's important to understand what types of keys you can use and what
-to specify for the `--network` argument.
+When using UMA infrastructure, you often have to open the Hardhat console using `npx hardhat console` or run a script using `npx hardhat run <script>`. When using Hardhat in the context of this repository, it's important to understand what to specify for the `--network` argument and how to set up your `hardhat.config.js` file.
 
 ### Public Networks
 
-Public networks include the Ethereum mainnet and any public testnets, like Rinkeby, Kovan, or Ropsten. If you are using
-these networks, you'll generally need to know:
+Public networks include the Ethereum mainnet and any public testnets, like Rinkeby, Kovan, or Ropsten. A list of UMA supported networks is available [here](https://github.com/UMAprotocol/protocol/blob/master/packages/common/src/PublicNetworks.ts).
 
-1. Which public network you intend to use.
-   A list of UMA supported networks is available [here](https://github.com/UMAprotocol/protocol/blob/master/packages/common/src/PublicNetworks.ts).
+The `--network` parameter is used in Hardhat commands to connect to a specific network. Generally, the network argument is structured as `--network [NETWORK_NAME]`. 
 
-2. What private key you want to use and how your private keys are stored.
-   Below is information regarding the two types of keys that are supported, mnemonics/seed phrases and hardware wallets.
-
-The `--network` parameter that's passed to all truffle commands depends on both of these factors. Here's an example:
+Here's an example of how to tell Hardhat to use the Rinkeby testnet:
 
 ```bash
-yarn truffle console --network rinkeby_mnemonic
+npx hardhat console --network rinkeby
 ```
 
-That command will tell truffle that the user wants to use the Rinkeby testnet and their private key is a mnemonic, or
-seed phrase. Generally, the network argument is structured as `--network [NETWORK_NAME]_[KEY_TYPE]`.
+### Wallet Configuration
 
-### Mnemonic, or seed phrase (less secure)
+When Hardhat is run, it searches for the closest `hardhat.config.js` file starting from the Current Working Directory. This file normally lives in the root of your project.
 
-Mnemonics are much less secure than using a hardware wallet, but they are also much faster when sending multiple
-transactions since they don't require as much user input. If you'd like to use a mnemonic, you'll need to start by
-putting the mnemonic in your shell environment. Do this by running the following command:
+To use an HD Wallet with Hardhat you should set your network's accounts field to an object with the following fields:
 
-```bash
-export MNEMONIC="YOUR_MNEMONIC_HERE"
-```
+- mnemonic: A required string with the mnemonic phrase of the wallet.
+- path: The HD parent of all the derived keys. Default value: "m/44'/60'/0'/0".
+- initialIndex: The initial index to derive. Default value: 0.
+- count: The number of accounts to derive. Default value: 20.
 
-With a real mnemonic, this would look like:
-
-```bash
-export MNEMONIC="candy maple cake sugar pudding cream honey rich smooth crumble sweet treat"
-```
-
-Once you've done that you're ready to run a truffle command. When using a mnemonic, your network argument should look
-like `--network [NETWORK_NAME]_mnemonic`. So, for example, using a mnemonic on Kovan would look like:
-
-```bash
-yarn truffle console --network kovan_mnemonic
-```
-
-### Hardware wallets (more secure)
-
-Hardware wallets are the more secure way to interact with the system on public networks. We currently only support
-Ledger hardware wallets, but we plan on supporting more in the future.
-
-To set up a Ledger hardware wallet for use with our system:
-
-1. Connect the device to your machine.
-
-2. Use your passcode to unlock it.
-
-3. Ensure the Ethereum app is installed on your device. Install it if not.
-
-4. Select the Ethereum app on the device.
-
-5. Go to the Ethereum app settings on the device and change the "Contract data" setting to yes if it isn't already.
-
-Now that you're set up, you should be able to run truffle commands with the network argument
-`--network [NETWORK_NAME]_ledger`. Note: this network uses the default Ledger Live derivation path: `m/44'/60'/x'/0/0`.
-For the legacy derivation path (`m/44'/60'/0'/x`), use `[NETWORK_NAME]_legder_legacy`.
-
-For example, you could connect your ledger wallet to the truffle console and begin running commands against mainnet
-with the following command:
-
-```bash
-yarn truffle console --network mainnet_ledger
-```
-
-Note: outgoing transactions will require manual approval on the ledger device. If you fail to approve, the command will
-hang.
+See the [Hardhat documentation](https://hardhat.org/config/#hd-wallet-config) for more information on setting up your `hardhat.config.js` file and using the Hardhat console.

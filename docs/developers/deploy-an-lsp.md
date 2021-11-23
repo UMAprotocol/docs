@@ -133,7 +133,7 @@ wss://kovan.infura.io/ws/v3/{projectId}
 
 Run the deployment script with your specific parameters.
 ```bash
-node index.js --gasprice 80 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName " Your token pair name" --expirationTimestamp 1630447200 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "long token name" --longSynthSymbol UMA-0821 --shortSynthName "short token name" --shortSynthSymbol UMA-0821s --collateralToken 0x489Bf230d4Ab5c2083556E394a28276C22c3B580 --customAncillaryData "twapLength:3600" --optimisticOracleLivenessTime 3600 --fpl CoveredCall --strikePrice 12000000000000000000 --prepaidProposerBond 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
+node index.js --gasprice 5 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "token pair name" --expirationTimestamp 1672538400 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "long token name" --longSynthSymbol UMA-1222 --shortSynthName "short token name" --shortSynthSymbol UMA-1222s --collateralToken 0x489Bf230d4Ab5c2083556E394a28276C22c3B580 --customAncillaryData "twapLength:3600" --optimisticOracleLivenessTime 3600 --fpl CoveredCall --strikePrice 12000000000000000000 --prepaidProposerBond 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
 ```
 ## Deploying to Ethereum Mainnet
 
@@ -158,7 +158,7 @@ wss://mainnet.infura.io/ws/v3/{projectId}
 
 You can now run the deployment script. From within the `launch-lsp` directory, run:
 ```bash
-node index.js --gasprice 80 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "token pair name" --expirationTimestamp 1630447200 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "long token name" --longSynthSymbol UMA-0821 --shortSynthName "short token name" --shortSynthSymbol UMA-0821s --collateralToken 0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828 --customAncillaryData "twapLength:3600" --optimisticOracleLivenessTime 3600 --fpl CoveredCall --strikePrice 12000000000000000000 --prepaidProposerBond 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
+node index.js --gasprice 80 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "token pair name" --expirationTimestamp 1672538400 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "long token name" --longSynthSymbol UMA-1222 --shortSynthName "short token name" --shortSynthSymbol UMA-1222s --collateralToken 0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828 --customAncillaryData "twapLength:3600" --optimisticOracleLivenessTime 3600 --fpl CoveredCall --strikePrice 12000000000000000000 --prepaidProposerBond 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
 ```
 Once deployed, the script will list the address of your newly deployed LSP. A successful output will look like this:
 

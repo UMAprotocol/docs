@@ -15,13 +15,14 @@ If a dispute is raised, a request is sent to the DVM. All contracts built on UMA
 
 ## Optimistic Oracle
 
-![](/docs/oracle/optimistic.png)
+![](/docs/oracle/OO-process-flow.png)
 
 1. Requestors ask for the price of an asset at a given time. A requestor submits the following information to request a price: 
-    - Asset
-    - Timestamp
-    - Time to receive the price
-    - Reward amount 
+    - <strong>identifier:</strong> price identifier being requested.
+    - <strong>timestamp:</strong> timestamp of the price being requested.
+    - <strong>ancillaryData:</strong> ancillary data representing additional arguments being passed with the price request.
+    - <strong>currency:</strong> ERC20 token used for payment of rewards and fees. Must be approved for use with the DVM.
+    - <strong>reward:</strong> reward offered to a successful proposer. Will be paid by the caller. Note: this can be 0.
 
     *Note - the contract requesting the price does not need to be registered with UMA’s DVM*
 
@@ -31,7 +32,7 @@ If a dispute is raised, a request is sent to the DVM. All contracts built on UMA
 
 4. If Disputers do not refute the price submitted by the Proposer within the proposal liveness period, the price is sent to the Requestor.
 
-5.  If a proposal is disputed, the price will be submitted to UMA’s DVM and resolved after 48-hours. 
+5.  If a proposal is disputed, the price will be submitted to UMA’s DVM and resolved after a 48-96 hour voting period.
 
 ## UMA's Data Verification Mechanism
 
@@ -40,11 +41,11 @@ The Data Verification Mechanism (DVM) is the dispute resolution service for cont
 - Disputes from the Optimistic Oracle
 - Disputes from contract liquidations
 
-![](/docs/oracle/dvm.png)
+![](/docs/oracle/DVM-process-flow.png)
 
 1. In the event of a dispute, a price request is submitted to the DVM which proposes a vote to UMA tokenholders to report the price of the asset at a specific timestamp. 
 
-2. The vote will conclude after 48 hours resulting in a resolved dispute. 
+2. The vote will conclude after a 48-96 hour voting period resulting in a resolved dispute. 
 
 3. UMA tokenholders will reference the price identifier's [UMIP](uma-tokenholders/umips.md) to determine how to calculate the price of the asset via off-chain price feeds and record the price of the asset in UMA's [Voter dApp](uma-tokenholders/voter-dApp.md). 
 

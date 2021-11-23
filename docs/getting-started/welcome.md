@@ -7,11 +7,9 @@ UMA stands for Universal Market Access. UMA is driven by a shared belief that fi
 
 UMA's goal is to enable anyone to attain or transfer any form of risk seamlessly and securely through UMA protocol to empower everyone to participate in a universally accessible financial system.
 
-If you would like to learn more about the concepts behind UMA's priceless financial contracts and oracle service, start by reading this [overview](getting-started/overview.md) of the UMA ecosystem.
-
 ## Developers
 
-If you are a developer interested in building on UMA Protocol, view this [explainer](synthetic-tokens/what-are-synthetic-assets.md) to understand how UMA's priceless synthetic tokens work. Also review the [development guide](build-walkthrough/build-process) to learn how to launch your own synthetic tokens on UMA. 
+If you are a developer interested in building on UMA Protocol, view this [explainer](synthetic-tokens/long-short-pair.md) to understand how UMA's Long Short Pair (LSP) contract works. Also review the [development guide](build-walkthrough/build-process) to learn how to launch your own financial contract on UMA. 
 
 You can find additional reference materials, including a list of UMA's testnet and mainnet contracts [here](dev-ref/addresses.md).
 

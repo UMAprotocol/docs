@@ -12,6 +12,7 @@ Some ideas for contracts that can be made with the LSP include:
 - Linear payouts - speculating on the ratio of DEX to CEX monthly volume.
 - Covered call options.
 - [Range Tokens for treasury management](https://medium.com/uma-project/treasury-diversification-with-range-tokens-145d4b12614e).
+- [Success Tokens for treasury management](https://medium.com/uma-project/success-tokens-an-incentive-aligned-way-for-vc-funds-to-invest-in-daos-1e8b8244f2f4).
 
 To deploy an LSP contract, use the [launch-lsp repo](https://github.com/UMAprotocol/launch-lsp) for guidance through the deployment process and customizing LSP deployment parameters.
 
@@ -24,6 +25,7 @@ The financial product library will be used to transform the value returned by th
 - [Covered call options library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries/CoveredCallLongShortPairFinancialProductLibrary.sol)
 - [Linear payout library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries/LinearLongShortPairFinancialProductLibrary.sol)
 - [Range token library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries/RangeBondLongShortPairFinancialProductLibrary.sol)
+- [Success token library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries/SuccessTokenLongShortPairFinancialProductLibrary.sol)
 
 Refer to [github](https://github.com/UMAprotocol/protocol/tree/master/packages/core/networks) for a list of deployed financial product libraries for each network. If your desired financial product library is not already deployed, refer [here](https://github.com/UMAprotocol/launch-emp#deploying-financial-product-libraries) for instructions on deploying and verifying your own financial product library contract.
 

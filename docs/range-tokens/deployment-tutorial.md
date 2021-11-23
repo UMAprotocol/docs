@@ -59,7 +59,9 @@ The payout structure of a range token using the `upperBound` of $12 and `lowerBo
 
 ## Deploying to Kovan
 
-Before running this command, you should customize the parameters to your needs. YOUR_NODE_URL should be filled in with a url for the network that you wish to deploy to. The deployment script has been pre-filled with the parameters for the rtUMA-0821 token with `RangeBond` as the fpl parameter, the `lowerBound` set to $4, and the `upperBound` set to $12.
+Before running this command, you should customize the parameters to your needs. YOUR_NODE_URL should be filled in with a url for the network that you wish to deploy to. The deployment script has been pre-filled with the parameters for the rtUMA-0821 token with `RangeBond` as the fpl parameter, the `lowerBound` set to $4, and the `upperBound` set to $12. 
+
+Please note: the example deployment scripts below use '1661979600' as the `expirationTimestamp` and the naming has been adjusted to use 2022 since a past timestamp is unable to be used with the launch-lsp repo to deploy a new contract.
 
 If using Infura for a Kovan deployment, `YOUR_NODE_URL` will follow this format:
 
@@ -69,7 +71,7 @@ wss://kovan.infura.io/ws/v3/{projectId}
 
 Run the deployment script with your specific parameters.
 ```bash
-node index.js --gasprice 5 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "UMA \$4-12 Range Token Pair August 2021" --expirationTimestamp 1630447200 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "UMA \$4-12 Range Token August 2021" --longSynthSymbol rtUMA-0821 --shortSynthName "UMA \$4-12 Range Short Token August 2021" --shortSynthSymbol rtUMA-0821s --collateralToken 0x489Bf230d4Ab5c2083556E394a28276C22c3B580 --fpl RangeBond --lowerBound 4000000000000000000 --upperBound 12000000000000000000 --prepaidProposerBond 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
+node index.js --gasprice 5 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "UMA \$4-12 Range Token Pair August 2022" --expirationTimestamp 1661979600 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "UMA \$4-12 Range Token August 2022" --longSynthSymbol rtUMA-0822 --shortSynthName "UMA \$4-12 Range Short Token August 2022" --shortSynthSymbol rtUMA-0822s --collateralToken 0x489Bf230d4Ab5c2083556E394a28276C22c3B580 --fpl RangeBond --lowerBound 4000000000000000000 --upperBound 12000000000000000000 --prepaidProposerBond 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
 ```
 ## Deploying to Ethereum Mainnet
 
@@ -83,7 +85,7 @@ wss://mainnet.infura.io/ws/v3/{projectId}
 
 You can now run the deployment script. From within the `launch-lsp` directory, run:
 ```bash
-node index.js --gasprice 80 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "UMA \$4-12 Range Token Pair August 2021" --expirationTimestamp 1630447200 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "UMA \$4-12 Range Token August 2021" --longSynthSymbol rtUMA-0821 --shortSynthName "UMA \$4-12 Range Short Token August 2021" --shortSynthSymbol rtUMA-0821s --collateralToken 0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828 --fpl RangeBond --lowerBound 4000000000000000000 --upperBound 12000000000000000000 --prepaidProposerBond 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
+node index.js --gasprice 80 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "UMA \$4-12 Range Token Pair August 2022" --expirationTimestamp 1661979600 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "UMA \$4-12 Range Token August 2022" --longSynthSymbol rtUMA-0822 --shortSynthName "UMA \$4-12 Range Short Token August 2022" --shortSynthSymbol rtUMA-0822s --collateralToken 0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828 --fpl RangeBond --lowerBound 4000000000000000000 --upperBound 12000000000000000000 --prepaidProposerBond 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
 ```
 Once deployed, the script will list the address of your newly deployed LSP. A successful output will look like this:
 
