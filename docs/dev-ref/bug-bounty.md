@@ -34,8 +34,8 @@ All rewards will be paid in $UMA, and the amount of compensation will vary depen
 |  Severity                | Reward amount in USD | 
 | ----------------------- | ------------------ | 
 | Low                     | $250                  | 
-| Medium  | $1,000 |
-| High | $3,000 |
+| Medium  | $3,000 |
+| High | $10,000 |
 | Critical | 10% of funds at risk |
 
 Severity is calculated according to the [OWASP](https://owasp.org/www-project-risk-assessment-framework/) risk rating model based on Impact and Likelihood.
