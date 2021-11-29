@@ -13,7 +13,7 @@ yarn install --cwd protocol/packages/core --ignore-scripts
 
 echo "generating docs files..."
 cd protocol/
-solidity-docgen --solc-module solc-0.8 -i packages/core/contracts/ -t ../ci/ -o temp-docs/
+solidity-docgen --solc-module solc-0.8.9 -i packages/core/contracts/ -t ../ci/ -o temp-docs/
 
 echo "configuring docs..."
 mv temp-docs/ ../docs/contracts
