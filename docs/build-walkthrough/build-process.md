@@ -6,7 +6,7 @@ sidebar_label: Development Guide
 ### Product Deployment Tutorials
 
 - [Range Tokens](/range-tokens/deployment-tutorial)
-- [Succes Tokens](/success-tokens/deployment-tutorial)
+- [Success Tokens](/success-tokens/deployment-tutorial)
 - [KPI Options](/kpi-options/deployment-tutorial)
 
 ### Technical Explanations
