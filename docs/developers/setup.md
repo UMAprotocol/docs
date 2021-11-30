@@ -61,10 +61,10 @@ Public networks include the Ethereum mainnet and any public testnets, like Rinke
 
 The `--network` parameter is used in Hardhat commands to connect to a specific network. Generally, the network argument is structured as `--network [NETWORK_NAME]`. 
 
-Here's an example of how to tell Hardhat to use the Rinkeby testnet:
+Here's an example of how to tell Hardhat to use the Kovan testnet:
 
 ```bash
-npx hardhat console --network rinkeby
+npx hardhat console --network kovan
 ```
 
 ### Wallet Configuration

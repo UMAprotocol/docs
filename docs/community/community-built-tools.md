@@ -23,10 +23,10 @@ View or interact with any UMA Expiring Multiparty contract.
 Overview of liquidity mining opportunities for UMA contracts.
 - [Spreadsheet](https://docs.google.com/spreadsheets/d/1qU_G86H70aEhQ8_QAPyd7AzDwifimkHgC6xHaWcfnIY/edit?usp=sharing)
 
-## SimpleID Analytics Dashboard
+<!-- ## SimpleID Analytics Dashboard
 
 Analytics dashboard tracking UMA contracts and metrics.
-- [Dashboard](https://monitor.simpleid.xyz/d/x4CYPILGk/uma?orgId=1&refresh=5m)
+- [Dashboard](https://monitor.simpleid.xyz/d/x4CYPILGk/uma?orgId=1&refresh=5m) -->
 
 ## MySynths Options Interface
 

@@ -92,7 +92,6 @@ Please note the following important parameterization guidance.
 - `disputerDisputeRewardPercentage`: The percentage size of the dispute reward paid to the disputer scaled to 18 decimals. Example for 20%: `{ rawValue: '200000000000000000' }`.
 - `disputeBondPercentage`: The percentage size of the [dispute bond](../synthetic-tokens/expiring-synthetic-tokens#liquidation-and-dispute) converted to 18 decimals. Example for 10%: `{ rawValue: '100000000000000000' }`.
 - `sponsorDisputeRewardPercentage`: The percentage size of the [dispute reward](../synthetic-tokens/expiring-synthetic-tokens#liquidation-and-dispute) paid to the position sponsor scaled to 18 decimals. Example for 5%: `{ rawValue: '50000000000000000' }`.
-- `excessTokenBeneficiary`: The address that will receive excess collateral accrued by interest bearing collateral currencies, such as rDAI. This should be set to the UMA contract store by default. `0x41AF40Eb92Bec4dD8DA77103597838b3dBBD3B6f` for Kovan and `0x54f44eA3D2e7aA0ac089c4d8F7C93C27844057BF` for Mainnet.
 - `financialProductLibraryAddress`: The address of a contract that can transform a DVM price received by an EMP. For situations where this does not apply, this should be set to `0x0000000000000000000000000000000000000000`.
 
 ## Deploy an EMP on a Mainnet fork
