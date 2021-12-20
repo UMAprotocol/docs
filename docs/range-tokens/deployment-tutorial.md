@@ -41,8 +41,9 @@ Each LSP contract requires the following parameters to be set at the point of de
 
 ### Optional deployment parameters
 
+- `enableEarlyExpiration:` If set to true, the LSP contract can request to be settled early by calling the optimistic oracle. If not needed, the parameter will be set to false.
 - `customAncillaryData:` Custom ancillary data to be passed along with the price request. If not needed, this flag can be excluded and will be left as a 0-length bytes array. The rtUMA-0821 contract used 'twapLength:3600'.
-- `prepaidProposerReward:` Proposal reward to be forwarded to the created contract to be used to incentivize price proposals.
+- `proposerReward:` Proposal reward to be forwarded to the created contract to be used to incentivize price proposals.
 - `optimisticOracleLivenessTime:` Custom liveness window for disputing optimistic oracle price proposals in seconds. A longer liveness time provides more security, while a shorter one provides faster settlement. By default, this is set to 7200 seconds.
 - `optimisticOracleProposerBond:` Additional bond a proposer must post with the optimistic oracle. A higher bond makes incorrect disputes and proposals more costly.
 
@@ -71,7 +72,7 @@ wss://kovan.infura.io/ws/v3/{projectId}
 
 Run the deployment script with your specific parameters.
 ```bash
-node index.js --gasprice 5 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "UMA \$4-12 Range Token Pair August 2022" --expirationTimestamp 1661979600 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "UMA \$4-12 Range Token August 2022" --longSynthSymbol rtUMA-0822 --shortSynthName "UMA \$4-12 Range Short Token August 2022" --shortSynthSymbol rtUMA-0822s --collateralToken 0x489Bf230d4Ab5c2083556E394a28276C22c3B580 --fpl RangeBond --lowerBound 4000000000000000000 --upperBound 12000000000000000000 --prepaidProposerBond 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
+node index.js --gasprice 5 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "UMA \$4-12 Range Token Pair August 2022" --expirationTimestamp 1661979600 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "UMA \$4-12 Range Token August 2022" --longSynthSymbol rtUMA-0822 --shortSynthName "UMA \$4-12 Range Short Token August 2022" --shortSynthSymbol rtUMA-0822s --collateralToken 0x489Bf230d4Ab5c2083556E394a28276C22c3B580 --fpl RangeBond --lowerBound 4000000000000000000 --upperBound 12000000000000000000 --proposerReward 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
 ```
 ## Deploying to Ethereum Mainnet
 
@@ -85,7 +86,7 @@ wss://mainnet.infura.io/ws/v3/{projectId}
 
 You can now run the deployment script. From within the `launch-lsp` directory, run:
 ```bash
-node index.js --gasprice 80 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "UMA \$4-12 Range Token Pair August 2022" --expirationTimestamp 1661979600 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "UMA \$4-12 Range Token August 2022" --longSynthSymbol rtUMA-0822 --shortSynthName "UMA \$4-12 Range Short Token August 2022" --shortSynthSymbol rtUMA-0822s --collateralToken 0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828 --fpl RangeBond --lowerBound 4000000000000000000 --upperBound 12000000000000000000 --prepaidProposerBond 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
+node index.js --gasprice 80 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "UMA \$4-12 Range Token Pair August 2022" --expirationTimestamp 1661979600 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "UMA \$4-12 Range Token August 2022" --longSynthSymbol rtUMA-0822 --shortSynthName "UMA \$4-12 Range Short Token August 2022" --shortSynthSymbol rtUMA-0822s --collateralToken 0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828 --fpl RangeBond --lowerBound 4000000000000000000 --upperBound 12000000000000000000 --proposerReward 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
 ```
 Once deployed, the script will list the address of your newly deployed LSP. A successful output will look like this:
 

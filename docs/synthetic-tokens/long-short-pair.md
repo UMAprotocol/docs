@@ -31,13 +31,14 @@ Refer to [github](https://github.com/UMAprotocol/protocol/tree/master/packages/c
 
 ## LSP Interaction
 
-The LSP is a simple contract and only has four ways to interact with the contract.
+The LSP is a simple contract and only has five ways to interact with the contract.
 
 The method are:
 - `create`
 - `redeem`
 - `expire`
 - `settle`
+- `requestEarlyExpiration`
 
 ### `create`
 
@@ -61,7 +62,7 @@ Regardless of the value of the long and short tokens when redeemed, the summed v
 
 When the current timestamp is later than the `expirationTimestamp` parameter, token holders are unable to settle their tokens for collateral until a price has been received by the Optimistic Oracle. The `settle` function will revert until the `expire` function is called once by anyone.
 
-The `expire` function does not take any parameters and requests a price from the Optimistic Oracle for the LSP contract's `priceIdentifier`, `expirationTimestamp`, `customAncillaryData`, `collateralToken`, and `prepaidProposerReward`.
+The `expire` function does not take any parameters and requests a price from the Optimistic Oracle for the LSP contract's `priceIdentifier`, `expirationTimestamp`, `customAncillaryData`, `collateralToken`, and `proposerReward`.
 
 ![](/docs/lsp-tokens/lsp_expire.png)
 
@@ -72,6 +73,10 @@ Once a price request exists, Proposers respond by referencing off-chain price fe
 Disputers can refute a price submitted by a Proposer within the proposal liveness period by referencing their own off-chain price feeds. Similar to proposal bonds, the proposal liveness period can be customized for each LSP contract using the `optimisticOracleLivenessTime` parameter on deployment. The liveness period determines the amount of time a proposal can be disputed before the Requestor receives the price of the asset. If Disputers do not refute the price submitted by the Proposer within the proposal liveness period, the price is treated as correct and can now be read from the Optimistic Oracle. If a proposal is disputed, the price will be escalated to UMA’s Decentralized Verification Mechanism (DVM) and resolved after a 48-96 hour voting period.
 
 ![](/docs/lsp-tokens/lsp_settle.png)
+
+### `requestEarlyExpiration`
+
+The `enableEarlyExpiration` parameter can be set to `true` on contract deployment which enables the LSP contract to request to be settled early by calling the Optimistic Oracle. When an LSP requests an early expiration, a price request is initiated to the optimistic oracle at the provided timestamp with a modified version of the ancillary data that includes the key `earlyExpiration:1`. This signals to the Optimistic Oracle that this is an early expiration request, rather than a standard settlement.
 
 ## LSP State
 
