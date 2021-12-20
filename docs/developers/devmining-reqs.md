@@ -27,7 +27,7 @@ If your contract's price identifier is not supported by the existing price feeds
 To calculate the correct number of rewards, it must be possible to determine the value of each synthetic token in a common base currency. Each synthetic token's value is converted to USD to determine the total value minted (TVM) by each contract. These TVMs are then used to determine how rewards should be allocated.
 
 To perform this process, each synthetic token must have an available price feed in USD. Before receiving rewards, you must ensure that one of the following is available.
-- Your synthetic token value in USD on CoinGecko. [Here](https://www.coingecko.com/en/coins/uusdrbtc-synthetic-token-expiring-1-october-2020) is an example for uUSDrBTC.
+- Your synthetic token value in USD on CoinGecko.
 - Your synthetic token's price identifier and collateral currency on [CryptoWatch](https://cryptowat.ch/). Here is an example for the [ETH/BTC](https://cryptowat.ch/charts/FTX:ETH-BTC) price identifier and for the [BTC/USD](https://cryptowat.ch/charts/BITFINEX:BTC-USD) collateral price. This method is usually available when your price identifier is composed of a widely used cryptopair.
 
 ### Send deployment information to the UMA core team

@@ -16,7 +16,7 @@ sidebar_label: Whitelisting on Coingecko and Balancer
 
 ## Whitelisting on Balancer 
 
-1. Firstly, make sure your token is listed on [Coingecko](https://www.coingecko.com/en), then get the API price feed for your token.
+1. Firstly, make sure your token is listed on Coingecko, then get the API price feed for your token.
 
 2. Submit the following details to Balancer's [#token-requests](https://discord.gg/jxkDA9YCzm) discord channel. 
  - API Price Feed (coingecko)
