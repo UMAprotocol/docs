@@ -10,12 +10,12 @@ The UMA Protocol also provides various smart contract templates that are automat
 ## Developers
 
 If you are a developer interested in building on the UMA Protocol, please refer to these tutorials and resources to get started.
-- [Launching a KPI Option](/kpi-options/summary)
-- [Launching a Success Token](/success-tokens/summary)
-- [Integrating with the Optimistic Oracle](/developers/optimistic-oracle-integration)
-- [Proposing an UMA Improvement Proposal (UMIP)](/adding-price-id)
-- [Understanding the Long Short Pair contract](/long-short-pair)
-- [Understanding the Optimistic Oracle interface](/oracle/optimistic-oracle-interface)
+- [Launching a KPI Option](kpi-options/summary)
+- [Launching a Success Token](success-tokens/summary)
+- [Integrating with the Optimistic Oracle](developers/optimistic-oracle-integration)
+- [Proposing an UMA Improvement Proposal (UMIP)](uma-tokenholders/adding-price-id)
+- [Understanding the Long Short Pair contract](synthetic-tokens/long-short-pair)
+- [Understanding the Optimistic Oracle interface](oracle/optimistic-oracle-interface)
 
 You can find additional reference materials, including a list of UMA's testnet and mainnet contracts [here](dev-ref/addresses.md).
 
