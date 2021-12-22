@@ -36,15 +36,15 @@ ExpiryPercentLong is used to determine the redemption rate between long and shor
 
 ### Range Tokens
 
-Range tokens enable a DAO or nascent project to use its native token as collateral to borrow funds. At maturity, if the debt is not paid, the range token holder is instead compensated with an equivalent amount of the collateral (the native token) using the settlement price of the native token to determine the number of tokens. Go [here](/range-tokens/summary) to learn more about range tokens and how to deploy your own contract.
+Range tokens enable a DAO to use its native token as collateral to borrow funds. At maturity, if the debt is not paid, the range token holder is instead compensated with an amount of the collateral (the native token) using the settlement price of the native token to determine the number of tokens. This is similar to a tokenized convertible debt structure. Go [here](/range-tokens/summary) to learn more about range tokens and how to deploy your own contract.
 
 ### Success Tokens
 
-Success tokens offer an alternative way for DAOs to diversify their treasury and sell tokens to investors in an incentive-aligned way. Success tokens are just two financial products wrapped into one token: a set amount of a project token which is combined with a covered call option on that token backed by a set amount of the same token. Go [here](/success-tokens/summary) to learn more about range tokens and how to deploy your own contract.
+Success tokens offer an alternative way for DAOs to diversify their treasury and sell tokens to investors in an incentive-aligned way. Success tokens are two financial products wrapped into one token: a set amount of a project token which is combined with a covered call option on that token backed by a set amount of the same token. Go [here](/success-tokens/summary) to learn more about success tokens and how to create your own.
 
 ### KPI Options
 
-Key Performance Indicator (KPI) Options are synthetic tokens that will pay out more rewards if a project’s KPI reaches predetermined targets before a given expiry date. Every KPI Option holder has an incentive to improve that KPI because their option will be worth more. This is intended to align individual token holder interests with the collective interests of the protocol. Go [here](/kpi-options/summary) to learn more about range tokens and how to deploy your own contract.
+Key Performance Indicator (KPI) Options are synthetic tokens that will pay out more rewards if a project’s KPI reaches predetermined targets before a given expiry date. Every KPI Option holder has an incentive to improve that KPI because their option will be worth more. This is intended to align individual token holder interests with the collective interests of the protocol. Go [here](/kpi-options/summary) to learn more about KPI options and how to create your own.
 
 ## Parameters of a synthetic token smart contract:
 

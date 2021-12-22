@@ -31,4 +31,4 @@ The developer links below are frequently used resources during the UMA developme
 
 ### UMA Team Support
 
-To receive support in your build process, please make sure to reach out in the UMA Discord.
+To receive support in your build process, please make sure to reach out in the [UMA Discord](https://discord.com/invite/jsb9XQJ).

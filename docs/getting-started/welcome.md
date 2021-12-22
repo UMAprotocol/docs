@@ -9,7 +9,13 @@ UMA's goal is to enable anyone to attain or transfer any form of risk seamlessly
 
 ## Developers
 
-If you are a developer interested in building on UMA Protocol, view this [explainer](synthetic-tokens/long-short-pair.md) to understand how UMA's Long Short Pair (LSP) contract works. Also review the [development guide](build-walkthrough/build-process) to learn how to launch your own financial contract on UMA. 
+If you are a developer interested in building on the UMA Protocol, please refer to these tutorials and resources to get started.
+- [Launching a KPI Option](/kpi-options/summary)
+- [Launching a Success Token](/success-tokens/summary)
+- [Integrating with the Optimistic Oracle](/developers/optimistic-oracle-integration)
+- [Proposing an UMA Improvement Proposal (UMIP)](/adding-price-id)
+- [Understanding the Long Short Pair contract](/long-short-pair)
+- [Understanding the Optimistic Oracle interface](/oracle/optimistic-oracle-interface)
 
 You can find additional reference materials, including a list of UMA's testnet and mainnet contracts [here](dev-ref/addresses.md).
 
