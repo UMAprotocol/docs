@@ -76,7 +76,11 @@ Disputers can refute a price submitted by a Proposer within the proposal livenes
 
 ### `requestEarlyExpiration`
 
-The `enableEarlyExpiration` parameter can be set to `true` on contract deployment which enables the LSP contract to request to be settled early by calling the Optimistic Oracle. When an LSP requests an early expiration, a price request is initiated to the optimistic oracle at the provided timestamp with a modified version of the ancillary data that includes the key `earlyExpiration:1`. This signals to the Optimistic Oracle that this is an early expiration request, rather than a standard settlement.
+The `enableEarlyExpiration` parameter is an optional deployment parameter that enables an LSP contract to be settled before its `expirationTimestamp`. If the `enableEarlyExpiration` parameter is set to `true` on deployment, anyone can call `requestEarlyExpiration` to request a settlement value from the Optimistic Oracle for the LSP contract to be settled early. 
+
+When an LSP requests an early expiration, a price request is initiated to the Optimistic Oracle at the provided timestamp with a modified version of the ancillary data that includes the key `earlyExpiration:1`. This signals to the Optimistic Oracle that this is an early expiration request, rather than a standard settlement.
+
+Proposers can respond to the request with an actual settlement value, or they can return `type(int256).min` (-57896044618658097711785492504343953926634992332820282019728792003956564819968) to indicate that the contract is not settleable at this time. If the latter is returned, the contract does not settle which enables the Optimistic Oracle (and DVM voters in the case of a dispute) to choose to keep the contract running, thereby denying the early settlement request.
 
 ## LSP State
 

@@ -3,9 +3,9 @@ title: Welcome to UMA
 sidebar_label: Welcome to UMA
 slug: /
 ---
-UMA stands for Universal Market Access. UMA is driven by a shared belief that financial markets should be free, open, and fair. The economic freedom created by a free and open market enables everyone equal opportunity to pursue prosperity and build financial independence.  
-
-UMA's goal is to enable anyone to attain or transfer any form of risk seamlessly and securely through UMA protocol to empower everyone to participate in a universally accessible financial system.
+UMA is an optimistic oracle that uses economic guarantees to secure markets. Unlike mechanically restrictive price feed oracles, an optimistic oracle is able to serve any arbitrary data on-chain. UMA’s flexible oracle serves data for uses including a cross-chain bridge, insurance, custom derivatives and prediction markets among other things.
+ 
+The UMA Protocol also provides various smart contract templates that are automatically secured by its optimistic oracle. Among these are contract templates and integrations for creating synthetic tokens, predictions markets, "KPI options" and structured financial products.
 
 ## Developers
 

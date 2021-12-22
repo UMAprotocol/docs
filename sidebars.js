@@ -36,11 +36,7 @@ module.exports = {
     ],
     Developers: [
       "build-walkthrough/build-process",
-      {
-        type: "category",
-        label: "Quick Start",
-        items: ["developers/setup"],
-      },
+      "developers/setup",
       {
         type: "category",
         label: "ExpiringMultiParty (EMP)",
@@ -80,7 +76,7 @@ module.exports = {
           type: "link",
           label: "Contract Documentation",
           href:
-            "https://docs-dot-uma-protocol.appspot.com/uma/index.html",
+            "https://docs-git-doc-updates-uma.vercel.app/contracts/Contracts",
         },],
       },
 

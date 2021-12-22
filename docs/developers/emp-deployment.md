@@ -163,7 +163,7 @@ Simulation successful. Expected Address: 0x44978157afE92c926619EBB54599bbc483eBe
 
 After following this tutorial, you will have successfully deployed an EMP contract! You will need to navigate to your contract address on Etherscan and mint an initial position to set the [GCR](/synthetic-tokens/glossary#global-collateralization-ratio-gcr). This can be done by calling the `create(collateralAmount, numTokens)` function. [Here](/build-walkthrough/minting-etherscan) is a full walkthrough of minting tokens via Etherscan.
 
-View this [documentation](https://docs-dot-uma-protocol.appspot.com/uma/contracts/ExpiringMultiParty.html) for a full explanation of available EMP functionality. 
+View this [documentation](https://docs-git-doc-updates-uma.vercel.app/contracts/financial-templates/expiring-multiparty/ExpiringMultiParty) for a full explanation of available EMP functionality. 
 
 <!-- 
 To DO: Provide instructions on getting a node url from infura -->

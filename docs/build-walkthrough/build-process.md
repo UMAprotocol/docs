@@ -3,7 +3,7 @@ title: Development Guide
 sidebar_label: Development Guide
 ---
 
-The UMA development guide aims to assist developers during the build process through tutorials, technical explanations, and frequently used resources.
+Welcome to the UMA Development guide. This page provides links for product build tutorials, technical explanations and frequently used resources.
 
 ### Product Deployment Tutorials
 
@@ -22,6 +22,7 @@ The technical resources below go into detail on UMA's LSP contract, Optimistic O
 ### Developer Links
 
 The developer links below are frequently used resources during the UMA development process:
+- [UMA Protocol Monorepo](https://github.com/UMAprotocol/protocol)
 - [Launch-lsp Github Repository](https://github.com/UMAprotocol/launch-lsp)
 - [UMA Improvement Proposals (UMIPs) Github Repository](https://github.com/UMAprotocol/UMIPs)
 - [Approved Price Identifiers](/uma-tokenholders/approved-price-identifiers)
