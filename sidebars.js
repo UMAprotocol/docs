@@ -4,11 +4,6 @@ module.exports = {
       "getting-started/welcome",
       {
         type: "category",
-        label: "Overview",
-        items: ["getting-started/how-uma-works", "getting-started/synthetic-tokens", "getting-started/oracle"],
-      },
-      {
-        type: "category",
         label: "Range Tokens",
         items: ["range-tokens/summary", "range-tokens/deployment-tutorial", "range-tokens/usage-tutorial",  "range-tokens/references"],
       },
@@ -30,7 +25,7 @@ module.exports = {
       {
         type: "category",
         label: "Oracle Service",
-        items: ["oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface", "oracle/optimistic-oracle-interface", "oracle/known-issues"],
+        items: ["getting-started/oracle", "oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface", "oracle/optimistic-oracle-interface", "oracle/known-issues"],
       },
       "synthetic-tokens/glossary"
     ],
