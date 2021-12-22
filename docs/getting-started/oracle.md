@@ -1,6 +1,6 @@
 ---
-title: UMA's Oracle System
-sidebar_label: Oracle System
+title: Introduction
+sidebar_label: Introduction
 ---
 
 UMA's oracle system is comprised of two core components: 
