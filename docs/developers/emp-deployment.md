@@ -32,7 +32,7 @@ You should also take care to correctly parameterize your contract. As an example
 :::
 
 ## Is your desired price identifier and collateral type supported?
-Before deploying a contract, you should verify that your desired price identifier and collateral currency is already approved on the network you are trying to deploy to.
+Before deploying a contract, you should verify that your desired price identifier and collateral currency are already approved on the network you are trying to deploy to.
 
 View approved price identifiers and currencies here:
 - [Approved mainnet collateral currencies](/uma-tokenholders/approved-collateral-currencies)
@@ -57,7 +57,7 @@ git clone https://github.com/UMAprotocol/launch-emp.git
 
 ## Install System Dependencies and Packages
 
-To use this repository, you will need to install [Node.js v12](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/). We recommend using `nvm` to manage node versions.
+To use this repository, you will need to install [Node.js v14](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/). We recommend using `nvm` to manage node versions.
 
 Note: these additional dependencies are required -- you may or may not have them on your system already:
 - `libudev`
@@ -79,16 +79,20 @@ yarn
 
 To customize the type of EMP that you will deploy, you will need to modify your local version of the `launch-emp/index.js` script. Using your favorite text editor, navigate to the `empParams` line within `index.js` and edit the parameters to meet the design of your contract. 
 
-For an in depth explanation of all the EMP parameters, view the EMP Parameterization [instructions](/build-walkthrough/emp-parameters).
-
 Please note the following important parameterization guidance.
-- `expirationTimestamp` should be the exact Unix timestamp that your contract should expire at. It is recommended that you set this to 10:00 pm UTC on your desired expiry day. 
-- `collateralAddress` lists the token address of an approved collateral currency on the network you are trying to deploy to. As an example, deploying a contract collateralized by WETH to Kovan should use the Kovan WETH address `0xd0a1e359811322d97991e03f863a0c30c2cf029c`.
-- `priceFeedIdentifier` matches the exact name of the approved price identifier that you would like to use.
-- `collateralRequirement` should always be at or higher than `1.25`.
-- `minSponsorTokens` should be targeted to approximately $100 of value at your synthetic token's expected price. If your synthetic token is expected to be worth $1, `minSponsorTokens` should be `{ rawValue: toWei("100") }`.
-- `liquidationLiveness` and `withdrawalLiveness` should almost always be at least `7200` seconds.
-- `excessTokenBeneficiary` should be set to the UMA contract store by default. `0x41AF40Eb92Bec4dD8DA77103597838b3dBBD3B6f` for Kovan and `0x54f44eA3D2e7aA0ac089c4d8F7C93C27844057BF` for Mainnet.
+- `expirationTimestamp`: This should be the exact Unix timestamp that your contract should expire at. It is recommended that you set this to 10:00 pm UTC on your desired expiry day. [Here](https://www.unixtimestamp.com/) is a helpful tool for finding a timestamp. 
+- `collateralAddress`: Lists the token address of an approved collateral currency on the network you are trying to deploy to. As an example, deploying a contract collateralized by WETH to Kovan should use the Kovan WETH address `0xd0a1e359811322d97991e03f863a0c30c2cf029c`.
+- `priceFeedIdentifier`: Matches the exact name of the approved price identifier converted to bytes32 format. Example for USDETH: `0x555344455448`.
+- `syntheticName`: The plaintext synthetic token name. Example: `Synthetic Test USDETH Dec 2024`.
+- `collateralRequirement`: The [collateralization requirement ratio](https://docs.umaproject.org/synthetic-tokens/glossary#collateralization-requirement) scaled to 18 decimals. Example for a 1.5 ratio: `{ rawValue: '1500000000000000000' }`. Please note that it is potentially dangerous to set this requirement too low. Only in rare cases for stable financial products should this ever be set below 1.2, and never below 1.05.
+- `collateralRequirement`: Should always be at or higher than `1.25`.
+- `minSponsorTokens`: Should be targeted to approximately $100 of value at your synthetic token's expected price. If your synthetic token is expected to be worth $1, `minSponsorTokens` should be `{ rawValue: toWei("100") }`.
+- `withdrawalLiveness`: The length of the [withdrawal liveness period](https://docs.umaproject.org/synthetic-tokens/glossary#withdrawal-liveness-period) in seconds. Example for 2 hours: `7200`.
+- `liquidationLiveness`: The length of the [liquidation liveness period](https://docs.umaproject.org/synthetic-tokens/glossary#liquidation-liveness-period) in seconds. Example for 2 hours: `7200`.
+- `disputerDisputeRewardPercentage`: The percentage size of the dispute reward paid to the disputer scaled to 18 decimals. Example for 20%: `{ rawValue: '200000000000000000' }`.
+- `disputeBondPercentage`: The percentage size of the [dispute bond](../synthetic-tokens/expiring-synthetic-tokens#liquidation-and-dispute) converted to 18 decimals. Example for 10%: `{ rawValue: '100000000000000000' }`.
+- `sponsorDisputeRewardPercentage`: The percentage size of the [dispute reward](../synthetic-tokens/expiring-synthetic-tokens#liquidation-and-dispute) paid to the position sponsor scaled to 18 decimals. Example for 5%: `{ rawValue: '50000000000000000' }`.
+- `financialProductLibraryAddress`: The address of a contract that can transform a DVM price received by an EMP. For situations where this does not apply, this should be set to `0x0000000000000000000000000000000000000000`.
 
 ## Deploy an EMP on a Mainnet fork
 
@@ -159,7 +163,7 @@ Simulation successful. Expected Address: 0x44978157afE92c926619EBB54599bbc483eBe
 
 After following this tutorial, you will have successfully deployed an EMP contract! You will need to navigate to your contract address on Etherscan and mint an initial position to set the [GCR](/synthetic-tokens/glossary#global-collateralization-ratio-gcr). This can be done by calling the `create(collateralAmount, numTokens)` function. [Here](/build-walkthrough/minting-etherscan) is a full walkthrough of minting tokens via Etherscan.
 
-View this [documentation](https://docs-dot-uma-protocol.appspot.com/uma/contracts/ExpiringMultiParty.html) for a full explanation of available EMP functionality. 
+View this [documentation](https://docs-git-doc-updates-uma.vercel.app/contracts/financial-templates/expiring-multiparty/ExpiringMultiParty) for a full explanation of available EMP functionality. 
 
 <!-- 
 To DO: Provide instructions on getting a node url from infura -->

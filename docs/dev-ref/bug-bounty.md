@@ -21,7 +21,9 @@ Updates to the Expiring Multiparty contracts and flash loan mitigations for the 
 
 The [Perpetual Multiparty](https://github.com/UMAprotocol/protocol/tree/1631ef7ad29aaeba756ef3b9a01c667e1343df85/packages/core/contracts/financial-templates/perpetual-multiparty) and [Optimistic Oracle](https://github.com/UMAprotocol/protocol/tree/1631ef7ad29aaeba756ef3b9a01c667e1343df85/packages/core/contracts/oracle) have been audited by OpenZeppelin. The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-4/).
 
-Additionally, OpenZeppelin audits incremental upgrades to UMA's contracts on a continuous basis. The continuous audit report can be found [here](https://blog.openzeppelin.com/uma-continuous-audit/).  
+Additionally, OpenZeppelin audits incremental upgrades to UMA's contracts on a continuous basis. The continuous audit report can be found [here](https://blog.openzeppelin.com/uma-continuous-audit/).
+
+
 
 ## Rewards
 
@@ -32,9 +34,9 @@ All rewards will be paid in $UMA, and the amount of compensation will vary depen
 |  Severity                | Reward amount in USD | 
 | ----------------------- | ------------------ | 
 | Low                     | $250                  | 
-| Medium  | $1,000 |
-| High | $3,000 |
-| Critical | $7,500 |
+| Medium  | $3,000 |
+| High | $10,000 |
+| Critical | 10% of funds at risk |
 
 Severity is calculated according to the [OWASP](https://owasp.org/www-project-risk-assessment-framework/) risk rating model based on Impact and Likelihood.
 
@@ -42,24 +44,25 @@ Severity is calculated according to the [OWASP](https://owasp.org/www-project-ri
 
 ## Scope
 
-The scope of our bug bounty program includes core smart contracts related to release v1.0 of the DVM and financial templates.
+The scope of our bug bounty program includes any and all of UMA's production smart contracts.
 It does not include known issues with the intended behavior.
-Our [documentation site](https://docs.umaproject.org/uma/index.html) has an extensive overview of the intended behavior of the system.
+Our [documentation site](https://docs.umaproject.org/) has an extensive overview of the intended behavior of the system.
 
 ### In scope:
 
-- DVM contracts [link](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/oracle/implementation)
-- Multi-sponsor token contracts [link](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/financial-templates)
+- All UMA smart contracts that are deployed to mainnet: [link](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/).
+  - Note: this does not include smart contracts that have not been deployed in a production capacity (test deployments for instance).
+- Bot code to support actively deployed smart contracts: [link](https://github.com/UMAprotocol/protocol/tree/master/packages/).
 
 ### Examples of what’s in scope:
 
 - Being able to steal funds
 - Being able to freeze funds or render them inaccessible by their owners
-- Being able to perform replay attacks on the same chain
 
 ### Out of scope:
 
 - Issues that have already been submitted by another user or are already known to the UMA team
+  - Note: this includes bugs known to the UMA team, but have not been disclosed due to active mitigation efforts.
 - Vulnerabilities in contracts built on top of the protocol by third-party developers (such as smart contract wallets)
 - Vulnerabilities that require ownership of an admin key
 - Any files, modules or libraries other than the ones mentioned above
@@ -71,7 +74,7 @@ Our [documentation site](https://docs.umaproject.org/uma/index.html) has an exte
 
 Please email your submissions to bugs@umaproject.org.
 
-The submission must include clear and concise steps to reproduce the discovered vulnerability in either written or video format.
+The submission must include clear and concise steps to reproduce the discovered vulnerability.
 
 ## Terms & Conditions
 
@@ -82,7 +85,7 @@ We ask that you:
 - Report any vulnerability you’ve discovered promptly.
 - Avoid violating the privacy of others, disrupting our systems, destroying data, or harming user experience.
 - Use only bugs@umaproject.org to discuss vulnerabilities with us.
-- Keep the details of any discovered vulnerabilities confidential until they are publicly announced by the UMA Foundation on the [documentation website](https://docs.umaproject.org/uma/index.html).
+- Keep the details of any discovered vulnerabilities confidential until they are publicly announced by Risk Labs on the [documentation website](https://docs.umaproject.org/).
 - Perform testing only on in-scope systems, and respect systems and activities which are out-of-scope.
 - Not engage in blackmail, extortion, or any other unlawful conduct.
 - Not be a current or former UMA Foundation employee, vendor, contractor, or the employee of an UMA vendor or contractor.

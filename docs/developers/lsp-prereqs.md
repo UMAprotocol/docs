@@ -39,8 +39,7 @@ Before deploying a contract, you should verify that your desired price identifie
 View approved price identifiers and currencies here:
 - [Approved mainnet collateral currencies](/uma-tokenholders/approved-collateral-currencies)
 - [Approved mainnet price identifiers](/uma-tokenholders/approved-price-identifiers)
-- [Approved Kovan collateral currencies subgraph query](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Whitelisted%20Collateral%20Currencies)
-- [Approved Kovan price identifiers subgraph query](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers)
+- [Approved Kovan collateral currencies subgraph query](https://thegraph.com/hosted-service/subgraph/umaprotocol/kovan-contracts?query=Whitelisted%20Collateral)
 
 To add a new price identifier or collateral currency to mainnet, please propose one to UMA voters by following the instructions detailed [here](/uma-tokenholders/adding-price-id).
 

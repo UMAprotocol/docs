@@ -12,6 +12,7 @@ Some ideas for contracts that can be made with the LSP include:
 - Linear payouts - speculating on the ratio of DEX to CEX monthly volume.
 - Covered call options.
 - [Range Tokens for treasury management](https://medium.com/uma-project/treasury-diversification-with-range-tokens-145d4b12614e).
+- [Success Tokens for treasury management](https://medium.com/uma-project/success-tokens-an-incentive-aligned-way-for-vc-funds-to-invest-in-daos-1e8b8244f2f4).
 
 To deploy an LSP contract, use the [launch-lsp repo](https://github.com/UMAprotocol/launch-lsp) for guidance through the deployment process and customizing LSP deployment parameters.
 
@@ -24,18 +25,20 @@ The financial product library will be used to transform the value returned by th
 - [Covered call options library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries/CoveredCallLongShortPairFinancialProductLibrary.sol)
 - [Linear payout library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries/LinearLongShortPairFinancialProductLibrary.sol)
 - [Range token library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries/RangeBondLongShortPairFinancialProductLibrary.sol)
+- [Success token library](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries/SuccessTokenLongShortPairFinancialProductLibrary.sol)
 
 Refer to [github](https://github.com/UMAprotocol/protocol/tree/master/packages/core/networks) for a list of deployed financial product libraries for each network. If your desired financial product library is not already deployed, refer [here](https://github.com/UMAprotocol/launch-emp#deploying-financial-product-libraries) for instructions on deploying and verifying your own financial product library contract.
 
 ## LSP Interaction
 
-The LSP is a simple contract and only has four ways to interact with the contract.
+The LSP is a simple contract and only has five ways to interact with the contract.
 
 The method are:
 - `create`
 - `redeem`
 - `expire`
 - `settle`
+- `requestEarlyExpiration`
 
 ### `create`
 
@@ -59,7 +62,7 @@ Regardless of the value of the long and short tokens when redeemed, the summed v
 
 When the current timestamp is later than the `expirationTimestamp` parameter, token holders are unable to settle their tokens for collateral until a price has been received by the Optimistic Oracle. The `settle` function will revert until the `expire` function is called once by anyone.
 
-The `expire` function does not take any parameters and requests a price from the Optimistic Oracle for the LSP contract's `priceIdentifier`, `expirationTimestamp`, `customAncillaryData`, `collateralToken`, and `prepaidProposerReward`.
+The `expire` function does not take any parameters and requests a price from the Optimistic Oracle for the LSP contract's `priceIdentifier`, `expirationTimestamp`, `customAncillaryData`, `collateralToken`, and `proposerReward`.
 
 ![](/docs/lsp-tokens/lsp_expire.png)
 
@@ -70,6 +73,14 @@ Once a price request exists, Proposers respond by referencing off-chain price fe
 Disputers can refute a price submitted by a Proposer within the proposal liveness period by referencing their own off-chain price feeds. Similar to proposal bonds, the proposal liveness period can be customized for each LSP contract using the `optimisticOracleLivenessTime` parameter on deployment. The liveness period determines the amount of time a proposal can be disputed before the Requestor receives the price of the asset. If Disputers do not refute the price submitted by the Proposer within the proposal liveness period, the price is treated as correct and can now be read from the Optimistic Oracle. If a proposal is disputed, the price will be escalated to UMA’s Decentralized Verification Mechanism (DVM) and resolved after a 48-96 hour voting period.
 
 ![](/docs/lsp-tokens/lsp_settle.png)
+
+### `requestEarlyExpiration`
+
+The `enableEarlyExpiration` parameter is an optional deployment parameter that enables an LSP contract to be settled before its `expirationTimestamp`. If the `enableEarlyExpiration` parameter is set to `true` on deployment, anyone can call `requestEarlyExpiration` to request a settlement value from the Optimistic Oracle for the LSP contract to be settled early. 
+
+When an LSP requests an early expiration, a price request is initiated to the Optimistic Oracle at the provided timestamp with a modified version of the ancillary data that includes the key `earlyExpiration:1`. This signals to the Optimistic Oracle that this is an early expiration request, rather than a standard settlement.
+
+Proposers can respond to the request with an actual settlement value, or they can return `type(int256).min` (-57896044618658097711785492504343953926634992332820282019728792003956564819968) to indicate that the contract is not settleable at this time. If the latter is returned, the contract does not settle which enables the Optimistic Oracle (and DVM voters in the case of a dispute) to choose to keep the contract running, thereby denying the early settlement request.
 
 ## LSP State
 

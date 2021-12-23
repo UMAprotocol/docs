@@ -21,7 +21,7 @@ The price requestor is not currently required to pay fees to the DVM. The reques
 
 The price proposer posts a bond along with their price, which will be refunded if the price is not disputed, or if a dispute is resolved in the proposer's favor. Otherwise, this bond is used to pay the final fee to the DVM and pay a reward to a successful disputer.
 
-In the demo, the requestor does not require an additional bond from the price proposer, so the total bond posted is equal to the [wETH final fee](uma-tokenholders/approved-collateral-currencies.md), currently 0.2 wETH. See the `proposePriceFor` function in the `OptimisticOracle` [contract](https://docs-dot-uma-protocol.appspot.com/uma/contracts/OptimisticOracle.html) for implementation details.
+In the demo, the requestor does not require an additional bond from the price proposer, so the total bond posted is equal to the [wETH final fee](uma-tokenholders/approved-collateral-currencies.md), currently 0.2 wETH. See the `proposePriceFor` function in the `OptimisticOracle` [contract](https://docs-git-doc-updates-uma.vercel.app/contracts/oracle/implementation/OptimisticOracle) for implementation details.
 
 ## Running the Demo
 
@@ -103,7 +103,7 @@ This example is intended to serve as a basic technical tutorial for how to integ
 
 The Optimistic Oracle is a powerful tool for smart contracts that need quick and secure resolution of any kind of off-chain data, and this tutorial is only scratching the surface.
 
-To learn more about the Optimistic Oracle, see the [full contract documentation](https://docs-dot-uma-protocol.appspot.com/uma/contracts/OptimisticOracle.html).
+To learn more about the Optimistic Oracle, see the [full contract documentation](https://docs-git-doc-updates-uma.vercel.app/contracts/Contracts).
 
 If you'd like to test your contract on Kovan or Ethereum mainnet, you can find deployed addresses [here](https://docs.umaproject.org/dev-ref/addresses).
 

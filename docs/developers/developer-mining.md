@@ -41,10 +41,6 @@ Whitelisted developer mining participants include:
 - [Tweet Storm](https://twitter.com/UMAprotocol/status/1323611059328962560)
 - [Tutorial for Launching a Product on UMA](/build-walkthrough/build-process)
 
-## Next Steps
-
-- [Review](/developers/devmining-reqs) the technical requirements for program onboarding.
-- [Explore](/developers/designing-incentives) how you can design your own incentives program with developer mining rewards.
 
 <!--
 To do: 
