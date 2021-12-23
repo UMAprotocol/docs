@@ -5,14 +5,6 @@ module.exports = [
   },
   // getting started
   {
-    to: "/getting-started/overview",
-    from: ["/uma/getting_started/architecture_overview.html"],
-  },
-  {
-    to: "/getting-started/synthetic-tokens",
-    from: ["/uma/getting_started/priceless_defi_contracts.html"],
-  },
-  {
     to: "/getting-started/oracle",
     from: ["/uma/getting_started/uma_oracle_design.html"],
   },

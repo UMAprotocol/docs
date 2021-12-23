@@ -3,24 +3,33 @@ title: Development Guide
 sidebar_label: Development Guide
 ---
 
-To immediately start building on the UMA protocol, first check out the [Quick Start guide](/developers/setup) for setting up your environment and deploying your first local [synthetic token](/build-walkthrough/mint-locally).
+Welcome to the UMA Development guide. This page provides links for product build tutorials, technical explanations and frequently used resources.
 
+### Product Deployment Tutorials
 
-The tutorials in this section are written to use the ExpiringMultiParty (EMP) contract, which is the first available production ready template of a synthetic token. The EMP allows developers to quickly launch expiring synthetic tokens, such as the [UMA yield dollar](/users/mint-farm-yusd), but is by no means a limitation on the types of financial contracts that a developer could create.
+The product tutorials below allow developers to easily build products using the Long Short Pair (LSP) contract:
+- [Range Tokens](/range-tokens/deployment-tutorial)
+- [Success Tokens](/success-tokens/deployment-tutorial)
+- [KPI Options](/kpi-options/deployment-tutorial)
 
+### Technical Explanations
 
-### Complete build process
+The technical resources below go into detail on UMA's LSP contract, Optimistic Oracle, and running bots:
+- [Understanding the LSP Contract](/synthetic-tokens/long-short-pair)
+- [Integrating with the Optimistic Oracle](/developers/optimistic-oracle-integration)
+- [Running Bots](/developers/bots)
 
-After following the quick start guide and deploying your first synthetic token, you can follow this general build process to launch and secure a mainnet version of your expiring synthetic token.
+### Developer Links
 
-1. [Finalize your contract design.](/synthetic-tokens/what-are-synthetic-assets)
-2. [Propose a new price identifier or collateral type.](/uma-tokenholders/adding-price-id)
-3. [Deploy your contract.](/developers/emp-deployment)
-4. [Mint your first synthetic tokens to set the contract GCR.](/build-walkthrough/minting-etherscan)
-5. [Deploy liquidator and dispute bots to secure your contract.](/developers/bots)
-
-It is highly recommended that you perform steps 3-5 on Kovan before moving to mainnet.
+The developer links below are frequently used resources during the UMA development process:
+- [UMA Protocol Monorepo](https://github.com/UMAprotocol/protocol)
+- [Launch-lsp Github Repository](https://github.com/UMAprotocol/launch-lsp)
+- [UMA Improvement Proposals (UMIPs) Github Repository](https://github.com/UMAprotocol/UMIPs)
+- [Approved Price Identifiers](/uma-tokenholders/approved-price-identifiers)
+- [Approved Collateral Currencies](/uma-tokenholders/approved-collateral-currencies)
+- [Contract Addresses](/dev-ref/addresses)
+- [UMA Subgraphs](/dev-ref/subgraphs)
 
 ### UMA Team Support
 
-To receive support in your build process, especially if you wish to receive developer mining rewards, please make sure to reach out in the UMA Discord.
+To receive support in your build process, please make sure to reach out in the [UMA Discord](https://discord.com/invite/jsb9XQJ).

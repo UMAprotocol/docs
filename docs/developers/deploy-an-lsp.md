@@ -21,8 +21,7 @@ Before deploying a contract, you should verify that your desired price identifie
 View approved price identifiers and currencies here:
 - [Approved mainnet collateral currencies](/uma-tokenholders/approved-collateral-currencies)
 - [Approved mainnet price identifiers](/uma-tokenholders/approved-price-identifiers)
-- [Approved Kovan collateral currencies subgraph query](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Whitelisted%20Collateral%20Currencies)
-- [Approved Kovan price identifiers subgraph query](https://thegraph.com/explorer/subgraph/umaprotocol/uma-kovan?query=Pricefeed%20Identifiers)
+- [Approved Kovan collateral currencies subgraph query](https://thegraph.com/hosted-service/subgraph/umaprotocol/kovan-contracts?query=Whitelisted%20Collateral)
 
 To add a new price identifier or collateral currency to mainnet, please propose one to UMA voters by following the instructions detailed [here](/uma-tokenholders/adding-price-id).
 
@@ -71,10 +70,11 @@ Each deployment requires the following parameters to be set at the point of depl
 
 ### Optional deployment parameters
 
+- `enableEarlyExpiration:` If set to true, the LSP contract can request to be settled early by calling the optimistic oracle. If not needed, the parameter will be set to false.
 - `fpl`: The financial library your contract will use to calculate the payment at expiry. For the list of the available financial product libraries we have available, you can go [here](https://github.com/UMAprotocol/protocol/tree/master/packages/core/contracts/financial-templates/common/financial-product-libraries/long-short-pair-libraries).
 - `financialProductLibraryAddress:` Contract address providing settlement payout logic. Only required if a custom financial product library is used and `fpl` is not included.
 - `customAncillaryData:` Custom ancillary data to be passed along with the price request. If not needed, this flag can be excluded and will be left as a 0-length bytes array.
-- `prepaidProposerReward:` Proposal reward to be forwarded to the created contract to be used to incentivize price proposals.
+- `proposerReward:` Proposal reward to be forwarded to the created contract to be used to incentivize price proposals.
 - `optimisticOracleLivenessTime:` Custom liveness window for disputing optimistic oracle price proposals in seconds. A longer liveness time provides more security, while a shorter one provides faster settlement. By default, this is set to 7200 seconds.
 - `optimisticOracleProposerBond:` Additional bond a proposer must post with the optimistic oracle. A higher bond makes incorrect disputes and proposals more costly.
 
@@ -133,7 +133,7 @@ wss://kovan.infura.io/ws/v3/{projectId}
 
 Run the deployment script with your specific parameters.
 ```bash
-node index.js --gasprice 80 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName " Your token pair name" --expirationTimestamp 1630447200 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "long token name" --longSynthSymbol UMA-0821 --shortSynthName "short token name" --shortSynthSymbol UMA-0821s --collateralToken 0x489Bf230d4Ab5c2083556E394a28276C22c3B580 --customAncillaryData "twapLength:3600" --optimisticOracleLivenessTime 3600 --fpl CoveredCall --strikePrice 12000000000000000000 --prepaidProposerBond 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
+node index.js --gasprice 5 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "token pair name" --expirationTimestamp 1672538400 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "long token name" --longSynthSymbol UMA-1222 --shortSynthName "short token name" --shortSynthSymbol UMA-1222s --collateralToken 0x489Bf230d4Ab5c2083556E394a28276C22c3B580 --customAncillaryData "twapLength:3600" --optimisticOracleLivenessTime 3600 --fpl CoveredCall --strikePrice 12000000000000000000 --proposerReward 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
 ```
 ## Deploying to Ethereum Mainnet
 
@@ -158,7 +158,7 @@ wss://mainnet.infura.io/ws/v3/{projectId}
 
 You can now run the deployment script. From within the `launch-lsp` directory, run:
 ```bash
-node index.js --gasprice 80 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "token pair name" --expirationTimestamp 1630447200 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "long token name" --longSynthSymbol UMA-0821 --shortSynthName "short token name" --shortSynthSymbol UMA-0821s --collateralToken 0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828 --customAncillaryData "twapLength:3600" --optimisticOracleLivenessTime 3600 --fpl CoveredCall --strikePrice 12000000000000000000 --prepaidProposerBond 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
+node index.js --gasprice 80 --url YOUR_NODE_URL --mnemonic "your mnemonic (12 word seed phrase)" --pairName "token pair name" --expirationTimestamp 1672538400 --collateralPerPair 250000000000000000 --priceIdentifier UMAUSD --longSynthName "long token name" --longSynthSymbol UMA-1222 --shortSynthName "short token name" --shortSynthSymbol UMA-1222s --collateralToken 0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828 --customAncillaryData "twapLength:3600" --optimisticOracleLivenessTime 3600 --fpl CoveredCall --strikePrice 12000000000000000000 --proposerReward 20000000000000000000 --optimisticOracleProposerBond 40000000000000000000
 ```
 Once deployed, the script will list the address of your newly deployed LSP. A successful output will look like this:
 
