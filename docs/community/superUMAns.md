@@ -3,7 +3,6 @@ title: Who are the SuperUMAns?
 sidebar_label: SuperUMAns
 ---
 
-## What is a SuperUMAns?
 SuperUMAns are the community's ninja troops.  They know how powerful UMA is, the kinds of things that UMA can be used for and they are determined to spread the word.
 
 *If you find yourself reading this, you probably already have your own inner SuperUMAn - you may just not know it yet....*

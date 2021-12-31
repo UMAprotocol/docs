@@ -91,21 +91,11 @@ module.exports = {
         },
       ],
     "Community": [
-      "community/community-overview", "community/community-built-tools", "community/superUMAns", "community/usingtokens", "community/communityguide", "community/product",
+      "community/community-overview", "community/superUMAns", "community/communityguide",
       {
         type: "category",
         label: "Events & Press",
         items: ["community/press", "community/blog-posts", "community/events"],
-      },
-      {
-        type: "category",
-        label: "Farming Tutorials",
-        items: ["users/mint-farm-yusd", "users/mint-farm-yusdbtc", "users/redeem-tokens"],
-      },
-      {
-        type: "category",
-        label: "FAQ",
-        items: ["community/uTVLFAQ"],
       },
     ],
     "Contracts": [
