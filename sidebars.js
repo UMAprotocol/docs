@@ -91,7 +91,7 @@ module.exports = {
         },
       ],
     "Community": [
-      "community/community-overview", "community/superUMAns", "community/communityguide",
+      "community/community-overview", "community/superUMAns",
       {
         type: "category",
         label: "Events & Press",
