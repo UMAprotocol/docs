@@ -90,7 +90,7 @@ module.exports = {
           items: ["uma-tokenholders/voter-dApp"],
         },
       ],
-    "Events & Press": [
+    "Community": [
       "community/community-overview", "community/community-built-tools", "community/superUMAns", "community/usingtokens", "community/communityguide", "community/product",
       {
         type: "category",
