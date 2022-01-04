@@ -19,7 +19,7 @@ sidebar_label: Events
 - April 24, 2020: Crypto Tonight Ep. 4 [“When Defi is not Fine”](https://youtu.be/efW-MHdA_ws)
 - April 8, 2020: Priceless Synthetic Tokens on Liquid Staking Working Group Call [Video](https://youtu.be/hua-qhA28Vc)
 - March 30, 2020: Monolith Digital #DeFi [Meetup](https://www.meetup.com/monolith/events/269605712)
-- Feb 7, 2020 in SF: Tokenizing Traditional Assets Panel at 0xpo [Agenda](https://www.0xpo.com/)
+- Feb 7, 2020 in SF: Tokenizing Traditional Assets Panel at 0xpo [Video](https://youtu.be/-El-rZe2J5U)
 - Dec 5, 2019 in NYC: Tachyon Founder Stories panel & networking
 - Nov 21, 2019 1pm ET: [MCD conference call](https://www.youtube.com/watch?v=BcQKQGB13s4#action=share)
 - Nov 13, 2019 in NYC: [Liquidity: The Final Frontier, video](https://drive.google.com/file/d/1OlHolwkkot1OtZe40wSNVBYTe7aKpITo/view)
