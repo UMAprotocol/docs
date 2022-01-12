@@ -23,6 +23,10 @@ You can find additional reference materials, including a list of UMA's testnet a
 
 Refer [here](uma-tokenholders/uma-holders.md) to learn more about the UMA governance token.  
 
+## UMA Community
+
+If you have questions or want to connect with the UMA community, check out our [community page](community/community-overview).
+
 ## Contact 
 
-If you have questions or want to connect with the UMA community, check out our [community page](community/community-overview), join our [Discord](https://discord.com/invite/jsb9XQJ) or get involved in conversations on UMA's [Discourse](https://discourse.umaproject.org).
+Join our [Discord](https://discord.com/invite/jsb9XQJ) or get involved in conversations on UMA's [Discourse](https://discourse.umaproject.org).

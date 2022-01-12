@@ -1,16 +1,12 @@
 ---
-title: UMA Bug Bounty Program
-sidebar_label: Bug Bounty Program
+title: Audit & Bug Bounty Program
+sidebar_label: Audit & Bug Bounty Program
 ---
 
 Security of the platform is our highest priority.
 All contract code and balances are publicly verifiable, and security researchers are eligible for a bug bounty for reporting undiscovered vulnerabilities.
 
 ## Audit
-
-UMA encourages the community to audit our contracts and security; we also encourage the responsible disclosure of any issues.
-The bug bounty program is intended to recognize the value of working with the community of independent security researchers, and sets out our definition of good faith in the context of finding and reporting vulnerabilities, as well as what you can expect from us in return.
-
 The contracts in [the common directory](https://github.com/UMAprotocol/protocol/tree/9d403ddb5f2f07194daefe7da51e0e0a6306f2c4/core/contracts/common) and [the oracle directory](https://github.com/UMAprotocol/protocol/tree/9d403ddb5f2f07194daefe7da51e0e0a6306f2c4/core/contracts/oracle) of the `/protocol` repo have been carefully audited by OpenZeppelin.
 The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-1/).
 
@@ -25,7 +21,10 @@ Additionally, OpenZeppelin audits incremental upgrades to UMA's contracts on a c
 
 
 
-## Rewards
+## Bug Bounty Rewards
+
+UMA encourages the community to audit our contracts and security; we also encourage the responsible disclosure of any issues.
+The bug bounty program is intended to recognize the value of working with the community of independent security researchers and sets out our definition of good faith in the context of finding and reporting vulnerabilities, as well as what you can expect from us in return.
 
 UMA offers substantial rewards for discoveries that can prevent the loss of assets, the freezing of assets, or harm to users.
 

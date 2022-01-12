@@ -3,19 +3,6 @@ title: Known Issues
 sidebar_label: Known Issues
 ---
 
-## Audit
-
-The contracts in [the financial-templates directory](https://github.com/UMAprotocol/protocol/tree/e6eaa48124ae3f209fb117cf05eb18292cf26d21/core/contracts/financial-templates/implementation) have been audited by OpenZeppelin.
-The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-2/).
-
-Later updates to the Expiring Multiparty contracts were also audited by OpenZeppelin. The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-3/).
-
-OpenZeppelin also audited the [Perpetual Multiparty](https://github.com/UMAprotocol/protocol/tree/1631ef7ad29aaeba756ef3b9a01c667e1343df85/packages/core/contracts/financial-templates/perpetual-multiparty). The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-4/).
-
-Additionally, OpenZeppelin audits incremental upgrades to UMA's contracts on a continuous basis. The continuous audit report can be found [here](https://blog.openzeppelin.com/uma-continuous-audit/).  
-
-## Known Issues
-
 Below is a list of known limitation and attack vectors affecting `ExpiringMultiparty.sol`, the contract used to create synthetic tokens.
 
 Note that the financial contract template has an emergency shutdown feature that prematurely expires the contract.
