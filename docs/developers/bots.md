@@ -165,20 +165,15 @@ node -e "console.log(require('bip39').generateMnemonic())"
 # your mnemonic should print here
 ```
 
-You can then load this mnemonic into truffle and view the associated address.
-To do this, set the mnemonic as an environment variable by running:
+You can then load this mnemonic into hardhat. To do this, set the mnemonic as an environment variable by running:
 
 ```bash
 # Add the new mnemonic to your environment variables. Be sure to replace with your mnemonic.
 export MNEMONIC="sail chuckle school attitude symptom tenant fragile patch ring immense main rapid"
 
-# Start the truffle console
-yarn truffle console --network kovan_mnemonic
+# Start the hardhat console
+yarn hardhat console --network kovan
 
-# Print the address of your newly created account
-truffle(kovan_mnemonic)> accounts[0]
-
-# should print: `0x45Bc98b00adB0dFe16c85c391B1854B706b7d612`
 ```
 
 You can now fund this wallet with the associated currency for the type of bot you want to run.
