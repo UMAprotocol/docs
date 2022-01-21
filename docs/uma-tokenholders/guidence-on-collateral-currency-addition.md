@@ -7,7 +7,7 @@ Collateral currencies can be added through the collateral currency UMIP template
  - the name of the token to the be added 
  - the contract address of the token  together with a link to the address on etherscan
  - the amount that should be added to the store as final fee expressed in units of the intended collateral currency.   
-_This should equate to approximately $400 at the time the UMIP is submitted.  If the token is not directly listed on Coingecko and/or Coinmarketcap, please add how the estimated dollar value of the token was obtained in the Rationale section._
+_This should equate to approximately $1500 at the time the UMIP is submitted.  If the token is not directly listed on Coingecko and/or Coinmarketcap, please add how the estimated dollar value of the token was obtained in the Rationale section._
 
 ***Note**: rebasing tokens should not be added as collateral currencies as they do not work with most registered UMA contracts*
 
