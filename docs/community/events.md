@@ -1,5 +1,5 @@
 ---
-title: Notable Events
+title: Past Events
 sidebar_label: Events
 ---
 
