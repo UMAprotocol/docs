@@ -17,7 +17,11 @@ These contracts are used by the DVM to keep track of which financial contracts d
 
 ## Contract Addresses
 
-- [Mainnet (network id: 1)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/1.json)
-- [Kovan (network id: 42)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/42.json)
-- [Polygon (network id: 137)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/137.json)
-- [Mumbai (network id: 80001)](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/80001.json)
+Network | Website | UMA Contract Addresses 
+------------- | ------------- | ------------- 
+<img src="/network-icons/eth-logo.png" width="150"/> | [Ethereum](https://ethereum.org/) | [Mainnet](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/1.json), [Kovan](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/42.json), [Rinkeby](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/4.json)
+<img src="/network-icons/polygon-logo.png" width="150"/> | [Polygon](https://polygon.technology/) | [Mainnet](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/137.json), [Mumbai](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/80001.json)
+<img src="/network-icons/boba-logo.png" width="150"/> | [Boba Network](https://boba.network/) | [Mainnet](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/288.json)
+<img src="/network-icons/optimism-logo.png" width="150"/> | [Optimism](https://www.optimism.io/) | [Mainnet](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/10.json)
+<img src="/network-icons/arbitrum-logo.png" width="150"/> | [Arbitrum](https://arbitrum.io/) | [Mainnet](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/42161.json)
+<img src="/network-icons/xdai-logo.png" width="150"/> | [xDAI](https://www.xdaichain.com/) | [Mainnet](https://github.com/UMAprotocol/protocol/blob/master/packages/core/networks/100.json)
