@@ -10,7 +10,7 @@ The UMA ecosystem comprises a dispute resolution layer — the Data Verification
 
 Having a decoupled architecture gives the advantage of being able to deploy to any EVM chain efficiently. Our scaling strategy allows the contract layer on any EVM chain to access the same DVM any contract native to Ethereum has access to.
 
-UMA makes use of an arbitrary message bridge that allows for two-way messages to pass between the EVM network and Ethereum mainnet. The message bridge uses the scaling EVM network's Arbitrary Message system, meaning it can be as trusted as the EVM network itself. 
+UMA makes use of an arbitrary message bridge that allows for two-way messages to pass between the secondary EVM network and Ethereum mainnet. The message bridge typically uses the secondary network's Arbitrary Message system, meaning it can be as trusted as the EVM network itself. 
 
 The section below walks through how UMA's Optimistic Oracle is used as the arbiter of price requests natively on the Polygon network. If a request is made to the Polygon Optimistic Oracle and the proposal goes undisputed, the result is deemed the accepted outcome. 
 
