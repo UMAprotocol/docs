@@ -19,10 +19,6 @@ Integration  | Website | Description
 <img src="/network-icons/yam-logo.png" width="150"/> | [Yam Synths](https://synths.yam.xyz/) | Yam Synths is a powerful platform from the Yam DAO community providing easily accessible and innovative synthetic assets. UMA's Optimistic Oracle helps Yam to allow anyone in the world to access and trade cutting-edge synthetic products. 
 <img src="/network-icons/hats-logo.png" width="150"/> | [Hats.finance](https://hats.finance/) | Hats.finance is a proactive bounty protocol for white hat hackers and auditors, where projects, community members, and stakeholders incentivize protocol security and responsible disclosure. Hat.Finance and UMA have collaborated on a product called protected tokens which enable users to recover funds in the event of a hack, bug, or other cause of lost funds.
 
-## Supported Networks
-
-<img src="/network-icons/eth-logo.png" width="150"/> &nbsp;&nbsp;&nbsp; <img src="/network-icons/polygon-logo.png" width="150"/> &nbsp;&nbsp;&nbsp; <img src="/network-icons/boba-logo.png" width="150"/> &nbsp;&nbsp;&nbsp; <img src="/network-icons/optimism-logo.png" width="150"/> &nbsp;&nbsp;&nbsp; <img src="/network-icons/arbitrum-logo.png" width="150"/> &nbsp;&nbsp;&nbsp; <img src="/network-icons/xdai-logo.png" width="150"/> &nbsp;&nbsp;&nbsp; <img src="/network-icons/evmos-logo.png" width="150"/>
-
 ## Developers
 
 If you are a developer interested in building on the UMA Protocol, please refer to these tutorials and resources to get started.

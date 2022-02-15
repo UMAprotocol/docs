@@ -3,8 +3,6 @@ title: Past Events
 sidebar_label: Events
 ---
 
-## Past Events
-
 - Mar 5, 2021: [DeFiiCON](https://twitter.com/UMAprotocol/status/1367932930518048768?s=20)
 - Jan 21, 2021: [MarketMake, Jan202won](https://www.youtube.com/watch?v=z21xyy7C0EM&feature=youtu.be)
 - Oct 25, 2020: [IOSG DeFi Summit 2020](https://www.youtube.com/watch?v=Ymg73RUEVL4&feature=youtu.be)

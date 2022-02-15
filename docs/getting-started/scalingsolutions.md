@@ -1,6 +1,6 @@
 ---
 title: Scaling UMA 
-sidebar_label: Scaling Solutions
+sidebar_label: Multi-chain Scaling
 ---
 This section explains how UMA is scaling to other EVM networks. The full list of supported networks can be found [here](dev-ref/addresses.md).
 

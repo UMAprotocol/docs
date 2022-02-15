@@ -13,13 +13,13 @@ You can keep up to date with what is happening with UMA across our various socia
 - [Medium](https://medium.com/uma-project)
 - [YouTube](https://www.youtube.com/channel/UC-3qS7FXxCd7gBMLttmTirw/playlists)
 - [UMAverse](https://projects.umaproject.org/)
-- [UMA Protocol Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_soder0b7n0mgutr5jdbin9aqgs@group.calendar.google.com&ctz)
+- [UMA Protocol Calendar](http://calendar.umaproject.org/)
 
 ### SuperUMAn Resources
-Below are SumperUMAn specific resources if you are interested in becoming a SuperUMAn:
+Below are SuperUMAn specific resources if you are interested in becoming a SuperUMAn:
 - [SuperUMAn Discord](https://discord.gg/WaSdQwJu)
 - [SuperUMAn Twitter](https://twitter.com/SuperUmans)
-- [Becoming a SuperUMAn](/community/superUMAns)
+- [Who are the SuperUMAns?](/community/superUMAns)
 
 ### Employment at UMA
 If you are interested in working at UMA, please see our vacancies below. If you know someone that might be a good fit, check out our “talent referral options” program that offers up to 1000 $UMA to anyone who refers suitably qualified candidates for any of our open positions.
