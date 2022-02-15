@@ -3,7 +3,7 @@ title: Technical Architecture of the DVM
 sidebar_label: Technical Architecture
 ---
 
-This document explains the general architecture of UMA's Data Verification Mechanism (DVM). It is meant to be a high-level overview and is by no means an exhaustive explanation of the system.
+This document explains the general architecture of UMA's Data Verification Mechanism (DVM) and Optimistic Oracle (OO). It is meant to be a high-level overview and is by no means an exhaustive explanation of the system.
 
 ![Diagram](/docs/oracle/OO-architecture-diagram-v3.png)
 
