@@ -7,7 +7,7 @@ This document explains the general architecture of UMA's Data Verification Mecha
 
 <img src="/docs/oracle/OO-architecture-diagram-v3.png" width="700" height="700"/>
 
-## Purpose of DVM
+## Purpose of the DVM
 
 The Optimistic Oracle quickly requests and receives the price of an asset or any arbitrary data for UMA financial contracts through price proposals. The prices proposed to the Optimistic Oracle will not be sent to the DVM unless disputed. If a dispute is raised, a request is sent to the DVM to be resolved.
 
