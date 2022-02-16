@@ -3,6 +3,10 @@ title: Glossary
 sidebar_label: Glossary
 ---
 
+### Optimistic Oracle
+
+The "Optimistic Oracle" (OO) allows contracts to quickly request and receive price information. Unlike mechanically restrictive price feed oracles, an optimistic oracle can serve any arbitrary data on-chain. 
+
 ### DVM
 
 The “Data Verification Mechanism” (DVM) is the name of the oracle service provided by UMA. The DVM does not provide an on-chain price feed.

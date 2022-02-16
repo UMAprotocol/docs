@@ -3,7 +3,7 @@ title: Community Guide
 sidebar_label: Community Guide
 ---
 
-The UMA community consists of tokenholders, financial engineers, product designers, developers, and users. We're happy to have you join and always willing to help people who have just discovered UMA make the most out of our innovations. 
+There are many ways to get involved in the fast-growing UMA community. You can join one of our popular online communities, become a SuperUMAn, or apply to be part of the UMA team.
 
 ### Links
 You can keep up to date with what is happening with UMA across our various social media platforms and community resources:
