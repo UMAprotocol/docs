@@ -43,9 +43,6 @@ By using UMA's priceless synthetic token contract template, developers can easil
 - Token expiration timestamp
 - Token [collateralization requirement](synthetic-tokens/glossary.md#collateralization-requirement) (e.g. a synthetic token must have collateral worth at least 120% of the price indentifier’s current value)
 
-This [tutorial](/build-walkthrough/mint-locally) will show you how to parameterize and deploy the smart contract for a new synthetic token from the command line.
-
-
 ### The ExpiringMultiParty (EMP) Contract Template
 
 One can write priceless financial contract templates to create various kinds of financial products. The first type of synthetic contracts on UMA is used for creating expiring synthetic tokens and is called the ExpiringMultiParty (EMP) contract.

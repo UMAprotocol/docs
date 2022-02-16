@@ -3,16 +3,14 @@ title: Glossary
 sidebar_label: Glossary
 ---
 
+### Optimistic Oracle
+
+The "Optimistic Oracle" (OO) allows contracts to quickly request and receive price information. Unlike mechanically restrictive price feed oracles, an optimistic oracle can serve any arbitrary data on-chain. 
+
 ### DVM
 
 The “Data Verification Mechanism” (DVM) is the name of the oracle service provided by UMA. The DVM does not provide an on-chain price feed.
 Instead, it is only used to resolve disputes of liquidations and to settle synthetic token contracts upon expiration.
-
-### Token sponsor
-
-A token sponsor is an entity who bears the financial risk of the synthetic tokens.
-This entity deposits collateral into the smart contract and withdraws synthetic tokens that they can then sell to tokenholders.
-Token sponsors have short exposure to the price identifiers of the synthetic tokens they sponsor.
 
 ## Parameters of a Long Short Pair (LSP) smart contract:
 
@@ -32,7 +30,7 @@ The collateralPerPair parameter determines the amount of collateral required to 
 
 ExpiryPercentLong is used to determine the redemption rate between long and short tokens. ExpiryPercentLong is a number between 0 and 1, where 0 assigns all collateral to the short tokens and 1 assigns all collateral to the long tokens.
 
-## Products that use the LSP contract:
+## UMA Product Types:
 
 ### Range Tokens
 
@@ -46,7 +44,7 @@ Success tokens offer an alternative way for DAOs to diversify their treasury and
 
 Key Performance Indicator (KPI) Options are synthetic tokens that will pay out more rewards if a project’s KPI reaches predetermined targets before a given expiry date. Every KPI Option holder has an incentive to improve that KPI because their option will be worth more. This is intended to align individual token holder interests with the collective interests of the protocol. Go [here](/kpi-options/summary) to learn more about KPI options and how to create your own.
 
-## Parameters of a synthetic token smart contract:
+## Synthetic token terms:
 
 ### Price identifier
 
@@ -86,11 +84,15 @@ If a disputer disputes the liquidation, all collateral is frozen until the UMA D
 
 - Example: 1 hour.
 
-## Calculated values of a synthetic token smart contract:
-
 ### Global collateralization ratio (GCR)
 
 This is the average collateralization ratio across all token sponsors of a synthetic token, excluding those that have been liquidated.
 It is calculated by dividing the total collateral deposited by all token sponsors in the contract by the total number of outstanding synthetic tokens.  
 
 The GCR is used to set collateralization requirements for new synthetic token issuance and to enable “fast” withdrawals.
+
+### Token sponsor
+
+A token sponsor is an entity who bears the financial risk of the synthetic tokens.
+This entity deposits collateral into the smart contract and withdraws synthetic tokens that they can then sell to tokenholders.
+Token sponsors have short exposure to the price identifiers of the synthetic tokens they sponsor.

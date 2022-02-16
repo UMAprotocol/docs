@@ -25,13 +25,13 @@ module.exports = {
       {
         type: "category",
         label: "Oracle Service",
-        items: ["getting-started/oracle", "oracle/econ-architecture", "oracle/tech-architecture", "oracle/dvm-interface", "oracle/optimistic-oracle-interface", "oracle/known-issues"],
+        items: ["getting-started/oracle", "oracle/econ-architecture", "oracle/tech-architecture", "oracle/known-issues"],
       },
+      "dev-ref/bug-bounty",
       "synthetic-tokens/glossary"
     ],
     Developers: [
       "build-walkthrough/build-process",
-      "developers/setup",
       {
         type: "category",
         label: "ExpiringMultiParty (EMP)",
@@ -50,7 +50,7 @@ module.exports = {
       {
         type: "category",
         label: "Bots",
-        items: ["developers/bots", "developers/bot-param", "developers/pf-configuration"],
+        items: ["developers/setup","developers/bots", "developers/bot-param", "developers/pf-configuration"],
       },
       {
         type: "category",
@@ -60,7 +60,7 @@ module.exports = {
       {
         type: "category",
         label: "Developer Reference",
-        items: ["dev-ref/mainnet-info", "dev-ref/addresses", "dev-ref/bug-bounty", "dev-ref/subgraphs", "getting-started/scalingsolutions",
+        items: ["dev-ref/mainnet-info", "dev-ref/addresses", "dev-ref/subgraphs", "getting-started/scalingsolutions", "oracle/dvm-interface", "oracle/optimistic-oracle-interface",
         {
           type: "link",
           label: "Contracts (Github)",
@@ -78,34 +78,21 @@ module.exports = {
     ],
       "UMA Tokenholders": [
         "uma-tokenholders/uma-holders",
+        "uma-tokenholders/uma-tokenomics",
         {
           type: "category",
           label: "Price IDs and Collateral Currencies",
           items: ["uma-tokenholders/adding-price-id", "uma-tokenholders/approved-price-identifiers", "uma-tokenholders/approved-collateral-currencies","uma-tokenholders/guidance-on-adding-price-identifiers","uma-tokenholders/guidence-on-collateral-currency-addition",],
         },
         "uma-tokenholders/umips",
-        {
-          type: "category",
-          label: "Voting Tutorials",
-          items: ["uma-tokenholders/voter-dApp"],
-        },
+        "uma-tokenholders/voter-dApp",
       ],
-    "Events & Press": [
-      "community/community-overview", "community/community-built-tools", "community/superUMAns", "community/usingtokens", "community/communityguide", "community/product",
+    "Community": [
+      "community/community-overview", "community/superUMAns",
       {
         type: "category",
         label: "Events & Press",
         items: ["community/press", "community/blog-posts", "community/events"],
-      },
-      {
-        type: "category",
-        label: "Farming Tutorials",
-        items: ["users/mint-farm-yusd", "users/mint-farm-yusdbtc", "users/redeem-tokens"],
-      },
-      {
-        type: "category",
-        label: "FAQ",
-        items: ["community/uTVLFAQ"],
       },
     ],
     "Contracts": [

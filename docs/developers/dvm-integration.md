@@ -32,16 +32,19 @@ Details on these two fees are available [here](oracle/econ-architecture.md#step-
 ## Toy Integration Tutorial
 
 1. Ensure that you have followed all the prerequisite setup steps [here](developers/setup.md).
-2. Migrate the contracts by running the following command:
+2. Run a local blockchain instance (i.e. not Kovan/Ropsten/Rinkeby/Mainnet) with `yarn hardhat node --port 9545`
+3. In another window, initialize the contracts by running the following commands from the root of the `protocol` repo:
 
 ```bash
-yarn truffle migrate --reset --network test
+cd packages/scripts
+
+HARDHAT_NETWORK=localhost ./src/utils/Deploy.js
 ```
 
-1. To deploy the `DepositBox` contract and go through a simple user flow, run the following script from the root of the repo:
+4. To deploy the `DepositBox` contract and go through a simple user flow, run the following script from the `scripts` folder:
 
 ```bash
-yarn truffle exec ./packages/core/scripts/demo/DepositBox.js --network test
+HARDHAT_NETWORK=localhost ./src/demo/DepositBox.js
 ```
 
 You should see the following output:

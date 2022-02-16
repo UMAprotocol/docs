@@ -1,31 +1,29 @@
 ---
-title: UMA Bug Bounty Program
-sidebar_label: Bug Bounty Program
+title: Audit & Bug Bounty Program
+sidebar_label: Audit & Bug Bounty Program
 ---
 
 Security of the platform is our highest priority.
 All contract code and balances are publicly verifiable, and security researchers are eligible for a bug bounty for reporting undiscovered vulnerabilities.
 
-## Audit
+## Audits
+OpenZeppelin has performed the following audits on UMA contracts:
 
-UMA encourages the community to audit our contracts and security; we also encourage the responsible disclosure of any issues.
-The bug bounty program is intended to recognize the value of working with the community of independent security researchers, and sets out our definition of good faith in the context of finding and reporting vulnerabilities, as well as what you can expect from us in return.
-
-The contracts in [the common directory](https://github.com/UMAprotocol/protocol/tree/9d403ddb5f2f07194daefe7da51e0e0a6306f2c4/core/contracts/common) and [the oracle directory](https://github.com/UMAprotocol/protocol/tree/9d403ddb5f2f07194daefe7da51e0e0a6306f2c4/core/contracts/oracle) of the `/protocol` repo have been carefully audited by OpenZeppelin.
-The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-1/).
-
-The contracts in [the financial-templates directory](https://github.com/UMAprotocol/protocol/tree/e6eaa48124ae3f209fb117cf05eb18292cf26d21/core/contracts/financial-templates/implementation) have been audited by OpenZeppelin.
-The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-2/).
-
-Updates to the Expiring Multiparty contracts and flash loan mitigations for the voting contracts have been audited by OpenZeppelin. The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-3/).
-
-The [Perpetual Multiparty](https://github.com/UMAprotocol/protocol/tree/1631ef7ad29aaeba756ef3b9a01c667e1343df85/packages/core/contracts/financial-templates/perpetual-multiparty) and [Optimistic Oracle](https://github.com/UMAprotocol/protocol/tree/1631ef7ad29aaeba756ef3b9a01c667e1343df85/packages/core/contracts/oracle) have been audited by OpenZeppelin. The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-4/).
+- [Common and oracle directory contracts: April 28, 2020](https://blog.openzeppelin.com/uma-audit-phase-1/) 
+- [Financial-templates directory contracts: May 12, 2020](https://blog.openzeppelin.com/uma-audit-phase-2/)
+- [Updates to the Expiring Multiparty contracts and flash loan mitigations for the voting contracts: September 9, 2020](https://blog.openzeppelin.com/uma-audit-phase-3/)
+- [Perpetual Multiparty template contracts: February 2, 2021](https://blog.openzeppelin.com/uma-audit-phase-4/) 
+- [Insured Bridge contracts: December 1, 2021](https://blog.openzeppelin.com/uma-audit-l2-bridges/)
+- [Governance, cross-chain oracle, and optimistic rewarder contracts: January 7, 2022](https://blog.openzeppelin.com/uma-audit-phase-6/)
 
 Additionally, OpenZeppelin audits incremental upgrades to UMA's contracts on a continuous basis. The continuous audit report can be found [here](https://blog.openzeppelin.com/uma-continuous-audit/).
 
 
 
-## Rewards
+## Bug Bounty Rewards
+
+UMA encourages the community to audit our contracts and security; we also encourage the responsible disclosure of any issues.
+The bug bounty program is intended to recognize the value of working with the community of independent security researchers and sets out our definition of good faith in the context of finding and reporting vulnerabilities, as well as what you can expect from us in return.
 
 UMA offers substantial rewards for discoveries that can prevent the loss of assets, the freezing of assets, or harm to users.
 

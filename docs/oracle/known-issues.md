@@ -2,20 +2,6 @@
 title: Known Issues
 sidebar_label: Known Issues
 ---
-
-## Audit
-
-The contracts in [the common directory](https://github.com/UMAprotocol/protocol/tree/9d403ddb5f2f07194daefe7da51e0e0a6306f2c4/core/contracts/common) and [the oracle directory](https://github.com/UMAprotocol/protocol/tree/9d403ddb5f2f07194daefe7da51e0e0a6306f2c4/core/contracts/oracle) of the `/protocol` repo have been carefully audited by OpenZeppelin.
-The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-1/).
-
-Flash loan mitigations for the voting contracts were also audited by OpenZeppelin. The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-3/).
-
-OpenZeppelin also audited the [Optimistic Oracle](https://github.com/UMAprotocol/protocol/tree/1631ef7ad29aaeba756ef3b9a01c667e1343df85/packages/core/contracts/oracle). The audit report can be found [here](https://blog.openzeppelin.com/uma-audit-phase-4/).
-
-Additionally, OpenZeppelin audits incremental upgrades to UMA's contracts on a continuous basis. The continuous audit report can be found [here](https://blog.openzeppelin.com/uma-continuous-audit/).  
-
-## Known Issues
-
 ### Unimplemented Features
 
 As described in section “M03” of the [audit report](https://blog.openzeppelin.com/uma-audit-phase-1/), there are mechanisms described in the whitepaper that are not yet implemented in the mainnet deployment of the DVM.
