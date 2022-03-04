@@ -104,9 +104,10 @@ sidebar_label: Approved Collateral Currencies
 |GRO| 210 | [UMIP-133](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-133.md) | [Ethereum](https://etherscan.io/address/0x3ec8798b81485a254928b70cda1cf0a2bb0b74d7)|
 |AQUA| 6 600 000 | [UMIP-134](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-134.md) | [Ethereum](https://etherscan.io/address/0xd34a24006b862f4e9936c506691539d6433ad297)|
 |IDIA| 700 | [UMIP-134](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-134.md) | [Ethereum](https://etherscan.io/address/0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89)|
-|QUARTZ| 220 | [UMIP-137](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-137.md) | [Ethereum](https://etherscan.io/address/0xba8a621b4a54e61c442f5ec623687e2a942225ef) |
-|ibBTC| 0.025 | [UMIP-137](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-137.md) | [Ethereum](https://etherscan.io/token/0xc4e15973e6ff2a35cc804c2cf9d2a1b817a8b40f) | 
-|Total| No of Approved collateral currencies | [103](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)|
+|QUARTZ| 220 | [UMIP-137](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-137.md) | [Ethereum](https://etherscan.io/address/0xba8a621b4a54e61c442f5ec623687e2a942225ef)|
+|ibBTC| 0.025 | [UMIP-137](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-137.md) | [Ethereum](https://etherscan.io/token/0xc4e15973e6ff2a35cc804c2cf9d2a1b817a8b40f)| 
+|AX| 22 000 | [UMIP-142](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-142.md) | [Polygon](https://polygonscan.com/address/0x5617604BA0a30E0ff1d2163aB94E50d8b6D0B0Df)|
+|Total| No of Approved collateral currencies | [104](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)|
 
 
 To submit a token to be considered as a collateral currency, please see the _[Guidance on Collateral Currency Addition](uma-tokenholders/guidence-on-collateral-currency-addition.md)
