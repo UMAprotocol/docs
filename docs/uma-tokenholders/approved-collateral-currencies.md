@@ -90,7 +90,7 @@ sidebar_label: Approved Collateral Currencies
 |RBN| 10 000 | [UMIP-120](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-120.md) | [Polygon](https://etherscan.io/token/0x6123B0049F904d730dB3C36a31167D9d4121fA6B)|
 |BANK| 20 000 | [UMIP-124](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-124.md) | [Ethereum](https://etherscan.io/address/0x2d94aa3e47d9d5024503ca8491fce9a2fb4da198)|
 |MATIC| 1000 | [UMIP-125](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-125.md) | [Ethereum](https://etherscan.io/address/0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0)|
-|wMATIC| 1000 | [UMIP-125](https://polygonscan.com/token/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270)|
+|wMATIC| 1000 | [UMIP-125](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-125.md)|[Polygon](https://polygonscan.com/token/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270)|
 |INST| 380 | [UMIP-125](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-125.md) | [Ethereum](https://etherscan.io/address/0x6f40d4a6237c257fff2db00fa0510deeecd303eb), [Polygon](https://polygonscan.com/address/0xf50D05A1402d0adAfA880D36050736f9f6ee7dee)|
 |JRT| 22 000 | [UMIP-125](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-125.md) | [Ethereum](https://etherscan.io/address/0x8a9c67fee641579deba04928c4bc45f66e26343a)|
 |YEL| 20 500 | [UMIP-126](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-126.md) | [Ethereum](https://etherscan.io/token/0x7815bda662050d84718b988735218cffd32f75ea), [Polygon](https://polygonscan.com/token/0xd3b71117e6c1558c1553305b44988cd944e97300)|
