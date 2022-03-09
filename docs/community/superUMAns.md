@@ -11,4 +11,4 @@ SuperUMAns establish and maintain a community to explore and expand the potentia
 While the UMA engineers work to improve the effectiveness of the tools, it is the purpose of the SuperUMAn DAO to build the knowledge, skills, and culture to facilitate the creation of trustless web3 instruments.
 
 ## Additional Resources
-If you are interested in becoming a SuperUMAn, join the [SuperUMAn Discord](https://discord.gg/WaSdQwJu) and read about the experiences of existing SuperUMAns on Twitter using [#SuperUMAnXperience](https://twitter.com/hashtag/SuperUMAnXperience?src=hashtag_click).
+If you are interested in becoming a SuperUMAn, join the [SuperUMAn Discord](https://discord.gg/superumans) and read about the experiences of existing SuperUMAns on Twitter using [#SuperUMAnXperience](https://twitter.com/hashtag/SuperUMAnXperience?src=hashtag_click).
