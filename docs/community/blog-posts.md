@@ -10,6 +10,16 @@ sidebar_label: Whitepapers and Blog Posts
 
 ## Blog Posts
 
+- Feb 4, 2022: [Polymarket Integrates UMA’s Optimistic Oracle](https://medium.com/uma-project/polymarket-integrates-umas-optimistic-oracle-7fa89cae493e)
+- Jan 27, 2022: [The UMA Team wants to meet you at ETH Denver](https://medium.com/uma-project/the-uma-team-wants-to-meet-you-at-eth-denver-dff449efc033)
+- Jan 24, 2022: [Boba Network Partners with UMA to create “WAGMI” KPI Options](https://medium.com/uma-project/boba-network-partners-with-uma-to-create-wagmi-kpi-options-d967427ebad6)
+- Jan 19, 2022: [UMA Launches Hats Finance Vault with Protected Tokens](https://medium.com/uma-project/uma-launches-hats-finance-vault-with-protected-tokens-2ad4587fcdf)
+- Jan 11, 2022: [GYSR Integrates UMA KPI Options](https://medium.com/uma-project/learn-about-gysr-streamed-kpi-options-41ac26cbc613)
+- Jan 11, 2022: [The EOY and UMA’s Multi-DAO Future](https://medium.com/uma-project/the-eoy-and-umas-multi-dao-future-bf706f95314a)
+- Dec 31, 2021: [KPI Options as a Mergers and Acquisitions Tool](https://medium.com/uma-project/kpi-options-as-a-mergers-and-acquisitions-tool-8d27e94c80fd)
+- Dec 2, 2021: [A Retrospective on the Across Launch and What’s Next](https://medium.com/uma-project/a-retrospective-on-the-across-launch-and-whats-next-d2df860a9bbb)
+- Nov 19, 2021: [Introducing Event-Based Expiry KPI Options](https://medium.com/uma-project/introducing-milestone-kpi-options-2a8ea4cf480e)
+- Nov 3, 2021: [UMA Update — October](https://medium.com/uma-project/uma-update-october-1a35bcf76975)
 - Sep 30, 2021: [UMA Range Token Retro - Analyzing The First Implementation by a DAO](https://medium.com/uma-project/uma-range-token-retro-a856d152de30)
 - Sep 29, 2021: [Three Projects Embark on Liquidity Mining 2.0 — Yield paid in KPI options](https://medium.com/uma-project/state-of-kpi-liquidity-mining-40cbdec79ea8)
 - Sep 10, 2021: [Risk Labs Developer Mining Update and Retrospective](https://medium.com/uma-project/risk-labs-developer-mining-update-and-retrospective-ec9dfe2cff28)
