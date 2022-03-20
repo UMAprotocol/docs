@@ -17,7 +17,7 @@ sidebar_label: References
     - [See KPI Options tab in UMAverse for current and expired KPI Options](https://umaverse.vercel.app)
 - Other Links:
     - [KPI Options explainer video](https://www.youtube.com/watch?v=U1xNkCbuiPA&amp%3Bfeature=youtu.be)
-    - [KPI Options Product Page](https://umaproject.org/kpi-options.html)
+    - [KPI Options Product Page](https://umaproject.org/products/kpi-options)
 
 ## Questions?
 
