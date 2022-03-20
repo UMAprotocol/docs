@@ -4,13 +4,8 @@ module.exports = {
       "getting-started/welcome",
       {
         type: "category",
-        label: "Range Tokens",
-        items: ["range-tokens/summary", "range-tokens/deployment-tutorial", "range-tokens/usage-tutorial",  "range-tokens/references"],
-      },
-      {
-        type: "category",
-        label: "Success Tokens",
-        items: ["success-tokens/summary", "success-tokens/deployment-tutorial", "success-tokens/usage-tutorial",  "success-tokens/references"],
+        label: "Oracle Service",
+        items: ["getting-started/oracle", "oracle/econ-architecture", "oracle/tech-architecture", "oracle/known-issues"],
       },
       {
         type: "category",
@@ -19,13 +14,23 @@ module.exports = {
       },
       {
         type: "category",
+        label: "Success Tokens",
+        items: ["success-tokens/summary", "success-tokens/deployment-tutorial", "success-tokens/usage-tutorial",  "success-tokens/references"],
+      },
+      {
+        type: "category",
+        label: "Range Tokens",
+        items: ["range-tokens/summary", "range-tokens/deployment-tutorial", "range-tokens/usage-tutorial",  "range-tokens/references"],
+      },
+      {
+        type: "category",
         label: "Synthetic Tokens",
         items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens", "synthetic-tokens/known-issues"],
       },
       {
         type: "category",
-        label: "Oracle Service",
-        items: ["getting-started/oracle", "oracle/econ-architecture", "oracle/tech-architecture", "oracle/known-issues"],
+        label: "Other Products",
+        items: ["products/calloption", "products/protected-tokens"],
       },
       "dev-ref/bug-bounty",
       "synthetic-tokens/glossary"
