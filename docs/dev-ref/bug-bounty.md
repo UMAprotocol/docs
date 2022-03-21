@@ -40,6 +40,12 @@ Severity is calculated according to the [OWASP](https://owasp.org/www-project-ri
 
 ![](./severity.png)
 
+## Hats Vault
+
+UMA offers additional rewards through [Hats.finance](https://app.hats.finance/vaults), which pay out [UMA-backed protected tokens](https://medium.com/uma-project/uma-launches-hats-finance-vault-with-protected-tokens-2ad4587fcdf) for reports of smart contract vulnerabilities based on severity. Whitehat hackers are encouraged to submit smart contract vulnerabilities through Hats.finance in addition to e-mailing bugs@umaproject.org to claim these rewards.
+
+Note that *only* smart contract vulnerabilities are eligible for rewards from the Hats vault. Any vulnerability or bug reports not related to UMA or Across Protocol smart contracts, such as front-end or hosting configuration issues, will not receive rewards.
+
 ## Scope
 
 The scope of our bug bounty program includes any and all of UMA's production smart contracts.

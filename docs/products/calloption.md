@@ -18,12 +18,12 @@ If the price of the option was less than $2000 the option will expire worthless.
 
 ## Getting Started
 
-Using UMA's infrastructure, a team can create a covered call option using the UMA EMP contract template. These covered calls are European style options which are only redeemable at the time of expiry. 
+Using UMA's infrastructure, a team can create a covered call option using the UMA LSP contract template. These covered calls are European style options which are only redeemable at the time of expiry. 
 
 1. To create your own options you can make use of one of the currently approved [price identifiers](/uma-tokenholders/approved-price-identifiers.md) and [collateral types](uma-tokenholders/approved-collateral-currencies.md). If your price price identifiers or collateral typesis not approved you can follow our [UMIP process](/uma-tokenholders/umips.md) to get your specific requirements approved.
 
 
-2. You can then launch your contracting by following the [LSP launch tutorial](https://github.com/UMAprotocol/launch-lsp). You will need to include a covered call Financial Product Library address as a parameter. For a list of these, refer to the launch-emp stub repo from the tutorial.
+2. You can then launch your contracting by following the [LSP launch tutorial](https://github.com/UMAprotocol/launch-lsp). You will need to include a covered call Financial Product Library address as a parameter. For a list of these, refer to the [launch-lsp stub repo](https://github.com/UMAprotocol/launch-lsp) from the tutorial.
 
 
 With the contracts being cash settled, the terms of the contract remaining constant throughout, and positions always being fully collateralized by definition, there is no need to manage your position or run liquidation bots. 
