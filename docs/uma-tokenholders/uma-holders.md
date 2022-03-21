@@ -17,3 +17,4 @@ The links below are resources related to participating in UMA governance, primar
 - [Approved Collateral Currencies](/uma-tokenholders/approved-collateral-currencies)
 - [Guidance for the Addition of Price Identifiers](/uma-tokenholders/guidance-on-adding-price-identifiers)
 - [Guidance for the Addition of Collateral Currencies](/uma-tokenholders/guidence-on-collateral-currency-addition) 
+- [Guidance for Non-Technical Proposals](/uma-tokenholders/guidance-on-nontechnical-proposals) 
