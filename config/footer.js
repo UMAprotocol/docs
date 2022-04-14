@@ -4,8 +4,12 @@ module.exports = {
       title: "Docs",
       items: [
         {
-          label: "Understanding UMA",
+          label: "Oracle",
           to: "/",
+        },
+        {
+          label: "DAO Products",
+          to: "/products/dao-products",
         },
         {
           label: "Developers",

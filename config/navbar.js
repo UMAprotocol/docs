@@ -7,9 +7,15 @@ module.exports = {
   items: [
     {
       to: "/",
-      label: "Understanding UMA",
+      label: "Oracle",
       position: "left",
-      activeBaseRegex: "(/$|econ-architecture|products|range-tokens|success-tokens|kpi-options|bug-bounty|oracle/tech-architecture|oracle/known-issues|getting-started/oracle|getting-started/oracle|synthetic-tokens/glossary|synthetic-tokens/what-are-synthetic-assets|synthetic-tokens/expiring-synthetic-tokens|synthetic-tokens/known-issues)",
+      activeBaseRegex: "(/$|econ-architecture|bug-bounty|oracle/tech-architecture|oracle/known-issues|getting-started/oracle|getting-started/oracle|synthetic-tokens/glossary)",
+    },
+    {
+      to: "products/dao-products",
+      label: "DAO Products",
+      position: "left",
+      activeBaseRegex: "(products|range-tokens|success-tokens|kpi-options|synthetic-tokens/what-are-synthetic-assets|synthetic-tokens/expiring-synthetic-tokens|synthetic-tokens/known-issues)",
     },
     // {
     //   label: "Understanding UMA",

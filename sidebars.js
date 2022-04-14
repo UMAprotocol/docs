@@ -1,12 +1,17 @@
 module.exports = {
 
-    "Understanding UMA": [
+    "Oracle": [
       "getting-started/welcome",
       {
         type: "category",
         label: "Oracle Service",
         items: ["getting-started/oracle", "oracle/econ-architecture", "oracle/tech-architecture", "oracle/known-issues"],
       },
+      "dev-ref/bug-bounty",
+      "synthetic-tokens/glossary"
+    ],
+    "DAO Products": [
+      "products/dao-products",
       {
         type: "category",
         label: "KPI Options",
@@ -24,24 +29,12 @@ module.exports = {
       },
       {
         type: "category",
-        label: "Synthetic Tokens",
-        items: ["synthetic-tokens/what-are-synthetic-assets" , "synthetic-tokens/expiring-synthetic-tokens", "synthetic-tokens/known-issues"],
-      },
-      {
-        type: "category",
         label: "Other Products",
         items: ["products/calloption", "products/protected-tokens"],
       },
-      "dev-ref/bug-bounty",
-      "synthetic-tokens/glossary"
     ],
     Developers: [
       "build-walkthrough/build-process",
-      {
-        type: "category",
-        label: "ExpiringMultiParty (EMP)",
-        items: ["developers/emp-deployment", "build-walkthrough/minting-etherscan"],
-      },
       {
         type: "category",
         label: "LongShortPair (LSP)",

@@ -13,7 +13,6 @@ Yield Dollars are created when you lock collateral in a contract to borrow a syn
     * [Umanji User Guide](https://machinalabs.medium.com/umanji-user-guide-dc115f77b079)
     
    -  [**fCash**](https://fcash.farmdashboard.xyz/) (token address: [fCash](https://etherscan.io/token/0x531261a091f31bfd93dd393a6ca447ed6fb2043c))
-       * [What is fCASH](https://www.publish0x.com/bityard/superumans-4-what-is-fcash-by-harvest-finance-xjojqor)
    
 ### Call Options
 
