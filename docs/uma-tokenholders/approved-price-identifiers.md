@@ -12,6 +12,7 @@ sidebar_label: Approved Price Identifiers
 |AMPLUSD_18DEC| Replacement for deprecated [AMPLUSD](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-33.md) price identifier.| [UMIP-66](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-66.md)
 |AUDUSD| The price of AUD in USD.| [UMIP-139](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-139.md)
 |ARSUSD| The price of the Argentine peso in USD.| [UMIP-19](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-19.md)
+|APT| APT reflects the price of an Athlete Performance Token (APT).| [UMIP-154](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-154.md)
 |APWUSD| The price of APW in USD.| [UMIP-110](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-110.md)
 |BADGERUSD| The price of BADGER in USD.| [UMIP-118](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-118.md)
 |BALUSD| The price of BAL in USD.| [UMIP-73](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-73.md)
@@ -248,4 +249,4 @@ sidebar_label: Approved Price Identifiers
 |ZARUMA| The price of South African RAND in UMA.| [UMIP-95](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-95.md)
 |ZARUSD| The price of South African RAND in USD.| [UMIP-90](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-90.md)
 |ZODIAC| The ZODIAC identifier is intended to be used with a [Zodiac module](https://gnosis.github.io/zodiac/docs/intro) that allows you to control a [Gnosis Safe](https://gnosis-safe.io/) according to a set of rules defined off-chain and enforced with UMA's Optimistic Oracle. Unless the module contract has extra restrictions, any address can propose transactions that follow the rules and any address can dispute a proposal to UMA's [Optimistic Oracle](https://umaproject.org/optimistic-oracle.html) within a challenge window.| [UMIP-152](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-152.md)
-|Total| No of Approved Price Identifiers.| [243](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
+|Total| No of Approved Price Identifiers.| [244](https://docs.umaproject.org/uma-tokenholders/approved-price-identifiers)
