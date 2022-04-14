@@ -12,7 +12,7 @@ sidebar_label: Interviews, Podcasts, and Press
 - Jun 17, 2021: [ETHglobal:Building with UMA's New Products](https://www.youtube.com/watch?v=xfQKeUuOA0U)
 - Jun 11, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=68XnJWp0Yk0&list=PLtbecZTA1xzyBxba9Zh8wmfqtA0YCwh6p&index=12)
 - Jun 4, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=NBV87PCgprI&list=PLtbecZTA1xzyBxba9Zh8wmfqtA0YCwh6p&index=11)
-- May 30, 2021: [SuperUMAns #1 - AMA about UMA with Hart Lambur](https://www.publish0x.com/mind-puzzle/superumans-1-ama-about-uma-with-hart-lambert-xerqzdm?a=pmbk1p5ezJ)
+<!-- - May 30, 2021: [SuperUMAns #1 - AMA about UMA with Hart Lambur](https://www.publish0x.com/mind-puzzle/superumans-1-ama-about-uma-with-hart-lambert-xerqzdm?a=pmbk1p5ezJ) -->
 - May 28, 2021: [uTVL Vlog](https://www.youtube.com/watch?v=tWAlDzkc5Cg)
 - May 27, 2021: [DeFi Pulse: Founder Fireside Chat with Clayton Roche of UMA](https://defipulse.com/blog/founder-fireside-chat-with-clayton-roche-of-uma/)
 - May 26, 2021: [SOSV: Unblocked with UMA Protocol's Clayton Roche](https://www.youtube.com/watch?v=lzWHWzNb4ns)
@@ -50,7 +50,7 @@ sidebar_label: Interviews, Podcasts, and Press
 - Sep 17, 2020: [UMA Project — Yield Dollar 101](https://mbroome02.medium.com/uma-project-yield-dollar-101-3c64d27e9ab0)
 - Sep 9, 2020: [UMA Audit – Phase 3](https://blog.openzeppelin.com/uma-audit-phase-3/)
 - Sep 4, 2020: [Around the Block #8: The promise and potential of synthetic assets](https://blog.coinbase.com/around-the-block-8-the-promise-and-potential-of-synthetic-assets-9fbb15c2b24e)
-- Aug 17, 2020: ["Crypto Truth Lexicon", Top Things You Should Know About UMA (UMA)](https://www.publish0x.com/crypto-truth-lexicon/top-things-you-should-know-about-uma-uma-xxognmo)
+<!-- - Aug 17, 2020: ["Crypto Truth Lexicon", Top Things You Should Know About UMA (UMA)](https://www.publish0x.com/crypto-truth-lexicon/top-things-you-should-know-about-uma-uma-xxognmo) -->
 - Jul 22, 2020: ["Trent Elmore", Musing on UMA: DeFi Infrastructure](https://medium.com/coinmonks/musing-on-uma-defi-infrastructure-c14d77290138)
 - Jun 15, 2020: [Debate: Synthetic Assets Explained](https://www.youtube.com/watch?v=09p2MJfJN2A&feature=youtu.be)
 - Jun 12, 2020: [UMA ETH-BTC experiences first successful liquidation](https://messari.io/article/uma-eth-btc-experiences-first-successful-liquidation)
