@@ -3,7 +3,7 @@ title: DAO Products
 sidebar_label: DAO Products
 ---
 
-Welcome to the DAO Products guide. Each product section explains how the DAO product can be utilized and includes tutorials for deploying and interacting with the contract.
+UMA's infrastructure is used to build various types of products for DAO's. This section explains the various DAO products available, as well as provides tutorials for deploying and interacting with each.
 
 ### Understanding DAO Products
 
