@@ -111,7 +111,9 @@ sidebar_label: Approved Collateral Currencies
 |DOM| 150 000 | [UMIP-148](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-148.md) | [Ethereum](https://etherscan.io/address/0xef5Fa9f3Dede72Ec306dfFf1A7eA0bB0A2F7046F), [Polygon](https://polygonscan.com/address/0xc8aaeE7f1DEaC631259B8Bf2c65e71207cc53B0c), [Boba](https://blockexplorer.boba.network/address/0xF56FbEc7823260D7510D63B63533153b58A01921)|
 |CRE8R| 6000 | [UMIP-148](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-148.md) | [Ethereum](https://etherscan.io/token/0xaa61d5dec73971cd4a026ef2820bb87b4a4ed8d6)|
 |COMFI| 1200 | [UMIP-148](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-148.md) | [Ethereum](https://etherscan.io/token/0x752efadc0a7e05ad1bcccda22c141d01a75ef1e4), [Polygon](https://polygonscan.com/token/0x72bba3aa59a1ccb1591d7cddb714d8e4d5597e96)|
-|Total| No of Approved collateral currencies | [108](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)|
+|FDT| 9000 | [UMIP-153](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-153.md) | [Ethereum](https://etherscan.io/token/0xed1480d12be41d92f36f5f7bdd88212e381a3677)|
+|VSQ| 250 | [UMIP-155](https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-155.md) | [Polygon](https://polygonscan.com/token/0x29F1e986FCa02B7E54138c04C4F503DdDD250558)|
+|Total| No of Approved collateral currencies | [110](https://docs.umaproject.org/uma-tokenholders/approved-collateral-currencies)|
 
 
 To submit a token to be considered as a collateral currency, please see the _[Guidance on Collateral Currency Addition](uma-tokenholders/guidence-on-collateral-currency-addition.md)
