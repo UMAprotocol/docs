@@ -9,7 +9,7 @@ module.exports = {
       to: "/",
       label: "Oracle",
       position: "left",
-      activeBaseRegex: "(/$|econ-architecture|bug-bounty|oracle/tech-architecture|oracle/known-issues|getting-started/oracle|getting-started/oracle|synthetic-tokens/glossary)",
+      activeBaseRegex: "(/$|econ-architecture|dev-quickstart|bug-bounty|oracle/tech-architecture|oracle/known-issues|getting-started/oracle|getting-started/oracle|synthetic-tokens/glossary)",
     },
     {
       to: "products/dao-products",
