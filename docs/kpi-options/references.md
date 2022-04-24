@@ -13,7 +13,6 @@ sidebar_label: References
     - [BadgerDAO’s “Rebase Mining” Implementation](https://medium.com/uma-project/badgerdaos-rebase-mining-kicks-off-now-using-uma-s-kpi-options-cd75f71dc1fa)
     - [GYSR KPI Options Integration](https://medium.com/uma-project/learn-about-gysr-streamed-kpi-options-41ac26cbc613)
     - [QiDao Strategic Partnership Program](https://0xlaozi.medium.com/qidao-partners-with-uma-to-power-strategic-partner-program-cfd0d29adbf6)
-    - [Redacted KPI Options Documentation](https://redacted-cartel.gitbook.io/redacted/ecosystem-alignements/uma)
     - [See KPI Options tab in UMAverse for current and expired KPI Options](https://umaverse.vercel.app)
 - Other Links:
     - [KPI Options explainer video](https://www.youtube.com/watch?v=U1xNkCbuiPA&amp%3Bfeature=youtu.be)
