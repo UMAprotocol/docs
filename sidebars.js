@@ -45,11 +45,6 @@ module.exports = {
         label: "LongShortPair (LSP)",
         items: ["synthetic-tokens/long-short-pair", "developers/lsp-prereqs", "developers/deploy-an-lsp"],
       },
-      // {
-      //   type: "category",
-      //   label: "Minting Tokens",
-      //   items: ["developers/mint-locally", "developers/mint-etherscan"],
-      // },
       {
         type: "category",
         label: "Bots",
