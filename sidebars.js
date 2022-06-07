@@ -1,5 +1,20 @@
 module.exports = {
 
+    "Oracle": [
+      "getting-started/welcome",
+      {
+        type: "category",
+        label: "Developer Quickstart",
+        items: ["dev-quickstart/deploy-lsp", "dev-quickstart/mint-tokens", "dev-quickstart/price-request", "dev-quickstart/propose-price", "dev-quickstart/settle"],
+      },
+      {
+        type: "category",
+        label: "Oracle Service",
+        items: ["getting-started/oracle", "oracle/econ-architecture", "oracle/tech-architecture", "oracle/known-issues"],
+      },
+      "dev-ref/bug-bounty",
+      "synthetic-tokens/glossary"
+    ],
     "DAO Products": [
       "products/dao-products",
       {
