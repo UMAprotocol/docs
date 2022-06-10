@@ -6,10 +6,10 @@ module.exports = {
   title: "UMA Docs",
   tagline: "A protocol for building synthetic assets",
   url: "https://docs.umaproject.org/",
-  baseUrl: "/",
+  baseUrl: "/contracts/Contracts",
   favicon: "img/favicon-32x32.png",
   organizationName: "umaprotocol",
-  projectName: "docs",
+  projectName: "contracts docs",
   themeConfig: {
     navbar,
     footer,
