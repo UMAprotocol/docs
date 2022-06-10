@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Docs",
+  title: "Contracts Docs",
   logo: {
     alt: "UMA Logo",
     src: "img/UMA_square_red_logo.png",

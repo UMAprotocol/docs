@@ -8,7 +8,7 @@ yarn install
 npm install -g solidity-docgen@0.5.16
 
 echo "installing protocol repo..."
-git clone http://github.com/umaprotocol/protocol/ --single-branch || echo "Repo already exists"
+git clone https://github.com/umaprotocol/protocol/ --single-branch || echo "Repo already exists"
 yarn install --cwd protocol/packages/core --ignore-scripts
 
 echo "generating docs files..."
