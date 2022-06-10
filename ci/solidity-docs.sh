@@ -5,7 +5,7 @@ set -o nounset
 
 echo "installing required tools..."
 yarn install
-npm install -g solidity-docgen@0.5.16
+npm install -g solidity-docgen
 
 echo "installing protocol repo..."
 git clone http://github.com/umaprotocol/protocol/ --single-branch || echo "Repo already exists"
