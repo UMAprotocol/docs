@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Build contracts docs
-          command: vercel -t $VERCEL_TOKEN --scope uma -c --prod
+          command: vercel --force --token $VERCEL_TOKEN --scope uma -c --prod
 
 workflows:
   version: 2.1
