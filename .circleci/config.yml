@@ -1,6 +1,7 @@
 version: 2.1
 jobs:
   build-docs:
+    working_directory: ~/docs
     docker:
       - image: dockette/vercel
     steps:
