@@ -2,21 +2,12 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: dkhamsing/awesome_bot
-    parallelism: 50
+      - image: dockette/vercel
     steps:
       - checkout
       - run:
-          name: Test links
-          command: |
-            cd docs/
-            find . -name '*.md' | circleci tests split > /tmp/test-docs
-            awesome_bot \
-            --allow-dupe \
-            --allow-redirect \
-            --white-list angel.co,etherscan.io,kovan.etherscan.io,polygon-mumbai.infura.io,polygon-mainnet.infura.io,project/measures/metric,api.llama.fi/protocol/project-slug,data-api.defipulse.com/api/v1/defipulse/api/GetHistory?project=project-slug,github.com/Project/KPI/blob/master/README.md,github.com/DefiLlama/DefiLlama-Adapters/blob/main/projects/project-slug/index.js,mario.cash,zelda.cash \
-            --skip-save-results \
-            $(cat /tmp/test-docs)
+          name: Build contracts docs
+          command: vercel -t $VERCEL_TOKEN --scope uma -c --prod
 
 workflows:
   version: 2.1
