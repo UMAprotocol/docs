@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  test:
+  build-docs:
     docker:
       - image: dockette/vercel
     steps:
