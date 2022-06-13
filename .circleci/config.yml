@@ -11,11 +11,11 @@ jobs:
 
 workflows:
   version: 2.1
-  workflow_test:
+  workflow_build-docs:
       jobs:
-        - test
+        - build-docs
 
-  workflow_nightly:
+  workflow_nightly-build-docs:
         triggers:
           - schedule:
               cron: "0 0 * * *"
@@ -24,4 +24,4 @@ workflows:
                   only:
                     - master
         jobs:
-          - test
+          - build-docs
