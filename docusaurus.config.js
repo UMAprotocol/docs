@@ -3,9 +3,9 @@ const footer = require("./config/footer");
 const redirects = require("./config/redirects");
 
 module.exports = {
-  title: "UMA Docs",
-  tagline: "A protocol for building synthetic assets",
-  url: "https://docs.umaproject.org/",
+  title: "UMA Contracts Docs",
+  tagline: "Documentation for smart contracts",
+  url: "https://contracts.docs.umaproject.org/",
   baseUrl: "/",
   favicon: "img/favicon-32x32.png",
   organizationName: "umaprotocol",
