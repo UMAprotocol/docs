@@ -1,7 +1,6 @@
 ---
 title: Welcome to UMA
 sidebar_label: Welcome to UMA
-slug: /
 ---
 UMA is an optimistic oracle that uses economic guarantees to secure markets. Unlike mechanically restrictive price feed oracles, an optimistic oracle is able to serve any arbitrary data on-chain. UMA’s flexible oracle serves data for uses including a cross-chain bridge, insurance, custom derivatives and prediction markets among other things.
  

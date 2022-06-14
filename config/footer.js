@@ -1,30 +1,30 @@
 module.exports = {
   links: [
-    {
-      title: "Docs",
-      items: [
-        {
-          label: "Oracle",
-          to: "/",
-        },
-        {
-          label: "DAO Products",
-          to: "/products/dao-products",
-        },
-        {
-          label: "Developers",
-          to: "developers/setup",
-        },
-        {
-          label: "Tokenholders",
-          to: "uma-tokenholders/uma-holders",
-        },
-        {
-          label: "Community",
-          to: "community/community-overview",
-        },
-      ],
-    },
+    // {
+    //   title: "Docs",
+    //   items: [
+    //     {
+    //       label: "Oracle",
+    //       to: "/",
+    //     },
+    //     {
+    //       label: "DAO Products",
+    //       to: "/products/dao-products",
+    //     },
+    //     {
+    //       label: "Developers",
+    //       to: "developers/setup",
+    //     },
+    //     {
+    //       label: "Tokenholders",
+    //       to: "uma-tokenholders/uma-holders",
+    //     },
+    //     {
+    //       label: "Community",
+    //       to: "community/community-overview",
+    //     },
+    //   ],
+    // },
     {
       title: "Community",
       items: [
