@@ -3,7 +3,7 @@
 Repository for: https://docs.umaproject.org/
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern
-static website generator.
+static website generator.test
 
 Please read the instructions below if you need to run this project locally.
 
